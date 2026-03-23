@@ -119,7 +119,7 @@ export function PackagesPreviewSection() {
                             {pkg.monthlyInvestment}
                           </div>
                           <div className="text-xs text-dark-500 mt-0.5">
-                            {pkg.onboardingFee} onboarding · {pkg.duration.split(",")[0].toLowerCase()}
+                            + {pkg.onboardingFee} onboarding · {pkg.duration.split(",")[0].toLowerCase()}
                           </div>
                         </div>
                       ) : (
