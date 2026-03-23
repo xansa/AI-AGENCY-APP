@@ -12,7 +12,7 @@ function getResend(): Resend | null {
   return _resend;
 }
 
-const FROM = process.env.RESEND_FROM_EMAIL ?? "noreply@arka.nl";
+const FROM = process.env.RESEND_FROM_EMAIL ?? "noreply@arkadigital.nl";
 const TO = process.env.RESEND_TO_EMAIL ?? "arkaecom@proton.me";
 
 export interface ContactFormData {
@@ -105,7 +105,7 @@ export async function sendConfirmationEmail(email: string, naam: string) {
       <div style="font-family:sans-serif; max-width:600px; margin:0 auto">
         <h2 style="color:#4338ca">Bedankt, ${naam}!</h2>
         <p>We hebben je aanvraag ontvangen en nemen binnen <strong>1 werkdag</strong> contact met je op.</p>
-        <p>In de tussentijd kun je alvast een <a href="https://calendly.com/arka/intake" style="color:#6366f1">kennismakingsgesprek inplannen</a> als je snel wilt schakelen.</p>
+        <p>In de tussentijd kun je alvast een <a href="https://calendly.com/arkaecom-proton/30min" style="color:#6366f1">kennismakingsgesprek inplannen</a> als je snel wilt schakelen.</p>
         <br>
         <p>Met vriendelijke groet,<br><strong>Arka</strong></p>
       </div>

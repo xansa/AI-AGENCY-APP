@@ -5,6 +5,8 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { Toaster } from "react-hot-toast";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -13,7 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://arka.nl"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://arkadigital.nl"),
   title: {
     default: "Arka — Jouw digitale afdeling, zonder de overhead.",
     template: "%s | Arka",
@@ -37,25 +39,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "nl_NL",
-    url: "https://arka.nl",
+    url: "https://arkadigital.nl",
     siteName: "Arka",
     title: "Arka — Jouw digitale afdeling, zonder de overhead.",
     description:
       "Arka is jouw digitale partner. Websites, SEO, AI chatbots, dashboards, lead generation en branding — alles onder één dak.",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Arka",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Arka — Jouw digitale afdeling, zonder de overhead.",
     description: "Jouw digitale partner in Dordrecht.",
-    images: ["/og-image.png"],
   },
   robots: {
     index: true,
@@ -97,6 +90,8 @@ export default function RootLayout({
             },
           }}
         />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

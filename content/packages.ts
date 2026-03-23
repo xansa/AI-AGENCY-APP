@@ -4,11 +4,20 @@ export interface Package {
   tagline: string;
   forWho: string;
   services: string[];
+  highlighted?: boolean;
+
+  // ── Maandelijks (retainer) model ──
   deliverables: string[];
   duration: string;
+  setupInvestment: string;
+  monthlyInvestment: string;
   investment: string;
   kpis: string[];
-  highlighted?: boolean;
+
+  // ── Eenmalig (project) model ──
+  onetimePrice: string;
+  onetimeDeliverables: string[];
+  onetimeNote: string;
 }
 
 export const packages: Package[] = [
@@ -16,26 +25,42 @@ export const packages: Package[] = [
     id: "starter",
     name: "Starter",
     tagline: "De basis voor jouw digitale aanwezigheid",
-    forWho:
-      "ZZP'ers en kleine MKB-bedrijven",
+    forWho: "ZZP'ers en kleine MKB-bedrijven",
     services: ["Websites & Webshops", "SEO & Content"],
+    highlighted: false,
+
+    // Maandelijks
     deliverables: [
       "Professionele website (design + development)",
-      "Hosting & maandelijks onderhoud",
-      "Basis SEO-optimalisatie",
-      "Maandelijkse performance rapportage",
-      "Content updates (tot 4 per maand)",
+      "Basis SEO-optimalisatie & keyword research",
       "SSL-certificaat & beveiliging",
+      "Hosting & maandelijks onderhoud",
+      "Maandelijkse content updates (tot 4 per maand)",
+      "Maandelijkse performance rapportage",
     ],
     duration: "Minimaal 3 maanden, daarna maandelijks opzegbaar",
-    investment: "€800 – €1.500 / maand",
+    setupInvestment: "\u20AC2.000 \u2013 \u20AC3.000",
+    monthlyInvestment: "\u20AC325 \u2013 \u20AC550 / maand",
+    investment: "Vanaf \u20AC2.000 eenmalig + \u20AC325/mnd",
     kpis: [
       "Website verkeer",
       "Google rankings",
       "Laadsnelheid",
       "Organisch bereik",
     ],
-    highlighted: false,
+
+    // Eenmalig
+    onetimePrice: "\u20AC1.800 \u2013 \u20AC3.500",
+    onetimeDeliverables: [
+      "Professionele website (5\u201310 pagina\u2019s)",
+      "Responsive design (mobiel + desktop)",
+      "Basis SEO-optimalisatie & metadata",
+      "SSL-certificaat & beveiliging",
+      "3 social media templates",
+      "Overdracht & documentatie",
+    ],
+    onetimeNote:
+      "Eenmalige oplevering in 2\u20134 weken. Hosting en onderhoud kun je optioneel bijboeken.",
   },
   {
     id: "professional",
@@ -49,23 +74,40 @@ export const packages: Package[] = [
       "AI Chatbots & Automatisering",
       "Branding & Design",
     ],
+    highlighted: true,
+
+    // Maandelijks
     deliverables: [
       "Custom website met chatbot & animaties",
+      "Brand identity & huisstijl",
       "AI-gestuurde chatbot voor lead kwalificatie",
-      "8 LinkedIn posts + 2 blogartikelen per maand",
-      "UI/UX design & brand identity",
+      "Maandelijks: 8 LinkedIn posts + 2 blogartikelen",
       "Maandelijkse strategie sessie",
       "CRO-audit & optimalisatie",
     ],
     duration: "Minimaal 3 maanden, daarna maandelijks opzegbaar",
-    investment: "€2.500 – €3.500 / maand",
+    setupInvestment: "\u20AC5.000 \u2013 \u20AC7.500",
+    monthlyInvestment: "\u20AC1.350 \u2013 \u20AC2.050 / maand",
+    investment: "Vanaf \u20AC5.000 eenmalig + \u20AC1.350/mnd",
     kpis: [
       "Conversieratio",
       "Aantal leads",
       "Engagement rate",
       "Merkconsistentie",
     ],
-    highlighted: true,
+
+    // Eenmalig
+    onetimePrice: "\u20AC5.500 \u2013 \u20AC9.000",
+    onetimeDeliverables: [
+      "Custom website met animaties (10\u201320 pagina\u2019s)",
+      "AI-chatbot ge\u00EFntegreerd op website",
+      "Brand identity (logo, kleuren, typografie)",
+      "5 social media templates",
+      "Basis CRO-audit met aanbevelingen",
+      "Overdracht & documentatie",
+    ],
+    onetimeNote:
+      "Eenmalige oplevering in 4\u20136 weken. Content en strategie kun je optioneel bijboeken.",
   },
   {
     id: "enterprise",
@@ -81,6 +123,9 @@ export const packages: Package[] = [
       "Lead Generation",
       "Branding & Design",
     ],
+    highlighted: false,
+
+    // Maandelijks
     deliverables: [
       "Alles uit Professional",
       "Custom KPI-dashboards & rapportage",
@@ -92,7 +137,9 @@ export const packages: Package[] = [
       "Maandelijkse executive rapportage",
     ],
     duration: "Minimaal 6 maanden, daarna per kwartaal opzegbaar",
-    investment: "€4.500 – €8.000 / maand",
+    setupInvestment: "\u20AC11.500 \u2013 \u20AC17.000",
+    monthlyInvestment: "\u20AC3.000 \u2013 \u20AC4.750 / maand",
+    investment: "Vanaf \u20AC11.500 eenmalig + \u20AC3.000/mnd",
     kpis: [
       "Omzetgroei",
       "Tijdsbesparing",
@@ -100,6 +147,18 @@ export const packages: Package[] = [
       "Marketing ROI",
       "Klanttevredenheid",
     ],
-    highlighted: false,
+
+    // Eenmalig
+    onetimePrice: "\u20AC14.000 \u2013 \u20AC25.000",
+    onetimeDeliverables: [
+      "Alles uit Professional eenmalig",
+      "Custom KPI-dashboard (tot 3 views)",
+      "CRM-integratie & basis automatisering",
+      "Lead generation funnel opzet",
+      "Data pipeline & API-koppelingen",
+      "Training & documentatie (2 sessies)",
+    ],
+    onetimeNote:
+      "Eenmalige oplevering in 6\u201310 weken. Ongoing support en optimalisatie apart beschikbaar.",
   },
 ];

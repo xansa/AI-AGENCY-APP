@@ -20,7 +20,7 @@ const reasons = [
     title: "Geen overhead, wel resultaat",
     description:
       "Zonder duur kantoor, management en overhead kan Arka scherper prijzen en sneller leveren. Je betaalt voor waarde, niet voor structuur.",
-    proof: "Pakketten vanaf €800/mnd — een fractie van een inhouse team.",
+    proof: "Websites vanaf €2.000 setup + €325/mnd — een fractie van een inhouse team.",
   },
 ];
 

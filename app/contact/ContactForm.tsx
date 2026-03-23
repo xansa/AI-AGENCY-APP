@@ -10,7 +10,7 @@ import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 
 const CALENDLY_URL =
-  process.env.NEXT_PUBLIC_CALENDLY_URL ?? "https://calendly.com/arka/intake";
+  process.env.NEXT_PUBLIC_CALENDLY_URL ?? "https://calendly.com/arkaecom-proton/30min";
 
 const contactDetails = [
   { icon: Mail, label: "arkaecom@proton.me", href: "mailto:arkaecom@proton.me" },
@@ -106,6 +106,10 @@ export function ContactForm() {
                 placeholder: "Vertel ons over je uitdaging of vraag...",
               }}
             />
+            {/* Honeypot — hidden from users, catches bots */}
+            <div className="absolute opacity-0 -z-10" aria-hidden="true" tabIndex={-1}>
+              <input type="text" autoComplete="off" tabIndex={-1} {...register("website_url")} />
+            </div>
             <Button type="submit" size="lg" loading={isSubmitting}>
               Bericht versturen
             </Button>

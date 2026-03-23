@@ -42,11 +42,9 @@ const DOELEN = [
 ].map((v) => ({ value: v, label: v }));
 
 const BUDGETS = [
-  "€ 800 – € 1.500/mnd",
-  "€ 1.500 – € 2.500/mnd",
-  "€ 2.500 – € 3.500/mnd",
-  "€ 3.500 – € 5.000/mnd",
-  "€ 5.000+/mnd",
+  "Starter (vanaf € 2.000 + € 325/mnd)",
+  "Professional (vanaf € 5.000 + € 1.350/mnd)",
+  "Enterprise (vanaf € 11.500 + € 3.000/mnd)",
   "Nog niet zeker",
 ].map((v) => ({ value: v, label: v }));
 
@@ -266,6 +264,10 @@ export function OfferteForm() {
               </div>
             </section>
 
+            {/* Honeypot — hidden from users, catches bots */}
+            <div className="absolute opacity-0 -z-10" aria-hidden="true" tabIndex={-1}>
+              <input type="text" autoComplete="off" tabIndex={-1} {...register("_hp")} />
+            </div>
             <Button
               type="submit"
               size="lg"

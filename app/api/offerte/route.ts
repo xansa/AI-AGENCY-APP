@@ -1,10 +1,20 @@
 import { sendConfirmationEmail, sendOfferteEmail } from "@/lib/mailer";
+import { rateLimit, getClientIp } from "@/lib/rate-limit";
 import { saveLead } from "@/lib/supabase";
 import { offerteSchema } from "@/lib/validators";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
   try {
+    const ip = getClientIp(req);
+    const { success: allowed } = rateLimit(ip, { windowMs: 60_000, max: 5 });
+    if (!allowed) {
+      return NextResponse.json(
+        { error: "Te veel verzoeken. Probeer het over een minuut opnieuw." },
+        { status: 429 }
+      );
+    }
+
     const body = await req.json();
     const parsed = offerteSchema.safeParse(body);
 
@@ -16,6 +26,11 @@ export async function POST(req: NextRequest) {
     }
 
     const data = parsed.data;
+
+    // Honeypot check
+    if (data._hp) {
+      return NextResponse.json({ success: true });
+    }
 
     await Promise.all([
       sendOfferteEmail(data),

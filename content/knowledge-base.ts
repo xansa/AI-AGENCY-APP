@@ -146,29 +146,33 @@ Ideaal voor: Bedrijven die hun merk professioneel willen neerzetten.
 export const KB_PACKAGES = `
 ## Packages
 
-### Starter — €800 – €1.500 / maand
+Arka werkt met een hybride prijsmodel: een eenmalige setup-investering + een maandelijkse retainer.
+
+### Starter
+Setup: €2.000 – €3.000 (eenmalig) | Maandelijks: €325 – €550/mnd
 Diensten: Websites & Webshops + SEO & Content
 Voor wie: ZZP'ers en kleine MKB-bedrijven
 Deliverables:
 - Professionele website (design + development)
-- Hosting & maandelijks onderhoud
-- Basis SEO-optimalisatie
-- Maandelijkse performance rapportage
-- Content updates (tot 4 per maand)
+- Basis SEO-optimalisatie & keyword research
 - SSL-certificaat & beveiliging
+- Hosting & maandelijks onderhoud
+- Maandelijkse content updates (tot 4 per maand)
+- Maandelijkse performance rapportage
 Looptijd: Minimaal 3 maanden, daarna maandelijks opzegbaar
 KPI's: website verkeer, Google rankings, laadsnelheid, organisch bereik
 
 ---
 
-### Professional — €2.500 – €3.500 / maand ⭐ Meest gekozen
+### Professional ⭐ Meest gekozen
+Setup: €5.000 – €7.500 (eenmalig) | Maandelijks: €1.350 – €2.050/mnd
 Diensten: Websites & Webshops + SEO & Content + AI Chatbots & Automatisering + Branding & Design
 Voor wie: Groeiende MKB-bedrijven die meer uit hun online aanwezigheid willen halen
 Deliverables:
 - Custom website met chatbot & animaties
+- Brand identity & huisstijl
 - AI-gestuurde chatbot voor lead kwalificatie
-- 8 LinkedIn posts + 2 blogartikelen per maand
-- UI/UX design & brand identity
+- Maandelijks: 8 LinkedIn posts + 2 blogartikelen
 - Maandelijkse strategie sessie
 - CRO-audit & optimalisatie
 Looptijd: Minimaal 3 maanden, daarna maandelijks opzegbaar
@@ -176,8 +180,9 @@ KPI's: conversieratio, aantal leads, engagement rate, merkconsistentie
 
 ---
 
-### Enterprise — €4.500 – €8.000 / maand
-Diensten: Alle 6 diensten (Websites & Webshops, SEO & Content, AI Chatbots & Automatisering, Dashboards & Data, Lead Generation, Branding & Design)
+### Enterprise
+Setup: €11.500 – €17.000 (eenmalig) | Maandelijks: €3.000 – €4.750/mnd
+Diensten: Alle 6 diensten
 Voor wie: Gevestigde MKB-bedrijven en scale-ups die alles uit handen willen geven
 Deliverables:
 - Alles uit Professional
@@ -198,8 +203,9 @@ export const KB_FAQ = `
 ## Veelgestelde vragen
 
 **Wat kost het?**
-Starter: €800–€1.500/mnd | Professional: €2.500–€3.500/mnd | Enterprise: €4.500–€8.000/mnd
-Vergelijk dat met een fulltime medewerker: die kost al snel €3.000–€5.000/mnd all-in.
+Arka werkt met een eenmalige setup + maandelijkse retainer:
+Starter: vanaf €2.000 setup + €325/mnd | Professional: vanaf €5.000 setup + €1.350/mnd | Enterprise: vanaf €11.500 setup + €3.000/mnd
+De eenmalige kosten dekken het ontwikkelwerk, de retainer is voor doorlopende diensten en optimalisatie.
 
 **Kan ik stoppen wanneer ik wil?**
 Starter en Professional: minimaal 3 maanden, daarna maandelijks opzegbaar.

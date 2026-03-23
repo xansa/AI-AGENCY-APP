@@ -87,7 +87,7 @@ export default function DienstDetailPage({ params }: Props) {
                     Offerte aanvragen
                   </Button>
                   <Button
-                    href={process.env.NEXT_PUBLIC_CALENDLY_URL ?? "https://calendly.com/arka/intake"}
+                    href={process.env.NEXT_PUBLIC_CALENDLY_URL ?? "https://calendly.com/arkaecom-proton/30min"}
                     external
                     size="sm"
                     variant="outline"

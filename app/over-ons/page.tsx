@@ -94,7 +94,7 @@ export default function OverOnsPage() {
           <h2 className="text-2xl font-bold text-white mb-4">Klaar om kennis te maken?</h2>
           <p className="text-brand-200 mb-8">Plan een vrijblijvend kennismakingsgesprek van 30 minuten.</p>
           <Button
-            href={process.env.NEXT_PUBLIC_CALENDLY_URL ?? "https://calendly.com/arka/intake"}
+            href={process.env.NEXT_PUBLIC_CALENDLY_URL ?? "https://calendly.com/arkaecom-proton/30min"}
             external
             size="lg"
             className="bg-white text-brand-700 hover:bg-brand-50 border-white"

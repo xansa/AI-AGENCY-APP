@@ -77,7 +77,7 @@ export default function DienstenPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/offerte" size="lg">Offerte aanvragen</Button>
             <Button
-              href={process.env.NEXT_PUBLIC_CALENDLY_URL ?? "https://calendly.com/arka/intake"}
+              href={process.env.NEXT_PUBLIC_CALENDLY_URL ?? "https://calendly.com/arkaecom-proton/30min"}
               external
               size="lg"
               variant="outline"

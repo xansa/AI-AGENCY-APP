@@ -6,6 +6,7 @@ export const contactSchema = z.object({
   bedrijf: z.string().min(2, "Bedrijfsnaam moet minimaal 2 tekens zijn"),
   telefoon: z.string().optional(),
   bericht: z.string().min(10, "Bericht moet minimaal 10 tekens zijn"),
+  website_url: z.string().max(0).optional(),
 });
 
 export const offerteSchema = z.object({
@@ -22,6 +23,7 @@ export const offerteSchema = z.object({
   budget: z.string().min(1, "Selecteer een budgetrange"),
   tijdlijn: z.string().min(1, "Selecteer een tijdlijn"),
   extra: z.string().optional(),
+  _hp: z.string().max(0).optional(),
 });
 
 export const chatMessageSchema = z.object({

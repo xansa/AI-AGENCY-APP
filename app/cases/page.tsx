@@ -29,6 +29,9 @@ export default function CasesPage() {
 
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+          <p className="text-sm text-dark-400 italic text-center -mt-2 mb-4">
+            De onderstaande cases zijn representatieve voorbeelden die onze aanpak en mogelijke resultaten illustreren.
+          </p>
           {cases.map((c) => (
             <div key={c.slug} className="rounded-2xl border border-dark-100 p-8">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

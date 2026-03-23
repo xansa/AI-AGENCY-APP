@@ -14,6 +14,7 @@ const footerLinks = {
     { href: "/over-ons", label: "Over ons" },
     { href: "/cases", label: "Cases" },
     { href: "/packages", label: "Packages" },
+    { href: "/blog", label: "Blog" },
     { href: "/faq", label: "FAQ" },
     { href: "/contact", label: "Contact" },
     { href: "/offerte", label: "Offerte aanvragen" },
@@ -57,6 +58,9 @@ export function Footer() {
                 <MapPin className="w-4 h-4 text-brand-500" />
                 <span>Dordrecht, Nederland</span>
               </div>
+              {/* TODO: Vervang met echte KVK- en BTW-nummers */}
+              <p className="text-xs text-dark-500 mt-3">KVK: 12345678</p>
+              <p className="text-xs text-dark-500">BTW: NL123456789B01</p>
             </div>
           </div>
 

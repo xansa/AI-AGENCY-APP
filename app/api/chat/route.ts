@@ -1,5 +1,6 @@
 import { createAIProvider, SALES_SYSTEM_PROMPT } from "@/lib/ai";
 import { matchIntent, buildIntentResponse } from "@/lib/intent-matcher";
+import { rateLimit, getClientIp } from "@/lib/rate-limit";
 import { saveChatLog } from "@/lib/supabase";
 import { chatMessageSchema } from "@/lib/validators";
 import { NextRequest, NextResponse } from "next/server";
@@ -22,6 +23,15 @@ import { NextRequest, NextResponse } from "next/server";
  */
 export async function POST(req: NextRequest) {
   try {
+    const ip = getClientIp(req);
+    const { success: allowed } = rateLimit(ip, { windowMs: 60_000, max: 20 });
+    if (!allowed) {
+      return NextResponse.json(
+        { error: "Te veel berichten. Probeer het over een minuut opnieuw." },
+        { status: 429 }
+      );
+    }
+
     const body = await req.json();
     const parsed = chatMessageSchema.safeParse(body);
 

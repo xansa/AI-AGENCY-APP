@@ -16,6 +16,7 @@ export interface Case {
     role: string;
   };
   duration: string;
+  isExample?: boolean;
 }
 
 export const cases: Case[] = [
@@ -52,6 +53,7 @@ export const cases: Case[] = [
       role: "Eigenaar, Brasserie De Haven",
     },
     duration: "3 maanden",
+    isExample: true,
   },
   {
     slug: "consultancy-chatbot-automatisering",
@@ -86,6 +88,7 @@ export const cases: Case[] = [
       role: "Managing Partner, Visser & Partners Consultancy",
     },
     duration: "4 maanden",
+    isExample: true,
   },
   {
     slug: "logistiek-enterprise-digitalisering",
@@ -120,5 +123,6 @@ export const cases: Case[] = [
       role: "Directeur, MaasLogistics B.V.",
     },
     duration: "6 maanden",
+    isExample: true,
   },
 ];
