@@ -42,9 +42,12 @@ const DOELEN = [
 ].map((v) => ({ value: v, label: v }));
 
 const BUDGETS = [
-  "Starter (vanaf € 2.000 + € 325/mnd)",
-  "Professional (vanaf € 5.000 + € 1.350/mnd)",
-  "Enterprise (vanaf € 11.500 + € 3.000/mnd)",
+  "Eenmalig: Starter (€ 1.800–€ 3.500)",
+  "Eenmalig: Professional (€ 5.500–€ 9.000)",
+  "Eenmalig: Enterprise (€ 14.000–€ 25.000)",
+  "Maandelijks: Starter (€ 1.000–€ 1.500/mnd)",
+  "Maandelijks: Professional (€ 2.750–€ 3.500/mnd)",
+  "Maandelijks: Enterprise (€ 5.000–€ 8.000/mnd)",
   "Nog niet zeker",
 ].map((v) => ({ value: v, label: v }));
 

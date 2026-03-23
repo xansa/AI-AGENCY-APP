@@ -104,7 +104,7 @@ export function PackagesPreviewSection() {
                 </div>
 
                 {/* Price — animated */}
-                <div className="mb-6 h-14 relative overflow-hidden">
+                <div className="mb-6 min-h-[3.5rem] relative overflow-hidden">
                   <AnimatePresence mode="wait">
                     <motion.div
                       key={mode}
@@ -114,13 +114,12 @@ export function PackagesPreviewSection() {
                       transition={{ duration: 0.2 }}
                     >
                       {isMonthly ? (
-                        <div className="space-y-0.5">
-                          <div className="text-xs text-dark-500">
-                            {pkg.setupInvestment}{" "}
-                            <span className="text-xs">eenmalige setup</span>
-                          </div>
+                        <div>
                           <div className="text-2xl font-bold text-dark-900">
                             {pkg.monthlyInvestment}
+                          </div>
+                          <div className="text-xs text-dark-500 mt-0.5">
+                            {pkg.onboardingFee} onboarding · {pkg.duration.split(",")[0].toLowerCase()}
                           </div>
                         </div>
                       ) : (
@@ -128,7 +127,7 @@ export function PackagesPreviewSection() {
                           <div className="text-2xl font-bold text-dark-900">
                             {pkg.onetimePrice}
                           </div>
-                          <div className="text-xs text-dark-500">
+                          <div className="text-xs text-dark-500 mt-0.5">
                             eenmalige investering
                           </div>
                         </div>

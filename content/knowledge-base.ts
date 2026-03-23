@@ -146,55 +146,37 @@ Ideaal voor: Bedrijven die hun merk professioneel willen neerzetten.
 export const KB_PACKAGES = `
 ## Packages
 
-Arka werkt met een hybride prijsmodel: een eenmalige setup-investering + een maandelijkse retainer.
+Arka biedt twee modellen: eenmalig (projectbasis) of maandelijks (doorlopende samenwerking).
 
-### Starter
-Setup: €2.000 – €3.000 (eenmalig) | Maandelijks: €325 – €550/mnd
+### Maandelijks (aanbevolen — jouw digitale afdeling)
+
+**Starter** — €1.000–€1.500/mnd (€500 onboarding)
 Diensten: Websites & Webshops + SEO & Content
-Voor wie: ZZP'ers en kleine MKB-bedrijven
-Deliverables:
-- Professionele website (design + development)
-- Basis SEO-optimalisatie & keyword research
-- SSL-certificaat & beveiliging
-- Hosting & maandelijks onderhoud
-- Maandelijkse content updates (tot 4 per maand)
-- Maandelijkse performance rapportage
-Looptijd: Minimaal 3 maanden, daarna maandelijks opzegbaar
-KPI's: website verkeer, Google rankings, laadsnelheid, organisch bereik
+Min. commitment: 3 maanden
+Inbegrepen: website bouw, hosting, onderhoud, SEO, content updates, rapportage, support
 
----
+**Professional** ⭐ Meest gekozen — €2.750–€3.500/mnd (€750 onboarding)
+Diensten: Websites & Webshops + SEO & Content + AI Chatbots + Branding
+Min. commitment: 6 maanden
+Inbegrepen: custom website + chatbot, brand identity, 8 LinkedIn posts + 2 blogs/mnd, strategie sessie, CRO
 
-### Professional ⭐ Meest gekozen
-Setup: €5.000 – €7.500 (eenmalig) | Maandelijks: €1.350 – €2.050/mnd
-Diensten: Websites & Webshops + SEO & Content + AI Chatbots & Automatisering + Branding & Design
-Voor wie: Groeiende MKB-bedrijven die meer uit hun online aanwezigheid willen halen
-Deliverables:
-- Custom website met chatbot & animaties
-- Brand identity & huisstijl
-- AI-gestuurde chatbot voor lead kwalificatie
-- Maandelijks: 8 LinkedIn posts + 2 blogartikelen
-- Maandelijkse strategie sessie
-- CRO-audit & optimalisatie
-Looptijd: Minimaal 3 maanden, daarna maandelijks opzegbaar
-KPI's: conversieratio, aantal leads, engagement rate, merkconsistentie
-
----
-
-### Enterprise
-Setup: €11.500 – €17.000 (eenmalig) | Maandelijks: €3.000 – €4.750/mnd
+**Enterprise** — €5.000–€8.000/mnd (€1.000 onboarding)
 Diensten: Alle 6 diensten
-Voor wie: Gevestigde MKB-bedrijven en scale-ups die alles uit handen willen geven
-Deliverables:
-- Alles uit Professional
-- Custom KPI-dashboards & rapportage
-- Lead generation campagnes (email + LinkedIn)
-- Proces automatisering & CRM-integratie
-- Data pipeline & API-koppelingen
-- Dedicated accountmanager
-- Prioriteit support (< 4 uur reactie)
-- Maandelijkse executive rapportage
-Looptijd: Minimaal 6 maanden, daarna per kwartaal opzegbaar
-KPI's: omzetgroei, tijdsbesparing, pipeline waarde, marketing ROI, klanttevredenheid
+Min. commitment: 6 maanden
+Inbegrepen: alles uit Professional + dashboards, lead gen, automatisering, dedicated support (< 4u reactie)
+
+### Eenmalig (projectbasis — je koopt een product)
+
+**Starter** — €1.800–€3.500
+Website + basis SEO + 3 social templates. Oplevering in 2–4 weken. 30 dagen bugfixes.
+
+**Professional** — €5.500–€9.000
+Custom website + chatbot + brand identity + 5 social templates. Oplevering in 4–6 weken.
+
+**Enterprise** — €14.000–€25.000
+Alles + dashboards + CRM-integratie + lead funnel. Oplevering in 6–10 weken.
+
+Na oplevering: wijzigingen op uurbasis (€95/uur).
 `;
 
 // ─── FAQ ─────────────────────────────────────────────────────────────────────
@@ -203,9 +185,9 @@ export const KB_FAQ = `
 ## Veelgestelde vragen
 
 **Wat kost het?**
-Arka werkt met een eenmalige setup + maandelijkse retainer:
-Starter: vanaf €2.000 setup + €325/mnd | Professional: vanaf €5.000 setup + €1.350/mnd | Enterprise: vanaf €11.500 setup + €3.000/mnd
-De eenmalige kosten dekken het ontwikkelwerk, de retainer is voor doorlopende diensten en optimalisatie.
+Maandelijks: Starter €1.000–€1.500/mnd | Professional €2.750–€3.500/mnd | Enterprise €5.000–€8.000/mnd
+Eenmalig: Starter €1.800–€3.500 | Professional €5.500–€9.000 | Enterprise €14.000–€25.000
+Maandelijks is de beste deal — je krijgt doorlopende optimalisatie, content, support en rapportage.
 
 **Kan ik stoppen wanneer ik wil?**
 Starter en Professional: minimaal 3 maanden, daarna maandelijks opzegbaar.

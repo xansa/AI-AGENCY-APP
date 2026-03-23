@@ -79,7 +79,19 @@ Tier 2 — Claude API (lib/ai.ts)                       ← tokens used
 
 The `MarkdownText` component inside `ChatWidget.tsx` renders `**bold**`, `[link](url)`, and `\n`/`\n\n` for assistant messages.
 
-### 4. Lazy singletons for optional services
+### 4. Content data layer (`content/*.ts`)
+
+All business data (services, packages, cases, FAQ, knowledge base) lives in typed TypeScript files under `content/`. These are imported by both pages and the chatbot. Dynamic routes like `app/diensten/[slug]/page.tsx` use `generateStaticParams()` driven by the content arrays — adding a new service means adding an entry to `content/services.ts`, not creating a new page file.
+
+### 5. Shared Zod validation (`lib/validators.ts`)
+
+All form schemas (contact, offerte, chat) are defined once with Zod and shared between client-side `react-hook-form` validation (via `@hookform/resolvers`) and server-side API route validation. Keep schemas in sync — never duplicate validation logic.
+
+### 6. Brand color palette (Tailwind)
+
+`tailwind.config.ts` defines semantic color tokens: `primary`, `accent`, `cyan`, `background`, `surface`, `text`. Use these instead of raw Tailwind colors (e.g., `bg-primary` not `bg-blue-900`). The `brand` and `dark` scales exist for backward compatibility.
+
+### 7. Lazy singletons for optional services
 
 Both Resend (`lib/mailer.ts`) and Supabase (`lib/supabase.ts`) are initialized only when their env vars are present. This allows `npm run build` and local dev to succeed without any keys configured. The pattern:
 
@@ -95,7 +107,7 @@ function getClient() {
 
 All exported async functions call `getClient()` and return early if `null`.
 
-### 5. AI provider interface
+### 8. AI provider interface
 
 `lib/ai.ts` exports an `AIProvider` interface with a single `chat()` method. `ClaudeProvider` implements it. To swap to a different LLM, implement the interface and change the factory:
 
@@ -105,13 +117,17 @@ export function createAIProvider(): AIProvider {
 }
 ```
 
-### 6. FormField component
+### 9. FormField component
 
 `components/ui/FormField.tsx` renders an `<input>`, `<textarea>`, or `<select>` depending on which props are provided (`inputProps` / `textareaProps` / `selectProps`). The `selectProps` type extends `React.SelectHTMLAttributes` with an extra `placeholder?: string` and `options: {value, label}[]` — `placeholder` is not a native HTML select attribute, it renders as the first disabled option.
 
-### 7. Button type safety
+### 10. Button type safety
 
 `components/ui/Button.tsx` uses `Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "onAnimationStart" | "onDrag" | "onDragStart" | "onDragEnd">` to strip the four event handlers that Framer Motion redefines with incompatible types, allowing `{...props}` to spread into `motion.button` without a cast.
+
+### 11. Icons
+
+`lucide-react` is the icon library. Service data in `content/services.ts` stores icon names as strings (e.g., `"Globe"`); import the matching Lucide component by name.
 
 ---
 
@@ -145,9 +161,17 @@ Copy `.env.example` to `.env.local`. Only `ANTHROPIC_API_KEY` is required for th
 - **Services:** Websites & Webshops, SEO & Content, AI Chatbots & Automatisering, Dashboards & Data, Lead Generation, Branding & Design
 - **Packages:** Starter (€800–€1.500), Professional (€2.500–€3.500), Enterprise (€4.500–€8.000)
 
----
+## Deployment
+
+- **Hosting:** Vercel (project name: `arka`, team: `xansas-projects`)
+- **Domain:** `arkadigital.nl` (live, DNS at TransIP, A records → `76.76.21.21`)
+- **www redirect:** `www.arkadigital.nl` → 308 redirect to `arkadigital.nl`
+- **Production URL:** `arka-tan.vercel.app` (Vercel default subdomain)
+- `metadataBase` in `app/layout.tsx` references `arka.nl` via `NEXT_PUBLIC_SITE_URL`; update this to `arkadigital.nl`
 
 ## Known constraints
 
 - `next.config.mjs` — Next.js 14.2.5 does not support `next.config.ts`; keep it as `.mjs` with JSDoc types
 - No test framework is configured
+- `.env.example` is missing `CLAUDE_MODEL` — it still works (defaults to `claude-3-5-haiku-20241022`)
+- `NEXT_PUBLIC_SITE_URL` in `.env.example` and the `metadataBase` fallback in `app/layout.tsx` still reference `arka.nl` — should be updated to `arkadigital.nl`

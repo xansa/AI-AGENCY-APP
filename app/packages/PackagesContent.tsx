@@ -3,7 +3,7 @@
 import { packages } from "@/content/packages";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
-import { Check, Calendar, FileText } from "lucide-react";
+import { Check, Calendar, FileText, Clock } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -19,7 +19,6 @@ function PricingToggle({
   return (
     <div className="flex items-center justify-center mb-12">
       <div className="relative inline-flex bg-dark-100 rounded-xl p-1">
-        {/* Animated background pill */}
         <motion.div
           className="absolute top-1 bottom-1 rounded-lg bg-brand-600 shadow-lg"
           layout
@@ -29,11 +28,12 @@ function PricingToggle({
             left: mode === "eenmalig" ? "4px" : "calc(50%)",
           }}
         />
-
         <button
           onClick={() => onChange("eenmalig")}
           className={`relative z-10 px-6 py-2.5 text-sm font-medium rounded-lg transition-colors duration-200 ${
-            mode === "eenmalig" ? "text-white" : "text-dark-600 hover:text-dark-900"
+            mode === "eenmalig"
+              ? "text-white"
+              : "text-dark-600 hover:text-dark-900"
           }`}
         >
           Eenmalig
@@ -41,7 +41,9 @@ function PricingToggle({
         <button
           onClick={() => onChange("maandelijks")}
           className={`relative z-10 px-6 py-2.5 text-sm font-medium rounded-lg transition-colors duration-200 ${
-            mode === "maandelijks" ? "text-white" : "text-dark-600 hover:text-dark-900"
+            mode === "maandelijks"
+              ? "text-white"
+              : "text-dark-600 hover:text-dark-900"
           }`}
         >
           Maandelijks
@@ -89,7 +91,7 @@ export function PackagesContent() {
                   <p className="text-dark-500 text-sm mt-1">{pkg.tagline}</p>
 
                   {/* Price — animated swap */}
-                  <div className="mt-4 h-16 relative overflow-hidden">
+                  <div className="mt-4 min-h-[4.5rem] relative overflow-hidden">
                     <AnimatePresence mode="wait">
                       <motion.div
                         key={mode}
@@ -99,21 +101,20 @@ export function PackagesContent() {
                         transition={{ duration: 0.2 }}
                       >
                         {isMonthly ? (
-                          <div className="space-y-1">
-                            <div className="text-sm text-dark-500">
-                              {pkg.setupInvestment}{" "}
-                              <span className="text-xs">eenmalige setup</span>
-                            </div>
-                            <div className="text-xl font-bold text-brand-600">
+                          <div>
+                            <div className="text-2xl font-bold text-brand-600">
                               {pkg.monthlyInvestment}
+                            </div>
+                            <div className="text-sm text-dark-500 mt-1">
+                              {pkg.onboardingFee} eenmalige onboarding
                             </div>
                           </div>
                         ) : (
                           <div>
-                            <div className="text-xl font-bold text-brand-600">
+                            <div className="text-2xl font-bold text-brand-600">
                               {pkg.onetimePrice}
                             </div>
-                            <div className="text-sm text-dark-500 mt-0.5">
+                            <div className="text-sm text-dark-500 mt-1">
                               eenmalige investering
                             </div>
                           </div>
@@ -134,7 +135,7 @@ export function PackagesContent() {
                 {/* Deliverables — animated list */}
                 <div className="mb-6 flex-1">
                   <p className="text-xs font-semibold text-dark-500 uppercase tracking-wider mb-3">
-                    {isMonthly ? "Deliverables" : "Wat je krijgt"}
+                    {isMonthly ? "Inbegrepen" : "Wat je krijgt"}
                   </p>
                   <AnimatePresence mode="wait">
                     <motion.ul
@@ -161,7 +162,7 @@ export function PackagesContent() {
                   </AnimatePresence>
                 </div>
 
-                {/* KPIs (only for monthly) or Note (for onetime) */}
+                {/* KPIs (monthly) or Note (onetime) */}
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={mode}
@@ -197,10 +198,11 @@ export function PackagesContent() {
                   </motion.div>
                 </AnimatePresence>
 
-                {/* Duration (only for monthly) */}
-                {isMonthly && (
-                  <p className="text-xs text-dark-400 mb-6">{pkg.duration}</p>
-                )}
+                {/* Commitment */}
+                <div className="flex items-center gap-2 text-xs text-dark-400 mb-6">
+                  <Clock className="w-3.5 h-3.5" />
+                  <span>{isMonthly ? pkg.duration : "Eenmalige oplevering"}</span>
+                </div>
 
                 {/* CTAs */}
                 <div className="space-y-3 mt-auto">

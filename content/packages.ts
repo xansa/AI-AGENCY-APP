@@ -9,7 +9,7 @@ export interface Package {
   // ── Maandelijks (retainer) model ──
   deliverables: string[];
   duration: string;
-  setupInvestment: string;
+  onboardingFee: string;
   monthlyInvestment: string;
   investment: string;
   kpis: string[];
@@ -32,16 +32,17 @@ export const packages: Package[] = [
     // Maandelijks
     deliverables: [
       "Professionele website (design + development)",
-      "Basis SEO-optimalisatie & keyword research",
-      "SSL-certificaat & beveiliging",
       "Hosting & maandelijks onderhoud",
+      "SEO-optimalisatie & keyword research",
       "Maandelijkse content updates (tot 4 per maand)",
       "Maandelijkse performance rapportage",
+      "SSL-certificaat & beveiliging",
+      "Prioriteit support (< 24 uur reactie)",
     ],
     duration: "Minimaal 3 maanden, daarna maandelijks opzegbaar",
-    setupInvestment: "\u20AC2.000 \u2013 \u20AC3.000",
-    monthlyInvestment: "\u20AC325 \u2013 \u20AC550 / maand",
-    investment: "Vanaf \u20AC2.000 eenmalig + \u20AC325/mnd",
+    onboardingFee: "\u20AC500",
+    monthlyInvestment: "\u20AC1.000 \u2013 \u20AC1.500 / maand",
+    investment: "\u20AC500 onboarding + \u20AC1.000\u2013\u20AC1.500/mnd",
     kpis: [
       "Website verkeer",
       "Google rankings",
@@ -60,7 +61,7 @@ export const packages: Package[] = [
       "Overdracht & documentatie",
     ],
     onetimeNote:
-      "Eenmalige oplevering in 2\u20134 weken. Hosting en onderhoud kun je optioneel bijboeken.",
+      "Eenmalige oplevering in 2\u20134 weken. 30 dagen bugfixes inbegrepen. Daarna op uurbasis (\u20AC95/uur).",
   },
   {
     id: "professional",
@@ -83,12 +84,14 @@ export const packages: Package[] = [
       "AI-gestuurde chatbot voor lead kwalificatie",
       "Maandelijks: 8 LinkedIn posts + 2 blogartikelen",
       "Maandelijkse strategie sessie",
-      "CRO-audit & optimalisatie",
+      "CRO-audit & doorlopende optimalisatie",
+      "Prioriteit support (< 12 uur reactie)",
+      "Hosting & technisch beheer",
     ],
-    duration: "Minimaal 3 maanden, daarna maandelijks opzegbaar",
-    setupInvestment: "\u20AC5.000 \u2013 \u20AC7.500",
-    monthlyInvestment: "\u20AC1.350 \u2013 \u20AC2.050 / maand",
-    investment: "Vanaf \u20AC5.000 eenmalig + \u20AC1.350/mnd",
+    duration: "Minimaal 6 maanden, daarna maandelijks opzegbaar",
+    onboardingFee: "\u20AC750",
+    monthlyInvestment: "\u20AC2.750 \u2013 \u20AC3.500 / maand",
+    investment: "\u20AC750 onboarding + \u20AC2.750\u2013\u20AC3.500/mnd",
     kpis: [
       "Conversieratio",
       "Aantal leads",
@@ -107,7 +110,7 @@ export const packages: Package[] = [
       "Overdracht & documentatie",
     ],
     onetimeNote:
-      "Eenmalige oplevering in 4\u20136 weken. Content en strategie kun je optioneel bijboeken.",
+      "Eenmalige oplevering in 4\u20136 weken. 30 dagen bugfixes inbegrepen. Daarna op uurbasis (\u20AC95/uur).",
   },
   {
     id: "enterprise",
@@ -135,11 +138,12 @@ export const packages: Package[] = [
       "Dedicated accountmanager",
       "Prioriteit support (< 4 uur reactie)",
       "Maandelijkse executive rapportage",
+      "Strategisch kwartaalgesprek",
     ],
     duration: "Minimaal 6 maanden, daarna per kwartaal opzegbaar",
-    setupInvestment: "\u20AC11.500 \u2013 \u20AC17.000",
-    monthlyInvestment: "\u20AC3.000 \u2013 \u20AC4.750 / maand",
-    investment: "Vanaf \u20AC11.500 eenmalig + \u20AC3.000/mnd",
+    onboardingFee: "\u20AC1.000",
+    monthlyInvestment: "\u20AC5.000 \u2013 \u20AC8.000 / maand",
+    investment: "\u20AC1.000 onboarding + \u20AC5.000\u2013\u20AC8.000/mnd",
     kpis: [
       "Omzetgroei",
       "Tijdsbesparing",
@@ -159,6 +163,6 @@ export const packages: Package[] = [
       "Training & documentatie (2 sessies)",
     ],
     onetimeNote:
-      "Eenmalige oplevering in 6\u201310 weken. Ongoing support en optimalisatie apart beschikbaar.",
+      "Eenmalige oplevering in 6\u201310 weken. 30 dagen bugfixes inbegrepen. Daarna op uurbasis (\u20AC95/uur).",
   },
 ];

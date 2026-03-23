@@ -41,11 +41,12 @@ const INTENTS: IntentDefinition[] = [
     ],
     boostKeywords: ["package", "pakket", "abonnement"],
     response:
-      "Arka werkt met een **eenmalige setup** + **maandelijkse retainer**:\n\n" +
-      "\u2022 **Starter** \u2014 vanaf \u20AC2.000 setup + \u20AC325\u2013\u20AC550/mnd _(Websites + SEO)_\n" +
-      "\u2022 **Professional** \u2014 vanaf \u20AC5.000 setup + \u20AC1.350\u2013\u20AC2.050/mnd _(+ AI Chatbots + Branding)_ Meest gekozen\n" +
-      "\u2022 **Enterprise** \u2014 vanaf \u20AC11.500 setup + \u20AC3.000\u2013\u20AC4.750/mnd _(alle 6 diensten)_\n\n" +
-      "De setup-investering dekt het ontwikkelwerk, de retainer is voor doorlopende diensten.\n\n" +
+      "Arka biedt twee modellen: **maandelijks** (doorlopende samenwerking) of **eenmalig** (project).\n\n" +
+      "**Maandelijks (aanbevolen):**\n" +
+      "\u2022 **Starter** \u2014 \u20AC1.000\u2013\u20AC1.500/mnd _(Websites + SEO)_\n" +
+      "\u2022 **Professional** \u2014 \u20AC2.750\u2013\u20AC3.500/mnd _(+ AI Chatbots + Branding)_ Meest gekozen\n" +
+      "\u2022 **Enterprise** \u2014 \u20AC5.000\u2013\u20AC8.000/mnd _(alle 6 diensten)_\n\n" +
+      "**Eenmalig:** Starter vanaf \u20AC1.800 | Professional vanaf \u20AC5.500 | Enterprise vanaf \u20AC14.000\n\n" +
       "Wil je weten welk pakket het beste bij jouw situatie past?",
     cta: "Vraag een vrijblijvende offerte aan via [/offerte](/offerte) of plan een kennismakingsgesprek.",
   },
@@ -184,16 +185,15 @@ const INTENTS: IntentDefinition[] = [
     boostKeywords: ["pakket", "package", "prijs"],
     response:
       "**Starter** is ons instappakket:\n\n" +
-      "**Setup:** \u20AC2.000\u2013\u20AC3.000 (eenmalig)\n" +
-      "**Maandelijks:** \u20AC325\u2013\u20AC550/mnd\n\n" +
+      "**Maandelijks:** \u20AC1.000\u2013\u20AC1.500/mnd (\u20AC500 onboarding)\n" +
+      "**Eenmalig:** \u20AC1.800\u2013\u20AC3.500\n\n" +
       "Diensten: Websites & Webshops + SEO & Content\n" +
-      "Voor wie: ZZP'ers en kleine MKB-bedrijven die hun digitale basis willen neerzetten.\n\n" +
-      "Inbegrepen:\n" +
+      "Voor wie: ZZP'ers en kleine MKB-bedrijven.\n\n" +
+      "Maandelijks inbegrepen:\n" +
       "\u2022 Professionele website (design + development)\n" +
-      "\u2022 Basis SEO-optimalisatie & keyword research\n" +
-      "\u2022 Hosting & maandelijks onderhoud\n" +
-      "\u2022 Maandelijkse content updates en rapportage\n\n" +
-      "Minimale looptijd: 3 maanden, daarna maandelijks opzegbaar.",
+      "\u2022 SEO, hosting, onderhoud & content updates\n" +
+      "\u2022 Maandelijkse rapportage & support\n\n" +
+      "Min. commitment: 3 maanden, daarna maandelijks opzegbaar.",
     cta: "Interesse? Vraag een offerte aan via [/offerte](/offerte).",
   },
 
@@ -204,17 +204,16 @@ const INTENTS: IntentDefinition[] = [
     boostKeywords: ["pakket", "package"],
     response:
       "**Professional** is ons meest gekozen pakket:\n\n" +
-      "**Setup:** \u20AC5.000\u2013\u20AC7.500 (eenmalig)\n" +
-      "**Maandelijks:** \u20AC1.350\u2013\u20AC2.050/mnd\n\n" +
-      "Diensten: Websites & Webshops + SEO & Content + AI Chatbots & Automatisering + Branding & Design\n" +
+      "**Maandelijks:** \u20AC2.750\u2013\u20AC3.500/mnd (\u20AC750 onboarding)\n" +
+      "**Eenmalig:** \u20AC5.500\u2013\u20AC9.000\n\n" +
+      "Diensten: Websites + SEO + AI Chatbots + Branding\n" +
       "Voor wie: Groeiende MKB-bedrijven.\n\n" +
-      "Inbegrepen:\n" +
+      "Maandelijks inbegrepen:\n" +
       "\u2022 Custom website met chatbot & animaties\n" +
       "\u2022 Brand identity & huisstijl\n" +
-      "\u2022 AI-gestuurde chatbot\n" +
-      "\u2022 8 LinkedIn posts + 2 blogartikelen per maand\n" +
-      "\u2022 Maandelijkse strategie sessie\n\n" +
-      "Minimale looptijd: 3 maanden, daarna maandelijks opzegbaar.",
+      "\u2022 8 LinkedIn posts + 2 blogs per maand\n" +
+      "\u2022 Strategie sessie & CRO-optimalisatie\n\n" +
+      "Min. commitment: 6 maanden, daarna maandelijks opzegbaar.",
     cta: "Interesse? Vraag een offerte aan via [/offerte](/offerte).",
   },
 
@@ -225,16 +224,16 @@ const INTENTS: IntentDefinition[] = [
     boostKeywords: ["pakket", "package", "automatisering"],
     response:
       "**Enterprise** is ons meest complete pakket:\n\n" +
-      "**Setup:** \u20AC11.500\u2013\u20AC17.000 (eenmalig)\n" +
-      "**Maandelijks:** \u20AC3.000\u2013\u20AC4.750/mnd\n\n" +
+      "**Maandelijks:** \u20AC5.000\u2013\u20AC8.000/mnd (\u20AC1.000 onboarding)\n" +
+      "**Eenmalig:** \u20AC14.000\u2013\u20AC25.000\n\n" +
       "Diensten: Alle 6 diensten\n" +
-      "Voor wie: Gevestigde MKB-bedrijven en scale-ups die alles uit handen willen geven.\n\n" +
+      "Voor wie: Gevestigde MKB-bedrijven en scale-ups.\n\n" +
       "Extra t.o.v. Professional:\n" +
       "\u2022 Custom KPI-dashboards & rapportage\n" +
       "\u2022 Lead generation campagnes\n" +
       "\u2022 Proces automatisering & CRM-integratie\n" +
       "\u2022 Prioriteitsupport (< 4 uur reactietijd)\n\n" +
-      "Minimale looptijd: 6 maanden, daarna per kwartaal opzegbaar.",
+      "Min. commitment: 6 maanden, daarna per kwartaal opzegbaar.",
     cta: "Wil je bespreken of Enterprise de juiste fit is? Plan een kennismakingsgesprek.",
   },
 
