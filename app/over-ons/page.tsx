@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
-import { Check } from "lucide-react";
+import { MessageCircle, Layers, Target, Shield, Handshake } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Over ons",
@@ -10,11 +10,11 @@ export const metadata: Metadata = {
 };
 
 const principles = [
-  { title: "Direct contact, geen tussenpersonen", description: "Je werkt altijd rechtstreeks met dezelfde persoon. Geen accountmanager die doorschakelt, gewoon korte lijnen." },
-  { title: "Breed inzetbaar, scherp in uitvoering", description: "Van website tot AI chatbot, van SEO tot dashboard. Eén partner die alles overziet en niets laat vallen." },
-  { title: "Resultaat boven activiteit", description: "We meten wat telt: verkeer, conversie, tijdsbesparing. Geen rapportages over ijdelheidsmetrics." },
-  { title: "Jij bent eigenaar", description: "Alle content, code en systemen zijn van jou. Geen vendor lock-in, nooit." },
-  { title: "Eerlijk en transparant", description: "Past iets niet? Dan zeggen we dat. Liever een eerlijk advies dan een factuur die niet klopt." },
+  { title: "Direct contact, geen tussenpersonen", description: "Je werkt altijd rechtstreeks met dezelfde persoon. Geen accountmanager die doorschakelt, gewoon korte lijnen.", icon: MessageCircle },
+  { title: "Breed inzetbaar, scherp in uitvoering", description: "Van website tot AI chatbot, van SEO tot dashboard. Eén partner die alles overziet en niets laat vallen.", icon: Layers },
+  { title: "Resultaat boven activiteit", description: "We meten wat telt: verkeer, conversie, tijdsbesparing. Geen rapportages over ijdelheidsmetrics.", icon: Target },
+  { title: "Jij bent eigenaar", description: "Alle content, code en systemen zijn van jou. Geen vendor lock-in, nooit.", icon: Shield },
+  { title: "Eerlijk en transparant", description: "Past iets niet? Dan zeggen we dat. Liever een eerlijk advies dan een factuur die niet klopt.", icon: Handshake },
 ];
 
 export default function OverOnsPage() {
@@ -37,17 +37,15 @@ export default function OverOnsPage() {
       <section className="py-16 bg-dark-950">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative mx-auto w-56 h-56 lg:w-72 lg:h-72">
-              <div className="relative w-full h-full rounded-full overflow-hidden ring-2 ring-white/10">
-                <Image
-                  src="/founder.png"
-                  alt="Kaan, oprichter van Arka"
-                  fill
-                  className="object-cover object-[55%_20%] scale-[1.3]"
-                  sizes="(max-width: 1024px) 224px, 288px"
-                  priority
-                />
-              </div>
+            <div className="relative mx-auto w-44 h-44 lg:w-52 lg:h-52 rounded-full overflow-hidden ring-2 ring-white/10">
+              <Image
+                src="/founder.png"
+                alt="Kaan, oprichter van Arka"
+                width={768}
+                height={512}
+                className="w-full h-full object-cover object-[55%_15%]"
+                priority
+              />
             </div>
             <div>
               <h2 className="text-2xl font-bold text-white mb-4">Hey, ik ben Kaan</h2>
@@ -82,7 +80,7 @@ export default function OverOnsPage() {
               </div>
             </div>
 
-            <div className="p-8 bg-dark-50 rounded-2xl">
+            <div className="p-8 bg-dark-50 rounded-2xl h-fit">
               <h3 className="font-bold text-dark-900 mb-6">Hoe Arka werkt</h3>
               <div className="space-y-4 text-sm text-dark-600">
                 <div className="flex items-start gap-3">
@@ -108,14 +106,17 @@ export default function OverOnsPage() {
           </div>
 
           <h2 className="text-2xl font-bold text-dark-900 mb-8">Mijn principes</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {principles.map((p, i) => (
-              <div key={i} className="p-6 rounded-2xl border border-dark-100">
-                <Check className="w-5 h-5 text-brand-500 mb-3" />
-                <h3 className="font-bold text-dark-900 mb-2">{p.title}</h3>
-                <p className="text-dark-500 text-sm">{p.description}</p>
-              </div>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {principles.map((p, i) => {
+              const Icon = p.icon;
+              return (
+                <div key={i} className="p-6 rounded-2xl border border-dark-100">
+                  <Icon className="w-5 h-5 text-brand-500 mb-3" />
+                  <h3 className="font-bold text-dark-900 mb-2">{p.title}</h3>
+                  <p className="text-dark-500 text-sm">{p.description}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
