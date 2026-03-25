@@ -53,7 +53,10 @@ export function Navbar() {
               <div className="w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center group-hover:bg-brand-700 transition-colors">
                 <Zap className="w-4 h-4 text-white" />
               </div>
-              <span className="font-bold text-dark-900 text-lg tracking-tight">
+              <span className={cn(
+                "font-bold text-lg tracking-tight transition-colors",
+                scrolled ? "text-dark-900" : "text-white"
+              )}>
                 Arka<span className="text-brand-600">.</span>
               </span>
             </Link>
@@ -67,8 +70,8 @@ export function Navbar() {
                   className={cn(
                     "px-3 py-2 text-sm font-medium rounded-lg transition-colors",
                     pathname === link.href
-                      ? "text-brand-600 bg-brand-50"
-                      : "text-dark-600 hover:text-dark-900 hover:bg-dark-50"
+                      ? scrolled ? "text-brand-600 bg-brand-50" : "text-white bg-white/10"
+                      : scrolled ? "text-dark-600 hover:text-dark-900 hover:bg-dark-50" : "text-dark-300 hover:text-white hover:bg-white/10"
                   )}
                 >
                   {link.label}
@@ -86,7 +89,10 @@ export function Navbar() {
             {/* Mobile menu button */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden p-2 rounded-lg text-dark-600 hover:text-dark-900 hover:bg-dark-50 transition-colors"
+              className={cn(
+                "lg:hidden p-2 rounded-lg transition-colors",
+                scrolled ? "text-dark-600 hover:text-dark-900 hover:bg-dark-50" : "text-dark-300 hover:text-white hover:bg-white/10"
+              )}
               aria-label="Menu openen"
             >
               {mobileOpen ? (
