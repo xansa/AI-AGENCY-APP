@@ -53,23 +53,28 @@ export default function BrandPage() {
 
           <h2 className="text-2xl font-bold text-dark-900 mb-8">Logo&apos;s &amp; Assets</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {assets.map((a) => (
-              <a
-                key={a.file}
-                href={a.file}
-                download
-                className="block rounded-xl border border-dark-100 overflow-hidden hover:border-brand-300 hover:shadow-lg transition-all"
-              >
-                <div className="h-40 bg-dark-950 flex items-center justify-center p-6">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={a.file} alt={a.name} className="max-h-full max-w-full object-contain" />
+            {assets.map((a) => {
+              const pngFile = a.file.replace(".svg", ".png");
+              return (
+                <div
+                  key={a.file}
+                  className="rounded-xl border border-dark-100 overflow-hidden"
+                >
+                  <div className="h-40 bg-dark-950 flex items-center justify-center p-6">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={a.file} alt={a.name} className="max-h-full max-w-full object-contain" />
+                  </div>
+                  <div className="p-4">
+                    <p className="font-bold text-dark-900 text-sm">{a.name}</p>
+                    <p className="text-dark-400 text-xs mb-3">{a.desc}</p>
+                    <div className="flex gap-2">
+                      <a href={a.file} download className="px-3 py-1 text-xs font-medium bg-dark-100 text-dark-700 rounded-lg hover:bg-dark-200 transition-colors">SVG</a>
+                      <a href={pngFile} download className="px-3 py-1 text-xs font-medium bg-brand-600 text-white rounded-lg hover:bg-brand-700 transition-colors">PNG</a>
+                    </div>
+                  </div>
                 </div>
-                <div className="p-4">
-                  <p className="font-bold text-dark-900 text-sm">{a.name}</p>
-                  <p className="text-dark-400 text-xs">{a.desc}</p>
-                </div>
-              </a>
-            ))}
+              );
+            })}
           </div>
 
           <div className="mt-16 p-8 bg-dark-50 rounded-2xl">
