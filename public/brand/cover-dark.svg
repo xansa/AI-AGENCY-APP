@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 500" width="1500" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1500" height="500" fill="url(#bg)"/>
+  <ellipse cx="750" cy="0" rx="600" ry="300" fill="url(#glow)"/>
+  <rect x="660" y="168" width="80" height="80" rx="18" fill="#2563EB"/>
+  <path d="M704.5 180L692 215h15l-6.25 25L710.5 205h-15z" fill="white" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+  <text x="750" y="308" text-anchor="middle" font-family="Inter, -apple-system, system-ui, sans-serif" font-weight="700" font-size="56" fill="white" letter-spacing="-0.02em">Arka</text>
+  <circle cx="826" cy="308" r="6" fill="#2563EB"/>
+  <text x="750" y="348" text-anchor="middle" font-family="Inter, -apple-system, system-ui, sans-serif" font-weight="400" font-size="18" fill="#94A3B8" letter-spacing="0.1em">JOUW DIGITALE AFDELING</text>
+</svg>
