@@ -3,7 +3,7 @@ import { services } from "@/content/services";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import Link from "next/link";
-import { ArrowRight, Target, PenTool, TrendingUp, Zap, Star, Database } from "lucide-react";
+import { ArrowRight, Globe, Search, Bot, BarChart3, Target, Palette, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Diensten",
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
-  Target, PenTool, TrendingUp, Zap, Star, Database,
+  Globe, Search, Bot, BarChart3, Target, Palette,
 };
 
 export default function DienstenPage() {

@@ -8,7 +8,7 @@ const reasons = [
     title: "Solo = direct contact",
     description:
       "Geen accountmanagers, geen tussenlagen. Je werkt rechtstreeks met de persoon die het werk doet. Dat is sneller, persoonlijker en efficiënter.",
-    proof: "Elke vraag wordt binnen 48 uur beantwoord, geen doorverwijzingen.",
+    proof: "Elke vraag wordt binnen 24 uur beantwoord, geen doorverwijzingen.",
   },
   {
     title: "Breed inzetbaar, scherp in uitvoering",

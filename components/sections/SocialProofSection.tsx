@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const stats = [
   { value: "6", label: "Digitale disciplines" },
   { value: "100%", label: "Direct contact" },
-  { value: "48u", label: "Reactietijd" },
+  { value: "24u", label: "Reactietijd" },
   { value: "0", label: "Verborgen kosten" },
 ];
 

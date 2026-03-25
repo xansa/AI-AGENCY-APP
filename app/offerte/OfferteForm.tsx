@@ -60,7 +60,7 @@ const TIJDLIJNEN = [
 
 const NEXT_STEPS = [
   { step: "1", text: "We lezen je aanvraag zorgvuldig door" },
-  { step: "2", text: "Binnen 48 uur ontvang je een persoonlijk voorstel" },
+  { step: "2", text: "Binnen 24 uur ontvang je een persoonlijk voorstel" },
   {
     step: "3",
     text: "We plannen een intake gesprek om alles door te nemen",
@@ -105,7 +105,7 @@ export function OfferteForm() {
               Aanvraag ontvangen!
             </h2>
             <p className="text-dark-600 mb-2">
-              We sturen binnen <strong>48 uur</strong> een persoonlijk voorstel.
+              We sturen binnen <strong>24 uur</strong> een persoonlijk voorstel.
             </p>
             <p className="text-dark-500 text-sm">
               Controleer ook je spam als je niks ziet.

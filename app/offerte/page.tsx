@@ -5,7 +5,7 @@ import { OfferteForm } from "./OfferteForm";
 export const metadata: Metadata = {
   title: "Offerte aanvragen",
   description:
-    "Vraag een vrijblijvende offerte aan bij Arka. Binnen 48 uur ontvang je een persoonlijk voorstel op maat.",
+    "Vraag een vrijblijvende offerte aan bij Arka. Binnen 24 uur ontvang je een persoonlijk voorstel op maat.",
 };
 
 export default function OffertePage() {
@@ -23,7 +23,7 @@ export default function OffertePage() {
             Vertel ons over je situatie
           </h1>
           <p className="text-dark-400 max-w-xl leading-relaxed">
-            Vul het formulier in. We sturen binnen 48 uur een persoonlijk
+            Vul het formulier in. We sturen binnen 24 uur een persoonlijk
             voorstel op maat.
           </p>
         </div>

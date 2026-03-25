@@ -30,11 +30,11 @@ export default function DienstDetailPage({ params }: Props) {
     <div className="pt-24">
       <section className="bg-dark-950 py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <a href="/diensten" className="inline-flex items-center gap-2 text-dark-400 hover:text-white text-sm mb-8 transition-colors">
+          <a href="/diensten" className="inline-flex items-center gap-2 text-dark-400 hover:text-white text-sm mb-6 transition-colors">
             <ArrowLeft className="w-4 h-4" />
             Terug naar diensten
           </a>
-          <Badge variant="brand" className="bg-brand-900/50 text-brand-300 border-brand-700 mb-4">
+          <Badge variant="brand" className="bg-brand-900/50 text-brand-300 border-brand-700 mb-4 mt-4">
             {service.title}
           </Badge>
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">

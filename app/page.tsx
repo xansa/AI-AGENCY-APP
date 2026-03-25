@@ -19,8 +19,8 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
-      <SocialProofSection />
       <ProblemsSection />
+      <SocialProofSection />
       <WhyItWorksSection />
       <PackagesPreviewSection />
       <WerkwijzeSection />

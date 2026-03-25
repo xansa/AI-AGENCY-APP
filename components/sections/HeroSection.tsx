@@ -86,7 +86,7 @@ export function HeroSection() {
             transition={{ duration: 0.5, delay: 0.5 }}
             className="mt-12 flex items-center gap-6 text-sm text-dark-400"
           >
-            {["Geen lange contracten", "Gratis kennismaking", "Binnen 48u reactie"].map((item, i) => (
+            {["Geen lange contracten", "Gratis kennismaking", "Binnen 24u reactie"].map((item, i) => (
               <div key={i} className="flex items-center gap-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-brand-500" />
                 {item}
