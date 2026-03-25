@@ -106,11 +106,23 @@ export default function OverOnsPage() {
           </div>
 
           <h2 className="text-2xl font-bold text-dark-900 mb-8">Mijn principes</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {principles.map((p, i) => {
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {principles.slice(0, 3).map((p, i) => {
               const Icon = p.icon;
               return (
                 <div key={i} className="p-6 rounded-2xl border border-dark-100">
+                  <Icon className="w-5 h-5 text-brand-500 mb-3" />
+                  <h3 className="font-bold text-dark-900 mb-2">{p.title}</h3>
+                  <p className="text-dark-500 text-sm">{p.description}</p>
+                </div>
+              );
+            })}
+          </div>
+          <div className="mt-6 flex flex-col md:flex-row gap-6 justify-center md:max-w-[calc(66.666%+0.75rem)] md:mx-auto">
+            {principles.slice(3).map((p, i) => {
+              const Icon = p.icon;
+              return (
+                <div key={i + 3} className="flex-1 p-6 rounded-2xl border border-dark-100">
                   <Icon className="w-5 h-5 text-brand-500 mb-3" />
                   <h3 className="font-bold text-dark-900 mb-2">{p.title}</h3>
                   <p className="text-dark-500 text-sm">{p.description}</p>

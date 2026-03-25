@@ -59,7 +59,7 @@ export function ProblemsSection() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {problems.map((problem, i) => (
+          {problems.slice(0, 3).map((problem, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 20 }}
@@ -67,6 +67,26 @@ export function ProblemsSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
               className="flex gap-4 p-6 rounded-2xl bg-dark-50 border border-dark-100"
+            >
+              <div className="flex-shrink-0 w-10 h-10 bg-brand-100 rounded-xl flex items-center justify-center">
+                <problem.icon className="w-5 h-5 text-brand-600" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-dark-900 mb-1">{problem.title}</h3>
+                <p className="text-dark-500 text-sm leading-relaxed">{problem.description}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+        <div className="mt-6 flex flex-col md:flex-row gap-6 justify-center max-w-[calc(66.666%+0.75rem)] lg:max-w-none lg:px-[calc(100%/6)] mx-auto">
+          {problems.slice(3).map((problem, i) => (
+            <motion.div
+              key={i + 3}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: (i + 3) * 0.08 }}
+              className="flex-1 flex gap-4 p-6 rounded-2xl bg-dark-50 border border-dark-100"
             >
               <div className="flex-shrink-0 w-10 h-10 bg-brand-100 rounded-xl flex items-center justify-center">
                 <problem.icon className="w-5 h-5 text-brand-600" />
