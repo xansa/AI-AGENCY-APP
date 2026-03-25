@@ -37,14 +37,14 @@ export default function OverOnsPage() {
       <section className="py-16 bg-dark-950">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative mx-auto w-48 h-48 lg:w-56 lg:h-56">
+            <div className="relative mx-auto w-56 h-56 lg:w-72 lg:h-72">
               <div className="relative w-full h-full rounded-full overflow-hidden ring-2 ring-white/10">
                 <Image
                   src="/founder.png"
                   alt="Kaan, oprichter van Arka"
                   fill
-                  className="object-cover object-[center_15%]"
-                  sizes="(max-width: 1024px) 192px, 224px"
+                  className="object-cover object-[55%_20%] scale-[1.3]"
+                  sizes="(max-width: 1024px) 224px, 288px"
                   priority
                 />
               </div>
