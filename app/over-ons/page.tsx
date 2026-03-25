@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { Check } from "lucide-react";
@@ -30,6 +31,38 @@ export default function OverOnsPage() {
           <p className="text-dark-400 max-w-2xl leading-relaxed text-lg">
             Arka is een solo digitaal bureau uit Dordrecht. Geen groot kantoor, geen overhead, wel brede expertise en persoonlijke aandacht. Van website tot AI, van branding tot data: alles onder één dak.
           </p>
+        </div>
+      </section>
+
+      <section className="py-16 bg-dark-950">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="relative mx-auto w-72 h-72 lg:w-80 lg:h-80">
+              <div className="relative w-full h-full rounded-2xl overflow-hidden">
+                <Image
+                  src="/founder.png"
+                  alt="Kaan, oprichter van Arka"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 1024px) 288px, 320px"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-dark-950" />
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-dark-950/40" />
+              </div>
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold text-white mb-4">Hey, ik ben Kaan</h2>
+              <div className="space-y-4 text-dark-400 leading-relaxed">
+                <p>
+                  Oprichter van Arka en jouw directe aanspreekpunt. Geen salesteam, geen projectmanagers, gewoon ik.
+                </p>
+                <p>
+                  Ik combineer design, development, AI en marketing zodat jij niet met vijf verschillende bureaus hoeft te werken. Korte lijnen, snelle resultaten.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

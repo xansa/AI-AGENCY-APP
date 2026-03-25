@@ -63,6 +63,47 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "ProfessionalService"],
+  name: "Arka",
+  description:
+    "Digitaal bureau in Dordrecht. Websites, SEO, AI chatbots, dashboards, lead generation en branding, alles onder één dak.",
+  url: "https://arkadigital.nl",
+  telephone: "+31646410986",
+  email: "info@arkadigital.nl",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Dordrecht",
+    addressCountry: "NL",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 51.8133,
+    longitude: 4.6901,
+  },
+  areaServed: {
+    "@type": "Country",
+    name: "NL",
+  },
+  founder: {
+    "@type": "Person",
+    name: "Kaan",
+  },
+  sameAs: [],
+  priceRange: "$$",
+  serviceType: [
+    "Webdesign",
+    "Webdevelopment",
+    "SEO",
+    "AI Chatbots",
+    "Automatisering",
+    "Dashboards",
+    "Lead Generation",
+    "Branding",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -70,6 +111,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="nl" className={inter.variable}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body>
         <Navbar />
         <main>{children}</main>
