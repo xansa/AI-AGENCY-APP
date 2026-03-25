@@ -83,6 +83,10 @@ The `MarkdownText` component inside `ChatWidget.tsx` renders `**bold**`, `[link]
 
 All business data (services, packages, cases, FAQ, knowledge base) lives in typed TypeScript files under `content/`. These are imported by both pages and the chatbot. Dynamic routes like `app/diensten/[slug]/page.tsx` use `generateStaticParams()` driven by the content arrays — adding a new service means adding an entry to `content/services.ts`, not creating a new page file.
 
+### 4a. Blog auto-publish system
+
+`content/blog.ts` contains all blog posts with `publishedAt` date strings. The helper `getPublishedPosts()` filters posts where `publishedAt <= today` and sorts newest first. Blog pages use `revalidate = 3600` (ISR, hourly) so new posts appear automatically on their scheduled date without manual deploys. The `/init` skill checks the blog queue and warns when fewer than 3 posts remain unpublished.
+
 ### 5. Shared Zod validation (`lib/validators.ts`)
 
 All form schemas (contact, offerte, chat) are defined once with Zod and shared between client-side `react-hook-form` validation (via `@hookform/resolvers`) and server-side API route validation. Keep schemas in sync — never duplicate validation logic.
@@ -162,6 +166,7 @@ Copy `.env.example` to `.env.local`. Only `ANTHROPIC_API_KEY` is required for th
 - **KVK:** 42000761
 - **Structure:** Solo operation
 - **Services:** Websites & Webshops, SEO & Content, AI Chatbots & Automatisering, Dashboards & Data, Lead Generation, Branding & Design
+- **Response time:** 24 uur (was 48u, geüpdatet 2026-03-25)
 - **Packages:**
   - Starter: Maandelijks €1.000–€1.500/mnd (€500 onboarding), Eenmalig €1.800–€3.500
   - Professional: Maandelijks €2.750–€3.500/mnd (€750 onboarding), Eenmalig €5.500–€9.000
@@ -174,6 +179,14 @@ Copy `.env.example` to `.env.local`. Only `ANTHROPIC_API_KEY` is required for th
 - **www redirect:** `www.arkadigital.nl` → 308 redirect to `arkadigital.nl`
 - **Production URL:** `arka-tan.vercel.app` (Vercel default subdomain)
 - `metadataBase` in `app/layout.tsx` uses `arkadigital.nl` via `NEXT_PUBLIC_SITE_URL`
+
+## Brand assets
+
+`/public/brand/` contains SVG and PNG logo variants, profile images, and cover banners. The `/brand` page (noindex) provides a visual overview with download buttons. To regenerate PNGs from SVGs: `node scripts/svg-to-png.mjs` (requires `@resvg/resvg-js` devDependency).
+
+## Structured data
+
+`app/layout.tsx` includes a JSON-LD script with `LocalBusiness` + `ProfessionalService` schema (name, address, geo, services, contact info). Update the `jsonLd` object when company details change.
 
 ## Known constraints
 
