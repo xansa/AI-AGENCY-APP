@@ -25,7 +25,7 @@ export default function BlogPage() {
             Inzichten &amp; artikelen
           </h1>
           <p className="text-dark-400 leading-relaxed">
-            Praktische tips over websites, SEO, AI en digitale groei — geschreven
+            Praktische tips over websites, SEO, AI en digitale groei. Geschreven
             voor ondernemers, niet voor developers.
           </p>
         </div>

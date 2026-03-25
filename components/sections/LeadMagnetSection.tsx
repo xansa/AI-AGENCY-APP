@@ -17,7 +17,7 @@ export function LeadMagnetSection() {
         >
           <div className="inline-flex items-center gap-2 bg-white/20 text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
             <Zap className="w-4 h-4" />
-            Gratis kennismaking — geen verplichting
+            Gratis kennismaking · geen verplichting
           </div>
 
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
@@ -26,7 +26,7 @@ export function LeadMagnetSection() {
             naar het volgende niveau te tillen?
           </h2>
           <p className="text-brand-200 max-w-xl mx-auto mb-10 leading-relaxed">
-            Plan een vrijblijvend gesprek en ontdek wat Arka voor jouw bedrijf kan betekenen. Geen verkooppraatje — gewoon eerlijk advies.
+            Plan een vrijblijvend gesprek en ontdek wat Arka voor jouw bedrijf kan betekenen. Geen verkooppraatje, gewoon eerlijk advies.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

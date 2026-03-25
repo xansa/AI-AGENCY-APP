@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const principles = [
-  { title: "Direct contact, geen tussenpersonen", description: "Je werkt altijd rechtstreeks met dezelfde persoon. Geen accountmanager die doorschakelt — gewoon korte lijnen." },
+  { title: "Direct contact, geen tussenpersonen", description: "Je werkt altijd rechtstreeks met dezelfde persoon. Geen accountmanager die doorschakelt, gewoon korte lijnen." },
   { title: "Breed inzetbaar, scherp in uitvoering", description: "Van website tot AI chatbot, van SEO tot dashboard. Eén partner die alles overziet en niets laat vallen." },
   { title: "Resultaat boven activiteit", description: "We meten wat telt: verkeer, conversie, tijdsbesparing. Geen rapportages over ijdelheidsmetrics." },
   { title: "Jij bent eigenaar", description: "Alle content, code en systemen zijn van jou. Geen vendor lock-in, nooit." },
@@ -28,7 +28,7 @@ export default function OverOnsPage() {
             Jouw digitale afdeling, zonder de overhead
           </h1>
           <p className="text-dark-400 max-w-2xl leading-relaxed text-lg">
-            Arka is een solo digitaal bureau uit Dordrecht. Geen groot kantoor, geen overhead — wel brede expertise en persoonlijke aandacht. Van website tot AI, van branding tot data: alles onder één dak.
+            Arka is een solo digitaal bureau uit Dordrecht. Geen groot kantoor, geen overhead, wel brede expertise en persoonlijke aandacht. Van website tot AI, van branding tot data: alles onder één dak.
           </p>
         </div>
       </section>
@@ -40,10 +40,10 @@ export default function OverOnsPage() {
               <h2 className="text-2xl font-bold text-dark-900 mb-4">Waarom Arka?</h2>
               <div className="space-y-4 text-dark-600 leading-relaxed">
                 <p>
-                  De meeste bedrijven hebben geen heel marketingteam nodig — ze hebben iemand nodig die het hele plaatje overziet en het gewoon regelt. Dat is Arka. Eén persoon, breed inzetbaar, met de tools en kennis om snel te schakelen.
+                  De meeste bedrijven hebben geen heel marketingteam nodig. Ze hebben iemand nodig die het hele plaatje overziet en het gewoon regelt. Dat is Arka. Eén persoon, breed inzetbaar, met de tools en kennis om snel te schakelen.
                 </p>
                 <p>
-                  Of je nu een professionele website nodig hebt, beter gevonden wilt worden op Google, processen wilt automatiseren met AI, of grip wilt op je data — bij Arka heb je één aanspreekpunt voor alles.
+                  Of je nu een professionele website nodig hebt, beter gevonden wilt worden op Google, processen wilt automatiseren met AI, of grip wilt op je data: bij Arka heb je één aanspreekpunt voor alles.
                 </p>
                 <p>
                   Geen eindeloze vergaderingen, geen opgeblazen offertes. Gewoon helder advies, snelle uitvoering en eerlijke communicatie.
@@ -58,19 +58,19 @@ export default function OverOnsPage() {
                   <div className="w-6 h-6 bg-brand-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-brand-600 font-bold text-xs">1</span>
                   </div>
-                  <p><strong className="text-dark-900">Eén aanspreekpunt</strong> — Je werkt direct met mij. Geen tussenlagen, geen miscommunicatie.</p>
+                  <p><strong className="text-dark-900">Eén aanspreekpunt</strong> · Je werkt direct met mij. Geen tussenlagen, geen miscommunicatie.</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-6 h-6 bg-brand-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-brand-600 font-bold text-xs">2</span>
                   </div>
-                  <p><strong className="text-dark-900">Brede expertise</strong> — Websites, SEO, AI, data, design — ik combineer disciplines waar andere bureaus aparte teams voor inzetten.</p>
+                  <p><strong className="text-dark-900">Brede expertise</strong> · Websites, SEO, AI, data, design: ik combineer disciplines waar andere bureaus aparte teams voor inzetten.</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-6 h-6 bg-brand-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-brand-600 font-bold text-xs">3</span>
                   </div>
-                  <p><strong className="text-dark-900">Slimme tooling</strong> — AI en automatisering zijn geen buzzwords, maar dagelijkse werktuigen die mij sneller en scherper maken.</p>
+                  <p><strong className="text-dark-900">Slimme tooling</strong> · AI en automatisering zijn geen buzzwords, maar dagelijkse werktuigen die mij sneller en scherper maken.</p>
                 </div>
               </div>
             </div>

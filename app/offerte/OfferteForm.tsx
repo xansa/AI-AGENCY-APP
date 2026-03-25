@@ -65,7 +65,7 @@ const NEXT_STEPS = [
     step: "3",
     text: "We plannen een intake gesprek om alles door te nemen",
   },
-  { step: "4", text: "Geen verplichtingen — jij beslist of er een match is" },
+  { step: "4", text: "Geen verplichtingen, jij beslist of er een match is" },
 ];
 
 export function OfferteForm() {

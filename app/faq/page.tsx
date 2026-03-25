@@ -23,7 +23,7 @@ export default function FAQPage() {
             Veelgestelde vragen
           </h1>
           <p className="text-dark-400 leading-relaxed">
-            Transparantie is een kernwaarde. Hier beantwoorden we de vragen die we het vaakst horen — ook de lastige.
+            Transparantie is een kernwaarde. Hier beantwoorden we de vragen die we het vaakst horen, ook de lastige.
           </p>
         </div>
       </section>
@@ -47,7 +47,7 @@ export default function FAQPage() {
       <section className="py-16 bg-dark-50">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-dark-900 mb-4">Staat je vraag er niet bij?</h2>
-          <p className="text-dark-500 mb-8">Neem direct contact op — we beantwoorden alle vragen eerlijk en snel.</p>
+          <p className="text-dark-500 mb-8">Neem direct contact op. We beantwoorden alle vragen eerlijk en snel.</p>
           <Button href="/contact" size="lg">Stel je vraag</Button>
         </div>
       </section>

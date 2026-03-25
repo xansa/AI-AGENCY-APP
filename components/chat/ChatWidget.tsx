@@ -165,7 +165,7 @@ export function ChatWidget() {
           {
             role: "assistant",
             content:
-              "Sorry, er ging iets mis. Probeer het opnieuw of mail ons op arkaecom@proton.me.",
+              "Sorry, er ging iets mis. Probeer het opnieuw of mail ons op info@arkadigital.nl.",
           },
         ]);
       } finally {
@@ -253,7 +253,7 @@ export function ChatWidget() {
                   Arka Assistent
                 </p>
                 <p className="text-brand-200 text-xs">
-                  {offline ? "Offline" : "Online — antwoordt direct"}
+                  {offline ? "Offline" : "Online · antwoordt direct"}
                 </p>
               </div>
             </div>

@@ -37,7 +37,7 @@ export default function PrivacyPage() {
               <p className="text-sm">
                 Arka is een eenmanszaak gevestigd in Dordrecht, Nederland.
                 <br />
-                E-mail: arkaecom@proton.me
+                E-mail: info@arkadigital.nl
                 <br />
                 Telefoon: +31 6 46410986
               </p>
@@ -93,20 +93,20 @@ export default function PrivacyPage() {
               </p>
               <ul className="list-disc pl-5 text-sm space-y-1">
                 <li>
-                  <strong>Supabase</strong> (database) — opslag van
+                  <strong>Supabase</strong> (database): opslag van
                   contactformulier-inzendingen en chatgesprekken
                 </li>
                 <li>
-                  <strong>Resend</strong> (e-mail) — verzending van
+                  <strong>Resend</strong> (e-mail): verzending van
                   bevestigingsmails en notificaties
                 </li>
                 <li>
-                  <strong>Anthropic (Claude AI)</strong> — verwerking van
+                  <strong>Anthropic (Claude AI)</strong>: verwerking van
                   chatberichten voor het genereren van antwoorden. Berichten
                   worden niet opgeslagen door Anthropic voor trainingsdoeleinden.
                 </li>
                 <li>
-                  <strong>Vercel</strong> (hosting) — hosting van de website en
+                  <strong>Vercel</strong> (hosting): hosting van de website en
                   verwerking van serververzoeken
                 </li>
               </ul>
@@ -133,33 +133,33 @@ export default function PrivacyPage() {
               </p>
               <ul className="list-disc pl-5 text-sm space-y-1">
                 <li>
-                  <strong>Recht op inzage</strong> — je mag opvragen welke
+                  <strong>Recht op inzage</strong>: je mag opvragen welke
                   gegevens wij van je hebben
                 </li>
                 <li>
-                  <strong>Recht op correctie</strong> — je mag onjuiste gegevens
+                  <strong>Recht op correctie</strong>: je mag onjuiste gegevens
                   laten aanpassen
                 </li>
                 <li>
-                  <strong>Recht op verwijdering</strong> — je mag vragen om
+                  <strong>Recht op verwijdering</strong>: je mag vragen om
                   verwijdering van je gegevens
                 </li>
                 <li>
-                  <strong>Recht op beperking</strong> — je mag vragen de
+                  <strong>Recht op beperking</strong>: je mag vragen de
                   verwerking te beperken
                 </li>
                 <li>
-                  <strong>Recht op overdraagbaarheid</strong> — je mag je
+                  <strong>Recht op overdraagbaarheid</strong>: je mag je
                   gegevens in een leesbaar formaat opvragen
                 </li>
               </ul>
               <p className="text-sm mt-3">
                 Voor het uitoefenen van deze rechten kun je contact opnemen via{" "}
                 <a
-                  href="mailto:arkaecom@proton.me"
+                  href="mailto:info@arkadigital.nl"
                   className="text-brand-600 hover:underline"
                 >
-                  arkaecom@proton.me
+                  info@arkadigital.nl
                 </a>
                 . We reageren binnen 30 dagen.
               </p>
@@ -172,7 +172,7 @@ export default function PrivacyPage() {
               <p className="text-sm">
                 Deze website maakt gebruik van functionele cookies die
                 noodzakelijk zijn voor de werking van de site. We gebruiken
-                Vercel Analytics voor anonieme bezoekstatistieken — dit plaatst
+                Vercel Analytics voor anonieme bezoekstatistieken. Dit plaatst
                 geen tracking cookies en verzamelt geen persoonsgegevens.
               </p>
             </div>

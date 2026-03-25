@@ -74,7 +74,7 @@ export const faqItems: FAQItem[] = [
   {
     question: "Hoe bereikbaar is Arka?",
     answer:
-      "Direct via e-mail (arkaecom@proton.me) of telefoon (+31 6 46410986). Je werkt altijd met dezelfde persoon \u2014 geen doorverwijzingen. Enterprise-klanten hebben prioriteit support met een reactietijd van < 4 uur op werkdagen.",
+      "Direct via e-mail (info@arkadigital.nl) of telefoon (+31 6 46410986). Je werkt altijd met dezelfde persoon \u2014 geen doorverwijzingen. Enterprise-klanten hebben prioriteit support met een reactietijd van < 4 uur op werkdagen.",
     category: "Werkwijze",
   },
   {

@@ -55,7 +55,7 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="mt-6 text-lg lg:text-xl text-dark-300 max-w-2xl leading-relaxed"
           >
-            Arka bouwt, optimaliseert en automatiseert jouw digitale aanwezigheid — van website tot AI.
+            Arka bouwt, optimaliseert en automatiseert jouw digitale aanwezigheid, van website tot AI.
             Alles onder één dak, zonder de overhead van een groot bureau.
           </motion.p>
 

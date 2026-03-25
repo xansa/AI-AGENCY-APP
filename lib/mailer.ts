@@ -13,7 +13,7 @@ function getResend(): Resend | null {
 }
 
 const FROM = process.env.RESEND_FROM_EMAIL ?? "noreply@arkadigital.nl";
-const TO = process.env.RESEND_TO_EMAIL ?? "arkaecom@proton.me";
+const TO = process.env.RESEND_TO_EMAIL ?? "info@arkadigital.nl";
 
 export interface ContactFormData {
   naam: string;
@@ -46,7 +46,7 @@ export async function sendContactEmail(data: ContactFormData) {
   const { error } = await resend.emails.send({
     from: FROM,
     to: TO,
-    subject: `Nieuw contactbericht van ${data.naam} — ${data.bedrijf}`,
+    subject: `Nieuw contactbericht van ${data.naam} | ${data.bedrijf}`,
     html: `
       <h2>Nieuw contactbericht</h2>
       <table cellpadding="8" style="border-collapse:collapse; width:100%">
@@ -69,7 +69,7 @@ export async function sendOfferteEmail(data: OfferteFormData) {
   const { error } = await resend.emails.send({
     from: FROM,
     to: TO,
-    subject: `Nieuwe offerteaanvraag van ${data.naam} — ${data.bedrijf}`,
+    subject: `Nieuwe offerteaanvraag van ${data.naam} | ${data.bedrijf}`,
     html: `
       <h2>Nieuwe offerteaanvraag</h2>
       <table cellpadding="8" style="border-collapse:collapse; width:100%; font-family:sans-serif">
@@ -100,7 +100,7 @@ export async function sendConfirmationEmail(email: string, naam: string) {
   await resend.emails.send({
     from: FROM,
     to: email,
-    subject: "We hebben je aanvraag ontvangen — Arka",
+    subject: "We hebben je aanvraag ontvangen | Arka",
     html: `
       <div style="font-family:sans-serif; max-width:600px; margin:0 auto">
         <h2 style="color:#4338ca">Bedankt, ${naam}!</h2>

@@ -20,7 +20,7 @@ const problems = [
     icon: Clock,
     title: "Te veel handmatig werk",
     description:
-      "Offertes, opvolging, rapportages — alles kost te veel tijd. Terwijl slimme automatisering je uren per week bespaart.",
+      "Offertes, opvolging, rapportages: alles kost te veel tijd. Terwijl slimme automatisering je uren per week bespaart.",
   },
   {
     icon: BarChart2,
@@ -54,7 +54,7 @@ export function ProblemsSection() {
             Dit zijn de uitdagingen die digitale groei blokkeren
           </h2>
           <p className="mt-4 text-dark-500 leading-relaxed">
-            De meeste bedrijven lopen vast op dezelfde obstakels. Niet door gebrek aan inzet — maar door het ontbreken van de juiste digitale basis.
+            De meeste bedrijven lopen vast op dezelfde obstakels. Niet door gebrek aan inzet, maar door het ontbreken van de juiste digitale basis.
           </p>
         </motion.div>
 

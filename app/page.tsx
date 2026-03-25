@@ -10,9 +10,9 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { LeadMagnetSection } from "@/components/sections/LeadMagnetSection";
 
 export const metadata: Metadata = {
-  title: { absolute: "Arka — Jouw digitale afdeling, zonder de overhead." },
+  title: { absolute: "Arka | Jouw digitale afdeling, zonder de overhead." },
   description:
-    "Arka is jouw digitale partner in Dordrecht. Websites, SEO, AI chatbots, dashboards, lead generation en branding — alles onder één dak.",
+    "Arka is jouw digitale partner in Dordrecht. Websites, SEO, AI chatbots, dashboards, lead generation en branding, alles onder één dak.",
 };
 
 export default function HomePage() {

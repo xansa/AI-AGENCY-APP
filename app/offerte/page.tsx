@@ -23,7 +23,7 @@ export default function OffertePage() {
             Vertel ons over je situatie
           </h1>
           <p className="text-dark-400 max-w-xl leading-relaxed">
-            Vul het formulier in — we sturen binnen 48 uur een persoonlijk
+            Vul het formulier in. We sturen binnen 48 uur een persoonlijk
             voorstel op maat.
           </p>
         </div>

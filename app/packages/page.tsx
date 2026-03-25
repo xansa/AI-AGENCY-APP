@@ -5,7 +5,7 @@ import { PackagesContent } from "./PackagesContent";
 export const metadata: Metadata = {
   title: "Packages",
   description:
-    "Bekijk onze 3 combipackages: Starter, Professional en Enterprise. Eenmalig of maandelijks — transparante investering.",
+    "Bekijk onze 3 combipackages: Starter, Professional en Enterprise. Eenmalig of maandelijks, transparante investering.",
 };
 
 export default function PackagesPage() {

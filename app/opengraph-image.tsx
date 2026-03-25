@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const alt = "Arka — Jouw digitale afdeling, zonder de overhead.";
+export const alt = "Arka | Jouw digitale afdeling, zonder de overhead.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

@@ -29,7 +29,7 @@ export function PackagesPreviewSection() {
             Kies het pakket dat past bij jouw fase
           </h2>
           <p className="mt-4 text-dark-500">
-            Eenmalig project of doorlopende samenwerking — jij kiest.
+            Eenmalig project of doorlopende samenwerking, jij kiest.
           </p>
         </motion.div>
 

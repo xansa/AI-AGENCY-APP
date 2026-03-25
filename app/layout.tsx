@@ -17,11 +17,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://arkadigital.nl"),
   title: {
-    default: "Arka — Jouw digitale afdeling, zonder de overhead.",
+    default: "Arka | Jouw digitale afdeling, zonder de overhead.",
     template: "%s | Arka",
   },
   description:
-    "Arka is jouw digitale partner in Dordrecht. Websites, SEO, AI chatbots, dashboards, lead generation en branding — alles onder één dak.",
+    "Arka is jouw digitale partner in Dordrecht. Websites, SEO, AI chatbots, dashboards, lead generation en branding, alles onder één dak.",
   keywords: [
     "digitaal bureau",
     "websites",
@@ -41,13 +41,13 @@ export const metadata: Metadata = {
     locale: "nl_NL",
     url: "https://arkadigital.nl",
     siteName: "Arka",
-    title: "Arka — Jouw digitale afdeling, zonder de overhead.",
+    title: "Arka | Jouw digitale afdeling, zonder de overhead.",
     description:
-      "Arka is jouw digitale partner. Websites, SEO, AI chatbots, dashboards, lead generation en branding — alles onder één dak.",
+      "Arka is jouw digitale partner. Websites, SEO, AI chatbots, dashboards, lead generation en branding, alles onder één dak.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Arka — Jouw digitale afdeling, zonder de overhead.",
+    title: "Arka | Jouw digitale afdeling, zonder de overhead.",
     description: "Jouw digitale partner in Dordrecht.",
   },
   robots: {

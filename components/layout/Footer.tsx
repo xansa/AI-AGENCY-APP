@@ -39,13 +39,13 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-dark-400 text-sm leading-relaxed max-w-xs mb-6">
-              Jouw digitale afdeling, zonder de overhead. Websites, SEO, AI chatbots, dashboards, lead generation en branding — alles onder één dak vanuit Dordrecht.
+              Jouw digitale afdeling, zonder de overhead. Websites, SEO, AI chatbots, dashboards, lead generation en branding, alles onder één dak vanuit Dordrecht.
             </p>
             <div className="space-y-2 text-sm">
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-brand-500" />
-                <a href="mailto:arkaecom@proton.me" className="hover:text-white transition-colors">
-                  arkaecom@proton.me
+                <a href="mailto:info@arkadigital.nl" className="hover:text-white transition-colors">
+                  info@arkadigital.nl
                 </a>
               </div>
               <div className="flex items-center gap-2">
@@ -58,9 +58,8 @@ export function Footer() {
                 <MapPin className="w-4 h-4 text-brand-500" />
                 <span>Dordrecht, Nederland</span>
               </div>
-              {/* TODO: Vervang met echte KVK- en BTW-nummers */}
-              <p className="text-xs text-dark-500 mt-3">KVK: 12345678</p>
-              <p className="text-xs text-dark-500">BTW: NL123456789B01</p>
+              <p className="text-xs text-dark-500 mt-3">KVK: 42000761</p>
+              <p className="text-xs text-dark-500">BTW: NL005424960B92</p>
             </div>
           </div>
 
@@ -86,7 +85,7 @@ export function Footer() {
 
         <div className="border-t border-dark-800 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
           <p>
-            © {currentYear} Arka — Dordrecht, Nederland
+            © {currentYear} Arka · Dordrecht, Nederland
           </p>
           <div className="flex gap-4">
             <Link href="/privacy" className="hover:text-white transition-colors">

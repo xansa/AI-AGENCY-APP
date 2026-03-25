@@ -32,7 +32,7 @@ export default function AlgemeneVoorwaardenPage() {
           <div className="space-y-10 text-dark-700 leading-relaxed">
             <div>
               <h2 className="text-xl font-bold text-dark-900 mb-3">
-                Artikel 1 — Definities
+                Artikel 1: Definities
               </h2>
               <ul className="list-disc pl-5 text-sm space-y-1">
                 <li>
@@ -58,7 +58,7 @@ export default function AlgemeneVoorwaardenPage() {
 
             <div>
               <h2 className="text-xl font-bold text-dark-900 mb-3">
-                Artikel 2 — Toepasselijkheid
+                Artikel 2: Toepasselijkheid
               </h2>
               <p className="text-sm">
                 Deze voorwaarden zijn van toepassing op alle offertes,
@@ -71,7 +71,7 @@ export default function AlgemeneVoorwaardenPage() {
 
             <div>
               <h2 className="text-xl font-bold text-dark-900 mb-3">
-                Artikel 3 — Offertes en overeenkomsten
+                Artikel 3: Offertes en overeenkomsten
               </h2>
               <ul className="list-disc pl-5 text-sm space-y-1">
                 <li>
@@ -91,7 +91,7 @@ export default function AlgemeneVoorwaardenPage() {
 
             <div>
               <h2 className="text-xl font-bold text-dark-900 mb-3">
-                Artikel 4 — Prijzen en betaling
+                Artikel 4: Prijzen en betaling
               </h2>
               <ul className="list-disc pl-5 text-sm space-y-1">
                 <li>
@@ -118,7 +118,7 @@ export default function AlgemeneVoorwaardenPage() {
 
             <div>
               <h2 className="text-xl font-bold text-dark-900 mb-3">
-                Artikel 5 — Uitvoering van werkzaamheden
+                Artikel 5: Uitvoering van werkzaamheden
               </h2>
               <ul className="list-disc pl-5 text-sm space-y-1">
                 <li>
@@ -142,7 +142,7 @@ export default function AlgemeneVoorwaardenPage() {
 
             <div>
               <h2 className="text-xl font-bold text-dark-900 mb-3">
-                Artikel 6 — Intellectueel eigendom
+                Artikel 6: Intellectueel eigendom
               </h2>
               <ul className="list-disc pl-5 text-sm space-y-1">
                 <li>
@@ -163,7 +163,7 @@ export default function AlgemeneVoorwaardenPage() {
 
             <div>
               <h2 className="text-xl font-bold text-dark-900 mb-3">
-                Artikel 7 — Aansprakelijkheid
+                Artikel 7: Aansprakelijkheid
               </h2>
               <ul className="list-disc pl-5 text-sm space-y-1">
                 <li>
@@ -188,7 +188,7 @@ export default function AlgemeneVoorwaardenPage() {
 
             <div>
               <h2 className="text-xl font-bold text-dark-900 mb-3">
-                Artikel 8 — Opzegging
+                Artikel 8: Opzegging
               </h2>
               <ul className="list-disc pl-5 text-sm space-y-1">
                 <li>
@@ -213,7 +213,7 @@ export default function AlgemeneVoorwaardenPage() {
 
             <div>
               <h2 className="text-xl font-bold text-dark-900 mb-3">
-                Artikel 9 — Overmacht
+                Artikel 9: Overmacht
               </h2>
               <p className="text-sm">
                 In geval van overmacht (waaronder storingen bij derden,
@@ -226,7 +226,7 @@ export default function AlgemeneVoorwaardenPage() {
 
             <div>
               <h2 className="text-xl font-bold text-dark-900 mb-3">
-                Artikel 10 — Toepasselijk recht
+                Artikel 10: Toepasselijk recht
               </h2>
               <p className="text-sm">
                 Op alle overeenkomsten tussen Arka en de opdrachtgever is
@@ -239,10 +239,10 @@ export default function AlgemeneVoorwaardenPage() {
               <p className="text-sm text-dark-500">
                 Vragen over deze voorwaarden? Neem contact op via{" "}
                 <a
-                  href="mailto:arkaecom@proton.me"
+                  href="mailto:info@arkadigital.nl"
                   className="text-brand-600 hover:underline"
                 >
-                  arkaecom@proton.me
+                  info@arkadigital.nl
                 </a>
                 .
               </p>

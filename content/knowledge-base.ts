@@ -15,17 +15,17 @@ export const KB_COMPANY = `
 ## Over Arka
 
 Arka is een digitaal bureau gevestigd in Dordrecht, Nederland. Opgericht en gerund door
-één persoon die alles zelf doet — van websites en branding tot AI-chatbots en dashboards.
+één persoon die alles zelf doet, van websites en branding tot AI-chatbots en dashboards.
 
-**Tagline:** Jouw digitale afdeling, zonder de overhead.
+**Tagline:** Jouw digitale afdeling, zonder de overhead
 
 **Wat Arka doet:**
-- Websites & Webshops — custom design, development, hosting
-- SEO & Content — zoekmachine optimalisatie, blogartikelen, LinkedIn content
-- AI Chatbots & Automatisering — slimme chatbots, workflow automatisering
-- Dashboards & Data — KPI-dashboards, rapportage, data-integraties
-- Lead Generation — outbound campagnes, funnels, CRM-optimalisatie
-- Branding & Design — visuele identiteit, UI/UX design, brand guidelines
+- Websites & Webshops: custom design, development, hosting
+- SEO & Content: zoekmachine optimalisatie, blogartikelen, LinkedIn content
+- AI Chatbots & Automatisering: slimme chatbots, workflow automatisering
+- Dashboards & Data: KPI-dashboards, rapportage, data-integraties
+- Lead Generation: outbound campagnes, funnels, CRM-optimalisatie
+- Branding & Design: visuele identiteit, UI/UX design, brand guidelines
 
 **Voor wie:**
 - MKB-bedrijven en ZZP'ers die hun digitale aanwezigheid willen professionaliseren
@@ -34,15 +34,15 @@ Arka is een digitaal bureau gevestigd in Dordrecht, Nederland. Opgericht en geru
 - Lokale ondernemers in de regio Dordrecht en daarbuiten
 
 **Contactgegevens:**
-- E-mail: arkaecom@proton.me
+- E-mail: info@arkadigital.nl
 - Telefoon: +31 6 46410986
 - Locatie: Dordrecht, Nederland
 - Offerte aanvragen: /offerte
 
 **Wat maakt Arka anders?**
-1. Je werkt direct met de persoon die het werk doet — geen tussenlagen of juniors
-2. De breedte van een compleet digitaal team — zonder de overhead
-3. Alles is meetbaar — elke actie is gekoppeld aan een concreet resultaat
+1. Je werkt direct met de persoon die het werk doet, geen tussenlagen of juniors
+2. De breedte van een compleet digitaal team, zonder de overhead
+3. Alles is meetbaar: elke actie is gekoppeld aan een concreet resultaat
 `;
 
 // ─── Diensten ────────────────────────────────────────────────────────────────
@@ -50,7 +50,7 @@ Arka is een digitaal bureau gevestigd in Dordrecht, Nederland. Opgericht en geru
 export const KB_SERVICES = `
 ## Diensten
 
-### 1. Websites & Webshops — Jouw professionele online aanwezigheid
+### 1. Websites & Webshops: Jouw professionele online aanwezigheid
 Custom design, development en hosting van websites en webshops die er niet alleen
 mooi uitzien, maar ook snel laden en converteren.
 
@@ -66,7 +66,7 @@ Ideaal voor: MKB en ZZP'ers die een professionele website nodig hebben.
 
 ---
 
-### 2. SEO & Content — Word gevonden door de juiste mensen
+### 2. SEO & Content: Word gevonden door de juiste mensen
 Zoekmachine optimalisatie, blogartikelen en LinkedIn content die ervoor zorgen
 dat jouw bedrijf online beter gevonden wordt.
 
@@ -82,7 +82,7 @@ Ideaal voor: Bedrijven die online beter gevonden willen worden.
 
 ---
 
-### 3. AI Chatbots & Automatisering — Slimmer werken met AI
+### 3. AI Chatbots & Automatisering: Slimmer werken met AI
 Slimme chatbots, workflow automatisering en AI-integraties die jouw processen
 versnellen en je klanten 24/7 helpen.
 
@@ -97,7 +97,7 @@ Ideaal voor: Bedrijven die klantenservice en processen willen automatiseren.
 
 ---
 
-### 4. Dashboards & Data — Grip op jouw bedrijfsprestaties
+### 4. Dashboards & Data: Grip op jouw bedrijfsprestaties
 KPI-dashboards, rapportage en data-integraties die je inzicht geven in wat er
 echt speelt in je bedrijf.
 
@@ -112,7 +112,7 @@ Ideaal voor: Bedrijven die grip willen op hun data en KPI's.
 
 ---
 
-### 5. Lead Generation — Structureel meer kwalitatieve leads
+### 5. Lead Generation: Structureel meer kwalitatieve leads
 Outbound campagnes, funnels en CRM-optimalisatie die zorgen voor een
 voorspelbare stroom aan nieuwe leads.
 
@@ -127,7 +127,7 @@ Ideaal voor: B2B-bedrijven die structureel meer leads willen genereren.
 
 ---
 
-### 6. Branding & Design — Een merk dat blijft hangen
+### 6. Branding & Design: Een merk dat blijft hangen
 Visuele identiteit, UI/UX design en brand guidelines die ervoor zorgen dat
 jouw merk professioneel en consistent overkomt.
 
@@ -148,32 +148,32 @@ export const KB_PACKAGES = `
 
 Arka biedt twee modellen: eenmalig (projectbasis) of maandelijks (doorlopende samenwerking).
 
-### Maandelijks (aanbevolen — jouw digitale afdeling)
+### Maandelijks (aanbevolen: jouw digitale afdeling)
 
-**Starter** — €1.000–€1.500/mnd (€500 onboarding)
+**Starter** · €1.000–€1.500/mnd (€500 onboarding)
 Diensten: Websites & Webshops + SEO & Content
 Min. commitment: 3 maanden
 Inbegrepen: website bouw, hosting, onderhoud, SEO, content updates, rapportage, support
 
-**Professional** ⭐ Meest gekozen — €2.750–€3.500/mnd (€750 onboarding)
+**Professional** ⭐ Meest gekozen · €2.750–€3.500/mnd (€750 onboarding)
 Diensten: Websites & Webshops + SEO & Content + AI Chatbots + Branding
 Min. commitment: 6 maanden
 Inbegrepen: custom website + chatbot, brand identity, 8 LinkedIn posts + 2 blogs/mnd, strategie sessie, CRO
 
-**Enterprise** — €5.000–€8.000/mnd (€1.000 onboarding)
+**Enterprise** · €5.000–€8.000/mnd (€1.000 onboarding)
 Diensten: Alle 6 diensten
 Min. commitment: 6 maanden
 Inbegrepen: alles uit Professional + dashboards, lead gen, automatisering, dedicated support (< 4u reactie)
 
-### Eenmalig (projectbasis — je koopt een product)
+### Eenmalig (projectbasis: je koopt een product)
 
-**Starter** — €1.800–€3.500
+**Starter** · €1.800–€3.500
 Website + basis SEO + 3 social templates. Oplevering in 2–4 weken. 30 dagen bugfixes.
 
-**Professional** — €5.500–€9.000
+**Professional** · €5.500–€9.000
 Custom website + chatbot + brand identity + 5 social templates. Oplevering in 4–6 weken.
 
-**Enterprise** — €14.000–€25.000
+**Enterprise** · €14.000–€25.000
 Alles + dashboards + CRM-integratie + lead funnel. Oplevering in 6–10 weken.
 
 Na oplevering: wijzigingen op uurbasis (€95/uur).
@@ -187,7 +187,7 @@ export const KB_FAQ = `
 **Wat kost het?**
 Maandelijks: Starter €1.000–€1.500/mnd | Professional €2.750–€3.500/mnd | Enterprise €5.000–€8.000/mnd
 Eenmalig: Starter €1.800–€3.500 | Professional €5.500–€9.000 | Enterprise €14.000–€25.000
-Maandelijks is de beste deal — je krijgt doorlopende optimalisatie, content, support en rapportage.
+Maandelijks is de beste deal: je krijgt doorlopende optimalisatie, content, support en rapportage.
 
 **Kan ik stoppen wanneer ik wil?**
 Starter en Professional: minimaal 3 maanden, daarna maandelijks opzegbaar.
@@ -195,7 +195,7 @@ Enterprise: minimaal 6 maanden, daarna per kwartaal opzegbaar.
 Geen verborgen kosten of opzegboetes.
 
 **Garanderen jullie resultaten?**
-Nee — en pas op voor partijen die dat wel doen. Resultaten hangen af van jouw markt,
+Nee, en pas op voor partijen die dat wel doen. Resultaten hangen af van jouw markt,
 product en timing. Wel gegarandeerd: volledige transparantie, maandelijkse rapportages,
 en dooroptimaliseren totdat het werkt.
 
@@ -223,13 +223,13 @@ Week 4: review, feedback en bijsturing
 Daarna: maandelijks ritme met vaste check-ins
 
 **Wat maakt Arka anders?**
-1. Je werkt direct met de persoon die het werk doet — geen tussenlagen
-2. De breedte van een compleet digitaal team — zonder de overhead
-3. Alles is meetbaar — elke actie is gekoppeld aan een concreet resultaat
+1. Je werkt direct met de persoon die het werk doet, geen tussenlagen
+2. De breedte van een compleet digitaal team, zonder de overhead
+3. Alles is meetbaar: elke actie is gekoppeld aan een concreet resultaat
 
 **Kan ik eerst iets kleins proberen?**
 Ja, neem contact op voor een gratis kennismakingsgesprek. Geen verplichting.
-Mail: arkaecom@proton.me | Bel: +31 6 46410986
+Mail: info@arkadigital.nl | Bel: +31 6 46410986
 
 **Hoe bereikbaar is Arka?**
 Direct via e-mail, telefoon of een gezamenlijk communicatiekanaal.
@@ -250,7 +250,7 @@ Na 3 maanden zonder fit: samenwerking beëindigen in goed overleg, alles overdra
 export const KB_CASES = `
 ## Klantresultaten & Cases
 
-### Brasserie De Haven — Horeca — Starter pakket (3 maanden)
+### Brasserie De Haven · Horeca · Starter pakket (3 maanden)
 Uitdaging: Verouderde website, nauwelijks vindbaar op Google, reserveringen liepen mis.
 Aanpak: Nieuwe website met online reserveringssysteem, lokale SEO-optimalisatie,
 maandelijkse blogartikelen over lokale evenementen en seizoensmenu's.
@@ -259,9 +259,9 @@ Resultaten:
 - +160% meer online reserveringen
 - Top 3 Google positie voor 'restaurant Dordrecht'
 "Onze nieuwe website ziet er fantastisch uit en we merken direct het verschil."
-— Lisa Jansen, Eigenaar Brasserie De Haven
+– Lisa Jansen, Eigenaar Brasserie De Haven
 
-### Visser & Partners Consultancy — Zakelijke dienstverlening — Professional pakket (4 maanden)
+### Visser & Partners Consultancy · Zakelijke dienstverlening · Professional pakket (4 maanden)
 Uitdaging: Te veel tijd aan repetitieve vragen, handmatig intake-proces, leads vielen weg.
 Aanpak: AI-chatbot voor veelgestelde vragen en lead kwalificatie, CRM-automatisering,
 vernieuwde website met professionele branding.
@@ -270,9 +270,9 @@ Resultaten:
 - +75% meer gekwalificeerde leads
 - 15 uur/week tijdsbesparing
 "De chatbot voelt alsof we er een extra medewerker bij hebben."
-— Robert Visser, Managing Partner Visser & Partners Consultancy
+– Robert Visser, Managing Partner Visser & Partners Consultancy
 
-### MaasLogistics B.V. — Logistiek & Transport — Enterprise pakket (6 maanden)
+### MaasLogistics B.V. · Logistiek & Transport · Enterprise pakket (6 maanden)
 Uitdaging: Geen inzicht in bedrijfsprestaties, verouderde website, geen structurele acquisitie.
 Aanpak: Nieuwe website, KPI-dashboards, lead generation campagnes via email en LinkedIn,
 proces automatisering voor offertes en klantcommunicatie.
@@ -281,7 +281,7 @@ Resultaten:
 - Offertetijd: 3 dagen → 3 uur
 - Van maandelijkse Excel-rapportages naar real-time KPI-dashboards
 "Arka heeft ons bedrijf naar een ander niveau getild. We hebben eindelijk grip op
-onze cijfers." — Dennis van der Maas, Directeur MaasLogistics B.V.
+onze cijfers." – Dennis van der Maas, Directeur MaasLogistics B.V.
 `;
 
 // ─── Volledige kennisbank (voor systeemprompt) ───────────────────────────────

@@ -47,7 +47,7 @@ Een AI-chatbot hoeft niet duur te zijn. Bij Arka bouwen we chatbots die naadloos
 
 **De volgende stap**
 
-Benieuwd wat een AI-chatbot voor jouw bedrijf kan betekenen? We denken graag vrijblijvend mee. Neem contact op via arkaecom@proton.me of plan direct een kennismakingsgesprek.`,
+Benieuwd wat een AI-chatbot voor jouw bedrijf kan betekenen? We denken graag vrijblijvend mee. Neem contact op via info@arkadigital.nl of plan direct een kennismakingsgesprek.`,
     author: "Arka",
     publishedAt: "2026-03-20",
     tags: ["AI", "Chatbots", "MKB", "Automatisering"],
@@ -94,7 +94,7 @@ Zorg dat je eigenaar bent van je website, je domein en je data. Vermijd platform
 
 Een goede website is geen kostenpost, het is een investering. Met de juiste aanpak wordt je website je hardst werkende medewerker \u2014 24 uur per dag, 7 dagen per week.
 
-Hulp nodig? Neem contact op via arkaecom@proton.me.`,
+Hulp nodig? Neem contact op via info@arkadigital.nl.`,
     author: "Arka",
     publishedAt: "2026-03-15",
     tags: ["Websites", "Tips", "MKB"],

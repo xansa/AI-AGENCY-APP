@@ -56,7 +56,7 @@ export default function CasesPage() {
                   <blockquote className="border-l-2 border-brand-300 pl-4 italic text-dark-600">
                     &ldquo;{c.testimonial.quote}&rdquo;
                     <footer className="text-sm text-dark-400 mt-2 not-italic">
-                      — {c.testimonial.author}, {c.testimonial.role}
+                      – {c.testimonial.author}, {c.testimonial.role}
                     </footer>
                   </blockquote>
                 </div>

@@ -12,7 +12,7 @@ export default function NotFound() {
           Pagina niet gevonden
         </h1>
         <p className="text-dark-400 max-w-md mx-auto mb-8 leading-relaxed">
-          De pagina die je zoekt bestaat niet of is verplaatst. Geen zorgen —
+          De pagina die je zoekt bestaat niet of is verplaatst. Geen zorgen,
           hieronder vind je de weg terug.
         </p>
         <Button href="/" size="lg">

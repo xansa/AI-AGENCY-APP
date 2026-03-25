@@ -18,7 +18,7 @@ There are no automated tests in this project.
 
 ## Stack
 
-Next.js 14 App Router · TypeScript · Tailwind CSS · Framer Motion · react-hook-form + Zod · Resend · Supabase · Anthropic SDK. All UI copy is in **Dutch**.
+Next.js 14 App Router · TypeScript · Tailwind CSS · Framer Motion · react-hook-form + Zod · Resend · Supabase · Anthropic SDK · HubSpot CRM. All UI copy is in **Dutch**.
 
 ---
 
@@ -93,7 +93,7 @@ All form schemas (contact, offerte, chat) are defined once with Zod and shared b
 
 ### 7. Lazy singletons for optional services
 
-Both Resend (`lib/mailer.ts`) and Supabase (`lib/supabase.ts`) are initialized only when their env vars are present. This allows `npm run build` and local dev to succeed without any keys configured. The pattern:
+Resend (`lib/mailer.ts`), Supabase (`lib/supabase.ts`), and HubSpot (`lib/hubspot.ts`) are initialized only when their env vars are present. This allows `npm run build` and local dev to succeed without any keys configured. The pattern:
 
 ```typescript
 let _client: Client | null = null;
@@ -145,6 +145,7 @@ Copy `.env.example` to `.env.local`. Only `ANTHROPIC_API_KEY` is required for th
 | `NEXT_PUBLIC_SUPABASE_URL` | No | Lead/chat log storage |
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | No | Supabase public key |
 | `SUPABASE_SERVICE_ROLE_KEY` | No | Supabase admin key |
+| `HUBSPOT_ACCESS_TOKEN` | No | HubSpot CRM (contacts + deals) |
 | `NEXT_PUBLIC_SITE_URL` | No | Canonical URL for OG tags |
 | `NEXT_PUBLIC_CALENDLY_URL` | No | Calendly intake link |
 
@@ -155,11 +156,16 @@ Copy `.env.example` to `.env.local`. Only `ANTHROPIC_API_KEY` is required for th
 - **Name:** Arka
 - **Tagline:** "Jouw digitale afdeling, zonder de overhead."
 - **Location:** Dordrecht, Nederland
-- **Email:** arkaecom@proton.me
+- **Email:** info@arkadigital.nl
 - **Phone:** +31 6 46410986
+- **BTW:** NL005424960B92
+- **KVK:** 42000761
 - **Structure:** Solo operation
 - **Services:** Websites & Webshops, SEO & Content, AI Chatbots & Automatisering, Dashboards & Data, Lead Generation, Branding & Design
-- **Packages:** Starter (€800–€1.500), Professional (€2.500–€3.500), Enterprise (€4.500–€8.000)
+- **Packages:**
+  - Starter: Maandelijks €1.000–€1.500/mnd (€500 onboarding), Eenmalig €1.800–€3.500
+  - Professional: Maandelijks €2.750–€3.500/mnd (€750 onboarding), Eenmalig €5.500–€9.000
+  - Enterprise: Maandelijks €5.000–€8.000/mnd (€1.000 onboarding), Eenmalig €14.000–€25.000
 
 ## Deployment
 
@@ -167,11 +173,11 @@ Copy `.env.example` to `.env.local`. Only `ANTHROPIC_API_KEY` is required for th
 - **Domain:** `arkadigital.nl` (live, DNS at TransIP, A records → `76.76.21.21`)
 - **www redirect:** `www.arkadigital.nl` → 308 redirect to `arkadigital.nl`
 - **Production URL:** `arka-tan.vercel.app` (Vercel default subdomain)
-- `metadataBase` in `app/layout.tsx` references `arka.nl` via `NEXT_PUBLIC_SITE_URL`; update this to `arkadigital.nl`
+- `metadataBase` in `app/layout.tsx` uses `arkadigital.nl` via `NEXT_PUBLIC_SITE_URL`
 
 ## Known constraints
 
 - `next.config.mjs` — Next.js 14.2.5 does not support `next.config.ts`; keep it as `.mjs` with JSDoc types
 - No test framework is configured
 - `.env.example` is missing `CLAUDE_MODEL` — it still works (defaults to `claude-3-5-haiku-20241022`)
-- `NEXT_PUBLIC_SITE_URL` in `.env.example` and the `metadataBase` fallback in `app/layout.tsx` still reference `arka.nl` — should be updated to `arkadigital.nl`
+- `.env.example` may still reference `arka.nl` for `NEXT_PUBLIC_SITE_URL` — production and `app/layout.tsx` already use `arkadigital.nl`

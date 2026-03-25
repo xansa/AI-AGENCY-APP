@@ -1,3 +1,4 @@
+import { upsertContact, createDeal } from "@/lib/hubspot";
 import { sendConfirmationEmail, sendOfferteEmail } from "@/lib/mailer";
 import { rateLimit, getClientIp } from "@/lib/rate-limit";
 import { saveLead } from "@/lib/supabase";
@@ -31,6 +32,23 @@ export async function POST(req: NextRequest) {
     if (data._hp) {
       return NextResponse.json({ success: true });
     }
+
+    // Fire-and-forget: push to HubSpot CRM (contact + deal)
+    (async () => {
+      const contactId = await upsertContact({
+        email: data.email,
+        naam: data.naam,
+        bedrijf: data.bedrijf,
+        telefoon: data.telefoon,
+        bron: "offerte",
+      });
+      await createDeal({
+        naam: data.naam,
+        bedrijf: data.bedrijf,
+        pakket: data.budget,
+        contactId,
+      });
+    })().catch(console.error);
 
     await Promise.all([
       sendOfferteEmail(data),

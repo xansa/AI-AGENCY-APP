@@ -8,19 +8,19 @@ const reasons = [
     title: "Solo = direct contact",
     description:
       "Geen accountmanagers, geen tussenlagen. Je werkt rechtstreeks met de persoon die het werk doet. Dat is sneller, persoonlijker en efficiënter.",
-    proof: "Elke vraag wordt binnen 48 uur beantwoord — geen doorverwijzingen.",
+    proof: "Elke vraag wordt binnen 48 uur beantwoord, geen doorverwijzingen.",
   },
   {
     title: "Breed inzetbaar, scherp in uitvoering",
     description:
-      "Website, SEO, AI chatbot, dashboard, branding — alles komt samen bij één partner. Geen losse leveranciers die langs elkaar heen werken.",
+      "Website, SEO, AI chatbot, dashboard, branding: alles komt samen bij één partner. Geen losse leveranciers die langs elkaar heen werken.",
     proof: "Zes disciplines onder één dak: van design tot data.",
   },
   {
     title: "Geen overhead, wel resultaat",
     description:
       "Zonder duur kantoor, management en overhead kan Arka scherper prijzen en sneller leveren. Je betaalt voor waarde, niet voor structuur.",
-    proof: "Pakketten vanaf €1.000/mnd — een fractie van een inhouse team.",
+    proof: "Pakketten vanaf €1.000/mnd, een fractie van een inhouse team.",
   },
 ];
 
@@ -42,7 +42,7 @@ export function WhyItWorksSection() {
             De voordelen van één digitale partner
           </h2>
           <p className="mt-4 text-dark-400 leading-relaxed">
-            Geen groot bureau nodig. Met Arka heb je alles wat je nodig hebt — persoonlijk, snel en zonder poespas.
+            Geen groot bureau nodig. Met Arka heb je alles wat je nodig hebt: persoonlijk, snel en zonder poespas.
           </p>
         </motion.div>
 

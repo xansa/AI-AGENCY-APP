@@ -66,7 +66,7 @@ export function CasesPreviewSection() {
                 "{c.testimonial.quote.slice(0, 100)}..."
               </blockquote>
               <p className="text-xs text-dark-400 mt-2">
-                — {c.testimonial.author}, {c.testimonial.role}
+                – {c.testimonial.author}, {c.testimonial.role}
               </p>
             </motion.div>
           ))}

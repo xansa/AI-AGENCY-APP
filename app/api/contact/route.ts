@@ -1,3 +1,4 @@
+import { upsertContact, createNote } from "@/lib/hubspot";
 import { sendConfirmationEmail, sendContactEmail } from "@/lib/mailer";
 import { rateLimit, getClientIp } from "@/lib/rate-limit";
 import { saveLead } from "@/lib/supabase";
@@ -31,6 +32,21 @@ export async function POST(req: NextRequest) {
     if (data.website_url) {
       return NextResponse.json({ success: true });
     }
+
+    // Fire-and-forget: push to HubSpot CRM
+    (async () => {
+      const contactId = await upsertContact({
+        email: data.email,
+        naam: data.naam,
+        bedrijf: data.bedrijf,
+        telefoon: data.telefoon,
+        bron: "contact",
+      });
+      await createNote(
+        `Contactformulier:\n\n${data.bericht}`,
+        contactId
+      );
+    })().catch(console.error);
 
     await Promise.all([
       sendContactEmail(data),

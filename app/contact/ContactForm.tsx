@@ -13,7 +13,7 @@ const CALENDLY_URL =
   process.env.NEXT_PUBLIC_CALENDLY_URL ?? "https://calendly.com/arkaecom-proton/30min";
 
 const contactDetails = [
-  { icon: Mail, label: "arkaecom@proton.me", href: "mailto:arkaecom@proton.me" },
+  { icon: Mail, label: "info@arkadigital.nl", href: "mailto:info@arkadigital.nl" },
   { icon: Phone, label: "+31 6 46410986", href: "tel:+31646410986" },
   { icon: MapPin, label: "Dordrecht, Nederland", href: null },
 ] as const;

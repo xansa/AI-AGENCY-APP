@@ -43,9 +43,9 @@ const INTENTS: IntentDefinition[] = [
     response:
       "Arka biedt twee modellen: **maandelijks** (doorlopende samenwerking) of **eenmalig** (project).\n\n" +
       "**Maandelijks (aanbevolen):**\n" +
-      "\u2022 **Starter** \u2014 \u20AC1.000\u2013\u20AC1.500/mnd _(Websites + SEO)_\n" +
-      "\u2022 **Professional** \u2014 \u20AC2.750\u2013\u20AC3.500/mnd _(+ AI Chatbots + Branding)_ Meest gekozen\n" +
-      "\u2022 **Enterprise** \u2014 \u20AC5.000\u2013\u20AC8.000/mnd _(alle 6 diensten)_\n\n" +
+      "\u2022 **Starter** · \u20AC1.000\u2013\u20AC1.500/mnd _(Websites + SEO)_\n" +
+      "\u2022 **Professional** · \u20AC2.750\u2013\u20AC3.500/mnd _(+ AI Chatbots + Branding)_ Meest gekozen\n" +
+      "\u2022 **Enterprise** · \u20AC5.000\u2013\u20AC8.000/mnd _(alle 6 diensten)_\n\n" +
       "**Eenmalig:** Starter vanaf \u20AC1.800 | Professional vanaf \u20AC5.500 | Enterprise vanaf \u20AC14.000\n\n" +
       "Wil je weten welk pakket het beste bij jouw situatie past?",
     cta: "Vraag een vrijblijvende offerte aan via [/offerte](/offerte) of plan een kennismakingsgesprek.",
@@ -61,12 +61,12 @@ const INTENTS: IntentDefinition[] = [
     boostKeywords: ["overzicht", "alle", "welke"],
     response:
       "Arka biedt **6 digitale diensten** aan:\n\n" +
-      "1. **Websites & Webshops** \u2014 professionele websites die snel laden en converteren\n" +
-      "2. **SEO & Content** \u2014 beter gevonden worden op Google en LinkedIn\n" +
-      "3. **AI Chatbots & Automatisering** \u2014 slimmer werken met AI\n" +
-      "4. **Dashboards & Data** \u2014 grip op je bedrijfsprestaties\n" +
-      "5. **Lead Generation** \u2014 structureel meer kwalitatieve leads\n" +
-      "6. **Branding & Design** \u2014 een merk dat blijft hangen\n\n" +
+      "1. **Websites & Webshops** · professionele websites die snel laden en converteren\n" +
+      "2. **SEO & Content** · beter gevonden worden op Google en LinkedIn\n" +
+      "3. **AI Chatbots & Automatisering** · slimmer werken met AI\n" +
+      "4. **Dashboards & Data** · grip op je bedrijfsprestaties\n" +
+      "5. **Lead Generation** · structureel meer kwalitatieve leads\n" +
+      "6. **Branding & Design** · een merk dat blijft hangen\n\n" +
       "We bundelen deze diensten in **packages** (Starter, Professional, Enterprise). Welke uitdaging is voor jou het meest urgent?",
   },
 
@@ -79,7 +79,7 @@ const INTENTS: IntentDefinition[] = [
       "nieuwe website", "website laten maken",
     ],
     response:
-      "**Websites & Webshops** \u2014 jouw professionele online aanwezigheid.\n\n" +
+      "**Websites & Webshops**: jouw professionele online aanwezigheid.\n\n" +
       "Arka ontwerpt en bouwt websites die er niet alleen mooi uitzien, maar ook snel laden en converteren:\n" +
       "\u2022 Responsive design voor alle apparaten\n" +
       "\u2022 CMS-integratie zodat je zelf content kunt beheren\n" +
@@ -98,7 +98,7 @@ const INTENTS: IntentDefinition[] = [
       "organisch verkeer", "keyword",
     ],
     response:
-      "**SEO & Content** \u2014 word gevonden door de juiste mensen.\n\n" +
+      "**SEO & Content**: word gevonden door de juiste mensen.\n\n" +
       "Arka zorgt ervoor dat jouw bedrijf online beter gevonden wordt:\n" +
       "\u2022 Technische SEO audit\n" +
       "\u2022 Keyword research\n" +
@@ -117,7 +117,7 @@ const INTENTS: IntentDefinition[] = [
       "make", "zapier", "n8n", "repetitief werk",
     ],
     response:
-      "**AI Chatbots & Automatisering** \u2014 slimmer werken met AI.\n\n" +
+      "**AI Chatbots & Automatisering**: slimmer werken met AI.\n\n" +
       "Arka bouwt slimme chatbots en automatiseringen die jouw processen versnellen:\n" +
       "\u2022 Custom AI chatbot voor je website\n" +
       "\u2022 Proces automatisering\n" +
@@ -134,7 +134,7 @@ const INTENTS: IntentDefinition[] = [
       "inzicht", "analytics", "api", "integratie",
     ],
     response:
-      "**Dashboards & Data** \u2014 grip op jouw bedrijfsprestaties.\n\n" +
+      "**Dashboards & Data**: grip op jouw bedrijfsprestaties.\n\n" +
       "Arka bouwt dashboards die je real-time inzicht geven:\n" +
       "\u2022 Custom dashboard development\n" +
       "\u2022 Data pipeline setup\n" +
@@ -152,7 +152,7 @@ const INTENTS: IntentDefinition[] = [
       "nieuwe klanten vinden",
     ],
     response:
-      "**Lead Generation** \u2014 structureel meer kwalitatieve leads.\n\n" +
+      "**Lead Generation**: structureel meer kwalitatieve leads.\n\n" +
       "Arka bouwt een systeem dat voorspelbaar nieuwe leads genereert:\n" +
       "\u2022 Lead funnel opzet\n" +
       "\u2022 Outbound email campagnes\n" +
@@ -169,7 +169,7 @@ const INTENTS: IntentDefinition[] = [
       "ui", "ux", "merk", "brand", "merkidentiteit",
     ],
     response:
-      "**Branding & Design** \u2014 een merk dat blijft hangen.\n\n" +
+      "**Branding & Design**: een merk dat blijft hangen.\n\n" +
       "Arka zorgt voor een professionele en consistente uitstraling:\n" +
       "\u2022 Logo & huisstijl\n" +
       "\u2022 Brand guidelines\n" +
@@ -245,12 +245,12 @@ const INTENTS: IntentDefinition[] = [
       "verzekerd", "wat als het niet werkt", "risico",
     ],
     response:
-      "Eerlijk antwoord: **nee, ik geef geen resultaatgaranties** \u2014 en pas op voor partijen die dat wel doen.\n\n" +
+      "Eerlijk antwoord: **nee, ik geef geen resultaatgaranties**, en pas op voor partijen die dat wel doen.\n\n" +
       "Wat ik wel garandeer:\n" +
       "\u2022 Volledige transparantie over elke actie\n" +
       "\u2022 Regelmatige rapportages met harde data\n" +
       "\u2022 Dooroptimaliseren totdat het werkt\n" +
-      "\u2022 Als het na 3 maanden echt niet de fit is \u2014 eerlijk gesprek en alles overdragen\n\n" +
+      "\u2022 Als het na 3 maanden echt niet de fit is: eerlijk gesprek en alles overdragen\n\n" +
       "Mijn belang is dat jij resultaten ziet. Daar werk ik het hardst voor.",
   },
 
@@ -263,11 +263,11 @@ const INTENTS: IntentDefinition[] = [
       "contractduur", "verbintenis",
     ],
     response:
-      "Arka werkt met maandelijkse facturen \u2014 **geen jaarcontract, geen verborgen kosten**.\n\n" +
+      "Arka werkt met maandelijkse facturen, **geen jaarcontract, geen verborgen kosten**.\n\n" +
       "Minimale looptijden:\n" +
       "\u2022 **Starter & Professional:** 3 maanden \u2192 daarna maandelijks opzegbaar\n" +
       "\u2022 **Enterprise:** 6 maanden \u2192 daarna per kwartaal opzegbaar\n\n" +
-      "De minimale periode is er zodat ik resultaten kan opbouwen \u2014 niet om je vast te houden.",
+      "De minimale periode is er zodat ik resultaten kan opbouwen, niet om je vast te houden.",
   },
 
   // ── Hoe snel resultaten ───────────────────────────────────────────────────
@@ -283,7 +283,7 @@ const INTENTS: IntentDefinition[] = [
       "\u2022 **AI chatbot/automatisering:** 1\u20132 weken\n" +
       "\u2022 **SEO-resultaten:** 2\u20133 maanden opbouw\n" +
       "\u2022 **Dashboards:** 2\u20133 weken\n\n" +
-      "Ik ben hier eerlijk over \u2014 snelle beloftes zijn onrealistisch.",
+      "Ik ben hier eerlijk over: snelle beloftes zijn onrealistisch.",
   },
 
   // ── Eigendom content / systemen ───────────────────────────────────────────
@@ -312,9 +312,9 @@ const INTENTS: IntentDefinition[] = [
     ],
     response:
       "Het onboardingproces verloopt soepel:\n\n" +
-      "**Week 1** \u2014 Kennismakingsgesprek + strategiesessie\n" +
-      "**Week 2\u20133** \u2014 Opzet en eerste oplevering\n" +
-      "**Week 4** \u2014 Review, feedback en bijsturing\n\n" +
+      "**Week 1**: Kennismakingsgesprek + strategiesessie\n" +
+      "**Week 2\u20133**: Opzet en eerste oplevering\n" +
+      "**Week 4**: Review, feedback en bijsturing\n\n" +
       "Jouw tijdsinvestering: **< 1 uur per week** voor feedback en goedkeuringen.",
     cta: "Klaar om te starten? Plan een kennismakingsgesprek.",
   },
@@ -328,11 +328,11 @@ const INTENTS: IntentDefinition[] = [
     ],
     response:
       "Je kunt Arka op de volgende manieren bereiken:\n\n" +
-      "**E-mail:** arkaecom@proton.me\n" +
+      "**E-mail:** info@arkadigital.nl\n" +
       "**Telefoon:** +31 6 46410986\n" +
       "**Locatie:** Dordrecht, Nederland\n\n" +
       "Of direct een afspraak inplannen:",
-    cta: "[Kennismakingsgesprek plannen](https://calendly.com/arkaecom-proton/30min) \u2014 kies zelf een moment",
+    cta: "[Kennismakingsgesprek plannen](https://calendly.com/arkaecom-proton/30min) · kies zelf een moment",
   },
 
   // ── Kennismaking ────────────────────────────────────────────────────────
@@ -348,7 +348,7 @@ const INTENTS: IntentDefinition[] = [
       "In dit gesprek bespreken we:\n" +
       "\u2022 Jouw huidige situatie en grootste uitdaging\n" +
       "\u2022 Welke aanpak het meest logisch is\n" +
-      "\u2022 Of er een match is \u2014 als niet, zeg ik dat eerlijk\n\n" +
+      "\u2022 Of er een match is. Als niet, zeg ik dat eerlijk\n\n" +
       "Kies zelf een moment:",
     cta: "[Kennismakingsgesprek plannen](https://calendly.com/arkaecom-proton/30min)",
   },
@@ -362,11 +362,11 @@ const INTENTS: IntentDefinition[] = [
     ],
     response:
       "Enkele recente klantresultaten:\n\n" +
-      "**Brasserie De Haven (Horeca)** \u2014 Starter pakket\n" +
+      "**Brasserie De Haven (Horeca)** · Starter pakket\n" +
       "\u2192 +285% organisch verkeer, +160% online reserveringen, top 3 Google\n\n" +
-      "**Visser & Partners (Consultancy)** \u2014 Professional pakket\n" +
+      "**Visser & Partners (Consultancy)** · Professional pakket\n" +
       "\u2192 Responstijd 24u \u2192 2 min, +75% meer leads, 15 uur/week bespaard\n\n" +
-      "**MaasLogistics (Logistiek)** \u2014 Enterprise pakket\n" +
+      "**MaasLogistics (Logistiek)** · Enterprise pakket\n" +
       "\u2192 +\u20AC1,8M omzetpijplijn, offertetijd 3 dgn \u2192 3 uur, real-time dashboards\n\n" +
       "Bekijk de volledige cases op [/cases](/cases).",
   },
@@ -380,7 +380,7 @@ const INTENTS: IntentDefinition[] = [
       "hoe gebruik je ai", "ai tools",
     ],
     response:
-      "Arka gebruikt AI als **werktool** \u2014 niet als vervanging van strategie of menselijk oordeel.\n\n" +
+      "Arka gebruikt AI als **werktool**, niet als vervanging van strategie of menselijk oordeel.\n\n" +
       "Concreet: AI helpt bij development, content creatie, data-analyse en automatisering. " +
       "Alles wordt persoonlijk gereviewed en goedgekeurd.\n\n" +
       "De strategie, het oordeel en de klantrelatie zijn altijd menselijk.",

@@ -7,7 +7,7 @@ const steps = [
     number: "01",
     title: "Gratis kennismaking",
     description:
-      "We bespreken jouw situatie, doelen en uitdagingen. Je ontvangt een eerlijk advies over wat de meeste impact heeft — zonder verplichting.",
+      "We bespreken jouw situatie, doelen en uitdagingen. Je ontvangt een eerlijk advies over wat de meeste impact heeft, zonder verplichting.",
   },
   {
     number: "02",
