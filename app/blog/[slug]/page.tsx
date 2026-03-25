@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { blogPosts } from "@/content/blog";
+import { blogPosts, getPublishedPosts } from "@/content/blog";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { ArrowLeft, Clock } from "lucide-react";
@@ -9,8 +9,11 @@ interface Props {
   params: { slug: string };
 }
 
+export const dynamicParams = true;
+export const revalidate = 3600; // revalidate every hour
+
 export function generateStaticParams() {
-  return blogPosts.map((post) => ({ slug: post.slug }));
+  return getPublishedPosts().map((post) => ({ slug: post.slug }));
 }
 
 export function generateMetadata({ params }: Props): Metadata {
@@ -63,7 +66,8 @@ function renderContent(content: string) {
 }
 
 export default function BlogPostPage({ params }: Props) {
-  const post = blogPosts.find((p) => p.slug === params.slug);
+  const published = getPublishedPosts();
+  const post = published.find((p) => p.slug === params.slug);
   if (!post) notFound();
 
   return (

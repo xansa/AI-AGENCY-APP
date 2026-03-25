@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { blogPosts } from "@/content/blog";
+import { getPublishedPosts } from "@/content/blog";
 import { Badge } from "@/components/ui/Badge";
 import Link from "next/link";
 import { ArrowRight, Clock } from "lucide-react";
@@ -10,7 +10,11 @@ export const metadata: Metadata = {
     "Praktische inzichten over websites, SEO, AI en digitale groei voor MKB-bedrijven.",
 };
 
+export const revalidate = 3600; // revalidate every hour
+
 export default function BlogPage() {
+  const blogPosts = getPublishedPosts();
+
   return (
     <div className="pt-24">
       <section className="bg-dark-950 py-16 lg:py-20">
