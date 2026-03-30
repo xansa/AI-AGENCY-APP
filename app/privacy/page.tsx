@@ -39,7 +39,7 @@ export default function PrivacyPage() {
                 <br />
                 E-mail: info@arkadigital.nl
                 <br />
-                Telefoon: +31 6 46410986
+                Telefoon: +31 6 46140986
               </p>
             </div>
 

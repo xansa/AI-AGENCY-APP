@@ -1,20 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
-
-const stats = [
-  { value: "6", label: "Digitale disciplines" },
-  { value: "100%", label: "Direct contact" },
-  { value: "24u", label: "Reactietijd" },
-  { value: "0", label: "Verborgen kosten" },
-];
+import { useTranslation } from "@/lib/i18n";
 
 export function SocialProofSection() {
+  const { t } = useTranslation();
+
+  const stats = [
+    { value: "6", label: t("social.stat1") },
+    { value: "100%", label: t("social.stat2") },
+    { value: "24u", label: t("social.stat3") },
+    { value: "0", label: t("social.stat4") },
+  ];
   return (
     <section className="bg-dark-900 border-y border-dark-800 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p className="text-center text-dark-400 text-sm font-medium mb-10 uppercase tracking-widest">
-          Eén partner voor al je digitale behoeften
+          {t("social.heading")}
         </p>
 
         {/* Stats */}

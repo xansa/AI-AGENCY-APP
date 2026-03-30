@@ -6,11 +6,13 @@ import { packages } from "@/content/packages";
 import { motion, AnimatePresence } from "framer-motion";
 import { Check, ArrowRight } from "lucide-react";
 import { useState } from "react";
+import { useTranslation } from "@/lib/i18n";
 
 type PricingMode = "maandelijks" | "eenmalig";
 
 export function PackagesPreviewSection() {
-  const [mode, setMode] = useState<PricingMode>("eenmalig");
+  const [mode, setMode] = useState<PricingMode>("maandelijks");
+  const { t } = useTranslation();
 
   return (
     <section className="py-20 lg:py-28 bg-white" id="packages">
@@ -23,13 +25,13 @@ export function PackagesPreviewSection() {
           className="text-center max-w-2xl mx-auto mb-10"
         >
           <p className="text-brand-600 font-semibold text-sm uppercase tracking-wider mb-3">
-            Combipackages
+            {t("packages.label")}
           </p>
           <h2 className="text-3xl lg:text-4xl font-bold text-dark-900">
-            Kies het pakket dat past bij jouw fase
+            {t("packages.heading")}
           </h2>
           <p className="mt-4 text-dark-500">
-            Eenmalig project of doorlopende samenwerking, jij kiest.
+            {t("packages.description")}
           </p>
         </motion.div>
 
@@ -53,7 +55,7 @@ export function PackagesPreviewSection() {
                   : "text-dark-600 hover:text-dark-900"
               }`}
             >
-              Eenmalig
+              {t("packages.eenmalig")}
             </button>
             <button
               onClick={() => setMode("maandelijks")}
@@ -63,7 +65,7 @@ export function PackagesPreviewSection() {
                   : "text-dark-600 hover:text-dark-900"
               }`}
             >
-              Maandelijks
+              {t("packages.maandelijks")}
             </button>
           </div>
         </div>
@@ -91,7 +93,7 @@ export function PackagesPreviewSection() {
                 {pkg.highlighted && (
                   <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
                     <Badge variant="brand" className="px-4">
-                      Meest gekozen
+                      {t("packages.meestGekozen")}
                     </Badge>
                   </div>
                 )}
@@ -119,7 +121,7 @@ export function PackagesPreviewSection() {
                             {pkg.monthlyInvestment}
                           </div>
                           <div className="text-xs text-dark-500 mt-0.5">
-                            + {pkg.onboardingFee} onboarding · {pkg.duration.split(",")[0].toLowerCase()}
+                            + {pkg.onboardingFee} {t("packages.onboarding")} · {pkg.duration.split(",")[0].toLowerCase()}
                           </div>
                         </div>
                       ) : (
@@ -128,7 +130,7 @@ export function PackagesPreviewSection() {
                             {pkg.onetimePrice}
                           </div>
                           <div className="text-xs text-dark-500 mt-0.5">
-                            eenmalige investering
+                            {t("packages.eenmaligeInvestering")}
                           </div>
                         </div>
                       )}
@@ -160,7 +162,7 @@ export function PackagesPreviewSection() {
                     ))}
                     {deliverables.length > 5 && (
                       <li className="text-sm text-dark-400 pl-6">
-                        + {deliverables.length - 5} meer
+                        + {deliverables.length - 5} {t("packages.meer")}
                       </li>
                     )}
                   </motion.ul>
@@ -173,7 +175,7 @@ export function PackagesPreviewSection() {
                     variant={pkg.highlighted ? "primary" : "outline"}
                     className="w-full"
                   >
-                    Vraag offerte aan
+                    {t("packages.offerteAanvragen")}
                   </Button>
                   <Button
                     href={`/packages#${pkg.id}`}
@@ -181,7 +183,7 @@ export function PackagesPreviewSection() {
                     variant="ghost"
                     className="w-full text-dark-500"
                   >
-                    Meer details
+                    {t("packages.meerDetails")}
                     <ArrowRight className="w-3 h-3" />
                   </Button>
                 </div>

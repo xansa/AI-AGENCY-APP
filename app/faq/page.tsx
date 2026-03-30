@@ -7,13 +7,31 @@ import { Button } from "@/components/ui/Button";
 export const metadata: Metadata = {
   title: "FAQ",
   description: "Antwoorden op veelgestelde vragen over onze diensten, contracten en resultaten.",
+  alternates: { canonical: "https://arkadigital.nl/faq" },
 };
 
 const categories = Array.from(new Set(faqItems.map((f) => f.category).filter(Boolean)));
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer,
+    },
+  })),
+};
+
 export default function FAQPage() {
   return (
     <div className="pt-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <section className="bg-dark-950 py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Badge variant="brand" className="bg-brand-900/50 text-brand-300 border-brand-700 mb-4">

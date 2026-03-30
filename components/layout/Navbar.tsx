@@ -2,26 +2,29 @@
 
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
+import { useLanguage, useTranslation, type TranslationKey } from "@/lib/i18n";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X, Zap } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-const navLinks = [
-  { href: "/diensten", label: "Diensten" },
-  { href: "/packages", label: "Packages" },
-  { href: "/cases", label: "Cases" },
-  { href: "/blog", label: "Blog" },
-  { href: "/over-ons", label: "Over ons" },
-  { href: "/faq", label: "FAQ" },
-  { href: "/contact", label: "Contact" },
+const navLinks: { href: string; key: TranslationKey }[] = [
+  { href: "/diensten", key: "nav.diensten" },
+  { href: "/packages", key: "nav.packages" },
+  { href: "/cases", key: "nav.cases" },
+  { href: "/blog", key: "nav.blog" },
+  { href: "/over-ons", key: "nav.overOns" },
+  { href: "/faq", key: "nav.faq" },
+  { href: "/contact", key: "nav.contact" },
 ];
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
+  const { t } = useTranslation();
+  const { locale, setLocale } = useLanguage();
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 20);
@@ -74,15 +77,40 @@ export function Navbar() {
                       : scrolled ? "text-dark-600 hover:text-dark-900 hover:bg-dark-50" : "text-dark-300 hover:text-white hover:bg-white/10"
                   )}
                 >
-                  {link.label}
+                  {t(link.key)}
                 </Link>
               ))}
             </nav>
 
-            {/* CTA */}
+            {/* Language toggle + CTA */}
             <div className="hidden lg:flex items-center gap-3">
+              <div className="flex items-center text-sm font-medium">
+                <button
+                  onClick={() => setLocale("nl")}
+                  className={cn(
+                    "px-1.5 py-1 rounded transition-colors",
+                    locale === "nl"
+                      ? scrolled ? "text-brand-600" : "text-white"
+                      : scrolled ? "text-dark-400 hover:text-dark-600" : "text-dark-500 hover:text-dark-300"
+                  )}
+                >
+                  NL
+                </button>
+                <span className={cn("text-xs", scrolled ? "text-dark-300" : "text-dark-600")}>|</span>
+                <button
+                  onClick={() => setLocale("en")}
+                  className={cn(
+                    "px-1.5 py-1 rounded transition-colors",
+                    locale === "en"
+                      ? scrolled ? "text-brand-600" : "text-white"
+                      : scrolled ? "text-dark-400 hover:text-dark-600" : "text-dark-500 hover:text-dark-300"
+                  )}
+                >
+                  EN
+                </button>
+              </div>
               <Button href="/offerte" size="md" variant="primary">
-                Offerte aanvragen
+                {t("nav.offerte")}
               </Button>
             </div>
 
@@ -93,7 +121,7 @@ export function Navbar() {
                 "lg:hidden p-2 rounded-lg transition-colors",
                 scrolled ? "text-dark-600 hover:text-dark-900 hover:bg-dark-50" : "text-dark-300 hover:text-white hover:bg-white/10"
               )}
-              aria-label="Menu openen"
+              aria-label={t("nav.menuOpen")}
             >
               {mobileOpen ? (
                 <X className="w-5 h-5" />
@@ -116,6 +144,28 @@ export function Navbar() {
             className="fixed inset-0 z-40 bg-white pt-16 lg:hidden"
           >
             <div className="px-4 py-6 space-y-1">
+              {/* Mobile language toggle */}
+              <div className="flex items-center gap-2 px-4 py-2 mb-2">
+                <button
+                  onClick={() => setLocale("nl")}
+                  className={cn(
+                    "px-3 py-1.5 text-sm font-medium rounded-lg transition-colors",
+                    locale === "nl" ? "bg-brand-50 text-brand-600" : "text-dark-500 hover:text-dark-700"
+                  )}
+                >
+                  NL
+                </button>
+                <button
+                  onClick={() => setLocale("en")}
+                  className={cn(
+                    "px-3 py-1.5 text-sm font-medium rounded-lg transition-colors",
+                    locale === "en" ? "bg-brand-50 text-brand-600" : "text-dark-500 hover:text-dark-700"
+                  )}
+                >
+                  EN
+                </button>
+              </div>
+
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
@@ -127,12 +177,12 @@ export function Navbar() {
                       : "text-dark-700 hover:text-dark-900 hover:bg-dark-50"
                   )}
                 >
-                  {link.label}
+                  {t(link.key)}
                 </Link>
               ))}
               <div className="pt-4">
                 <Button href="/offerte" size="lg" className="w-full">
-                  Offerte aanvragen
+                  {t("nav.offerte")}
                 </Button>
               </div>
             </div>

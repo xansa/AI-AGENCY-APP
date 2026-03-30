@@ -329,7 +329,7 @@ const INTENTS: IntentDefinition[] = [
     response:
       "Je kunt Arka op de volgende manieren bereiken:\n\n" +
       "**E-mail:** info@arkadigital.nl\n" +
-      "**Telefoon:** +31 6 46410986\n" +
+      "**Telefoon:** +31 6 46140986\n" +
       "**Locatie:** Dordrecht, Nederland\n\n" +
       "Of direct een afspraak inplannen:",
     cta: "[Kennismakingsgesprek plannen](https://calendly.com/arkaecom-proton/30min) · kies zelf een moment",
@@ -371,17 +371,17 @@ const INTENTS: IntentDefinition[] = [
       "Bekijk de volledige cases op [/cases](/cases).",
   },
 
-  // ── AI & technologie ──────────────────────────────────────────────────────
+  // ── Werkwijze & technologie ─────────────────────────────────────────────
   {
     id: "ai-tech",
     keywords: [
       "kunstmatige intelligentie",
       "chatgpt", "openai", "machine learning", "tooling", "technologie",
-      "hoe gebruik je ai", "ai tools",
+      "hoe werk je", "tools",
     ],
     response:
-      "Arka gebruikt AI als **werktool**, niet als vervanging van strategie of menselijk oordeel.\n\n" +
-      "Concreet: AI helpt bij development, content creatie, data-analyse en automatisering. " +
+      "Arka werkt met **moderne tools en automatisering** om efficiënt te leveren.\n\n" +
+      "Concreet: slimme tooling voor development, content creatie, data-analyse en automatisering. " +
       "Alles wordt persoonlijk gereviewed en goedgekeurd.\n\n" +
       "De strategie, het oordeel en de klantrelatie zijn altijd menselijk.",
   },

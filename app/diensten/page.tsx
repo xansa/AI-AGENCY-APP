@@ -8,6 +8,7 @@ import { ArrowRight, Globe, Search, Bot, BarChart3, Target, Palette, Zap } from 
 export const metadata: Metadata = {
   title: "Diensten",
   description: "Ontdek onze digitale diensten: van websites en SEO tot AI chatbots, dashboards, lead generation en branding.",
+  alternates: { canonical: "https://arkadigital.nl/diensten" },
 };
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {

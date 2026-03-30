@@ -5,8 +5,10 @@ import { Badge } from "@/components/ui/Badge";
 import { cases } from "@/content/cases";
 import { motion } from "framer-motion";
 import { ArrowRight, TrendingUp } from "lucide-react";
+import { useTranslation } from "@/lib/i18n";
 
 export function CasesPreviewSection() {
+  const { t } = useTranslation();
   const previewCases = cases.slice(0, 3);
 
   return (
@@ -21,14 +23,14 @@ export function CasesPreviewSection() {
         >
           <div>
             <p className="text-brand-600 font-semibold text-sm uppercase tracking-wider mb-3">
-              Cases
+              {t("cases.label")}
             </p>
             <h2 className="text-3xl lg:text-4xl font-bold text-dark-900">
-              Resultaten die voor zich spreken
+              {t("cases.heading")}
             </h2>
           </div>
           <Button href="/cases" variant="outline" size="md">
-            Alle cases
+            {t("cases.alleCases")}
             <ArrowRight className="w-4 h-4" />
           </Button>
         </motion.div>

@@ -2,41 +2,38 @@
 
 import { motion } from "framer-motion";
 import { Globe, Search, Clock, BarChart2, Palette } from "lucide-react";
-
-const problems = [
-  {
-    icon: Globe,
-    title: "Geen professionele website",
-    description:
-      "Je website is verouderd, traag of bestaat niet eens. Potentiële klanten haken af voordat ze je leren kennen.",
-  },
-  {
-    icon: Search,
-    title: "Onvindbaar op Google",
-    description:
-      "Je concurrenten staan bovenaan, jij nergens. Zonder SEO en content mis je dagelijks klanten die actief zoeken.",
-  },
-  {
-    icon: Clock,
-    title: "Te veel handmatig werk",
-    description:
-      "Offertes, opvolging, rapportages: alles kost te veel tijd. Terwijl slimme automatisering je uren per week bespaart.",
-  },
-  {
-    icon: BarChart2,
-    title: "Geen inzicht in je cijfers",
-    description:
-      "Je weet niet wat werkt en wat niet. Zonder dashboards en data vlieg je blind en mis je kansen.",
-  },
-  {
-    icon: Palette,
-    title: "Inconsistente uitstraling",
-    description:
-      "Je logo, website en socials vertellen allemaal een ander verhaal. Dat kost je geloofwaardigheid en herkenning.",
-  },
-];
+import { useTranslation } from "@/lib/i18n";
 
 export function ProblemsSection() {
+  const { t } = useTranslation();
+
+  const problems = [
+    {
+      icon: Globe,
+      title: t("problems.1.title"),
+      description: t("problems.1.desc"),
+    },
+    {
+      icon: Search,
+      title: t("problems.2.title"),
+      description: t("problems.2.desc"),
+    },
+    {
+      icon: Clock,
+      title: t("problems.3.title"),
+      description: t("problems.3.desc"),
+    },
+    {
+      icon: BarChart2,
+      title: t("problems.4.title"),
+      description: t("problems.4.desc"),
+    },
+    {
+      icon: Palette,
+      title: t("problems.5.title"),
+      description: t("problems.5.desc"),
+    },
+  ];
   return (
     <section className="py-20 lg:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,13 +45,13 @@ export function ProblemsSection() {
           className="max-w-2xl mb-14"
         >
           <p className="text-brand-600 font-semibold text-sm uppercase tracking-wider mb-3">
-            Herken je dit?
+            {t("problems.label")}
           </p>
           <h2 className="text-3xl lg:text-4xl font-bold text-dark-900">
-            Dit zijn de uitdagingen die digitale groei blokkeren
+            {t("problems.heading")}
           </h2>
           <p className="mt-4 text-dark-500 leading-relaxed">
-            De meeste bedrijven lopen vast op dezelfde obstakels. Niet door gebrek aan inzet, maar door het ontbreken van de juiste digitale basis.
+            {t("problems.description")}
           </p>
         </motion.div>
 

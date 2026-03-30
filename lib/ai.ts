@@ -86,7 +86,7 @@ Gebruik ALLEEN informatie uit deze kennisbank. Verzin geen prijzen, diensten of 
 ## Volgende stap (gebruik exacte URLs)
 - Offerte aanvragen: /offerte
 - Contact: info@arkadigital.nl
-- Telefoon: +31 6 46410986
+- Telefoon: +31 6 46140986
 
 ## Wat je NIET doet
 - Geen informatie verzinnen die niet in de kennisbank staat

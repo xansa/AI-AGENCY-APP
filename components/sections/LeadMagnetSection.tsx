@@ -3,8 +3,11 @@
 import { Button } from "@/components/ui/Button";
 import { motion } from "framer-motion";
 import { Zap, ArrowRight, Calendar } from "lucide-react";
+import { useTranslation } from "@/lib/i18n";
 
 export function LeadMagnetSection() {
+  const { t } = useTranslation();
+
   return (
     <section className="py-20 bg-brand-600">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,16 +20,16 @@ export function LeadMagnetSection() {
         >
           <div className="inline-flex items-center gap-2 bg-white/20 text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
             <Zap className="w-4 h-4" />
-            Gratis kennismaking · geen verplichting
+            {t("lead.badge")}
           </div>
 
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-            Klaar om je digitale aanwezigheid
+            {t("lead.heading1")}
             <br />
-            naar het volgende niveau te tillen?
+            {t("lead.heading2")}
           </h2>
           <p className="text-brand-200 max-w-xl mx-auto mb-10 leading-relaxed">
-            Plan een vrijblijvend gesprek en ontdek wat Arka voor jouw bedrijf kan betekenen. Geen verkooppraatje, gewoon eerlijk advies.
+            {t("lead.description")}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -38,7 +41,7 @@ export function LeadMagnetSection() {
               className="bg-white text-brand-700 hover:bg-brand-50 border-white shadow-lg"
             >
               <Calendar className="w-5 h-5" />
-              Plan gratis kennismaking
+              {t("lead.cta1")}
               <ArrowRight className="w-4 h-4" />
             </Button>
             <Button
@@ -47,7 +50,7 @@ export function LeadMagnetSection() {
               variant="outline"
               className="border-white/40 text-white hover:bg-white/10 hover:border-white/60"
             >
-              Vraag offerte aan
+              {t("lead.cta2")}
             </Button>
           </div>
         </motion.div>

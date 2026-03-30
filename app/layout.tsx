@@ -7,6 +7,7 @@ import { ChatWidget } from "@/components/chat/ChatWidget";
 import { Toaster } from "react-hot-toast";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import { LanguageProvider } from "@/lib/i18n";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -70,7 +71,7 @@ const jsonLd = {
   description:
     "Digitaal bureau in Dordrecht. Websites, SEO, AI chatbots, dashboards, lead generation en branding, alles onder één dak.",
   url: "https://arkadigital.nl",
-  telephone: "+31646410986",
+  telephone: "+31646140986",
   email: "info@arkadigital.nl",
   address: {
     "@type": "PostalAddress",
@@ -110,7 +111,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="nl" className={inter.variable}>
+    <html lang="nl" suppressHydrationWarning className={inter.variable}>
       <head>
         <script
           type="application/ld+json"
@@ -118,6 +119,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <LanguageProvider>
         <Navbar />
         <main>{children}</main>
         <Footer />
@@ -137,6 +139,7 @@ export default function RootLayout({
             },
           }}
         />
+        </LanguageProvider>
         <Analytics />
         <SpeedInsights />
       </body>

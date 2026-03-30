@@ -1,28 +1,32 @@
+"use client";
+
+import { useTranslation } from "@/lib/i18n";
 import { Zap, Mail, Phone, MapPin } from "lucide-react";
 import Link from "next/link";
 
-const footerLinks = {
-  Diensten: [
-    { href: "/diensten/websites-webshops", label: "Websites & Webshops" },
-    { href: "/diensten/seo-content", label: "SEO & Content" },
-    { href: "/diensten/ai-chatbots-automatisering", label: "AI Chatbots & Automatisering" },
-    { href: "/diensten/dashboards-data", label: "Dashboards & Data" },
-    { href: "/diensten/lead-generation", label: "Lead Generation" },
-    { href: "/diensten/branding-design", label: "Branding & Design" },
-  ],
-  Bedrijf: [
-    { href: "/over-ons", label: "Over ons" },
-    { href: "/cases", label: "Cases" },
-    { href: "/packages", label: "Packages" },
-    { href: "/blog", label: "Blog" },
-    { href: "/faq", label: "FAQ" },
-    { href: "/contact", label: "Contact" },
-    { href: "/offerte", label: "Offerte aanvragen" },
-  ],
-};
-
 export function Footer() {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
+
+  const footerLinks = {
+    [t("footer.diensten")]: [
+      { href: "/diensten/websites-webshops", label: "Websites & Webshops" },
+      { href: "/diensten/seo-content", label: "SEO & Content" },
+      { href: "/diensten/ai-chatbots-automatisering", label: "AI Chatbots & Automatisering" },
+      { href: "/diensten/dashboards-data", label: "Dashboards & Data" },
+      { href: "/diensten/lead-generation", label: "Lead Generation" },
+      { href: "/diensten/branding-design", label: "Branding & Design" },
+    ],
+    [t("footer.bedrijf")]: [
+      { href: "/over-ons", label: t("footer.overOns") },
+      { href: "/cases", label: "Cases" },
+      { href: "/packages", label: "Packages" },
+      { href: "/blog", label: "Blog" },
+      { href: "/faq", label: "FAQ" },
+      { href: "/contact", label: "Contact" },
+      { href: "/offerte", label: t("footer.offerte") },
+    ],
+  };
 
   return (
     <footer className="bg-dark-950 text-dark-400">
@@ -39,7 +43,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-dark-400 text-sm leading-relaxed max-w-xs mb-6">
-              Jouw digitale afdeling, zonder de overhead. Websites, SEO, AI chatbots, dashboards, lead generation en branding, alles onder één dak vanuit Dordrecht.
+              {t("footer.tagline")}
             </p>
             <div className="space-y-2 text-sm">
               <div className="flex items-center gap-2">
@@ -50,8 +54,8 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-brand-500" />
-                <a href="tel:+31646410986" className="hover:text-white transition-colors">
-                  +31 6 46410986
+                <a href="tel:+31646140986" className="hover:text-white transition-colors">
+                  +31 6 46140986
                 </a>
               </div>
               <div className="flex items-center gap-2">
@@ -85,14 +89,14 @@ export function Footer() {
 
         <div className="border-t border-dark-800 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
           <p>
-            © {currentYear} Arka · Dordrecht, Nederland
+            &copy; {currentYear} Arka &middot; Dordrecht, Nederland
           </p>
           <div className="flex gap-4">
             <Link href="/privacy" className="hover:text-white transition-colors">
-              Privacy
+              {t("footer.privacy")}
             </Link>
             <Link href="/algemene-voorwaarden" className="hover:text-white transition-colors">
-              Voorwaarden
+              {t("footer.voorwaarden")}
             </Link>
           </div>
         </div>

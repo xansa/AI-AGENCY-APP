@@ -4,8 +4,10 @@ import { Accordion } from "@/components/ui/Accordion";
 import { Button } from "@/components/ui/Button";
 import { faqItems } from "@/content/faq";
 import { motion } from "framer-motion";
+import { useTranslation } from "@/lib/i18n";
 
 export function FAQSection() {
+  const { t } = useTranslation();
   const previewFaq = faqItems.slice(0, 8);
 
   return (
@@ -19,10 +21,10 @@ export function FAQSection() {
           className="text-center mb-12"
         >
           <p className="text-brand-600 font-semibold text-sm uppercase tracking-wider mb-3">
-            FAQ
+            {t("faq.label")}
           </p>
           <h2 className="text-3xl lg:text-4xl font-bold text-dark-900">
-            Veelgestelde vragen
+            {t("faq.heading")}
           </h2>
         </motion.div>
 
@@ -38,7 +40,7 @@ export function FAQSection() {
 
         <div className="text-center">
           <Button href="/faq" variant="outline" size="md">
-            Alle vragen bekijken
+            {t("faq.alleVragen")}
           </Button>
         </div>
       </div>

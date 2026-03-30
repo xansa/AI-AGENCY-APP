@@ -23,6 +23,14 @@ import { NextRequest, NextResponse } from "next/server";
  */
 export async function POST(req: NextRequest) {
   try {
+    const contentType = req.headers.get("content-type");
+    if (!contentType?.includes("application/json")) {
+      return NextResponse.json(
+        { error: "Ongeldig verzoek." },
+        { status: 415 }
+      );
+    }
+
     const ip = getClientIp(req);
     const { success: allowed } = rateLimit(ip, { windowMs: 60_000, max: 20 });
     if (!allowed) {
@@ -37,7 +45,7 @@ export async function POST(req: NextRequest) {
 
     if (!parsed.success) {
       return NextResponse.json(
-        { error: "Ongeldige aanvraag", details: parsed.error.flatten() },
+        { error: "Ongeldige aanvraag." },
         { status: 400 }
       );
     }

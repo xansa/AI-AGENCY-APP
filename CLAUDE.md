@@ -161,7 +161,7 @@ Copy `.env.example` to `.env.local`. Only `ANTHROPIC_API_KEY` is required for th
 - **Tagline:** "Jouw digitale afdeling, zonder de overhead."
 - **Location:** Dordrecht, Nederland
 - **Email:** info@arkadigital.nl
-- **Phone:** +31 6 46410986
+- **Phone:** +31 6 46140986
 - **BTW:** NL005424960B92
 - **KVK:** 42000761
 - **Structure:** Solo operation
@@ -187,6 +187,29 @@ Copy `.env.example` to `.env.local`. Only `ANTHROPIC_API_KEY` is required for th
 ## Structured data
 
 `app/layout.tsx` includes a JSON-LD script with `LocalBusiness` + `ProfessionalService` schema (name, address, geo, services, contact info). Update the `jsonLd` object when company details change.
+
+Additional JSON-LD structured data per pagina:
+- `app/blog/[slug]/page.tsx` — `BlogPosting` schema (headline, author, datePublished, keywords)
+- `app/diensten/[slug]/page.tsx` — `Service` schema (name, description, provider, areaServed)
+- `app/faq/page.tsx` — `FAQPage` schema (all questions + answers for Google rich results)
+
+## SEO
+
+- All pages have `alternates.canonical` URLs pointing to `arkadigital.nl`
+- Blog detail pages have OpenGraph `article` metadata (publishedTime, authors, tags)
+- `app/sitemap.ts` uses `getPublishedPosts()` to only include published blog posts (not future-dated)
+
+## Security headers
+
+`next.config.mjs` sets security headers on all routes:
+- `X-Content-Type-Options: nosniff`
+- `X-Frame-Options: DENY`
+- `X-XSS-Protection: 1; mode=block`
+- `Referrer-Policy: strict-origin-when-cross-origin`
+- `Permissions-Policy: camera=(), microphone=(), geolocation=()`
+- `Strict-Transport-Security: max-age=63072000; includeSubDomains; preload`
+
+API routes validate `Content-Type: application/json` and do not expose Zod validation details to clients. `lib/mailer.ts` escapes all user input with `escapeHtml()` before injection into HTML email templates.
 
 ## Known constraints
 

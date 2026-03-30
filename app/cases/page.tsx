@@ -8,6 +8,7 @@ import { ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "Cases",
   description: "Bekijk onze case studies: concrete resultaten voor onze klanten.",
+  alternates: { canonical: "https://arkadigital.nl/cases" },
 };
 
 export default function CasesPage() {

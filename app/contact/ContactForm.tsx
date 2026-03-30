@@ -14,7 +14,7 @@ const CALENDLY_URL =
 
 const contactDetails = [
   { icon: Mail, label: "info@arkadigital.nl", href: "mailto:info@arkadigital.nl" },
-  { icon: Phone, label: "+31 6 46410986", href: "tel:+31646410986" },
+  { icon: Phone, label: "+31 6 46140986", href: "tel:+31646140986" },
   { icon: MapPin, label: "Dordrecht, Nederland", href: null },
 ] as const;
 

@@ -1,29 +1,29 @@
 "use client";
 
 import { motion } from "framer-motion";
-
-const steps = [
-  {
-    number: "01",
-    title: "Gratis kennismaking",
-    description:
-      "We bespreken jouw situatie, doelen en uitdagingen. Je ontvangt een eerlijk advies over wat de meeste impact heeft, zonder verplichting.",
-  },
-  {
-    number: "02",
-    title: "Voorstel & planning",
-    description:
-      "Op basis van ons gesprek stel ik een helder voorstel op met scope, planning en investering. Geen verrassingen, geen kleine lettertjes.",
-  },
-  {
-    number: "03",
-    title: "Uitvoering & optimalisatie",
-    description:
-      "Ik ga aan de slag en houd je op de hoogte. Korte feedbackrondes, snelle oplevering en doorlopende optimalisatie op basis van resultaten.",
-  },
-];
+import { useTranslation } from "@/lib/i18n";
 
 export function WerkwijzeSection() {
+  const { t } = useTranslation();
+
+  const steps = [
+    {
+      number: "01",
+      title: t("werkwijze.1.title"),
+      description: t("werkwijze.1.desc"),
+    },
+    {
+      number: "02",
+      title: t("werkwijze.2.title"),
+      description: t("werkwijze.2.desc"),
+    },
+    {
+      number: "03",
+      title: t("werkwijze.3.title"),
+      description: t("werkwijze.3.desc"),
+    },
+  ];
+
   return (
     <section className="py-20 lg:py-28 bg-dark-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -35,10 +35,10 @@ export function WerkwijzeSection() {
           className="text-center max-w-2xl mx-auto mb-14"
         >
           <p className="text-brand-600 font-semibold text-sm uppercase tracking-wider mb-3">
-            Werkwijze
+            {t("werkwijze.label")}
           </p>
           <h2 className="text-3xl lg:text-4xl font-bold text-dark-900">
-            Van kennismaking naar resultaat in 3 stappen
+            {t("werkwijze.heading")}
           </h2>
         </motion.div>
 

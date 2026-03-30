@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { motion } from "framer-motion";
 import { ArrowRight, Calendar, FileText } from "lucide-react";
+import { useTranslation } from "@/lib/i18n";
 
 const fadeUp = {
   initial: { opacity: 0, y: 24 },
@@ -11,6 +12,7 @@ const fadeUp = {
 };
 
 export function HeroSection() {
+  const { t } = useTranslation();
   return (
     <section className="relative min-h-screen flex items-center bg-dark-950 overflow-hidden">
       {/* Background gradient */}
@@ -34,7 +36,7 @@ export function HeroSection() {
             className="mb-6"
           >
             <Badge variant="brand" className="bg-brand-900/50 text-brand-300 border-brand-700">
-              Jouw digitale afdeling, zonder de overhead
+              {t("hero.badge")}
             </Badge>
           </motion.div>
 
@@ -43,11 +45,11 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight tracking-tight"
           >
-            Meer impact.
+            {t("hero.title1")}
             <br />
-            Minder gedoe.
+            {t("hero.title2")}
             <br />
-            <span className="text-brand-400">Eén digitale partner.</span>
+            <span className="text-brand-400">{t("hero.title3")}</span>
           </motion.h1>
 
           <motion.p
@@ -55,8 +57,7 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="mt-6 text-lg lg:text-xl text-dark-300 max-w-2xl leading-relaxed"
           >
-            Arka bouwt, optimaliseert en automatiseert jouw digitale aanwezigheid, van website tot AI.
-            Alles onder één dak, zonder de overhead van een groot bureau.
+            {t("hero.description")}
           </motion.p>
 
           <motion.div
@@ -72,12 +73,12 @@ export function HeroSection() {
               className="group"
             >
               <Calendar className="w-5 h-5" />
-              Gratis kennismaking
+              {t("hero.cta1")}
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button href="/offerte" size="lg" variant="outline" className="border-dark-700 text-white hover:bg-dark-800 hover:border-dark-600">
               <FileText className="w-5 h-5" />
-              Vraag offerte aan
+              {t("hero.cta2")}
             </Button>
           </motion.div>
 
@@ -86,7 +87,7 @@ export function HeroSection() {
             transition={{ duration: 0.5, delay: 0.5 }}
             className="mt-12 flex items-center gap-6 text-sm text-dark-400"
           >
-            {["Geen lange contracten", "Gratis kennismaking", "Binnen 24u reactie"].map((item, i) => (
+            {[t("hero.stat1"), t("hero.stat2"), t("hero.stat3")].map((item, i) => (
               <div key={i} className="flex items-center gap-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-brand-500" />
                 {item}

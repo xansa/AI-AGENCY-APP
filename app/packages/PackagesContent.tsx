@@ -54,7 +54,7 @@ function PricingToggle({
 }
 
 export function PackagesContent() {
-  const [mode, setMode] = useState<PricingMode>("eenmalig");
+  const [mode, setMode] = useState<PricingMode>("maandelijks");
 
   return (
     <section className="py-16 bg-white">

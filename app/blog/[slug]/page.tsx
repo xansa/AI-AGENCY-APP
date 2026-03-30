@@ -9,6 +9,8 @@ interface Props {
   params: { slug: string };
 }
 
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://arkadigital.nl";
+
 export const dynamicParams = true;
 export const revalidate = 3600; // revalidate every hour
 
@@ -22,6 +24,17 @@ export function generateMetadata({ params }: Props): Metadata {
   return {
     title: post.title,
     description: post.excerpt,
+    alternates: {
+      canonical: `${baseUrl}/blog/${post.slug}`,
+    },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: "article",
+      publishedTime: post.publishedAt,
+      authors: [post.author],
+      tags: post.tags,
+    },
   };
 }
 
@@ -70,8 +83,37 @@ export default function BlogPostPage({ params }: Props) {
   const post = published.find((p) => p.slug === params.slug);
   if (!post) notFound();
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    author: {
+      "@type": "Organization",
+      name: post.author,
+      url: baseUrl,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Arka",
+      url: baseUrl,
+    },
+    datePublished: post.publishedAt,
+    url: `${baseUrl}/blog/${post.slug}`,
+    keywords: post.tags,
+    inLanguage: "nl",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${baseUrl}/blog/${post.slug}`,
+    },
+  };
+
   return (
     <div className="pt-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section className="bg-dark-950 py-16 lg:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <Button

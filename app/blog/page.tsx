@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Blog",
   description:
     "Praktische inzichten over websites, SEO, AI en digitale groei voor MKB-bedrijven.",
+  alternates: { canonical: "https://arkadigital.nl/blog" },
 };
 
 export const revalidate = 3600; // revalidate every hour

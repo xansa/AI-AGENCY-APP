@@ -3,9 +3,10 @@ import { Badge } from "@/components/ui/Badge";
 import { PackagesContent } from "./PackagesContent";
 
 export const metadata: Metadata = {
-  title: "Packages",
+  title: "Pakketten",
   description:
     "Bekijk onze 3 combipackages: Starter, Professional en Enterprise. Eenmalig of maandelijks, transparante investering.",
+  alternates: { canonical: "https://arkadigital.nl/packages" },
 };
 
 export default function PackagesPage() {

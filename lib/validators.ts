@@ -34,10 +34,6 @@ export const chatMessageSchema = z.object({
   sessionId: z.string().min(1),
 });
 
-export const emailCaptureSchema = z.object({
-  email: z.string().email("Voer een geldig e-mailadres in"),
-});
-
 export type ContactFormValues = z.infer<typeof contactSchema>;
 export type OfferteFormValues = z.infer<typeof offerteSchema>;
 export type ChatMessageValues = z.infer<typeof chatMessageSchema>;
