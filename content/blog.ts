@@ -206,11 +206,11 @@ Wil je je SEO structureel aanpakken? Stuur een mail naar info@arkadigital.nl en 
 
 Websites vallen grofweg in drie categorieen:
 
-\u2022 **Basis bedrijfswebsite** (5-10 pagina's): tussen de 1.800 en 3.500 euro. Denk aan een homepage, dienstpagina's, een over-ons pagina en een contactformulier. Geschikt voor ZZP'ers en kleine bedrijven die online zichtbaar willen zijn.
+\u2022 **Basis bedrijfswebsite** (5-10 pagina's): vanaf 2.500 euro. Denk aan een homepage, dienstpagina's, een over-ons pagina en een contactformulier. Geschikt voor ZZP'ers en kleine bedrijven die online zichtbaar willen zijn.
 
-\u2022 **Professionele website** (10-25 pagina's): tussen de 5.500 en 9.000 euro. Inclusief geavanceerde functionaliteiten zoals formulieren, koppelingen met CRM-systemen, blog, en doorgedreven SEO-optimalisatie. Voor bedrijven die online willen groeien.
+\u2022 **Professionele website** (10-25 pagina's): vanaf 7.000 euro. Inclusief geavanceerde functionaliteiten zoals formulieren, koppelingen met CRM-systemen, blog, en doorgedreven SEO-optimalisatie. Voor bedrijven die online willen groeien.
 
-\u2022 **Uitgebreid platform of webshop**: vanaf 14.000 euro. Maatwerk met complexe functionaliteiten, API-koppelingen, dashboards of een volledige e-commerce oplossing. Voor bedrijven met specifieke eisen.
+\u2022 **Uitgebreid platform of webshop**: vanaf 18.000 euro. Maatwerk met complexe functionaliteiten, API-koppelingen, dashboards of een volledige e-commerce oplossing. Voor bedrijven met specifieke eisen.
 
 **Eenmalig of maandelijks?**
 
@@ -412,7 +412,7 @@ Wat je niet krijgt:
 \u2022 **Uniek ontwerp** - je website lijkt op duizenden andere sites
 \u2022 **Ondersteuning** - na oplevering ben je op jezelf aangewezen
 
-**Wat je krijgt voor 3.000-9.000 euro**
+**Wat je krijgt voor een professionele website**
 
 Bij een professionele website wordt er nagedacht voor er gebouwd wordt. Het proces begint met vragen: wie is je klant? Wat moet de website bereiken? Hoe meet je succes?
 

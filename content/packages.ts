@@ -14,7 +14,6 @@ export interface Package {
   deliverables_en: string[];
   duration: string;
   duration_en: string;
-  onboardingFee: string;
   monthlyInvestment: string;
   investment: string;
   investment_en: string;
@@ -62,10 +61,9 @@ export const packages: Package[] = [
     ],
     duration: "Minimaal 3 maanden, daarna maandelijks opzegbaar",
     duration_en: "Minimum 3 months, then monthly cancellable",
-    onboardingFee: "\u20AC500",
-    monthlyInvestment: "\u20AC1.000 \u2013 \u20AC1.500 / maand",
-    investment: "\u20AC500 onboarding + \u20AC1.000\u2013\u20AC1.500/mnd",
-    investment_en: "\u20AC500 onboarding + \u20AC1,000\u2013\u20AC1,500/mo",
+    monthlyInvestment: "Vanaf \u20AC1.000 / maand",
+    investment: "Vanaf \u20AC1.000/mnd",
+    investment_en: "From \u20AC1,000/mo",
     kpis: [
       "Website verkeer",
       "Google rankings",
@@ -80,7 +78,7 @@ export const packages: Package[] = [
     ],
 
     // Eenmalig
-    onetimePrice: "\u20AC1.800 \u2013 \u20AC3.500",
+    onetimePrice: "Vanaf \u20AC2.500",
     onetimeDeliverables: [
       "Professionele website (5\u201310 pagina\u2019s)",
       "Responsive design (mobiel + desktop)",
@@ -148,10 +146,9 @@ export const packages: Package[] = [
     ],
     duration: "Minimaal 6 maanden, daarna maandelijks opzegbaar",
     duration_en: "Minimum 6 months, then monthly cancellable",
-    onboardingFee: "\u20AC750",
-    monthlyInvestment: "\u20AC2.750 \u2013 \u20AC3.500 / maand",
-    investment: "\u20AC750 onboarding + \u20AC2.750\u2013\u20AC3.500/mnd",
-    investment_en: "\u20AC750 onboarding + \u20AC2,750\u2013\u20AC3,500/mo",
+    monthlyInvestment: "Vanaf \u20AC2.750 / maand",
+    investment: "Vanaf \u20AC2.750/mnd",
+    investment_en: "From \u20AC2,750/mo",
     kpis: [
       "Conversieratio",
       "Aantal leads",
@@ -166,7 +163,7 @@ export const packages: Package[] = [
     ],
 
     // Eenmalig
-    onetimePrice: "\u20AC5.500 \u2013 \u20AC9.000",
+    onetimePrice: "Vanaf \u20AC7.000",
     onetimeDeliverables: [
       "Custom website met animaties (10\u201320 pagina\u2019s)",
       "AI-chatbot ge\u00EFntegreerd op website",
@@ -240,10 +237,9 @@ export const packages: Package[] = [
     ],
     duration: "Minimaal 6 maanden, daarna per kwartaal opzegbaar",
     duration_en: "Minimum 6 months, then quarterly cancellable",
-    onboardingFee: "\u20AC1.000",
-    monthlyInvestment: "\u20AC5.000 \u2013 \u20AC8.000 / maand",
-    investment: "\u20AC1.000 onboarding + \u20AC5.000\u2013\u20AC8.000/mnd",
-    investment_en: "\u20AC1,000 onboarding + \u20AC5,000\u2013\u20AC8,000/mo",
+    monthlyInvestment: "Vanaf \u20AC5.500 / maand",
+    investment: "Vanaf \u20AC5.500/mnd",
+    investment_en: "From \u20AC5,500/mo",
     kpis: [
       "Omzetgroei",
       "Tijdsbesparing",
@@ -260,7 +256,7 @@ export const packages: Package[] = [
     ],
 
     // Eenmalig
-    onetimePrice: "\u20AC14.000 \u2013 \u20AC25.000",
+    onetimePrice: "Vanaf \u20AC18.000",
     onetimeDeliverables: [
       "Alles uit Professional eenmalig",
       "Custom KPI-dashboard (tot 3 views)",

@@ -12,9 +12,9 @@ export const faqItems: FAQItem[] = [
     question: "Wat kost jullie dienstverlening?",
     question_en: "What does your service cost?",
     answer:
-      "Onze packages lopen van \u20AC1.000 tot \u20AC8.000 per maand. Starter (websites + SEO): \u20AC1.000\u2013\u20AC1.500/mnd. Professional (+ AI + branding): \u20AC2.750\u2013\u20AC3.500/mnd. Enterprise (alle 6 diensten): \u20AC5.000\u2013\u20AC8.000/mnd. Vergelijk dat met een fulltime digitale medewerker: die kost al snel \u20AC3.000\u2013\u20AC5.000/mnd all-in.",
+      "Onze packages beginnen vanaf \u20AC1.000 per maand. Starter (websites + SEO): vanaf \u20AC1.000/mnd. Professional (+ AI + branding): vanaf \u20AC2.750/mnd. Enterprise (alle 6 diensten): vanaf \u20AC5.500/mnd. Vergelijk dat met een fulltime digitale medewerker: die kost al snel \u20AC3.000\u2013\u20AC5.000/mnd all-in.",
     answer_en:
-      "Our packages range from \u20AC1,000 to \u20AC8,000 per month. Starter (websites + SEO): \u20AC1,000\u2013\u20AC1,500/mo. Professional (+ AI + branding): \u20AC2,750\u2013\u20AC3,500/mo. Enterprise (all 6 services): \u20AC5,000\u2013\u20AC8,000/mo. Compare that to a full-time digital employee: easily \u20AC3,000\u2013\u20AC5,000/mo all-in.",
+      "Our packages start from \u20AC1,000 per month. Starter (websites + SEO): from \u20AC1,000/mo. Professional (+ AI + branding): from \u20AC2,750/mo. Enterprise (all 6 services): from \u20AC5,500/mo. Compare that to a full-time digital employee: easily \u20AC3,000\u2013\u20AC5,000/mo all-in.",
     category: "Investering",
     category_en: "Investment",
   },
@@ -22,9 +22,9 @@ export const faqItems: FAQItem[] = [
     question: "Kan ik stoppen wanneer ik wil?",
     question_en: "Can I cancel whenever I want?",
     answer:
-      "Starter en Professional packages hebben een minimale looptijd van 3 maanden, daarna maandelijks opzegbaar. Het Enterprise pakket heeft een minimale looptijd van 6 maanden. We werken bewust met een minimale periode omdat resultaten tijd nodig hebben. Niet omdat we je willen vasthouden.",
+      "Het Starter pakket heeft een minimale looptijd van 3 maanden, daarna maandelijks opzegbaar. Professional en Enterprise hebben een minimale looptijd van 6 maanden, daarna maandelijks opzegbaar. We werken bewust met een minimale periode omdat resultaten tijd nodig hebben. Niet omdat we je willen vasthouden.",
     answer_en:
-      "Starter and Professional packages have a minimum term of 3 months, then monthly cancellable. The Enterprise package has a minimum term of 6 months. We deliberately work with a minimum period because results take time. Not to lock you in.",
+      "The Starter package has a minimum term of 3 months, then monthly cancellable. Professional and Enterprise have a minimum term of 6 months, then monthly cancellable. We deliberately work with a minimum period because results take time. Not to lock you in.",
     category: "Contract",
     category_en: "Contract",
   },

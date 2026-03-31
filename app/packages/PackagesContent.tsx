@@ -117,7 +117,7 @@ export function PackagesContent() {
                               {pkg.monthlyInvestment}
                             </div>
                             <div className="text-sm text-dark-500 mt-1">
-                              + {pkg.onboardingFee} {t("packages.onboarding")} ({t("packages.eenmalig").toLowerCase()})
+                              {l(pkg, "duration", locale).split(",")[0].toLowerCase()}
                             </div>
                           </div>
                         ) : (

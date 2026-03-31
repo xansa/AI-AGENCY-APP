@@ -201,9 +201,9 @@ Copy `.env.example` to `.env.local`. Only `ANTHROPIC_API_KEY` is required for th
 - **Services:** Websites & Webshops, SEO & Content, AI Chatbots & Automatisering, Dashboards & Data, Lead Generation, Branding & Design
 - **Response time:** 24 uur (was 48u, geüpdatet 2026-03-25)
 - **Packages:**
-  - Starter: Maandelijks €1.000–€1.500/mnd (€500 onboarding), Eenmalig €1.800–€3.500
-  - Professional: Maandelijks €2.750–€3.500/mnd (€750 onboarding), Eenmalig €5.500–€9.000
-  - Enterprise: Maandelijks €5.000–€8.000/mnd (€1.000 onboarding), Eenmalig €14.000–€25.000
+  - Starter: Maandelijks vanaf €1.000/mnd, Eenmalig vanaf €2.500
+  - Professional: Maandelijks vanaf €2.750/mnd, Eenmalig vanaf €7.000
+  - Enterprise: Maandelijks vanaf €5.500/mnd, Eenmalig vanaf €18.000
 
 ## Deployment
 

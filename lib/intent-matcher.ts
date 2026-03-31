@@ -43,10 +43,10 @@ const INTENTS: IntentDefinition[] = [
     response:
       "Arka biedt twee modellen: **maandelijks** (doorlopende samenwerking) of **eenmalig** (project).\n\n" +
       "**Maandelijks (aanbevolen):**\n" +
-      "\u2022 **Starter** · \u20AC1.000\u2013\u20AC1.500/mnd _(Websites + SEO)_\n" +
-      "\u2022 **Professional** · \u20AC2.750\u2013\u20AC3.500/mnd _(+ AI Chatbots + Branding)_ Meest gekozen\n" +
-      "\u2022 **Enterprise** · \u20AC5.000\u2013\u20AC8.000/mnd _(alle 6 diensten)_\n\n" +
-      "**Eenmalig:** Starter vanaf \u20AC1.800 | Professional vanaf \u20AC5.500 | Enterprise vanaf \u20AC14.000\n\n" +
+      "\u2022 **Starter** · vanaf \u20AC1.000/mnd _(Websites + SEO)_\n" +
+      "\u2022 **Professional** · vanaf \u20AC2.750/mnd _(+ AI Chatbots + Branding)_ Meest gekozen\n" +
+      "\u2022 **Enterprise** · vanaf \u20AC5.500/mnd _(alle 6 diensten)_\n\n" +
+      "**Eenmalig:** Starter vanaf \u20AC2.500 | Professional vanaf \u20AC7.000 | Enterprise vanaf \u20AC18.000\n\n" +
       "Wil je weten welk pakket het beste bij jouw situatie past?",
     cta: "Vraag een vrijblijvende offerte aan via [/offerte](/offerte) of plan een kennismakingsgesprek.",
   },
@@ -185,8 +185,8 @@ const INTENTS: IntentDefinition[] = [
     boostKeywords: ["pakket", "package", "prijs"],
     response:
       "**Starter** is ons instappakket:\n\n" +
-      "**Maandelijks:** \u20AC1.000\u2013\u20AC1.500/mnd (\u20AC500 onboarding)\n" +
-      "**Eenmalig:** \u20AC1.800\u2013\u20AC3.500\n\n" +
+      "**Maandelijks:** vanaf \u20AC1.000/mnd\n" +
+      "**Eenmalig:** vanaf \u20AC2.500\n\n" +
       "Diensten: Websites & Webshops + SEO & Content\n" +
       "Voor wie: ZZP'ers en kleine MKB-bedrijven.\n\n" +
       "Maandelijks inbegrepen:\n" +
@@ -204,8 +204,8 @@ const INTENTS: IntentDefinition[] = [
     boostKeywords: ["pakket", "package"],
     response:
       "**Professional** is ons meest gekozen pakket:\n\n" +
-      "**Maandelijks:** \u20AC2.750\u2013\u20AC3.500/mnd (\u20AC750 onboarding)\n" +
-      "**Eenmalig:** \u20AC5.500\u2013\u20AC9.000\n\n" +
+      "**Maandelijks:** vanaf \u20AC2.750/mnd\n" +
+      "**Eenmalig:** vanaf \u20AC7.000\n\n" +
       "Diensten: Websites + SEO + AI Chatbots + Branding\n" +
       "Voor wie: Groeiende MKB-bedrijven.\n\n" +
       "Maandelijks inbegrepen:\n" +
@@ -224,8 +224,8 @@ const INTENTS: IntentDefinition[] = [
     boostKeywords: ["pakket", "package", "automatisering"],
     response:
       "**Enterprise** is ons meest complete pakket:\n\n" +
-      "**Maandelijks:** \u20AC5.000\u2013\u20AC8.000/mnd (\u20AC1.000 onboarding)\n" +
-      "**Eenmalig:** \u20AC14.000\u2013\u20AC25.000\n\n" +
+      "**Maandelijks:** vanaf \u20AC5.500/mnd\n" +
+      "**Eenmalig:** vanaf \u20AC18.000\n\n" +
       "Diensten: Alle 6 diensten\n" +
       "Voor wie: Gevestigde MKB-bedrijven en scale-ups.\n\n" +
       "Extra t.o.v. Professional:\n" +
@@ -265,8 +265,8 @@ const INTENTS: IntentDefinition[] = [
     response:
       "Arka werkt met maandelijkse facturen, **geen jaarcontract, geen verborgen kosten**.\n\n" +
       "Minimale looptijden:\n" +
-      "\u2022 **Starter & Professional:** 3 maanden \u2192 daarna maandelijks opzegbaar\n" +
-      "\u2022 **Enterprise:** 6 maanden \u2192 daarna per kwartaal opzegbaar\n\n" +
+      "\u2022 **Starter:** 3 maanden \u2192 daarna maandelijks opzegbaar\n" +
+      "\u2022 **Professional & Enterprise:** 6 maanden \u2192 daarna maandelijks opzegbaar\n\n" +
       "De minimale periode is er zodat ik resultaten kan opbouwen, niet om je vast te houden.",
   },
 

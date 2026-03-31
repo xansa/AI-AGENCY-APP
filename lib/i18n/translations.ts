@@ -166,7 +166,7 @@ export const translations = {
     en: "The cases below are representative examples illustrating our approach and possible results.",
   },
   "casesPage.aanpak": { nl: "Aanpak", en: "Approach" },
-  "casesPage.looptijd": { nl: "Looptijd", en: "Duration" },
+  "casesPage.looptijd": { nl: "Resultaten na", en: "Results after" },
   "casesPage.ctaHeading": { nl: "Wil je ook zulke resultaten?", en: "Want results like these?" },
   "casesPage.ctaDescription": {
     nl: "Plan een gratis intake gesprek en ontdek wat mogelijk is voor jouw bedrijf.",
@@ -391,12 +391,12 @@ export const translations = {
   "form.opt.doelBranding": { nl: "Branding en design verbeteren", en: "Improve branding and design" },
   "form.opt.doelCombi": { nl: "Combinatie van bovenstaande", en: "Combination of the above" },
 
-  "form.opt.budgetStarterE": { nl: "Eenmalig: Starter (\u20AC 1.800\u2013\u20AC 3.500)", en: "One-time: Starter (\u20AC1,800\u2013\u20AC3,500)" },
-  "form.opt.budgetProfE": { nl: "Eenmalig: Professional (\u20AC 5.500\u2013\u20AC 9.000)", en: "One-time: Professional (\u20AC5,500\u2013\u20AC9,000)" },
-  "form.opt.budgetEntE": { nl: "Eenmalig: Enterprise (\u20AC 14.000\u2013\u20AC 25.000)", en: "One-time: Enterprise (\u20AC14,000\u2013\u20AC25,000)" },
-  "form.opt.budgetStarterM": { nl: "Maandelijks: Starter (\u20AC 1.000\u2013\u20AC 1.500/mnd)", en: "Monthly: Starter (\u20AC1,000\u2013\u20AC1,500/mo)" },
-  "form.opt.budgetProfM": { nl: "Maandelijks: Professional (\u20AC 2.750\u2013\u20AC 3.500/mnd)", en: "Monthly: Professional (\u20AC2,750\u2013\u20AC3,500/mo)" },
-  "form.opt.budgetEntM": { nl: "Maandelijks: Enterprise (\u20AC 5.000\u2013\u20AC 8.000/mnd)", en: "Monthly: Enterprise (\u20AC5,000\u2013\u20AC8,000/mo)" },
+  "form.opt.budgetStarterE": { nl: "Eenmalig: Starter (vanaf \u20AC2.500)", en: "One-time: Starter (from \u20AC2,500)" },
+  "form.opt.budgetProfE": { nl: "Eenmalig: Professional (vanaf \u20AC7.000)", en: "One-time: Professional (from \u20AC7,000)" },
+  "form.opt.budgetEntE": { nl: "Eenmalig: Enterprise (vanaf \u20AC18.000)", en: "One-time: Enterprise (from \u20AC18,000)" },
+  "form.opt.budgetStarterM": { nl: "Maandelijks: Starter (vanaf \u20AC1.000/mnd)", en: "Monthly: Starter (from \u20AC1,000/mo)" },
+  "form.opt.budgetProfM": { nl: "Maandelijks: Professional (vanaf \u20AC2.750/mnd)", en: "Monthly: Professional (from \u20AC2,750/mo)" },
+  "form.opt.budgetEntM": { nl: "Maandelijks: Enterprise (vanaf \u20AC5.500/mnd)", en: "Monthly: Enterprise (from \u20AC5,500/mo)" },
   "form.opt.budgetOnzeker": { nl: "Nog niet zeker", en: "Not sure yet" },
 
   "form.opt.asap": { nl: "Zo snel mogelijk (< 2 weken)", en: "As soon as possible (< 2 weeks)" },

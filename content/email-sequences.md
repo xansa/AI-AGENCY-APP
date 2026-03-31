@@ -59,7 +59,7 @@ Na een nieuwe website + SEO-aanpak:
 - Top 3 op relevante zoektermen
 - Online reserveringen verdubbeld
 
-Het punt: dit hoeft niet maanden te duren of een vermogen te kosten. Een professionele website is er vanaf 1.800 euro.
+Het punt: dit hoeft niet maanden te duren of een vermogen te kosten. Een professionele website is er vanaf 2.500 euro.
 
 Zou een kort gesprek van 15 minuten interessant zijn om te kijken wat er mogelijk is voor {{bedrijf}}?
 

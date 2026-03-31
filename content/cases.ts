@@ -24,7 +24,7 @@ export interface Case {
     role: string;
     role_en: string;
   };
-  duration: string;
+  duration: string;       // "Resultaten na: X maanden"
   duration_en: string;
   isExample?: boolean;
 }
