@@ -6,15 +6,18 @@ import { Badge } from "@/components/ui/Badge";
 import { Check, Calendar, FileText, Clock } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation, l, la } from "@/lib/i18n";
 
 type PricingMode = "maandelijks" | "eenmalig";
 
 function PricingToggle({
   mode,
   onChange,
+  labels,
 }: {
   mode: PricingMode;
   onChange: (mode: PricingMode) => void;
+  labels: { eenmalig: string; maandelijks: string };
 }) {
   return (
     <div className="flex items-center justify-center mb-12">
@@ -36,7 +39,7 @@ function PricingToggle({
               : "text-dark-600 hover:text-dark-900"
           }`}
         >
-          Eenmalig
+          {labels.eenmalig}
         </button>
         <button
           onClick={() => onChange("maandelijks")}
@@ -46,7 +49,7 @@ function PricingToggle({
               : "text-dark-600 hover:text-dark-900"
           }`}
         >
-          Maandelijks
+          {labels.maandelijks}
         </button>
       </div>
     </div>
@@ -55,18 +58,26 @@ function PricingToggle({
 
 export function PackagesContent() {
   const [mode, setMode] = useState<PricingMode>("maandelijks");
+  const { t, locale } = useTranslation();
 
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <PricingToggle mode={mode} onChange={setMode} />
+        <PricingToggle
+          mode={mode}
+          onChange={setMode}
+          labels={{
+            eenmalig: t("packages.eenmalig"),
+            maandelijks: t("packages.maandelijks"),
+          }}
+        />
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {packages.map((pkg) => {
             const isMonthly = mode === "maandelijks";
             const deliverables = isMonthly
-              ? pkg.deliverables
-              : pkg.onetimeDeliverables;
+              ? la(pkg, "deliverables", locale)
+              : la(pkg, "onetimeDeliverables", locale);
 
             return (
               <div
@@ -80,7 +91,7 @@ export function PackagesContent() {
               >
                 {pkg.highlighted && (
                   <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
-                    <Badge variant="brand">Meest gekozen</Badge>
+                    <Badge variant="brand">{t("packages.meestGekozen")}</Badge>
                   </div>
                 )}
 
@@ -88,9 +99,9 @@ export function PackagesContent() {
                   <h2 className="text-2xl font-bold text-dark-900">
                     {pkg.name}
                   </h2>
-                  <p className="text-dark-500 text-sm mt-1">{pkg.tagline}</p>
+                  <p className="text-dark-500 text-sm mt-1">{l(pkg, "tagline", locale)}</p>
 
-                  {/* Price — animated swap */}
+                  {/* Price */}
                   <div className="mt-4 min-h-[4.5rem] relative overflow-hidden">
                     <AnimatePresence mode="wait">
                       <motion.div
@@ -106,7 +117,7 @@ export function PackagesContent() {
                               {pkg.monthlyInvestment}
                             </div>
                             <div className="text-sm text-dark-500 mt-1">
-                              + {pkg.onboardingFee} onboarding (eenmalig)
+                              + {pkg.onboardingFee} {t("packages.onboarding")} ({t("packages.eenmalig").toLowerCase()})
                             </div>
                           </div>
                         ) : (
@@ -115,7 +126,7 @@ export function PackagesContent() {
                               {pkg.onetimePrice}
                             </div>
                             <div className="text-sm text-dark-500 mt-1">
-                              eenmalige investering
+                              {t("packages.eenmaligeInvestering")}
                             </div>
                           </div>
                         )}
@@ -127,15 +138,15 @@ export function PackagesContent() {
                 {/* For who */}
                 <div className="p-4 bg-dark-50 rounded-xl mb-6">
                   <p className="text-xs font-semibold text-dark-500 uppercase tracking-wider mb-1">
-                    Voor wie
+                    {t("packages.voorWie")}
                   </p>
-                  <p className="text-dark-700 text-sm">{pkg.forWho}</p>
+                  <p className="text-dark-700 text-sm">{l(pkg, "forWho", locale)}</p>
                 </div>
 
-                {/* Deliverables — animated list */}
+                {/* Deliverables */}
                 <div className="mb-6 flex-1">
                   <p className="text-xs font-semibold text-dark-500 uppercase tracking-wider mb-3">
-                    {isMonthly ? "Inbegrepen" : "Wat je krijgt"}
+                    {isMonthly ? t("packages.inbegrepen") : t("packages.watJeKrijgt")}
                   </p>
                   <AnimatePresence mode="wait">
                     <motion.ul
@@ -174,10 +185,10 @@ export function PackagesContent() {
                     {isMonthly ? (
                       <div className="p-4 bg-brand-50 rounded-xl mb-6">
                         <p className="text-xs font-semibold text-brand-700 uppercase tracking-wider mb-2">
-                          KPI&apos;s die wij rapporteren
+                          {t("packages.kpisRapporteren")}
                         </p>
                         <ul className="space-y-1">
-                          {pkg.kpis.map((kpi, i) => (
+                          {la(pkg, "kpis", locale).map((kpi, i) => (
                             <li
                               key={i}
                               className="text-sm text-brand-700 flex items-center gap-2"
@@ -191,7 +202,7 @@ export function PackagesContent() {
                     ) : (
                       <div className="p-4 bg-dark-50 rounded-xl mb-6">
                         <p className="text-sm text-dark-600 leading-relaxed">
-                          {pkg.onetimeNote}
+                          {l(pkg, "onetimeNote", locale)}
                         </p>
                       </div>
                     )}
@@ -201,7 +212,7 @@ export function PackagesContent() {
                 {/* Commitment */}
                 <div className="flex items-center gap-2 text-xs text-dark-400 mb-6">
                   <Clock className="w-3.5 h-3.5" />
-                  <span>{isMonthly ? pkg.duration : "Eenmalige oplevering"}</span>
+                  <span>{isMonthly ? l(pkg, "duration", locale) : t("packages.eenmaligeOplevering")}</span>
                 </div>
 
                 {/* CTAs */}
@@ -213,7 +224,7 @@ export function PackagesContent() {
                     className="w-full"
                   >
                     <FileText className="w-4 h-4" />
-                    Offerte aanvragen
+                    {t("packages.offerteAanvragen")}
                   </Button>
                   <Button
                     href={
@@ -226,7 +237,7 @@ export function PackagesContent() {
                     className="w-full"
                   >
                     <Calendar className="w-4 h-4" />
-                    Plan intake gesprek
+                    {t("packages.planIntake")}
                   </Button>
                 </div>
               </div>

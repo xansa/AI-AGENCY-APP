@@ -6,13 +6,13 @@ import { packages } from "@/content/packages";
 import { motion, AnimatePresence } from "framer-motion";
 import { Check, ArrowRight } from "lucide-react";
 import { useState } from "react";
-import { useTranslation } from "@/lib/i18n";
+import { useTranslation, l, la } from "@/lib/i18n";
 
 type PricingMode = "maandelijks" | "eenmalig";
 
 export function PackagesPreviewSection() {
   const [mode, setMode] = useState<PricingMode>("maandelijks");
-  const { t } = useTranslation();
+  const { t, locale } = useTranslation();
 
   return (
     <section className="py-20 lg:py-28 bg-white" id="packages">
@@ -74,8 +74,8 @@ export function PackagesPreviewSection() {
           {packages.map((pkg, i) => {
             const isMonthly = mode === "maandelijks";
             const deliverables = isMonthly
-              ? pkg.deliverables
-              : pkg.onetimeDeliverables;
+              ? la(pkg, "deliverables", locale)
+              : la(pkg, "onetimeDeliverables", locale);
 
             return (
               <motion.div
@@ -102,7 +102,7 @@ export function PackagesPreviewSection() {
                   <h3 className="text-2xl font-bold text-dark-900">
                     {pkg.name}
                   </h3>
-                  <p className="text-dark-500 text-sm mt-1">{pkg.tagline}</p>
+                  <p className="text-dark-500 text-sm mt-1">{l(pkg, "tagline", locale)}</p>
                 </div>
 
                 {/* Price — animated */}
@@ -121,7 +121,7 @@ export function PackagesPreviewSection() {
                             {pkg.monthlyInvestment}
                           </div>
                           <div className="text-xs text-dark-500 mt-0.5">
-                            + {pkg.onboardingFee} {t("packages.onboarding")} · {pkg.duration.split(",")[0].toLowerCase()}
+                            + {pkg.onboardingFee} {t("packages.onboarding")} · {l(pkg, "duration", locale).split(",")[0].toLowerCase()}
                           </div>
                         </div>
                       ) : (

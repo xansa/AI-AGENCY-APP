@@ -8,6 +8,7 @@ import { Toaster } from "react-hot-toast";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { LanguageProvider } from "@/lib/i18n";
+import { CookieBanner } from "@/components/ui/CookieBanner";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -139,6 +140,7 @@ export default function RootLayout({
             },
           }}
         />
+        <CookieBanner />
         </LanguageProvider>
         <Analytics />
         <SpeedInsights />

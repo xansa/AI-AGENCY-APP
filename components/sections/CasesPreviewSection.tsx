@@ -5,10 +5,10 @@ import { Badge } from "@/components/ui/Badge";
 import { cases } from "@/content/cases";
 import { motion } from "framer-motion";
 import { ArrowRight, TrendingUp } from "lucide-react";
-import { useTranslation } from "@/lib/i18n";
+import { useTranslation, l } from "@/lib/i18n";
 
 export function CasesPreviewSection() {
-  const { t } = useTranslation();
+  const { t, locale } = useTranslation();
   const previewCases = cases.slice(0, 3);
 
   return (
@@ -47,7 +47,7 @@ export function CasesPreviewSection() {
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
-                  <Badge variant="default" className="mb-2">{c.industry}</Badge>
+                  <Badge variant="default" className="mb-2">{l(c, "industry", locale)}</Badge>
                   <h3 className="font-bold text-dark-900">{c.client}</h3>
                 </div>
                 <div className="w-8 h-8 bg-brand-50 rounded-lg flex items-center justify-center group-hover:bg-brand-100 transition-colors">
@@ -59,16 +59,16 @@ export function CasesPreviewSection() {
                 {c.results.map((result, j) => (
                   <div key={j} className="text-center p-3 bg-dark-50 rounded-xl">
                     <div className="text-lg font-bold text-brand-600">{result.value}</div>
-                    <div className="text-xs text-dark-500 mt-0.5">{result.metric}</div>
+                    <div className="text-xs text-dark-500 mt-0.5">{l(result, "metric", locale)}</div>
                   </div>
                 ))}
               </div>
 
               <blockquote className="text-dark-500 text-sm italic leading-relaxed border-l-2 border-brand-200 pl-3">
-                "{c.testimonial.quote.slice(0, 100)}..."
+                &ldquo;{l(c.testimonial, "quote", locale).slice(0, 100)}...&rdquo;
               </blockquote>
               <p className="text-xs text-dark-400 mt-2">
-                – {c.testimonial.author}, {c.testimonial.role}
+                &ndash; {c.testimonial.author}, {l(c.testimonial, "role", locale)}
               </p>
             </motion.div>
           ))}

@@ -42,7 +42,7 @@ export function ProblemsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="max-w-2xl mb-14"
+          className="max-w-2xl mx-auto text-center mb-14"
         >
           <p className="text-brand-600 font-semibold text-sm uppercase tracking-wider mb-3">
             {t("problems.label")}

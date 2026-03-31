@@ -55,7 +55,7 @@ export function WerkwijzeSection() {
               {i < steps.length - 1 && (
                 <div className="hidden lg:block absolute top-8 left-full w-full h-px bg-brand-200 -translate-y-1/2 z-0" style={{ left: "calc(100% + 16px)", width: "calc(100% - 32px)" }} />
               )}
-              <div className="relative z-10 p-8 bg-white rounded-2xl border border-dark-100">
+              <div className="relative z-10 p-8 bg-white rounded-2xl border border-dark-100 h-full flex flex-col">
                 <div className="text-5xl font-black text-brand-100 mb-4 select-none">
                   {step.number}
                 </div>

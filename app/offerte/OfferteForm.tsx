@@ -8,67 +8,10 @@ import { Check } from "lucide-react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
-
-const BRANCHES = [
-  "SaaS / Tech",
-  "Professionele dienstverlening",
-  "Logistiek / Supply Chain",
-  "Productie / Industrie",
-  "Financiële dienstverlening",
-  "Zorg / Healthcare",
-  "Retail / E-commerce",
-  "Bouw & Vastgoed",
-  "Anders",
-].map((v) => ({ value: v, label: v }));
-
-const SITUATIES = [
-  "We hebben geen professionele website",
-  "We worden niet gevonden op Google",
-  "Onze processen zijn te handmatig",
-  "We missen inzicht in onze data",
-  "We willen meer leads genereren",
-  "We zoeken een complete digitale partner",
-  "Anders",
-].map((v) => ({ value: v, label: v }));
-
-const DOELEN = [
-  "Professionele website of webshop",
-  "Beter gevonden worden (SEO & content)",
-  "Processen automatiseren met AI",
-  "Dashboards en data-inzicht",
-  "Meer leads genereren",
-  "Branding en design verbeteren",
-  "Combinatie van bovenstaande",
-].map((v) => ({ value: v, label: v }));
-
-const BUDGETS = [
-  "Eenmalig: Starter (€ 1.800–€ 3.500)",
-  "Eenmalig: Professional (€ 5.500–€ 9.000)",
-  "Eenmalig: Enterprise (€ 14.000–€ 25.000)",
-  "Maandelijks: Starter (€ 1.000–€ 1.500/mnd)",
-  "Maandelijks: Professional (€ 2.750–€ 3.500/mnd)",
-  "Maandelijks: Enterprise (€ 5.000–€ 8.000/mnd)",
-  "Nog niet zeker",
-].map((v) => ({ value: v, label: v }));
-
-const TIJDLIJNEN = [
-  "Zo snel mogelijk (< 2 weken)",
-  "Binnen 1 maand",
-  "Over 1-3 maanden",
-  "Oriënterend, geen directe deadline",
-].map((v) => ({ value: v, label: v }));
-
-const NEXT_STEPS = [
-  { step: "1", text: "We lezen je aanvraag zorgvuldig door" },
-  { step: "2", text: "Binnen 24 uur ontvang je een persoonlijk voorstel" },
-  {
-    step: "3",
-    text: "We plannen een intake gesprek om alles door te nemen",
-  },
-  { step: "4", text: "Geen verplichtingen, jij beslist of er een match is" },
-];
+import { useTranslation } from "@/lib/i18n";
 
 export function OfferteForm() {
+  const { t } = useTranslation();
   const [success, setSuccess] = useState(false);
   const {
     register,
@@ -76,6 +19,62 @@ export function OfferteForm() {
     reset,
     formState: { errors, isSubmitting },
   } = useForm<OfferteFormValues>({ resolver: zodResolver(offerteSchema) });
+
+  const BRANCHES = [
+    { value: t("form.opt.saas"), label: t("form.opt.saas") },
+    { value: t("form.opt.dienstverlening"), label: t("form.opt.dienstverlening") },
+    { value: t("form.opt.logistiek"), label: t("form.opt.logistiek") },
+    { value: t("form.opt.productie"), label: t("form.opt.productie") },
+    { value: t("form.opt.financieel"), label: t("form.opt.financieel") },
+    { value: t("form.opt.zorg"), label: t("form.opt.zorg") },
+    { value: t("form.opt.retail"), label: t("form.opt.retail") },
+    { value: t("form.opt.bouw"), label: t("form.opt.bouw") },
+    { value: t("form.opt.anders"), label: t("form.opt.anders") },
+  ];
+
+  const SITUATIES = [
+    { value: t("form.opt.geenWebsite"), label: t("form.opt.geenWebsite") },
+    { value: t("form.opt.nietGevonden"), label: t("form.opt.nietGevonden") },
+    { value: t("form.opt.teHandmatig"), label: t("form.opt.teHandmatig") },
+    { value: t("form.opt.geenInzicht"), label: t("form.opt.geenInzicht") },
+    { value: t("form.opt.meerLeads"), label: t("form.opt.meerLeads") },
+    { value: t("form.opt.completePartner"), label: t("form.opt.completePartner") },
+    { value: t("form.opt.anders"), label: t("form.opt.anders") },
+  ];
+
+  const DOELEN = [
+    { value: t("form.opt.doelWebsite"), label: t("form.opt.doelWebsite") },
+    { value: t("form.opt.doelSeo"), label: t("form.opt.doelSeo") },
+    { value: t("form.opt.doelAi"), label: t("form.opt.doelAi") },
+    { value: t("form.opt.doelData"), label: t("form.opt.doelData") },
+    { value: t("form.opt.doelLeads"), label: t("form.opt.doelLeads") },
+    { value: t("form.opt.doelBranding"), label: t("form.opt.doelBranding") },
+    { value: t("form.opt.doelCombi"), label: t("form.opt.doelCombi") },
+  ];
+
+  const BUDGETS = [
+    { value: t("form.opt.budgetStarterE"), label: t("form.opt.budgetStarterE") },
+    { value: t("form.opt.budgetProfE"), label: t("form.opt.budgetProfE") },
+    { value: t("form.opt.budgetEntE"), label: t("form.opt.budgetEntE") },
+    { value: t("form.opt.budgetStarterM"), label: t("form.opt.budgetStarterM") },
+    { value: t("form.opt.budgetProfM"), label: t("form.opt.budgetProfM") },
+    { value: t("form.opt.budgetEntM"), label: t("form.opt.budgetEntM") },
+    { value: t("form.opt.budgetOnzeker"), label: t("form.opt.budgetOnzeker") },
+  ];
+
+  const TIJDLIJNEN = [
+    { value: t("form.opt.asap"), label: t("form.opt.asap") },
+    { value: t("form.opt.binnenMaand"), label: t("form.opt.binnenMaand") },
+    { value: t("form.opt.1tot3maanden"), label: t("form.opt.1tot3maanden") },
+    { value: t("form.opt.orienterend"), label: t("form.opt.orienterend") },
+  ];
+
+  const NEXT_STEPS = [
+    { step: "1", text: t("offerte.stap1") },
+    { step: "2", text: t("offerte.stap2") },
+    { step: "3", text: t("offerte.stap3") },
+    { step: "4", text: t("offerte.stap4") },
+  ];
 
   async function onSubmit(data: OfferteFormValues) {
     try {
@@ -88,7 +87,7 @@ export function OfferteForm() {
       setSuccess(true);
       reset();
     } catch {
-      toast.error("Er ging iets mis. Probeer het opnieuw of mail ons.");
+      toast.error(t("toast.offerteFout"));
     }
   }
 
@@ -102,13 +101,13 @@ export function OfferteForm() {
               <Check className="w-8 h-8 text-brand-600" />
             </div>
             <h2 className="text-2xl font-bold text-dark-900 mb-3">
-              Aanvraag ontvangen!
+              {t("offerte.aanvraagOntvangen")}
             </h2>
             <p className="text-dark-600 mb-2">
-              We sturen binnen <strong>24 uur</strong> een persoonlijk voorstel.
+              {t("offerte.aanvraagOntvangenDesc")}
             </p>
             <p className="text-dark-500 text-sm">
-              Controleer ook je spam als je niks ziet.
+              {t("offerte.checkSpam")}
             </p>
           </div>
         ) : (
@@ -119,11 +118,11 @@ export function OfferteForm() {
             {/* Contactgegevens */}
             <section>
               <h2 className="text-lg font-bold text-dark-900 mb-6 pb-3 border-b border-dark-100">
-                Contactgegevens
+                {t("form.contactgegevens")}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <FormField
-                  label="Naam"
+                  label={t("form.naam")}
                   required
                   error={errors.naam?.message}
                   inputProps={{
@@ -132,7 +131,7 @@ export function OfferteForm() {
                   }}
                 />
                 <FormField
-                  label="Bedrijf"
+                  label={t("form.bedrijf")}
                   required
                   error={errors.bedrijf?.message}
                   inputProps={{
@@ -141,7 +140,7 @@ export function OfferteForm() {
                   }}
                 />
                 <FormField
-                  label="Jouw rol"
+                  label={t("form.rol")}
                   required
                   error={errors.rol?.message}
                   inputProps={{
@@ -150,7 +149,7 @@ export function OfferteForm() {
                   }}
                 />
                 <FormField
-                  label="E-mail"
+                  label={t("form.email")}
                   required
                   error={errors.email?.message}
                   inputProps={{
@@ -160,7 +159,7 @@ export function OfferteForm() {
                   }}
                 />
                 <FormField
-                  label="Telefoon"
+                  label={t("form.telefoon")}
                   required
                   error={errors.telefoon?.message}
                   inputProps={{
@@ -169,7 +168,7 @@ export function OfferteForm() {
                   }}
                 />
                 <FormField
-                  label="Website"
+                  label={t("form.website")}
                   error={errors.website?.message}
                   inputProps={{
                     ...register("website"),
@@ -182,46 +181,45 @@ export function OfferteForm() {
             {/* Situatie */}
             <section>
               <h2 className="text-lg font-bold text-dark-900 mb-6 pb-3 border-b border-dark-100">
-                Jouw situatie
+                {t("form.jouwSituatie")}
               </h2>
               <div className="space-y-6">
                 <FormField
-                  label="Branche"
+                  label={t("form.branche")}
                   required
                   error={errors.branche?.message}
                   selectProps={{
                     ...register("branche"),
-                    placeholder: "Selecteer branche",
+                    placeholder: t("form.selecteerBranche"),
                     options: BRANCHES,
                   }}
                 />
                 <FormField
-                  label="Huidige situatie"
+                  label={t("form.huidigeSituatie")}
                   required
                   error={errors.huidige_situatie?.message}
                   selectProps={{
                     ...register("huidige_situatie"),
-                    placeholder: "Wat beschrijft jou het best?",
+                    placeholder: t("form.huidigeSituatiePlaceholder"),
                     options: SITUATIES,
                   }}
                 />
                 <FormField
-                  label="Primair doel"
+                  label={t("form.primairDoel")}
                   required
                   error={errors.doel?.message}
                   selectProps={{
                     ...register("doel"),
-                    placeholder: "Wat wil je bereiken?",
+                    placeholder: t("form.doelPlaceholder"),
                     options: DOELEN,
                   }}
                 />
                 <FormField
-                  label="Toelichting op je doel"
+                  label={t("form.doelToelichting")}
                   textareaProps={{
                     ...register("doel_toelichting"),
                     rows: 3,
-                    placeholder:
-                      "Vertel iets meer over je situatie en wat je wilt bereiken...",
+                    placeholder: t("form.doelToelichtingPlaceholder"),
                   }}
                 />
               </div>
@@ -230,44 +228,43 @@ export function OfferteForm() {
             {/* Investering */}
             <section>
               <h2 className="text-lg font-bold text-dark-900 mb-6 pb-3 border-b border-dark-100">
-                Investering &amp; planning
+                {t("form.investeringPlanning")}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <FormField
-                  label="Budgetrange (maandelijks)"
+                  label={t("form.budget")}
                   required
                   error={errors.budget?.message}
                   selectProps={{
                     ...register("budget"),
-                    placeholder: "Selecteer range",
+                    placeholder: t("form.selecteerRange"),
                     options: BUDGETS,
                   }}
                 />
                 <FormField
-                  label="Gewenste startdatum"
+                  label={t("form.tijdlijn")}
                   required
                   error={errors.tijdlijn?.message}
                   selectProps={{
                     ...register("tijdlijn"),
-                    placeholder: "Selecteer tijdlijn",
+                    placeholder: t("form.selecteerTijdlijn"),
                     options: TIJDLIJNEN,
                   }}
                 />
               </div>
               <div className="mt-6">
                 <FormField
-                  label="Aanvullende informatie"
+                  label={t("form.extra")}
                   textareaProps={{
                     ...register("extra"),
                     rows: 4,
-                    placeholder:
-                      "Alles wat je wilt delen wat ons helpt een goed voorstel te maken...",
+                    placeholder: t("form.extraPlaceholder"),
                   }}
                 />
               </div>
             </section>
 
-            {/* Honeypot — hidden from users, catches bots */}
+            {/* Honeypot */}
             <div className="absolute opacity-0 -z-10" aria-hidden="true" tabIndex={-1}>
               <input type="text" autoComplete="off" tabIndex={-1} {...register("_hp")} />
             </div>
@@ -277,7 +274,7 @@ export function OfferteForm() {
               loading={isSubmitting}
               className="w-full sm:w-auto"
             >
-              Offerte aanvragen
+              {t("form.offerteAanvragen")}
             </Button>
           </form>
         )}
@@ -287,7 +284,7 @@ export function OfferteForm() {
       <div className="space-y-6">
         <div className="bg-white p-6 rounded-2xl border border-dark-100">
           <h3 className="font-bold text-dark-900 mb-4">
-            Wat gebeurt er daarna?
+            {t("offerte.watDaarna")}
           </h3>
           {NEXT_STEPS.map(({ step, text }) => (
             <div key={step} className="flex items-start gap-3 mb-3 last:mb-0">
@@ -300,9 +297,7 @@ export function OfferteForm() {
         </div>
         <div className="bg-dark-50 p-6 rounded-2xl">
           <p className="text-xs text-dark-400 leading-relaxed">
-            🔒 Je gegevens worden vertrouwelijk behandeld en niet gedeeld met
-            derden. We gebruiken deze uitsluitend voor het opstellen van jouw
-            offerte.
+            &#128274; {t("offerte.privacy")}
           </p>
         </div>
       </div>

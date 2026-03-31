@@ -54,16 +54,16 @@ export function WhyItWorksSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.12 }}
-              className="p-8 rounded-2xl border border-dark-700 bg-dark-900"
+              className="p-8 rounded-2xl border border-dark-700 bg-dark-900 flex flex-col"
             >
               <div className="w-10 h-10 bg-brand-600/20 rounded-xl flex items-center justify-center mb-6">
                 <CheckCircle2 className="w-5 h-5 text-brand-400" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">{reason.title}</h3>
-              <p className="text-dark-400 text-sm leading-relaxed mb-6">
+              <p className="text-dark-400 text-sm leading-relaxed flex-1">
                 {reason.description}
               </p>
-              <div className="border-t border-dark-700 pt-4">
+              <div className="border-t border-dark-700 pt-4 mt-6">
                 <p className="text-brand-400 text-xs font-medium">{reason.proof}</p>
               </div>
             </motion.div>

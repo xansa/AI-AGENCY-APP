@@ -4,11 +4,14 @@ import { Accordion } from "@/components/ui/Accordion";
 import { Button } from "@/components/ui/Button";
 import { faqItems } from "@/content/faq";
 import { motion } from "framer-motion";
-import { useTranslation } from "@/lib/i18n";
+import { useTranslation, l } from "@/lib/i18n";
 
 export function FAQSection() {
-  const { t } = useTranslation();
-  const previewFaq = faqItems.slice(0, 8);
+  const { t, locale } = useTranslation();
+  const previewFaq = faqItems.slice(0, 8).map((item) => ({
+    question: l(item, "question", locale),
+    answer: l(item, "answer", locale),
+  }));
 
   return (
     <section className="py-20 lg:py-28 bg-dark-50">

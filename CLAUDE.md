@@ -18,7 +18,7 @@ There are no automated tests in this project.
 
 ## Stack
 
-Next.js 14 App Router · TypeScript · Tailwind CSS · Framer Motion · react-hook-form + Zod · Resend · Supabase · Anthropic SDK · HubSpot CRM. All UI copy is in **Dutch**.
+Next.js 14 App Router · TypeScript · Tailwind CSS · Framer Motion · react-hook-form + Zod · Resend · Supabase · Anthropic SDK · HubSpot CRM. All UI copy is **bilingual (NL/EN)** via client-side i18n.
 
 ---
 
@@ -81,7 +81,32 @@ The `MarkdownText` component inside `ChatWidget.tsx` renders `**bold**`, `[link]
 
 ### 4. Content data layer (`content/*.ts`)
 
-All business data (services, packages, cases, FAQ, knowledge base) lives in typed TypeScript files under `content/`. These are imported by both pages and the chatbot. Dynamic routes like `app/diensten/[slug]/page.tsx` use `generateStaticParams()` driven by the content arrays — adding a new service means adding an entry to `content/services.ts`, not creating a new page file.
+All business data (services, packages, cases, FAQ, knowledge base) lives in typed TypeScript files under `content/`. These are imported by both pages and the chatbot. Dynamic routes like `app/diensten/[slug]/page.tsx` use `generateStaticParams()` driven by the content arrays -- adding a new service means adding an entry to `content/services.ts`, not creating a new page file.
+
+Content data files use `_en` suffix fields for English translations (e.g., `title` + `title_en`, `deliverables` + `deliverables_en`). The Dutch field is the default and used by server components for metadata/JSON-LD (SEO). The `_en` field is picked up by client components via the `l()` / `la()` helpers.
+
+### 4b. i18n system (NL/EN)
+
+Client-side i18n via React Context + localStorage. No URL-based routing (no `/en/` prefix).
+
+**Core files:**
+- `lib/i18n/LanguageContext.tsx` -- `Locale` type (`"nl" | "en"`), `LanguageProvider`, `useLanguage()` hook
+- `lib/i18n/translations.ts` -- ~320 translation keys as `{ nl: string, en: string }` objects
+- `lib/i18n/useTranslation.ts` -- `useTranslation()` returns `{ t, locale }`
+- `lib/i18n/localize.ts` -- `l(item, field, locale)` for strings, `la(item, field, locale)` for arrays
+
+**Pattern for content data localization:**
+```typescript
+import { useTranslation, l, la } from "@/lib/i18n";
+const { t, locale } = useTranslation();
+// UI text:  t("dienstenPage.heading")
+// Content:  l(service, "title", locale)      -- picks title_en when locale is "en"
+// Arrays:   la(pkg, "deliverables", locale)   -- picks deliverables_en when locale is "en"
+```
+
+**Subpage pattern:** Server `page.tsx` exports metadata (always Dutch for SEO) and renders a client `*Content.tsx` component that uses `useTranslation()` and `l()`/`la()` for all visible text. Examples: `DienstenContent.tsx`, `CasesContent.tsx`, `FAQContent.tsx`, `OverOnsContent.tsx`, `PackagesPageContent.tsx`, `ContactPageContent.tsx`, `OffertePageContent.tsx`.
+
+**Adding a new translation:** Add key to `translations.ts`, use `t("key")` in client components.
 
 ### 4a. Blog auto-publish system
 
@@ -132,6 +157,14 @@ export function createAIProvider(): AIProvider {
 ### 11. Icons
 
 `lucide-react` is the icon library. Service data in `content/services.ts` stores icon names as strings (e.g., `"Globe"`); import the matching Lucide component by name.
+
+### 12. Cookie banner
+
+`components/ui/CookieBanner.tsx` shows a GDPR-style cookie consent banner on first visit. Uses `localStorage` key `arka-cookie-consent` (values: `"accepted"` or `"declined"`). Bilingual via `useTranslation()`. Links to `/privacy`. Loaded in `app/layout.tsx` inside `LanguageProvider`.
+
+### 13. Email sequences
+
+`content/email-sequences.md` contains 2 Smartlead cold outreach sequences (4 emails each, 12-day cadence). Uses Smartlead variables `{{voornaam}}`, `{{bedrijf}}`, `{{website}}`, `{{branche}}`, `{{stad}}`. Sent via arkagroup.nl / arkadigitaal.nl domains (never arkadigital.nl).
 
 ---
 
