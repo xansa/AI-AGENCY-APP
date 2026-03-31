@@ -22,6 +22,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `${baseUrl}/diensten/${service.slug}`,
     },
+    openGraph: {
+      title: `${service.title} | Arka`,
+      description: service.description,
+      url: `${baseUrl}/diensten/${service.slug}`,
+    },
   };
 }
 
@@ -46,11 +51,25 @@ export default function DienstDetailPage({ params }: Props) {
     },
   };
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: baseUrl },
+      { "@type": "ListItem", position: 2, name: "Diensten", item: `${baseUrl}/diensten` },
+      { "@type": "ListItem", position: 3, name: service.title, item: `${baseUrl}/diensten/${service.slug}` },
+    ],
+  };
+
   return (
     <div className="pt-24">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <DienstDetailContent service={service} />
     </div>

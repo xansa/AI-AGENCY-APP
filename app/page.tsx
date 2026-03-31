@@ -13,6 +13,16 @@ export const metadata: Metadata = {
   title: { absolute: "Arka | Jouw digitale afdeling, zonder de overhead." },
   description:
     "Arka is jouw digitale partner in Dordrecht. Websites, SEO, AI chatbots, dashboards, lead generation en branding, alles onder één dak.",
+  openGraph: {
+    title: "Arka | Jouw digitale afdeling, zonder de overhead.",
+    description:
+      "Arka is jouw digitale partner in Dordrecht. Websites, SEO, AI chatbots, dashboards, lead generation en branding, alles onder één dak.",
+    url: "https://arkadigital.nl",
+  },
+  twitter: {
+    title: "Arka | Jouw digitale afdeling, zonder de overhead.",
+    description: "Jouw digitale partner in Dordrecht.",
+  },
 };
 
 export default function HomePage() {

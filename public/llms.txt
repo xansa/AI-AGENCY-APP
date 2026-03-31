@@ -1,0 +1,73 @@
+# Arka
+
+> Jouw digitale afdeling, zonder de overhead.
+
+Arka is a digital agency based in Dordrecht, Nederland. We help SMBs and freelancers with websites, SEO, AI automation, dashboards, lead generation, and branding -- all as a flexible outsourced digital department.
+
+## Contact
+
+- Website: https://arkadigital.nl
+- Email: info@arkadigital.nl
+- Phone: +31 6 46140986
+- Location: Dordrecht, Nederland
+- KVK: 42000761
+- BTW: NL005424960B92
+
+## Pages
+
+- [Homepage](https://arkadigital.nl/): Overview of Arka's services, packages, and value proposition.
+- [Diensten (Services)](https://arkadigital.nl/diensten): Overview of all six service areas.
+- [Websites & Webshops](https://arkadigital.nl/diensten/websites-webshops): Custom design, development and hosting of websites and webshops.
+- [SEO & Content](https://arkadigital.nl/diensten/seo-content): Search engine optimization, blog articles and LinkedIn content.
+- [AI Chatbots & Automatisering](https://arkadigital.nl/diensten/ai-chatbots-automatisering): Smart chatbots, workflow automation and AI integrations.
+- [Dashboards & Data](https://arkadigital.nl/diensten/dashboards-data): KPI dashboards, reporting and data integrations.
+- [Lead Generation](https://arkadigital.nl/diensten/lead-generation): Outbound campaigns, funnels and CRM optimization.
+- [Branding & Design](https://arkadigital.nl/diensten/branding-design): Visual identity, UI/UX design and brand guidelines.
+- [Packages](https://arkadigital.nl/packages): Three pricing tiers (Starter, Professional, Enterprise) with monthly retainer and one-time project options.
+- [Cases](https://arkadigital.nl/cases): Portfolio of completed client projects.
+- [Blog](https://arkadigital.nl/blog): Articles on digital strategy, SEO, AI, and web development.
+- [FAQ](https://arkadigital.nl/faq): Frequently asked questions about services, pricing, and process.
+- [Over Ons (About)](https://arkadigital.nl/over-ons): Background on Arka and its approach.
+- [Contact](https://arkadigital.nl/contact): Contact form and details.
+- [Offerte (Quote)](https://arkadigital.nl/offerte): Request a custom quote.
+- [Privacy](https://arkadigital.nl/privacy): Privacy policy.
+- [Algemene Voorwaarden (Terms)](https://arkadigital.nl/algemene-voorwaarden): General terms and conditions.
+
+## Services
+
+### Websites & Webshops
+Custom design, development and hosting of websites and webshops that load fast and convert. Deliverables: responsive design, CMS integration, hosting & maintenance, performance optimization, SSL & security.
+
+### SEO & Content
+Search engine optimization, blog articles and LinkedIn content to improve online visibility. Deliverables: technical SEO audit, keyword research, monthly blog articles, LinkedIn posts, content strategy.
+
+### AI Chatbots & Automation
+Smart chatbots, workflow automation and AI integrations that speed up processes and serve customers 24/7. Deliverables: custom AI chatbot, process automation, CRM integrations, lead qualification.
+
+### Dashboards & Data
+KPI dashboards, reporting and data integrations for business insight. Deliverables: custom dashboard development, data pipeline setup, real-time reporting, API integrations.
+
+### Lead Generation
+Outbound campaigns, funnels and CRM optimization for a predictable flow of new leads. Deliverables: lead funnel setup, outbound email campaigns, LinkedIn outreach, CRM setup & optimization.
+
+### Branding & Design
+Visual identity, UI/UX design and brand guidelines for a professional and consistent brand. Deliverables: logo & brand identity, brand guidelines, UI/UX design, social media templates.
+
+## Packages
+
+### Starter
+For freelancers and small businesses. Includes Websites & Webshops and SEO & Content.
+- Monthly retainer: EUR 500 onboarding + EUR 1,000-1,500/month (min. 3 months)
+- One-time project: EUR 1,800-3,500 (delivery in 2-4 weeks)
+
+### Professional
+For growing SMBs. Includes Websites & Webshops, SEO & Content, AI Chatbots & Automation, and Branding & Design.
+- Monthly retainer: EUR 750 onboarding + EUR 2,750-3,500/month (min. 6 months)
+- One-time project: EUR 5,500-9,000 (delivery in 4-6 weeks)
+
+### Enterprise
+For established SMBs and scale-ups. Includes all six services.
+- Monthly retainer: EUR 1,000 onboarding + EUR 5,000-8,000/month (min. 6 months)
+- One-time project: EUR 14,000-25,000 (delivery in 6-10 weeks)
+
+All packages include 30 days of bug fixes after delivery. Hourly rate after that: EUR 95/hour.

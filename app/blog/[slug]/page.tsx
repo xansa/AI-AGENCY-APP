@@ -83,25 +83,46 @@ export default function BlogPostPage({ params }: Props) {
   const post = published.find((p) => p.slug === params.slug);
   if (!post) notFound();
 
+  // Calculate reading time from word count (~200 words per minute)
+  const wordCount = post.content.split(/\s+/).length;
+  const readingTimeMinutes = Math.max(1, Math.round(wordCount / 200));
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: baseUrl },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `${baseUrl}/blog` },
+      { "@type": "ListItem", position: 3, name: post.title, item: `${baseUrl}/blog/${post.slug}` },
+    ],
+  };
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.title,
     description: post.excerpt,
+    image: `${baseUrl}/brand/cover-dark.svg`,
     author: {
-      "@type": "Organization",
-      name: post.author,
-      url: baseUrl,
+      "@type": "Person",
+      name: "Kaan Arslan",
+      url: `${baseUrl}/over-ons`,
     },
     publisher: {
       "@type": "Organization",
       name: "Arka",
       url: baseUrl,
+      logo: {
+        "@type": "ImageObject",
+        url: `${baseUrl}/brand/logo-icon-dark.svg`,
+      },
     },
     datePublished: post.publishedAt,
+    dateModified: post.publishedAt,
     url: `${baseUrl}/blog/${post.slug}`,
     keywords: post.tags,
     inLanguage: "nl",
+    timeRequired: `PT${readingTimeMinutes}M`,
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `${baseUrl}/blog/${post.slug}`,
@@ -113,6 +134,10 @@ export default function BlogPostPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <section className="bg-dark-950 py-16 lg:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -9,15 +9,37 @@ export const metadata: Metadata = {
   description:
     "Praktische inzichten over websites, SEO, AI en digitale groei voor MKB-bedrijven.",
   alternates: { canonical: "https://arkadigital.nl/blog" },
+  openGraph: {
+    title: "Blog | Arka",
+    description: "Praktische inzichten over websites, SEO, AI en digitale groei voor MKB-bedrijven.",
+    url: "https://arkadigital.nl/blog",
+  },
+  twitter: {
+    title: "Blog | Arka",
+    description: "Praktische inzichten over websites, SEO, AI en digitale groei voor MKB-bedrijven.",
+  },
 };
 
 export const revalidate = 3600; // revalidate every hour
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://arkadigital.nl" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "https://arkadigital.nl/blog" },
+  ],
+};
 
 export default function BlogPage() {
   const blogPosts = getPublishedPosts();
 
   return (
     <div className="pt-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <section className="bg-dark-950 py-16 lg:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Badge

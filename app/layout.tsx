@@ -41,16 +41,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "nl_NL",
-    url: "https://arkadigital.nl",
     siteName: "Arka",
-    title: "Arka | Jouw digitale afdeling, zonder de overhead.",
-    description:
-      "Arka is jouw digitale partner. Websites, SEO, AI chatbots, dashboards, lead generation en branding, alles onder één dak.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Arka | Jouw digitale afdeling, zonder de overhead.",
-    description: "Jouw digitale partner in Dordrecht.",
   },
   robots: {
     index: true,
@@ -72,11 +66,14 @@ const jsonLd = {
   description:
     "Digitaal bureau in Dordrecht. Websites, SEO, AI chatbots, dashboards, lead generation en branding, alles onder één dak.",
   url: "https://arkadigital.nl",
+  image: "https://arkadigital.nl/brand/logo-icon-dark.svg",
+  logo: "https://arkadigital.nl/brand/logo-icon-dark.svg",
   telephone: "+31646140986",
   email: "info@arkadigital.nl",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Dordrecht",
+    addressRegion: "Zuid-Holland",
     addressCountry: "NL",
   },
   geo: {
@@ -84,15 +81,26 @@ const jsonLd = {
     latitude: 51.8133,
     longitude: 4.6901,
   },
-  areaServed: {
-    "@type": "Country",
-    name: "NL",
+  areaServed: [
+    { "@type": "City", "name": "Dordrecht" },
+    { "@type": "City", "name": "Zwijndrecht" },
+    { "@type": "City", "name": "Papendrecht" },
+    { "@type": "AdministrativeArea", "name": "Drechtsteden" },
+  ],
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    opens: "09:00",
+    closes: "17:00",
   },
   founder: {
     "@type": "Person",
-    name: "Kaan",
+    name: "Kaan Arslan",
   },
-  sameAs: [],
+  sameAs: [
+    // TODO: Add LinkedIn company page URL once created
+    // TODO: Add Google Business Profile URL once created
+  ],
   priceRange: "$$",
   serviceType: [
     "Webdesign",

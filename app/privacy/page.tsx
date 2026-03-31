@@ -5,6 +5,16 @@ export const metadata: Metadata = {
   title: "Privacybeleid",
   description:
     "Hoe Arka omgaat met jouw persoonsgegevens conform de AVG/GDPR.",
+  alternates: { canonical: "https://arkadigital.nl/privacy" },
+  openGraph: {
+    title: "Privacybeleid | Arka",
+    description: "Hoe Arka omgaat met jouw persoonsgegevens conform de AVG/GDPR.",
+    url: "https://arkadigital.nl/privacy",
+  },
+  twitter: {
+    title: "Privacybeleid | Arka",
+    description: "Hoe Arka omgaat met jouw persoonsgegevens conform de AVG/GDPR.",
+  },
 };
 
 export default function PrivacyPage() {

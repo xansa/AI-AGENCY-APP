@@ -5,6 +5,16 @@ export const metadata: Metadata = {
   title: "Algemene Voorwaarden",
   description:
     "De algemene voorwaarden van Arka voor onze digitale dienstverlening.",
+  alternates: { canonical: "https://arkadigital.nl/algemene-voorwaarden" },
+  openGraph: {
+    title: "Algemene Voorwaarden | Arka",
+    description: "De algemene voorwaarden van Arka voor onze digitale dienstverlening.",
+    url: "https://arkadigital.nl/algemene-voorwaarden",
+  },
+  twitter: {
+    title: "Algemene Voorwaarden | Arka",
+    description: "De algemene voorwaarden van Arka voor onze digitale dienstverlening.",
+  },
 };
 
 export default function AlgemeneVoorwaardenPage() {
