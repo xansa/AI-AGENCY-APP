@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- V15: Twee tinten blauw, linker en rechter been -->
+  <rect width="512" height="512" rx="112" fill="#1E40AF"/>
+  <!-- Linker been lichter -->
+  <path d="M256 80 L256 240 L202 400 H122 Z" fill="#93C5FD"/>
+  <!-- Rechter been wit -->
+  <path d="M256 80 L390 400 H310 L256 240 Z" fill="white"/>
+  <!-- Crossbar -->
+  <path d="M256 300 L214 400 H298 Z" fill="#1E40AF"/>
+</svg>

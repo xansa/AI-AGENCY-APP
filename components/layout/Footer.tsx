@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslation } from "@/lib/i18n";
-import { Zap, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import Link from "next/link";
 
 export function Footer() {
@@ -35,8 +35,12 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center">
-                <Zap className="w-4 h-4 text-white" />
+              <div className="w-8 h-8 rounded-lg overflow-hidden">
+                <svg viewBox="0 0 512 512" className="w-8 h-8">
+                  <rect width="512" height="512" rx="112" fill="#0F172A"/>
+                  <path d="M256 80 L390 400 H310 L256 240 L202 400 H122 Z" fill="#3B82F6"/>
+                  <path d="M256 300 L214 400 H298 Z" fill="#0F172A"/>
+                </svg>
               </div>
               <span className="font-bold text-white text-lg">
                 Arka<span className="text-brand-500">.</span>

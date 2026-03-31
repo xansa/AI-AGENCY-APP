@@ -6,11 +6,6 @@ export const size = { width: 180, height: 180 };
 export const contentType = "image/png";
 
 export default function Icon() {
-  // Encode the zap/lightning bolt SVG as a data URI for use in ImageResponse,
-  // since Satori doesn't support inline SVG elements directly.
-  const zapSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32"><path d="M17.5 4L9 18h6l-2.5 10L21 14h-6z" fill="white"/></svg>`;
-  const zapDataUri = `data:image/svg+xml,${encodeURIComponent(zapSvg)}`;
-
   return new ImageResponse(
     (
       <div
@@ -20,11 +15,22 @@ export default function Icon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "#6366f1",
+          background: "#0F172A",
           borderRadius: "40px",
         }}
       >
-        <img src={zapDataUri} width="110" height="110" />
+        <svg
+          viewBox="0 0 512 512"
+          width="130"
+          height="130"
+          style={{ display: "flex" }}
+        >
+          <path
+            d="M256 80 L390 400 H310 L256 240 L202 400 H122 Z"
+            fill="#3B82F6"
+          />
+          <path d="M256 300 L214 400 H298 Z" fill="#0F172A" />
+        </svg>
       </div>
     ),
     { ...size }

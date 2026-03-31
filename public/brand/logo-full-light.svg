@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
-  <rect width="64" height="64" rx="14" y="8" fill="#2563EB"/>
-  <path d="M35.5 16L25 44h12l-5 20L42 36h-12z" fill="white" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+  <rect width="64" height="64" rx="14" y="8" fill="#0F172A"/>
+  <path d="M32 18 L50 60 H43 L32 38 L21 60 H14 Z" fill="#3B82F6"/>
+  <path d="M32 48 L26 60 H38 Z" fill="#0F172A"/>
   <text x="80" y="53" font-family="Inter, -apple-system, system-ui, sans-serif" font-weight="700" font-size="42" fill="#0F172A" letter-spacing="-0.02em">Arka</text>
-  <circle cx="225" cy="53" r="5" fill="#2563EB"/>
 </svg>

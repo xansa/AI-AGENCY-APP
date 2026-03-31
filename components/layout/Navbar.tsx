@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 import { useLanguage, useTranslation, type TranslationKey } from "@/lib/i18n";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X, Zap } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -53,8 +53,12 @@ export function Navbar() {
           <div className="flex items-center justify-between h-16 lg:h-18">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 group">
-              <div className="w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center group-hover:bg-brand-700 transition-colors">
-                <Zap className="w-4 h-4 text-white" />
+              <div className="w-8 h-8 bg-[#0F172A] rounded-lg flex items-center justify-center group-hover:opacity-90 transition-opacity overflow-hidden">
+                <svg viewBox="0 0 512 512" className="w-8 h-8">
+                  <rect width="512" height="512" rx="112" fill="#0F172A"/>
+                  <path d="M256 80 L390 400 H310 L256 240 L202 400 H122 Z" fill="#3B82F6"/>
+                  <path d="M256 300 L214 400 H298 Z" fill="#0F172A"/>
+                </svg>
               </div>
               <span className={cn(
                 "font-bold text-lg tracking-tight transition-colors",

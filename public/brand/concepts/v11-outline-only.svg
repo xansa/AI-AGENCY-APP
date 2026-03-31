@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- V11: Alleen outline, geen fill -->
+  <rect width="512" height="512" rx="112" fill="#2563EB"/>
+  <path d="M256 100 L374 384 H314 L256 256 L198 384 H138 Z" fill="none" stroke="white" stroke-width="18" stroke-linejoin="round"/>
+</svg>

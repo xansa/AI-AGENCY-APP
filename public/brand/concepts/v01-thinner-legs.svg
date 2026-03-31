@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- V01: Dunnere benen, elegantere verhoudingen -->
+  <rect width="512" height="512" rx="112" fill="#2563EB"/>
+  <path d="M256 80 L370 400 H306 L256 220 L206 400 H142 Z" fill="white"/>
+  <path d="M256 310 L224 400 H288 Z" fill="#2563EB"/>
+</svg>
