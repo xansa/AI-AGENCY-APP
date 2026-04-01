@@ -81,7 +81,9 @@ The `MarkdownText` component inside `ChatWidget.tsx` renders `**bold**`, `[link]
 
 ### 4. Content data layer (`content/*.ts`)
 
-All business data (services, packages, cases, FAQ, knowledge base, brand context) lives in typed TypeScript files under `content/`. These are imported by both pages and the chatbot. `content/brand-context.ts` exports `BRAND_CONTEXT` with the complete brand identity: kleuren, typografie, voice & tone, doelgroep, en richtlijnen voor Instagram carousels en LinkedIn posts. Use this as the single source of truth for all social media and visual content generation. Dynamic routes like `app/diensten/[slug]/page.tsx` use `generateStaticParams()` driven by the content arrays -- adding a new service means adding an entry to `content/services.ts`, not creating a new page file.
+All business data (services, packages, cases, FAQ, knowledge base, brand context, landing pages) lives in typed TypeScript files under `content/`. These are imported by both pages and the chatbot. `content/brand-context.ts` exports `BRAND_CONTEXT` with the complete brand identity: kleuren, typografie, voice & tone, doelgroep, en richtlijnen voor Instagram carousels en LinkedIn posts. Use this as the single source of truth for all social media and visual content generation. Dynamic routes like `app/diensten/[slug]/page.tsx` use `generateStaticParams()` driven by the content arrays -- adding a new service means adding an entry to `content/services.ts`, not creating a new page file.
+
+Services have both a short `description` (used in metadata/cards) and a `longDescription` (600-800 words, rendered on detail pages via `RichText` component in `DienstDetailContent.tsx`). The `longDescription` supports `**bold**` and `- list` markdown syntax.
 
 Content data files use `_en` suffix fields for English translations (e.g., `title` + `title_en`, `deliverables` + `deliverables_en`). The Dutch field is the default and used by server components for metadata/JSON-LD (SEO). The `_en` field is picked up by client components via the `l()` / `la()` helpers.
 
@@ -110,7 +112,15 @@ const { t, locale } = useTranslation();
 
 ### 4a. Blog auto-publish system
 
-`content/blog.ts` contains all blog posts with `publishedAt` date strings. The helper `getPublishedPosts()` filters posts where `publishedAt <= today` and sorts newest first. Blog pages use `revalidate = 3600` (ISR, hourly) so new posts appear automatically on their scheduled date without manual deploys. The `/init` skill checks the blog queue and warns when fewer than 3 posts remain unpublished.
+`content/blog.ts` contains 27 blog posts (1,200-1,500+ words each) with `publishedAt` date strings. The helper `getPublishedPosts()` filters posts where `publishedAt <= today` and sorts newest first. Blog pages use `revalidate = 3600` (ISR, hourly) so new posts appear automatically on their scheduled date without manual deploys. The `/init` skill checks the blog queue and warns when fewer than 3 posts remain unpublished.
+
+### 4c. SEO landing pages (`content/landing-pages.ts`)
+
+Data-driven local SEO landing pages. `content/landing-pages.ts` exports a `landingPages` array with 23 entries (3 Dordrecht/Drechtsteden + 20 for 10 Dutch cities). Each entry has `slug`, `h1`, `subtitle`, `body`, `cta`, `targetKeywords`, all with `_en` translations.
+
+The `app/[landing]/page.tsx` dynamic route uses `generateStaticParams()` from the array. Each page renders `LandingPageContent.tsx` (client) with `ProfessionalService` + `BreadcrumbList` JSON-LD. Landing pages have priority 0.9 in the sitemap.
+
+**Adding a new city:** Add an entry to `content/landing-pages.ts` with a unique slug. The page, sitemap entry, and JSON-LD are generated automatically.
 
 ### 5. Shared Zod validation (`lib/validators.ts`)
 
