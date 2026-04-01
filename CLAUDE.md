@@ -81,7 +81,7 @@ The `MarkdownText` component inside `ChatWidget.tsx` renders `**bold**`, `[link]
 
 ### 4. Content data layer (`content/*.ts`)
 
-All business data (services, packages, cases, FAQ, knowledge base) lives in typed TypeScript files under `content/`. These are imported by both pages and the chatbot. Dynamic routes like `app/diensten/[slug]/page.tsx` use `generateStaticParams()` driven by the content arrays -- adding a new service means adding an entry to `content/services.ts`, not creating a new page file.
+All business data (services, packages, cases, FAQ, knowledge base, brand context) lives in typed TypeScript files under `content/`. These are imported by both pages and the chatbot. `content/brand-context.ts` exports `BRAND_CONTEXT` with the complete brand identity: kleuren, typografie, voice & tone, doelgroep, en richtlijnen voor Instagram carousels en LinkedIn posts. Use this as the single source of truth for all social media and visual content generation. Dynamic routes like `app/diensten/[slug]/page.tsx` use `generateStaticParams()` driven by the content arrays -- adding a new service means adding an entry to `content/services.ts`, not creating a new page file.
 
 Content data files use `_en` suffix fields for English translations (e.g., `title` + `title_en`, `deliverables` + `deliverables_en`). The Dutch field is the default and used by server components for metadata/JSON-LD (SEO). The `_en` field is picked up by client components via the `l()` / `la()` helpers.
 

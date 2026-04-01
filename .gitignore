@@ -23,3 +23,7 @@ npm-debug.log*
 
 # claude
 .claude/settings.local.json
+
+# sensitive / generated data
+FULL-AUDIT-REPORT.md
+hubspot_import.csv

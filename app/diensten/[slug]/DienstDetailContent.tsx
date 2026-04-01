@@ -9,6 +9,17 @@ import { useTranslation, l, la } from "@/lib/i18n";
 const CALENDLY_URL =
   process.env.NEXT_PUBLIC_CALENDLY_URL ?? "https://calendly.com/arkaecom-proton/30min";
 
+function RichText({ text }: { text: string }) {
+  const parts = text.split(/\*\*(.*?)\*\*/g);
+  return (
+    <>
+      {parts.map((part, i) =>
+        i % 2 === 1 ? <strong key={i} className="text-dark-800">{part}</strong> : <span key={i}>{part}</span>
+      )}
+    </>
+  );
+}
+
 export function DienstDetailContent({ service }: { service: Service }) {
   const { t, locale } = useTranslation();
 
@@ -32,6 +43,29 @@ export function DienstDetailContent({ service }: { service: Service }) {
 
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          {service.longDescription && (
+            <div className="mb-12 max-w-3xl">
+              {l(service, "longDescription", locale).split("\n\n").map((paragraph, i) => {
+                if (paragraph.startsWith("**") && paragraph.endsWith("**")) {
+                  return <h3 key={i} className="text-xl font-bold text-dark-900 mt-8 mb-3">{paragraph.replace(/\*\*/g, "")}</h3>;
+                }
+                if (paragraph.startsWith("- ")) {
+                  return (
+                    <ul key={i} className="space-y-2 my-4">
+                      {paragraph.split("\n").map((line, j) => (
+                        <li key={j} className="flex items-start gap-2 text-dark-600">
+                          <span className="text-brand-500 mt-1.5 text-xs">&#9679;</span>
+                          <RichText key={j} text={line.replace(/^- /, "")} />
+                        </li>
+                      ))}
+                    </ul>
+                  );
+                }
+                return <p key={i} className="text-dark-600 leading-relaxed mb-4"><RichText text={paragraph} /></p>;
+              })}
+            </div>
+          )}
+
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             <div className="lg:col-span-2 space-y-10">
               <div>
