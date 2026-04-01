@@ -205,6 +205,7 @@ Copy `.env.example` to `.env.local`. Only `ANTHROPIC_API_KEY` is required for th
 - **Location:** Dordrecht, Nederland
 - **Email:** info@arkadigital.nl
 - **Phone:** +31 6 46140986
+- **LinkedIn:** linkedin.com/company/arka-nl
 - **BTW:** NL005424960B92
 - **KVK:** 42000761
 - **Structure:** Solo operation
@@ -225,7 +226,9 @@ Copy `.env.example` to `.env.local`. Only `ANTHROPIC_API_KEY` is required for th
 
 ## Brand assets
 
-`/public/brand/` contains SVG and PNG logo variants, profile images, and cover banners. The `/brand` page (noindex) provides a visual overview with download buttons. To regenerate PNGs from SVGs: `node scripts/svg-to-png.mjs` (requires `@resvg/resvg-js` devDependency).
+`/public/brand/` contains SVG and PNG logo variants, profile images, cover banners, and LinkedIn assets. The `/brand` page (noindex) provides a visual overview with download buttons. To regenerate PNGs from SVGs: `node scripts/svg-to-png.mjs` (requires `@resvg/resvg-js` devDependency, uses Inter font — must be installed locally).
+
+LinkedIn assets: `linkedin-profile.svg/.png` (400x400 profile), `linkedin-cover-personal.svg/.png` (1584x396 Kaan's cover), `linkedin-cover-company.svg/.png` (1128x191 company cover). Square logo variant: `logo-icon-dark-square.svg/.png` (no rounded corners).
 
 ## Structured data
 
