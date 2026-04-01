@@ -286,7 +286,7 @@ export function ChatWidget() {
                       onChange={(e) => setEmailCapture(e.target.value)}
                       placeholder="jouw@email.nl"
                       required
-                      className="w-full border border-dark-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+                      className="w-full border border-dark-200 rounded-xl px-3 py-2 text-sm text-dark-900 bg-white placeholder:text-dark-400 focus:outline-none focus:ring-2 focus:ring-brand-500"
                     />
                     <Button type="submit" className="w-full" size="sm">
                       Laat e-mail achter
@@ -362,7 +362,7 @@ export function ChatWidget() {
                       value={input}
                       onChange={(e) => setInput(e.target.value)}
                       placeholder="Typ je vraag..."
-                      className="flex-1 border border-dark-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent"
+                      className="flex-1 border border-dark-200 rounded-xl px-3 py-2 text-sm text-dark-900 bg-white placeholder:text-dark-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent"
                       disabled={loading}
                     />
                     <button

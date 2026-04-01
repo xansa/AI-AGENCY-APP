@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/Button";
 import { FormField } from "@/components/ui/FormField";
 import { contactSchema, type ContactFormValues } from "@/lib/validators";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Calendar, Mail, MapPin, Phone } from "lucide-react";
+import { Calendar, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
@@ -17,6 +17,7 @@ const contactDetails = [
   { icon: Mail, label: "info@arkadigital.nl", href: "mailto:info@arkadigital.nl" },
   { icon: Phone, label: "+31 6 46140986", href: "tel:+31646140986" },
   { icon: MapPin, label: "Dordrecht, Nederland", href: null },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/company/arka-nl" },
 ] as const;
 
 export function ContactForm() {

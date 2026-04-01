@@ -25,6 +25,7 @@ lead generation and branding. Everything under one roof, direct contact, measura
   email: "info@arkadigital.nl",
   phone: "+31 6 46140986",
   website: "https://arkadigital.nl",
+  linkedin: "https://www.linkedin.com/company/arka-nl",
   kvk: "42000761",
   btw: "NL005424960B92",
 } as const;

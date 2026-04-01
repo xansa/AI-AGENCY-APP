@@ -37,6 +37,7 @@ Arka is een digitaal bureau gevestigd in Dordrecht, Nederland. Opgericht en geru
 - E-mail: info@arkadigital.nl
 - Telefoon: +31 6 46140986
 - Locatie: Dordrecht, Nederland
+- LinkedIn: linkedin.com/company/arka-nl
 - Offerte aanvragen: /offerte
 
 **Wat maakt Arka anders?**
