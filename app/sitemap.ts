@@ -1,6 +1,7 @@
 import { services } from "@/content/services";
 import { cases } from "@/content/cases";
 import { getPublishedPosts } from "@/content/blog";
+import { landingPages } from "@/content/landing-pages";
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -46,5 +47,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...servicePages, ...casePages, ...blogPages];
+  const landingPageEntries = landingPages.map((lp) => ({
+    url: `${baseUrl}/${lp.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.9,
+  }));
+
+  return [...staticPages, ...landingPageEntries, ...servicePages, ...casePages, ...blogPages];
 }
