@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1584 396" width="1584" height="396">
+  <!-- LinkedIn cover: persoonlijk profiel Kaan Arslan -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1584" height="396" fill="url(#bg)"/>
+  <!-- Subtiele scheidingslijn -->
+  <rect x="0" y="393" width="1584" height="3" fill="#3B82F6" opacity="0.4"/>
+  <!-- Content rechts (links = profielfoto overlap op LinkedIn) -->
+  <!-- Arrow-A icon -->
+  <rect x="920" y="120" width="72" height="72" rx="16" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+  <path d="M956 134 L976 178 H968 L956 156 L944 178 H936 Z" fill="#3B82F6"/>
+  <path d="M956 166 L948 178 H964 Z" fill="#0F172A"/>
+  <!-- Naam -->
+  <text x="1008" y="163" font-family="Inter, Segoe UI, system-ui, sans-serif" font-weight="700" font-size="38" fill="#F8FAFC" letter-spacing="-0.01em">Kaan Arslan</text>
+  <!-- Rol -->
+  <text x="922" y="226" font-family="Inter, Segoe UI, system-ui, sans-serif" font-weight="400" font-size="18" fill="#94A3B8">Founder</text>
+  <text x="997" y="226" font-family="Inter, Segoe UI, system-ui, sans-serif" font-weight="600" font-size="18" fill="#3B82F6">Arka</text>
+  <!-- Services -->
+  <text x="922" y="264" font-family="Inter, Segoe UI, system-ui, sans-serif" font-weight="400" font-size="15" fill="#64748B">Websites · SEO · AI Chatbots · Lead Generation</text>
+  <!-- Website -->
+  <text x="922" y="296" font-family="Inter, Segoe UI, system-ui, sans-serif" font-weight="400" font-size="14" fill="#3B82F6" opacity="0.8">arkadigital.nl</text>
+</svg>

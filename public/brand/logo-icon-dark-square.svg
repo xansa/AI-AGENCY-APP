@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <!-- V10: Donkere achtergrond variant (navy/bijna zwart) -->
-  <rect width="512" height="512" rx="112" fill="#0F172A"/>
+  <rect width="512" height="512" fill="#0F172A"/>
   <path d="M256 80 L390 400 H310 L256 240 L202 400 H122 Z" fill="#3B82F6"/>
   <path d="M256 300 L214 400 H298 Z" fill="#0F172A"/>
 </svg>

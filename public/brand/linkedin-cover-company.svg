@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1128 191" width="1128" height="191">
+  <!-- LinkedIn cover: Arka bedrijfspagina (1128x191 exact) -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1128" height="191" fill="url(#bg)"/>
+  <!-- Accent lijn boven -->
+  <rect x="0" y="0" width="1128" height="1.5" fill="#3B82F6" opacity="0.3"/>
+  <!-- Arrow-A logo -->
+  <rect x="438" y="24" width="56" height="56" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+  <path d="M466 34 L482 66 H476 L466 50 L456 66 H450 Z" fill="#3B82F6"/>
+  <path d="M466 56 L460 66 H472 Z" fill="#0F172A"/>
+  <!-- Merknaam -->
+  <text x="508" y="62" font-family="Inter, Segoe UI, system-ui, sans-serif" font-weight="700" font-size="28" fill="#F8FAFC" letter-spacing="-0.02em">Arka</text>
+  <!-- Tagline -->
+  <text x="564" y="106" text-anchor="middle" font-family="Inter, Segoe UI, system-ui, sans-serif" font-weight="400" font-size="12" fill="#94A3B8">Jouw digitale afdeling, zonder de overhead.</text>
+  <!-- Services -->
+  <text x="564" y="132" text-anchor="middle" font-family="Inter, Segoe UI, system-ui, sans-serif" font-weight="400" font-size="9" fill="#64748B" letter-spacing="0.12em">WEBSITES · SEO · AI · LEAD GENERATION · BRANDING</text>
+</svg>

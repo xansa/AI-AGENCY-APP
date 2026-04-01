@@ -1,7 +1,8 @@
 import { cn } from "@/lib/utils";
 
 const inputBase =
-  "w-full border border-dark-200 rounded-xl px-4 py-3 text-sm bg-white " +
+  "w-full border border-dark-200 rounded-xl px-4 py-3 text-sm bg-white text-dark-900 " +
+  "placeholder:text-dark-400 " +
   "focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent " +
   "disabled:opacity-50 disabled:cursor-not-allowed";
 
@@ -47,11 +48,11 @@ export function FormField({
         <select
           {...selectProps}
           id={id}
-          className={cn(inputBase, selectProps.className)}
+          className={cn(inputBase, "text-dark-900", selectProps.className)}
         >
-          <option value="">{selectProps.placeholder ?? `Selecteer ${label.toLowerCase()}`}</option>
+          <option value="" className="text-dark-400">{selectProps.placeholder ?? `Selecteer ${label.toLowerCase()}`}</option>
           {selectProps.options.map((opt) => (
-            <option key={opt.value} value={opt.value}>
+            <option key={opt.value} value={opt.value} className="text-dark-900 bg-white">
               {opt.label}
             </option>
           ))}

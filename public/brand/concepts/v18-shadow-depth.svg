@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <!-- V18: Schaduw/diepte op de A -->
-  <rect width="512" height="512" rx="112" fill="#2563EB"/>
-  <!-- Schaduw laag -->
-  <path d="M266 90 L400 410 H320 L266 250 L212 410 H132 Z" fill="#1D4ED8"/>
-  <!-- Voorgrond A -->
-  <path d="M256 80 L390 400 H310 L256 240 L202 400 H122 Z" fill="white"/>
-  <path d="M256 300 L214 400 H298 Z" fill="#2563EB"/>
-</svg>

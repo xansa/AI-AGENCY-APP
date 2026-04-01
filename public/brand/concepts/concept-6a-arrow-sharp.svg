@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <!-- 6A: Scherpe A met geintegreerde pijlpunt, geen crossbar accent -->
-  <rect width="512" height="512" rx="112" fill="#2563EB"/>
-  <!-- Clean A-pijl: twee benen die samenkomen in een punt -->
-  <path d="M256 80 L390 400 H310 L256 240 L202 400 H122 Z" fill="white"/>
-  <!-- Negative space driehoek (crossbar-achtig) -->
-  <path d="M256 300 L214 400 H298 Z" fill="#2563EB"/>
-</svg>

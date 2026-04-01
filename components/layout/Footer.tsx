@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslation } from "@/lib/i18n";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
 import Link from "next/link";
 
 export function Footer() {
@@ -65,6 +65,12 @@ export function Footer() {
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-brand-500" />
                 <span>Dordrecht, Nederland</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Linkedin className="w-4 h-4 text-brand-500" />
+                <a href="https://www.linkedin.com/company/arkadigital" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                  LinkedIn
+                </a>
               </div>
               <p className="text-xs text-dark-500 mt-3">KVK: 42000761</p>
               <p className="text-xs text-dark-500">BTW: NL005424960B92</p>
