@@ -27,3 +27,5 @@ npm-debug.log*
 # sensitive / generated data
 FULL-AUDIT-REPORT.md
 hubspot_import.csv
+
+.vercel

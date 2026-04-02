@@ -7,6 +7,7 @@ import { PackagesPreviewSection } from "@/components/sections/PackagesPreviewSec
 import { WerkwijzeSection } from "@/components/sections/WerkwijzeSection";
 import { CasesPreviewSection } from "@/components/sections/CasesPreviewSection";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { ComparisonSection } from "@/components/sections/ComparisonSection";
 import { LeadMagnetSection } from "@/components/sections/LeadMagnetSection";
 
 export const metadata: Metadata = {
@@ -32,6 +33,7 @@ export default function HomePage() {
       <ProblemsSection />
       <SocialProofSection />
       <WhyItWorksSection />
+      <ComparisonSection />
       <PackagesPreviewSection />
       <WerkwijzeSection />
       <CasesPreviewSection />

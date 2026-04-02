@@ -427,6 +427,18 @@ export const translations = {
   "cookie.learnMore": { nl: "Meer informatie", en: "Learn more" },
   "cookie.accept": { nl: "Accepteren", en: "Accept" },
   "cookie.decline": { nl: "Weigeren", en: "Decline" },
+
+  // -- Comparison --
+  "comparison.label": { nl: "Waarom Arka?", en: "Why Arka?" },
+  "comparison.heading": { nl: "Arka vs. traditioneel bureau", en: "Arka vs. traditional agency" },
+  "comparison.traditional": { nl: "Traditioneel bureau", en: "Traditional agency" },
+  "comparison.arka": { nl: "Arka", en: "Arka" },
+  "comparison.row1": { nl: "Direct contact met uitvoerder", en: "Direct contact with executor" },
+  "comparison.row2": { nl: "Geen overheadkosten", en: "No overhead costs" },
+  "comparison.row3": { nl: "Meetbare resultaten per actie", en: "Measurable results per action" },
+  "comparison.row4": { nl: "Flexibel opschalen of afschalen", en: "Flexibly scale up or down" },
+  "comparison.row5": { nl: "Transparante prijzen", en: "Transparent pricing" },
+  "comparison.row6": { nl: "Jij behoudt eigenaarschap", en: "You retain ownership" },
 } as const;
 
 export type TranslationKey = keyof typeof translations;
