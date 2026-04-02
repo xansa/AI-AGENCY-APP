@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 import { useLanguage, useTranslation, type TranslationKey } from "@/lib/i18n";
 import { AnimatePresence, motion } from "framer-motion";
@@ -15,19 +14,25 @@ const navLinks: { href: string; key: TranslationKey }[] = [
   { href: "/cases", key: "nav.cases" },
   { href: "/blog", key: "nav.blog" },
   { href: "/over-ons", key: "nav.overOns" },
-  { href: "/faq", key: "nav.faq" },
   { href: "/contact", key: "nav.contact" },
 ];
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [isHeroSection, setIsHeroSection] = useState(true);
   const pathname = usePathname();
   const { t } = useTranslation();
   const { locale, setLocale } = useLanguage();
 
   useEffect(() => {
-    const handler = () => setScrolled(window.scrollY > 20);
+    const handler = () => {
+      const y = window.scrollY;
+      setScrolled(y > 20);
+      // Hero is dark (~92vh), transition to light after that
+      setIsHeroSection(y < window.innerHeight * 0.7);
+    };
+    handler();
     window.addEventListener("scroll", handler, { passive: true });
     return () => window.removeEventListener("scroll", handler);
   }, []);
@@ -35,6 +40,10 @@ export function Navbar() {
   useEffect(() => {
     setMobileOpen(false);
   }, [pathname]);
+
+  // On non-homepage pages, always show scrolled (light) state
+  const isHomepage = pathname === "/";
+  const showDark = isHomepage && isHeroSection && !scrolled;
 
   return (
     <>
@@ -44,16 +53,18 @@ export function Navbar() {
         transition={{ duration: 0.5, ease: "easeOut" }}
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-          scrolled
-            ? "bg-white/95 backdrop-blur-md border-b border-dark-100 shadow-sm"
+          scrolled || !isHomepage
+            ? "bg-white/90 backdrop-blur-md border-b border-slate-200/80 shadow-sm"
+            : isHeroSection && isHomepage
+            ? "bg-slate-900/60 backdrop-blur-sm"
             : "bg-transparent"
         )}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 lg:h-18">
+          <div className="flex items-center justify-between h-16 lg:h-[68px]">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 group">
-              <div className="w-8 h-8 bg-[#0F172A] rounded-lg flex items-center justify-center group-hover:opacity-90 transition-opacity overflow-hidden">
+            <Link href="/" className="flex items-center gap-2.5 group">
+              <div className="w-8 h-8 rounded-lg overflow-hidden flex-shrink-0">
                 <svg viewBox="0 0 512 512" className="w-8 h-8">
                   <rect width="512" height="512" rx="112" fill="#0F172A"/>
                   <path d="M256 80 L390 400 H310 L256 240 L202 400 H122 Z" fill="#3B82F6"/>
@@ -62,23 +73,27 @@ export function Navbar() {
               </div>
               <span className={cn(
                 "font-bold text-lg tracking-tight transition-colors",
-                scrolled ? "text-dark-900" : "text-white"
+                showDark ? "text-white" : "text-slate-900"
               )}>
-                Arka<span className="text-brand-600">.</span>
+                Arka<span className="text-accent">.</span>
               </span>
             </Link>
 
             {/* Desktop nav */}
-            <nav className="hidden lg:flex items-center gap-1">
+            <nav className="hidden lg:flex items-center gap-0.5">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   className={cn(
-                    "px-3 py-2 text-sm font-medium rounded-lg transition-colors",
+                    "px-3.5 py-2 text-sm font-medium rounded-lg transition-colors",
                     pathname === link.href
-                      ? scrolled ? "text-brand-600 bg-brand-50" : "text-white bg-white/10"
-                      : scrolled ? "text-dark-600 hover:text-dark-900 hover:bg-dark-50" : "text-dark-300 hover:text-white hover:bg-white/10"
+                      ? showDark
+                        ? "text-white bg-white/10"
+                        : "text-accent bg-accent/8"
+                      : showDark
+                      ? "text-slate-300 hover:text-white hover:bg-white/10"
+                      : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
                   )}
                 >
                   {t(link.key)}
@@ -88,34 +103,45 @@ export function Navbar() {
 
             {/* Language toggle + CTA */}
             <div className="hidden lg:flex items-center gap-3">
+              {/* Language toggle */}
               <div className="flex items-center text-sm font-medium">
                 <button
                   onClick={() => setLocale("nl")}
                   className={cn(
-                    "px-1.5 py-1 rounded transition-colors",
+                    "px-2 py-1 rounded transition-colors",
                     locale === "nl"
-                      ? scrolled ? "text-brand-600" : "text-white"
-                      : scrolled ? "text-dark-400 hover:text-dark-600" : "text-dark-500 hover:text-dark-300"
+                      ? showDark ? "text-white" : "text-accent font-semibold"
+                      : showDark ? "text-slate-400 hover:text-slate-200" : "text-slate-400 hover:text-slate-700"
                   )}
                 >
                   NL
                 </button>
-                <span className={cn("text-xs", scrolled ? "text-dark-300" : "text-dark-600")}>|</span>
+                <span className={cn("text-xs", showDark ? "text-slate-600" : "text-slate-300")}>|</span>
                 <button
                   onClick={() => setLocale("en")}
                   className={cn(
-                    "px-1.5 py-1 rounded transition-colors",
+                    "px-2 py-1 rounded transition-colors",
                     locale === "en"
-                      ? scrolled ? "text-brand-600" : "text-white"
-                      : scrolled ? "text-dark-400 hover:text-dark-600" : "text-dark-500 hover:text-dark-300"
+                      ? showDark ? "text-white" : "text-accent font-semibold"
+                      : showDark ? "text-slate-400 hover:text-slate-200" : "text-slate-400 hover:text-slate-700"
                   )}
                 >
                   EN
                 </button>
               </div>
-              <Button href="/offerte" size="md" variant="primary">
+
+              {/* CTA pill */}
+              <Link
+                href="/offerte"
+                className={cn(
+                  "inline-flex items-center px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200",
+                  showDark
+                    ? "bg-accent text-white hover:bg-accent-dark shadow-lg shadow-accent/20"
+                    : "bg-accent text-white hover:bg-accent-dark shadow-sm"
+                )}
+              >
                 {t("nav.offerte")}
-              </Button>
+              </Link>
             </div>
 
             {/* Mobile menu button */}
@@ -123,15 +149,13 @@ export function Navbar() {
               onClick={() => setMobileOpen(!mobileOpen)}
               className={cn(
                 "lg:hidden p-2 rounded-lg transition-colors",
-                scrolled ? "text-dark-600 hover:text-dark-900 hover:bg-dark-50" : "text-dark-300 hover:text-white hover:bg-white/10"
+                showDark
+                  ? "text-slate-300 hover:text-white hover:bg-white/10"
+                  : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
               )}
               aria-label={t("nav.menuOpen")}
             >
-              {mobileOpen ? (
-                <X className="w-5 h-5" />
-              ) : (
-                <Menu className="w-5 h-5" />
-              )}
+              {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
         </div>
@@ -141,20 +165,20 @@ export function Navbar() {
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
+            initial={{ opacity: 0, y: -16 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
+            exit={{ opacity: 0, y: -16 }}
             transition={{ duration: 0.2 }}
             className="fixed inset-0 z-40 bg-white pt-16 lg:hidden"
           >
             <div className="px-4 py-6 space-y-1">
-              {/* Mobile language toggle */}
-              <div className="flex items-center gap-2 px-4 py-2 mb-2">
+              {/* Language toggle */}
+              <div className="flex items-center gap-2 px-4 py-2 mb-3">
                 <button
                   onClick={() => setLocale("nl")}
                   className={cn(
-                    "px-3 py-1.5 text-sm font-medium rounded-lg transition-colors",
-                    locale === "nl" ? "bg-brand-50 text-brand-600" : "text-dark-500 hover:text-dark-700"
+                    "px-3 py-1.5 text-sm font-medium rounded-full transition-colors",
+                    locale === "nl" ? "bg-accent/10 text-accent font-semibold" : "text-slate-500 hover:text-slate-700"
                   )}
                 >
                   NL
@@ -162,8 +186,8 @@ export function Navbar() {
                 <button
                   onClick={() => setLocale("en")}
                   className={cn(
-                    "px-3 py-1.5 text-sm font-medium rounded-lg transition-colors",
-                    locale === "en" ? "bg-brand-50 text-brand-600" : "text-dark-500 hover:text-dark-700"
+                    "px-3 py-1.5 text-sm font-medium rounded-full transition-colors",
+                    locale === "en" ? "bg-accent/10 text-accent font-semibold" : "text-slate-500 hover:text-slate-700"
                   )}
                 >
                   EN
@@ -175,19 +199,22 @@ export function Navbar() {
                   key={link.href}
                   href={link.href}
                   className={cn(
-                    "block px-4 py-3 text-base font-medium rounded-xl transition-colors",
+                    "block px-4 py-3.5 text-base font-medium rounded-xl transition-colors",
                     pathname === link.href
-                      ? "text-brand-600 bg-brand-50"
-                      : "text-dark-700 hover:text-dark-900 hover:bg-dark-50"
+                      ? "text-accent bg-accent/8"
+                      : "text-slate-700 hover:text-slate-900 hover:bg-slate-50"
                   )}
                 >
                   {t(link.key)}
                 </Link>
               ))}
-              <div className="pt-4">
-                <Button href="/offerte" size="lg" className="w-full">
+              <div className="pt-4 px-0">
+                <Link
+                  href="/offerte"
+                  className="flex items-center justify-center w-full px-6 py-3.5 rounded-full bg-accent text-white font-semibold text-base hover:bg-accent-dark transition-colors"
+                >
                   {t("nav.offerte")}
-                </Button>
+                </Link>
               </div>
             </div>
           </motion.div>

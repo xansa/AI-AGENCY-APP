@@ -24,8 +24,9 @@ html {
 }
 
 body {
-  color: #F8FAFC;
-  background: #0F172A;
+  /* Light theme: dark text on white background */
+  color: #334155;
+  background: #ffffff;
   font-family: var(--font-inter);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -39,5 +40,27 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Serif heading utility */
+  .font-serif-display {
+    font-family: var(--font-instrument-serif), Georgia, serif;
+  }
+
+  /* Hero dark section override */
+  .hero-section {
+    color: #F8FAFC;
+    background: #0F172A;
+  }
+
+  /* Light card style */
+  .card-light {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 1rem;
+  }
+
+  .card-light:hover {
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
   }
 }

@@ -24,6 +24,7 @@ export const translations = {
 
   // -- Hero --
   "hero.badge": { nl: "Jouw digitale afdeling, zonder de overhead", en: "Your digital department, without the overhead" },
+  "hero.heading": { nl: "Jouw digitale afdeling, zonder de overhead.", en: "Your digital department, without the overhead." },
   "hero.title1": { nl: "Meer impact.", en: "More impact." },
   "hero.title2": { nl: "Minder gedoe.", en: "Less hassle." },
   "hero.title3": { nl: "E\u00E9n digitale partner.", en: "One digital partner." },
@@ -31,8 +32,9 @@ export const translations = {
     nl: "Arka bouwt, optimaliseert en automatiseert jouw digitale aanwezigheid, van website tot AI. Alles onder \u00E9\u00E9n dak, zonder de overhead van een groot bureau.",
     en: "Arka builds, optimizes and automates your digital presence, from website to AI. All under one roof, without the overhead of a large agency.",
   },
-  "hero.cta1": { nl: "Gratis kennismaking", en: "Free consultation" },
+  "hero.cta1": { nl: "Plan een kennismaking", en: "Schedule a consultation" },
   "hero.cta2": { nl: "Vraag offerte aan", en: "Request a quote" },
+  "hero.cta2nav": { nl: "Bekijk diensten", en: "View services" },
   "hero.stat1": { nl: "Geen lange contracten", en: "No long contracts" },
   "hero.stat2": { nl: "Gratis kennismaking", en: "Free consultation" },
   "hero.stat3": { nl: "Binnen 24u reactie", en: "Response within 24h" },
@@ -419,6 +421,52 @@ export const translations = {
   "val.selecteerDoel": { nl: "Selecteer je doel", en: "Select your goal" },
   "val.selecteerBudget": { nl: "Selecteer een budgetrange", en: "Select a budget range" },
   "val.selecteerTijdlijn": { nl: "Selecteer een tijdlijn", en: "Select a timeline" },
+  // -- Intro cards (after hero) --
+  "intro.card1.title": { nl: "Alles onder \u00E9\u00E9n dak", en: "All under one roof" },
+  "intro.card1.desc": { nl: "Website, SEO, AI, data en branding. Geen losse leveranciers, geen ruis. E\u00E9n partner die alles overziet.", en: "Website, SEO, AI, data and branding. No separate vendors, no noise. One partner who oversees everything." },
+  "intro.card2.title": { nl: "Direct contact", en: "Direct contact" },
+  "intro.card2.desc": { nl: "Je werkt rechtstreeks met de persoon die het werk doet. Geen accountmanagers, geen doorverwijzingen, geen vertraging.", en: "You work directly with the person doing the work. No account managers, no referrals, no delays." },
+  "intro.card3.title": { nl: "Meetbare resultaten", en: "Measurable results" },
+  "intro.card3.desc": { nl: "Elke actie is gekoppeld aan een concreet resultaat. We meten wat telt: verkeer, leads, conversie en tijdsbesparing.", en: "Every action is linked to a concrete result. We measure what matters: traffic, leads, conversion and time savings." },
+
+  // -- Services section --
+  "services.label": { nl: "Diensten", en: "Services" },
+  "services.heading": { nl: "Wat we voor je bouwen", en: "What we build for you" },
+  "services.description": { nl: "Zes digitale disciplines, slim gecombineerd of afzonderlijk ingezet.", en: "Six digital disciplines, smartly combined or deployed individually." },
+  "services.meerInfo": { nl: "Meer info", en: "Learn more" },
+
+  // -- Comparison table --
+  "comparison.label": { nl: "Waarom Arka?", en: "Why Arka?" },
+  "comparison.heading": { nl: "Arka vs. traditioneel bureau", en: "Arka vs. traditional agency" },
+  "comparison.traditional": { nl: "Traditioneel bureau", en: "Traditional agency" },
+  "comparison.arka": { nl: "Arka", en: "Arka" },
+  "comparison.row1": { nl: "Direct contact met uitvoerder", en: "Direct contact with executor" },
+  "comparison.row2": { nl: "Geen overheadkosten", en: "No overhead costs" },
+  "comparison.row3": { nl: "Meetbare resultaten per actie", en: "Measurable results per action" },
+  "comparison.row4": { nl: "Flexibel opschalen of afschalen", en: "Flexibly scale up or down" },
+  "comparison.row5": { nl: "Transparante prijzen", en: "Transparent pricing" },
+  "comparison.row6": { nl: "Jij behoudt eigenaarschap", en: "You retain ownership" },
+
+  // -- Results / stats section --
+  "results.label": { nl: "Resultaten", en: "Results" },
+  "results.heading": { nl: "Wat onze aanpak oplevert", en: "What our approach delivers" },
+  "results.stat1.value": { nl: "+285%", en: "+285%" },
+  "results.stat1.label": { nl: "Meer organisch verkeer", en: "More organic traffic" },
+  "results.stat2.value": { nl: "+160%", en: "+160%" },
+  "results.stat2.label": { nl: "Meer leads per maand", en: "More leads per month" },
+  "results.stat3.value": { nl: "15u", en: "15h" },
+  "results.stat3.label": { nl: "Bespaard per week via AI", en: "Saved per week via AI" },
+  "results.stat4.value": { nl: "\u20AC1,8M", en: "\u20AC1.8M" },
+  "results.stat4.label": { nl: "Aan leads gegenereerd", en: "In leads generated" },
+
+  // -- Testimonial --
+  "testimonial.quote": {
+    nl: "Eindelijk een bureau waar je direct mee kunt schakelen. Geen vergaderingen, geen vertraging. Gewoon resultaat.",
+    en: "Finally an agency you can work with directly. No meetings, no delays. Just results.",
+  },
+  "testimonial.author": { nl: "Directeur, MKB-bedrijf Dordrecht", en: "Director, SMB Dordrecht" },
+  "testimonial.badge": { nl: "+240% meer leads", en: "+240% more leads" },
+
   // -- Cookie banner --
   "cookie.message": {
     nl: "Deze website gebruikt alleen functionele cookies en anonieme analytics. Geen tracking, geen advertenties.",
