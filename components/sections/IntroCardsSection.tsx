@@ -26,25 +26,29 @@ export function IntroCardsSection() {
   ];
 
   return (
-    <section className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <section className="py-28 bg-white relative overflow-hidden">
+      {/* Decorative accent blob */}
+      <div className="absolute -top-32 right-0 w-[400px] h-[400px] bg-gradient-to-br from-blue-100/40 to-cyan-100/30 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {cards.map((card, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 24 }}
+              initial={{ opacity: 0, y: 32 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300"
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.7, delay: i * 0.15, ease: [0.22, 1, 0.36, 1] }}
+              whileHover={{ y: -4, transition: { duration: 0.25 } }}
+              className="bg-white border border-slate-200/80 rounded-2xl p-8 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_60px_-12px_rgba(0,0,0,0.1)] transition-shadow duration-500"
             >
-              <div className="w-11 h-11 bg-slate-50 border border-slate-200 rounded-xl flex items-center justify-center mb-5">
+              <div className="w-12 h-12 bg-gradient-to-br from-accent/10 to-cyan-500/10 border border-accent/20 rounded-xl flex items-center justify-center mb-6">
                 <card.icon className="w-5 h-5 text-accent" />
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-3">
                 {card.title}
               </h3>
-              <p className="text-slate-500 text-sm leading-relaxed">
+              <p className="text-slate-500 text-[15px] leading-relaxed">
                 {card.desc}
               </p>
             </motion.div>

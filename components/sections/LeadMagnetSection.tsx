@@ -9,9 +9,16 @@ export function LeadMagnetSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="py-24 lg:py-32 bg-[#0F172A] relative overflow-hidden">
-      {/* Subtle glow */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_100%,rgba(59,130,246,0.15)_0%,transparent_70%)]" />
+    <section className="py-24 lg:py-32 bg-[#0F172A] relative overflow-hidden noise-overlay">
+      {/* Animated gradient blobs */}
+      <div className="blob blob-2 w-[350px] h-[350px] bg-blue-500/20 -top-20 right-10" />
+      <div className="blob blob-1 w-[300px] h-[300px] bg-cyan-400/15 bottom-0 -left-10" />
+
+      {/* Radial glow */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_50%,rgba(59,130,246,0.1)_0%,transparent_70%)]" />
+
+      {/* Top fade from light to dark */}
+      <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-white to-transparent" />
 
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div

@@ -11,16 +11,21 @@ export function HeroSection() {
   const headingWords = t("hero.heading").split(" ");
 
   return (
-    <section className="relative min-h-[92vh] flex items-center bg-[#0F172A] overflow-hidden">
-      {/* Radial gradient glow */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(59,130,246,0.18)_0%,transparent_70%)]" />
+    <section className="relative min-h-[92vh] flex items-center bg-[#0F172A] overflow-hidden noise-overlay">
+      {/* Animated gradient blobs */}
+      <div className="blob blob-1 w-[500px] h-[500px] bg-blue-500/30 -top-40 -left-20" />
+      <div className="blob blob-2 w-[400px] h-[400px] bg-cyan-400/20 top-1/3 right-0" />
+      <div className="blob blob-3 w-[350px] h-[350px] bg-indigo-500/20 bottom-0 left-1/3" />
 
-      {/* Subtle grid */}
+      {/* Radial gradient glow */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_50%_30%,rgba(59,130,246,0.12)_0%,transparent_70%)]" />
+
+      {/* Subtle dot grid */}
       <div
-        className="absolute inset-0 opacity-[0.025]"
+        className="absolute inset-0 opacity-[0.04]"
         style={{
-          backgroundImage: `linear-gradient(rgba(255,255,255,.6) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.6) 1px, transparent 1px)`,
-          backgroundSize: "80px 80px",
+          backgroundImage: `radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1px)`,
+          backgroundSize: "32px 32px",
         }}
       />
 

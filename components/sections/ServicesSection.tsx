@@ -19,8 +19,10 @@ export function ServicesSection() {
   const { t, locale } = useTranslation();
 
   return (
-    <section className="py-24 lg:py-32 bg-white" id="diensten">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-24 lg:py-32 bg-white relative overflow-hidden" id="diensten">
+      {/* Decorative elements */}
+      <div className="absolute -bottom-20 -left-20 w-[300px] h-[300px] bg-gradient-to-tr from-cyan-100/30 to-transparent rounded-full blur-3xl pointer-events-none" />
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -45,11 +47,12 @@ export function ServicesSection() {
             return (
               <motion.div
                 key={service.slug}
-                initial={{ opacity: 0, y: 24 }}
+                initial={{ opacity: 0, y: 32 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.07 }}
-                className="group bg-white border border-slate-200 rounded-2xl p-7 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+                viewport={{ once: true, margin: "-40px" }}
+                transition={{ duration: 0.7, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
+                whileHover={{ y: -4, transition: { duration: 0.25 } }}
+                className="group bg-white border border-slate-200/80 rounded-2xl p-7 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_60px_-12px_rgba(0,0,0,0.1)] transition-shadow duration-500"
               >
                 <div className="w-12 h-12 bg-slate-50 border border-slate-200 rounded-xl flex items-center justify-center mb-5 group-hover:bg-accent/5 group-hover:border-accent/20 transition-colors">
                   <Icon className="w-5 h-5 text-accent" />

@@ -41,26 +41,72 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
 
-  /* Serif heading utility */
-  .font-serif-display {
-    font-family: var(--font-instrument-serif), Georgia, serif;
-  }
+/* ─── Animated gradient blobs ─── */
+@keyframes blob-float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(30px, -40px) scale(1.08); }
+  50% { transform: translate(-20px, 20px) scale(0.95); }
+  75% { transform: translate(15px, 30px) scale(1.03); }
+}
 
-  /* Hero dark section override */
-  .hero-section {
-    color: #F8FAFC;
-    background: #0F172A;
-  }
+@keyframes blob-float-reverse {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(-25px, 35px) scale(0.96); }
+  50% { transform: translate(30px, -15px) scale(1.06); }
+  75% { transform: translate(-10px, -30px) scale(1.01); }
+}
 
-  /* Light card style */
-  .card-light {
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 1rem;
-  }
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
 
-  .card-light:hover {
-    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
-  }
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.blob-1 {
+  animation: blob-float 14s ease-in-out infinite;
+}
+
+.blob-2 {
+  animation: blob-float-reverse 16s ease-in-out infinite;
+}
+
+.blob-3 {
+  animation: blob-float 18s ease-in-out infinite 2s;
+}
+
+/* ─── Section transition gradient ─── */
+.section-fade-top {
+  position: relative;
+}
+.section-fade-top::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, transparent 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ─── Noise texture overlay ─── */
+.noise-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
 }

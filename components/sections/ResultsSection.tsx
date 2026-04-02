@@ -57,13 +57,15 @@ export function ResultsSection() {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-gradient-to-b from-white to-slate-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-24 lg:py-32 bg-gradient-to-b from-white via-blue-50/30 to-slate-50 relative overflow-hidden">
+      {/* Decorative gradient orb */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-gradient-to-r from-blue-100/30 via-cyan-100/20 to-indigo-100/30 rounded-full blur-3xl pointer-events-none" />
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="text-center max-w-xl mx-auto mb-16"
         >
           <p className="text-accent font-semibold text-sm uppercase tracking-wider mb-4">
