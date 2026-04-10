@@ -9,6 +9,27 @@ export interface LinkedInPost {
 export const linkedInPosts: LinkedInPost[] = [
   {
     id: "post-01",
+    category: "introductie",
+    hook: "Arka is een digitaal bureau uit Dordrecht.",
+    hashtags: ["#digitalbureau", "#MKB", "#websites", "#SEO", "#automatisering", "#AI", "#Dordrecht"],
+    content: `Arka is een digitaal bureau uit Dordrecht. Websites, automatisering en AI voor MKB'ers die geen zin hebben in bureau-overhead.
+
+Geen accountmanager. Geen projectmanager. Geen facturen voor overleguren. Je praat met de persoon die het ook daadwerkelijk bouwt.
+
+Wat wij doen:
+- Websites die leads opleveren, niet alleen mooi zijn
+- SEO zodat je gevonden wordt door mensen die zoeken naar wat jij aanbiedt
+- AI-chatbots die 24/7 vragen beantwoorden en leads kwalificeren
+- Automatisering van processen die je nu handmatig doet
+
+Het resultaat is hetzelfde als bij een groot bureau. De rekening niet.
+
+Kijk op arkadigital.nl of stuur een bericht.
+
+#digitalbureau #MKB #websites #SEO #automatisering #AI #Dordrecht`,
+  },
+  {
+    id: "post-05",
     category: "thought-leadership",
     hook: "De meeste MKB-websites zijn digitale visitekaartjes.\nDat is een gemiste kans.",
     hashtags: ["#MKB", "#websites", "#conversie", "#digitalisering"],
@@ -34,7 +55,7 @@ Wanneer heb jij voor het laatst kritisch naar je eigen website gekeken?
 #MKB #websites #conversie #digitalisering`,
   },
   {
-    id: "post-02",
+    id: "post-06",
     category: "case-study",
     hook: "Van 3 dagen offertes maken naar 3 uur.\nDit is wat er gebeurde.",
     hashtags: ["#automatisering", "#MKB", "#efficiency", "#resultaten"],
@@ -59,7 +80,7 @@ Welk proces kost jou onnodig veel tijd?
 #automatisering #MKB #efficiency #resultaten`,
   },
   {
-    id: "post-03",
+    id: "post-07",
     category: "praktische-tip",
     hook: "Je website laadt langzaam?\nDit kun je vandaag nog fixen.",
     hashtags: ["#SEO", "#websitesnelheid", "#MKB", "#googleranking"],
@@ -86,7 +107,7 @@ Wil je weten hoe jouw site scoort? Stuur me je URL en ik check het gratis.
 #SEO #websitesnelheid #MKB #googleranking`,
   },
   {
-    id: "post-04",
+    id: "post-02",
     category: "founder-perspectief",
     hook: "Ik run een digitaal bureau alleen.\nDit is waarom dat beter werkt.",
     hashtags: ["#ondernemen", "#solofounder", "#MKB", "#digitaalbureau"],
@@ -115,7 +136,7 @@ Heb je een vraag? Stuur me een DM. Ik reageer binnen 24 uur.
 #ondernemen #solofounder #MKB #digitaalbureau`,
   },
   {
-    id: "post-05",
+    id: "post-04",
     category: "thought-leadership",
     hook: "SEO is niet dood.\nMaar de manier waarop je het deed in 2020 wel.",
     hashtags: ["#SEO", "#contentmarketing", "#google", "#MKB"],
@@ -142,7 +163,7 @@ Wat is jouw grootste uitdaging met vindbaar worden op Google?
 #SEO #contentmarketing #google #MKB`,
   },
   {
-    id: "post-06",
+    id: "post-08",
     category: "praktische-tip",
     hook: "Je hebt geen marketingafdeling nodig.\nJe hebt een systeem nodig.",
     hashtags: ["#leadgeneration", "#MKB", "#marketing", "#groei"],
@@ -176,7 +197,7 @@ Wat zou een voorspelbare stroom leads betekenen voor jouw bedrijf?
 #leadgeneration #MKB #marketing #groei`,
   },
   {
-    id: "post-07",
+    id: "post-09",
     category: "behind-the-scenes",
     hook: "Zo ziet een typische werkdag eruit\nals solo-founder van een digitaal bureau.",
     hashtags: ["#dayinthelife", "#ondernemen", "#solofounder", "#Dordrecht"],
@@ -206,7 +227,7 @@ Hoe ziet jouw ideale werkdag eruit?
 #dayinthelife #ondernemen #solofounder #Dordrecht`,
   },
   {
-    id: "post-08",
+    id: "post-10",
     category: "case-study",
     hook: "+75% meer leads. 15 uur per week bespaard.\nZonder extra personeel.",
     hashtags: ["#leads", "#automatisering", "#resultaten", "#MKB"],
@@ -237,7 +258,7 @@ Welk proces zou jij het liefst automatiseren?
 #leads #automatisering #resultaten #MKB`,
   },
   {
-    id: "post-09",
+    id: "post-11",
     category: "thought-leadership",
     hook: "Een AI-chatbot op je website is geen gadget.\nHet is je beste medewerker.",
     hashtags: ["#AIchatbot", "#klantenservice", "#MKB", "#automatisering"],
@@ -263,7 +284,7 @@ Wil je zien hoe dat eruitziet? Check de chatbot rechtsonder op arkadigital.nl. D
 #AIchatbot #klantenservice #MKB #automatisering`,
   },
   {
-    id: "post-10",
+    id: "post-03",
     category: "praktische-tip",
     hook: "5 tekenen dat je website je geld kost\nin plaats van oplevert.",
     hashtags: ["#website", "#ondernemen", "#conversie", "#MKB"],

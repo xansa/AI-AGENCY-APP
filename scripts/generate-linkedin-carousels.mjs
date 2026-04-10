@@ -483,41 +483,8 @@ function closingSlide({
 // (alternate = cover+closing dark, content slides cream, stat dark).
 
 const carousels = {
-  "post-01-mkb-websites": {
-    theme: "alternate",
-    tag: "mkb website",
-    slides: [
-      { type: "cover", title: ["De meeste MKB websites", "zijn digitale visitekaartjes."], subtitle: "Dat is een gemiste kans." },
-      { type: "content", number: 1, heading: "Geen duidelijke call to action", body: ["Bezoekers weten niet wat ze moeten doen.", "Geen route naar contact, offerte of aankoop."] },
-      { type: "content", number: 2, heading: "Laadtijd van 5+ seconden", body: ["53% verlaat je site na 3 seconden.", "Langzaam betekent onzichtbaar voor Google."] },
-      { type: "content", number: 3, heading: ["Niet geoptimaliseerd", "voor mobiel"], body: ["60% van je bezoekers zit op telefoon.", "Slechte mobiele ervaring kost je klanten."] },
-      { type: "stat", stat: "+160%", label: "meer reserveringen", sublabel: "na herontwerp met focus op conversie" },
-      { type: "closing", cta: ["Wanneer heb jij voor het laatst", "kritisch naar je website gekeken?"] },
-    ],
-  },
-  "post-02-offertes": {
-    theme: "alternate",
-    tag: "proces automatisering",
-    slides: [
-      { type: "cover", title: ["Van 3 dagen", "naar 3 uur."], subtitle: "Zo versnelde dit bedrijf z'n offertes." },
-      { type: "content", number: 1, heading: "Het probleem", body: ["Handmatig gegevens verzamelen.", "Excel, heen en weer mailen.", "Gemiddeld 3 werkdagen per offerte."] },
-      { type: "content", number: 2, heading: "De oplossing", body: ["Een dashboard dat alle data samenbrengt.", "Klantgegevens, prijzen, beschikbaarheid.", "Alles op een plek."] },
-      { type: "stat", stat: "3u", label: ["in plaats van 3 dagen"], sublabel: "Pipeline gegroeid naar meer dan EUR 1,8M" },
-      { type: "closing", cta: ["Welk proces kost jou", "onnodig veel tijd?"] },
-    ],
-  },
-  "post-03-website-snelheid": {
-    theme: "dark",
-    tag: "website snelheid",
-    slides: [
-      { type: "cover", title: ["Je website laadt traag?", "Dit fix je vandaag nog."] },
-      { type: "content", number: 1, heading: "Afbeeldingen comprimeren", body: ["Gebruik WebP formaat.", "Scheelt 70 tot 80% aan bestandsgrootte.", "Grootste quick win voor de meeste sites."] },
-      { type: "content", number: 2, heading: "Onnodige plugins verwijderen", body: ["Elke plugin voegt JavaScript toe.", "Gebruik je een plugin niet actief?", "Weg ermee."] },
-      { type: "content", number: 3, heading: "Lazy loading aanzetten", body: ["Laad afbeeldingen pas als ze in beeld komen.", "Je bezoeker merkt niks.", "Maar je laadtijd daalt flink."] },
-      { type: "closing", cta: ["Test je site: Google PageSpeed Insights.", "Alles onder de 90 is verbeterpunt."], subcta: "Stuur me je URL, ik check het gratis." },
-    ],
-  },
-  "post-04-solo-founder": {
+  // post-01-introductie: text-only, already posted. No carousel generated.
+  "post-02-solo-founder": {
     theme: "alternate",
     tag: "solo agency",
     slides: [
@@ -528,7 +495,20 @@ const carousels = {
       { type: "closing", cta: ["Direct contact, meetbare resultaten,", "geen overhead."], subcta: "DM me. Ik reageer binnen 24 uur." },
     ],
   },
-  "post-05-seo": {
+  "post-03-website-tekenen": {
+    theme: "alternate",
+    tag: "website audit",
+    slides: [
+      { type: "cover", title: ["5 tekenen dat je website", "je geld kost."], subtitle: "In plaats van oplevert." },
+      { type: "content", number: 1, heading: "Geen aanvragen via je site", body: ["Geen duidelijke route naar actie.", "Geen contactformulier boven de vouw."] },
+      { type: "content", number: 2, heading: "Niet op pagina 1 van Google", body: ["80% van de klikken gaat naar", "de eerste 3 resultaten.", "Pagina 2 is onzichtbaar."] },
+      { type: "content", number: 3, heading: "Site is ouder dan 3 jaar", body: ["Webstandaarden veranderen snel.", "Een site van 2022 voelt in 2026 gedateerd."] },
+      { type: "content", number: 4, heading: "Mobiel werkt niet lekker", body: ["60% van je bezoekers zit op telefoon.", "Slechte mobiele ervaring, verloren klanten."] },
+      { type: "content", number: 5, heading: ["Geen idee hoeveel", "bezoekers je krijgt"], body: ["Zonder data vlieg je blind.", "Google Analytics kost niks."] },
+      { type: "closing", cta: ["Herken je 2 of meer punten?", "Stuur me je URL."], subcta: "Gratis analyse binnen 24 uur. Zonder verplichtingen." },
+    ],
+  },
+  "post-04-seo": {
     theme: "dark",
     tag: "seo 2026",
     slides: [
@@ -540,7 +520,41 @@ const carousels = {
       { type: "closing", cta: ["Wat is jouw grootste uitdaging", "met vindbaar worden?"] },
     ],
   },
-  "post-06-systeem": {
+  "post-05-mkb-websites": {
+    theme: "alternate",
+    tag: "mkb website",
+    slides: [
+      { type: "cover", title: ["De meeste MKB websites", "zijn digitale visitekaartjes."], subtitle: "Dat is een gemiste kans." },
+      { type: "content", number: 1, heading: "Geen duidelijke call to action", body: ["Bezoekers weten niet wat ze moeten doen.", "Geen route naar contact, offerte of aankoop."] },
+      { type: "content", number: 2, heading: "Laadtijd van 5+ seconden", body: ["53% verlaat je site na 3 seconden.", "Langzaam betekent onzichtbaar voor Google."] },
+      { type: "content", number: 3, heading: ["Niet geoptimaliseerd", "voor mobiel"], body: ["60% van je bezoekers zit op telefoon.", "Slechte mobiele ervaring kost je klanten."] },
+      { type: "stat", stat: "+160%", label: "meer reserveringen", sublabel: "na herontwerp met focus op conversie" },
+      { type: "closing", cta: ["Wanneer heb jij voor het laatst", "kritisch naar je website gekeken?"] },
+    ],
+  },
+  "post-06-offertes": {
+    theme: "alternate",
+    tag: "proces automatisering",
+    slides: [
+      { type: "cover", title: ["Van 3 dagen", "naar 3 uur."], subtitle: "Zo versnelde dit bedrijf z'n offertes." },
+      { type: "content", number: 1, heading: "Het probleem", body: ["Handmatig gegevens verzamelen.", "Excel, heen en weer mailen.", "Gemiddeld 3 werkdagen per offerte."] },
+      { type: "content", number: 2, heading: "De oplossing", body: ["Een dashboard dat alle data samenbrengt.", "Klantgegevens, prijzen, beschikbaarheid.", "Alles op een plek."] },
+      { type: "stat", stat: "3u", label: ["in plaats van 3 dagen"], sublabel: "Pipeline gegroeid naar meer dan EUR 1,8M" },
+      { type: "closing", cta: ["Welk proces kost jou", "onnodig veel tijd?"] },
+    ],
+  },
+  "post-07-website-snelheid": {
+    theme: "dark",
+    tag: "website snelheid",
+    slides: [
+      { type: "cover", title: ["Je website laadt traag?", "Dit fix je vandaag nog."] },
+      { type: "content", number: 1, heading: "Afbeeldingen comprimeren", body: ["Gebruik WebP formaat.", "Scheelt 70 tot 80% aan bestandsgrootte.", "Grootste quick win voor de meeste sites."] },
+      { type: "content", number: 2, heading: "Onnodige plugins verwijderen", body: ["Elke plugin voegt JavaScript toe.", "Gebruik je een plugin niet actief?", "Weg ermee."] },
+      { type: "content", number: 3, heading: "Lazy loading aanzetten", body: ["Laad afbeeldingen pas als ze in beeld komen.", "Je bezoeker merkt niks.", "Maar je laadtijd daalt flink."] },
+      { type: "closing", cta: ["Test je site: Google PageSpeed Insights.", "Alles onder de 90 is verbeterpunt."], subcta: "Stuur me je URL, ik check het gratis." },
+    ],
+  },
+  "post-08-systeem": {
     theme: "alternate",
     tag: "marketing systeem",
     slides: [
@@ -552,14 +566,14 @@ const carousels = {
       { type: "closing", cta: ["Van 0 naar 75 gekwalificeerde", "leads per maand."], subcta: "Wat zou een voorspelbare stroom leads betekenen?" },
     ],
   },
-  "post-07-werkdag": {
+  "post-09-werkdag": {
     theme: "dark",
     tag: "behind the scenes",
     slides: [
       { type: "cover", title: ["Een dag in het leven", "van een solo agency."], subtitle: "Van koffie tot klaar. Zo werkt het." },
     ],
   },
-  "post-08-leads-case": {
+  "post-10-leads-case": {
     theme: "alternate",
     tag: "case study",
     slides: [
@@ -571,7 +585,7 @@ const carousels = {
       { type: "closing", cta: ["Welk proces zou jij", "het liefst automatiseren?"] },
     ],
   },
-  "post-09-chatbot": {
+  "post-11-chatbot": {
     theme: "dark",
     tag: "ai chatbot",
     slides: [
@@ -580,19 +594,6 @@ const carousels = {
       { type: "content", number: 2, heading: "Wat een chatbot doet", body: ["70 tot 80% van vragen automatisch.", "24/7 beschikbaar, ook in het weekend.", "Kwalificeert leads en stuurt ze door."] },
       { type: "content", number: 3, heading: "De investering", body: ["Minder dan 1 uur medewerker per dag.", "De opbrengst: leads die anders", "waren weggelopen."] },
       { type: "closing", cta: ["Check de chatbot op arkadigital.nl.", "Dezelfde technologie."] },
-    ],
-  },
-  "post-10-website-tekenen": {
-    theme: "alternate",
-    tag: "website audit",
-    slides: [
-      { type: "cover", title: ["5 tekenen dat je website", "je geld kost."], subtitle: "In plaats van oplevert." },
-      { type: "content", number: 1, heading: "Geen aanvragen via je site", body: ["Geen duidelijke route naar actie.", "Geen contactformulier boven de vouw."] },
-      { type: "content", number: 2, heading: "Niet op pagina 1 van Google", body: ["80% van de klikken gaat naar", "de eerste 3 resultaten.", "Pagina 2 is onzichtbaar."] },
-      { type: "content", number: 3, heading: "Site is ouder dan 3 jaar", body: ["Webstandaarden veranderen snel.", "Een site van 2022 voelt in 2026 gedateerd."] },
-      { type: "content", number: 4, heading: "Mobiel werkt niet lekker", body: ["60% van je bezoekers zit op telefoon.", "Slechte mobiele ervaring, verloren klanten."] },
-      { type: "content", number: 5, heading: ["Geen idee hoeveel", "bezoekers je krijgt"], body: ["Zonder data vlieg je blind.", "Google Analytics kost niks."] },
-      { type: "closing", cta: ["Herken je 2 of meer punten?", "Stuur me je URL."], subcta: "Gratis analyse binnen 24 uur. Zonder verplichtingen." },
     ],
   },
 };
