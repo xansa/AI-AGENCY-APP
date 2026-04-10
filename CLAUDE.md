@@ -173,11 +173,15 @@ The `app/[landing]/page.tsx` dynamic route uses `generateStaticParams()` from th
 
 ### 5. Shared Zod validation (`lib/validators.ts`)
 
-All form schemas (contact, offerte, chat) are defined once with Zod and shared between client-side `react-hook-form` validation (via `@hookform/resolvers`) and server-side API route validation. Keep schemas in sync — never duplicate validation logic.
+All form schemas (contact, offerte, chat) are defined once with Zod and shared between client-side `react-hook-form` validation (via `@hookform/resolvers`) and server-side API route validation. Keep schemas in sync, never duplicate validation logic.
 
 ### 6. Brand color palette (Tailwind)
 
 `tailwind.config.ts` defines semantic color tokens: `primary`, `accent`, `cyan`, `background`, `surface`, `text`. Use these instead of raw Tailwind colors (e.g., `bg-primary` not `bg-blue-900`). The `brand` and `dark` scales exist for backward compatibility.
+
+### 6b. Brand fonts
+
+Brand pairing is **Cormorant Garamond** (serif headlines, anchor font) + **Instrument Sans** (body). TTF files voor offline rendering door scripts staan in `scripts/fonts/` (Regular, SemiBold, Bold). Web rendering loadt via Google Fonts / `next/font`. Inter blijft tertiaire fallback.
 
 ### 7. Lazy singletons for optional services
 
@@ -207,15 +211,15 @@ export function createAIProvider(): AIProvider {
 
 ### 9. FormField component
 
-`components/ui/FormField.tsx` renders an `<input>`, `<textarea>`, or `<select>` depending on which props are provided (`inputProps` / `textareaProps` / `selectProps`). The `selectProps` type extends `React.SelectHTMLAttributes` with an extra `placeholder?: string` and `options: {value, label}[]` — `placeholder` is not a native HTML select attribute, it renders as the first disabled option.
+`components/ui/FormField.tsx` renders an `<input>`, `<textarea>`, or `<select>` depending on which props are provided (`inputProps` / `textareaProps` / `selectProps`). The `selectProps` type extends `React.SelectHTMLAttributes` with an extra `placeholder?: string` and `options: {value, label}[]`. The `placeholder` is not a native HTML select attribute, it renders as the first disabled option.
 
 ### 10. Button type safety
 
-`components/ui/Button.tsx` uses `Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "onAnimationStart" | "onDrag" | "onDragStart" | "onDragEnd">` to strip the four event handlers that Framer Motion redefines with incompatible types, allowing `{...props}` to spread into `motion.button` without a cast.
+`components/ui/Button.tsx` uses `Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "onAnimationStart" | "onDrag" | "onDragStart" | "onDragEnd">` to strip the four event handlers that Framer Motion redefines with incompatible types. This allows `{...props}` to spread into `motion.button` without a cast.
 
 ### 11. Icons
 
-`lucide-react` is the icon library. Service data in `content/services.ts` stores icon names as strings (e.g., `"Globe"`); import the matching Lucide component by name.
+`lucide-react` is the icon library. Service data in `content/services.ts` stores icon names as strings (e.g., `"Globe"`). Import the matching Lucide component by name.
 
 ### 12. Cookie banner
 
@@ -278,7 +282,9 @@ Copy `.env.example` to `.env.local`. Only `ANTHROPIC_API_KEY` is required for th
 
 ## Brand assets
 
-`/public/brand/` contains SVG and PNG logo variants, profile images, cover banners, and LinkedIn assets. The `/brand` page (noindex) provides a visual overview with download buttons. To regenerate PNGs from SVGs: `node scripts/svg-to-png.mjs` (requires `@resvg/resvg-js` devDependency, uses Inter font — must be installed locally).
+`/public/brand/` contains SVG and PNG logo variants, profile images, cover banners, and LinkedIn assets. The `/brand` page (noindex) provides a visual overview with download buttons. To regenerate PNGs from SVGs: `node scripts/svg-to-png.mjs` (requires `@resvg/resvg-js` devDependency).
+
+`scripts/fonts/` bevat de TTF bestanden voor scripts die buiten de Next.js runtime renderen (carousel generator, PDF bundler): Cormorant Garamond Regular/SemiBold/Bold en Instrument Sans. Niet weghalen of verplaatsen, de scripts laden ze via absolute paden.
 
 LinkedIn assets: `linkedin-profile.svg/.png` (400x400 profile), `linkedin-cover-personal.svg/.png` (1584x396 Kaan's cover), `linkedin-cover-company.svg/.png` (1128x191 company cover). Square logo variant: `logo-icon-dark-square.svg/.png` (no rounded corners).
 
@@ -315,12 +321,12 @@ API routes validate `Content-Type: application/json` and do not expose Zod valid
 
 ## Known constraints
 
-- `next.config.mjs` — Next.js 14.2.5 does not support `next.config.ts`; keep it as `.mjs` with JSDoc types
+- `next.config.mjs`: Next.js 14.2.5 does not support `next.config.ts`, keep it as `.mjs` with JSDoc types
 - No test framework is configured
-- `.env.example` is missing `CLAUDE_MODEL` — it still works (defaults to `claude-3-5-haiku-20241022`)
-- `.env.example` may still reference `arka.nl` for `NEXT_PUBLIC_SITE_URL` — production and `app/layout.tsx` already use `arkadigital.nl`
 
 ## Social media agent
+
+> **VERPLICHT bij ELKE social media taak**: lees eerst `C:/Users/kaan9/Documents/Obsidian Vault/Projecten/Social Media.md`. Dit is de SINGLE SOURCE OF TRUTH voor alle LinkedIn-content van Kaan's ventures (Kaan persoonlijk, DPL, Arka). Wanneer je een post aanmaakt, wijzigt, of Kaan meldt dat iets geplaatst is: werk dit Obsidian-bestand bij. Mapnummering `post-01` t/m `post-11` is PUBLICATIEVOLGORDE en mag nooit willekeurig hernoemd worden. Bij conflict wint het Obsidian-bestand.
 
 `lib/social-media-agent.ts` generates LinkedIn posts via Claude and stores them in Supabase (`social_media_posts` table). Notifies via Resend email.
 
@@ -328,9 +334,9 @@ API routes validate `Content-Type: application/json` and do not expose Zod valid
 - **Cron:** `vercel.json` schedules generation at `0 8 * * 1,3,5` (ma/wo/vr 08:00 UTC)
 - **Fallback:** If no `ANTHROPIC_API_KEY`, picks a random pre-written post from `content/linkedin-posts.ts`
 - **Supabase table:** `social_media_posts` (id, content, hashtags, category, hook, source, status, platform, published_at, created_at)
-- **Pre-written posts:** 10 LinkedIn posts in `content/linkedin-posts.ts` with categories: thought-leadership, case-study, praktische-tip, founder-perspectief, behind-the-scenes
-- **LinkedIn post folders:** `content/linkedin/post-XX-slug/` each containing `tekst.md` (copy-paste ready) and `carousel/` (branded 1080x1080 PNG slides). 52 slides total across 10 posts.
-- **Carousel generator:** `node scripts/generate-linkedin-carousels.mjs` renders SVG templates to PNG via `@resvg/resvg-js`. Uses brand colors (#0F172A bg, #3B82F6 accent, Inter font). 4 slide types: cover, content (watermark number), stat, closing.
+- **Pre-written posts:** 11 LinkedIn posts in `content/linkedin-posts.ts` (inclusief introductiepost). Categories: introductie, thought-leadership, case-study, praktische-tip, founder-perspectief, behind-the-scenes. IDs matchen de folder-nummering (post-01 t/m post-11 = publicatievolgorde).
+- **LinkedIn post folders:** `content/linkedin/post-XX-slug/` met `tekst.md` (copy-paste ready), `carousel/` (1080x1080 PNG slides), en `{folder}.pdf` (bundled carousel voor LinkedIn document upload). Mapnummering is **publicatievolgorde, niet content-topic volgorde**. Totaal: 52 slides + 10 PDFs over 11 posts. `post-01-introductie` is tekst-only (geen carousel), `post-09-werkdag` heeft alleen een cover slide.
+- **Carousel generator:** `node scripts/generate-linkedin-carousels.mjs` rendert SVG templates naar PNG via `@resvg/resvg-js` en bundelt daarna per post alle slides in een PDF via `pdf-lib`. Uses brand fonts Cormorant Garamond + Instrument Sans (TTFs uit `scripts/fonts/`). Design principes toegepast: content vertical centering, consistent footer strip (mark + URL + pagination), opacity hierarchie 100/70/50, alternerende dark/cream themes voor ritme, visual rhyming via triangle motief uit Arrow-A logo, subtle depth via radial gradient + noise filter. Vier slide types: cover, content, stat, closing.
 - **Barrel export:** `content/linkedin/index.ts` re-exports from `linkedin-posts.ts` for backward compatibility
 
 ## Supabase tables
@@ -352,6 +358,7 @@ Automated lead scoring via daily cron. Fetches new HubSpot contacts (25h window)
 - **Score tiers:** hot (70-100) / warm (45-69) / cold (0-44)
 - **Hot lead actions:** deal promoted to "Offerte fase", email notification to kaan@arkadigital.nl
 - **HubSpot property:** `lead_score` (number, custom property on contacts)
+- **Backfill mode:** de route accepteert `?mode=backfill` (paginated, skipt date filter, geen email notifications tijdens backfill). Voor lokale runs bestaat `scripts/backfill-lead-scores-local.mjs` die direct HubSpot raakt zonder CRON_SECRET te vereisen, handig voor batch scoring van bestaande leads. Gebruikt dezelfde tech detection + scoring logic als de route.
 
 ## Comparison section
 
