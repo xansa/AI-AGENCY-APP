@@ -35,3 +35,6 @@ hubspot_import.csv
 
 # youtube transcript scratch files in repo root
 /*.txt
+
+# local run logs
+backfill.log
