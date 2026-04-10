@@ -20,8 +20,23 @@ Vraag de gebruiker om de volgende informatie (sla over wat al gegeven is):
 12. **BTW-nummer** (optioneel)
 13. **Heeft de klant een logo?** (ja: pad naar bestand, nee: we genereren een simpel SVG logo)
 14. **Heeft de klant foto's?** (ja: pad naar map, nee: we gebruiken placeholder secties)
+15. **Visuele referenties** (URLs of screenshots van websites die de klant mooi vindt, optioneel)
 
 Verzamel alles in een gestructureerde briefing die je doorgeeft aan elke agent.
+
+## Fase A2: Stitch Design (voor Fase B)
+
+Voordat er code geschreven wordt, moet de visuele richting bepaald zijn via Stitch 2.0 (stitch.withgoogle.com):
+
+1. **Referenties verzamelen**: gebruik de referenties uit de intake (vraag 15), of zoek zelf 2-3 sterke voorbeelden op Dribbble/Pinterest die passen bij de branche en toon
+2. **Stitch prompt**: upload referentiescreenshots en geef een prompt als: "Create a premium landing page for [bedrijfsnaam], a [branche] company in [locatie]. Use the typography from reference 1, the layout from reference 2. Include hero, services, testimonials, CTA, and contact section."
+3. **Itereer**: genereer 2-3 variaties, combineer de beste elementen (layout, typografie, kleurenpalet)
+4. **Verfijn design system**: fonts, kleuren, spacing, button styles, card styles
+5. **Export**: bewaar de Stitch output (screenshots + eventuele code) als referentie voor de agents
+
+Geef de Stitch design richting mee aan de page-builder agent als visuele leidraad.
+
+**BELANGRIJK:** Deze stap is handmatig. Instrueer de gebruiker om Stitch te openen, de referenties te uploaden, en het resultaat te delen. Claude Code kan niet zelf in Stitch werken.
 
 ## Fase B: Project Bootstrap
 

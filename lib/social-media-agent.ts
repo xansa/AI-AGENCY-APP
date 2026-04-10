@@ -1,5 +1,5 @@
 import Anthropic from "@anthropic-ai/sdk";
-import { BRAND_IDENTITY, BRAND_VOICE, BRAND_AUDIENCE } from "@/content/brand-context";
+import { BRAND_VOICE, BRAND_AUDIENCE } from "@/content/brand-context";
 import { linkedInPosts, type LinkedInPost } from "@/content/linkedin-posts";
 
 // ─── Types ───────────────────────────────────────────────────────────────────

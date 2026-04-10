@@ -1,5 +1,4 @@
 import { services } from "@/content/services";
-import { cases } from "@/content/cases";
 import { getPublishedPosts } from "@/content/blog";
 import { landingPages } from "@/content/landing-pages";
 import type { MetadataRoute } from "next";
@@ -33,13 +32,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  const casePages = cases.map((c) => ({
-    url: `${baseUrl}/cases/${c.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-
   const blogPages = getPublishedPosts().map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
     lastModified: new Date(post.publishedAt),
@@ -54,5 +46,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  return [...staticPages, ...landingPageEntries, ...servicePages, ...casePages, ...blogPages];
+  return [...staticPages, ...landingPageEntries, ...servicePages, ...blogPages];
 }

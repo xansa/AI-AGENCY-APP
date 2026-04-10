@@ -1,22 +1,19 @@
 "use client";
 
-import { useTranslation } from "@/lib/i18n";
+import { useTranslation, l } from "@/lib/i18n";
+import { services } from "@/content/services";
 import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
 import Link from "next/link";
 
 export function Footer() {
-  const { t } = useTranslation();
+  const { t, locale } = useTranslation();
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
-    [t("footer.diensten")]: [
-      { href: "/diensten/websites-webshops", label: "Websites & Webshops" },
-      { href: "/diensten/seo-content", label: "SEO & Content" },
-      { href: "/diensten/ai-chatbots-automatisering", label: "AI Chatbots & Automatisering" },
-      { href: "/diensten/dashboards-data", label: "Dashboards & Data" },
-      { href: "/diensten/lead-generation", label: "Lead Generation" },
-      { href: "/diensten/branding-design", label: "Branding & Design" },
-    ],
+    [t("footer.diensten")]: services.map((s) => ({
+      href: `/diensten/${s.slug}`,
+      label: l(s, "title", locale),
+    })),
     [t("footer.bedrijf")]: [
       { href: "/over-ons", label: t("footer.overOns") },
       { href: "/cases", label: "Cases" },

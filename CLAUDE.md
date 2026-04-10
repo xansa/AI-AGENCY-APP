@@ -2,6 +2,55 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+> **IMPORTANT:** Do not make any changes until you have 95% confidence in what you need to build. Ask follow-up questions until you reach that confidence.
+
+## Arka V2 (testomgeving)
+
+**Alle UI/design wijzigingen aan de Arka website gaan naar Arka V2**, niet naar main. De live site (arkadigital.nl) staat op LinkedIn en bij klanten, dus geen ongeteste wijzigingen pushen naar main/production.
+
+- **V2 repo:** `xansa/arka-v2` op GitHub, apart Vercel project
+- **Wanneer naar main:** pas na expliciete goedkeuring van Kaan, na visuele review op V2
+- **Wat wel direct op main mag:** bugfixes, content updates (blog, FAQ, kennisbank), security patches, cron/API fixes
+
+## Design workflow: Stitch-first
+
+Voor nieuwe pagina's of redesigns (Arka of klantprojecten), start altijd met visuele richting voordat er code geschreven wordt:
+
+1. **Verzamel referenties** (Dribbble, Pinterest, live sites) voor inspiratie
+2. **Stitch 2.0** (Google): upload screenshots/referenties, genereer visuele variaties, combineer beste elementen (layout A + typografie B + kleuren C)
+3. **Verfijn het design system** in Stitch: fonts, kleuren, spacing, button styles, card styles
+4. **Export naar Claude Code** wanneer het ontwerp 80-90% staat
+5. **Claude bouwt en polijst**: Framer Motion animaties, responsive, dark/light, component polish
+
+Dit geldt voor /nieuw-klantsite, Arka V2 redesign, en individuele pagina-redesigns.
+
+## Design tools (MCP + Skills)
+
+- **21st.dev Magic MCP** — genereert moderne React/Tailwind componenten vanuit prompts. Config in `.mcp.json` (gitignored)
+- **Stitch MCP** (`@_davideast/stitch-mcp`) — exporteert Google Stitch designs + `DESIGN.md` naar het project. Config in `.mcp.json`
+- **UI/UX Pro Max Skill** — searchable design database: 161 kleurpaletten, 57 font pairings, 50+ UI styles, 99 UX guidelines. Locatie: `.claude/skills/ui-ux-pro-max/`
+- **Recraft V4** — SVG + raster image generation (logo's, icons, foto's, mockups). Nog niet gekoppeld, wordt pas geactiveerd bij Arka V2 redesign of eerste klantproject
+- **fal.ai (Nano Banana)** — AI image generation via API. Key beschikbaar als `process.env.FAL_KEY`. Gebruik via Python:
+
+```python
+import fal_client, os, urllib.request
+result = fal_client.subscribe('fal-ai/nano-banana-2', arguments={
+    'prompt': 'beschrijving hier',
+    'image_size': 'landscape_16_9',  # of: square_hd, portrait_4_3, landscape_4_3, square
+    'num_images': 1
+})
+url = result['images'][0]['url']
+urllib.request.urlretrieve(url, 'output.png')
+```
+
+Beschikbare modellen:
+- `fal-ai/nano-banana-2` — beste kwaliteit, tekst in beeld, character consistency
+- `fal-ai/nano-banana` — sneller, goedkoper
+- `fal-ai/nano-banana-pro` — premium variant
+- `fal-ai/flux/schnell` — snelste optie, goed voor iteratie
+
+Workflow: genereer EERST een prompt, laat Kaan goedkeuren, DAARNA pas genereren
+
 ## Commands
 
 ```bash
@@ -195,6 +244,8 @@ Copy `.env.example` to `.env.local`. Only `ANTHROPIC_API_KEY` is required for th
 | `HUBSPOT_ACCESS_TOKEN` | No | HubSpot CRM (contacts + deals) |
 | `NEXT_PUBLIC_SITE_URL` | No | Canonical URL for OG tags |
 | `NEXT_PUBLIC_CALENDLY_URL` | No | Calendly intake link |
+| `AI_ARK_API_KEY` | No | AI Ark B2B enrichment (lead qualifier) |
+| `CRON_SECRET` | For crons | Secures cron API endpoints (social media + lead qualifier) |
 
 ---
 
@@ -221,6 +272,7 @@ Copy `.env.example` to `.env.local`. Only `ANTHROPIC_API_KEY` is required for th
 - **Hosting:** Vercel (project name: `arka`, team: `xansas-projects`)
 - **Domain:** `arkadigital.nl` (live, DNS at TransIP, A records → `76.76.21.21`)
 - **www redirect:** `www.arkadigital.nl` → 308 redirect to `arkadigital.nl`
+- **Domain redirects:** `arkadigitaal.nl`, `arkadigitaal.online`, `arkagroup.nl` (+ www variants) → 308 redirect to `arkadigital.nl` via `middleware.ts`
 - **Production URL:** `arka-tan.vercel.app` (Vercel default subdomain)
 - `metadataBase` in `app/layout.tsx` uses `arkadigital.nl` via `NEXT_PUBLIC_SITE_URL`
 
@@ -257,9 +309,50 @@ Additional JSON-LD structured data per pagina:
 
 API routes validate `Content-Type: application/json` and do not expose Zod validation details to clients. `lib/mailer.ts` escapes all user input with `escapeHtml()` before injection into HTML email templates.
 
+## Middleware
+
+`middleware.ts` handles host-based domain redirects. Requests to `arkadigitaal.nl`, `arkadigitaal.online`, `arkagroup.nl` (and their www variants) are 308-redirected to `arkadigital.nl`. The matcher excludes static assets (`_next/static`, `_next/image`, `favicon.ico`, `icon.svg`, `brand/`).
+
 ## Known constraints
 
 - `next.config.mjs` — Next.js 14.2.5 does not support `next.config.ts`; keep it as `.mjs` with JSDoc types
 - No test framework is configured
 - `.env.example` is missing `CLAUDE_MODEL` — it still works (defaults to `claude-3-5-haiku-20241022`)
 - `.env.example` may still reference `arka.nl` for `NEXT_PUBLIC_SITE_URL` — production and `app/layout.tsx` already use `arkadigital.nl`
+
+## Social media agent
+
+`lib/social-media-agent.ts` generates LinkedIn posts via Claude and stores them in Supabase (`social_media_posts` table). Notifies via Resend email.
+
+- **API route:** `app/api/social-media/generate/route.ts` (POST + GET, secured with `CRON_SECRET`)
+- **Cron:** `vercel.json` schedules generation at `0 8 * * 1,3,5` (ma/wo/vr 08:00 UTC)
+- **Fallback:** If no `ANTHROPIC_API_KEY`, picks a random pre-written post from `content/linkedin-posts.ts`
+- **Supabase table:** `social_media_posts` (id, content, hashtags, category, hook, source, status, platform, published_at, created_at)
+- **Pre-written posts:** 10 LinkedIn posts in `content/linkedin-posts.ts` with categories: thought-leadership, case-study, praktische-tip, founder-perspectief, behind-the-scenes
+- **LinkedIn post folders:** `content/linkedin/post-XX-slug/` each containing `tekst.md` (copy-paste ready) and `carousel/` (branded 1080x1080 PNG slides). 52 slides total across 10 posts.
+- **Carousel generator:** `node scripts/generate-linkedin-carousels.mjs` renders SVG templates to PNG via `@resvg/resvg-js`. Uses brand colors (#0F172A bg, #3B82F6 accent, Inter font). 4 slide types: cover, content (watermark number), stat, closing.
+- **Barrel export:** `content/linkedin/index.ts` re-exports from `linkedin-posts.ts` for backward compatibility
+
+## Supabase tables
+
+Three tables are configured (RLS enabled, service_role full access):
+- `social_media_posts` — Generated/pre-written LinkedIn post drafts
+- `chat_logs` — Chatbot conversation logs (upsert by session_id)
+- `leads` — Contact/offerte form submissions
+
+## Lead Qualifier Agent
+
+Automated lead scoring via daily cron. Fetches new HubSpot contacts (25h window), analyzes their website, scores 0-100, updates HubSpot.
+
+- **API route:** `app/api/lead-qualifier/route.ts` (GET + POST, secured with `CRON_SECRET`)
+- **Cron:** `vercel.json` schedules at `0 7 * * *` (dagelijks 07:00 UTC, Hobby plan limiet)
+- **Website analyzer:** `lib/lead-qualifier/website-analyzer.ts` (zero-cost: fetches website, detects tech stack via HTML patterns, checks response time)
+- **AI Ark client:** `lib/lead-qualifier/ai-ark.ts` (NIET in gebruik voor Arka, bewaard voor DPL. Credits beter besteed aan De Palletleverancier)
+- **Scoring engine:** `lib/lead-qualifier/scorer.ts` (weighted 0-100: website quality 30, company size 20, budget 25, has website 15, location 10)
+- **Score tiers:** hot (70-100) / warm (45-69) / cold (0-44)
+- **Hot lead actions:** deal promoted to "Offerte fase", email notification to kaan@arkadigital.nl
+- **HubSpot property:** `lead_score` (number, custom property on contacts)
+
+## Comparison section
+
+`components/sections/ComparisonSection.tsx` — "Arka vs. traditioneel bureau" table on homepage. 6 rows comparing direct contact, overhead, measurability, flexibility, pricing transparency, ownership. Translation keys: `comparison.*`

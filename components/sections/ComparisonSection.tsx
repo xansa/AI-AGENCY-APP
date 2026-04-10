@@ -62,10 +62,12 @@ export function ComparisonSection() {
                 {row}
               </div>
               <div className="py-4 px-6 flex items-center justify-center border-l border-white/5">
-                <X className="w-5 h-5 text-red-400/70" />
+                <X className="w-5 h-5 text-red-400/70" aria-hidden="true" />
+                <span className="sr-only">Nee</span>
               </div>
               <div className="py-4 px-6 flex items-center justify-center border-l border-white/5 bg-accent/5">
-                <Check className="w-5 h-5 text-emerald-400" />
+                <Check className="w-5 h-5 text-emerald-400" aria-hidden="true" />
+                <span className="sr-only">Ja</span>
               </div>
             </div>
           ))}

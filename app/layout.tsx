@@ -98,8 +98,7 @@ const jsonLd = {
     name: "Kaan Arslan",
   },
   sameAs: [
-    // TODO: Add LinkedIn company page URL once created
-    // TODO: Add Google Business Profile URL once created
+    "https://www.linkedin.com/company/arka-nl",
   ],
   priceRange: "$$",
   serviceType: [

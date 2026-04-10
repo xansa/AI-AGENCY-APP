@@ -8,6 +8,7 @@ out/
 # environment
 .env
 .env.local
+.mcp.json
 .env.production.local
 .env.development.local
 
@@ -23,9 +24,14 @@ npm-debug.log*
 
 # claude
 .claude/settings.local.json
+.claude/worktrees/
 
 # sensitive / generated data
 FULL-AUDIT-REPORT.md
 hubspot_import.csv
 
 .vercel
+.env*.local
+
+# youtube transcript scratch files in repo root
+/*.txt

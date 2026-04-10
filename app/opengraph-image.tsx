@@ -34,7 +34,7 @@ export default async function Image() {
             style={{
               width: "64px",
               height: "64px",
-              background: "#4F46E5",
+              background: "#2563EB",
               borderRadius: "16px",
               display: "flex",
               alignItems: "center",
@@ -55,7 +55,7 @@ export default async function Image() {
             }}
           >
             Arka
-            <span style={{ color: "#4F46E5" }}>.</span>
+            <span style={{ color: "#3B82F6" }}>.</span>
           </div>
         </div>
         <div

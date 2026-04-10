@@ -44,7 +44,7 @@ function parseInline(line: string): React.ReactNode[] {
   return parts;
 }
 
-function MarkdownText({ text, dark }: { text: string; dark?: boolean }) {
+function MarkdownText({ text }: { text: string }) {
   const paragraphs = text.split("\n\n").filter(Boolean);
   return (
     <div className="space-y-1.5">
@@ -368,6 +368,7 @@ export function ChatWidget() {
                     <button
                       type="submit"
                       disabled={loading || !input.trim()}
+                      aria-label="Bericht versturen"
                       className="w-9 h-9 flex items-center justify-center bg-brand-600 hover:bg-brand-700 disabled:opacity-50 disabled:cursor-not-allowed text-white rounded-xl transition-colors flex-shrink-0"
                     >
                       <Send className="w-4 h-4" />
