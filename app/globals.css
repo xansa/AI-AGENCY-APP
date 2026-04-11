@@ -3,14 +3,20 @@
 @tailwind utilities;
 
 :root {
-  /* Arka brand tokens */
-  --color-primary: #1E3A5F;
-  --color-accent: #3B82F6;
-  --color-cyan: #06B6D4;
-  --color-background: #0F172A;
-  --color-surface: #1E293B;
-  --color-text: #F8FAFC;
-  --color-text-muted: #94A3B8;
+  /* ─── Arka V2 editorial light tokens ─── */
+  --cream: #FAFAF7;
+  --cream-deep: #F5F4EE;
+  --cream-edge: #EFEEE6;
+  --ink: #0E1116;
+  --ink-light: #1A1D24;
+  --slate-ink: #0F172A;
+  --slate-muted: #475569;
+  --slate-meta: #94A3B8;
+  --line: #E5E7EB;
+  --line-soft: #F1F5F9;
+  --arka: #2F6BFF;
+  --arka-hover: #1F4FD6;
+  --arka-soft: #EBF1FF;
 }
 
 * {
@@ -21,92 +27,110 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  /* Light theme: dark text on white background */
-  color: #334155;
-  background: #ffffff;
-  font-family: var(--font-inter);
+  color: var(--slate-ink);
+  background: var(--cream);
+  font-family: var(--font-sans), "Instrument Sans", "Inter", system-ui, sans-serif;
+  font-feature-settings: "ss01", "cv11";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
 }
 
 ::selection {
-  background: #3B82F6;
-  color: white;
+  background: var(--arka);
+  color: #ffffff;
+}
+
+/* ─── Serif headings default ─── */
+.font-serif,
+h1.font-serif,
+h2.font-serif,
+h3.font-serif {
+  font-family: var(--font-serif), "Cormorant Garamond", Georgia, serif;
+  font-feature-settings: "kern", "liga", "calt";
+}
+
+/* Logo wordmark protection: never let anything override Inter bold */
+.arka-wordmark {
+  font-family: "Inter", system-ui, sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* Opacity hierarchy helpers */
+  .op-heading { opacity: 1; }
+  .op-body    { opacity: 0.78; }
+  .op-meta    { opacity: 0.58; }
+
+  /* Editorial hairline */
+  .hairline {
+    border-top: 1px solid var(--line);
+  }
+  .hairline-strong {
+    border-top: 1px solid rgba(15, 23, 42, 0.15);
+  }
+
+  /* Triangle glyph (visual rhyming with Arrow-A logo) */
+  .triangle-glyph::before {
+    content: "▸";
+    display: inline-block;
+    margin-right: 0.5em;
+    color: var(--arka);
+    font-size: 0.75em;
+    transform: translateY(-0.05em);
+  }
 }
 
-/* ─── Animated gradient blobs ─── */
-@keyframes blob-float {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  25% { transform: translate(30px, -40px) scale(1.08); }
-  50% { transform: translate(-20px, 20px) scale(0.95); }
-  75% { transform: translate(15px, 30px) scale(1.03); }
+/* ─── Decorative canvas grid (optional section background) ─── */
+.canvas-grid {
+  background-image:
+    linear-gradient(to right, rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
 }
 
-@keyframes blob-float-reverse {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  25% { transform: translate(-25px, 35px) scale(0.96); }
-  50% { transform: translate(30px, -15px) scale(1.06); }
-  75% { transform: translate(-10px, -30px) scale(1.01); }
-}
-
-@keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
-}
-
-.blob {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(80px);
-  opacity: 0.5;
-  pointer-events: none;
-  will-change: transform;
-}
-
-.blob-1 {
-  animation: blob-float 14s ease-in-out infinite;
-}
-
-.blob-2 {
-  animation: blob-float-reverse 16s ease-in-out infinite;
-}
-
-.blob-3 {
-  animation: blob-float 18s ease-in-out infinite 2s;
-}
-
-/* ─── Section transition gradient ─── */
-.section-fade-top {
+/* ─── Subtle noise texture (paper feel) ─── */
+.paper-noise {
   position: relative;
 }
-.section-fade-top::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 120px;
-  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, transparent 100%);
-  z-index: 1;
-  pointer-events: none;
-}
-
-/* ─── Noise texture overlay ─── */
-.noise-overlay::after {
-  content: '';
+.paper-noise::before {
+  content: "";
   position: absolute;
   inset: 0;
-  opacity: 0.03;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
   z-index: 0;
+}
+
+/* ─── Reduced motion ─── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ─── Focus visible standardisation ─── */
+:focus-visible {
+  outline: 2px solid var(--arka);
+  outline-offset: 3px;
+  border-radius: 4px;
 }

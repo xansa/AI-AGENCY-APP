@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Instrument_Serif } from "next/font/google";
+import { Cormorant_Garamond, Instrument_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -10,17 +10,27 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 import { LanguageProvider } from "@/lib/i18n";
 import { CookieBanner } from "@/components/ui/CookieBanner";
 
-const inter = Inter({
+// Editorial serif headlines
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-serif",
   display: "swap",
 });
 
-const instrumentSerif = Instrument_Serif({
+// UI and body sans
+const instrumentSans = Instrument_Sans({
   subsets: ["latin"],
-  weight: "400",
-  style: ["normal", "italic"],
-  variable: "--font-instrument-serif",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+// Inter kept for logo wordmark and fallback only
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
   display: "swap",
 });
 
@@ -128,7 +138,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="nl" suppressHydrationWarning className={`${inter.variable} ${instrumentSerif.variable}`}>
+    <html lang="nl" suppressHydrationWarning className={`${cormorant.variable} ${instrumentSans.variable} ${inter.variable}`}>
       <head>
         <script
           type="application/ld+json"
@@ -146,13 +156,14 @@ export default function RootLayout({
           toastOptions={{
             duration: 4000,
             style: {
-              background: "#0f172a",
-              color: "#f8fafc",
+              background: "#0E1116",
+              color: "#FAFAF7",
               borderRadius: "12px",
               fontSize: "14px",
+              border: "1px solid rgba(255,255,255,0.08)",
             },
             success: {
-              iconTheme: { primary: "#6366f1", secondary: "#fff" },
+              iconTheme: { primary: "#2F6BFF", secondary: "#fff" },
             },
           }}
         />
