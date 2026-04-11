@@ -27,11 +27,20 @@ const assets = [
 
 export default function BrandPage() {
   return (
-    <div className="pt-24">
-      <section className="bg-dark-950 py-16">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-white mb-4">Brand Assets</h1>
-          <p className="text-dark-400">Arka huisstijl, logo&apos;s en kleurenpalet. Klik op een asset om te downloaden.</p>
+    <>
+      <section className="relative bg-cream pt-32 pb-12 md:pt-40 md:pb-16">
+        <div className="absolute inset-x-0 top-0 h-80 canvas-grid opacity-40 pointer-events-none" />
+        <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+          <p className="text-overline uppercase text-slate-meta font-semibold mb-8">
+            <span className="inline-block w-6 border-t border-slate-meta/60 mr-3 align-middle" />
+            Brand kit
+          </p>
+          <h1 className="font-serif font-medium text-display-sm text-slate-ink tracking-tight leading-[1.05] text-balance">
+            Brand Assets
+          </h1>
+          <p className="mt-6 text-[17px] text-slate-muted max-w-xl text-pretty">
+            Arka huisstijl, logo&apos;s en kleurenpalet. Klik op een asset om te downloaden.
+          </p>
         </div>
       </section>
 
@@ -89,6 +98,6 @@ export default function BrandPage() {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 }

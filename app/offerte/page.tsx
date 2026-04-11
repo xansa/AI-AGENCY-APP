@@ -28,12 +28,12 @@ const breadcrumbJsonLd = {
 
 export default function OffertePage() {
   return (
-    <div className="pt-24">
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <OffertePageContent />
-    </div>
+    </>
   );
 }

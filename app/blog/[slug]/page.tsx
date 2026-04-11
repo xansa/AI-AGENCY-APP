@@ -1,8 +1,7 @@
 import { Metadata } from "next";
 import { blogPosts, getPublishedPosts } from "@/content/blog";
-import { Badge } from "@/components/ui/Badge";
-import { Button } from "@/components/ui/Button";
-import { ArrowLeft, Clock } from "lucide-react";
+import Link from "next/link";
+import { ArrowLeft, ArrowUpRight, Clock } from "lucide-react";
 import { notFound } from "next/navigation";
 
 interface Props {
@@ -12,7 +11,7 @@ interface Props {
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://arkadigital.nl";
 
 export const dynamicParams = true;
-export const revalidate = 3600; // revalidate every hour
+export const revalidate = 3600;
 
 export function generateStaticParams() {
   return getPublishedPosts().map((post) => ({ slug: post.slug }));
@@ -42,7 +41,10 @@ function renderContent(content: string) {
   return content.split("\n\n").map((block, i) => {
     if (block.startsWith("**") && block.endsWith("**")) {
       return (
-        <h2 key={i} className="text-xl font-bold text-dark-900 mt-8 mb-3">
+        <h2
+          key={i}
+          className="font-serif text-[1.75rem] md:text-[2rem] leading-tight font-medium text-slate-ink mt-12 mb-4 tracking-tight"
+        >
           {block.replace(/\*\*/g, "")}
         </h2>
       );
@@ -51,7 +53,11 @@ function renderContent(content: string) {
     const renderInline = (text: string) =>
       text.split(/(\*\*[^*]+\*\*)/g).map((part, j) => {
         if (part.startsWith("**") && part.endsWith("**")) {
-          return <strong key={j}>{part.replace(/\*\*/g, "")}</strong>;
+          return (
+            <strong key={j} className="text-slate-ink font-semibold">
+              {part.replace(/\*\*/g, "")}
+            </strong>
+          );
         }
         return part;
       });
@@ -59,10 +65,10 @@ function renderContent(content: string) {
     if (block.startsWith("\u2022")) {
       const items = block.split("\n").filter(Boolean);
       return (
-        <ul key={i} className="space-y-2 my-4">
+        <ul key={i} className="space-y-2.5 my-5">
           {items.map((item, j) => (
-            <li key={j} className="flex items-start gap-2 text-dark-600">
-              <span className="text-brand-500 mt-1">{"\u2022"}</span>
+            <li key={j} className="flex items-start gap-3 text-[16px] leading-relaxed text-slate-muted">
+              <span className="text-arka mt-2 text-[8px] flex-shrink-0">▸</span>
               <span>{renderInline(item.replace(/^\u2022\s*/, ""))}</span>
             </li>
           ))}
@@ -71,7 +77,7 @@ function renderContent(content: string) {
     }
 
     return (
-      <p key={i} className="text-dark-600 leading-relaxed my-4">
+      <p key={i} className="text-[16px] leading-[1.75] text-slate-muted my-5 text-pretty">
         {renderInline(block)}
       </p>
     );
@@ -83,7 +89,6 @@ export default function BlogPostPage({ params }: Props) {
   const post = published.find((p) => p.slug === params.slug);
   if (!post) notFound();
 
-  // Calculate reading time from word count (~200 words per minute)
   const wordCount = post.content.split(/\s+/).length;
   const readingTimeMinutes = Math.max(1, Math.round(wordCount / 200));
 
@@ -130,7 +135,7 @@ export default function BlogPostPage({ params }: Props) {
   };
 
   return (
-    <div className="pt-24">
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -139,33 +144,34 @@ export default function BlogPostPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
-      <section className="bg-dark-950 py-16 lg:py-20">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Button
+
+      {/* Editorial article hero */}
+      <section className="relative bg-cream pt-32 pb-12 md:pt-40 md:pb-16">
+        <div className="absolute inset-x-0 top-0 h-80 canvas-grid opacity-40 pointer-events-none" />
+        <div className="relative max-w-narrow mx-auto px-6 sm:px-8 lg:px-10">
+          <Link
             href="/blog"
-            variant="ghost"
-            size="sm"
-            className="text-dark-400 hover:text-white mb-6 -ml-3"
+            className="inline-flex items-center gap-2 text-slate-muted hover:text-slate-ink text-[13px] mb-8 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
             Terug naar blog
-          </Button>
-          <div className="flex flex-wrap gap-2 mb-4">
+          </Link>
+          <div className="flex flex-wrap gap-2 mb-6">
             {post.tags.map((tag) => (
-              <Badge
+              <span
                 key={tag}
-                variant="brand"
-                className="bg-brand-900/50 text-brand-300 border-brand-700"
+                className="text-[10.5px] font-semibold uppercase tracking-wider text-slate-meta bg-slate-950/5 px-2 py-0.5 rounded-full"
               >
                 {tag}
-              </Badge>
+              </span>
             ))}
           </div>
-          <h1 className="text-3xl lg:text-4xl font-bold text-white mb-4">
+          <h1 className="font-serif font-medium text-[clamp(2rem,4vw,3.25rem)] leading-[1.08] text-slate-ink tracking-tight text-balance">
             {post.title}
           </h1>
-          <div className="flex items-center gap-4 text-sm text-dark-400">
+          <div className="mt-8 flex flex-wrap items-center gap-4 text-[12.5px] text-slate-meta">
             <span>{post.author}</span>
+            <span className="w-1 h-1 rounded-full bg-slate-meta/60" />
             <span>
               {new Date(post.publishedAt).toLocaleDateString("nl-NL", {
                 year: "numeric",
@@ -173,6 +179,7 @@ export default function BlogPostPage({ params }: Props) {
                 day: "numeric",
               })}
             </span>
+            <span className="w-1 h-1 rounded-full bg-slate-meta/60" />
             <span className="flex items-center gap-1">
               <Clock className="w-3.5 h-3.5" />
               {post.readingTime}
@@ -181,24 +188,27 @@ export default function BlogPostPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-cream py-12 md:py-20">
+        <div className="max-w-narrow mx-auto px-6 sm:px-8 lg:px-10">
           <article>{renderContent(post.content)}</article>
 
-          <div className="mt-16 p-8 bg-brand-50 rounded-2xl text-center">
-            <h3 className="text-xl font-bold text-dark-900 mb-2">
+          <div className="mt-20 p-8 md:p-10 bg-ink text-cream rounded-2xl">
+            <h3 className="font-serif text-[1.5rem] md:text-[1.75rem] font-medium tracking-tight mb-3">
               Hulp nodig met jouw digitale groei?
             </h3>
-            <p className="text-dark-500 text-sm mb-4">
-              Plan een vrijblijvend kennismakingsgesprek en ontdek wat Arka voor
-              jouw bedrijf kan betekenen.
+            <p className="text-cream/60 text-[14.5px] mb-6 text-pretty max-w-md">
+              Plan een vrijblijvend kennismakingsgesprek en ontdek wat Arka voor jouw bedrijf kan betekenen.
             </p>
-            <Button href="/offerte" size="md">
+            <Link
+              href="/offerte"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-arka text-white text-[13px] font-semibold hover:bg-arka-hover transition-colors"
+            >
               Offerte aanvragen
-            </Button>
+              <ArrowUpRight className="w-3.5 h-3.5" />
+            </Link>
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 }

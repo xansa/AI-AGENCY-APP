@@ -27,12 +27,12 @@ const breadcrumbJsonLd = {
 
 export default function OverOnsPage() {
   return (
-    <div className="pt-24">
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <OverOnsContent />
-    </div>
+    </>
   );
 }

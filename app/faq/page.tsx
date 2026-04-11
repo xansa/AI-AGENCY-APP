@@ -41,7 +41,7 @@ const breadcrumbJsonLd = {
 
 export default function FAQPage() {
   return (
-    <div className="pt-24">
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
@@ -51,6 +51,6 @@ export default function FAQPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <FAQContent />
-    </div>
+    </>
   );
 }

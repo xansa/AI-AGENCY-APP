@@ -62,7 +62,7 @@ export default function DienstDetailPage({ params }: Props) {
   };
 
   return (
-    <div className="pt-24">
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -72,6 +72,6 @@ export default function DienstDetailPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <DienstDetailContent service={service} />
-    </div>
+    </>
   );
 }

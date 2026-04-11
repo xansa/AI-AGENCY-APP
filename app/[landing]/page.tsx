@@ -73,7 +73,7 @@ export default function LandingPage({ params }: Props) {
   };
 
   return (
-    <div className="pt-24">
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
@@ -83,6 +83,6 @@ export default function LandingPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <LandingPageContent page={page} />
-    </div>
+    </>
   );
 }
