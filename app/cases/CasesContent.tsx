@@ -1,91 +1,148 @@
 "use client";
 
-import { cases } from "@/content/cases";
-import { Badge } from "@/components/ui/Badge";
-import { Button } from "@/components/ui/Button";
-import { ArrowRight } from "lucide-react";
+import { cases as allCases } from "@/content/cases";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 import { useTranslation, l } from "@/lib/i18n";
+import { motion, useReducedMotion } from "framer-motion";
 
 export function CasesContent() {
   const { t, locale } = useTranslation();
+  const reduce = useReducedMotion();
+
+  // Filter out example cases for the public cases page
+  const realCases = allCases.filter((c) => !c.isExample);
 
   return (
     <>
-      <section className="bg-dark-950 py-16 lg:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Badge variant="brand" className="bg-brand-900/50 text-brand-300 border-brand-700 mb-4">
+      {/* Hero */}
+      <section className="relative bg-cream pt-32 pb-16 md:pt-40 md:pb-20">
+        <div className="absolute inset-x-0 top-0 h-80 canvas-grid opacity-40 pointer-events-none" />
+        <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+          <p className="text-overline uppercase text-slate-meta font-semibold mb-8">
+            <span className="inline-block w-6 border-t border-slate-meta/60 mr-3 align-middle" />
             {t("cases.label")}
-          </Badge>
-          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4 max-w-2xl">
+          </p>
+          <h1 className="font-serif font-medium text-display-sm text-slate-ink tracking-tight leading-[1.05] max-w-4xl text-balance">
             {t("casesPage.heading")}
           </h1>
-          <p className="text-dark-400 max-w-xl leading-relaxed">
+          <p className="mt-8 text-[17px] md:text-lg text-slate-muted leading-relaxed max-w-2xl text-pretty">
             {t("casesPage.description")}
           </p>
         </div>
       </section>
 
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-          <p className="text-sm text-dark-400 italic text-center -mt-2 mb-4">
-            {t("casesPage.disclaimer")}
-          </p>
-          {cases.map((c) => (
-            <div key={c.slug} className="rounded-2xl border border-dark-100 p-8">
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <div className="lg:col-span-2">
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <Badge variant="default">{l(c, "industry", locale)}</Badge>
-                    <Badge variant="brand">{c.package}</Badge>
+      {/* Cases editorial stack */}
+      <section className="relative bg-cream py-16 md:py-24">
+        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10 space-y-10">
+          {realCases.map((c, i) => (
+            <motion.article
+              key={c.slug}
+              initial={reduce ? false : { opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.65, delay: i * 0.08 }}
+              className="rounded-2xl ring-1 ring-slate-950/8 bg-cream-deep p-8 md:p-12"
+            >
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                <div className="lg:col-span-7 min-w-0">
+                  <div className="flex items-center gap-3 text-[11px] font-mono uppercase tracking-wider text-slate-meta mb-6">
+                    <span>{String(i + 1).padStart(2, "0")}</span>
+                    <span className="w-8 border-t border-slate-meta/60" />
+                    <span>{l(c, "industry", locale)}</span>
+                    <span className="w-1 h-1 rounded-full bg-slate-meta/60" />
+                    <span>{c.package}</span>
                   </div>
-                  <h2 className="text-2xl font-bold text-dark-900 mb-2">{c.client}</h2>
-                  <p className="text-dark-500 text-sm mb-6 leading-relaxed">{l(c, "challenge", locale)}</p>
 
-                  <div className="grid grid-cols-3 gap-4 mb-6">
-                    {c.results.map((r, i) => (
-                      <div key={i} className="text-center p-4 bg-brand-50 rounded-xl">
-                        <div className="text-2xl font-bold text-brand-600">{r.value}</div>
-                        <div className="text-xs text-dark-600 font-medium mt-0.5">{l(r, "metric", locale)}</div>
-                        <div className="text-xs text-dark-400 mt-1">{l(r, "description", locale)}</div>
+                  <h2 className="font-serif text-[2.25rem] md:text-[2.75rem] leading-[1.05] font-medium text-slate-ink tracking-tight mb-5 break-words">
+                    {c.client}
+                  </h2>
+
+                  <p className="text-[14.5px] leading-relaxed text-slate-muted text-pretty mb-8">
+                    {l(c, "challenge", locale)}
+                  </p>
+
+                  <div className="grid grid-cols-3 gap-4 mb-8">
+                    {c.results.map((r, j) => (
+                      <div key={j} className="min-w-0">
+                        <div className="font-serif text-[1.5rem] md:text-[1.75rem] leading-none font-medium text-slate-ink tracking-tight break-words">
+                          {r.value}
+                        </div>
+                        <div className="mt-2 text-[11px] text-slate-meta uppercase tracking-wide line-clamp-2">
+                          {l(r, "metric", locale)}
+                        </div>
                       </div>
                     ))}
                   </div>
 
-                  <blockquote className="border-l-2 border-brand-300 pl-4 italic text-dark-600">
+                  <blockquote className="font-serif italic text-[18px] md:text-[20px] leading-snug text-slate-ink/85 text-pretty border-l-2 border-arka/40 pl-5">
                     &ldquo;{l(c.testimonial, "quote", locale)}&rdquo;
-                    <footer className="text-sm text-dark-400 mt-2 not-italic">
-                      &ndash; {c.testimonial.author}, {l(c.testimonial, "role", locale)}
+                    <footer className="mt-3 text-[12px] text-slate-meta not-italic font-sans">
+                      {c.testimonial.author} &middot; {l(c.testimonial, "role", locale)}
                     </footer>
                   </blockquote>
                 </div>
 
-                <div className="space-y-4">
-                  <div className="p-4 bg-dark-50 rounded-xl">
-                    <p className="text-xs font-semibold text-dark-500 uppercase tracking-wider mb-2">{t("casesPage.aanpak")}</p>
-                    <p className="text-dark-700 text-sm leading-relaxed">{l(c, "approach", locale)}</p>
+                <div className="lg:col-span-5 min-w-0 space-y-6">
+                  <div className="p-6 bg-cream rounded-xl ring-1 ring-slate-950/8">
+                    <p className="text-[11px] font-mono uppercase tracking-wider text-slate-meta mb-3">
+                      {t("casesPage.aanpak")}
+                    </p>
+                    <p className="text-[14px] leading-relaxed text-slate-muted text-pretty">
+                      {l(c, "approach", locale)}
+                    </p>
                   </div>
-                  <div className="p-4 bg-dark-50 rounded-xl flex justify-between">
-                    <div>
-                      <p className="text-xs text-dark-500">{t("casesPage.looptijd")}</p>
-                      <p className="font-semibold text-dark-900 text-sm">{l(c, "duration", locale)}</p>
+                  <div className="p-6 bg-cream rounded-xl ring-1 ring-slate-950/8 grid grid-cols-2 gap-4">
+                    <div className="min-w-0">
+                      <p className="text-[11px] font-mono uppercase tracking-wider text-slate-meta mb-1">
+                        {t("casesPage.looptijd")}
+                      </p>
+                      <p className="text-[14px] font-semibold text-slate-ink break-words">
+                        {l(c, "duration", locale)}
+                      </p>
                     </div>
-                    <div>
-                      <p className="text-xs text-dark-500">Package</p>
-                      <p className="font-semibold text-dark-900 text-sm">{c.package}</p>
+                    <div className="min-w-0">
+                      <p className="text-[11px] font-mono uppercase tracking-wider text-slate-meta mb-1">
+                        Package
+                      </p>
+                      <p className="text-[14px] font-semibold text-slate-ink break-words">
+                        {c.package}
+                      </p>
                     </div>
                   </div>
+                  <Link
+                    href={`/cases/${c.slug}`}
+                    className="inline-flex items-center gap-2 text-[13px] font-semibold text-slate-ink group"
+                  >
+                    Lees volledige case
+                    <ArrowUpRight className="w-4 h-4 text-arka group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform duration-300" />
+                  </Link>
                 </div>
               </div>
-            </div>
+            </motion.article>
           ))}
         </div>
       </section>
 
-      <section className="py-16 bg-dark-50">
-        <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold text-dark-900 mb-4">{t("casesPage.ctaHeading")}</h2>
-          <p className="text-dark-500 mb-8">{t("casesPage.ctaDescription")}</p>
-          <Button href="/offerte" size="lg">{t("packages.offerteAanvragen")} <ArrowRight className="w-4 h-4" /></Button>
+      {/* Closing CTA */}
+      <section className="relative bg-ink text-cream py-24 md:py-32">
+        <div className="absolute inset-0 canvas-grid opacity-[0.035] pointer-events-none" />
+        <div className="relative max-w-narrow mx-auto px-6 sm:px-8 lg:px-10 text-center">
+          <h2 className="font-serif font-medium text-h1 text-cream tracking-tight leading-[1.05] text-balance">
+            {t("casesPage.ctaHeading")}
+          </h2>
+          <p className="mt-6 text-cream/60 text-[17px] leading-relaxed max-w-xl mx-auto text-pretty">
+            {t("casesPage.ctaDescription")}
+          </p>
+          <div className="mt-10">
+            <Link
+              href="/offerte"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-arka text-white text-sm font-semibold hover:bg-arka-hover transition-colors"
+            >
+              {t("packages.offerteAanvragen")}
+              <ArrowUpRight className="w-4 h-4" />
+            </Link>
+          </div>
         </div>
       </section>
     </>
