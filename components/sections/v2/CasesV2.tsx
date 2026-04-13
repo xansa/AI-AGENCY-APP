@@ -68,7 +68,7 @@ export function CasesV2() {
               <div className="mt-8 pt-8 border-t border-slate-950/8 grid grid-cols-3 gap-4">
                 {c.results.slice(0, 3).map((r) => (
                   <div key={r.metric} className="min-w-0">
-                    <div className="font-serif text-[1.5rem] md:text-[1.75rem] leading-none font-medium text-slate-ink tracking-tight break-words">
+                    <div className="font-serif text-[1.25rem] md:text-[1.5rem] leading-none font-medium text-slate-ink tracking-tight break-all hyphens-auto">
                       {r.value}
                     </div>
                     <div className="mt-2 text-[11px] text-slate-meta uppercase tracking-wide line-clamp-2">
@@ -89,10 +89,10 @@ export function CasesV2() {
               <div className="flex-1" />
 
               <Link
-                href={`/cases/${c.slug}`}
+                href="/offerte"
                 className="mt-8 inline-flex items-center gap-2 text-[13px] font-semibold text-slate-ink group/cta"
               >
-                Lees volledige case
+                Vergelijkbaar resultaat behalen?
                 <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover/cta:translate-x-0.5 group-hover/cta:-translate-y-0.5 text-arka" />
               </Link>
             </motion.article>

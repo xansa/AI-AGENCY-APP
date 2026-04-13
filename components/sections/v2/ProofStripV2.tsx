@@ -2,23 +2,18 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 
-// Three hard numbers from real cases, horizontal editorial strip.
-// No carousel, no slider, no animated counters beyond a single fade-in.
 const stats = [
   {
-    value: "+285%",
-    label: "Organisch verkeer",
-    meta: "Horeca case, 3 maanden",
+    value: "24u",
+    label: "Reactietijd",
   },
   {
-    value: "24u → 2 min",
-    label: "Respons via chatbot",
-    meta: "Consultancy case",
+    value: "0",
+    label: "Overhead",
   },
   {
-    value: "Top 3",
-    label: "Google positie",
-    meta: "Lokale zoekwoorden",
+    value: "100%",
+    label: "Code eigendom",
   },
 ];
 
@@ -29,15 +24,6 @@ export function ProofStripV2() {
     <section className="relative bg-cream py-16 md:py-20">
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
         <div className="hairline pt-12 md:pt-16">
-          <div className="flex items-center justify-between mb-10">
-            <p className="text-overline uppercase text-slate-meta font-semibold">
-              Resultaten van echte klanten
-            </p>
-            <div className="hidden sm:block text-[11px] text-slate-meta font-mono">
-              001 / 010
-            </div>
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
             {stats.map((stat, i) => (
               <motion.div
@@ -53,9 +39,6 @@ export function ProofStripV2() {
                 </div>
                 <div className="mt-3 text-base font-semibold text-slate-ink/85 break-words">
                   {stat.label}
-                </div>
-                <div className="mt-1 text-[12.5px] text-slate-meta">
-                  {stat.meta}
                 </div>
               </motion.div>
             ))}

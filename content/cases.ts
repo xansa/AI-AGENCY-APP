@@ -55,7 +55,7 @@ export const cases: Case[] = [
       {
         metric: "Outreach",
         metric_en: "Outreach",
-        value: "Geautomatiseerd",
+        value: "Auto",
         description: "Van handmatig bellen naar geautomatiseerde e-mailcampagnes",
         description_en: "From manual calling to automated email campaigns",
       },
