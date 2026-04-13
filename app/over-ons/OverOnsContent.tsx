@@ -179,6 +179,178 @@ export function OverOnsContent() {
         </div>
       </section>
 
+      {/* Achtergrond */}
+      <section className="relative bg-cream-deep py-20 md:py-28">
+        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <motion.div
+              initial={reduce ? false : { opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="lg:col-span-7 min-w-0"
+            >
+              <p className="text-overline uppercase text-slate-meta font-semibold mb-6">
+                <span className="inline-block w-6 border-t border-slate-meta/60 mr-3 align-middle" />
+                {t("overOns.achtergrondBadge")}
+              </p>
+              <h2 className="font-serif font-medium text-h2 text-slate-ink tracking-tight mb-8 text-balance">
+                {t("overOns.achtergrondHeading")}
+              </h2>
+              <div className="space-y-5 text-[16px] leading-relaxed text-slate-muted text-pretty max-w-xl">
+                <p>{t("overOns.achtergrondDesc1")}</p>
+                <p>{t("overOns.achtergrondDesc2")}</p>
+                <p>{t("overOns.achtergrondDesc3")}</p>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Bewezen resultaten */}
+      <section className="relative bg-cream py-20 md:py-28">
+        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+          <div className="mb-14">
+            <p className="text-overline uppercase text-slate-meta font-semibold mb-6">
+              <span className="inline-block w-6 border-t border-slate-meta/60 mr-3 align-middle" />
+              {t("overOns.resultatenBadge")}
+            </p>
+            <h2 className="font-serif font-medium text-h2 text-slate-ink tracking-tight text-balance max-w-2xl">
+              {t("overOns.resultatenHeading")}
+            </h2>
+            <p className="mt-4 text-[16px] leading-relaxed text-slate-muted max-w-xl text-pretty">
+              {t("overOns.resultatenDesc")}
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Case 1: Display-pallets.nl */}
+            <motion.div
+              initial={reduce ? false : { opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.55 }}
+              className="p-8 rounded-2xl ring-1 ring-slate-950/8 bg-cream-deep flex flex-col min-w-0"
+            >
+              <span className="font-serif text-[2rem] font-medium text-arka mb-3 leading-none">
+                {t("overOns.case1Metric")}
+              </span>
+              <h3 className="font-serif text-[1.35rem] font-medium text-slate-ink tracking-tight mb-3">
+                {t("overOns.case1Title")}
+              </h3>
+              <p className="text-[14px] leading-relaxed text-slate-muted text-pretty flex-1 mb-6">
+                {t("overOns.case1Desc")}
+              </p>
+              <Link
+                href="/cases/display-pallets"
+                className="inline-flex items-center gap-2 text-[13px] font-semibold text-slate-ink hover:text-arka transition-colors"
+              >
+                {t("overOns.case1Link")}
+                <ArrowUpRight className="w-4 h-4" />
+              </Link>
+            </motion.div>
+            {/* Case 2: De Palletleverancier BV */}
+            <motion.div
+              initial={reduce ? false : { opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.55, delay: 0.1 }}
+              className="p-8 rounded-2xl ring-1 ring-slate-950/8 bg-cream-deep flex flex-col min-w-0"
+            >
+              <span className="font-serif text-[2rem] font-medium text-arka mb-3 leading-none">
+                {t("overOns.case2Metric")}
+              </span>
+              <h3 className="font-serif text-[1.35rem] font-medium text-slate-ink tracking-tight mb-3">
+                {t("overOns.case2Title")}
+              </h3>
+              <p className="text-[14px] leading-relaxed text-slate-muted text-pretty flex-1 mb-6">
+                {t("overOns.case2Desc")}
+              </p>
+              <Link
+                href="/cases/de-palletleverancier"
+                className="inline-flex items-center gap-2 text-[13px] font-semibold text-slate-ink hover:text-arka transition-colors"
+              >
+                {t("overOns.case2Link")}
+                <ArrowUpRight className="w-4 h-4" />
+              </Link>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Direct contact */}
+      <section className="relative bg-cream-deep py-20 md:py-28">
+        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            <motion.div
+              initial={reduce ? false : { opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="lg:col-span-6 min-w-0"
+            >
+              <p className="text-overline uppercase text-slate-meta font-semibold mb-6">
+                <span className="inline-block w-6 border-t border-slate-meta/60 mr-3 align-middle" />
+                {t("overOns.contactBadge")}
+              </p>
+              <h2 className="font-serif font-medium text-h2 text-slate-ink tracking-tight mb-6 text-balance">
+                {t("overOns.contactHeading")}
+              </h2>
+              <p className="text-[16px] leading-relaxed text-slate-muted text-pretty max-w-md">
+                {t("overOns.contactDesc")}
+              </p>
+            </motion.div>
+            <motion.div
+              initial={reduce ? false : { opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="lg:col-span-5 lg:col-start-8 min-w-0"
+            >
+              <div className="p-8 rounded-2xl ring-1 ring-slate-950/8 bg-cream space-y-5">
+                <div className="flex flex-col gap-1 min-w-0">
+                  <span className="text-[11px] font-semibold uppercase tracking-widest text-slate-meta">
+                    {t("overOns.contactEmail")}
+                  </span>
+                  <a
+                    href="mailto:info@arkadigital.nl"
+                    className="text-[15px] font-medium text-slate-ink hover:text-arka transition-colors break-all"
+                  >
+                    info@arkadigital.nl
+                  </a>
+                </div>
+                <div className="w-full h-px bg-line" />
+                <div className="flex flex-col gap-1 min-w-0">
+                  <span className="text-[11px] font-semibold uppercase tracking-widest text-slate-meta">
+                    {t("overOns.contactPhone")}
+                  </span>
+                  <a
+                    href="tel:+31646140986"
+                    className="text-[15px] font-medium text-slate-ink hover:text-arka transition-colors"
+                  >
+                    +31 6 46140986
+                  </a>
+                </div>
+                <div className="w-full h-px bg-line" />
+                <div className="flex flex-col gap-1 min-w-0">
+                  <span className="text-[11px] font-semibold uppercase tracking-widest text-slate-meta">
+                    {t("overOns.contactLinkedIn")}
+                  </span>
+                  <a
+                    href="https://www.linkedin.com/in/kaanarslan"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-[15px] font-medium text-slate-ink hover:text-arka transition-colors"
+                  >
+                    linkedin.com/in/kaanarslan
+                    <ArrowUpRight className="w-4 h-4 flex-shrink-0" />
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Closing CTA */}
       <section className="relative bg-ink text-cream py-24 md:py-32">
         <div className="absolute inset-0 canvas-grid opacity-[0.035] pointer-events-none" />

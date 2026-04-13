@@ -2,7 +2,11 @@
 
 > Jouw digitale afdeling, zonder de overhead.
 
-Arka is a digital agency based in Dordrecht, Nederland. We help SMBs and freelancers with websites, SEO, AI automation, dashboards, lead generation, and branding -- all as a flexible outsourced digital department.
+Arka is een digitaal bureau in Dordrecht, Nederland. Wij helpen MKB-bedrijven en freelancers met websites, SEO, AI-automatisering, dashboards, lead generation en branding als flexibele uitbestede digitale afdeling.
+
+## Team
+
+- **Kaan Arslan**, oprichter en enig medewerker. Verantwoordelijk voor strategie, ontwerp, development en klantcontact. LinkedIn: https://www.linkedin.com/in/kaanarslan
 
 ## Contact
 
@@ -12,62 +16,79 @@ Arka is a digital agency based in Dordrecht, Nederland. We help SMBs and freelan
 - Location: Dordrecht, Nederland
 - KVK: 42000761
 - BTW: NL005424960B92
+- LinkedIn: https://www.linkedin.com/company/arka-nl
+
+## Resultaten
+
+- **Display-pallets.nl**: niche SEO-strategie voor palletleverancier. Resultaat: +200% aanvragen, top 5 Google voor doelzoekwoorden, 3 nieuwe klanten binnen 3 maanden.
+- **De Palletleverancier BV**: volledige digitalisering (website, CRM, processen). Resultaat: 3x snellere processen, professionele online aanwezigheid, gestructureerd klantbeheer.
 
 ## Pages
 
-- [Homepage](https://arkadigital.nl/): Overview of Arka's services, packages, and value proposition.
-- [Diensten (Services)](https://arkadigital.nl/diensten): Overview of all six service areas.
-- [Websites & Webshops](https://arkadigital.nl/diensten/websites-webshops): Custom design, development and hosting of websites and webshops.
-- [SEO & Content](https://arkadigital.nl/diensten/seo-content): Search engine optimization, blog articles and LinkedIn content.
-- [AI Chatbots & Automatisering](https://arkadigital.nl/diensten/ai-chatbots-automatisering): Smart chatbots, workflow automation and AI integrations.
-- [Dashboards & Data](https://arkadigital.nl/diensten/dashboards-data): KPI dashboards, reporting and data integrations.
-- [Lead Generation](https://arkadigital.nl/diensten/lead-generation): Outbound campaigns, funnels and CRM optimization.
-- [Branding & Design](https://arkadigital.nl/diensten/branding-design): Visual identity, UI/UX design and brand guidelines.
-- [Packages](https://arkadigital.nl/packages): Three pricing tiers (Starter, Professional, Enterprise) with monthly retainer and one-time project options.
-- [Cases](https://arkadigital.nl/cases): Portfolio of completed client projects.
-- [Blog](https://arkadigital.nl/blog): Articles on digital strategy, SEO, AI, and web development.
-- [FAQ](https://arkadigital.nl/faq): Frequently asked questions about services, pricing, and process.
-- [Over Ons (About)](https://arkadigital.nl/over-ons): Background on Arka and its approach.
-- [Contact](https://arkadigital.nl/contact): Contact form and details.
-- [Offerte (Quote)](https://arkadigital.nl/offerte): Request a custom quote.
-- [Privacy](https://arkadigital.nl/privacy): Privacy policy.
-- [Algemene Voorwaarden (Terms)](https://arkadigital.nl/algemene-voorwaarden): General terms and conditions.
+- [Homepage](https://arkadigital.nl/): Overzicht van diensten, pakketten en werkwijze.
+- [Diensten](https://arkadigital.nl/diensten): Overzicht van alle zes dienstgebieden.
+- [Websites & Webshops](https://arkadigital.nl/diensten/websites-webshops): Maatwerk websites en webshops met Next.js.
+- [SEO & Content](https://arkadigital.nl/diensten/seo-content): Zoekmachineoptimalisatie, blogartikelen en LinkedIn content.
+- [AI Chatbots & Automatisering](https://arkadigital.nl/diensten/ai-chatbots-automatisering): Slimme chatbots, workflow-automatisering en AI-integraties.
+- [Dashboards & Data](https://arkadigital.nl/diensten/dashboards-data): KPI-dashboards, rapportages en data-integraties.
+- [Lead Generation](https://arkadigital.nl/diensten/lead-generation): Outbound campagnes, funnels en CRM-optimalisatie.
+- [Branding & Design](https://arkadigital.nl/diensten/branding-design): Visuele identiteit, UI/UX-design en huisstijlrichtlijnen.
+- [Pakketten](https://arkadigital.nl/packages): Drie prijsniveaus (Starter, Professional, Enterprise).
+- [Cases](https://arkadigital.nl/cases): Portfolio van afgeronde klantprojecten.
+- [Blog](https://arkadigital.nl/blog): Artikelen over digitale strategie, SEO, AI en webdevelopment.
+- [FAQ](https://arkadigital.nl/faq): Veelgestelde vragen over diensten, prijzen en werkwijze.
+- [Over Ons](https://arkadigital.nl/over-ons): Achtergrond over Arka en de aanpak.
+- [Contact](https://arkadigital.nl/contact): Contactformulier en gegevens.
+- [Offerte](https://arkadigital.nl/offerte): Offerte aanvragen.
+
+## Blog (selectie)
+
+- [Waarom elke MKB'er een AI-chatbot nodig heeft](https://arkadigital.nl/blog/waarom-ai-chatbot-mkb): ROI-berekening, use cases per branche, kosten en implementatie.
+- [Wat kost een website in 2026?](https://arkadigital.nl/blog/wat-kost-een-website-in-2026): Eerlijk prijsoverzicht van template tot maatwerk.
+- [SEO voor MKB: 5 quick wins](https://arkadigital.nl/blog/seo-voor-mkb-5-quick-wins): Direct toepasbare SEO-tips voor kleine bedrijven.
+- [WordPress vs maatwerk website](https://arkadigital.nl/blog/wordpress-vs-maatwerk-website): Vergelijking op snelheid, veiligheid, kosten en onderhoud.
+- [Lead generation voor B2B](https://arkadigital.nl/blog/lead-generation-b2b-stappenplan): Praktisch stappenplan voor B2B-leadgeneratie.
+- [Lokale SEO: zo word je gevonden in jouw regio](https://arkadigital.nl/blog/lokale-seo-tips): Google Business Profile, reviews, lokale zoekwoorden.
+- [B2B website laten maken](https://arkadigital.nl/blog/b2b-website-laten-maken): Specifieke eisen voor B2B-websites en lead generation.
+- [Conversie optimalisatie](https://arkadigital.nl/blog/conversie-optimalisatie-meer-klanten): Meer klanten met dezelfde bezoekers.
+- [Online zichtbaarheid vergroten](https://arkadigital.nl/blog/online-zichtbaarheid-vergroten): Complete gids voor MKB.
+- [De grootste fouten bij website laten maken](https://arkadigital.nl/blog/fouten-website-laten-maken): 8 veelgemaakte fouten en hoe je ze voorkomt.
 
 ## Services
 
 ### Websites & Webshops
-Custom design, development and hosting of websites and webshops that load fast and convert. Deliverables: responsive design, CMS integration, hosting & maintenance, performance optimization, SSL & security.
+Maatwerk websites en webshops gebouwd met Next.js (dezelfde technologie als Nike, Netflix, Notion). Laadtijd onder 1 seconde, Google PageSpeed 95-100, SEO-proof vanaf dag 1. Broncode is altijd eigendom van de klant, geen lock-in.
 
 ### SEO & Content
-Search engine optimization, blog articles and LinkedIn content to improve online visibility. Deliverables: technical SEO audit, keyword research, monthly blog articles, LinkedIn posts, content strategy.
+Technische SEO-audit, zoekwoordenonderzoek, maandelijkse blogartikelen, LinkedIn content en contentstrategie. Resultaten zichtbaar binnen 3-6 maanden.
 
-### AI Chatbots & Automation
-Smart chatbots, workflow automation and AI integrations that speed up processes and serve customers 24/7. Deliverables: custom AI chatbot, process automation, CRM integrations, lead qualification.
+### AI Chatbots & Automatisering
+Custom AI-chatbots die 70-80% van veelgestelde vragen automatisch beantwoorden. Getraind op bedrijfsspecifieke kennis, 24/7 beschikbaar, leads kwalificeren en doorsturen.
 
 ### Dashboards & Data
-KPI dashboards, reporting and data integrations for business insight. Deliverables: custom dashboard development, data pipeline setup, real-time reporting, API integrations.
+KPI-dashboards, data-pipelines en realtime rapportages. Van Excel-chaos naar gestructureerd inzicht.
 
 ### Lead Generation
-Outbound campaigns, funnels and CRM optimization for a predictable flow of new leads. Deliverables: lead funnel setup, outbound email campaigns, LinkedIn outreach, CRM setup & optimization.
+Outbound email campagnes, LinkedIn outreach, funnel-opzet en CRM-optimalisatie voor een voorspelbare stroom nieuwe leads.
 
 ### Branding & Design
-Visual identity, UI/UX design and brand guidelines for a professional and consistent brand. Deliverables: logo & brand identity, brand guidelines, UI/UX design, social media templates.
+Logo, huisstijl, UI/UX-design en social media templates. Professionele en consistente merkidentiteit.
 
-## Packages
+## Pakketten
 
 ### Starter
-For freelancers and small businesses. Includes Websites & Webshops and SEO & Content.
-- Monthly retainer: from EUR 1,000/month (min. 3 months)
-- One-time project: from EUR 2,500 (delivery in 2-4 weeks)
+Voor freelancers en kleine bedrijven. Omvat Websites & Webshops en SEO & Content.
+- Maandelijks: vanaf EUR 1.000/maand (min. 3 maanden)
+- Eenmalig: vanaf EUR 2.500 (oplevering in 2-4 weken)
 
 ### Professional
-For growing SMBs. Includes Websites & Webshops, SEO & Content, AI Chatbots & Automation, and Branding & Design.
-- Monthly retainer: from EUR 2,750/month (min. 6 months)
-- One-time project: from EUR 7,000 (delivery in 4-6 weeks)
+Voor groeiende MKB-bedrijven. Omvat Websites, SEO, AI Chatbots en Branding.
+- Maandelijks: vanaf EUR 2.750/maand (min. 6 maanden)
+- Eenmalig: vanaf EUR 7.000 (oplevering in 4-6 weken)
 
 ### Enterprise
-For established SMBs and scale-ups. Includes all six services.
-- Monthly retainer: from EUR 5,500/month (min. 6 months)
-- One-time project: from EUR 18,000 (delivery in 6-10 weeks)
+Voor gevestigde MKB-bedrijven en scale-ups. Omvat alle zes diensten.
+- Maandelijks: vanaf EUR 5.500/maand (min. 6 maanden)
+- Eenmalig: vanaf EUR 18.000 (oplevering in 6-10 weken)
 
-All packages include 30 days of bug fixes after delivery. Hourly rate after that: EUR 95/hour.
+Alle pakketten inclusief 30 dagen bugfixes na oplevering. Uurtarief daarna: EUR 95/uur.

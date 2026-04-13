@@ -8,6 +8,29 @@ import { useTranslation, l } from "@/lib/i18n";
 const CALENDLY_URL =
   process.env.NEXT_PUBLIC_CALENDLY_URL ?? "https://calendly.com/arkaecom-proton/30min";
 
+const CITY_MAP: Record<string, string> = {
+  dordrecht: "Dordrecht",
+  drechtsteden: "Drechtsteden",
+  rotterdam: "Rotterdam",
+  amsterdam: "Amsterdam",
+  "den-haag": "Den Haag",
+  utrecht: "Utrecht",
+  eindhoven: "Eindhoven",
+  breda: "Breda",
+  tilburg: "Tilburg",
+  arnhem: "Arnhem",
+  leiden: "Leiden",
+  groningen: "Groningen",
+};
+
+function extractCity(slug: string): string {
+  const parts = slug.split("-");
+  const lastTwo = parts.slice(-2).join("-");
+  if (CITY_MAP[lastTwo]) return CITY_MAP[lastTwo];
+  const last = parts[parts.length - 1];
+  return CITY_MAP[last] ?? "Dordrecht";
+}
+
 function RichText({ text }: { text: string }) {
   const parts = text.split(/\*\*(.*?)\*\*/g);
   return (
@@ -39,7 +62,7 @@ export function LandingPageContent({ page }: { page: LandingPage }) {
         <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
           <p className="text-overline uppercase text-slate-meta font-semibold mb-8 inline-flex items-center gap-2">
             <MapPin className="w-3.5 h-3.5 text-arka" />
-            Dordrecht &middot; Drechtsteden
+            {extractCity(page.slug)}
           </p>
           <h1 className="font-serif font-medium text-display-sm text-slate-ink tracking-tight leading-[1.05] max-w-4xl text-balance">
             {l(page, "h1", locale)}

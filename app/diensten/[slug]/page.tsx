@@ -39,15 +39,28 @@ export default function DienstDetailPage({ params }: Props) {
     "@type": "Service",
     name: service.title,
     description: service.description,
+    serviceType: service.title,
     provider: {
       "@type": "ProfessionalService",
+      "@id": "https://arkadigital.nl/#organization",
       name: "Arka",
       url: baseUrl,
     },
     url: `${baseUrl}/diensten/${service.slug}`,
     areaServed: {
       "@type": "Country",
-      name: "NL",
+      name: "Nederland",
+    },
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "EUR",
+      price: "1000",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        priceCurrency: "EUR",
+        price: "1000",
+        unitText: "maand",
+      },
     },
   };
 

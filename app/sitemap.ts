@@ -1,11 +1,11 @@
 import { services } from "@/content/services";
-import { cases } from "@/content/cases";
 import { getPublishedPosts } from "@/content/blog";
 import { landingPages } from "@/content/landing-pages";
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://arkadigital.nl";
+  const siteLastUpdated = new Date("2026-04-13");
 
   const staticPages = [
     "",
@@ -21,21 +21,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/algemene-voorwaarden",
   ].map((path) => ({
     url: `${baseUrl}${path}`,
-    lastModified: new Date(),
+    lastModified: siteLastUpdated,
     changeFrequency: "monthly" as const,
     priority: path === "" ? 1 : 0.8,
   }));
 
   const servicePages = services.map((service) => ({
     url: `${baseUrl}/diensten/${service.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-
-  const casePages = cases.map((c) => ({
-    url: `${baseUrl}/cases/${c.slug}`,
-    lastModified: new Date(),
+    lastModified: siteLastUpdated,
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -49,10 +42,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const landingPageEntries = landingPages.map((lp) => ({
     url: `${baseUrl}/${lp.slug}`,
-    lastModified: new Date(),
+    lastModified: siteLastUpdated,
     changeFrequency: "weekly" as const,
     priority: 0.9,
   }));
 
-  return [...staticPages, ...landingPageEntries, ...servicePages, ...casePages, ...blogPages];
+  return [...staticPages, ...landingPageEntries, ...servicePages, ...blogPages];
 }

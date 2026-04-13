@@ -30,6 +30,10 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "Amazonbot",
         allow: "/",
       },
+      {
+        userAgent: "OAI-SearchBot",
+        allow: "/",
+      },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,
   };

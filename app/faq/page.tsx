@@ -3,17 +3,17 @@ import { faqItems } from "@/content/faq";
 import { FAQContent } from "./FAQContent";
 
 export const metadata: Metadata = {
-  title: "FAQ",
-  description: "Antwoorden op veelgestelde vragen over onze diensten, contracten en resultaten.",
+  title: "Veelgestelde vragen over websites, SEO en AI",
+  description: "Antwoorden op veelgestelde vragen over websites laten maken, SEO, AI chatbots, prijzen en werkwijze. Alles wat je wilt weten over digitale diensten voor MKB.",
   alternates: { canonical: "https://arkadigital.nl/faq" },
   openGraph: {
-    title: "FAQ | Arka",
-    description: "Antwoorden op veelgestelde vragen over onze diensten, contracten en resultaten.",
+    title: "Veelgestelde vragen | Arka",
+    description: "Antwoorden op veelgestelde vragen over websites laten maken, SEO, AI chatbots, prijzen en werkwijze.",
     url: "https://arkadigital.nl/faq",
   },
   twitter: {
-    title: "FAQ | Arka",
-    description: "Antwoorden op veelgestelde vragen over onze diensten, contracten en resultaten.",
+    title: "Veelgestelde vragen | Arka",
+    description: "Antwoorden op veelgestelde vragen over websites, SEO en AI voor MKB.",
   },
 };
 

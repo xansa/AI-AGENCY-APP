@@ -65,7 +65,7 @@ export function CasesContent() {
                   <div className="grid grid-cols-3 gap-4 mb-8">
                     {c.results.map((r, j) => (
                       <div key={j} className="min-w-0">
-                        <div className="font-serif text-[1.5rem] md:text-[1.75rem] leading-none font-medium text-slate-ink tracking-tight break-words">
+                        <div className="font-serif text-[1.25rem] md:text-[1.75rem] leading-none font-medium text-slate-ink tracking-tight break-words hyphens-auto">
                           {r.value}
                         </div>
                         <div className="mt-2 text-[11px] text-slate-meta uppercase tracking-wide line-clamp-2">
@@ -111,10 +111,10 @@ export function CasesContent() {
                     </div>
                   </div>
                   <Link
-                    href={`/cases/${c.slug}`}
+                    href="/offerte"
                     className="inline-flex items-center gap-2 text-[13px] font-semibold text-slate-ink group"
                   >
-                    Lees volledige case
+                    {locale === "nl" ? "Vergelijkbaar resultaat behalen?" : "Achieve similar results?"}
                     <ArrowUpRight className="w-4 h-4 text-arka group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform duration-300" />
                   </Link>
                 </div>

@@ -13,11 +13,14 @@ import { ClosingCTAV2 } from "@/components/sections/v2/ClosingCTAV2";
 export const metadata: Metadata = {
   title: { absolute: "Arka | Jouw digitale afdeling, zonder de overhead." },
   description:
-    "Arka digitale partner in Dordrecht. Websites, SEO, AI chatbots, dashboards, lead generation en branding, alles onder één dak.",
+    "Arka is jouw digitale partner in Dordrecht. Websites, SEO, AI chatbots, dashboards, lead generation en branding, alles onder een dak.",
+  alternates: {
+    canonical: "https://arkadigital.nl",
+  },
   openGraph: {
     title: "Arka | Jouw digitale afdeling, zonder de overhead.",
     description:
-      "Arka is jouw digitale partner in Dordrecht. Websites, SEO, AI chatbots, dashboards, lead generation en branding, alles onder één dak.",
+      "Arka is jouw digitale partner in Dordrecht. Websites, SEO, AI chatbots, dashboards, lead generation en branding, alles onder een dak.",
     url: "https://arkadigital.nl",
   },
   twitter: {

@@ -25,8 +25,60 @@ function RichText({ text }: { text: string }) {
   );
 }
 
+const CITY_LINKS: Record<string, { label: string; slug: string }[]> = {
+  "websites-webshops": [
+    { label: "Dordrecht", slug: "website-laten-maken-dordrecht" },
+    { label: "Rotterdam", slug: "website-laten-maken-rotterdam" },
+    { label: "Amsterdam", slug: "website-laten-maken-amsterdam" },
+    { label: "Utrecht", slug: "website-laten-maken-utrecht" },
+    { label: "Den Haag", slug: "website-laten-maken-den-haag" },
+    { label: "Eindhoven", slug: "website-laten-maken-eindhoven" },
+  ],
+  "seo-content": [
+    { label: "Dordrecht", slug: "seo-bureau-dordrecht" },
+    { label: "Rotterdam", slug: "seo-rotterdam" },
+    { label: "Amsterdam", slug: "seo-amsterdam" },
+    { label: "Utrecht", slug: "seo-utrecht" },
+    { label: "Den Haag", slug: "seo-den-haag" },
+    { label: "Eindhoven", slug: "seo-eindhoven" },
+  ],
+  "ai-chatbots-automatisering": [
+    { label: "Dordrecht", slug: "website-laten-maken-dordrecht" },
+    { label: "Rotterdam", slug: "website-laten-maken-rotterdam" },
+    { label: "Amsterdam", slug: "website-laten-maken-amsterdam" },
+    { label: "Dordrecht SEO", slug: "seo-bureau-dordrecht" },
+    { label: "Rotterdam SEO", slug: "seo-rotterdam" },
+    { label: "Amsterdam SEO", slug: "seo-amsterdam" },
+  ],
+  "dashboards-data": [
+    { label: "Dordrecht", slug: "website-laten-maken-dordrecht" },
+    { label: "Rotterdam", slug: "website-laten-maken-rotterdam" },
+    { label: "Amsterdam", slug: "website-laten-maken-amsterdam" },
+    { label: "Dordrecht SEO", slug: "seo-bureau-dordrecht" },
+    { label: "Rotterdam SEO", slug: "seo-rotterdam" },
+    { label: "Amsterdam SEO", slug: "seo-amsterdam" },
+  ],
+  "lead-generation": [
+    { label: "Dordrecht", slug: "website-laten-maken-dordrecht" },
+    { label: "Rotterdam", slug: "website-laten-maken-rotterdam" },
+    { label: "Amsterdam", slug: "website-laten-maken-amsterdam" },
+    { label: "Dordrecht SEO", slug: "seo-bureau-dordrecht" },
+    { label: "Rotterdam SEO", slug: "seo-rotterdam" },
+    { label: "Amsterdam SEO", slug: "seo-amsterdam" },
+  ],
+  "branding-design": [
+    { label: "Dordrecht", slug: "website-laten-maken-dordrecht" },
+    { label: "Rotterdam", slug: "website-laten-maken-rotterdam" },
+    { label: "Amsterdam", slug: "website-laten-maken-amsterdam" },
+    { label: "Dordrecht SEO", slug: "seo-bureau-dordrecht" },
+    { label: "Rotterdam SEO", slug: "seo-rotterdam" },
+    { label: "Amsterdam SEO", slug: "seo-amsterdam" },
+  ],
+};
+
 export function DienstDetailContent({ service }: { service: Service }) {
   const { t, locale } = useTranslation();
+  const cityLinks = CITY_LINKS[service.slug] ?? [];
 
   return (
     <>
@@ -141,6 +193,26 @@ export function DienstDetailContent({ service }: { service: Service }) {
                   ))}
                 </div>
               </div>
+
+              {cityLinks.length > 0 && (
+                <div className="mt-14 pt-10 border-t border-slate-950/8">
+                  <p className="text-overline uppercase text-slate-meta font-semibold mb-4">
+                    <span className="inline-block w-6 border-t border-slate-meta/60 mr-3 align-middle" />
+                    Beschikbaar in heel Nederland
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {cityLinks.map((city) => (
+                      <Link
+                        key={city.slug}
+                        href={`/${city.slug}`}
+                        className="inline-flex items-center px-3.5 py-1.5 rounded-full ring-1 ring-slate-950/12 bg-cream-deep text-[12.5px] text-slate-muted hover:text-slate-ink hover:ring-slate-950/20 transition-colors"
+                      >
+                        {city.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
 
             <aside className="lg:col-span-4 min-w-0">

@@ -9,41 +9,50 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // ─── Arka V2 editorial light palette ───
-        // Light editorial as base, dark ink as contrast
-        cream: {
-          DEFAULT: "#FAFAF7",
-          deep: "#F5F4EE",
-          edge: "#EFEEE6",
-        },
+        // ─── Arka V2 navy-dominant palette ───
+        // Navy is the anchor. Cream is body-papier for long-form content.
+        // Arka blue is accent only, used sparingly.
         ink: {
-          DEFAULT: "#0E1116",
-          light: "#1A1D24",
-          soft: "#2A2E37",
+          DEFAULT: "#0B1220",   // navy anchor: hero, navbar, footer, CTA bgs
+          soft: "#152238",      // cards/borders on navy
+          mid: "#1E3A5F",       // brand navy mid-tone (from brand-context)
+          raised: "#223352",    // elevated surface on navy
         },
-        // Text tokens
-        "slate-ink": "#0F172A",
+        cream: {
+          DEFAULT: "#FAF7F2",   // body papier - long-form content sections only
+          deep: "#F3EFE7",
+          edge: "#E8E3D8",
+        },
+        // Arka accent blue (exact brand blue)
+        arka: {
+          DEFAULT: "#2563EB",
+          hover: "#1D4ED8",
+          soft: "#DBEAFE",
+          glow: "#3B82F6",
+        },
+        // Text tokens on cream
+        "slate-ink": "#0B1220",
         "slate-muted": "#475569",
         "slate-meta": "#94A3B8",
         "line": "#E5E7EB",
         "line-soft": "#F1F5F9",
-        // Arka accent blue
-        arka: {
-          DEFAULT: "#2F6BFF",
-          hover: "#1F4FD6",
-          soft: "#EBF1FF",
-        },
+        // Text tokens on navy/ink
+        "cream-muted": "rgba(250, 247, 242, 0.78)",
+        "cream-meta": "rgba(250, 247, 242, 0.55)",
+        "line-navy": "rgba(250, 247, 242, 0.12)",
+        "line-navy-soft": "rgba(250, 247, 242, 0.06)",
 
         // ─── Legacy aliases (backward compat) ───
+        navy: "#0B1220",
         primary: {
-          DEFAULT: "#0F172A",
-          light: "#1E293B",
-          dark: "#020617",
+          DEFAULT: "#0B1220",
+          light: "#1E3A5F",
+          dark: "#050912",
         },
         accent: {
-          DEFAULT: "#2F6BFF",
-          light: "#5B87FF",
-          dark: "#1F4FD6",
+          DEFAULT: "#2563EB",
+          light: "#3B82F6",
+          dark: "#1D4ED8",
         },
         cyan: {
           DEFAULT: "#06B6D4",
@@ -51,16 +60,16 @@ const config: Config = {
           dark: "#0891B2",
         },
         background: {
-          DEFAULT: "#FAFAF7",
-          light: "#FFFFFF",
+          DEFAULT: "#0B1220",
+          light: "#FAF7F2",
         },
         surface: {
-          DEFAULT: "#FFFFFF",
-          light: "#F5F4EE",
-          dark: "#0E1116",
+          DEFAULT: "#152238",
+          light: "#FAF7F2",
+          dark: "#050912",
         },
         text: {
-          DEFAULT: "#0F172A",
+          DEFAULT: "#0B1220",
           muted: "#475569",
           dark: "#94A3B8",
         },

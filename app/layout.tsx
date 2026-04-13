@@ -77,15 +77,29 @@ export const metadata: Metadata = {
   },
 };
 
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://arkadigital.nl/#website",
+  name: "Arka",
+  url: "https://arkadigital.nl",
+  inLanguage: "nl",
+  publisher: { "@id": "https://arkadigital.nl/#organization" },
+};
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "ProfessionalService"],
+  "@id": "https://arkadigital.nl/#organization",
   name: "Arka",
   description:
-    "Digitaal bureau in Dordrecht. Websites, SEO, AI chatbots, dashboards, lead generation en branding, alles onder één dak.",
+    "Digitaal bureau in Dordrecht. Websites, SEO, AI chatbots, dashboards, lead generation en branding, alles onder een dak.",
   url: "https://arkadigital.nl",
-  image: "https://arkadigital.nl/brand/logo-icon-dark.svg",
-  logo: "https://arkadigital.nl/brand/logo-icon-dark.svg",
+  image: "https://arkadigital.nl/brand/cover-dark.png",
+  logo: {
+    "@type": "ImageObject",
+    url: "https://arkadigital.nl/brand/logo-icon-dark.png",
+  },
   telephone: "+31646140986",
   email: "info@arkadigital.nl",
   address: {
@@ -96,14 +110,14 @@ const jsonLd = {
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 51.8133,
-    longitude: 4.6901,
+    latitude: 51.81330,
+    longitude: 4.69010,
   },
   areaServed: [
-    { "@type": "City", "name": "Dordrecht" },
-    { "@type": "City", "name": "Zwijndrecht" },
-    { "@type": "City", "name": "Papendrecht" },
-    { "@type": "AdministrativeArea", "name": "Drechtsteden" },
+    { "@type": "City", name: "Dordrecht" },
+    { "@type": "City", name: "Zwijndrecht" },
+    { "@type": "City", name: "Papendrecht" },
+    { "@type": "AdministrativeArea", name: "Drechtsteden" },
   ],
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
@@ -114,10 +128,11 @@ const jsonLd = {
   founder: {
     "@type": "Person",
     name: "Kaan Arslan",
+    url: "https://arkadigital.nl/over-ons",
+    sameAs: "https://www.linkedin.com/in/kaanarslan",
   },
   sameAs: [
-    // TODO: Add LinkedIn company page URL once created
-    // TODO: Add Google Business Profile URL once created
+    "https://www.linkedin.com/company/arka-nl",
   ],
   priceRange: "$$",
   serviceType: [
@@ -140,6 +155,10 @@ export default function RootLayout({
   return (
     <html lang="nl" suppressHydrationWarning className={`${cormorant.variable} ${instrumentSans.variable} ${inter.variable}`}>
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

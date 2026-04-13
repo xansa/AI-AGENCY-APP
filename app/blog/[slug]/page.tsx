@@ -107,11 +107,12 @@ export default function BlogPostPage({ params }: Props) {
     "@type": "BlogPosting",
     headline: post.title,
     description: post.excerpt,
-    image: `${baseUrl}/brand/cover-dark.svg`,
+    image: `${baseUrl}/brand/cover-dark.png`,
     author: {
       "@type": "Person",
       name: "Kaan Arslan",
       url: `${baseUrl}/over-ons`,
+      sameAs: "https://www.linkedin.com/in/kaanarslan",
     },
     publisher: {
       "@type": "Organization",
@@ -119,13 +120,14 @@ export default function BlogPostPage({ params }: Props) {
       url: baseUrl,
       logo: {
         "@type": "ImageObject",
-        url: `${baseUrl}/brand/logo-icon-dark.svg`,
+        url: `${baseUrl}/brand/logo-icon-dark.png`,
       },
     },
     datePublished: post.publishedAt,
     dateModified: post.publishedAt,
     url: `${baseUrl}/blog/${post.slug}`,
-    keywords: post.tags,
+    keywords: post.tags.join(", "),
+    articleSection: post.tags[0] ?? "Digitaal",
     inLanguage: "nl",
     timeRequired: `PT${readingTimeMinutes}M`,
     mainEntityOfPage: {
