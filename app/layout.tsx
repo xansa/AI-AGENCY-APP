@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Cormorant_Garamond, Instrument_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -10,6 +10,24 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 import { LanguageProvider } from "@/lib/i18n";
 import { CookieBanner } from "@/components/ui/CookieBanner";
 
+// Editorial serif headlines
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-serif",
+  display: "swap",
+});
+
+// UI and body sans
+const instrumentSans = Instrument_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+// Inter kept for logo wordmark and fallback only
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -59,15 +77,29 @@ export const metadata: Metadata = {
   },
 };
 
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://arkadigital.nl/#website",
+  name: "Arka",
+  url: "https://arkadigital.nl",
+  inLanguage: "nl",
+  publisher: { "@id": "https://arkadigital.nl/#organization" },
+};
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "ProfessionalService"],
+  "@id": "https://arkadigital.nl/#organization",
   name: "Arka",
   description:
-    "Digitaal bureau in Dordrecht. Websites, SEO, AI chatbots, dashboards, lead generation en branding, alles onder één dak.",
+    "Digitaal bureau in Dordrecht. Websites, SEO, AI chatbots, dashboards, lead generation en branding, alles onder een dak.",
   url: "https://arkadigital.nl",
-  image: "https://arkadigital.nl/brand/logo-icon-dark.svg",
-  logo: "https://arkadigital.nl/brand/logo-icon-dark.svg",
+  image: "https://arkadigital.nl/brand/cover-dark.png",
+  logo: {
+    "@type": "ImageObject",
+    url: "https://arkadigital.nl/brand/logo-icon-dark.png",
+  },
   telephone: "+31646140986",
   email: "info@arkadigital.nl",
   address: {
@@ -78,14 +110,14 @@ const jsonLd = {
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 51.8133,
-    longitude: 4.6901,
+    latitude: 51.81330,
+    longitude: 4.69010,
   },
   areaServed: [
-    { "@type": "City", "name": "Dordrecht" },
-    { "@type": "City", "name": "Zwijndrecht" },
-    { "@type": "City", "name": "Papendrecht" },
-    { "@type": "AdministrativeArea", "name": "Drechtsteden" },
+    { "@type": "City", name: "Dordrecht" },
+    { "@type": "City", name: "Zwijndrecht" },
+    { "@type": "City", name: "Papendrecht" },
+    { "@type": "AdministrativeArea", name: "Drechtsteden" },
   ],
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
@@ -96,6 +128,8 @@ const jsonLd = {
   founder: {
     "@type": "Person",
     name: "Kaan Arslan",
+    url: "https://arkadigital.nl/over-ons",
+    sameAs: "https://www.linkedin.com/in/kaanarslan",
   },
   sameAs: [
     "https://www.linkedin.com/company/arka-nl",
@@ -119,8 +153,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="nl" suppressHydrationWarning className={inter.variable}>
+    <html lang="nl" suppressHydrationWarning className={`${cormorant.variable} ${instrumentSans.variable} ${inter.variable}`}>
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -137,13 +175,14 @@ export default function RootLayout({
           toastOptions={{
             duration: 4000,
             style: {
-              background: "#0f172a",
-              color: "#f8fafc",
+              background: "#0E1116",
+              color: "#FAFAF7",
               borderRadius: "12px",
               fontSize: "14px",
+              border: "1px solid rgba(255,255,255,0.08)",
             },
             success: {
-              iconTheme: { primary: "#6366f1", secondary: "#fff" },
+              iconTheme: { primary: "#2F6BFF", secondary: "#fff" },
             },
           }}
         />

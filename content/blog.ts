@@ -31,7 +31,7 @@ In dit artikel leggen we uit wat een AI-chatbot precies doet, hoe het werkt, wat
 
 Als MKB'er herken je dit waarschijnlijk: klanten stellen steeds dezelfde vragen. "Wat zijn jullie openingstijden?" "Kunnen jullie ook X?" "Wat kost het?" Elke vraag kost tijd die je niet besteedt aan groei.
 
-Tegelijkertijd verwachten klanten snelle antwoorden. Uit onderzoek blijkt dat 82% van de consumenten binnen 10 minuten een reactie verwacht bij een online vraag. Een dag later terugkomen met een antwoord? Dan is je lead al bij de concurrent.
+Tegelijkertijd verwachten klanten snelle antwoorden. Uit onderzoek blijkt dat 82% van de consumenten binnen 10 minuten een reactie verwacht bij een online vraag (bron: HubSpot, 2024). Een dag later terugkomen met een antwoord? Dan is je lead al bij de concurrent.
 
 Dit probleem wordt groter naarmate je bedrijf groeit. Meer klanten betekent meer vragen, maar je kunt niet onbeperkt personeel aannemen voor klantenservice. Zeker niet als 70 tot 80% van die vragen steeds dezelfde zijn.
 
@@ -124,7 +124,7 @@ De stappen zijn eenvoudiger dan je denkt:
 **De volgende stap**
 
 Benieuwd wat een AI-chatbot voor jouw bedrijf kan betekenen? We denken graag vrijblijvend mee. Neem contact op via info@arkadigital.nl of plan direct een kennismakingsgesprek. We analyseren je huidige klantcommunicatie en laten zien hoeveel tijd en geld je kunt besparen.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-03-20",
     tags: ["AI", "Chatbots", "MKB", "Automatisering"],
     readingTime: "9 min",
@@ -157,7 +157,7 @@ Google gebruikt overigens mobile-first indexing. Dat betekent dat de mobiele ver
 
 **2. Snelheid is alles**
 
-Een website die langer dan 3 seconden laadt, verliest 53% van de bezoekers. Dat is geen overdrijving, dat zijn cijfers van Google zelf. En het wordt erger: bij 5 seconden laadtijd stijgt het bouncepercentage naar 90%.
+Een website die langer dan 3 seconden laadt, verliest 53% van de bezoekers (bron: Google Core Web Vitals). Dat is geen overdrijving, dat zijn cijfers van Google zelf. En het wordt erger: bij 5 seconden laadtijd stijgt het bouncepercentage naar 90%.
 
 Snelheid is bovendien een officiele rankingfactor voor Google. Trage websites scoren lager in de zoekresultaten, wat minder bezoekers betekent, wat minder leads en omzet betekent.
 
@@ -269,7 +269,7 @@ Een website die nu perfect is maar over twee jaar niet meer past, is uiteindelij
 Een goede website is geen kostenpost, het is een investering. Met de juiste aanpak wordt je website je hardst werkende medewerker, 24 uur per dag, 7 dagen per week. De 7 punten in dit artikel vormen de basis. Sla er geen een over, want elke zwakke schakel kost je bezoekers, leads en uiteindelijk omzet.
 
 Hulp nodig bij het laten maken van een website die echt werkt? Neem contact op via info@arkadigital.nl en we bespreken vrijblijvend je wensen en mogelijkheden.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-03-15",
     tags: ["Websites", "Tips", "MKB"],
     readingTime: "10 min",
@@ -367,7 +367,7 @@ Let bij het kiezen van een webpartner op de volgende punten:
 Arka is gevestigd in Dordrecht en bouwt websites, webshops en digitale oplossingen voor MKB-bedrijven in de Drechtsteden en daarbuiten. We werken met moderne technologie (Next.js), leveren snelle en veilige websites, en zorgen dat je vindbaar bent in je eigen regio.
 
 Wil je sparren over jouw website? Neem vrijblijvend contact op via info@arkadigital.nl. We zitten in Dordrecht en denken graag mee over de beste aanpak voor jouw situatie.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-03-26",
     tags: ["Websites", "Dordrecht", "Lokale SEO", "MKB"],
     readingTime: "9 min",
@@ -432,7 +432,7 @@ Tip: controleer of je NAW-gegevens (naam, adres, werkgebied) op alle online plat
 
 **3. Verbeter je laadsnelheid**
 
-Google gebruikt snelheid als officiele rankingfactor. Maar het gaat verder dan rankings: een trage website kost je direct bezoekers. Uit Google's eigen onderzoek blijkt dat 53% van de mobiele bezoekers een website verlaat die langer dan 3 seconden laadt.
+Google gebruikt snelheid als officiele rankingfactor. Maar het gaat verder dan rankings: een trage website kost je direct bezoekers. Uit Google's eigen onderzoek blijkt dat 53% van de mobiele bezoekers een website verlaat die langer dan 3 seconden laadt (bron: Google Core Web Vitals).
 
 Test je website via Google PageSpeed Insights (pagespeed.web.dev). Je krijgt een score van 0 tot 100 en specifieke aanbevelingen voor verbetering.
 
@@ -505,7 +505,7 @@ Deze vijf quick wins kosten je samen een paar uur werk, maar het effect kan groo
 Begin vandaag met stap 1 en 2 (die kosten het minst tijd), en werk in de komende weken aan de overige punten. SEO is een marathon, geen sprint, maar elke stap telt.
 
 Wil je je SEO structureel aanpakken en ben je op zoek naar professionele ondersteuning? Stuur een mail naar info@arkadigital.nl en we kijken samen naar de mogelijkheden voor jouw website.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-03-27",
     tags: ["SEO", "MKB", "Tips", "Google"],
     readingTime: "10 min",
@@ -651,7 +651,7 @@ Vergelijk dat met een website van 500 euro die nul leads oplevert. Die website i
 Bij Arka geloven we in heldere communicatie over kosten. Geen verborgen fees, geen verrassingen achteraf, geen "dat komt later wel". We bespreken vooraf wat je nodig hebt, wat dat kost, en wat je ervoor terugkrijgt.
 
 Benieuwd naar een prijsindicatie voor jouw project? Mail naar info@arkadigital.nl en we sturen je binnen een werkdag een vrijblijvende indicatie. Geen verplichtingen, geen verkooppraatje, gewoon een eerlijk antwoord op je vraag.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-03-28",
     tags: ["Websites", "Prijzen", "MKB"],
     readingTime: "10 min",
@@ -795,7 +795,7 @@ Belangrijke principes:
 AI-automatisering is geen toekomstmuziek meer. De tools zijn beschikbaar, betaalbaar en bewezen. Kleine bedrijven die nu beginnen met AI, bouwen een voorsprong op die moeilijk in te halen is door concurrenten die afwachten.
 
 Benieuwd welke processen in jouw bedrijf geschikt zijn voor AI-automatisering? Stuur een mail naar info@arkadigital.nl en we denken gratis mee. We analyseren je werkprocessen en laten zien waar de grootste winst te behalen is.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-03-29",
     tags: ["AI", "Automatisering", "MKB", "Productiviteit"],
     readingTime: "10 min",
@@ -932,7 +932,7 @@ Een realistisch tijdpad:
 De eerste meetbare resultaten zie je doorgaans na 3 tot 6 maanden. Dat voelt lang, maar bedenk: elke verbetering die je maakt, werkt cumulatief. Na een jaar heb je een solide SEO-basis die jarenlang bezoekers blijft opleveren.
 
 Wil je weten hoe jouw website ervoor staat? Stuur een mail naar info@arkadigital.nl en we doen een gratis snelle scan. We laten je precies zien waar de problemen zitten en wat de snelste weg naar verbetering is.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-03-30",
     tags: ["SEO", "Google", "Websites", "Tips"],
     readingTime: "10 min",
@@ -1038,7 +1038,7 @@ Samenwerkingen met complementaire bedrijven zijn een onderschatte bron van leads
 
 **Stap 5: Volg op en kwalificeer**
 
-Een lead is pas waardevol als je er iets mee doet. Uit onderzoek blijkt dat 78% van de B2B-leads koopt bij het bedrijf dat als eerste reageert. Snelheid in opvolging is cruciaal.
+Een lead is pas waardevol als je er iets mee doet. Uit onderzoek blijkt dat 78% van de B2B-leads koopt bij het bedrijf dat als eerste reageert (bron: Vendasta). Snelheid in opvolging is cruciaal.
 
 Zorg voor een helder opvolgproces:
 
@@ -1069,7 +1069,7 @@ Lead generation is geen eenmalige actie. Het is een doorlopend proces dat je ste
 Gebruik deze inzichten om je strategie bij te sturen. Investeer meer in wat werkt, stop met wat niet werkt. En wees geduldig: B2B lead generation is een systeem dat je opbouwt over maanden, niet dagen.
 
 Hulp nodig bij het opzetten van je B2B lead generation? Neem contact op via info@arkadigital.nl en we bespreken vrijblijvend hoe we je kunnen helpen om structureel meer en betere leads te genereren.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-03-31",
     tags: ["Lead Generation", "B2B", "Marketing", "MKB"],
     readingTime: "10 min",
@@ -1199,7 +1199,7 @@ Enkele signalen die wijzen op kwaliteit:
 \u2022 Ze zijn bereikbaar en reageren snel op vragen
 
 Wil je een website die echt werkt voor je bedrijf? Mail naar info@arkadigital.nl voor een vrijblijvend gesprek. We bespreken je situatie en adviseren eerlijk of en hoe wij kunnen helpen.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-04-01",
     tags: ["Websites", "Prijzen", "Kwaliteit", "MKB"],
     readingTime: "9 min",
@@ -1358,7 +1358,7 @@ Tips voor een succesvolle implementatie:
 \u2022 **Gebruik automatiseringen** stel herinneringen in voor follow-ups zodat er geen leads meer doorheen glippen
 
 Hulp nodig bij het kiezen of implementeren van een CRM? Stuur een mail naar info@arkadigital.nl en we helpen je om het juiste systeem te kiezen en operationeel te krijgen.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-04-02",
     tags: ["CRM", "MKB", "HubSpot", "Sales"],
     readingTime: "9 min",
@@ -1505,7 +1505,7 @@ Ongeacht het platform: een succesvolle webshop draait om meer dan technologie. D
 \u2022 **Klantenservice** bereikbaar zijn wanneer klanten vragen hebben. Een chatbot, e-mail en telefoonnummer
 
 Wil je advies over het beste platform voor jouw webshop? Neem contact op via info@arkadigital.nl en we helpen je de juiste keuze te maken op basis van jouw situatie en ambities.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-04-03",
     tags: ["Webshops", "E-commerce", "Shopify", "MKB"],
     readingTime: "10 min",
@@ -1672,7 +1672,7 @@ MKB-bedrijven die investeren in digitale transformatie zien gemiddeld:
 Het is geen luxe meer, het is een noodzaak om concurrerend te blijven. Bedrijven die niet digitaliseren, worden ingehaald door concurrenten die het wel doen.
 
 Wil je hulp bij het digitaliseren van je bedrijfsprocessen? Mail naar info@arkadigital.nl en we kijken samen waar de meeste winst te behalen is. We beginnen met een gratis inventarisatie van je huidige processen en laten zien welke stappen het snelst resultaat opleveren.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-04-04",
     tags: ["Digitale Transformatie", "MKB", "Automatisering", "Strategie"],
     readingTime: "10 min",
@@ -1792,7 +1792,7 @@ Om het beheersbaar te maken, hier een concreet weekschema:
 Totale tijdsinvestering: 3 posts schrijven (60 tot 90 minuten per week) + 75 minuten interactie = minder dan 3 uur per week. Dat is behapbaar voor elke ondernemer.
 
 Wil je een LinkedIn-strategie die echt leads oplevert voor je B2B-bedrijf? Stuur een mail naar info@arkadigital.nl en we helpen je op weg met een plan op maat.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-04-05",
     tags: ["LinkedIn", "B2B", "Marketing", "Social Media"],
     readingTime: "10 min",
@@ -1952,7 +1952,7 @@ De terugverdientijd is vaak kort. Een dashboard dat je helpt om een dalende tren
 \u2022 **Geen actie** het mooiste dashboard is waardeloos als je er geen acties aan verbindt. Bepaal vooraf: als KPI X onder waarde Y komt, doen we Z
 
 Wil je een dashboard dat jouw bedrijfsdata omzet in bruikbare inzichten? Neem contact op via info@arkadigital.nl en we bespreken welk type dashboard het beste past bij jouw bedrijf en doelen.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-04-06",
     tags: ["Dashboards", "Data", "MKB", "Business Intelligence"],
     readingTime: "10 min",
@@ -2098,7 +2098,7 @@ Een sterke merkidentiteit kost relatief weinig maar levert veel op. Het maakt je
 Begin vandaag. Je merk is er al, de vraag is alleen of je het bewust stuurt of het aan het toeval overlaat.
 
 Hulp nodig bij je branding? Stuur een mail naar info@arkadigital.nl en we denken mee over je merkidentiteit, van positionering tot visueel ontwerp.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-04-07",
     tags: ["Branding", "Design", "Startups", "MKB"],
     readingTime: "10 min",
@@ -2243,7 +2243,7 @@ De krachtigste strategie combineert beide, en dat is wat we de meeste MKB-bedrij
 Het is geen of-of keuze, maar een en-en strategie waarbij de verhouding verschuift over tijd. Van 80% Ads / 20% SEO naar 20% Ads / 80% SEO.
 
 Wil je weten welke strategie het beste past bij jouw bedrijf? Mail naar info@arkadigital.nl voor een vrijblijvend adviesgesprek. We analyseren je markt, je concurrentie en je doelen, en adviseren de optimale mix van SEO en Ads.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-04-08",
     tags: ["Google Ads", "SEO", "Marketing", "MKB"],
     readingTime: "10 min",
@@ -2401,7 +2401,7 @@ Een realistisch voorbeeld: een MKB-bedrijf met 2.000 websitebezoekers per maand 
 Resultaat: 70 leads per maand in plaats van 30. Bij een klantwaarde van 2.000 euro en een close rate van 20%, is dat 28.000 euro omzet per maand in plaats van 12.000 euro. Een verschil van 16.000 euro per maand door je bestaande website beter te laten werken.
 
 Wil je weten hoe je meer haalt uit je website? Stuur een mail naar info@arkadigital.nl voor een vrijblijvende analyse. We bekijken je website en laten zien waar de grootste kansen liggen om je conversie te verhogen.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-04-09",
     tags: ["Conversie Optimalisatie", "Websites", "Marketing", "MKB"],
     readingTime: "10 min",
@@ -2539,7 +2539,7 @@ De kernmetrics die je moet volgen:
 \u2022 **Conversieratio** hoeveel ontvangers voeren de gewenste actie uit? Dit is de ultieme maatstaf
 
 Wil je e-mail marketing effectief inzetten voor je bedrijf? Neem contact op via info@arkadigital.nl en we helpen je van strategie tot implementatie, inclusief het opzetten van automatiseringen die leads opwarmen terwijl jij je focust op je core business.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-04-10",
     tags: ["Email Marketing", "MKB", "Marketing", "Tips"],
     readingTime: "10 min",
@@ -2689,7 +2689,7 @@ Google Ads kan sneller resultaat opleveren (binnen weken), maar SEO en content m
 Uitbesteden is een strategische keuze die goed uitpakt als je het bewust doet. Kies een partner die bij je past, stel heldere doelen, spreek eigendom af, en blijf betrokken bij het proces. De juiste partner is geen kostenpost maar een groeimotor.
 
 Wil je sparren over de mogelijkheden? Mail naar info@arkadigital.nl en we bespreken vrijblijvend wat het beste bij jouw situatie past. Geen verplichtingen, gewoon een eerlijk gesprek over je opties.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-04-11",
     tags: ["Marketing", "Uitbesteden", "MKB", "Strategie"],
     readingTime: "10 min",
@@ -2820,7 +2820,7 @@ De beste investering is een website die:
 \u2022 Onderhouden wordt (actueel, veilig, up-to-date)
 
 Wil je weten wat een website voor jouw bedrijf kan opleveren? Stuur een mail naar info@arkadigital.nl en we rekenen het samen door. We analyseren je markt, je concurrentie en je doelen, en laten zien welk rendement je kunt verwachten.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-04-12",
     tags: ["Websites", "ROI", "Investering", "MKB"],
     readingTime: "10 min",
@@ -2980,7 +2980,7 @@ AI vervangt geen mensen. Het versterkt ze. De beste resultaten ontstaan wanneer 
 Het bedrijf van de toekomst (en dat is nu) combineert menselijke kwaliteiten met AI-capaciteiten. Dat levert niet alleen betere resultaten op, maar ook meer werkplezier: niemand vindt het leuk om de hele dag facturen over te tikken of dezelfde e-mail voor de honderdste keer te beantwoorden.
 
 Benieuwd hoe AI jouw bedrijfsprocessen kan verbeteren? Stuur een mail naar info@arkadigital.nl en we kijken samen naar de mogelijkheden. We beginnen met een inventarisatie van je processen en laten zien waar de grootste kansen liggen.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-04-13",
     tags: ["AI", "Automatisering", "Bedrijfsprocessen", "MKB"],
     readingTime: "10 min",
@@ -3123,7 +3123,7 @@ Laten we de kosten naast elkaar zetten:
 De rekensom is simpel. Investeer in onderhoud en voorkom de grote kosten. Het is als regelmatig naar de tandarts gaan: een halfjaarlijkse controle van 50 euro is goedkoper dan een wortelkanaalbehandeling van 1.000 euro.
 
 Wil je je website in goede handen weten? Neem contact op via info@arkadigital.nl en we bespreken de mogelijkheden voor onderhoud en beheer. Of je nu een bestaande website hebt die onderhoud nodig heeft, of een nieuwe website wilt laten bouwen met inbegrepen onderhoud.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-04-14",
     tags: ["Websites", "Onderhoud", "Beveiliging", "MKB"],
     readingTime: "10 min",
@@ -3139,7 +3139,7 @@ In dit artikel vergelijken we beide opties eerlijk. Geen verkooppraatje, maar fe
 
 **WordPress: de populairste keuze ter wereld**
 
-WordPress draait op meer dan 40% van alle websites wereldwijd. Het is een open-source contentmanagementsysteem (CMS) dat oorspronkelijk gebouwd is voor blogs, maar inmiddels uitgegroeid is tot een volwaardig platform voor vrijwel elk type website.
+WordPress draait op meer dan 40% van alle websites wereldwijd (bron: W3Techs, 2026). Het is een open-source contentmanagementsysteem (CMS) dat oorspronkelijk gebouwd is voor blogs, maar inmiddels uitgegroeid is tot een volwaardig platform voor vrijwel elk type website.
 
 De voordelen van WordPress zijn duidelijk:
 
@@ -3151,7 +3151,7 @@ De voordelen van WordPress zijn duidelijk:
 
 Maar er zijn ook serieuze nadelen waar veel ondernemers tegenaan lopen:
 
-\u2022 **Performance** - WordPress laadt gemiddeld 20-30 plugins die allemaal scripts en stylesheets toevoegen. Het resultaat: trage laadtijden. Volgens Google verliest 53% van de mobiele bezoekers het geduld als een pagina langer dan 3 seconden laadt
+\u2022 **Performance** - WordPress laadt gemiddeld 20-30 plugins die allemaal scripts en stylesheets toevoegen. Het resultaat: trage laadtijden. Volgens Google verliest 53% van de mobiele bezoekers het geduld als een pagina langer dan 3 seconden laadt (bron: Google Core Web Vitals)
 \u2022 **Veiligheid** - WordPress is het meest gehackte CMS ter wereld. Niet omdat het slecht gebouwd is, maar omdat de combinatie van plugins, thema's en verouderde installaties een groot aanvalsoppervlak creeren. Sucuri rapporteert dat 96,2% van alle gehackte CMS-websites WordPress betreft
 \u2022 **Plugin-afhankelijkheid** - voor contactformulieren, SEO, caching, beveiliging, back-ups, en meer heb je plugins nodig. Elke plugin is een potentieel beveiligingsrisico en een mogelijke bron van conflicten
 \u2022 **Onderhoudslast** - WordPress, je thema, en al je plugins moeten regelmatig bijgewerkt worden. Doe je dit niet, dan loop je beveiligingsrisico's. Doe je het wel, dan kan een update je site breken
@@ -3223,7 +3223,7 @@ Bij Arka bouwen we maatwerk websites met Next.js. Niet omdat WordPress slecht is
 De investering is hoger bij de start, maar de resultaten zijn dat ook. Snellere laadtijden, betere Google-rankings, hogere conversie, en lagere onderhoudskosten op de lange termijn.
 
 Wil je weten welke optie het beste past bij jouw situatie? Mail naar info@arkadigital.nl of plan een vrijblijvend kennismakingsgesprek. We denken eerlijk mee, ook als WordPress de betere keuze is voor jouw specifieke situatie.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-04-15",
     tags: ["Websites", "WordPress", "Maatwerk", "Vergelijking", "MKB"],
     readingTime: "9 min",
@@ -3322,7 +3322,7 @@ Bij Arka is SEO geen losstaande dienst maar een integraal onderdeel van elke web
 Voor bedrijven die verder willen, bieden we doorlopende SEO-pakketten aan als onderdeel van ons maandelijks abonnement. Dat omvat content creatie, zoekwoordenonderzoek, technische monitoring, en maandelijkse rapportages.
 
 Benieuwd wat SEO kan opleveren voor jouw bedrijf? Stuur een mail naar info@arkadigital.nl en we rekenen het voor je uit.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-04-16",
     tags: ["SEO", "Prijzen", "Marketing", "MKB", "Tips"],
     readingTime: "10 min",
@@ -3427,7 +3427,7 @@ Met een gestructureerde aanpak kun je social media effectief beheren in 3 tot 5 
 Dat is behapbaar, ook voor een drukke ondernemer. En als het je toch te veel is, kun je het uitbesteden. Bij Arka helpen we bedrijven met hun complete online aanwezigheid, inclusief social media content en strategie.
 
 Wil je hulp bij het opzetten van een social media strategie die werkt? Neem contact op via info@arkadigital.nl.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-04-17",
     tags: ["Social Media", "Marketing", "Strategie", "MKB", "Tips"],
     readingTime: "10 min",
@@ -3544,7 +3544,7 @@ De investering betaalt zich terug zodra de pagina converteert. Een landingspagin
 Bij Arka bouwen we landingspagina's als onderdeel van onze maandelijkse pakketten. Elke pagina wordt gebouwd in Next.js voor maximale snelheid, geoptimaliseerd voor SEO, en voorzien van analytics zodat je precies kunt zien wat werkt.
 
 Wil je een landingspagina die echt converteert? Mail naar info@arkadigital.nl en we bespreken de mogelijkheden.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-04-18",
     tags: ["Conversie", "Landingspagina", "Marketing", "Websites", "Tips"],
     readingTime: "10 min",
@@ -3652,7 +3652,7 @@ AI implementeren hoeft niet ingewikkeld te zijn, maar het helpt om een partner t
 Bij Arka bouwen we AI-oplossingen specifiek voor MKB-bedrijven: chatbots die je bedrijf kennen, automatiseringen die je werkprocessen stroomlijnen, en dashboards die je data inzichtelijk maken. Alles zonder dat je zelf technische kennis nodig hebt.
 
 Benieuwd wat AI kan betekenen voor jouw bedrijf? Stuur een mail naar info@arkadigital.nl en we plannen een vrijblijvend gesprek.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-04-19",
     tags: ["AI", "Automatisering", "MKB", "Strategie", "Chatbots"],
     readingTime: "12 min",
@@ -3664,7 +3664,7 @@ Benieuwd wat AI kan betekenen voor jouw bedrijf? Stuur een mail naar info@arkadi
       "Je website heeft bezoekers, maar geen klanten? Deze 10 bewezen methoden helpen je om websitebezoekers om te zetten in betalende klanten.",
     content: `Je hebt een website. Er komen bezoekers. Maar die vertrekken weer zonder iets te doen. Geen formulier ingevuld, geen telefoontje gepleegd, geen offerte aangevraagd. Herkenbaar?
 
-Je bent niet alleen. De gemiddelde website converteert slechts 2 tot 3% van de bezoekers. Dat betekent dat 97% van je bezoekers vertrekt zonder enige actie. Maar het hoeft niet zo te zijn.
+Je bent niet alleen. De gemiddelde website converteert slechts 2 tot 3% van de bezoekers (bron: Baymard Institute). Dat betekent dat 97% van je bezoekers vertrekt zonder enige actie. Maar het hoeft niet zo te zijn.
 
 In dit artikel delen we 10 methoden die bewezen effectief zijn om websitebezoekers om te zetten in klanten. Geen theoretisch geneuzel, maar praktische technieken die je direct kunt toepassen.
 
@@ -3747,7 +3747,7 @@ Elk artikel is een ingang naar je website. Een bezoeker die via Google op je blo
 
 **9. Retargeting: bereik bezoekers die al interesse toonden**
 
-97% van je bezoekers converteert niet bij het eerste bezoek. Retargeting (remarketing) stelt je in staat om deze bezoekers opnieuw te bereiken via advertenties op Google, Facebook of LinkedIn.
+97% van je bezoekers converteert niet bij het eerste bezoek (bron: Baymard Institute). Retargeting (remarketing) stelt je in staat om deze bezoekers opnieuw te bereiken via advertenties op Google, Facebook of LinkedIn.
 
 De kosten zijn relatief laag omdat je alleen adverteert aan mensen die al op je website zijn geweest. De conversieratio van retargeting-advertenties is gemiddeld 3 tot 5 keer hoger dan reguliere advertenties.
 
@@ -3779,9 +3779,1109 @@ En onthoud: elke verbetering van 1% in je conversieratio telt. Als je 1.000 bezo
 Bij Arka helpen we bedrijven om hun website om te bouwen van een digitaal visitekaartje naar een lead-genererende machine. Van strategie tot implementatie, van chatbots tot SEO.
 
 Wil je weten hoe je meer klanten kunt werven via je website? Neem contact op via info@arkadigital.nl of plan direct een kennismakingsgesprek.`,
-    author: "Arka",
+    author: "Kaan Arslan",
     publishedAt: "2026-04-20",
     tags: ["Conversie", "Lead Generation", "Marketing", "Websites", "MKB"],
     readingTime: "12 min",
+  },
+  {
+    slug: "website-als-beste-verkoper",
+    title: "Waarom je website je beste verkoper is (en hoe je dat waarmaakt)",
+    excerpt:
+      "Je website werkt 24/7, vraagt geen salaris en is altijd bereikbaar. Maar alleen als je hem inricht als een echte verkoper. Dit is hoe je dat doet.",
+    content: `Je betaalt salaris aan verkopers, investeert in trainingen en hoopt dat ze de juiste boodschap overbrengen. Ondertussen staat je website dag en nacht aan, bereikt honderden of duizenden potentiele klanten, en vraagt geen cent salaris. Toch behandelen de meeste MKB-bedrijven hun website als een digitaal visitekaartje in plaats van als hun beste verkoper.
+
+Dat is een gemiste kans. In dit artikel leggen we uit hoe je je website inricht als een echte salesmedewerker die actief bijdraagt aan groei.
+
+**De website als 24/7 salesmedewerker**
+
+Een goede verkoper doet een paar dingen heel goed: hij trekt de aandacht, bouwt vertrouwen op, legt het aanbod helder uit, geeft antwoord op bezwaren en vraagt om de order. Een website kan precies hetzelfde doen, alleen doet hij het altijd, voor iedereen tegelijk, zonder ziek te worden of een slechte dag te hebben.
+
+Het verschil zit in de intentie waarmee je de website bouwt. Bouw je hem om er mooi uit te zien, of bouw je hem om te verkopen? Die keuze bepaalt elk onderdeel: de teksten, de structuur, de knoppen en de formulieren.
+
+\u2022 **Een decoratieve website** laat zien wie je bent
+\u2022 **Een verkopende website** overtuigt bezoekers om actie te ondernemen
+
+Het goede nieuws: je kunt van elk bestaand design een verkopende website maken. Het gaat meer om strategie dan om esthetiek.
+
+**Vertrouwen opbouwen in de eerste 5 seconden**
+
+Een bezoeker beslist binnen 5 seconden of hij blijft of weggaat. In die 5 seconden beantwoordt hij drie vragen: Ben ik hier op de juiste plek? Kan ik dit bedrijf vertrouwen? Is dit voor mij?
+
+Als je website die vragen niet direct beantwoordt, is de bezoeker weg. En hij gaat naar een concurrent die het wel duidelijk heeft.
+
+Wat zorgt voor direct vertrouwen?
+
+\u2022 **Een heldere propositie bovenaan de pagina**: wat doe je, voor wie, en wat levert het op. Niet je missie of je visie, maar een concreet voordeel voor de bezoeker
+\u2022 **Social proof zichtbaar zonder scrollen**: klantnamen, logo's, sterbeoordelingen of een korte quote van een tevreden klant
+\u2022 **Professionele uitstraling**: consistent design, geen spelfouten, geen kapotte links, snelle laadtijd
+\u2022 **Contactinformatie direct zichtbaar**: een telefoonnummer of e-mailadres in de header geeft vertrouwen, zelfs als de bezoeker hem niet gebruikt
+\u2022 **KVK-nummer en adres in de footer**: voor B2B-klanten is dit een signaal dat je een legitiem bedrijf bent
+
+**Social proof: laat anderen voor je verkopen**
+
+De sterkste verkoper is niet jijzelf, maar een tevreden klant. Mensen geloven andere mensen meer dan ze een bedrijf geloven. Dat is menselijke psychologie, en je kunt het in je voordeel gebruiken.
+
+Effectieve vormen van social proof voor je website:
+
+\u2022 **Klantreviews met naam en bedrijfsnaam**: anonieme reviews tellen minder. "Mark, eigenaar van bakkerij De Croissant" is geloofwaardiger dan "Tevreden klant"
+\u2022 **Case studies**: vertel het verhaal van een klant. Wat was het probleem, wat heb je gedaan, wat was het resultaat? Concrete cijfers maken het krachtig
+\u2022 **Logo's van klanten**: bekende namen lenen hun geloofwaardigheid aan jou
+\u2022 **Beoordelingswidget van Google of Trustpilot**: externe platforms zijn neutraler dan je eigen woord
+\u2022 **Certificeringen en partnerschappen**: keurmerken, brancheverenigingen, software-partnerschappen
+
+Zet social proof niet alleen op een aparte "Over ons" pagina. Verspreid het door de hele website, op elke pagina waar bezoekers twijfels kunnen hebben.
+
+**CTA-plaatsing: vraag om de order**
+
+Een verkoper die nooit vraagt om de order, sluit geen deals. Een website die geen duidelijke call-to-action heeft, genereert geen leads. Dit klinkt voor de hand liggend, maar de meeste websites maken hier een fout.
+
+De meest voorkomende CTA-fouten:
+
+\u2022 **Te laat in de pagina**: je vraagt om actie pas nadat de bezoeker al lang afhaakt
+\u2022 **Te vaag**: "Meer informatie" of "Klik hier" zegt niet wat de bezoeker krijgt
+\u2022 **Te veel opties**: als je 5 CTA's hebt, kiest de bezoeker er geen
+\u2022 **Geen herhaling**: een CTA staat bovenaan maar nergens anders
+
+Hoe doe je het wel?
+
+\u2022 **Eerste CTA zichtbaar zonder scrollen** (above the fold)
+\u2022 **Herhaal de CTA** na elk inhoudelijk blok
+\u2022 **Wees specifiek**: "Vraag een gratis offerte aan" of "Plan een kennismakingsgesprek van 30 minuten" is beter dan "Neem contact op"
+\u2022 **Gebruik actietaal**: begin met een werkwoord. Ontvang, Plan, Ontdek, Start
+\u2022 **Maak het makkelijk**: stuur naar een formulier van maximaal 3 velden, niet naar een pagina vol invulvakken
+
+**Formulieren optimaliseren: de drempel zo laag mogelijk**
+
+Elk extra veld in een formulier kost je conversies. Onderzoek toont aan dat het verminderen van formuliervelden van 11 naar 4 de conversie kan verdubbelen. Toch zien we regelmatig contactformulieren met 10 of meer verplichte velden.
+
+De regel is simpel: vraag alleen wat je echt nodig hebt om de eerste stap te zetten. Naam, e-mailadres en een korte omschrijving van de vraag zijn voldoende om een gesprek te starten. Alles wat je daarna nodig hebt, vraag je tijdens dat gesprek.
+
+Praktische optimalisaties voor formulieren:
+
+\u2022 **Maximaal 4 tot 5 velden** voor een eerste contactformulier
+\u2022 **Duidelijke foutmeldingen** als iets niet klopt, direct bij het veld
+\u2022 **Bevestigingspagina** na verzending zodat de bezoeker weet dat het gelukt is
+\u2022 **Verwachting scheppen**: "We reageren binnen 24 uur" of "Je ontvangt binnen 10 minuten een bevestiging"
+\u2022 **Mobielvriendelijke invoervelden**: grote knoppen, voldoende ruimte tussen velden
+
+**Snelheid als onderdeel van je sales pitch**
+
+Een website die 4 seconden nodig heeft om te laden, verliest 25% van zijn bezoekers nog voordat ze iets zien. Voor mobiele bezoekers is de grens zelfs lager. Snelheid is geen technisch detail, het is onderdeel van je eerste indruk.
+
+Google gebruikt paginasnelheid als rankingfactor, maar nog belangrijker: een trage website communiceert nalatigheid. Als je website traag is, wat zegt dat dan over hoe je je klanten behandelt?
+
+**Meten en optimaliseren**
+
+De kracht van een website als verkoper is dat je alles kunt meten. Welke pagina's converteren? Waar haken bezoekers af? Welke CTA krijgt de meeste kliks? Met Google Analytics en Hotjar kun je exact zien wat werkt en wat niet.
+
+Stel je jezelf de volgende vragen:
+
+\u2022 Wat is mijn huidige conversieratio (bezoekers naar leads)?
+\u2022 Welke pagina's hebben het hoogste bouncepercentage?
+\u2022 Op welke pagina's verlaten bezoekers het formulier halverwege?
+
+Die antwoorden vertellen je precies waar je moet beginnen met optimaliseren.
+
+**De volgende stap**
+
+Een website die echt verkoopt, is geen toeval. Het is het resultaat van bewuste keuzes in strategie, tekst, design en techniek. Bij Arka bouwen we websites die zijn ingericht om te converteren, van de eerste regel tekst tot het laatste formulierveld.
+
+Wil je weten hoe je website er nu voor staat als verkoper? Stuur een e-mail naar info@arkadigital.nl en we kijken er samen naar.`,
+    author: "Kaan Arslan",
+    publishedAt: "2026-04-26",
+    tags: ["Conversie", "Websites", "MKB"],
+    readingTime: "10 min",
+  },
+  {
+    slug: "headless-cms-uitleg",
+    title: "Wat is een headless CMS en is het iets voor jouw bedrijf?",
+    excerpt:
+      "Headless CMS is een van de grootste trends in webdevelopment. Maar wat betekent het precies, en wanneer is het een slimme keuze voor jouw bedrijf?",
+    content: `Als je een website laat bouwen of vernieuwen, kom je vroeg of laat de term "headless CMS" tegen. Het klinkt technisch en misschien een beetje intimiderend. Maar het concept is eenvoudiger dan het lijkt, en de voordelen zijn concreet. In dit artikel leggen we uit wat een headless CMS is, hoe het verschilt van een traditioneel CMS, en wanneer het de juiste keuze is voor jouw bedrijf.
+
+**Wat is een traditioneel CMS?**
+
+Om headless te begrijpen, beginnen we met de traditionele aanpak. Een traditioneel CMS, zoals WordPress, Joomla of Drupal, combineert twee dingen in één systeem: de plek waar je content beheert (het redactiesysteem) en de plek waar die content wordt weergegeven (de website zelf). Dit wordt ook wel een "coupled" of "monolithische" aanpak genoemd.
+
+Je schrijft een blogartikel in WordPress, en WordPress bepaalt vervolgens hoe dat artikel eruit ziet op je website. De content en de presentatie zijn gekoppeld aan hetzelfde systeem.
+
+Voor veel bedrijven werkt dit prima. Maar het brengt ook beperkingen met zich mee:
+
+\u2022 **Je bent afhankelijk van één platform** voor zowel beheer als weergave
+\u2022 **Aanpassingen aan het design** zijn soms complex door de gelaagde structuur van thema's en plugins
+\u2022 **Prestaties kunnen tegenvallen** naarmate je meer plugins toevoegt
+\u2022 **Veiligheidsrisico's** zijn groter door de populariteit van WordPress als aanvalsdoel
+\u2022 **Dezelfde content op meerdere kanalen** (website, app, digital signage) is lastig te beheren
+
+**Wat is een headless CMS?**
+
+Bij een headless CMS is de "head", de visuele laag van je website, losgekoppeld van het beheersysteem. Je beheert je content op één centrale plek, maar de presentatie wordt afgehandeld door een apart front-end systeem.
+
+De content wordt via een API beschikbaar gesteld. Een API is een verbinding tussen twee systemen: het CMS stuurt de content als ruwe data door, en het front-end systeem bepaalt hoe die data wordt weergegeven. Het maakt niet uit of dat een website is, een mobiele app, een smartwatch of een digitaal informatiescherm.
+
+Populaire headless CMS-platformen zijn Contentful, Sanity, Strapi, Storyblok en Prismic. Het front-end kan gebouwd worden met elk modern framework: Next.js, Gatsby, Astro of iets anders.
+
+**De voordelen van headless**
+
+Waarom kiezen steeds meer bedrijven voor een headless aanpak? Er zijn vier concrete voordelen.
+
+\u2022 **Snelheid**: headless websites zijn vaak significant sneller dan WordPress-sites. Omdat de front-end gebouwd wordt met moderne frameworks zoals Next.js, worden pagina's vooraf gegenereerd en geserveerd via een CDN. Geen databasequeries per pageload, geen PHP die elke keer opnieuw draait. Snellere laadtijden betekenen een beter gebruiksvoor, hogere SEO-scores en minder afhakers
+
+\u2022 **Flexibiliteit in design en techniek**: de front-end is volledig vrij. Je bent niet gebonden aan thema's of de beperkingen van een CMS. Een ontwerper kan een uniek design bouwen zonder concessies aan de technische structuur van het systeem. Dit geeft meer creatieve vrijheid en een onderscheidend resultaat
+
+\u2022 **Veiligheid**: een headless website heeft geen publiekelijk toegankelijk admin-paneel. Het CMS staat op een aparte server, volledig afgescheiden van de website die bezoekers zien. Daardoor is het aanvalsoppervlak veel kleiner dan bij een traditionele WordPress-installatie
+
+\u2022 **Omnichannel content**: je content is beschikbaar via een API, wat betekent dat je dezelfde content kunt gebruiken op je website, in een app, in een e-mailsysteem of op een extern platform. Je schrijft de tekst eenmalig in het CMS en de juiste weergave wordt afgehandeld door het systeem dat de content ophaalt
+
+**De nadelen van headless**
+
+Eerlijk zijn we ook over de nadelen, want headless is niet voor iedereen de beste keuze.
+
+\u2022 **Hogere initiële kosten**: een headless setup vereist meer technische expertise om in te richten. Een standaard WordPress-site kan iemand met basiskennis opzetten in een dag. Een headless architectuur vraagt om een ontwikkelaar die zowel de front-end als de API-integratie beheerst
+
+\u2022 **Meer onderdelen om te beheren**: in plaats van één systeem heb je er twee, het CMS en de front-end. Bij updates, hosting en problemen oplossen moet je beide systemen in de gaten houden
+
+\u2022 **Geen live preview standaard**: bij traditionele CMS-systemen zie je direct hoe een pagina eruitziet terwijl je hem bewerkt. Bij headless moet dit speciaal worden ingebouwd. Moderne headless CMS-platformen zoals Storyblok en Sanity bieden dit inmiddels wel, maar het vraagt extra configuratie
+
+\u2022 **Minder geschikt voor kleine budgetten**: als je budget beperkt is en je een eenvoudige informatiewebsite wilt, is WordPress een pragmatische keuze die sneller en goedkoper op te zetten is
+
+**Wanneer kies je wel voor headless?**
+
+Headless CMS is een slimme keuze in de volgende situaties:
+
+\u2022 Je wilt maximale prestaties en een hoge Google-score op Core Web Vitals
+\u2022 Dezelfde content moet beschikbaar zijn op meerdere kanalen (website plus app of extern platform)
+\u2022 Je verwacht dat het design of de technische structuur de komende jaren ingrijpend gaat veranderen
+\u2022 Veiligheid is een prioriteit en je wilt het aanvalsoppervlak minimaliseren
+\u2022 Je werkt met een uitgebreid redactieteam dat een professionele contentworkflow nodig heeft
+
+**Wanneer kies je niet voor headless?**
+
+\u2022 Je hebt een beperkt budget en een eenvoudige website nodig die snel live moet
+\u2022 Je wilt alles zelf beheren zonder ontwikkelaar en bent niet technisch onderlegd
+\u2022 Je website heeft weinig pagina's en geen complexe contentstructuur
+\u2022 Je al eerder succesvol met WordPress hebt gewerkt en geen specifieke reden hebt om te wisselen
+
+**De praktijk bij Arka**
+
+Bij Arka bouwen we afhankelijk van de behoeften van de klant. Voor bedrijven die een snelle, veilige en schaalbare website willen met maximale vrijheid in design en integraties, adviseren we een headless aanpak met Next.js als front-end. Voor kleinere projecten met beperkt budget kan een traditionele aanpak met een goed geconfigureerde WordPress-installatie prima werken.
+
+De keuze hangt altijd af van jouw specifieke situatie: budget, technische behoeften, team, ambities en tijdlijn.
+
+**Meer weten?**
+
+Wil je weten welke aanpak het beste bij jouw situatie past? Stuur een e-mail naar info@arkadigital.nl en we bespreken de opties zonder jargon.`,
+    author: "Kaan Arslan",
+    publishedAt: "2026-04-27",
+    tags: ["Technologie", "Websites", "CMS"],
+    readingTime: "9 min",
+  },
+  {
+    slug: "online-zichtbaarheid-vergroten",
+    title: "Online zichtbaarheid vergroten: de complete gids voor MKB",
+    excerpt:
+      "Meer potentiele klanten bereiken zonder je budget te verdubbelen. Dit zijn de kanalen en tactieken die echt werken voor MKB-bedrijven.",
+    content: `Je hebt een goed product of dienst, maar potentiele klanten vinden je niet. Ze gaan naar een concurrent die minder goed is, maar beter vindbaar. Dat is een frustrerende realiteit voor veel MKB-bedrijven. Online zichtbaarheid is niet langer optioneel, het is de basis van elke groeistrategie.
+
+In deze gids bespreken we de belangrijkste kanalen en tactieken om jouw online zichtbaarheid te vergroten, zonder een onbeperkt marketingbudget.
+
+**Waarom online zichtbaarheid zo belangrijk is**
+
+Het koopgedrag is de afgelopen tien jaar fundamenteel veranderd. Voordat iemand een beslissing neemt, oriënteert hij zich online. Dat geldt voor een aankoop van 50 euro, maar ook voor een investering van 50.000 euro. Als je niet vindbaar bent in die oriëntatiefase, ben je al uit de running voordat er contact is gelegd.
+
+Dat geldt zowel voor B2C als B2B. Een beslisser bij een bedrijf googelt net zo goed op "marketingbureau Dordrecht" als een consument op "loodgieter Den Haag". De vraag is of jij daar gevonden wordt.
+
+**SEO: de basis van organische vindbaarheid**
+
+Zoekmachineoptimalisatie, afgekort SEO, is het proces van je website vindbaar maken in Google voor relevante zoekopdrachten. Het is een lange-termijn strategie die tijd kost, maar eenmalige inspanning omzet in doorlopend verkeer.
+
+Waar begin je?
+
+\u2022 **Zoekwoordenonderzoek**: welke termen zoeken jouw potentiele klanten? Gebruik tools als Google Search Console, Ubersuggest of SEMrush om te ontdekken welke zoektermen relevant zijn en hoe veel mensen ernaar zoeken
+\u2022 **On-page optimalisatie**: verwerk je doelzoekwoorden in paginatitels, koppen, metateksten en de inhoud zelf. Zorg dat elke pagina antwoord geeft op een specifieke zoekvraag
+\u2022 **Technische SEO**: een snelle website, goede mobiele werking, correcte interne linkstructuur en geen kapotte links. Google beloont technisch gezonde websites
+\u2022 **Lokale SEO**: zorg dat je Google Bedrijfsprofiel volledig en actueel is. Lokale zoektermen (jouw dienst + plaatsnaam) zijn voor veel MKB-bedrijven de meest waardevolle verkeersbron
+\u2022 **Contentmarketing**: regelmatig nieuwe, waardevolle content publiceren vergroot je autoriteit en creëert meer ingangen voor organisch verkeer
+
+SEO is geen snelle oplossing, maar de investering betaalt zich terug in duurzame vindbaarheid die je niet hoeft te "heraankopen" zoals betaalde advertenties.
+
+**Google Bedrijfsprofiel: lokale zichtbaarheid gratis geregeld**
+
+Een volledig en actief Google Bedrijfsprofiel (voorheen Google My Business) is een van de meest onderschatte tools voor lokale bedrijven. Het kost niets en levert directe zichtbaarheid op in de lokale zoekresultaten en Google Maps.
+
+Essentieel voor een sterk Google Bedrijfsprofiel:
+
+\u2022 Volledige bedrijfsgegevens: naam, adres, telefoonnummer, website, openingstijden
+\u2022 Minimaal 10 recente beoordelingen met een gemiddelde van 4 sterren of hoger
+\u2022 Regelmatig posts plaatsen (aanbiedingen, nieuws, updates)
+\u2022 Foto's van je bedrijf, team en producten
+\u2022 Reacties op alle beoordelingen, ook de negatieve
+
+**Content marketing: klanten aantrekken met kennis**
+
+Content marketing is het structureel delen van waardevolle kennis om potentiele klanten aan te trekken. Dat kan via een blog, video's, podcasts, nieuwsbrieven of social media.
+
+Het idee is simpel: als jij antwoord geeft op de vragen die jouw klanten stellen, trek je ze aan op het moment dat ze op zoek zijn. Ze vinden jouw artikel, leren je kennen, bouwen vertrouwen op en nemen uiteindelijk contact op.
+
+Concreet voor MKB:
+
+\u2022 **Blog**: schrijf artikelen die de vragen beantwoorden die klanten jou stellen. "Hoeveel kost een nieuwe website?" of "Wat is het verschil tussen SEO en Google Ads?" zijn typische vragen die duizenden keren per maand gezocht worden
+\u2022 **Video**: een korte uitlegvideo over jouw dienst of werkwijze presteert goed op LinkedIn en YouTube en trekt organisch verkeer
+\u2022 **Nieuwsbrief**: e-mail is nog altijd een van de meest directe kanalen. Een maandelijkse nieuwsbrief met tips en updates houdt je top of mind bij bestaande contacten
+
+**Social media: aanwezig zijn waar je klanten zijn**
+
+Social media vergroot je zichtbaarheid op plaatsen buiten Google. Welk platform je kiest, hangt af van je doelgroep:
+
+\u2022 **LinkedIn**: voor B2B onmisbaar. Deel inzichten, case studies en achter-de-schermenverhalen. Organisch bereik op LinkedIn is veel hoger dan op Facebook of Instagram
+\u2022 **Instagram**: voor bedrijven met visuele producten of diensten. Geschikt voor branding en het opbouwen van een community
+\u2022 **Facebook**: relevant als je doelgroep 35-plus is of als je lokale evenementen of aanbiedingen wilt promoten
+\u2022 **YouTube**: de tweede grootste zoekmachine ter wereld. Uitlegvideo's, tutorials en testimonials presteren hier goed
+
+Kies liever twee platforms goed dan zes platforms matig.
+
+**Google Ads: directe zichtbaarheid met budget**
+
+Terwijl SEO maanden kan duren om resultaten te tonen, biedt Google Ads directe zichtbaarheid. Je betaalt per klik (pay-per-click) en verschijnt bovenaan de zoekresultaten voor de zoektermen die jij kiest.
+
+Google Ads werkt het beste voor:
+
+\u2022 Diensten of producten waarbij mensen actief op zoek zijn
+\u2022 Lokale bedrijven die specifieke regio's willen targetten
+\u2022 Campagnes rondom seizoenen of aanbiedingen
+
+De valkuil: zonder goede instelling verbrand je snel budget. Zorg voor specifieke zoekwoorden, negatieve zoekwoorden, duidelijke landingspagina's en meetbare conversies.
+
+**Online reviews: vertrouwen bouwen via klanten**
+
+Reviews zijn digitale mond-tot-mondreclame. Ze beïnvloeden niet alleen het vertrouwen van nieuwe klanten, maar ook je zichtbaarheid in Google.
+
+\u2022 Vraag actief om reviews na een succesvol project of tevreden klantervaring
+\u2022 Maak het makkelijk: stuur een directe link naar je Google-reviewpagina
+\u2022 Reageer altijd op reviews, zowel positief als negatief
+\u2022 Spreid je reviews over tijd: een plotselinge piek van 20 reviews ziet er onnatuurlijk uit
+
+**Online directories: consistente vermelding overal**
+
+Zorg dat je bedrijfsgegevens consistent en correct staan in relevante directories: Google, Yelp, Bing Places, branchespecifieke directories en de Kamer van Koophandel. Inconsistente gegevens schaden je lokale SEO.
+
+**E-mail marketing: de vergeten goudmijn**
+
+E-mail heeft een gemiddeld rendement van 36 euro voor elke euro die je investeert, het hoogste van alle marketingkanalen. Toch negeren veel MKB-bedrijven het.
+
+\u2022 Bouw actief een lijst op via je website, evenementen en klantcontacten
+\u2022 Stuur regelmatig, maar niet te vaak: een maandelijkse nieuwsbrief is beter dan dagelijkse mails
+\u2022 Personaliseer waar mogelijk: segmenteer je lijst op branche of interesse
+
+**Een realistische strategie voor MKB**
+
+Je hoeft niet alles tegelijk te doen. Prioriteer op basis van je situatie:
+
+\u2022 **Fase 1**: Google Bedrijfsprofiel optimaliseren, website technisch in orde maken, 5 lokale reviews verzamelen
+\u2022 **Fase 2**: SEO-basis leggen, LinkedIn actief bijhouden, eerste blog-artikelen schrijven
+\u2022 **Fase 3**: contentkalender opstellen, e-mailmarketing starten, eventueel Google Ads testen
+
+Consistentie is belangrijker dan perfectie. Een blog met 12 artikelen per jaar doet meer dan een blog die 3 maanden actief is en daarna stilvalt.
+
+**Hulp nodig?**
+
+Online zichtbaarheid vergroten vraagt om strategie, discipline en technische kennis. Bij Arka helpen we MKB-bedrijven met een aanpak die aansluit op hun doelen en budget. Neem contact op via info@arkadigital.nl voor een vrijblijvend gesprek.`,
+    author: "Kaan Arslan",
+    publishedAt: "2026-04-28",
+    tags: ["Marketing", "SEO", "MKB"],
+    readingTime: "11 min",
+  },
+  {
+    slug: "custom-dashboard-laten-maken",
+    title: "Waarom MKB-bedrijven investeren in custom dashboards",
+    excerpt:
+      "Excel-bestanden die rondgemaild worden, rapporten die uren kosten om samen te stellen, beslissingen op buikgevoel. Een custom dashboard lost dit op.",
+    content: `Je hebt meerdere systemen draaien: een boekhoudpakket, een CRM, een webshop, misschien een planningssysteem. Elk systeem heeft zijn eigen rapportages. Wil je een totaalbeeld, dan exporteer je data naar Excel, combineer je handmatig bestanden en ben je uren verder. En dan is de data alweer verouderd.
+
+Dit is de realiteit voor veel MKB-bedrijven. En het is duur, niet alleen in tijd, maar ook in de kwaliteit van beslissingen die op basis van incomplete of verouderde informatie worden genomen.
+
+Een custom dashboard is de oplossing. In dit artikel leggen we uit wat het is, wat het oplevert en wanneer het de juiste investering is.
+
+**De Excel-chaos en wat die kost**
+
+Laten we eerlijk zijn over wat de huidige situatie kost. Neem een bedrijf met 10 medewerkers. Elke week besteedt de directeur 3 uur aan het samenvoegen van rapportages, het uitleggen van afwijkingen en het zoeken naar de oorzaak van een daling in omzet. Dat is 150 uur per jaar, tegen een uurtarief van 100 euro: 15.000 euro aan managementtijd die opgaat aan dataverwerking in plaats van aan besluitvorming.
+
+Tel daarbij op:
+
+\u2022 **Menselijke fouten** bij het kopiëren van data tussen systemen
+\u2022 **Vertraging**: beslissingen worden genomen op gegevens van vorige week in plaats van van gisteren
+\u2022 **Blindspots**: KPI's die niet gemeten worden omdat ze te lastig te ontsluiten zijn
+\u2022 **Afhankelijkheid van personen** die weten hoe het Excel-model werkt
+\u2022 **Geen gezamenlijk beeld** bij vergaderingen doordat iedereen zijn eigen cijfers heeft
+
+De echte kosten van de Excel-chaos zijn veel hoger dan de spreadsheet-licentie.
+
+**Wat is een custom dashboard?**
+
+Een custom dashboard is een webapplicatie die data uit al je systemen verzamelt, verwerkt en overzichtelijk weergeeft. Het is gebouwd op basis van jouw specifieke KPI's, jouw bedrijfsprocessen en de systemen die jij gebruikt.
+
+"Custom" is hier het sleutelwoord. Dit is geen kant-en-klare tool als Power BI of Google Looker Studio die je koppelt aan één databron. Een custom dashboard integreert meerdere bronnen, verwerkt de data op de manier die jij nodig hebt en toont precies de informatie die voor jou relevant is, in de structuur die voor jou logisch is.
+
+Voorbeelden van wat een custom dashboard toont:
+
+\u2022 **Omzet per kanaal, regio, product of medewerker** in realtime
+\u2022 **Conversieratio's** van leads naar klanten per campagne of salesmedewerker
+\u2022 **Voorraadniveaus en inkoopbehoefte** op basis van verkooptrends
+\u2022 **Klanttevredenheidsscores** gecombineerd met omzetdata per klantsegment
+\u2022 **Capaciteitsplanning** op basis van actuele bezetting en geplande projecten
+
+**KPI's die echt helpen**
+
+Een dashboard is zo waardevol als de KPI's die je er in stopt. Veel bedrijven meten veel, maar sturen op weinig. Het verschil tussen een informatief dashboard en een sturend dashboard zit in de keuze van metrics.
+
+Een goede KPI is:
+
+\u2022 **Actionable**: als de score daalt, weet je wat je moet doen
+\u2022 **Tijdig**: je ziet het snel genoeg om bij te sturen
+\u2022 **Eigenaarschap**: er is één persoon verantwoordelijk voor die KPI
+
+Voorbeelden van sturende KPI's voor MKB:
+
+\u2022 Aantal nieuwe leads per week per kanaal
+\u2022 Gemiddelde doorlooptijd van offerte tot opdracht
+\u2022 Brutomargepercentage per productcategorie
+\u2022 Klantretentiepercentage per kwartaal
+\u2022 Kosten per acquisitie per marketingkanaal
+
+Een goed dashboard toont niet alleen de huidige score, maar ook de trend over tijd en de doelstelling, zodat je in één oogopslag ziet of je op koers ligt.
+
+**Automatische rapportages: nooit meer rapporten samenstellen**
+
+Een custom dashboard vervangt ook het wekelijks of maandelijks samenstellen van rapportages. In plaats van dat een medewerker data exporteert, in Excel verwerkt en een presentatie maakt, genereert het dashboard automatisch de rapportage op het moment dat jij dat wilt.
+
+\u2022 **Wekelijkse salesrapportage** automatisch gemaild aan het team elke maandag
+\u2022 **Maandelijkse financiële overzichten** direct beschikbaar op de eerste van de maand
+\u2022 **Alerting**: een melding als een KPI buiten een bepaalde bandbreedte valt
+
+Dit bespaart niet alleen tijd, het verhoogt ook de datakwaliteit. Geen handmatige fouten meer, geen verouderde cijfers.
+
+**Beslissingen op data in plaats van buikgevoel**
+
+Een van de meest waardevolle effecten van een goed dashboard is minder zichtbaar maar zeer concreet: betere beslissingen.
+
+Wanneer je een helder beeld hebt van wat werkt en wat niet, kun je middelen inzetten op de plekken die het meeste opleveren. Je stopt met investeren in marketingkanalen die niet converteren. Je ontdekt dat een bepaald klantsegment een hogere marge oplevert dan je dacht. Je ziet dat een medewerker structureel betere resultaten boekt met een specifieke aanpak.
+
+Die inzichten leiden tot kleine aanpassingen die samen een groot verschil maken.
+
+**De ROI van een custom dashboard**
+
+Hoe bereken je de terugverdientijd?
+
+Neem de tijdsbesparing op rapportages: 3 uur per week op directieniveau tegen 100 euro per uur is 300 euro per week, 15.000 euro per jaar. Een custom dashboard dat 8.000 euro kost om te bouwen en 200 euro per maand kost in onderhoud, verdient zichzelf terug in minder dan 9 maanden.
+
+Dan zijn de verbeterde beslissingen nog niet meegeteld. Als een betere stuurinformatie leidt tot 5% hogere omzet in een bedrijf met een omzet van 500.000 euro, is dat 25.000 euro extra per jaar.
+
+**Wanneer is een custom dashboard de juiste investering?**
+
+\u2022 Je hebt 3 of meer systemen die je handmatig moet combineren voor een totaalplaatje
+\u2022 Je beslissingen worden regelmatig uitgesteld omdat de juiste data niet beschikbaar is
+\u2022 Rapportages kosten meer dan 2 uur per week aan mankracht
+\u2022 Je groeit snel en de complexiteit van je data neemt toe
+\u2022 Je wilt sturen op actuele data in plaats van terugkijken op historische rapporten
+
+**Wanneer wacht je nog even?**
+
+\u2022 Je bedrijf heeft minder dan 5 medewerkers en werkt vanuit één systeem
+\u2022 Je processen zijn nog volop in ontwikkeling en veranderen maandelijks
+\u2022 Een goed geconfigureerde Power BI of Google Looker Studio koppeling voldoet voor nu
+
+**Wat kost het?**
+
+Een custom dashboard kost afhankelijk van de complexiteit tussen de 3.000 en 15.000 euro eenmalig. De doorlopende kosten voor hosting, datakoppelingen en onderhoud liggen typisch tussen de 100 en 400 euro per maand.
+
+Bij Arka beginnen we altijd met een inventarisatie van je databronnen, je KPI's en de beslissingen die je wilt kunnen nemen. Op basis daarvan bouwen we een dashboard dat direct waardevol is, niet een overdesigned tool dat niemand gebruikt.
+
+**Klaar om je data te laten werken?**
+
+Neem contact op via info@arkadigital.nl en vertel ons welke rapportages nu de meeste tijd kosten. We denken gratis mee over de beste aanpak voor jouw situatie.`,
+    author: "Kaan Arslan",
+    publishedAt: "2026-04-29",
+    tags: ["Dashboards", "Data", "MKB"],
+    readingTime: "10 min",
+  },
+  {
+    slug: "fouten-website-laten-maken",
+    title: "De grootste fouten bij het laten maken van een website (en hoe je ze voorkomt)",
+    excerpt:
+      "Een nieuwe website laten bouwen is een grote investering. Dit zijn de fouten die we het vaakst tegenkomen, en hoe je ze van tevoren voorkomt.",
+    content: `Een website laten maken lijkt eenvoudig. Je kiest een bureau, bespreekt je wensen, betaalt en een paar weken later staat je site online. Toch gaat het bij een verrassend groot deel van de projecten mis. Niet per se technisch, maar strategisch. De website is af, maar haalt niet wat je ervan verwacht.
+
+Wij zien bij Arka regelmatig websites die zijn overgedaan na een jaar omdat ze te weinig opleverden. In vrijwel al die gevallen waren de fouten vermijdbaar. Dit zijn de meest gemaakte fouten, en hoe je ze voorkomt.
+
+**Fout 1: geen duidelijk doel formuleren**
+
+De meest gemaakte fout staat niet in de code, maar in het briefingsgesprek. Of liever: in het gebrek eraan. "We willen een nieuwe website" is geen doel. "We willen 15 offerte-aanvragen per maand genereren via onze website" is een doel.
+
+Zonder helder doel bouw je een website die mooi kan zijn, maar niet presteert. Het doel bepaalt namelijk alles: de structuur van de pagina's, de teksten, de call-to-actions, de formulieren.
+
+Stel jezelf voor het gesprek met een bureau de volgende vragen:
+
+\u2022 Wat moet de website primair opleveren? Leads, verkopen, afspraken, naamsbekendheid?
+\u2022 Wie is de primaire bezoeker en wat moet die bezoeker doen?
+\u2022 Hoe meet je of de website succesvol is? Welke KPI?
+\u2022 Wat doen bezoekers nu op je site en wat moet dat worden?
+
+Een bureau dat deze vragen niet stelt, wil je niet inhuren.
+
+**Fout 2: de verkeerde partner kiezen**
+
+Niet elke webdeveloper of elk bureau is geschikt voor jouw project. Er zijn grote verschillen in aanpak, expertise en focus.
+
+\u2022 **Een freelancer** is goedkoper maar minder breed inzetbaar. Wie doet de copywriting? De SEO? De strategie? Als de freelancer ziek wordt, ligt je project stil
+\u2022 **Een groot full-service bureau** heeft hoge overhead die je betaalt in de prijs. Je project wordt uitgevoerd door junior medewerkers terwijl je de senior-fee betaalt
+\u2022 **Een gespecialiseerd MKB-bureau** kent jouw context en heeft processen voor jouw type opdrachten
+
+Let bij de keuze op:
+
+\u2022 Heeft het bureau ervaring in jouw branche of met vergelijkbare bedrijven?
+\u2022 Wie werkt er concreet aan jouw project, niet wie pitcht?
+\u2022 Zijn er referenties van klanten die je zelf kunt bellen?
+\u2022 Is er een duidelijk proces met tussentijdse opleveringen?
+\u2022 Wat gebeurt er na de lancering? Wie beheert de website?
+
+**Fout 3: gaan voor de laagste prijs**
+
+Een website van 500 euro bestaat niet, behalve als je een template-builder gebruikt die je zelf vult. Wie een professionele website laat bouwen en de laagste aanbieder kiest, betaalt dat op een andere manier terug.
+
+Gevolgen van te goedkoop:
+
+\u2022 Minimale aandacht voor strategie en tekst, want die kosten tijd
+\u2022 Template-design dat hetzelfde is als 10.000 andere websites
+\u2022 Geen SEO-basis ingebouwd, want dat is "extra"
+\u2022 Slechte ondersteuning na oplevering
+\u2022 Een jaar later toch een nieuwe website nodig
+
+Een goede website is geen kostenpost, maar een investering. Bereken wat één nieuwe klant oplevert en vraag hoeveel klanten de website per maand moet aanbrengen om zichzelf terug te verdienen. Dan wordt de prijs van een goede website snel relatief.
+
+**Fout 4: SEO als bijzaak behandelen**
+
+SEO-achteraf bouwen is duurder en minder effectief dan SEO van het begin meenemen. Toch wordt het bij veel projecten als een optie behandeld die er eventueel later bijkomt.
+
+Wat gaat er mis als SEO niet van het begin meegenomen wordt?
+
+\u2022 URL-structuur is niet logisch en lastig achteraf aan te passen
+\u2022 Paginatitels en metateksten zijn generiek ingevuld
+\u2022 Er is geen contentstructuur die inspeelt op zoekvragen van klanten
+\u2022 Afbeeldingen zijn te groot en niet voorzien van alt-teksten
+\u2022 Interne linkstructuur ontbreekt
+
+Vraag bij elk websiteproject expliciet: is technische SEO-basis inbegrepen? Worden paginatitels, metateksten en URL-structuur op zoekopdrachten afgestemd?
+
+**Fout 5: mobiel design als bijzaak behandelen**
+
+Meer dan 60% van het webverkeer in Nederland is mobiel. Toch worden veel websites primair op desktop ontworpen en vervolgens "mobielvriendelijk gemaakt", wat in de praktijk betekent dat ze enigszins schaalbaar zijn maar niet echt zijn gebouwd voor mobiel gebruik.
+
+Een mobiel-eerste aanpak houdt in:
+
+\u2022 Ontwerp begint op een 390px breed scherm, niet op een 1440px desktop
+\u2022 Knoppen zijn groot genoeg voor een duim
+\u2022 Tekst is leesbaar zonder inzoomen
+\u2022 Formulieren werken prettig op een touchscreen
+\u2022 Afbeeldingen laden snel op een mobiele verbinding
+
+Vraag bij het reviewen van ontwerpen altijd expliciet om de mobiele versie.
+
+**Fout 6: geen onderhoud plannen**
+
+Een website is geen eenmalig project, het is een doorlopend product. Na de lancering moet de website bijgehouden worden: software-updates, beveiligingspatches, nieuwe content, technische optimalisaties.
+
+Wat er misgaat zonder onderhoud:
+
+\u2022 **Beveiligingslekken** door verouderde plugins of CMS-versies (met name bij WordPress)
+\u2022 **Verouderde informatie** die bezoekers misleidt of verwarring wekt
+\u2022 **Technische fouten** die zich opstapelen en steeds duurder worden om op te lossen
+\u2022 **Dalende SEO-scores** omdat Google actieve websites beloont
+
+Vraag altijd naar een onderhoudsvoorstel bij de offerte. Een maandelijks onderhoudscontract van 100 tot 300 euro is veel goedkoper dan een grote hersteloperatie na een hack of een technisch debacle.
+
+**Fout 7: laadsnelheid negeren**
+
+Een trage website verliest bezoekers en scoort slechter in Google. Toch worden laadtijden regelmatig pas na de lancering ontdekt als een probleem.
+
+Veelvoorkomende oorzaken van een trage website:
+
+\u2022 Afbeeldingen van meerdere megabytes die niet geoptimaliseerd zijn
+\u2022 Te veel plugins die ongebruikte code laden
+\u2022 Geen gebruik van caching
+\u2022 Hosting op een trage shared server
+
+Vraag bij de oplevering om een Google Lighthouse-score of PageSpeed Insights-rapport. Een score van 90 of hoger op mobile is een redelijke norm voor een goed gebouwde website.
+
+**Fout 8: geen analytics instellen**
+
+Je kunt niet verbeteren wat je niet meet. Toch wordt Google Analytics, of een privacyvriendelijk alternatief als Plausible, bij veel websiteprojecten niet of slecht ingesteld.
+
+Wat je minimaal wilt meten:
+
+\u2022 Aantal bezoekers per pagina en trend over tijd
+\u2022 Conversies: hoeveel bezoekers vragen een offerte aan of nemen contact op?
+\u2022 Traffic-bronnen: waar komen bezoekers vandaan (Google, social, direct)?
+\u2022 Bouncepercentage per pagina
+
+Zonder die data vlieg je blind.
+
+**Hoe voorkom je deze fouten?**
+
+De rode draad is eenvoudig: investeer in de voorbereiding. Een goed briefingsdocument, de juiste partner, een realistisch budget en expliciete afspraken over SEO, mobiel design, snelheid, onderhoud en analytics. De meeste fouten ontstaan niet door slechte techniek, maar door gebrekkige communicatie vooraf.
+
+Bij Arka beginnen we elk websiteproject met een strategisch gesprek. We stellen de vragen die nodig zijn om een website te bouwen die echt werkt.
+
+Wil je weten wat een goede website voor jouw bedrijf kost en oplevert? Neem contact op via info@arkadigital.nl.`,
+    author: "Kaan Arslan",
+    publishedAt: "2026-04-30",
+    tags: ["Websites", "Tips", "MKB"],
+    readingTime: "10 min",
+  },
+  {
+    slug: "webdesign-bureau-kiezen",
+    title: "Hoe kies je het juiste webdesign bureau?",
+    excerpt:
+      "Een webdesign bureau kiezen is makkelijker gezegd dan gedaan. Dit zijn de concrete criteria, de juiste vragen en de rode vlaggen die je vooraf moet kennen.",
+    content: `Je hebt besloten dat het tijd is voor een nieuwe website. Of je huidige site verouderd is, of je start een nieuw bedrijf: de volgende stap is een webdesign bureau kiezen. En dat is minder eenvoudig dan het lijkt. De markt is groot, de prijsverschillen zijn enorm, en elke partij belooft hetzelfde: een mooie website die converteert.
+
+Hoe onderscheid je de goede partijen van de slechte? Dit artikel geeft je een praktisch kader om de juiste keuze te maken, inclusief de vragen die je moet stellen, de rode vlaggen die je moet herkennen, en de factoren die er echt toe doen.
+
+**Waarom het kiezen van een webdesign bureau zo lastig is**
+
+Het probleem is dat de kwaliteit van een webdesign bureau moeilijk te beoordelen is zonder insider-kennis. Een mooie website in een portfolio zegt weinig over de onderliggende kwaliteit: de laadsnelheid, de code, de SEO-structuur, de conversieoptimalisatie. Twee websites kunnen er visueel hetzelfde uitzien, maar de ene genereert leads en de andere niet.
+
+Daarbij komt dat de markt gefragmenteerd is. Je hebt grote bureaus met tientallen medewerkers, kleine bureaus van 2 tot 5 personen, freelancers die zichzelf een bureau noemen, en offshore partijen die voor een fractie van de prijs werken. Ze hebben allemaal een professionele website en overtuigende case studies.
+
+De sleutel is weten waar je op moet letten, los van de marketingverhalen.
+
+**Begin met je eigen doelstellingen**
+
+Voordat je een bureau gaat beoordelen, moet je helder hebben wat je wilt. Een bureau dat perfect past bij een webshop-eigenaar is misschien verkeerd voor een B2B-dienstverlener. Stel jezelf deze vragen:
+
+\u2022 **Wat is het primaire doel van de website?** Leads genereren, online verkopen, informeren, of een combinatie?
+\u2022 **Wat is je budget?** Niet alleen voor de bouw, maar ook voor onderhoud en doorontwikkeling
+\u2022 **Welke functionaliteiten zijn verplicht?** Denk aan contactformulieren, reserveringssystemen, webshop, klantportaal
+\u2022 **Wie beheert de website na oplevering?** Wil je dat zelf doen, of besteed je dat uit?
+\u2022 **Wat is je tijdlijn?** Heb je 2 weken of 3 maanden?
+
+Met heldere antwoorden op deze vragen kun je bureaus direct testen: past dit bij wat zij bieden?
+
+**Portfolio checken: kijk verder dan het uiterlijk**
+
+De eerste stap bij het beoordelen van een bureau is het portfolio. Maar kijk niet alleen naar hoe mooi de websites eruitzien. Bekijk deze punten:
+
+\u2022 **Laadsnelheid** Open een paar portfolio-websites en ga naar PageSpeed Insights (pagespeed.web.dev). Voer de URL in. Een professioneel bureau levert websites met een score van minimaal 85 op mobiel. Lager dan 70 is een rode vlag.
+\u2022 **Mobiele ervaring** Open de portfolio-websites op je telefoon. Werkt het navigeren soepel? Is de tekst leesbaar zonder in te zoomen? Zijn de knoppen groot genoeg?
+\u2022 **Brancherelevantie** Heeft het bureau ervaring in jouw branche? Een bureau dat veel webshops bouwt maar nog nooit een B2B-dienstverlener heeft geholpen, heeft een andere set vaardigheden.
+\u2022 **Resultaten** De beste bureaus vermelden niet alleen het ontwerp, maar ook de resultaten. "Conversieratio steeg van 1,2% naar 3,8%" zegt veel meer dan een screenshot.
+\u2022 **Diversiteit** Een portfolio met twintig websites die allemaal dezelfde opbouw hebben, suggereert dat het bureau een template hergebruikt in plaats van maatwerk te leveren.
+
+**De vragen die je moet stellen**
+
+Stuur een bureau een aanvraag en stel deze vragen. De antwoorden zeggen meer over de kwaliteit dan welk portfolio ook:
+
+\u2022 **Welke technologie gebruiken jullie en waarom?** Een bureau dat bewust kiest voor Next.js boven WordPress (of andersom) en dat goed kan uitleggen waarom, weet wat het doet. Een bureau dat zegt "we doen alles in WordPress omdat iedereen dat kent" heeft waarschijnlijk niet nagedacht over jouw specifieke situatie.
+\u2022 **Wie bouwt mijn website concreet?** Is het een vaste medewerker, een freelancer, of wordt het uitbesteed aan een partij in het buitenland? Dit is niet automatisch slecht, maar je moet het weten.
+\u2022 **Hoe ziet het proces eruit van eerste gesprek tot oplevering?** Een goed bureau heeft een duidelijk proces: intake, briefing, ontwerp, feedback, bouw, testen, lancering. Vaagheid hier is een rode vlag.
+\u2022 **Hoe gaan jullie om met revisies?** Hoeveel revisierondes zijn inbegrepen? Wat kost een ronde extra?
+\u2022 **Wat gebeurt er na oplevering?** Wie is eigenaar van de code en het hosting-account? Wie regelt updates en beveiliging? Wat kost dat?
+\u2022 **Kunnen jullie referenties geven?** Vraag naar twee of drie bestaande klanten die je mag bellen. Bureaus die dit weigeren of eindeloos uitstellen, zijn geen goed teken.
+
+**Rode vlaggen die je direct moet herkennen**
+
+Na honderden gesprekken met MKB-ondernemers over hun ervaringen met webdesign bureaus, zijn dit de meest voorkomende rode vlaggen:
+
+\u2022 **Geen duidelijke prijs of offerte** Een bureau dat geen heldere prijs kan geven, werkt waarschijnlijk met onduidelijke contracten en verborgen kosten achteraf.
+\u2022 **Beloftes zonder onderbouwing** "We garanderen je nummer 1 in Google" is niet mogelijk. Google geeft geen garanties, en een bureau ook niet. Wie dit belooft, liegt.
+\u2022 **Geen eigendomsoverdracht** Je betaalt voor de website, maar het bureau blijft eigenaar van de code of het hosting-account. Dit maakt je volledig afhankelijk. Zorg dat je altijd eigenaar bent van je eigen website.
+\u2022 **Geen portfolio of alleen interne projecten** Als een bureau geen aantoonbare klantervaringen heeft, is het risico groot.
+\u2022 **Slechte communicatie in het salesproces** Als het bureau al drie dagen niet reageert op je eerste vraag, hoe snel reageren ze dan wanneer er een probleem is na oplevering?
+\u2022 **Druk om snel te beslissen** "Dit aanbod geldt alleen tot vrijdag" is een manipulatietactiek. Serieuze bureaus geven je de tijd om een goede beslissing te nemen.
+
+**Prijs versus kwaliteit: hoe weeg je dat af?**
+
+Een website van 500 euro versus een website van 7.500 euro: hoe beslis je? Niet op basis van de laagste prijs, maar op basis van het verwachte rendement.
+
+Stel jezelf deze vraag: als de website 5 extra klanten per jaar oplevert, en elke klant is gemiddeld 2.000 euro waard, dan is de website 10.000 euro per jaar waard. Dan is een investering van 7.500 euro terugverdiend in minder dan een jaar.
+
+Een goedkope website die geen leads oplevert heeft een rendement van nul. Dan is zelfs 500 euro te veel.
+
+De prijs moet in verhouding staan tot:
+\u2022 De verwachte omzet die de website genereert
+\u2022 De kwaliteit en ervaring van het bureau
+\u2022 Wat er in de prijs inbegrepen is (ontwerp, bouw, SEO, content, hosting, onderhoud)
+
+Vraag altijd een gedetailleerde offerte op. Als een bureau een prijs noemt zonder specificatie, vraag dan exact wat er wel en niet bij inzit.
+
+**Communicatie en klik: onderschat dit niet**
+
+Een webtraject duurt gemiddeld 6 tot 12 weken. In die tijd heb je intensief contact met het bureau. Je deelt feedback, bespreekt keuzes, en werkt samen aan het eindresultaat. Als de klik er niet is, wordt dat een vervelende samenwerking.
+
+Let op:
+\u2022 Reageren ze snel en duidelijk op vragen?
+\u2022 Leggen ze technische keuzes uit op een manier die je begrijpt?
+\u2022 Luisteren ze naar wat je wilt, of dringen ze hun eigen visie op?
+\u2022 Zijn ze eerlijk als iets niet haalbaar is binnen je budget, of beloven ze alles?
+
+Een bureau dat eerlijk zegt "dat kunnen we niet waarmaken binnen dit budget, maar dit kunnen we wel" is waardevoller dan een bureau dat alles belooft en achteraf teleurstelt.
+
+**De volgende stap**
+
+Bij Arka werken we altijd met een heldere offerte, een transparant proces en volledige eigendomsoverdracht na oplevering. Je weet vooraf wat je krijgt, wat het kost, en wie het bouwt.
+
+Benieuwd of we bij jouw project passen? Neem contact op via info@arkadigital.nl. We beantwoorden je vragen zonder verkooppraatje en geven een eerlijke indicatie van wat we voor je kunnen betekenen.`,
+    author: "Kaan Arslan",
+    publishedAt: "2026-04-21",
+    tags: ["Websites", "MKB", "Tips"],
+    readingTime: "9 min",
+  },
+  {
+    slug: "website-beveiliging-mkb",
+    title: "Website beveiliging voor MKB: zo bescherm je je bedrijf online",
+    excerpt:
+      "Een slecht beveiligde website kost je klantdata, reputatie en omzet. Dit zijn de concrete stappen om je MKB-website te beveiligen, ook zonder technische kennis.",
+    content: `Website beveiliging is een onderwerp dat veel MKB-ondernemers uitstellen. "Ons bedrijf is te klein om gehackt te worden." Het tegendeel is waar: kleine bedrijven zijn juist een populair doelwit, precies omdat de beveiliging vaak slecht op orde is. Hackers gebruiken geautomatiseerde tools die dagelijks miljoenen websites scannen op kwetsbaarheden. Ze zoeken niet specifiek jou, maar als jouw website een lek heeft, gaan ze erdoor.
+
+De gevolgen van een gehackte website zijn ernstig: klantgegevens worden gestolen, je website verspreidt malware naar bezoekers, je wordt geblokkeerd door Google, en je reputatie krijgt een klap die moeilijk te herstellen is. Plus: onder de AVG ben je verplicht om datalekken te melden bij de Autoriteit Persoonsgegevens. Niet doen kost je boetes.
+
+In dit artikel bespreken we de concrete maatregelen die elke MKB-ondernemer moet nemen, ook zonder diepgaande technische kennis.
+
+**SSL: de absolute minimum**
+
+SSL (Secure Sockets Layer) is de technologie die zorgt voor de versleutelde verbinding tussen je website en de bezoeker. Je herkent het aan het slotje in de adresbalk en het "https://" voor je domeinnaam. Zonder SSL verstuurt je website data in leesbare tekst, wat betekent dat iedereen op het netwerk van de bezoeker mee kan kijken.
+
+Google straft websites zonder SSL met lagere rankings. Browsers tonen een waarschuwing "Niet veilig" aan bezoekers. Conversies dalen direct zodra bezoekers die waarschuwing zien.
+
+SSL is tegenwoordig gratis via Let's Encrypt en wordt automatisch ingesteld door goede hostingproviders. Als je website nog op http:// staat, is dat een urgent probleem. Los het deze week op.
+
+Wat je verder moet controleren:
+\u2022 **HTTPS overal** Zorg dat alle pagina's, ook interne links en afbeeldingen, via HTTPS worden geladen. Een gemengde verbinding (HTTPS-pagina met HTTP-content) triggert nog steeds browserwarnings.
+\u2022 **HTTP naar HTTPS redirect** Alle HTTP-verkeer moet automatisch doorgestuurd worden naar HTTPS. Controleer dit door http:// voor je domeinnaam te typen. Word je doorgestuurd?
+\u2022 **HSTS header** Een HTTP Strict Transport Security header vertelt browsers dat ze nooit meer HTTP mogen proberen voor jouw domein. Dit voorkomt aanvallen waarbij iemand de verbinding onderschept.
+
+**Updates: de meest onderschatte beveiligingsmaatregel**
+
+Verreweg de meeste hacks gebeuren via bekende kwetsbaarheden in verouderde software. WordPress, plugins, thema's: ze worden continu bijgewerkt omdat er nieuwe beveiligingslekken worden gevonden. Als jij die updates niet installeert, staat de deur wagenwijd open.
+
+Dit is het grote risico van WordPress-websites: ze bestaan uit meerdere lagen die allemaal up-to-date moeten zijn.
+
+\u2022 **WordPress zelf** de kern-software
+\u2022 **PHP** de programmeertaal waarop WordPress draait
+\u2022 **Thema** het visuele framework van je website
+\u2022 **Plugins** soms tientallen, allemaal met hun eigen updatecyclus
+
+Een gemiddelde WordPress-website heeft 15 tot 30 plugins. Als elk van die plugins maandelijks een update uitbrengt, zijn dat potentieel 30 updates per maand die je moet bijhouden. Doe je dat niet, dan is het een kwestie van tijd.
+
+De oplossing:
+\u2022 **Automatische updates inschakelen** voor kleine WordPress-updates en beveiligingspatches
+\u2022 **Wekelijks controleren** op updates voor plugins en thema's
+\u2022 **Ongebruikte plugins verwijderen** elke actieve plugin is een potentieel aanvalspunt. Minder is meer.
+\u2022 **Thema's en plugins alleen van betrouwbare bronnen** gebruik alleen plugins met veel actieve installaties en recente updates
+
+Het alternatief is een maatwerk website op een modern framework als Next.js. Zulke websites hebben geen plugin-ecosysteem en een veel kleiner aanvalsoppervlak. Updates van het framework worden centraal verwerkt, niet per installatie.
+
+**Wachtwoorden en toegangsbeheer**
+
+Zwakke wachtwoorden zijn nog steeds verantwoordelijk voor een groot deel van de hacks. "Admin/admin", "welkom123", of het gebruik van de bedrijfsnaam als wachtwoord: het klinkt ongelooflijk, maar het komt dagelijks voor.
+
+Concrete maatregelen:
+\u2022 **Gebruik een wachtwoordmanager** zoals Bitwarden (gratis), 1Password, of Dashlane. Genereer unieke wachtwoorden van minimaal 16 tekens voor elk account.
+\u2022 **Twee-factor authenticatie (2FA)** activeer dit op je CMS, hostingpanel, domeinnaam-registrar en DNS-provider. Zelfs als een wachtwoord uitgelekt is, kan een aanvaller er dan niet in.
+\u2022 **Beperk admin-toegang** geef medewerkers alleen de rechten die ze nodig hebben. Een copywriter heeft geen admin-toegang nodig.
+\u2022 **Verwijder ongebruikte accounts** ex-medewerkers of oude testaccounts zijn aanvalspunten.
+\u2022 **Verander de standaard admin-URL bij WordPress** /wp-admin is de standaard loginpagina en wordt continu geprobed. Verander dit naar iets onvoorspelbaars.
+
+**Backups: de vangnet die je nooit wilt gebruiken maar altijd nodig hebt**
+
+Een backup is geen beveiligingsmaatregel die aanvallen voorkomt, maar het is het verschil tussen een incident en een ramp. Als je website gehackt wordt of crasht, bepaalt je backup of je binnen een uur terug online bent of weken bezig bent met herstel.
+
+De regels voor goede backups:
+\u2022 **Dagelijkse automatische backups** van zowel de bestanden als de database
+\u2022 **Externe opslag** backups op dezelfde server als de website zijn waardeloos als de server gehackt wordt. Sla backups op in een aparte cloud-omgeving (Dropbox, Google Drive, AWS S3)
+\u2022 **Meerdere versies bewaren** minimaal 30 dagen aan dagelijkse backups, zodat je kunt teruggaan naar voor de hack
+\u2022 **Test je backups** een backup die niet werkt bij herstel is nutteloos. Herstel eens per kwartaal een testbackup om te controleren dat het werkt.
+\u2022 **Bewaar backups apart van je hosting** als je hostingprovider een probleem heeft, wil je je backups elders hebben
+
+**OWASP Top 10: de meest voorkomende kwetsbaarheden**
+
+OWASP (Open Web Application Security Project) publiceert jaarlijks een lijst van de meest voorkomende beveiligingsproblemen in webapplicaties. Je hoeft geen developer te zijn om de risico's te begrijpen.
+
+De meest relevante voor MKB-websites:
+\u2022 **SQL-injectie** formulieren die niet goed beveiligd zijn, kunnen misbruikt worden om je database te manipuleren. Elk formulier op je website moet invoer valideren en sanitizen.
+\u2022 **Cross-site scripting (XSS)** kwaadaardige scripts worden geinjected via invoervelden en uitgevoerd in de browser van bezoekers. Dit kan leiden tot cookie-diefstal en phishing.
+\u2022 **Broken access control** gebruikers krijgen toegang tot pagina's of data waar ze geen recht op hebben. Denk aan een ingelogde gebruiker die de URL aanpast om de data van een andere gebruiker te zien.
+\u2022 **Verouderde componenten** precies het updates-probleem dat we eerder bespraken.
+
+Voor een WordPress-website: installeer een beveiligingsplugin als Wordfence of Sucuri die actief scant op bekende kwetsbaarheden en aanvalspogingen blokkeert.
+
+**WordPress versus maatwerk: het beveiligingsverschil**
+
+WordPress heeft een marktaandeel van ongeveer 43% van alle websites wereldwijd. Dat maakt het het meest aantrekkelijke doelwit voor hackers. Niet omdat WordPress onveilig is van zichzelf, maar omdat de schaal enorme voordelen biedt voor aanvallers: een kwetsbaarheid in een populaire plugin treft miljoenen websites tegelijk.
+
+Een maatwerk website op een modern framework als Next.js heeft een fundamenteel ander beveiligingsprofiel:
+\u2022 Geen plugin-ecosysteem met tientallen externe codebases
+\u2022 Geen dynamische server-side rendering die directe database-toegang vereist
+\u2022 Statische of server-side gegenereerde pagina's die geen aanvalspunten bieden
+\u2022 Kleinere codebase die makkelijker te auditen is
+
+Dit betekent niet dat maatwerk-websites onkwetsbaar zijn. Maar het aanvalsoppervlak is significant kleiner, en het onderhoud is eenvoudiger.
+
+**Beveiligingschecklist voor vandaag**
+
+Loop deze lijst door en vink af wat je al geregeld hebt:
+
+\u2022 SSL-certificaat actief en correct geconfigureerd
+\u2022 Automatische redirect van HTTP naar HTTPS
+\u2022 Alle software, plugins en thema's up-to-date
+\u2022 Sterke wachtwoorden via een wachtwoordmanager
+\u2022 Twee-factor authenticatie op alle admin-accounts
+\u2022 Dagelijkse backups met externe opslag
+\u2022 Ongebruikte plugins en thema's verwijderd
+\u2022 Ongebruikte accounts verwijderd
+\u2022 Beveiligingsplugin actief (WordPress)
+
+Alles aangevinkt? Dan zit je aanzienlijk beter dan het gemiddelde MKB-bedrijf. Zijn er punten die je mist? Begin dan bij de top van de lijst en werk je naar beneden.
+
+Wil je een beveiligingsaudit van je huidige website, of overweeg je over te stappen naar een veiliger platform? Neem contact op via info@arkadigital.nl. We kijken met je mee en geven concrete aanbevelingen.`,
+    author: "Kaan Arslan",
+    publishedAt: "2026-04-22",
+    tags: ["Beveiliging", "Websites", "MKB"],
+    readingTime: "10 min",
+  },
+  {
+    slug: "website-snelheid-optimaliseren",
+    title: "Waarom laadsnelheid je website maakt of breekt",
+    excerpt:
+      "Een trage website kost je bezoekers, leads en Google-rankings. Zo meet je de snelheid van je website en dit zijn de concrete stappen om hem te verbeteren.",
+    content: `Drie seconden. Dat is de tijd die je hebt voordat meer dan de helft van je bezoekers afhaakt als je website te langzaam laadt. Geen tweede kans, geen genade. De bezoeker klikt weg en gaat naar een concurrent die sneller is.
+
+Website snelheid optimaliseren is niet alleen een technisch detail voor developers. Het is een directe zakelijke prioriteit die impact heeft op je Google-ranking, je conversieratio en de ervaring die bezoekers hebben met jouw merk. In dit artikel leggen we uit waarom snelheid zo belangrijk is, hoe je het meet, en wat je kunt doen om je website sneller te maken.
+
+**De cijfers die je moet weten**
+
+Laten we beginnen met wat onderzoek zegt over de impact van laadsnelheid:
+
+\u2022 **53% van mobiele bezoekers** verlaat een website die langer dan 3 seconden laadt (Google)
+\u2022 **Elke seconde extra laadtijd** verlaagt de conversieratio met 4 tot 7%
+\u2022 **Een laadtijd van 1 seconde** heeft een 3x hogere conversieratio dan een laadtijd van 5 seconden (Portent)
+\u2022 **Websites die laden in onder 2 seconden** hebben gemiddeld een bouncepercentage van 9%, tegenover 38% bij websites die 5 seconden laden
+\u2022 **Amazon** berekende dat elke 100 milliseconden extra laadtijd 1% omzetdaling kost. Voor een MKB bedrijf met 50.000 euro online omzet per jaar is dat 500 euro per 100 milliseconden.
+
+Dit zijn geen theoretische cijfers. Snelheid heeft directe, meetbare impact op je bedrijfsresultaten.
+
+**Core Web Vitals: wat Google meet**
+
+Google heeft drie specifieke maatstaven gedefinieerd die samen de gebruikerservaring van een webpagina beschrijven. Deze Core Web Vitals zijn officieel een rankingfactor in het Google-algoritme. Scoor je slecht, dan word je lager geplaatst in de zoekresultaten.
+
+\u2022 **Largest Contentful Paint (LCP)** De tijd totdat het grootste zichtbare element op de pagina geladen is. Dit is meestal een grote afbeelding of een tekst-heading. Goed: onder 2,5 seconden. Slecht: boven 4 seconden.
+\u2022 **First Input Delay (FID) / Interaction to Next Paint (INP)** Hoe snel reageert de pagina wanneer een gebruiker erop klikt of typt? Goed: onder 100 milliseconden voor FID, onder 200 milliseconden voor INP. Slecht: boven 300 milliseconden.
+\u2022 **Cumulative Layout Shift (CLS)** Hoe stabiel is de pagina tijdens het laden? Verschuift de tekst of springen knoppen rond terwijl de pagina laadt? Goed: onder 0,1. Slecht: boven 0,25.
+
+Deze drie scores kun je direct meten via Google Search Console (gratis, koppel je website) of via PageSpeed Insights op pagespeed.web.dev.
+
+**Hoe meet je de snelheid van je website?**
+
+Er zijn meerdere tools die je gratis kunt gebruiken:
+
+\u2022 **Google PageSpeed Insights** (pagespeed.web.dev) Geeft een score van 0 tot 100 voor zowel mobiel als desktop, met gedetailleerde uitleg van wat er mis is en hoe je het kunt oplossen. Dit is de standaard die je moet kennen.
+\u2022 **Google Search Console** Als je website gekoppeld is aan Search Console, zie je de Core Web Vitals voor alle pagina's, inclusief historische data. Dit is de echte gemeten data van echte gebruikers.
+\u2022 **GTmetrix** (gtmetrix.com) Geeft een waterfall-diagram dat precies laat zien welk onderdeel van je website het langst duurt om te laden. Handig voor diagnose.
+\u2022 **WebPageTest** (webpagetest.org) Geavanceerdere tool voor developers, maar ook voor niet-technici bruikbaar. Geeft inzicht in de laadtijd vanuit verschillende locaties en apparaten.
+
+Wat is een goede score? Streef naar 85+ op PageSpeed Insights voor mobiel. Desktop is minder kritiek, maar ook daar geldt: 90+ is goed.
+
+**De vijf grootste oorzaken van trage websites**
+
+**1. Ongeoptimaliseerde afbeeldingen**
+
+Dit is de meest voorkomende oorzaak van trage websites. Een foto van 5 megabyte die gecomprimeerd had kunnen worden naar 200 kilobyte zonder zichtbaar kwaliteitsverlies. Vermenigvuldig dat met 20 afbeeldingen op een pagina en je begrijpt het probleem.
+
+Oplossingen:
+\u2022 Gebruik het WebP-formaat in plaats van JPEG of PNG. WebP is 25 tot 35% kleiner bij vergelijkbare kwaliteit.
+\u2022 Comprimeer afbeeldingen voor upload via tools als Squoosh (squoosh.app, gratis) of TinyPNG
+\u2022 Stel de juiste afmetingen in. Een afbeelding die 800 pixels breed wordt weergegeven, hoeft niet 4000 pixels breed te zijn.
+\u2022 Gebruik lazy loading: laad afbeeldingen pas wanneer ze in beeld komen, niet allemaal tegelijk bij het openen van de pagina.
+
+**2. Trage hosting**
+
+Goedkope shared hosting van 3 tot 5 euro per maand levert trage serverresponstijden op. Je deelt een server met honderden andere websites, en als een van die websites veel verkeer trekt, lijd jij eronder.
+
+De Time to First Byte (TTFB), de tijd voordat je server ook maar begint met antwoorden, is op goedkope hosting vaak 1 tot 3 seconden. Op een kwalitatief hostingplatform als Vercel, Netlify of een goede VPS is dit 50 tot 200 milliseconden.
+
+Investeer in betere hosting als je PageSpeed-score wordt gedomineerd door een slechte TTFB.
+
+**3. Te veel scripts en plugins**
+
+Elke externe tool die je op je website laadt, voegt laadtijd toe. Google Analytics, Facebook Pixel, Hotjar, een chat-widget, een cookie-banner, social media knoppen, een heatmap-tool: ze kunnen allemaal tientallen tot honderden kilobytes aan JavaScript toevoegen, en ze blokkeren vaak het renderen van de pagina.
+
+Auditeer welke tools je daadwerkelijk gebruikt en verwijder de rest. Combineer waar mogelijk scripts. Laad niet-kritieke scripts asynchroon of deferred zodat ze de eerste paginalading niet blokkeren.
+
+**4. Render-blocking resources**
+
+CSS- en JavaScript-bestanden die in de head van je pagina staan, worden geladen voordat de pagina zichtbaar wordt. Dit is vaak onnodig. Kritieke CSS (de stijlen voor wat direct zichtbaar is bij het openen van de pagina) kan inline worden opgenomen. De rest kan worden uitgesteld.
+
+Dit is een technisch punt dat je developer moet aanpakken, maar het is de moeite waard om ernaar te vragen.
+
+**5. Geen gebruik van caching of CDN**
+
+Caching slaat eerder geladen versies op, zodat terugkerende bezoekers de pagina niet opnieuw van de server hoeven te laden. Een Content Delivery Network (CDN) distribueert je website over servers wereldwijd, zodat bezoekers de data ophalen van een server dicht bij hen in de buurt.
+
+Moderne hostingplatformen als Vercel en Netlify doen dit automatisch. Op traditionele WordPress-hosting moet je dit zelf instellen via een caching-plugin en een CDN-service.
+
+**Technologiekeuze en snelheid**
+
+De technologie waarmee je website is gebouwd heeft een fundamentele impact op de snelheid.
+
+WordPress met standaard plugins: een gemiddelde score van 50 tot 70 op PageSpeed mobiel, afhankelijk van het thema en de plugins.
+
+Next.js met optimale configuratie: consistent 90+ op PageSpeed, dankzij server-side rendering, statische generatie, automatische beeldoptimalisatie en slim code-splitting.
+
+Dit is geen reclame voor Next.js, maar een feitelijk verschil in architectuur. Een modern JavaScript-framework als Next.js is gebouwd met performance als eerste prioriteit. WordPress is gebouwd voor gebruiksgemak en flexibiliteit, niet voor snelheid.
+
+Als je website een centrale rol speelt in het genereren van leads of omzet, is de technologiekeuze een strategische beslissing, geen technisch detail.
+
+**Wat levert snelheidsoptimalisatie op?**
+
+Laten we een concreet rekenvoorbeeld doorlopen. Je website heeft 2.000 bezoekers per maand. Je huidige laadtijd is 5 seconden, conversieratio is 1,5%, dat zijn 30 leads per maand.
+
+Na optimalisatie laadt de website in 1,5 seconden. Conversieratio stijgt naar 3% (realistisch op basis van onderzoek). Dat zijn 60 leads per maand, het dubbele, zonder een euro extra te investeren in traffic.
+
+Als elke lead gemiddeld 10% kans heeft om klant te worden met een orderwaarde van 3.000 euro, dan is het verschil 3 extra klanten per maand, ofwel 9.000 euro extra omzet per maand.
+
+**Eerste stappen die je vandaag kunt zetten**
+
+\u2022 Meet je huidige score via PageSpeed Insights
+\u2022 Bekijk welke afbeeldingen niet geoptimaliseerd zijn
+\u2022 Controleer welke externe scripts je laadt en of ze allemaal nodig zijn
+\u2022 Vraag je hostingprovider naar de TTFB van je server
+\u2022 Bekijk in Google Search Console de Core Web Vitals voor je website
+
+Heb je een score onder 70 op mobiel, dan is snelheidsoptimalisatie urgent. Het raakt direct je Google-ranking en je conversieratio.
+
+Bij Arka bouwen we websites die standaard hoog scoren op PageSpeed. Geen gedoe met plugins en optimalisatie achteraf, maar snelheid als onderdeel van de architectuur. Benieuwd wat het voor jouw website betekent? Mail naar info@arkadigital.nl.`,
+    author: "Kaan Arslan",
+    publishedAt: "2026-04-23",
+    tags: ["SEO", "Websites", "Performance"],
+    readingTime: "10 min",
+  },
+  {
+    slug: "lokale-seo-tips",
+    title: "Lokale SEO: zo word je gevonden in jouw regio",
+    excerpt:
+      "Wil je meer klanten uit jouw regio? Lokale SEO is de meest directe weg. Dit zijn de concrete stappen om hoger te scoren in lokale zoekresultaten.",
+    content: `Als je een lokaal bedrijf runt, is Google je belangrijkste verkoopkanaal. Mensen zoeken elke dag naar loodgieters, kappers, accountants, webdesigners en tientallen andere diensten "in de buurt." Ze typen "loodgieter Dordrecht" of "accountant Rotterdam" en gaan af op de eerste paar resultaten.
+
+Als jij daar niet bij staat, bestaat je bedrijf voor die zoeker niet.
+
+Lokale SEO is de verzameling van technieken waarmee je je online zichtbaarheid in jouw regio vergroot. Het is geen magie en vereist geen groot budget, maar het vereist wel consistente aandacht. In dit artikel bespreken we de vijf pijlers van een effectieve lokale SEO-strategie.
+
+**Wat is lokale SEO en waarom werkt het anders?**
+
+Reguliere SEO gaat over het ranken op zoekwoorden zonder geografische context. Lokale SEO richt zich op zoekopdrachten met een lokale intentie: mensen die een dienst of product in een specifieke regio zoeken.
+
+Google behandelt lokale zoekopdrachten anders dan reguliere. Bij een zoekopdracht als "webdesign bureau Dordrecht" toont Google drie dingen:
+
+\u2022 **Google Maps-resultaten** (de "local pack"): drie bedrijven op een kaart met beoordelingen en contactgegevens
+\u2022 **Reguliere zoekresultaten** eronder: website-pagina's die relevant zijn voor de zoekopdracht
+\u2022 **Betaalde advertenties** (optioneel) bovenaan als er adverteerders zijn
+
+De local pack krijgt het meeste klikverkeer, soms meer dan de reguliere zoekresultaten. Om in de local pack te verschijnen heb je een goed ingericht Google Business Profile nodig, plus ondersteunende signalen vanuit je website en andere bronnen.
+
+**Pijler 1: Google Business Profile**
+
+Google Business Profile (voorheen Google My Business) is de absolute basis van lokale SEO. Als je hier niet bent, doe je niet mee.
+
+Hoe je je profiel optimaliseert:
+
+\u2022 **Claim en verifieer je profiel** Als je bedrijf nog niet geclaimd is op Google, ga dan naar business.google.com en volg het verificatieproces. Verificatie gaat via post (kaart met code), telefoon, of video.
+\u2022 **Vul alle informatie volledig in** Naam, adres, telefoonnummer, website, openingstijden, categorieen, omschrijving. Elk veld dat je leeg laat is een gemiste kans.
+\u2022 **Kies de juiste categorie** De primaire categorie is het belangrijkste signaal voor Google over wat voor bedrijf je bent. Wees specifiek: "webdesign bureau" is beter dan "IT-bedrijf". Je kunt meerdere categorieen toevoegen.
+\u2022 **Voeg foto's toe** Bedrijven met foto's krijgen 42% meer verzoeken om een routebeschrijving en 35% meer kliks naar de website. Voeg minimaal je logo, een exterieur- en interieurafbeelding toe, en productfoto's of foto's van je diensten.
+\u2022 **Gebruik Google Posts** Maak wekelijks een korte post met een nieuwtje, aanbieding of artikel. Dit laat zien dat je profiel actief is.
+\u2022 **Beantwoord vragen in de Q&A-sectie** Mensen stellen vragen via Google. Beantwoord ze snel en volledig.
+
+Consistentie is cruciaal. De naam, het adres en het telefoonnummer op je Google Business Profile moeten exact overeenkomen met wat op je website staat. Elke afwijking (afkorting vs uitgeschreven, straatnummer met of zonder toevoeging) verwaart Google.
+
+**Pijler 2: NAP-consistentie**
+
+NAP staat voor Name, Address, Phone. Het gaat om de consistentie van je bedrijfsgegevens op alle plekken waar ze online staan: je website, Google Business Profile, sociale media, directories en vermeldingen in artikelen.
+
+Google gebruikt NAP-consistentie als een vertrouwenssignaal. Als jouw bedrijfsnaam op de ene plek "Arka" is, op een andere plek "Arka Digital" en op een derde plek "Arka Webdesign", trekt Google de conclusie dat dit misschien drie verschillende bedrijven zijn. Dat schaadt je lokale ranking.
+
+Stap 1: Bepaal de exacte schrijfwijze van je naam, adres en telefoonnummer en schrijf die op. Dit is voortaan de enige correcte versie.
+
+Stap 2: Controleer alle plekken waar je gegevens staan:
+\u2022 Website (footer, contact-pagina, over-ons pagina)
+\u2022 Google Business Profile
+\u2022 Facebook, Instagram, LinkedIn
+\u2022 Brancheverenigingen en directories
+\u2022 Artikelen en persberichten
+
+Stap 3: Corrigeer afwijkingen. Dit is handwerk maar het is de moeite waard.
+
+**Pijler 3: Lokale zoekwoorden op je website**
+
+Je Google Business Profile is de basis voor de local pack. Voor de reguliere zoekresultaten eronder heb je pagina's op je website nodig die geoptimaliseerd zijn voor lokale zoekwoorden.
+
+De structuur die werkt:
+
+\u2022 **Lokale landingspagina's** Maak een specifieke pagina voor elke combinatie van dienst en regio die je wilt targeten. Niet een generieke "contact"-pagina, maar een pagina als "Webdesign bureau in Dordrecht" met een URL als /webdesign-bureau-dordrecht.
+\u2022 **Lokale zoekwoorden verwerken** Gebruik de stad of regio in de paginatitel, de H1-heading, de meta-omschrijving, en natuurlijk in de tekst zelf. Niet geforceerd, maar op een manier die logisch leest.
+\u2022 **Lokale context bieden** Schrijf over jouw kennis van de lokale markt. Verwijs naar bekende bedrijventerreinen, wijken of regionale kenmerken die relevant zijn voor je doelgroep.
+\u2022 **Structured data** Voeg LocalBusiness-schema toe aan je website. Dit is een stukje code (JSON-LD) dat Google vertelt wie je bent, waar je zit, en wat je doet. Technisch, maar een developer kan dit in een uur implementeren.
+
+**Pijler 4: Online reviews actief managen**
+
+Reviews zijn een van de sterkste lokale SEO-signalen. Ze beinvloeden zowel je ranking in de local pack als het klikgedrag van potentiele klanten. Een bedrijf met 50 reviews en een gemiddelde van 4,6 wint het bijna altijd van een bedrijf met 5 reviews en een gemiddelde van 4,8.
+
+Volume en recency zijn beide belangrijk. Een handvol reviews van drie jaar geleden telt minder zwaar dan reviews die de afgelopen maanden zijn geplaatst.
+
+Hoe je meer reviews krijgt:
+
+\u2022 **Vraag ernaar** De meest simpele strategie: vraag klanten na een geslaagde opdracht of ze een review willen achterlaten. De meeste mensen doen het graag als je er expliciet om vraagt.
+\u2022 **Maak het makkelijk** Stuur een directe link naar je Google-reviewpagina via een e-mail of WhatsApp-bericht. Hoe minder stappen, hoe groter de kans dat iemand het daadwerkelijk doet.
+\u2022 **Reageer op alle reviews** Op positieve reviews met een kort bedankje, op negatieve reviews met een professionele, constructieve reactie. Dit laat zowel Google als potentiele klanten zien dat je betrokken bent.
+\u2022 **Diversificeer** Google-reviews zijn het belangrijkst, maar reviews op Trustpilot, Facebook en branchespecifieke platforms tellen ook mee als vertrouwenssignalen.
+
+Koop nooit nep-reviews. Google detecteert dit steeds beter en de gevolgen (profile-verwijdering) zijn ernstiger dan de tijdelijke winst.
+
+**Pijler 5: Lokale backlinks**
+
+Backlinks zijn links van andere websites naar jouw website. Ze zijn een van de sterkste SEO-signalen in het algemeen, en voor lokale SEO zijn lokale backlinks extra waardevol.
+
+Waar vind je lokale backlinks:
+
+\u2022 **Lokale media** Denk aan de regionale krant of nieuwssite. Word je ergens in een artikel vermeld? Zorg dat er een link bij staat.
+\u2022 **Brancheverenigingen** Ben je lid van een branchevereniging of ondernemersvereniging (KvK, VNO-NCW, lokale ondernemersclub)? Vaak staat er een ledenpagina met links naar websites.
+\u2022 **Samenwerking met lokale bedrijven** Partnerships met niet-concurrerende lokale bedrijven kunnen leiden tot wederzijdse vermeldingen en links.
+\u2022 **Lokale directories** Bedrijvengidsen voor jouw regio of branche. Zorg dat je profiel compleet is en een link naar je website bevat.
+\u2022 **Sponsorships en events** Als je een lokaal evenement sponsort, staat je naam en link vaak op de website van de organisatie.
+
+Kwaliteit gaat boven kwantiteit. Een link van de lokale nieuwssite is waardevoller dan tien links van obscure directories.
+
+**Meten en monitoren**
+
+Lokale SEO is een langetermijnstrategie. Resultaten zijn niet overnight zichtbaar, maar na 3 tot 6 maanden consistent werken zie je de eerste beweging.
+
+Wat je monitort:
+\u2022 **Google Business Profile Insights** Hoeveel mensen zien je profiel? Hoeveel klikken door naar je website? Hoeveel vragen om een routebeschrijving?
+\u2022 **Google Search Console** Welke zoekwoorden brengen bezoekers naar je website? Hoe scoor je op lokale zoekwoorden?
+\u2022 **Positie op lokale zoekwoorden** Track je posities op de zoekwoorden die voor jou belangrijk zijn
+
+Lokale SEO is geen eenmalige actie maar een doorlopend proces. Een bedrijf dat consistent aan zijn lokale SEO werkt, bouwt een steeds sterkere positie op die moeilijk te kopieren is door concurrenten.
+
+Wil je weten hoe sterk je lokale aanwezigheid op dit moment is, of hulp bij het opzetten van een lokale SEO-strategie? Neem contact op via info@arkadigital.nl.`,
+    author: "Kaan Arslan",
+    publishedAt: "2026-04-24",
+    tags: ["SEO", "Lokaal", "MKB"],
+    readingTime: "10 min",
+  },
+  {
+    slug: "b2b-website-laten-maken",
+    title: "B2B website laten maken: waar moet je op letten?",
+    excerpt:
+      "Een B2B website heeft een andere focus dan een B2C-site. Leads genereren, vertrouwen opbouwen en een lange salesfunnel ondersteunen: dit zijn de eisen.",
+    content: `Een B2B website laten maken is iets fundamenteel anders dan een consumentenwebsite bouwen. De koopreis is langer, de beslissers zijn meerdere personen, de orderwaarden zijn hoger, en de bezoeker wil niet kopen maar informeren en afwegen. Een website die perfect werkt voor een webshop of een lokale dienstverlener, schiet tekort voor een B2B-bedrijf.
+
+In dit artikel bespreken we wat een B2B website onderscheidt, welke elementen verplicht zijn, en hoe je ervoor zorgt dat je website de lange salesfunnel actief ondersteunt.
+
+**Het fundamentele verschil: beslissen duurt langer**
+
+Bij B2C (business-to-consumer) is de koopreis vaak kort. Iemand ziet een product, overweegt even, en koopt. Of niet. De beslissing wordt genomen door een persoon, vaak op basis van emotie en prijs.
+
+Bij B2B (business-to-business) ziet de wereld er fundamenteel anders uit:
+
+\u2022 **Meerdere beslissers** Een aankoop van 20.000 euro gaat langs de manager, de financieel directeur en soms het managementteam. Je website moet overtuigen voor een breed publiek, niet voor een persoon.
+\u2022 **Lange koopreis** Van eerste orientatie tot definitieve opdracht duurt het gemiddeld 3 tot 12 maanden in B2B, afhankelijk van de sector en het budgetniveau.
+\u2022 **Rationele besluitvorming** B2B-kopers willen feiten, bewijs en onderbouwing. Emotie speelt een rol maar komt na de rationele rechtvaardiging.
+\u2022 **Hoge orderwaarden** Een fout is duurder. Beslissers willen zeker zijn voordat ze tekenen. Dat vraagt om meer overtuigingskracht dan een aantrekkelijk design alleen.
+\u2022 **Terugkerende relatie** B2B-klanten zijn vaak langjarige relaties. De website is niet het eindpunt van de salesfunnel maar het begin van een samenwerking.
+
+Je website moet die realiteit reflecteren. Niet "koop nu" maar "leer ons kennen, overtuig je, neem contact op."
+
+**Lead generation als primair doel**
+
+Voor de meeste B2B-bedrijven is het primaire doel van de website: gekwalificeerde leads genereren. Niet direct verkopen, maar het gesprek starten.
+
+Dit heeft implicaties voor elke ontwerpbeslissing:
+
+\u2022 **Lage drempel voor contact** Een formulier met naam, bedrijf, e-mail en een vrije omschrijving. Meer is te veel voor een eerste contact. Reserveer de uitgebreide intakevragen voor het vervolgproces.
+\u2022 **Meerdere contactopties** Sommige mensen bellen liever, anderen mailen, anderen plannen direct een afspraak. Bied alle drie aan, zichtbaar op elke pagina.
+\u2022 **Downloadbare content als leadmagneet** Een whitepaper, checklist of gids die waardevolle informatie biedt in ruil voor een e-mailadres. Dit legt een eerste verbinding met bezoekers die nog niet klaar zijn voor een gesprek.
+\u2022 **Calendly of vergelijkbaar** Een directe link om een kennismakingsgesprek in te plannen. Dit verlaagt de drempel voor bezoekers die klaar zijn voor de volgende stap maar niet eerst een heen-en-weermailtje willen sturen.
+\u2022 **Retargeting-pixel** Bezoekers die je website bezoeken maar niet converteren, kun je later opnieuw bereiken via LinkedIn of Google Ads. Installeer de pixels zodat dit mogelijk is wanneer je er klaar voor bent.
+
+**Vertrouwen opbouwen: de kern van B2B**
+
+B2B-kopers kopen van bedrijven die ze vertrouwen. Ze gaan een relatie aan voor de lange termijn, vaak met aanzienlijke budgetten. Vertrouwen opbouwen via je website is daarom geen nice-to-have, maar de primaire taak.
+
+De elementen die vertrouwen opbouwen:
+
+\u2022 **Case studies met concrete resultaten** Niet "we hebben X geholpen met hun website", maar "X zag een conversieratio-stijging van 1,8% naar 4,2% binnen 6 maanden." Cijfers bouwen meer vertrouwen dan beschrijvingen. Vraag klanten of je specifieke resultaten mag publiceren.
+\u2022 **Klantlogo's en testimonials** Herkenbare namen in je portfolio geven social proof. Als je voor naam A hebt gewerkt die de bezoeker kent of respecteert, stijgt je geloofwaardigheid direct.
+\u2022 **Team en gezichten** B2B is mensenwerk. Laat zien wie er achter het bedrijf zit. Een professionele profielfoto en een korte introductie per teamlid maakt het bedrijf concreet en menselijk.
+\u2022 **Transparantie over werkwijze** Leg uit hoe je werkt. Welke stappen doorloop je samen? Wat kun je verwachten? Hoe lang duurt het? Bezoekers die begrijpen hoe je werkt, zijn minder snel bang voor verrassingen.
+\u2022 **Certificeringen en partnerships** Relevante certificeringen, brancheverenigingen of technologiepartnerships (Google Partner, Meta Partner) versterken je positie.
+\u2022 **Privacy en beveiliging** Vermeld je AVG-compliance, je beveiligingsaanpak voor gevoelige data, en je verwerkersovereenkomst als dat relevant is voor je branche.
+
+**Content strategie voor de lange koopreis**
+
+Omdat B2B-kopers maanden bezig zijn met orienteren en beslissen, is content een cruciaal onderdeel van je B2B-website. Je wilt dat potentiele klanten terugkomen, dat ze jou zien als autoriteit, en dat ze jouw naam in hun hoofd hebben wanneer ze klaar zijn om een beslissing te nemen.
+
+Een effectieve B2B-contentstrategie bestaat uit drie lagen:
+
+\u2022 **Bewustwordingscontent** blogartikelen, gidsen en whitepapers die antwoord geven op de vragen die je doelgroep stelt in de orientatiefase. "Hoe kies ik het juiste webdesign bureau?" trekt potentiele klanten aan die nog aan het orienteren zijn.
+\u2022 **Overwegingscontent** case studies, vergelijkingen en diepgaande dienst-omschrijvingen die helpen bij de afweging tussen opties. "Wat is het verschil tussen een WordPress-website en een maatwerk-website voor een B2B-bedrijf?"
+\u2022 **Beslissingscontent** een duidelijke prijspagina (of op zijn minst indicatieve bandbreedte), een helder overzicht van je diensten, en een laagdrempelig contactproces.
+
+De meeste B2B-websites focussen alleen op de derde laag. Door ook in de eerste en tweede laag te investeren, bouw je een relatie op met potentiele klanten lang voordat ze klaar zijn om te kopen.
+
+**Dienst- en sectorpagina's: diepgang wint**
+
+B2B-kopers willen begrijpen wat je precies doet en of je hun specifieke situatie kent. Generieke dienstomschrijvingen overtuigen niet.
+
+Maak voor elke belangrijke dienst een aparte pagina met:
+
+\u2022 **Wat het is** Helder omschreven, zonder jargon
+\u2022 **Voor wie het is** Welk type bedrijf of welke sector
+\u2022 **Wat het oplevert** Concrete resultaten, niet vage beloftes
+\u2022 **Hoe het werkt** Het proces in stappen
+\u2022 **Wat het kost** Op zijn minst een indicatie of bandbreedte
+\u2022 **Referenties** Case studies of klantcitaten die specifiek relevant zijn voor deze dienst
+
+Overweeg ook sector-specifieke pagina's als je meerdere sectoren bedient. Een accountantskantoor dat zowel bouw, horeca als zakelijke dienstverleners bedient, kan per sector een specifieke landingspagina maken. Dit versterkt de herkenbaarheid en de SEO-relevantie voor die sector.
+
+**Technische vereisten voor B2B**
+
+Naast de inhoudelijke kant zijn er technische vereisten die specifiek relevant zijn voor B2B-websites:
+
+\u2022 **CRM-integratie** Koppelingen met HubSpot, Salesforce of een ander CRM zodat nieuwe leads automatisch in je salesproces terechtkomen, met de juiste bronattributie.
+\u2022 **Marketing automation** Tools als HubSpot of ActiveCampaign die automatisch follow-up e-mails sturen na het downloaden van een whitepaper of het invullen van een contactformulier.
+\u2022 **Analytics op bedrijfsniveau** Tools als Leadfeeder of Albacross tonen welke bedrijven je website bezoeken, ook als ze geen formulier invullen. Waardevol voor proactieve outreach.
+\u2022 **LinkedIn-integratie** LinkedIn Lead Gen Forms, LinkedIn Insight Tag voor retargeting en campagne-attributie.
+\u2022 **Snelheid en betrouwbaarheid** B2B-bezoekers zijn professionals. Een trage of instabiele website is een direct vertrouwenssignaal.
+
+**De veelgemaakte fout: te veel over jezelf**
+
+Veel B2B-bedrijven maken de fout dat hun website te veel over henzelf gaat. Lange teksten over de geschiedenis van het bedrijf, de missie en visie, de kernwaarden. Allemaal intern gericht.
+
+B2B-kopers stellen zich een vraag: "Kunnen zij mijn probleem oplossen?"
+
+Begin met het probleem van de klant. Beschrijf de situatie die je doelgroep herkent. Leg daarna uit hoe je dat probleem oplost. Bewijs het met resultaten. Dan pas vertel je wie je bent.
+
+Deze volgorde, probleem, oplossing, bewijs, identiteit, converteert consistent beter dan de omgekeerde volgorde.
+
+**Investering en tijdlijn**
+
+Een professionele B2B-website is een investering van 5.000 tot 20.000 euro, afhankelijk van de complexiteit, het aantal pagina's en de functionaliteiten. Reken op een doorlooptijd van 6 tot 12 weken voor een volledig project.
+
+De terugverdientijd is relatief snel. Als je website gemiddeld twee extra gekwalificeerde leads per maand oplevert en je sluit er een per maand af met een gemiddelde orderwaarde van 10.000 euro, is de investering binnen een kwartaal terugverdiend.
+
+Bij Arka bouwen we B2B-websites die zijn ontworpen om leads te genereren. Van strategie en content tot techniek en integraties. Benieuwd wat we voor jouw bedrijf kunnen betekenen? Neem contact op via info@arkadigital.nl.`,
+    author: "Kaan Arslan",
+    publishedAt: "2026-04-25",
+    tags: ["Websites", "B2B", "Lead Generation"],
+    readingTime: "11 min",
   },
 ];

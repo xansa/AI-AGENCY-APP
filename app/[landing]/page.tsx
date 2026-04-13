@@ -34,27 +34,51 @@ export default function LandingPage({ params }: Props) {
   const page = landingPages.find((lp) => lp.slug === params.landing);
   if (!page) notFound();
 
+  // Extract target city from slug for areaServed
+  const cityMap: Record<string, string> = {
+    dordrecht: "Dordrecht",
+    drechtsteden: "Drechtsteden",
+    rotterdam: "Rotterdam",
+    amsterdam: "Amsterdam",
+    "den-haag": "Den Haag",
+    utrecht: "Utrecht",
+    eindhoven: "Eindhoven",
+    breda: "Breda",
+    tilburg: "Tilburg",
+    arnhem: "Arnhem",
+    leiden: "Leiden",
+    groningen: "Groningen",
+  };
+  const slugParts = page.slug.split("-");
+  const cityKey = slugParts.slice(-1)[0] === "haag" ? "den-haag" : slugParts[slugParts.length - 1];
+  const targetCity = cityMap[cityKey] ?? "Drechtsteden";
+
   const serviceJsonLd = {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    name: "Arka",
+    "@type": "Service",
+    name: page.title,
     description: page.metaDescription,
     url: `${baseUrl}/${page.slug}`,
-    telephone: "+31646140986",
-    email: "info@arkadigital.nl",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Dordrecht",
-      addressRegion: "Zuid-Holland",
-      addressCountry: "NL",
+    provider: {
+      "@type": "ProfessionalService",
+      "@id": "https://arkadigital.nl/#organization",
+      name: "Arka",
+      url: baseUrl,
     },
     areaServed: {
-      "@type": "Place",
-      name: "Drechtsteden",
+      "@type": "City",
+      name: targetCity,
     },
-    founder: {
-      "@type": "Person",
-      name: "Kaan Arslan",
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "EUR",
+      price: "1000",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        priceCurrency: "EUR",
+        price: "1000",
+        unitText: "maand",
+      },
     },
   };
 
@@ -73,7 +97,7 @@ export default function LandingPage({ params }: Props) {
   };
 
   return (
-    <div className="pt-24">
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
@@ -83,6 +107,6 @@ export default function LandingPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <LandingPageContent page={page} />
-    </div>
+    </>
   );
 }

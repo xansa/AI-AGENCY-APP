@@ -1,101 +1,109 @@
 "use client";
 
 import { Button } from "@/components/ui/Button";
-import { Badge } from "@/components/ui/Badge";
 import { motion } from "framer-motion";
-import { ArrowRight, Calendar, FileText } from "lucide-react";
+import { ArrowRight, Calendar } from "lucide-react";
 import { useTranslation } from "@/lib/i18n";
-
-const fadeUp = {
-  initial: { opacity: 0, y: 24 },
-  animate: { opacity: 1, y: 0 },
-};
 
 export function HeroSection() {
   const { t } = useTranslation();
-  return (
-    <section className="relative min-h-screen flex items-center bg-dark-950 overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-dark-950 via-dark-900 to-brand-950" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(99,102,241,0.15)_0%,_transparent_60%)]" />
 
-      {/* Grid pattern */}
+  const headingWords = t("hero.heading").split(" ");
+
+  return (
+    <section className="relative min-h-[92vh] flex items-center bg-[#0F172A] overflow-hidden noise-overlay">
+      {/* Animated gradient blobs */}
+      <div className="blob blob-1 w-[500px] h-[500px] bg-blue-500/30 -top-40 -left-20" />
+      <div className="blob blob-2 w-[400px] h-[400px] bg-cyan-400/20 top-1/3 right-0" />
+      <div className="blob blob-3 w-[350px] h-[350px] bg-indigo-500/20 bottom-0 left-1/3" />
+
+      {/* Radial gradient glow */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_50%_30%,rgba(59,130,246,0.12)_0%,transparent_70%)]" />
+
+      {/* Subtle dot grid */}
       <div
-        className="absolute inset-0 opacity-[0.03]"
+        className="absolute inset-0 opacity-[0.04]"
         style={{
-          backgroundImage: `linear-gradient(rgba(255,255,255,.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.5) 1px, transparent 1px)`,
-          backgroundSize: "60px 60px",
+          backgroundImage: `radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1px)`,
+          backgroundSize: "32px 32px",
         }}
       />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-40">
-        <div className="max-w-4xl">
-          <motion.div
-            {...fadeUp}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="mb-6"
-          >
-            <Badge variant="brand" className="bg-brand-900/50 text-brand-300 border-brand-700">
-              {t("hero.badge")}
-            </Badge>
-          </motion.div>
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-36 lg:py-44">
+        <div className="max-w-4xl mx-auto text-center">
 
-          <motion.h1
-            {...fadeUp}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight tracking-tight"
-          >
-            {t("hero.title1")}
-            <br />
-            {t("hero.title2")}
-            <br />
-            <span className="text-brand-400">{t("hero.title3")}</span>
-          </motion.h1>
+          {/* Per-word blur-in heading */}
+          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl xl:text-[80px] text-white leading-[1.08] tracking-tight text-balance mb-8">
+            {headingWords.map((word, i) => (
+              <motion.span
+                key={i}
+                initial={{ opacity: 0, filter: "blur(8px)", y: 12 }}
+                animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 + i * 0.045, ease: "easeOut" }}
+                className="inline-block mr-[0.25em] last:mr-0"
+              >
+                {word}
+              </motion.span>
+            ))}
+          </h1>
 
+          {/* Subtext */}
           <motion.p
-            {...fadeUp}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="mt-6 text-lg lg:text-xl text-dark-300 max-w-2xl leading-relaxed"
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="text-lg lg:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed mb-12"
           >
             {t("hero.description")}
           </motion.p>
 
+          {/* CTA buttons */}
           <motion.div
-            {...fadeUp}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="mt-10 flex flex-col sm:flex-row gap-4"
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.75 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <Button
               href={process.env.NEXT_PUBLIC_CALENDLY_URL ?? "https://calendly.com/arkaecom-proton/30min"}
               external
               size="lg"
               variant="primary"
-              className="group"
+              className="rounded-full bg-accent hover:bg-accent-dark border-accent shadow-lg shadow-accent/20 group"
             >
               <Calendar className="w-5 h-5" />
               {t("hero.cta1")}
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button href="/offerte" size="lg" variant="outline" className="border-dark-700 text-white hover:bg-dark-800 hover:border-dark-600">
-              <FileText className="w-5 h-5" />
-              {t("hero.cta2")}
+            <Button
+              href="/diensten"
+              size="lg"
+              variant="outline"
+              className="rounded-full border-white/20 text-white hover:bg-white/10 hover:border-white/40"
+            >
+              {t("hero.cta2nav")}
             </Button>
           </motion.div>
 
+          {/* Trust pills */}
           <motion.div
-            {...fadeUp}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            className="mt-12 flex items-center gap-6 text-sm text-dark-400"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.95 }}
+            className="mt-14 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-slate-500"
           >
             {[t("hero.stat1"), t("hero.stat2"), t("hero.stat3")].map((item, i) => (
               <div key={i} className="flex items-center gap-2">
-                <div className="w-1.5 h-1.5 rounded-full bg-brand-500" />
+                <span className="w-1.5 h-1.5 rounded-full bg-accent/70 flex-shrink-0" />
                 {item}
               </div>
             ))}
           </motion.div>
         </div>
       </div>
+
+      {/* Bottom fade to white */}
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-white" />
     </section>
   );
 }

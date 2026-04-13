@@ -2,18 +2,17 @@
 
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import type { HTMLMotionProps } from "framer-motion";
 import Link from "next/link";
 import { forwardRef } from "react";
 
-// Omit only the specific event handlers that framer-motion redefines with incompatible types
+// Omit the event handlers that framer-motion redefines with incompatible types
 type NativeButtonProps = Omit<
   React.ButtonHTMLAttributes<HTMLButtonElement>,
   "onAnimationStart" | "onDrag" | "onDragStart" | "onDragEnd"
 >;
 
 interface ButtonProps extends NativeButtonProps {
-  variant?: "primary" | "secondary" | "outline" | "ghost";
+  variant?: "primary" | "secondary" | "outline" | "ghost" | "ink";
   size?: "sm" | "md" | "lg";
   href?: string;
   external?: boolean;
@@ -21,20 +20,29 @@ interface ButtonProps extends NativeButtonProps {
   children: React.ReactNode;
 }
 
+// Arka V2 editorial button variants
 const buttonVariants = {
+  // Arka blue on cream, primary CTA
   primary:
-    "bg-brand-600 text-white hover:bg-brand-700 shadow-lg shadow-brand-600/25 border border-brand-600",
+    "bg-arka text-white hover:bg-arka-hover ring-1 ring-arka/30",
+  // Dark ink pill, secondary CTA with strong contrast on light bg
+  ink:
+    "bg-ink text-cream hover:bg-ink-light ring-1 ring-ink/20",
+  // Neutral outline on light
   secondary:
-    "bg-dark-900 text-white hover:bg-dark-800 shadow-lg shadow-dark-900/25 border border-dark-900",
+    "bg-transparent text-slate-ink ring-1 ring-slate-950/15 hover:bg-slate-950/5 hover:ring-slate-950/30",
+  // Legacy alias, same as secondary
   outline:
-    "bg-transparent text-dark-900 border border-dark-200 hover:border-dark-400 hover:bg-dark-50",
-  ghost: "bg-transparent text-dark-600 hover:text-dark-900 hover:bg-dark-50 border border-transparent",
+    "bg-transparent text-slate-ink ring-1 ring-slate-950/15 hover:bg-slate-950/5 hover:ring-slate-950/30",
+  // Text only
+  ghost:
+    "bg-transparent text-slate-ink/80 hover:text-slate-ink hover:bg-slate-950/5",
 };
 
 const buttonSizes = {
-  sm: "px-4 py-2 text-sm rounded-lg",
-  md: "px-6 py-3 text-sm font-medium rounded-xl",
-  lg: "px-8 py-4 text-base font-semibold rounded-xl",
+  sm: "px-4 py-2 text-sm rounded-full",
+  md: "px-6 py-2.5 text-sm rounded-full",
+  lg: "px-8 py-3.5 text-[15px] rounded-full",
 };
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -53,13 +61,17 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     ref
   ) => {
     const classes = cn(
-      "inline-flex items-center justify-center gap-2 transition-all duration-200 font-medium cursor-pointer select-none",
-      "focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2",
+      "inline-flex items-center justify-center gap-2 font-medium cursor-pointer select-none whitespace-nowrap",
+      "transition-all duration-200 ease-out",
+      "focus:outline-none focus-visible:ring-2 focus-visible:ring-arka focus-visible:ring-offset-2 focus-visible:ring-offset-cream",
       buttonVariants[variant],
       buttonSizes[size],
       (disabled || loading) && "opacity-50 cursor-not-allowed pointer-events-none",
       className
     );
+
+    const hoverMotion = { y: -1 };
+    const tapMotion = { y: 0, scale: 0.98 };
 
     if (href) {
       if (external) {
@@ -69,19 +81,23 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
             target="_blank"
             rel="noopener noreferrer"
             className={classes}
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
+            whileHover={hoverMotion}
+            whileTap={tapMotion}
           >
             {children}
           </motion.a>
         );
       }
       return (
-        <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+        <motion.span
+          className="inline-flex"
+          whileHover={hoverMotion}
+          whileTap={tapMotion}
+        >
           <Link href={href} className={classes}>
             {children}
           </Link>
-        </motion.div>
+        </motion.span>
       );
     }
 
@@ -90,8 +106,8 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         className={classes}
         disabled={disabled || loading}
-        whileHover={!disabled && !loading ? { scale: 1.02 } : {}}
-        whileTap={!disabled && !loading ? { scale: 0.98 } : {}}
+        whileHover={!disabled && !loading ? hoverMotion : {}}
+        whileTap={!disabled && !loading ? tapMotion : {}}
         {...props}
       >
         {loading ? (

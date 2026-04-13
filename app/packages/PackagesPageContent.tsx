@@ -1,34 +1,36 @@
 "use client";
 
-import { Badge } from "@/components/ui/Badge";
 import { useTranslation } from "@/lib/i18n";
-import { PackagesContent } from "./PackagesContent";
+import { PackagesV2 } from "@/components/sections/v2/PackagesV2";
+import { FAQV2 } from "@/components/sections/v2/FAQV2";
+import { ClosingCTAV2 } from "@/components/sections/v2/ClosingCTAV2";
 
 export function PackagesPageContent() {
   const { t } = useTranslation();
 
   return (
     <>
-      <section className="bg-dark-950 py-16 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Badge
-            variant="brand"
-            className="bg-brand-900/50 text-brand-300 border-brand-700 mb-4"
-          >
+      {/* Editorial hero */}
+      <section className="relative bg-cream pt-32 pb-16 md:pt-40 md:pb-20">
+        <div className="absolute inset-x-0 top-0 h-80 canvas-grid opacity-40 pointer-events-none" />
+        <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+          <p className="text-overline uppercase text-slate-meta font-semibold mb-8">
+            <span className="inline-block w-6 border-t border-slate-meta/60 mr-3 align-middle" />
             {t("packagesPage.badge")}
-          </Badge>
-          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-            {t("packagesPage.heading1")}
-            <br />
-            {t("packagesPage.heading2")}
+          </p>
+          <h1 className="font-serif font-medium text-display-sm text-slate-ink tracking-tight leading-[1.05] max-w-4xl text-balance">
+            {t("packagesPage.heading1")}{" "}
+            <em className="italic">{t("packagesPage.heading2")}</em>
           </h1>
-          <p className="text-dark-400 max-w-xl mx-auto leading-relaxed">
+          <p className="mt-8 text-[17px] md:text-lg text-slate-muted leading-relaxed max-w-2xl text-pretty">
             {t("packagesPage.description")}
           </p>
         </div>
       </section>
 
-      <PackagesContent />
+      <PackagesV2 />
+      <FAQV2 />
+      <ClosingCTAV2 />
     </>
   );
 }

@@ -24,6 +24,7 @@ export const translations = {
 
   // -- Hero --
   "hero.badge": { nl: "Jouw digitale afdeling, zonder de overhead", en: "Your digital department, without the overhead" },
+  "hero.heading": { nl: "Jouw digitale afdeling, zonder de overhead.", en: "Your digital department, without the overhead." },
   "hero.title1": { nl: "Meer impact.", en: "More impact." },
   "hero.title2": { nl: "Minder gedoe.", en: "Less hassle." },
   "hero.title3": { nl: "E\u00E9n digitale partner.", en: "One digital partner." },
@@ -31,8 +32,9 @@ export const translations = {
     nl: "Arka bouwt, optimaliseert en automatiseert jouw digitale aanwezigheid, van website tot AI. Alles onder \u00E9\u00E9n dak, zonder de overhead van een groot bureau.",
     en: "Arka builds, optimizes and automates your digital presence, from website to AI. All under one roof, without the overhead of a large agency.",
   },
-  "hero.cta1": { nl: "Gratis kennismaking", en: "Free consultation" },
+  "hero.cta1": { nl: "Plan een kennismaking", en: "Schedule a consultation" },
   "hero.cta2": { nl: "Vraag offerte aan", en: "Request a quote" },
+  "hero.cta2nav": { nl: "Bekijk diensten", en: "View services" },
   "hero.stat1": { nl: "Geen lange contracten", en: "No long contracts" },
   "hero.stat2": { nl: "Gratis kennismaking", en: "Free consultation" },
   "hero.stat3": { nl: "Binnen 24u reactie", en: "Response within 24h" },
@@ -282,6 +284,49 @@ export const translations = {
     nl: "Past iets niet? Dan zeggen we dat. Liever een eerlijk advies dan een factuur die niet klopt.",
     en: "Something doesn't fit? We'll tell you. We'd rather give honest advice than send an incorrect invoice.",
   },
+  "overOns.achtergrondBadge": { nl: "Mijn achtergrond", en: "My background" },
+  "overOns.achtergrondHeading": { nl: "Zelfgeleerd, uit passie voor ondernemen", en: "Self-taught, driven by a passion for entrepreneurship" },
+  "overOns.achtergrondDesc1": {
+    nl: "Ik ben geen bureaudirecteur met twintig jaar corporate ervaring. Ik ben iemand die heeft geleerd door gewoon te beginnen. Websites bouwen, code schrijven, campagnes draaien, testen wat werkt en schrappen wat dat niet doet.",
+    en: "I'm not an agency director with twenty years of corporate experience. I'm someone who learned by simply starting. Building websites, writing code, running campaigns, testing what works and cutting what doesn't.",
+  },
+  "overOns.achtergrondDesc2": {
+    nl: "Die autodidactische aanpak heeft me iets gegeven wat veel bureaus missen: ik begrijp het probleem van de ondernemer, niet alleen de oplossing van de developer. MKB-bedrijven in Nederland verdienen betere digitale ondersteuning. Geen dure agencies met overhead die jij betaalt, maar directe samenwerking met iemand die echt begrijpt wat er op het spel staat.",
+    en: "That self-taught approach gave me something many agencies lack: I understand the entrepreneur's problem, not just the developer's solution. SME businesses in the Netherlands deserve better digital support. No expensive agencies with overhead you foot the bill for, but direct collaboration with someone who genuinely understands what's at stake.",
+  },
+  "overOns.achtergrondDesc3": {
+    nl: "Vandaag werk ik met moderne tools zoals Next.js, TypeScript en Claude AI. Niet omdat het trendy is, maar omdat het mij sneller maakt en klanten betere resultaten oplevert.",
+    en: "Today I work with modern tools like Next.js, TypeScript and Claude AI. Not because it's trendy, but because it makes me faster and delivers better results for clients.",
+  },
+  "overOns.resultatenBadge": { nl: "Bewezen resultaten", en: "Proven results" },
+  "overOns.resultatenHeading": { nl: "Wat klanten al bereikt hebben", en: "What clients have already achieved" },
+  "overOns.resultatenDesc": {
+    nl: "Arka werkt voor een beperkt aantal klanten tegelijk. Zo blijft de kwaliteit hoog en de aandacht persoonlijk. Hier zijn twee recente resultaten.",
+    en: "Arka works with a limited number of clients at a time. That keeps quality high and attention personal. Here are two recent results.",
+  },
+  "overOns.case1Metric": { nl: "+200% aanvragen", en: "+200% enquiries" },
+  "overOns.case1Title": { nl: "Display-pallets.nl", en: "Display-pallets.nl" },
+  "overOns.case1Desc": {
+    nl: "Nieuwe website met conversiefocus, SEO-structuur en geautomatiseerde leadflow. Het aantal inkomende aanvragen verdubbelde meer dan twee keer over.",
+    en: "New website with conversion focus, SEO structure and automated lead flow. The number of incoming enquiries more than doubled.",
+  },
+  "overOns.case1Link": { nl: "Bekijk case study", en: "View case study" },
+  "overOns.case2Metric": { nl: "3 nieuwe klanten", en: "3 new clients" },
+  "overOns.case2Title": { nl: "De Palletleverancier BV", en: "De Palletleverancier BV" },
+  "overOns.case2Desc": {
+    nl: "Website herontwerp gecombineerd met gerichte leadgeneratie. Resultaat: drie nieuwe zakelijke klanten binnen de eerste zes weken.",
+    en: "Website redesign combined with targeted lead generation. Result: three new business clients within the first six weeks.",
+  },
+  "overOns.case2Link": { nl: "Bekijk case study", en: "View case study" },
+  "overOns.contactBadge": { nl: "Direct contact", en: "Direct contact" },
+  "overOns.contactHeading": { nl: "Liever meteen bellen of mailen?", en: "Prefer to call or email right away?" },
+  "overOns.contactDesc": {
+    nl: "Geen contactformulier dat ergens in een inbox verdwijnt. Je bereikt mij direct via onderstaande gegevens. Ik reageer binnen 24 uur.",
+    en: "No contact form disappearing into some inbox. You can reach me directly via the details below. I respond within 24 hours.",
+  },
+  "overOns.contactEmail": { nl: "E-mail", en: "Email" },
+  "overOns.contactPhone": { nl: "Telefoon", en: "Phone" },
+  "overOns.contactLinkedIn": { nl: "LinkedIn", en: "LinkedIn" },
   "overOns.ctaHeading": { nl: "Klaar om kennis te maken?", en: "Ready to meet?" },
   "overOns.ctaDescription": { nl: "Plan een vrijblijvend kennismakingsgesprek van 30 minuten.", en: "Schedule a no-obligation introductory call of 30 minutes." },
   "overOns.gesprekPlannen": { nl: "Gesprek plannen", en: "Schedule meeting" },
@@ -419,16 +464,21 @@ export const translations = {
   "val.selecteerDoel": { nl: "Selecteer je doel", en: "Select your goal" },
   "val.selecteerBudget": { nl: "Selecteer een budgetrange", en: "Select a budget range" },
   "val.selecteerTijdlijn": { nl: "Selecteer een tijdlijn", en: "Select a timeline" },
-  // -- Cookie banner --
-  "cookie.message": {
-    nl: "Deze website gebruikt alleen functionele cookies en anonieme analytics. Geen tracking, geen advertenties.",
-    en: "This website only uses functional cookies and anonymous analytics. No tracking, no ads.",
-  },
-  "cookie.learnMore": { nl: "Meer informatie", en: "Learn more" },
-  "cookie.accept": { nl: "Accepteren", en: "Accept" },
-  "cookie.decline": { nl: "Weigeren", en: "Decline" },
+  // -- Intro cards (after hero) --
+  "intro.card1.title": { nl: "Alles onder \u00E9\u00E9n dak", en: "All under one roof" },
+  "intro.card1.desc": { nl: "Website, SEO, AI, data en branding. Geen losse leveranciers, geen ruis. E\u00E9n partner die alles overziet.", en: "Website, SEO, AI, data and branding. No separate vendors, no noise. One partner who oversees everything." },
+  "intro.card2.title": { nl: "Direct contact", en: "Direct contact" },
+  "intro.card2.desc": { nl: "Je werkt rechtstreeks met de persoon die het werk doet. Geen accountmanagers, geen doorverwijzingen, geen vertraging.", en: "You work directly with the person doing the work. No account managers, no referrals, no delays." },
+  "intro.card3.title": { nl: "Meetbare resultaten", en: "Measurable results" },
+  "intro.card3.desc": { nl: "Elke actie is gekoppeld aan een concreet resultaat. We meten wat telt: verkeer, leads, conversie en tijdsbesparing.", en: "Every action is linked to a concrete result. We measure what matters: traffic, leads, conversion and time savings." },
 
-  // -- Comparison --
+  // -- Services section --
+  "services.label": { nl: "Diensten", en: "Services" },
+  "services.heading": { nl: "Wat we voor je bouwen", en: "What we build for you" },
+  "services.description": { nl: "Zes digitale disciplines, slim gecombineerd of afzonderlijk ingezet.", en: "Six digital disciplines, smartly combined or deployed individually." },
+  "services.meerInfo": { nl: "Meer info", en: "Learn more" },
+
+  // -- Comparison table --
   "comparison.label": { nl: "Waarom Arka?", en: "Why Arka?" },
   "comparison.heading": { nl: "Arka vs. traditioneel bureau", en: "Arka vs. traditional agency" },
   "comparison.traditional": { nl: "Traditioneel bureau", en: "Traditional agency" },
@@ -439,6 +489,36 @@ export const translations = {
   "comparison.row4": { nl: "Flexibel opschalen of afschalen", en: "Flexibly scale up or down" },
   "comparison.row5": { nl: "Transparante prijzen", en: "Transparent pricing" },
   "comparison.row6": { nl: "Jij behoudt eigenaarschap", en: "You retain ownership" },
+
+  // -- Results / stats section --
+  "results.label": { nl: "Resultaten", en: "Results" },
+  "results.heading": { nl: "Wat onze aanpak oplevert", en: "What our approach delivers" },
+  "results.stat1.value": { nl: "+285%", en: "+285%" },
+  "results.stat1.label": { nl: "Meer organisch verkeer", en: "More organic traffic" },
+  "results.stat2.value": { nl: "+160%", en: "+160%" },
+  "results.stat2.label": { nl: "Meer leads per maand", en: "More leads per month" },
+  "results.stat3.value": { nl: "15u", en: "15h" },
+  "results.stat3.label": { nl: "Bespaard per week via AI", en: "Saved per week via AI" },
+  "results.stat4.value": { nl: "\u20AC1,8M", en: "\u20AC1.8M" },
+  "results.stat4.label": { nl: "Aan leads gegenereerd", en: "In leads generated" },
+
+  // -- Testimonial --
+  "testimonial.quote": {
+    nl: "Eindelijk een bureau waar je direct mee kunt schakelen. Geen vergaderingen, geen vertraging. Gewoon resultaat.",
+    en: "Finally an agency you can work with directly. No meetings, no delays. Just results.",
+  },
+  "testimonial.author": { nl: "Directeur, MKB-bedrijf Dordrecht", en: "Director, SMB Dordrecht" },
+  "testimonial.badge": { nl: "+240% meer leads", en: "+240% more leads" },
+
+  // -- Cookie banner --
+  "cookie.message": {
+    nl: "Deze website gebruikt alleen functionele cookies en anonieme analytics. Geen tracking, geen advertenties.",
+    en: "This website only uses functional cookies and anonymous analytics. No tracking, no ads.",
+  },
+  "cookie.learnMore": { nl: "Meer informatie", en: "Learn more" },
+  "cookie.accept": { nl: "Accepteren", en: "Accept" },
+  "cookie.decline": { nl: "Weigeren", en: "Decline" },
+
 } as const;
 
 export type TranslationKey = keyof typeof translations;

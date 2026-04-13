@@ -17,7 +17,7 @@ export function ComparisonSection() {
   ];
 
   return (
-    <section className="py-20 lg:py-28 bg-background">
+    <section className="py-24 lg:py-32 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -29,7 +29,7 @@ export function ComparisonSection() {
           <p className="text-accent font-semibold text-sm uppercase tracking-wider mb-4">
             {t("comparison.label")}
           </p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-text">
+          <h2 className="font-serif text-4xl lg:text-5xl text-slate-900 text-balance leading-tight">
             {t("comparison.heading")}
           </h2>
         </motion.div>
@@ -39,15 +39,15 @@ export function ComparisonSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="bg-surface border border-white/10 rounded-2xl overflow-hidden"
+          className="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm"
         >
           {/* Header */}
-          <div className="grid grid-cols-3 bg-white/5 border-b border-white/10">
+          <div className="grid grid-cols-3 bg-slate-50 border-b border-slate-200">
             <div className="py-4 px-6 col-span-1" />
-            <div className="py-4 px-6 text-center text-sm font-semibold text-text-muted border-l border-white/10">
+            <div className="py-4 px-6 text-center text-sm font-semibold text-slate-500 border-l border-slate-200">
               {t("comparison.traditional")}
             </div>
-            <div className="py-4 px-6 text-center text-sm font-bold text-accent border-l border-white/10 bg-accent/10">
+            <div className="py-4 px-6 text-center text-sm font-bold text-accent border-l border-slate-200 bg-accent/5">
               {t("comparison.arka")}
             </div>
           </div>
@@ -56,18 +56,16 @@ export function ComparisonSection() {
           {rows.map((row, i) => (
             <div
               key={i}
-              className="grid grid-cols-3 border-b border-white/5 last:border-0 hover:bg-white/[0.03] transition-colors"
+              className="grid grid-cols-3 border-b border-slate-100 last:border-0 hover:bg-slate-50/50 transition-colors"
             >
-              <div className="py-4 px-6 text-sm text-text font-medium flex items-center">
+              <div className="py-4 px-6 text-sm text-slate-700 font-medium flex items-center">
                 {row}
               </div>
-              <div className="py-4 px-6 flex items-center justify-center border-l border-white/5">
-                <X className="w-5 h-5 text-red-400/70" aria-hidden="true" />
-                <span className="sr-only">Nee</span>
+              <div className="py-4 px-6 flex items-center justify-center border-l border-slate-100">
+                <X className="w-5 h-5 text-red-400" />
               </div>
-              <div className="py-4 px-6 flex items-center justify-center border-l border-white/5 bg-accent/5">
-                <Check className="w-5 h-5 text-emerald-400" aria-hidden="true" />
-                <span className="sr-only">Ja</span>
+              <div className="py-4 px-6 flex items-center justify-center border-l border-slate-100 bg-accent/5">
+                <Check className="w-5 h-5 text-emerald-500" />
               </div>
             </div>
           ))}

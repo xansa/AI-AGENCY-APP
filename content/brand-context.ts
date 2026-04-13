@@ -138,6 +138,26 @@ export const COLOR_USAGE = {
     secondaryAccent: BRAND_COLORS.cyan.DEFAULT,
     tip: "Gebruik de gradient achtergrond voor title slides, solid dark voor content slides.",
   },
+  /**
+   * V2 Website palette (tailwind tokens in tailwind.config.ts).
+   * Navy is dominant anchor, cream is body-papier voor long-form content,
+   * arka blauw is accent-only. Ritme: navy hero -> cream body -> navy CTA ->
+   * cream content -> navy close. Navbar + footer zijn altijd navy.
+   */
+  website: {
+    navyAnchor: "#0B1220",          // bg-ink: hero, navbar, footer, CTA secties
+    navySoft: "#152238",            // bg-ink-soft: cards/surfaces op navy
+    navyMid: "#1E3A5F",             // bg-ink-mid: brand navy mid-tone, borders
+    cream: "#FAF7F2",               // bg-cream: long-form body-papier secties
+    creamDeep: "#F3EFE7",           // bg-cream-deep: subtiele variatie binnen cream
+    arkaAccent: "#2563EB",          // text-arka / bg-arka: links, CTAs, highlights
+    arkaHover: "#1D4ED8",
+    textOnNavy: "#FAF7F2",          // primaire tekst op navy
+    textOnNavyMuted: "rgba(250, 247, 242, 0.78)",
+    textOnCream: "#0B1220",         // primaire tekst op cream
+    textOnCreamMuted: "#475569",
+    tip: "Navy moet VAKER de base zijn dan cream. Cream alleen voor long-form content (blog detail, diensten detail, FAQ). Hero, navbar, footer, CTA, closing secties zijn altijd navy.",
+  },
 } as const;
 
 // ─── Typografie ───────────────────────────────────────────────────────────────
