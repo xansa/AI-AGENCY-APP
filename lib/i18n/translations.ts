@@ -103,7 +103,7 @@ export const translations = {
     nl: "Zonder duur kantoor, management en overhead kan Arka scherper prijzen en sneller leveren. Je betaalt voor waarde, niet voor structuur.",
     en: "Without expensive offices, management and overhead, Arka can price sharper and deliver faster. You pay for value, not structure.",
   },
-  "why.3.proof": { nl: "Pakketten vanaf \u20AC1.000/mnd, een fractie van een inhouse team.", en: "Packages from \u20AC1,000/mo, a fraction of an in-house team." },
+  "why.3.proof": { nl: "Pakketten vanaf \u20AC750/mnd, een fractie van een inhouse team.", en: "Packages from \u20AC750/mo, a fraction of an in-house team." },
 
   // -- Packages Preview --
   "packages.label": { nl: "Combipackages", en: "Packages" },
@@ -436,10 +436,10 @@ export const translations = {
   "form.opt.doelBranding": { nl: "Branding en design verbeteren", en: "Improve branding and design" },
   "form.opt.doelCombi": { nl: "Combinatie van bovenstaande", en: "Combination of the above" },
 
-  "form.opt.budgetStarterE": { nl: "Eenmalig: Starter (vanaf \u20AC2.500)", en: "One-time: Starter (from \u20AC2,500)" },
+  "form.opt.budgetStarterE": { nl: "Eenmalig: Starter (vanaf \u20AC2.000)", en: "One-time: Starter (from \u20AC2,000)" },
   "form.opt.budgetProfE": { nl: "Eenmalig: Professional (op maat)", en: "One-time: Professional (custom quote)" },
   "form.opt.budgetEntE": { nl: "Eenmalig: Enterprise (op maat)", en: "One-time: Enterprise (custom quote)" },
-  "form.opt.budgetStarterM": { nl: "Maandelijks: Starter (vanaf \u20AC1.000/mnd)", en: "Monthly: Starter (from \u20AC1,000/mo)" },
+  "form.opt.budgetStarterM": { nl: "Maandelijks: Starter (vanaf \u20AC750/mnd)", en: "Monthly: Starter (from \u20AC750/mo)" },
   "form.opt.budgetProfM": { nl: "Maandelijks: Professional (op maat)", en: "Monthly: Professional (custom quote)" },
   "form.opt.budgetEntM": { nl: "Maandelijks: Enterprise (op maat)", en: "Monthly: Enterprise (custom quote)" },
   "form.opt.budgetOnzeker": { nl: "Nog niet zeker", en: "Not sure yet" },

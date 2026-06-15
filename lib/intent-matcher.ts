@@ -43,10 +43,10 @@ const INTENTS: IntentDefinition[] = [
     response:
       "Arka biedt twee modellen: **maandelijks** (doorlopende samenwerking) of **eenmalig** (project).\n\n" +
       "**Maandelijks (aanbevolen):**\n" +
-      "\u2022 **Starter** · vanaf \u20AC1.000/mnd _(Websites + SEO)_\n" +
+      "\u2022 **Starter** · vanaf \u20AC750/mnd _(Websites + SEO)_\n" +
       "\u2022 **Professional** · op maat _(+ AI Chatbots + Branding)_ Meest gekozen\n" +
       "\u2022 **Enterprise** · op maat _(alle 6 diensten)_\n\n" +
-      "**Eenmalig:** Starter vanaf \u20AC2.500 | Professional op maat | Enterprise op maat\n\n" +
+      "**Eenmalig:** Starter vanaf \u20AC2.000 | Professional op maat | Enterprise op maat\n\n" +
       "Wil je weten welk pakket het beste bij jouw situatie past?",
     cta: "Vraag een vrijblijvende offerte aan via [/offerte](/offerte) of plan een kennismakingsgesprek.",
   },
@@ -185,8 +185,8 @@ const INTENTS: IntentDefinition[] = [
     boostKeywords: ["pakket", "package", "prijs"],
     response:
       "**Starter** is ons instappakket:\n\n" +
-      "**Maandelijks:** vanaf \u20AC1.000/mnd\n" +
-      "**Eenmalig:** vanaf \u20AC2.500\n\n" +
+      "**Maandelijks:** vanaf \u20AC750/mnd\n" +
+      "**Eenmalig:** vanaf \u20AC2.000\n\n" +
       "Diensten: Websites & Webshops + SEO & Content\n" +
       "Voor wie: ZZP'ers en kleine MKB-bedrijven.\n\n" +
       "Maandelijks inbegrepen:\n" +

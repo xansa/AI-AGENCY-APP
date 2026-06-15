@@ -21,9 +21,9 @@ export const landingPages: LandingPage[] = [
     title: "Website laten maken in Dordrecht",
     title_en: "Website Development in Dordrecht",
     metaDescription:
-      "Professionele website laten maken in Dordrecht? Arka bouwt snelle, vindbare websites voor MKB in de Drechtsteden. Maatwerk, SEO-proof, vanaf \u20AC1.000/mnd.",
+      "Professionele website laten maken in Dordrecht? Arka bouwt snelle, vindbare websites voor MKB in de Drechtsteden. Maatwerk, SEO-proof, vanaf \u20AC750/mnd.",
     metaDescription_en:
-      "Professional website development in Dordrecht? Arka builds fast, findable websites for SMBs in the Drechtsteden region. Custom-built, SEO-proof, from \u20AC1,000/mo.",
+      "Professional website development in Dordrecht? Arka builds fast, findable websites for SMBs in the Drechtsteden region. Custom-built, SEO-proof, from \u20AC750/mo.",
     h1: "Website laten maken in Dordrecht",
     h1_en: "Website Development in Dordrecht",
     subtitle:
@@ -60,8 +60,8 @@ Dit omvat:
 
 We bieden twee modellen aan:
 
-\u2022 **Maandelijks**: vanaf \u20AC1.000 per maand, inclusief hosting, onderhoud, updates en doorontwikkeling
-\u2022 **Eenmalig**: vanaf \u20AC2.500 voor een complete bedrijfswebsite
+\u2022 **Maandelijks**: vanaf \u20AC750 per maand, inclusief hosting, onderhoud, updates en doorontwikkeling
+\u2022 **Eenmalig**: vanaf \u20AC2.000 voor een complete bedrijfswebsite
 
 Beide opties inclusief responsive design, SEO-basis, contactformulier, en oplevering binnen 2-4 weken. Geen verborgen kosten, geen verrassingen achteraf.
 
@@ -102,8 +102,8 @@ This includes:
 
 We offer two models:
 
-\u2022 **Monthly**: from \u20AC1,000 per month, including hosting, maintenance, updates and continued development
-\u2022 **One-time**: from \u20AC2,500 for a complete business website
+\u2022 **Monthly**: from \u20AC750 per month, including hosting, maintenance, updates and continued development
+\u2022 **One-time**: from \u20AC2,000 for a complete business website
 
 Both options include responsive design, SEO foundation, contact form, and delivery within 2-4 weeks. No hidden costs, no surprises.
 
@@ -175,7 +175,7 @@ Uiteraard werken we ook met bedrijven buiten de Drechtsteden. Het merendeel van 
 
 We bieden drie pakketten aan, elk afgestemd op een ander type bedrijf:
 
-\u2022 **Starter** (vanaf \u20AC1.000/mnd of \u20AC2.500 eenmalig): een complete bedrijfswebsite met SEO-basis
+\u2022 **Starter** (vanaf \u20AC750/mnd of \u20AC2.000 eenmalig): een complete bedrijfswebsite met SEO-basis
 \u2022 **Professional** (op maat): website + chatbot, CRM-koppeling en doorlopende SEO
 \u2022 **Enterprise** (op maat): volledig digitaal platform met dashboards, automatisering en dedicated support`,
     body_en: `**Your digital department in the Drechtsteden**
@@ -215,7 +215,7 @@ Of course, we also work with businesses outside the Drechtsteden. Most of our co
 
 We offer three packages, each tailored to a different type of business:
 
-\u2022 **Starter** (from \u20AC1,000/mo or \u20AC2,500 one-time): a complete business website with SEO foundation
+\u2022 **Starter** (from \u20AC750/mo or \u20AC2,000 one-time): a complete business website with SEO foundation
 \u2022 **Professional** (custom quote): website + chatbot, CRM integration, and ongoing SEO
 \u2022 **Enterprise** (custom quote): full digital platform with dashboards, automation, and dedicated support`,
     cta: "Neem contact op voor een vrijblijvend gesprek",
@@ -292,7 +292,7 @@ Het doel: verschijnen in de Google Map Pack wanneer iemand zoekt naar jouw diens
 
 SEO is inbegrepen in al onze pakketten:
 
-\u2022 **Starter** (vanaf \u20AC1.000/mnd): SEO-basis inbegrepen (technische optimalisatie, metadata, sitemap)
+\u2022 **Starter** (vanaf \u20AC750/mnd): SEO-basis inbegrepen (technische optimalisatie, metadata, sitemap)
 \u2022 **Professional** (op maat): doorlopende SEO met maandelijkse content en rapportage
 \u2022 **Enterprise** (op maat): uitgebreide SEO-strategie met content, linkbuilding en dedicated support
 
@@ -367,7 +367,7 @@ The goal: appearing in the Google Map Pack when someone searches for your servic
 
 SEO is included in all our packages:
 
-\u2022 **Starter** (from \u20AC1,000/mo): SEO foundation included (technical optimization, metadata, sitemap)
+\u2022 **Starter** (from \u20AC750/mo): SEO foundation included (technical optimization, metadata, sitemap)
 \u2022 **Professional** (custom quote): ongoing SEO with monthly content and reporting
 \u2022 **Enterprise** (custom quote): comprehensive SEO strategy with content, link building, and dedicated support
 
@@ -408,9 +408,9 @@ The businesses that benefit most from SEO have a customer value above \u20AC500,
     title: "Website laten maken in Rotterdam",
     title_en: "Website Development in Rotterdam",
     metaDescription:
-      "Website laten maken in Rotterdam? Arka bouwt snelle, vindbare websites voor bedrijven in de Maasstad. Next.js maatwerk, SEO-proof, vanaf €1.000/mnd.",
+      "Website laten maken in Rotterdam? Arka bouwt snelle, vindbare websites voor bedrijven in de Maasstad. Next.js maatwerk, SEO-proof, vanaf €750/mnd.",
     metaDescription_en:
-      "Website development in Rotterdam? Arka builds fast, findable websites for businesses in the Maasstad. Next.js custom-built, SEO-proof, from €1,000/mo.",
+      "Website development in Rotterdam? Arka builds fast, findable websites for businesses in the Maasstad. Next.js custom-built, SEO-proof, from €750/mo.",
     h1: "Website laten maken in Rotterdam",
     h1_en: "Website Development in Rotterdam",
     subtitle:
@@ -459,7 +459,7 @@ We richten je lokale SEO in zodat je gevonden wordt door mensen die zoeken naar 
 
 **Investering**
 
-• **Starter** (vanaf €1.000/mnd of €2.500 eenmalig): complete bedrijfswebsite met SEO-basis, contactformulier, responsive design
+• **Starter** (vanaf €750/mnd of €2.000 eenmalig): complete bedrijfswebsite met SEO-basis, contactformulier, responsive design
 • **Professional** (op maat): website + AI-chatbot, CRM-koppeling, doorlopende SEO
 • **Enterprise** (op maat): volledig digitaal platform met dashboards, automatisering en dedicated support
 
@@ -492,7 +492,7 @@ We set up your local SEO so you're found by people searching for your service in
 
 **Investment**
 
-• **Starter** (from €1,000/mo or €2,500 one-time): complete business website with SEO foundation, contact form, responsive design
+• **Starter** (from €750/mo or €2,000 one-time): complete business website with SEO foundation, contact form, responsive design
 • **Professional** (custom quote): website + AI chatbot, CRM integration, ongoing SEO
 • **Enterprise** (custom quote): full digital platform with dashboards, automation, and dedicated support
 
@@ -586,7 +586,7 @@ Het doel: zichtbaar zijn in het Map Pack wanneer iemand zoekt naar "[jouw dienst
 
 **Investering in SEO**
 
-• **Starter** (vanaf €1.000/mnd): SEO-basis, technische optimalisatie, metadata, sitemap
+• **Starter** (vanaf €750/mnd): SEO-basis, technische optimalisatie, metadata, sitemap
 • **Professional** (op maat): doorlopende SEO, maandelijkse content, rapportage over rankings en verkeer
 • **Enterprise** (op maat): uitgebreide strategie met contentproductie, linkbuilding en dedicated support
 
@@ -640,7 +640,7 @@ The goal: being visible in the Map Pack when someone searches for "[your service
 
 **SEO investment**
 
-• **Starter** (from €1,000/mo): SEO foundation, technical optimization, metadata, sitemap
+• **Starter** (from €750/mo): SEO foundation, technical optimization, metadata, sitemap
 • **Professional** (custom quote): ongoing SEO, monthly content, reporting on rankings and traffic
 • **Enterprise** (custom quote): comprehensive strategy with content production, link building, and dedicated support
 
@@ -665,9 +665,9 @@ Email info@arkadigital.nl or call +31 6 46140986. We'll discuss your current sit
     title: "Website laten maken in Amsterdam",
     title_en: "Website Development in Amsterdam",
     metaDescription:
-      "Website laten maken in Amsterdam? Arka bouwt razendsnelle Next.js websites voor Amsterdamse bedrijven. Maatwerk, SEO-proof, vanaf €1.000/mnd.",
+      "Website laten maken in Amsterdam? Arka bouwt razendsnelle Next.js websites voor Amsterdamse bedrijven. Maatwerk, SEO-proof, vanaf €750/mnd.",
     metaDescription_en:
-      "Website development in Amsterdam? Arka builds blazing-fast Next.js websites for Amsterdam businesses. Custom-built, SEO-proof, from €1,000/mo.",
+      "Website development in Amsterdam? Arka builds blazing-fast Next.js websites for Amsterdam businesses. Custom-built, SEO-proof, from €750/mo.",
     h1: "Website laten maken in Amsterdam",
     h1_en: "Website Development in Amsterdam",
     subtitle:
@@ -724,7 +724,7 @@ Of je nu een kantoor hebt op de Zuidas, een winkel in De Pijp, of een restaurant
 
 **Investering**
 
-• **Starter** (vanaf €1.000/mnd of €2.500 eenmalig): bedrijfswebsite met SEO-basis en responsive design
+• **Starter** (vanaf €750/mnd of €2.000 eenmalig): bedrijfswebsite met SEO-basis en responsive design
 • **Professional** (op maat): website + chatbot, CRM-integratie, doorlopende SEO
 • **Enterprise** (op maat): volledig platform met dashboards, automatisering, dedicated support
 
@@ -761,7 +761,7 @@ Whether you have an office on the Zuidas, a shop in De Pijp, or a restaurant in 
 
 **Investment**
 
-• **Starter** (from €1,000/mo or €2,500 one-time): business website with SEO foundation and responsive design
+• **Starter** (from €750/mo or €2,000 one-time): business website with SEO foundation and responsive design
 • **Professional** (custom quote): website + chatbot, CRM integration, ongoing SEO
 • **Enterprise** (custom quote): full platform with dashboards, automation, dedicated support
 
@@ -862,7 +862,7 @@ Maandelijks ontvang je een helder rapport met:
 
 **Pakketten**
 
-• **Starter** (vanaf €1.000/mnd): technische SEO-basis, metadata, sitemap
+• **Starter** (vanaf €750/mnd): technische SEO-basis, metadata, sitemap
 • **Professional** (op maat): doorlopende optimalisatie, content, maandelijkse rapportage
 • **Enterprise** (op maat): volledige SEO-strategie inclusief linkbuilding en contentproductie
 
@@ -917,7 +917,7 @@ Monthly you receive a clear report with:
 
 **Packages**
 
-• **Starter** (from €1,000/mo): technical SEO foundation, metadata, sitemap
+• **Starter** (from €750/mo): technical SEO foundation, metadata, sitemap
 • **Professional** (custom quote): ongoing optimization, content, monthly reporting
 • **Enterprise** (custom quote): full SEO strategy including link building and content production
 
@@ -938,9 +938,9 @@ No annual contracts. Monthly cancellation. Results or you stop.`,
     title: "Website laten maken in Den Haag",
     title_en: "Website Development in The Hague",
     metaDescription:
-      "Website laten maken in Den Haag? Arka bouwt snelle Next.js websites voor bedrijven in de hofstad. Maatwerk, SEO-proof, vanaf €1.000/mnd.",
+      "Website laten maken in Den Haag? Arka bouwt snelle Next.js websites voor bedrijven in de hofstad. Maatwerk, SEO-proof, vanaf €750/mnd.",
     metaDescription_en:
-      "Website development in The Hague? Arka builds fast Next.js websites for businesses in the royal city. Custom-built, SEO-proof, from €1,000/mo.",
+      "Website development in The Hague? Arka builds fast Next.js websites for businesses in the royal city. Custom-built, SEO-proof, from €750/mo.",
     h1: "Website laten maken in Den Haag",
     h1_en: "Website Development in The Hague",
     subtitle:
@@ -994,7 +994,7 @@ We zorgen voor:
 
 **Wat kost een website in Den Haag?**
 
-• **Starter** (vanaf €1.000/mnd of €2.500 eenmalig): complete bedrijfswebsite met SEO, responsive design, contactformulier
+• **Starter** (vanaf €750/mnd of €2.000 eenmalig): complete bedrijfswebsite met SEO, responsive design, contactformulier
 • **Professional** (op maat): website + AI-chatbot, CRM-koppeling, doorlopende optimalisatie
 • **Enterprise** (op maat): volledig digitaal platform op maat
 
@@ -1030,7 +1030,7 @@ We provide:
 
 **What does a website in The Hague cost?**
 
-• **Starter** (from €1,000/mo or €2,500 one-time): complete business website with SEO, responsive design, contact form
+• **Starter** (from €750/mo or €2,000 one-time): complete business website with SEO, responsive design, contact form
 • **Professional** (custom quote): website + AI chatbot, CRM integration, ongoing optimization
 • **Enterprise** (custom quote): fully custom digital platform
 
@@ -1122,7 +1122,7 @@ Elke maand ontvang je een rapport met:
 
 **Pakketten**
 
-• **Starter** (vanaf €1.000/mnd): technische SEO, metadata-optimalisatie, sitemap
+• **Starter** (vanaf €750/mnd): technische SEO, metadata-optimalisatie, sitemap
 • **Professional** (op maat): doorlopende SEO met content en maandrapportage
 • **Enterprise** (op maat): volledige SEO-strategie met linkbuilding en contentproductie
 
@@ -1176,7 +1176,7 @@ Every month you receive a report with:
 
 **Packages**
 
-• **Starter** (from €1,000/mo): technical SEO, metadata optimization, sitemap
+• **Starter** (from €750/mo): technical SEO, metadata optimization, sitemap
 • **Professional** (custom quote): ongoing SEO with content and monthly reporting
 • **Enterprise** (custom quote): full SEO strategy with link building and content production
 
@@ -1201,9 +1201,9 @@ Email info@arkadigital.nl or call +31 6 46140986 for a no-obligation conversatio
     title: "Website laten maken in Utrecht",
     title_en: "Website Development in Utrecht",
     metaDescription:
-      "Website laten maken in Utrecht? Arka bouwt snelle, vindbare Next.js websites voor Utrechtse bedrijven. Maatwerk, geen WordPress. Vanaf €1.000/mnd.",
+      "Website laten maken in Utrecht? Arka bouwt snelle, vindbare Next.js websites voor Utrechtse bedrijven. Maatwerk, geen WordPress. Vanaf €750/mnd.",
     metaDescription_en:
-      "Website development in Utrecht? Arka builds fast, findable Next.js websites for Utrecht businesses. Custom-built, no WordPress. From €1,000/mo.",
+      "Website development in Utrecht? Arka builds fast, findable Next.js websites for Utrecht businesses. Custom-built, no WordPress. From €750/mo.",
     h1: "Website laten maken in Utrecht",
     h1_en: "Website Development in Utrecht",
     subtitle:
@@ -1262,7 +1262,7 @@ Specifiek voor Utrechtse bedrijven kijken we naar zoekpatronen per wijk en regio
 
 **Investering**
 
-• **Starter** (vanaf €1.000/mnd of €2.500 eenmalig): bedrijfswebsite, SEO-basis, responsive, contactformulier
+• **Starter** (vanaf €750/mnd of €2.000 eenmalig): bedrijfswebsite, SEO-basis, responsive, contactformulier
 • **Professional** (op maat): website + chatbot, CRM, doorlopende SEO
 • **Enterprise** (op maat): compleet digitaal platform
 
@@ -1301,7 +1301,7 @@ Specifically for Utrecht businesses, we look at search patterns per neighborhood
 
 **Investment**
 
-• **Starter** (from €1,000/mo or €2,500 one-time): business website, SEO foundation, responsive, contact form
+• **Starter** (from €750/mo or €2,000 one-time): business website, SEO foundation, responsive, contact form
 • **Professional** (custom quote): website + chatbot, CRM, ongoing SEO
 • **Enterprise** (custom quote): complete digital platform
 
@@ -1397,7 +1397,7 @@ Geen vage beloftes. Elke maand ontvang je data over:
 
 **Pakketten**
 
-• **Starter** (vanaf €1.000/mnd): SEO-basis, technische optimalisatie, metadata
+• **Starter** (vanaf €750/mnd): SEO-basis, technische optimalisatie, metadata
 • **Professional** (op maat): doorlopende SEO, contentcreatie, maandrapportage
 • **Enterprise** (op maat): uitgebreide strategie met linkbuilding en contentproductie
 
@@ -1453,7 +1453,7 @@ No vague promises. Every month you receive data on:
 
 **Packages**
 
-• **Starter** (from €1,000/mo): SEO foundation, technical optimization, metadata
+• **Starter** (from €750/mo): SEO foundation, technical optimization, metadata
 • **Professional** (custom quote): ongoing SEO, content creation, monthly reporting
 • **Enterprise** (custom quote): comprehensive strategy with link building and content production
 
@@ -1478,9 +1478,9 @@ Get in touch via info@arkadigital.nl or +31 6 46140986 for a no-obligation analy
     title: "Website laten maken in Eindhoven",
     title_en: "Website Development in Eindhoven",
     metaDescription:
-      "Website laten maken in Eindhoven? Arka bouwt snelle Next.js websites voor bedrijven in de Brainport-regio. Maatwerk, SEO-proof, vanaf €1.000/mnd.",
+      "Website laten maken in Eindhoven? Arka bouwt snelle Next.js websites voor bedrijven in de Brainport-regio. Maatwerk, SEO-proof, vanaf €750/mnd.",
     metaDescription_en:
-      "Website development in Eindhoven? Arka builds fast Next.js websites for businesses in the Brainport region. Custom-built, SEO-proof, from €1,000/mo.",
+      "Website development in Eindhoven? Arka builds fast Next.js websites for businesses in the Brainport region. Custom-built, SEO-proof, from €750/mo.",
     h1: "Website laten maken in Eindhoven",
     h1_en: "Website Development in Eindhoven",
     subtitle:
@@ -1537,7 +1537,7 @@ Of je nu gevestigd bent op de High Tech Campus, in het centrum, op Strijp-S of o
 
 **Pakketten**
 
-• **Starter** (vanaf €1.000/mnd of €2.500 eenmalig): bedrijfswebsite met SEO-basis, responsive design, contactformulier
+• **Starter** (vanaf €750/mnd of €2.000 eenmalig): bedrijfswebsite met SEO-basis, responsive design, contactformulier
 • **Professional** (op maat): website + AI-chatbot, CRM-koppeling, doorlopende SEO
 • **Enterprise** (op maat): compleet digitaal platform met dashboards en automatisering
 
@@ -1574,7 +1574,7 @@ Whether you're located on the High Tech Campus, in the center, at Strijp-S, or o
 
 **Packages**
 
-• **Starter** (from €1,000/mo or €2,500 one-time): business website with SEO foundation, responsive design, contact form
+• **Starter** (from €750/mo or €2,000 one-time): business website with SEO foundation, responsive design, contact form
 • **Professional** (custom quote): website + AI chatbot, CRM integration, ongoing SEO
 • **Enterprise** (custom quote): complete digital platform with dashboards and automation
 
@@ -1675,7 +1675,7 @@ Maandelijks ontvang je:
 
 **Pakketten**
 
-• **Starter** (vanaf €1.000/mnd): technische SEO, metadata, sitemap-optimalisatie
+• **Starter** (vanaf €750/mnd): technische SEO, metadata, sitemap-optimalisatie
 • **Professional** (op maat): doorlopende SEO met contentcreatie en rapportage
 • **Enterprise** (op maat): volledige SEO-strategie met linkbuilding en dedicated support
 
@@ -1738,7 +1738,7 @@ Monthly you receive:
 
 **Packages**
 
-• **Starter** (from €1,000/mo): technical SEO, metadata, sitemap optimization
+• **Starter** (from €750/mo): technical SEO, metadata, sitemap optimization
 • **Professional** (custom quote): ongoing SEO with content creation and reporting
 • **Enterprise** (custom quote): full SEO strategy with link building and dedicated support
 
@@ -1763,9 +1763,9 @@ info@arkadigital.nl or +31 6 46140986 for a no-obligation conversation.`,
     title: "Website laten maken in Breda",
     title_en: "Website Development in Breda",
     metaDescription:
-      "Website laten maken in Breda? Arka bouwt snelle, vindbare websites voor Bredase bedrijven. Next.js maatwerk, SEO-proof. Vanaf €1.000/mnd.",
+      "Website laten maken in Breda? Arka bouwt snelle, vindbare websites voor Bredase bedrijven. Next.js maatwerk, SEO-proof. Vanaf €750/mnd.",
     metaDescription_en:
-      "Website development in Breda? Arka builds fast, findable websites for Breda businesses. Next.js custom-built, SEO-proof. From €1,000/mo.",
+      "Website development in Breda? Arka builds fast, findable websites for Breda businesses. Next.js custom-built, SEO-proof. From €750/mo.",
     h1: "Website laten maken in Breda",
     h1_en: "Website Development in Breda",
     subtitle:
@@ -1824,7 +1824,7 @@ Daarbij richten we lokale SEO in voor de Bredase markt. Gestructureerde data, lo
 
 **Pakketten**
 
-• **Starter** (vanaf €1.000/mnd of €2.500 eenmalig): complete bedrijfswebsite met SEO, responsive design, contactformulier
+• **Starter** (vanaf €750/mnd of €2.000 eenmalig): complete bedrijfswebsite met SEO, responsive design, contactformulier
 • **Professional** (op maat): website + AI-chatbot, CRM-koppeling, doorlopende optimalisatie
 • **Enterprise** (op maat): volledig digitaal platform op maat
 
@@ -1863,7 +1863,7 @@ Additionally, we set up local SEO for the Breda market. Structured data, local k
 
 **Packages**
 
-• **Starter** (from €1,000/mo or €2,500 one-time): complete business website with SEO, responsive design, contact form
+• **Starter** (from €750/mo or €2,000 one-time): complete business website with SEO, responsive design, contact form
 • **Professional** (custom quote): website + AI chatbot, CRM integration, ongoing optimization
 • **Enterprise** (custom quote): fully custom digital platform
 
@@ -1955,7 +1955,7 @@ SEO is geen overnight succes. Realistische verwachtingen:
 
 **Pakketten**
 
-• **Starter** (vanaf €1.000/mnd): technische SEO-basis, metadata, sitemap
+• **Starter** (vanaf €750/mnd): technische SEO-basis, metadata, sitemap
 • **Professional** (op maat): doorlopende SEO, content, maandrapportage
 • **Enterprise** (op maat): volledige strategie met linkbuilding en contentproductie
 
@@ -2009,7 +2009,7 @@ SEO is not an overnight success. Realistic expectations:
 
 **Packages**
 
-• **Starter** (from €1,000/mo): technical SEO foundation, metadata, sitemap
+• **Starter** (from €750/mo): technical SEO foundation, metadata, sitemap
 • **Professional** (custom quote): ongoing SEO, content, monthly reporting
 • **Enterprise** (custom quote): full strategy with link building and content production
 
@@ -2034,9 +2034,9 @@ info@arkadigital.nl or +31 6 46140986 for a no-obligation conversation.`,
     title: "Website laten maken in Tilburg",
     title_en: "Website Development in Tilburg",
     metaDescription:
-      "Website laten maken in Tilburg? Arka bouwt razendsnelle Next.js websites voor bedrijven in de regio Midden-Brabant. Maatwerk, SEO-proof, vanaf €1.000/mnd.",
+      "Website laten maken in Tilburg? Arka bouwt razendsnelle Next.js websites voor bedrijven in de regio Midden-Brabant. Maatwerk, SEO-proof, vanaf €750/mnd.",
     metaDescription_en:
-      "Website development in Tilburg? Arka builds blazing-fast Next.js websites for businesses in the Mid-Brabant region. Custom-built, SEO-proof, from €1,000/mo.",
+      "Website development in Tilburg? Arka builds blazing-fast Next.js websites for businesses in the Mid-Brabant region. Custom-built, SEO-proof, from €750/mo.",
     h1: "Website laten maken in Tilburg",
     h1_en: "Website Development in Tilburg",
     subtitle:
@@ -2095,7 +2095,7 @@ We optimaliseren je website specifiek voor de Tilburgse en Midden-Brabantse mark
 
 **Pakketten**
 
-• **Starter** (vanaf €1.000/mnd of €2.500 eenmalig): bedrijfswebsite met SEO-basis, contactformulier, responsive design
+• **Starter** (vanaf €750/mnd of €2.000 eenmalig): bedrijfswebsite met SEO-basis, contactformulier, responsive design
 • **Professional** (op maat): website + chatbot, CRM, doorlopende SEO
 • **Enterprise** (op maat): compleet platform met dashboards en automatisering
 
@@ -2134,7 +2134,7 @@ We optimize your website specifically for the Tilburg and Mid-Brabant market:
 
 **Packages**
 
-• **Starter** (from €1,000/mo or €2,500 one-time): business website with SEO foundation, contact form, responsive design
+• **Starter** (from €750/mo or €2,000 one-time): business website with SEO foundation, contact form, responsive design
 • **Professional** (custom quote): website + chatbot, CRM, ongoing SEO
 • **Enterprise** (custom quote): complete platform with dashboards and automation
 
@@ -2235,7 +2235,7 @@ Maandelijkse rapportage over:
 
 **Pakketten**
 
-• **Starter** (vanaf €1.000/mnd): technische SEO, metadata, sitemap
+• **Starter** (vanaf €750/mnd): technische SEO, metadata, sitemap
 • **Professional** (op maat): doorlopende SEO, content, rapportage
 • **Enterprise** (op maat): volledige strategie met linkbuilding en contentproductie
 
@@ -2298,7 +2298,7 @@ Monthly reporting on:
 
 **Packages**
 
-• **Starter** (from €1,000/mo): technical SEO, metadata, sitemap
+• **Starter** (from €750/mo): technical SEO, metadata, sitemap
 • **Professional** (custom quote): ongoing SEO, content, reporting
 • **Enterprise** (custom quote): full strategy with link building and content production
 
@@ -2323,9 +2323,9 @@ info@arkadigital.nl or +31 6 46140986.`,
     title: "Website laten maken in Arnhem",
     title_en: "Website Development in Arnhem",
     metaDescription:
-      "Website laten maken in Arnhem? Arka bouwt razendsnelle Next.js websites voor bedrijven in Arnhem en de Veluwe. Maatwerk, SEO-proof, vanaf €1.000/mnd.",
+      "Website laten maken in Arnhem? Arka bouwt razendsnelle Next.js websites voor bedrijven in Arnhem en de Veluwe. Maatwerk, SEO-proof, vanaf €750/mnd.",
     metaDescription_en:
-      "Website development in Arnhem? Arka builds blazing-fast Next.js websites for businesses in Arnhem and the Veluwe. Custom-built, SEO-proof, from €1,000/mo.",
+      "Website development in Arnhem? Arka builds blazing-fast Next.js websites for businesses in Arnhem and the Veluwe. Custom-built, SEO-proof, from €750/mo.",
     h1: "Website laten maken in Arnhem",
     h1_en: "Website Development in Arnhem",
     subtitle:
@@ -2383,7 +2383,7 @@ We optimaliseren je website voor de lokale markt:
 
 **Investering**
 
-• **Starter** (vanaf €1.000/mnd of €2.500 eenmalig): complete bedrijfswebsite met SEO, responsive design, contactformulier
+• **Starter** (vanaf €750/mnd of €2.000 eenmalig): complete bedrijfswebsite met SEO, responsive design, contactformulier
 • **Professional** (op maat): website + AI-chatbot, CRM-koppeling, doorlopende SEO
 • **Enterprise** (op maat): volledig digitaal platform op maat
 
@@ -2421,7 +2421,7 @@ We optimize your website for the local market:
 
 **Investment**
 
-• **Starter** (from €1,000/mo or €2,500 one-time): complete business website with SEO, responsive design, contact form
+• **Starter** (from €750/mo or €2,000 one-time): complete business website with SEO, responsive design, contact form
 • **Professional** (custom quote): website + AI chatbot, CRM integration, ongoing SEO
 • **Enterprise** (custom quote): fully custom digital platform
 
@@ -2516,7 +2516,7 @@ Maandelijks ontvang je:
 
 **Pakketten**
 
-• **Starter** (vanaf €1.000/mnd): technische SEO-basis, metadata, sitemap
+• **Starter** (vanaf €750/mnd): technische SEO-basis, metadata, sitemap
 • **Professional** (op maat): doorlopende SEO met content en rapportage
 • **Enterprise** (op maat): uitgebreide strategie met linkbuilding en contentproductie
 
@@ -2573,7 +2573,7 @@ Monthly you receive:
 
 **Packages**
 
-• **Starter** (from €1,000/mo): technical SEO foundation, metadata, sitemap
+• **Starter** (from €750/mo): technical SEO foundation, metadata, sitemap
 • **Professional** (custom quote): ongoing SEO with content and reporting
 • **Enterprise** (custom quote): comprehensive strategy with link building and content production
 
@@ -2598,9 +2598,9 @@ info@arkadigital.nl or +31 6 46140986 for a no-obligation conversation about SEO
     title: "Website laten maken in Leiden",
     title_en: "Website Development in Leiden",
     metaDescription:
-      "Website laten maken in Leiden? Arka bouwt snelle Next.js websites voor bedrijven in de sleutelstad. Maatwerk, SEO-proof, vanaf €1.000/mnd.",
+      "Website laten maken in Leiden? Arka bouwt snelle Next.js websites voor bedrijven in de sleutelstad. Maatwerk, SEO-proof, vanaf €750/mnd.",
     metaDescription_en:
-      "Website development in Leiden? Arka builds fast Next.js websites for businesses in the key city. Custom-built, SEO-proof, from €1,000/mo.",
+      "Website development in Leiden? Arka builds fast Next.js websites for businesses in the key city. Custom-built, SEO-proof, from €750/mo.",
     h1: "Website laten maken in Leiden",
     h1_en: "Website Development in Leiden",
     subtitle:
@@ -2659,7 +2659,7 @@ Lokale SEO wordt standaard meegenomen: gestructureerde data, Google Bedrijfsprof
 
 **Pakketten**
 
-• **Starter** (vanaf €1.000/mnd of €2.500 eenmalig): bedrijfswebsite met SEO-basis, responsive design, contactformulier
+• **Starter** (vanaf €750/mnd of €2.000 eenmalig): bedrijfswebsite met SEO-basis, responsive design, contactformulier
 • **Professional** (op maat): website + chatbot, CRM-koppeling, doorlopende optimalisatie
 • **Enterprise** (op maat): compleet digitaal platform
 
@@ -2698,7 +2698,7 @@ Local SEO is included as standard: structured data, Google Business Profile, loc
 
 **Packages**
 
-• **Starter** (from €1,000/mo or €2,500 one-time): business website with SEO foundation, responsive design, contact form
+• **Starter** (from €750/mo or €2,000 one-time): business website with SEO foundation, responsive design, contact form
 • **Professional** (custom quote): website + chatbot, CRM integration, ongoing optimization
 • **Enterprise** (custom quote): complete digital platform
 
@@ -2794,7 +2794,7 @@ Elke maand ontvang je:
 
 **Pakketten**
 
-• **Starter** (vanaf €1.000/mnd): technische SEO, metadata, sitemap
+• **Starter** (vanaf €750/mnd): technische SEO, metadata, sitemap
 • **Professional** (op maat): doorlopende SEO, contentcreatie, rapportage
 • **Enterprise** (op maat): volledige strategie met linkbuilding en contentproductie
 
@@ -2852,7 +2852,7 @@ Every month you receive:
 
 **Packages**
 
-• **Starter** (from €1,000/mo): technical SEO, metadata, sitemap
+• **Starter** (from €750/mo): technical SEO, metadata, sitemap
 • **Professional** (custom quote): ongoing SEO, content creation, reporting
 • **Enterprise** (custom quote): full strategy with link building and content production
 
@@ -2877,9 +2877,9 @@ info@arkadigital.nl or +31 6 46140986.`,
     title: "Website laten maken in Groningen",
     title_en: "Website Development in Groningen",
     metaDescription:
-      "Website laten maken in Groningen? Arka bouwt snelle, vindbare Next.js websites voor bedrijven in het Noorden. Maatwerk, SEO-proof, vanaf €1.000/mnd.",
+      "Website laten maken in Groningen? Arka bouwt snelle, vindbare Next.js websites voor bedrijven in het Noorden. Maatwerk, SEO-proof, vanaf €750/mnd.",
     metaDescription_en:
-      "Website development in Groningen? Arka builds fast, findable Next.js websites for businesses in the North. Custom-built, SEO-proof, from €1,000/mo.",
+      "Website development in Groningen? Arka builds fast, findable Next.js websites for businesses in the North. Custom-built, SEO-proof, from €750/mo.",
     h1: "Website laten maken in Groningen",
     h1_en: "Website Development in Groningen",
     subtitle:
@@ -2938,7 +2938,7 @@ Lokale SEO is standaard inbegrepen: Google Bedrijfsprofiel, lokale zoekwoorden, 
 
 **Pakketten**
 
-• **Starter** (vanaf €1.000/mnd of €2.500 eenmalig): bedrijfswebsite met SEO-basis, responsive design, contactformulier
+• **Starter** (vanaf €750/mnd of €2.000 eenmalig): bedrijfswebsite met SEO-basis, responsive design, contactformulier
 • **Professional** (op maat): website + AI-chatbot, CRM-koppeling, doorlopende SEO
 • **Enterprise** (op maat): compleet digitaal platform met dashboards en automatisering
 
@@ -2977,7 +2977,7 @@ Local SEO is included as standard: Google Business Profile, local keywords, stru
 
 **Packages**
 
-• **Starter** (from €1,000/mo or €2,500 one-time): business website with SEO foundation, responsive design, contact form
+• **Starter** (from €750/mo or €2,000 one-time): business website with SEO foundation, responsive design, contact form
 • **Professional** (custom quote): website + AI chatbot, CRM integration, ongoing SEO
 • **Enterprise** (custom quote): complete digital platform with dashboards and automation
 
@@ -3074,7 +3074,7 @@ Maandelijks ontvang je een helder overzicht:
 
 **Pakketten**
 
-• **Starter** (vanaf €1.000/mnd): technische SEO, metadata, sitemap
+• **Starter** (vanaf €750/mnd): technische SEO, metadata, sitemap
 • **Professional** (op maat): doorlopende SEO met content en rapportage
 • **Enterprise** (op maat): uitgebreide strategie met linkbuilding en contentproductie
 
@@ -3133,7 +3133,7 @@ Monthly you receive a clear overview:
 
 **Packages**
 
-• **Starter** (from €1,000/mo): technical SEO, metadata, sitemap
+• **Starter** (from €750/mo): technical SEO, metadata, sitemap
 • **Professional** (custom quote): ongoing SEO with content and reporting
 • **Enterprise** (custom quote): comprehensive strategy with link building and content production
 

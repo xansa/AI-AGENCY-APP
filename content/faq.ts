@@ -12,9 +12,9 @@ export const faqItems: FAQItem[] = [
     question: "Wat kost jullie dienstverlening?",
     question_en: "What does your service cost?",
     answer:
-      "Onze packages beginnen vanaf \u20AC1.000 per maand. Starter (websites + SEO): vanaf \u20AC1.000/mnd. Professional (+ AI + branding): vanaf \u20AC2.750/mnd. Enterprise (alle 6 diensten): vanaf \u20AC5.500/mnd. Vergelijk dat met een fulltime digitale medewerker: die kost al snel \u20AC3.000\u2013\u20AC5.000/mnd all-in.",
+      "Onze packages beginnen vanaf \u20AC750 per maand. Starter (websites + SEO): vanaf \u20AC750/mnd. Professional en Enterprise: op maat. Vergelijk dat met een fulltime digitale medewerker: die kost al snel \u20AC3.000\u2013\u20AC5.000/mnd all-in.",
     answer_en:
-      "Our packages start from \u20AC1,000 per month. Starter (websites + SEO): from \u20AC1,000/mo. Professional (+ AI + branding): from \u20AC2,750/mo. Enterprise (all 6 services): from \u20AC5,500/mo. Compare that to a full-time digital employee: easily \u20AC3,000\u2013\u20AC5,000/mo all-in.",
+      "Our packages start from \u20AC750 per month. Starter (websites + SEO): from \u20AC750/mo. Professional and Enterprise: custom quote. Compare that to a full-time digital employee: easily \u20AC3,000\u2013\u20AC5,000/mo all-in.",
     category: "Investering",
     category_en: "Investment",
   },

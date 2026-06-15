@@ -151,7 +151,7 @@ Arka biedt twee modellen: eenmalig (projectbasis) of maandelijks (doorlopende sa
 
 ### Maandelijks (aanbevolen: jouw digitale afdeling)
 
-**Starter** · vanaf €1.000/mnd
+**Starter** · vanaf €750/mnd
 Diensten: Websites & Webshops + SEO & Content
 Min. commitment: 3 maanden
 Inbegrepen: website bouw, hosting, onderhoud, SEO, content updates, rapportage, support
@@ -168,7 +168,7 @@ Inbegrepen: alles uit Professional + dashboards, lead gen, automatisering, dedic
 
 ### Eenmalig (projectbasis: je koopt een product)
 
-**Starter** · vanaf €2.500
+**Starter** · vanaf €2.000
 Website + basis SEO + 3 social templates. Oplevering in 2–4 weken. 30 dagen bugfixes.
 
 **Professional** · Op maat
@@ -186,8 +186,8 @@ export const KB_FAQ = `
 ## Veelgestelde vragen
 
 **Wat kost het?**
-Maandelijks: Starter vanaf €1.000/mnd | Professional op maat | Enterprise op maat
-Eenmalig: Starter vanaf €2.500 | Professional op maat | Enterprise op maat
+Maandelijks: Starter vanaf €750/mnd | Professional op maat | Enterprise op maat
+Eenmalig: Starter vanaf €2.000 | Professional op maat | Enterprise op maat
 Maandelijks is de beste deal: je krijgt doorlopende optimalisatie, content, support en rapportage.
 
 **Kan ik stoppen wanneer ik wil?**

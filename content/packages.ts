@@ -61,9 +61,9 @@ export const packages: Package[] = [
     ],
     duration: "Minimaal 3 maanden, daarna maandelijks opzegbaar",
     duration_en: "Minimum 3 months, then monthly cancellable",
-    monthlyInvestment: "Vanaf \u20AC1.000 / maand",
-    investment: "Vanaf \u20AC1.000/mnd",
-    investment_en: "From \u20AC1,000/mo",
+    monthlyInvestment: "Vanaf \u20AC750 / maand",
+    investment: "Vanaf \u20AC750/mnd",
+    investment_en: "From \u20AC750/mo",
     kpis: [
       "Website verkeer",
       "Google rankings",
@@ -78,7 +78,7 @@ export const packages: Package[] = [
     ],
 
     // Eenmalig
-    onetimePrice: "Vanaf \u20AC2.500",
+    onetimePrice: "Vanaf \u20AC2.000",
     onetimeDeliverables: [
       "Professionele website (5\u201310 pagina\u2019s)",
       "Responsive design (mobiel + desktop)",
