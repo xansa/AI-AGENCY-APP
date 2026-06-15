@@ -146,9 +146,9 @@ export const packages: Package[] = [
     ],
     duration: "Minimaal 6 maanden, daarna maandelijks opzegbaar",
     duration_en: "Minimum 6 months, then monthly cancellable",
-    monthlyInvestment: "Vanaf \u20AC2.750 / maand",
-    investment: "Vanaf \u20AC2.750/mnd",
-    investment_en: "From \u20AC2,750/mo",
+    monthlyInvestment: "Op maat",
+    investment: "Op maat",
+    investment_en: "Custom quote",
     kpis: [
       "Conversieratio",
       "Aantal leads",
@@ -163,7 +163,7 @@ export const packages: Package[] = [
     ],
 
     // Eenmalig
-    onetimePrice: "Vanaf \u20AC7.000",
+    onetimePrice: "Op maat",
     onetimeDeliverables: [
       "Custom website met animaties (10\u201320 pagina\u2019s)",
       "AI-chatbot ge\u00EFntegreerd op website",
@@ -237,9 +237,9 @@ export const packages: Package[] = [
     ],
     duration: "Minimaal 6 maanden, daarna per kwartaal opzegbaar",
     duration_en: "Minimum 6 months, then quarterly cancellable",
-    monthlyInvestment: "Vanaf \u20AC5.500 / maand",
-    investment: "Vanaf \u20AC5.500/mnd",
-    investment_en: "From \u20AC5,500/mo",
+    monthlyInvestment: "Op maat",
+    investment: "Op maat",
+    investment_en: "Custom quote",
     kpis: [
       "Omzetgroei",
       "Tijdsbesparing",
@@ -256,7 +256,7 @@ export const packages: Package[] = [
     ],
 
     // Eenmalig
-    onetimePrice: "Vanaf \u20AC18.000",
+    onetimePrice: "Op maat",
     onetimeDeliverables: [
       "Alles uit Professional eenmalig",
       "Custom KPI-dashboard (tot 3 views)",

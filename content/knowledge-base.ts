@@ -156,12 +156,12 @@ Diensten: Websites & Webshops + SEO & Content
 Min. commitment: 3 maanden
 Inbegrepen: website bouw, hosting, onderhoud, SEO, content updates, rapportage, support
 
-**Professional** ⭐ Meest gekozen · vanaf €2.750/mnd
+**Professional** ⭐ Meest gekozen · Op maat
 Diensten: Websites & Webshops + SEO & Content + AI Chatbots + Branding
 Min. commitment: 6 maanden
 Inbegrepen: custom website + chatbot, brand identity, 8 LinkedIn posts + 2 blogs/mnd, strategie sessie, CRO
 
-**Enterprise** · vanaf €5.500/mnd
+**Enterprise** · Op maat
 Diensten: Alle 6 diensten
 Min. commitment: 6 maanden
 Inbegrepen: alles uit Professional + dashboards, lead gen, automatisering, dedicated support (< 4u reactie)
@@ -171,13 +171,13 @@ Inbegrepen: alles uit Professional + dashboards, lead gen, automatisering, dedic
 **Starter** · vanaf €2.500
 Website + basis SEO + 3 social templates. Oplevering in 2–4 weken. 30 dagen bugfixes.
 
-**Professional** · vanaf €7.000
+**Professional** · Op maat
 Custom website + chatbot + brand identity + 5 social templates. Oplevering in 4–6 weken.
 
-**Enterprise** · vanaf €18.000
+**Enterprise** · Op maat
 Alles + dashboards + CRM-integratie + lead funnel. Oplevering in 6–10 weken.
 
-Na oplevering: wijzigingen op uurbasis (€95/uur).
+Na oplevering: wijzigingen op uurbasis (€95/uur). Neem contact op voor een offerte op maat.
 `;
 
 // ─── FAQ ─────────────────────────────────────────────────────────────────────
@@ -186,8 +186,8 @@ export const KB_FAQ = `
 ## Veelgestelde vragen
 
 **Wat kost het?**
-Maandelijks: Starter vanaf €1.000/mnd | Professional vanaf €2.750/mnd | Enterprise vanaf €5.500/mnd
-Eenmalig: Starter vanaf €2.500 | Professional vanaf €7.000 | Enterprise vanaf €18.000
+Maandelijks: Starter vanaf €1.000/mnd | Professional op maat | Enterprise op maat
+Eenmalig: Starter vanaf €2.500 | Professional op maat | Enterprise op maat
 Maandelijks is de beste deal: je krijgt doorlopende optimalisatie, content, support en rapportage.
 
 **Kan ik stoppen wanneer ik wil?**

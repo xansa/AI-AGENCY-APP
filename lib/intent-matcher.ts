@@ -44,9 +44,9 @@ const INTENTS: IntentDefinition[] = [
       "Arka biedt twee modellen: **maandelijks** (doorlopende samenwerking) of **eenmalig** (project).\n\n" +
       "**Maandelijks (aanbevolen):**\n" +
       "\u2022 **Starter** · vanaf \u20AC1.000/mnd _(Websites + SEO)_\n" +
-      "\u2022 **Professional** · vanaf \u20AC2.750/mnd _(+ AI Chatbots + Branding)_ Meest gekozen\n" +
-      "\u2022 **Enterprise** · vanaf \u20AC5.500/mnd _(alle 6 diensten)_\n\n" +
-      "**Eenmalig:** Starter vanaf \u20AC2.500 | Professional vanaf \u20AC7.000 | Enterprise vanaf \u20AC18.000\n\n" +
+      "\u2022 **Professional** · op maat _(+ AI Chatbots + Branding)_ Meest gekozen\n" +
+      "\u2022 **Enterprise** · op maat _(alle 6 diensten)_\n\n" +
+      "**Eenmalig:** Starter vanaf \u20AC2.500 | Professional op maat | Enterprise op maat\n\n" +
       "Wil je weten welk pakket het beste bij jouw situatie past?",
     cta: "Vraag een vrijblijvende offerte aan via [/offerte](/offerte) of plan een kennismakingsgesprek.",
   },
@@ -204,8 +204,8 @@ const INTENTS: IntentDefinition[] = [
     boostKeywords: ["pakket", "package"],
     response:
       "**Professional** is ons meest gekozen pakket:\n\n" +
-      "**Maandelijks:** vanaf \u20AC2.750/mnd\n" +
-      "**Eenmalig:** vanaf \u20AC7.000\n\n" +
+      "**Maandelijks:** Op maat\n" +
+      "**Eenmalig:** Op maat\n\n" +
       "Diensten: Websites + SEO + AI Chatbots + Branding\n" +
       "Voor wie: Groeiende MKB-bedrijven.\n\n" +
       "Maandelijks inbegrepen:\n" +
@@ -224,8 +224,8 @@ const INTENTS: IntentDefinition[] = [
     boostKeywords: ["pakket", "package", "automatisering"],
     response:
       "**Enterprise** is ons meest complete pakket:\n\n" +
-      "**Maandelijks:** vanaf \u20AC5.500/mnd\n" +
-      "**Eenmalig:** vanaf \u20AC18.000\n\n" +
+      "**Maandelijks:** Op maat\n" +
+      "**Eenmalig:** Op maat\n\n" +
       "Diensten: Alle 6 diensten\n" +
       "Voor wie: Gevestigde MKB-bedrijven en scale-ups.\n\n" +
       "Extra t.o.v. Professional:\n" +
@@ -332,7 +332,7 @@ const INTENTS: IntentDefinition[] = [
       "**Telefoon:** +31 6 46140986\n" +
       "**Locatie:** Dordrecht, Nederland\n\n" +
       "Of direct een afspraak inplannen:",
-    cta: "[Kennismakingsgesprek plannen](https://calendly.com/arkaecom-proton/30min) · kies zelf een moment",
+    cta: "[Kennismakingsgesprek plannen](https://calendly.com/arka-/30min) · kies zelf een moment",
   },
 
   // ── Kennismaking ────────────────────────────────────────────────────────
@@ -350,7 +350,7 @@ const INTENTS: IntentDefinition[] = [
       "\u2022 Welke aanpak het meest logisch is\n" +
       "\u2022 Of er een match is. Als niet, zeg ik dat eerlijk\n\n" +
       "Kies zelf een moment:",
-    cta: "[Kennismakingsgesprek plannen](https://calendly.com/arkaecom-proton/30min)",
+    cta: "[Kennismakingsgesprek plannen](https://calendly.com/arka-/30min)",
   },
 
   // ── Cases / klantresultaten ───────────────────────────────────────────────

@@ -437,11 +437,11 @@ export const translations = {
   "form.opt.doelCombi": { nl: "Combinatie van bovenstaande", en: "Combination of the above" },
 
   "form.opt.budgetStarterE": { nl: "Eenmalig: Starter (vanaf \u20AC2.500)", en: "One-time: Starter (from \u20AC2,500)" },
-  "form.opt.budgetProfE": { nl: "Eenmalig: Professional (vanaf \u20AC7.000)", en: "One-time: Professional (from \u20AC7,000)" },
-  "form.opt.budgetEntE": { nl: "Eenmalig: Enterprise (vanaf \u20AC18.000)", en: "One-time: Enterprise (from \u20AC18,000)" },
+  "form.opt.budgetProfE": { nl: "Eenmalig: Professional (op maat)", en: "One-time: Professional (custom quote)" },
+  "form.opt.budgetEntE": { nl: "Eenmalig: Enterprise (op maat)", en: "One-time: Enterprise (custom quote)" },
   "form.opt.budgetStarterM": { nl: "Maandelijks: Starter (vanaf \u20AC1.000/mnd)", en: "Monthly: Starter (from \u20AC1,000/mo)" },
-  "form.opt.budgetProfM": { nl: "Maandelijks: Professional (vanaf \u20AC2.750/mnd)", en: "Monthly: Professional (from \u20AC2,750/mo)" },
-  "form.opt.budgetEntM": { nl: "Maandelijks: Enterprise (vanaf \u20AC5.500/mnd)", en: "Monthly: Enterprise (from \u20AC5,500/mo)" },
+  "form.opt.budgetProfM": { nl: "Maandelijks: Professional (op maat)", en: "Monthly: Professional (custom quote)" },
+  "form.opt.budgetEntM": { nl: "Maandelijks: Enterprise (op maat)", en: "Monthly: Enterprise (custom quote)" },
   "form.opt.budgetOnzeker": { nl: "Nog niet zeker", en: "Not sure yet" },
 
   "form.opt.asap": { nl: "Zo snel mogelijk (< 2 weken)", en: "As soon as possible (< 2 weeks)" },
