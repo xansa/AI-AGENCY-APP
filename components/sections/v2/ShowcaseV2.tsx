@@ -76,7 +76,7 @@ export function ShowcaseV2() {
                 <span className="flex items-center justify-center w-7 h-7 rounded-lg bg-arka/10">
                   <Bot className="w-4 h-4 text-arka" strokeWidth={2} />
                 </span>
-                <span className="text-[12px] font-semibold text-slate-ink">Arka Assistent</span>
+                <span className="text-[12px] font-semibold text-slate-ink">Arkadia</span>
                 <span className="ml-auto inline-flex items-center gap-1.5 text-[10.5px] text-emerald-600 font-medium">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
                   online

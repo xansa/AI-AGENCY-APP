@@ -6,6 +6,7 @@ import { ShowcaseV2 } from "@/components/sections/v2/ShowcaseV2";
 import { WerkwijzeV2 } from "@/components/sections/v2/WerkwijzeV2";
 import { CasesV2 } from "@/components/sections/v2/CasesV2";
 import { FounderV2 } from "@/components/sections/v2/FounderV2";
+import { PackagesShowcaseV2 } from "@/components/sections/v2/PackagesShowcaseV2";
 import { PackagesV2 } from "@/components/sections/v2/PackagesV2";
 import { ComparisonV2 } from "@/components/sections/v2/ComparisonV2";
 import { TestimonialsV2 } from "@/components/sections/v2/TestimonialsV2";
@@ -41,6 +42,7 @@ export default function HomePage() {
       <WerkwijzeV2 />
       <CasesV2 />
       <FounderV2 />
+      <PackagesShowcaseV2 />
       <PackagesV2 />
       <ComparisonV2 />
       <TestimonialsV2 />
