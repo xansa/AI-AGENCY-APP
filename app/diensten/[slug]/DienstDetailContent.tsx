@@ -6,7 +6,7 @@ import { Check, ArrowLeft, ArrowUpRight } from "lucide-react";
 import { useTranslation, l, la } from "@/lib/i18n";
 
 const CALENDLY_URL =
-  process.env.NEXT_PUBLIC_CALENDLY_URL ?? "https://calendly.com/arkaecom-proton/30min";
+  process.env.NEXT_PUBLIC_CALENDLY_URL ?? "https://calendly.com/arka-/30min";
 
 function RichText({ text }: { text: string }) {
   const parts = text.split(/\*\*(.*?)\*\*/g);
@@ -251,6 +251,29 @@ export function DienstDetailContent({ service }: { service: Service }) {
                     </a>
                   </div>
                 </div>
+
+                {service.slug === "ai-chatbots-automatisering" && (
+                  <Link
+                    href="/ai-assistent"
+                    className="group block p-7 rounded-2xl ring-1 ring-arka/25 bg-arka/[0.06] hover:bg-arka/[0.1] transition-colors"
+                  >
+                    <p className="text-overline uppercase text-arka font-semibold mb-3">
+                      {locale === "en" ? "Also from Arka" : "Ook van Arka"}
+                    </p>
+                    <h3 className="font-serif text-[1.35rem] font-medium text-slate-ink mb-2 tracking-tight">
+                      AI Assistent Setup
+                    </h3>
+                    <p className="text-[13.5px] leading-relaxed text-slate-muted text-pretty mb-4">
+                      {locale === "en"
+                        ? "Your own digital assistant connected to your tools: morning brief, inbox drafts and calendar review. Set up once, then yours."
+                        : "Je eigen digitale assistent gekoppeld aan je tools: morning brief, inbox-drafts en agenda-review. Eenmalig opgezet, daarna van jou."}
+                    </p>
+                    <span className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-arka">
+                      {locale === "en" ? "Discover" : "Ontdek de dienst"}
+                      <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                    </span>
+                  </Link>
+                )}
               </div>
             </aside>
           </div>

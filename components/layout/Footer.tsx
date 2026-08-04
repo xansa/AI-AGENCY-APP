@@ -13,6 +13,7 @@ export function Footer() {
       { href: "/diensten/websites-webshops", label: "Websites & Webshops" },
       { href: "/diensten/seo-content", label: "SEO & Content" },
       { href: "/diensten/ai-chatbots-automatisering", label: "AI Chatbots & Automatisering" },
+      { href: "/ai-assistent", label: "AI Assistent Setup" },
       { href: "/diensten/dashboards-data", label: "Dashboards & Data" },
       { href: "/diensten/lead-generation", label: "Lead Generation" },
       { href: "/diensten/branding-design", label: "Branding & Design" },

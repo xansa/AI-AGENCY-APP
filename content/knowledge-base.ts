@@ -285,11 +285,44 @@ Resultaten:
 onze cijfers." – Dennis van der Maas, Directeur MaasLogistics B.V.
 `;
 
+// ─── AI Assistent Setup (aparte dienst, eigen pagina /ai-assistent) ───────────
+
+export const KB_AI_ASSISTENT = `
+## AI Assistent Setup
+
+Een aparte, eenmalige dienst (los van de maandelijkse packages). Pagina: /ai-assistent
+
+Wat het is:
+Arka koppelt Claude AI aan de bestaande tools van een klant (Gmail, Agenda, CRM, boekhouding,
+projectmanagement) en bouwt een digitale assistent die dagelijks taken uitvoert: de inbox sorteren,
+concept-antwoorden schrijven in de schrijfstijl van de klant, de agenda reviewen, taken prioriteren
+en elke ochtend een morning brief genereren. Niets wordt verstuurd zonder goedkeuring van de klant.
+
+Hoe het werkt (5 stappen): 1) Tools koppelen, 2) Morning brief op maat, 3) Inbox-automatisering,
+4) Schema instellen (draait dagelijks in de cloud, computer hoeft niet aan), 5) Overdracht en training
+(de klant wordt eigenaar).
+
+Prijzen (eenmalig):
+- Instap: €1.500 eenmalig. Tot 5 tools, morning brief, inbox concept-antwoorden, overdracht 30 minuten.
+- Professional: €2.500 eenmalig. Onbeperkt tools, morning brief + taakprioritering, inbox concepten +
+  agenda-automatisering, custom skills (weekrapport, klantoverzicht), overdracht 60 minuten +
+  documentatie, optioneel retainer €250/maand.
+
+De klant betaalt het eigen Claude Pro abonnement (circa 20 dollar per maand). Arka host niets.
+
+ROI: bespaart circa 30 minuten per dag, ruim 10 uur per maand. Bij een uurtarief van €75 is dat
+€825 aan teruggewonnen tijd per maand. Terugverdiend binnen twee maanden.
+
+Koppelingen: Gmail, Google Agenda, Google Drive, Outlook, HubSpot, Slack, ClickUp, Asana, Notion,
+QuickBooks, Exact Online, en via Zapier 8.000+ extra koppelingen.
+`;
+
 // ─── Volledige kennisbank (voor systeemprompt) ───────────────────────────────
 
 export const KNOWLEDGE_BASE = [
   KB_COMPANY,
   KB_SERVICES,
+  KB_AI_ASSISTENT,
   KB_PACKAGES,
   KB_FAQ,
   KB_CASES,
