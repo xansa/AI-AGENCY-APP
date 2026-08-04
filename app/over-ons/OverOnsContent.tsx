@@ -59,7 +59,7 @@ export function OverOnsContent() {
             <span className="inline-block w-6 border-t border-slate-meta/60 mr-3 align-middle" />
             {t("overOns.badge")}
           </p>
-          <h1 className="font-serif font-medium text-display-sm text-slate-ink tracking-tight leading-[1.05] max-w-4xl text-balance">
+          <h1 className="font-serif font-medium text-[clamp(3rem,8vw,7rem)] text-slate-ink tracking-tight leading-[0.98] max-w-5xl text-balance">
             {t("overOns.heading")}
           </h1>
           <p className="mt-8 text-[17px] md:text-lg text-slate-muted leading-relaxed max-w-2xl text-pretty">
@@ -391,6 +391,12 @@ export function OverOnsContent() {
               <ArrowUpRight className="w-4 h-4" />
             </a>
           </div>
+        </div>
+        {/* Brand-wordmark signature (Noira-style) */}
+        <div className="relative mt-16 md:mt-24 px-4 select-none pointer-events-none" aria-hidden="true">
+          <span className="arka-wordmark block text-center text-cream leading-[0.8] text-[clamp(5rem,25vw,20rem)]">
+            Arka<span className="text-arka">.</span>
+          </span>
         </div>
       </section>
     </>
