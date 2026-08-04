@@ -36,13 +36,6 @@ export function OverOnsContent() {
     { number: "03", titleKey: "overOns.stap3Title" as const, descKey: "overOns.stap3Desc" as const },
   ];
 
-  const facts = [
-    { value: "6", label: locale === "en" ? "disciplines" : "disciplines" },
-    { value: locale === "en" ? "24h" : "24u", label: locale === "en" ? "response time" : "reactietijd" },
-    { value: "0", label: "overhead" },
-    { value: "100%", label: locale === "en" ? "yours" : "jouw eigendom" },
-  ];
-
   const chips =
     locale === "en"
       ? ["6 disciplines", "1 point of contact", "0 middlemen"]
@@ -80,23 +73,20 @@ export function OverOnsContent() {
         <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 lg:gap-16 items-center">
             <motion.div {...reveal()} className="lg:col-span-5 relative">
-              <div className="relative mx-auto lg:mx-0 max-w-[380px]">
+              <div className="relative mx-auto lg:mx-0 max-w-[320px]">
                 <div className="absolute -bottom-4 -left-4 w-full h-full rounded-2xl bg-arka/90 hidden sm:block" aria-hidden="true" />
                 <div className="relative aspect-[4/5] rounded-2xl overflow-hidden ring-1 ring-slate-950/10 shadow-[0_30px_70px_-40px_rgba(11,18,32,0.5)]">
                   <Image
                     src="/founder.png"
                     alt="Kaan Arslan, oprichter van Arka"
                     fill
-                    sizes="(max-width: 1024px) 80vw, 380px"
-                    className="object-cover object-[55%_18%]"
+                    sizes="(max-width: 1024px) 80vw, 320px"
+                    className="object-cover object-[50%_20%]"
                     priority
                   />
                 </div>
-                <div className="absolute -bottom-5 right-4 sm:right-6 rounded-2xl bg-white/95 backdrop-blur ring-1 ring-slate-950/8 shadow-[0_20px_50px_-28px_rgba(11,18,32,0.4)] px-5 py-3.5">
+                <div className="absolute -bottom-5 right-4 sm:right-6 rounded-2xl bg-white/95 backdrop-blur ring-1 ring-slate-950/8 shadow-[0_20px_50px_-28px_rgba(11,18,32,0.4)] px-5 py-3">
                   <div className="text-[13px] font-semibold text-slate-ink leading-tight">Kaan Arslan</div>
-                  <div className="text-[11px] text-slate-meta">
-                    {locale === "en" ? "Founder · builds it all himself" : "Oprichter · bouwt alles zelf"}
-                  </div>
                 </div>
               </div>
             </motion.div>
@@ -124,24 +114,6 @@ export function OverOnsContent() {
                 ))}
               </div>
             </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Facts band — visual data, not prose */}
-      <section className="relative bg-cream-deep py-14 md:py-16 border-y border-slate-950/8">
-        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-10">
-            {facts.map((f, i) => (
-              <motion.div key={f.label} {...reveal(i * 0.06)} className="min-w-0 text-center md:text-left">
-                <div className="font-serif text-[2.75rem] md:text-[3.25rem] leading-none font-medium text-slate-ink tracking-tight">
-                  {f.value}
-                </div>
-                <div className="mt-2.5 text-[12px] uppercase tracking-wide text-slate-meta font-semibold">
-                  {f.label}
-                </div>
-              </motion.div>
-            ))}
           </div>
         </div>
       </section>
@@ -212,33 +184,35 @@ export function OverOnsContent() {
               {t("overOns.principes")}
             </h2>
           </div>
-          <div className="rounded-2xl overflow-hidden ring-1 ring-slate-950/8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 -mt-px -ml-px">
-              {principles.map((p, i) => {
-                const Icon = p.icon;
-                return (
-                  <div
-                    key={i}
-                    className="group min-w-0 border-t border-l border-slate-950/8 bg-cream p-8 md:p-10 flex flex-col transition-colors duration-300 hover:bg-cream-deep"
-                  >
-                    <div className="flex items-start justify-between mb-6">
-                      <div className="w-10 h-10 rounded-xl bg-arka/8 ring-1 ring-arka/15 flex items-center justify-center transition-colors duration-300 group-hover:bg-arka/15">
-                        <Icon className="w-5 h-5 text-arka" strokeWidth={1.75} />
-                      </div>
-                      <span className="text-[11px] font-mono text-slate-meta">
-                        {String(i + 1).padStart(2, "0")}
-                      </span>
+          <div className="border-t border-slate-950/8">
+            {principles.map((p, i) => {
+              const Icon = p.icon;
+              return (
+                <motion.div
+                  key={i}
+                  initial={reduce ? false : { opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, margin: "-60px" }}
+                  transition={{ duration: 0.55, ease: EASE, delay: i * 0.07 }}
+                  className="group flex flex-col md:flex-row md:items-start gap-4 md:gap-10 py-8 md:py-9 border-b border-slate-950/8"
+                >
+                  <div className="flex items-center gap-4 md:w-[44%] shrink-0 min-w-0">
+                    <span className="font-mono text-[12px] text-slate-meta w-6 shrink-0">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <div className="w-10 h-10 rounded-xl bg-arka/8 ring-1 ring-arka/15 flex items-center justify-center shrink-0 transition-colors duration-300 group-hover:bg-arka/15">
+                      <Icon className="w-5 h-5 text-arka" strokeWidth={1.75} />
                     </div>
-                    <h3 className="font-serif text-[1.35rem] leading-[1.15] font-medium text-slate-ink tracking-tight mb-3 break-words">
+                    <h3 className="font-serif text-[1.4rem] leading-[1.1] font-medium text-slate-ink tracking-tight min-w-0 break-words">
                       {t(p.titleKey)}
                     </h3>
-                    <p className="text-[14px] leading-relaxed text-slate-muted text-pretty">
-                      {t(p.descKey)}
-                    </p>
                   </div>
-                );
-              })}
-            </div>
+                  <p className="text-[15px] leading-relaxed text-slate-muted text-pretty min-w-0 md:pt-1.5">
+                    {t(p.descKey)}
+                  </p>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>
