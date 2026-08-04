@@ -7,7 +7,7 @@ import { useTranslation } from "@/lib/i18n";
 import { motion, useReducedMotion } from "framer-motion";
 
 const CALENDLY_URL =
-  process.env.NEXT_PUBLIC_CALENDLY_URL ?? "https://calendly.com/arkaecom-proton/30min";
+  process.env.NEXT_PUBLIC_CALENDLY_URL ?? "https://calendly.com/arka-/30min";
 
 export function OverOnsContent() {
   const { t } = useTranslation();
@@ -150,13 +150,14 @@ export function OverOnsContent() {
               {t("overOns.principes")}
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-line rounded-2xl overflow-hidden ring-1 ring-slate-950/8">
+          <div className="rounded-2xl overflow-hidden ring-1 ring-slate-950/8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 -mt-px -ml-px">
             {principles.map((p, i) => {
               const Icon = p.icon;
               return (
                 <div
                   key={i}
-                  className="min-w-0 bg-cream p-8 md:p-10 flex flex-col"
+                  className="min-w-0 border-t border-l border-slate-950/8 bg-cream p-8 md:p-10 flex flex-col"
                 >
                   <div className="flex items-start justify-between mb-6">
                     <div className="w-10 h-10 rounded-xl bg-slate-950/5 ring-1 ring-slate-950/8 flex items-center justify-center">
@@ -175,6 +176,7 @@ export function OverOnsContent() {
                 </div>
               );
             })}
+            </div>
           </div>
         </div>
       </section>

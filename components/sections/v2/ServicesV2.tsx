@@ -51,7 +51,8 @@ export function ServicesV2() {
         </div>
 
         {/* Services grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-line rounded-2xl overflow-hidden ring-1 ring-slate-950/8">
+        <div className="rounded-2xl overflow-hidden ring-1 ring-slate-950/8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 -mt-px -ml-px">
           {services.map((service, i) => {
             const Icon = iconMap[service.slug] ?? Globe;
             return (
@@ -61,7 +62,7 @@ export function ServicesV2() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.55, delay: (i % 3) * 0.08, ease: [0.22, 1, 0.36, 1] }}
-                className="min-w-0"
+                className="min-w-0 border-t border-l border-slate-950/8"
               >
                 <Link
                   href={`/diensten/${service.slug}`}
@@ -96,6 +97,7 @@ export function ServicesV2() {
               </motion.div>
             );
           })}
+          </div>
         </div>
       </div>
     </section>
