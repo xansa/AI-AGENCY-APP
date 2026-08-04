@@ -124,7 +124,7 @@ export function PackagesShowcaseV2() {
                         <span className={cn("font-serif text-[1.4rem] leading-none font-medium block", active ? "text-ink" : "text-cream")}>
                           {p.name}
                         </span>
-                        <span className={cn("text-[12.5px] block mt-1 sm:truncate", active ? "text-ink/60" : "text-cream/50")}>
+                        <span className={cn("text-[12.5px] block mt-1", active ? "text-ink/60" : "text-cream/50")}>
                           {l(p, "tagline", locale)}
                         </span>
                       </span>
