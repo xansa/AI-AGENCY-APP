@@ -14,7 +14,7 @@ export function CasesV2() {
 
   return (
     <section className="relative bg-cream py-24 md:py-32 overflow-hidden">
-      <div className="absolute bottom-[-8%] left-[-6%] w-[40rem] h-[40rem] rounded-full bg-[radial-gradient(circle,rgba(37,99,235,0.05),transparent_60%)] blur-3xl pointer-events-none" aria-hidden="true" />
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[72%] h-[88%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(37,99,235,0.045),transparent_66%)] blur-3xl pointer-events-none" aria-hidden="true" />
       <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-16 md:mb-20">
           <div className="lg:col-span-7">

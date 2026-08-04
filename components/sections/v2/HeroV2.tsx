@@ -44,11 +44,10 @@ export function HeroV2() {
 
   return (
     <section className="relative bg-cream pt-32 pb-24 md:pt-40 md:pb-28 lg:pt-44 lg:pb-32 overflow-hidden">
-      {/* ── Soft gradient "bulb" wash ── */}
+      {/* ── Soft gradient "bulb" wash, centered behind the content ── */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-        <div className="absolute -top-24 right-[-6%] w-[46rem] h-[46rem] rounded-full bg-[radial-gradient(circle,rgba(37,99,235,0.10),transparent_62%)] blur-2xl" />
-        <div className="absolute top-10 left-[-8%] w-[40rem] h-[40rem] rounded-full bg-[radial-gradient(circle,rgba(243,239,231,0.9),transparent_60%)] blur-2xl" />
-        <div className="absolute top-[40%] right-[24%] w-[34rem] h-[34rem] rounded-full bg-[radial-gradient(circle,rgba(59,130,246,0.06),transparent_60%)] blur-3xl" />
+        <div className="absolute left-1/2 top-[16%] -translate-x-1/2 w-[90%] h-[80%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(37,99,235,0.11),rgba(59,130,246,0.05)_40%,transparent_70%)] blur-3xl" />
+        <div className="absolute left-1/2 top-[4%] -translate-x-1/2 w-[64%] h-[54%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(243,239,231,0.7),transparent_62%)] blur-2xl" />
       </div>
       {/* Faint canvas grid for texture */}
       <div className="absolute inset-x-0 top-0 h-[80%] canvas-grid opacity-[0.35] pointer-events-none" aria-hidden="true" />

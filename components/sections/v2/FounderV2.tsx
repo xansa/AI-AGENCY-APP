@@ -24,7 +24,7 @@ export function FounderV2() {
     <section className="relative bg-cream-deep py-24 md:py-32 overflow-hidden">
       {/* soft brand-tinted wash */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-        <div className="absolute bottom-[-10%] left-[-6%] w-[38rem] h-[38rem] rounded-full bg-[radial-gradient(circle,rgba(37,99,235,0.07),transparent_62%)] blur-3xl" />
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[78%] h-[88%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(37,99,235,0.06),transparent_66%)] blur-3xl" />
       </div>
 
       <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
