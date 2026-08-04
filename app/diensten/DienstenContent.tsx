@@ -140,8 +140,9 @@ export function DienstenContent() {
       {/* Grid */}
       <section className="relative bg-cream py-16 md:py-24">
         <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-line rounded-2xl overflow-hidden ring-1 ring-slate-950/8">
-            {services.map((service, i) => {
+          <div className="rounded-2xl overflow-hidden ring-1 ring-slate-950/8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 -mt-px -ml-px">
+              {services.map((service, i) => {
               const Icon = iconMap[service.icon] ?? Zap;
               return (
                 <motion.div
@@ -150,7 +151,7 @@ export function DienstenContent() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-60px" }}
                   transition={{ duration: 0.55, delay: (i % 3) * 0.08 }}
-                  className="min-w-0"
+                  className="min-w-0 border-t border-l border-slate-950/8"
                 >
                   <Link
                     href={`/diensten/${service.slug}`}
@@ -187,6 +188,7 @@ export function DienstenContent() {
                 </motion.div>
               );
             })}
+            </div>
           </div>
         </div>
       </section>
