@@ -33,7 +33,7 @@ export function Footer() {
     <footer className="relative bg-ink text-cream/70 overflow-hidden">
       <div className="absolute inset-0 canvas-grid opacity-[0.035] pointer-events-none" />
 
-      <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10 pt-24 pb-12">
+      <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10 xl:px-14 pt-24 pb-12">
         {/* Editorial closing statement */}
         <div className="mb-16 max-w-2xl">
           <p className="text-overline uppercase text-cream/40 mb-5">

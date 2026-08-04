@@ -15,7 +15,7 @@ export function FAQV2() {
 
   return (
     <section className="relative bg-cream py-24 md:py-32">
-      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-14 md:mb-16">
           <div className="lg:col-span-5">
             <p className="text-overline uppercase text-slate-meta font-semibold mb-6">

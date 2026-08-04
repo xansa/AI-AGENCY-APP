@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { HeroV2 } from "@/components/sections/v2/HeroV2";
+import { MarqueeV2 } from "@/components/sections/v2/MarqueeV2";
 import { ProofStripV2 } from "@/components/sections/v2/ProofStripV2";
 import { ServicesV2 } from "@/components/sections/v2/ServicesV2";
 import { WerkwijzeV2 } from "@/components/sections/v2/WerkwijzeV2";
@@ -33,6 +34,7 @@ export default function HomePage() {
   return (
     <>
       <HeroV2 />
+      <MarqueeV2 />
       <ProofStripV2 />
       <ServicesV2 />
       <WerkwijzeV2 />

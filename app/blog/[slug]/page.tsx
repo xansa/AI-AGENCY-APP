@@ -150,7 +150,7 @@ export default function BlogPostPage({ params }: Props) {
       {/* Editorial article hero */}
       <section className="relative bg-cream pt-32 pb-12 md:pt-40 md:pb-16">
         <div className="absolute inset-x-0 top-0 h-80 canvas-grid opacity-40 pointer-events-none" />
-        <div className="relative max-w-narrow mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="relative max-w-narrow mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
           <Link
             href="/blog"
             className="inline-flex items-center gap-2 text-slate-muted hover:text-slate-ink text-[13px] mb-8 transition-colors"
@@ -191,7 +191,7 @@ export default function BlogPostPage({ params }: Props) {
       </section>
 
       <section className="relative bg-cream py-12 md:py-20">
-        <div className="max-w-narrow mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="max-w-narrow mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
           <article>{renderContent(post.content)}</article>
 
           <div className="mt-20 p-8 md:p-10 bg-ink text-cream rounded-2xl">

@@ -29,7 +29,7 @@ export function FAQContent() {
       {/* Editorial hero */}
       <section className="relative bg-cream pt-32 pb-12 md:pt-40 md:pb-16">
         <div className="absolute inset-x-0 top-0 h-80 canvas-grid opacity-40 pointer-events-none" />
-        <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
           <p className="text-overline uppercase text-slate-meta font-semibold mb-8">
             <span className="inline-block w-6 border-t border-slate-meta/60 mr-3 align-middle" />
             {t("faq.label")}
@@ -45,7 +45,7 @@ export function FAQContent() {
 
       {/* FAQ stack */}
       <section className="relative bg-cream py-16 md:py-24">
-        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
           <div className="max-w-4xl mx-auto">
             {categories.map((cat) => {
               const items = localizedItems.filter((f) => f.category === cat);
@@ -110,7 +110,7 @@ export function FAQContent() {
       {/* Closing CTA */}
       <section className="relative bg-ink text-cream py-24 md:py-32">
         <div className="absolute inset-0 canvas-grid opacity-[0.035] pointer-events-none" />
-        <div className="relative max-w-narrow mx-auto px-6 sm:px-8 lg:px-10 text-center">
+        <div className="relative max-w-narrow mx-auto px-6 sm:px-8 lg:px-10 xl:px-14 text-center">
           <h2 className="font-serif font-medium text-h1 text-cream tracking-tight leading-[1.05] text-balance">
             {t("faqPage.ctaHeading")}
           </h2>

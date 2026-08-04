@@ -21,7 +21,7 @@ export default function PrivacyPage() {
     <>
       <section className="relative bg-cream pt-32 pb-12 md:pt-40 md:pb-16">
         <div className="absolute inset-x-0 top-0 h-80 canvas-grid opacity-40 pointer-events-none" />
-        <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
           <p className="text-overline uppercase text-slate-meta font-semibold mb-8">
             <span className="inline-block w-6 border-t border-slate-meta/60 mr-3 align-middle" />
             Juridisch
@@ -36,7 +36,7 @@ export default function PrivacyPage() {
       </section>
 
       <section className="relative bg-cream py-16 md:py-20">
-        <div className="max-w-narrow mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="max-w-narrow mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
           <div className="space-y-10 text-slate-muted leading-relaxed">
             <div>
               <h2 className="text-xl font-bold text-dark-900 mb-3">

@@ -14,7 +14,8 @@ export function CasesV2() {
 
   return (
     <section className="relative bg-cream py-24 md:py-32">
-      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+      <div className="absolute inset-0 canvas-grid opacity-[0.03] pointer-events-none" />
+      <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-16 md:mb-20">
           <div className="lg:col-span-7">
             <p className="text-overline uppercase text-slate-meta font-semibold mb-6">
@@ -44,7 +45,7 @@ export function CasesV2() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.65, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
-              className="min-w-0 group flex flex-col bg-cream-deep rounded-2xl ring-1 ring-slate-950/8 p-8 md:p-10 hover:ring-slate-950/15 transition-all duration-300"
+              className="min-w-0 group flex flex-col bg-cream-deep rounded-2xl ring-1 ring-slate-950/8 p-8 md:p-10 hover:ring-slate-950/15 hover:-translate-y-1 hover:shadow-[0_18px_50px_-30px_rgba(11,18,32,0.35)] transition-all duration-300"
             >
               {/* Header row */}
               <div className="flex items-center justify-between mb-8">

@@ -117,8 +117,9 @@ const config: Config = {
         "overline": ["0.75rem", { lineHeight: "1.2", letterSpacing: "0.14em" }],
       },
       maxWidth: {
-        "content": "72rem",
+        "content": "80rem",
         "narrow": "52rem",
+        "wide": "90rem",
       },
       ringColor: {
         DEFAULT: "rgb(15 23 42 / 0.08)",

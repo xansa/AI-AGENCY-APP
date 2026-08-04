@@ -42,7 +42,7 @@ export default function BlogPage() {
       {/* Editorial hero */}
       <section className="relative bg-cream pt-32 pb-12 md:pt-40 md:pb-16">
         <div className="absolute inset-x-0 top-0 h-80 canvas-grid opacity-40 pointer-events-none" />
-        <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
           <p className="text-overline uppercase text-slate-meta font-semibold mb-8">
             <span className="inline-block w-6 border-t border-slate-meta/60 mr-3 align-middle" />
             Journal
@@ -58,7 +58,7 @@ export default function BlogPage() {
 
       {/* Posts list, editorial stack with hairlines */}
       <section className="relative bg-cream py-16 md:py-24">
-        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
           <div className="max-w-4xl mx-auto">
             {blogPosts.map((post, i) => (
               <Link

@@ -64,7 +64,7 @@ export function AiAssistentContent() {
         <div className="absolute inset-x-0 top-0 h-[70%] canvas-grid opacity-[0.45] pointer-events-none" />
         <div className="absolute inset-x-0 top-0 h-80 bg-gradient-to-b from-cream-deep/80 to-transparent pointer-events-none" />
 
-        <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
           <motion.div {...rise(0)} className="mb-8">
             <p className="text-overline uppercase text-slate-meta font-semibold inline-flex items-center gap-3">
               <span className="inline-block w-6 border-t border-slate-meta/60" />
@@ -154,7 +154,7 @@ export function AiAssistentContent() {
 
       {/* ── Wat het is ───────────────────────────────────────── */}
       <section className="relative bg-cream py-24 md:py-32">
-        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
             <motion.div {...reveal()} className="lg:col-span-5">
               <p className="text-overline uppercase text-slate-meta font-semibold mb-6">
@@ -182,7 +182,7 @@ export function AiAssistentContent() {
         id="hoe-het-werkt"
         className="relative bg-cream pb-24 md:pb-32 scroll-mt-24"
       >
-        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
           <motion.div {...reveal()} className="max-w-3xl mb-16 md:mb-20">
             <p className="text-overline uppercase text-slate-meta font-semibold mb-6">
               <span className="inline-block w-6 border-t border-slate-meta/60 mr-3 align-middle" />
@@ -228,7 +228,7 @@ export function AiAssistentContent() {
       <section className="relative bg-ink text-cream py-24 md:py-32 overflow-hidden">
         <div className="absolute inset-0 canvas-grid opacity-[0.035] pointer-events-none" />
 
-        <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
           <motion.div {...reveal()} className="max-w-3xl mb-14 md:mb-16">
             <p className="text-overline uppercase text-cream/40 font-semibold mb-6">
               <span className="inline-block w-6 border-t border-cream/30 mr-3 align-middle" />
@@ -342,7 +342,7 @@ export function AiAssistentContent() {
 
       {/* ── De rekensom / ROI ────────────────────────────────── */}
       <section className="relative bg-cream py-24 md:py-32">
-        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-14 md:mb-16">
             <motion.div {...reveal()} className="lg:col-span-7">
               <p className="text-overline uppercase text-slate-meta font-semibold mb-6">
@@ -381,7 +381,7 @@ export function AiAssistentContent() {
 
       {/* ── Koppelingen ──────────────────────────────────────── */}
       <section className="relative bg-cream pb-24 md:pb-32">
-        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
           <motion.div {...reveal()} className="max-w-3xl mb-12 md:mb-14">
             <p className="text-overline uppercase text-slate-meta font-semibold mb-6">
               <span className="inline-block w-6 border-t border-slate-meta/60 mr-3 align-middle" />
@@ -428,7 +428,7 @@ export function AiAssistentContent() {
 
       {/* ── Slot-CTA ─────────────────────────────────────────── */}
       <section className="relative bg-cream py-24 md:py-32">
-        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
           <motion.div {...reveal()} className="hairline-strong pt-16 md:pt-20 text-center">
             <h2 className="font-serif font-medium text-display-sm text-slate-ink tracking-tight leading-[1.05] text-balance max-w-3xl mx-auto">
               {c.cta.titleLead}{" "}

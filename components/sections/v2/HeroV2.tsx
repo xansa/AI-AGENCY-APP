@@ -1,6 +1,7 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
@@ -8,6 +9,12 @@ import { ArrowUpRight } from "lucide-react";
 // Star of the show: the H1. Everything else supports it.
 export function HeroV2() {
   const reduce = useReducedMotion();
+  const ref = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+  const gridY = useTransform(scrollYProgress, [0, 1], ["0%", "-16%"]);
   const rise = (delay: number) => ({
     initial: reduce ? false : { y: 24, opacity: 0 },
     animate: { y: 0, opacity: 1 },
@@ -15,13 +22,16 @@ export function HeroV2() {
   });
 
   return (
-    <section className="relative bg-cream pt-32 pb-20 md:pt-40 md:pb-28 lg:pt-44 lg:pb-32 overflow-hidden">
-      {/* Decorative canvas grid background, subtle */}
-      <div className="absolute inset-x-0 top-0 h-[70%] canvas-grid opacity-[0.45] pointer-events-none" />
+    <section ref={ref} className="relative bg-cream pt-32 pb-20 md:pt-40 md:pb-28 lg:pt-44 lg:pb-32 overflow-hidden">
+      {/* Decorative canvas grid background, subtle parallax for depth */}
+      <motion.div
+        style={reduce ? undefined : { y: gridY }}
+        className="absolute inset-x-0 top-0 h-[85%] canvas-grid opacity-[0.45] pointer-events-none"
+      />
       {/* Soft gradient wash from top */}
       <div className="absolute inset-x-0 top-0 h-80 bg-gradient-to-b from-cream-deep/80 to-transparent pointer-events-none" />
 
-      <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+      <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
         {/* Overline label */}
         <motion.div {...rise(0)} className="mb-8 md:mb-10">
           <p className="text-overline uppercase text-slate-meta font-semibold inline-flex items-center gap-3">

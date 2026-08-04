@@ -9,7 +9,7 @@ export function ClosingCTAV2() {
 
   return (
     <section className="relative bg-cream py-24 md:py-32">
-      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
         <motion.div
           initial={reduce ? false : { opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}

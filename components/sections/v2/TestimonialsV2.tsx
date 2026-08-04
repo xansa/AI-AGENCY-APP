@@ -21,7 +21,7 @@ export function TestimonialsV2() {
 
   return (
     <section className="relative bg-cream-deep py-24 md:py-32">
-      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
         <div className="max-w-2xl mb-14 md:mb-16">
           <p className="text-overline uppercase text-slate-meta font-semibold mb-6">
             <span className="inline-block w-6 border-t border-slate-meta/60 mr-3 align-middle" />

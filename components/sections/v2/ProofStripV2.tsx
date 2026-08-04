@@ -22,7 +22,7 @@ export function ProofStripV2() {
 
   return (
     <section className="relative bg-cream py-16 md:py-20">
-      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
         <div className="hairline pt-12 md:pt-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
             {stats.map((stat, i) => (

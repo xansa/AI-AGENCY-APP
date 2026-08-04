@@ -30,7 +30,8 @@ export function ServicesV2() {
 
   return (
     <section className="relative bg-cream py-24 md:py-32">
-      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+      <div className="absolute inset-0 canvas-grid opacity-[0.03] pointer-events-none" />
+      <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
         {/* Section header, asymmetric editorial */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16 md:mb-20">
           <div className="lg:col-span-5">

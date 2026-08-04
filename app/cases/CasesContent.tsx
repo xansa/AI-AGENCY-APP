@@ -18,7 +18,7 @@ export function CasesContent() {
       {/* Hero */}
       <section className="relative bg-cream pt-32 pb-16 md:pt-40 md:pb-20">
         <div className="absolute inset-x-0 top-0 h-80 canvas-grid opacity-40 pointer-events-none" />
-        <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
           <p className="text-overline uppercase text-slate-meta font-semibold mb-8">
             <span className="inline-block w-6 border-t border-slate-meta/60 mr-3 align-middle" />
             {t("cases.label")}
@@ -39,7 +39,7 @@ export function CasesContent() {
 
       {/* Cases editorial stack */}
       <section className="relative bg-cream py-16 md:py-24">
-        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10 space-y-10">
+        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10 xl:px-14 space-y-10">
           {realCases.map((c, i) => (
             <motion.article
               key={c.slug}
@@ -139,7 +139,7 @@ export function CasesContent() {
       {/* Closing CTA */}
       <section className="relative bg-ink text-cream py-24 md:py-32">
         <div className="absolute inset-0 canvas-grid opacity-[0.035] pointer-events-none" />
-        <div className="relative max-w-narrow mx-auto px-6 sm:px-8 lg:px-10 text-center">
+        <div className="relative max-w-narrow mx-auto px-6 sm:px-8 lg:px-10 xl:px-14 text-center">
           <h2 className="font-serif font-medium text-h1 text-cream tracking-tight leading-[1.05] text-balance">
             {t("casesPage.ctaHeading")}
           </h2>

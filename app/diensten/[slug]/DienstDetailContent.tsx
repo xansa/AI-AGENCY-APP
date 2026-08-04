@@ -85,7 +85,7 @@ export function DienstDetailContent({ service }: { service: Service }) {
       {/* Editorial hero */}
       <section className="relative bg-cream pt-16 md:pt-24 pb-16 md:pb-20">
         <div className="absolute inset-x-0 top-0 h-80 canvas-grid opacity-40 pointer-events-none" />
-        <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
           <Link
             href="/diensten"
             className="inline-flex items-center gap-2 text-slate-muted hover:text-slate-ink text-[13px] mb-8 transition-colors"
@@ -108,7 +108,7 @@ export function DienstDetailContent({ service }: { service: Service }) {
 
       {/* Long description + deliverables grid */}
       <section className="relative bg-cream py-16 md:py-20">
-        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
             <div className="lg:col-span-8 min-w-0">
               {service.longDescription && (

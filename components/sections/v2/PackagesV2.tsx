@@ -17,7 +17,7 @@ export function PackagesV2() {
     <section className="relative bg-ink text-cream py-24 md:py-32 overflow-hidden">
       <div className="absolute inset-0 canvas-grid opacity-[0.035] pointer-events-none" />
 
-      <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+      <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10 xl:px-14">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-14 md:mb-16">
           <div className="lg:col-span-7">
             <p className="text-overline uppercase text-cream/40 font-semibold mb-6">
