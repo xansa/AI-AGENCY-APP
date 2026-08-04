@@ -8,12 +8,14 @@ import { motion, useReducedMotion } from "framer-motion";
 export function TestimonialsV2() {
   const { locale } = useTranslation();
   const reduce = useReducedMotion();
-  const realTestimonials = cases.filter((c) => !c.isExample).map((c) => ({
-    quote: l(c.testimonial, "quote", locale),
-    author: c.testimonial.author,
-    role: l(c.testimonial, "role", locale),
-    industry: l(c, "industry", locale),
-  }));
+  const realTestimonials = cases
+    .filter((c) => !c.isExample && c.testimonial)
+    .map((c) => ({
+      quote: l(c.testimonial!, "quote", locale),
+      author: c.testimonial!.author,
+      role: l(c.testimonial!, "role", locale),
+      industry: l(c, "industry", locale),
+    }));
 
   if (realTestimonials.length === 0) return null;
 

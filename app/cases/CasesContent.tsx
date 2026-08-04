@@ -29,6 +29,11 @@ export function CasesContent() {
           <p className="mt-8 text-[17px] md:text-lg text-slate-muted leading-relaxed max-w-2xl text-pretty">
             {t("casesPage.description")}
           </p>
+          <p className="mt-4 text-[14px] text-slate-meta max-w-2xl text-pretty">
+            {locale === "en"
+              ? "The cases below are our own ventures: built and proven in practice."
+              : "De cases hieronder zijn onze eigen ventures: zelf gebouwd en in de praktijk bewezen."}
+          </p>
         </div>
       </section>
 
@@ -52,6 +57,11 @@ export function CasesContent() {
                     <span>{l(c, "industry", locale)}</span>
                     <span className="w-1 h-1 rounded-full bg-slate-meta/60" />
                     <span>{c.package}</span>
+                    {c.ownVenture && (
+                      <span className="ml-1 px-2 py-0.5 rounded-full bg-arka/8 text-arka text-[9.5px] font-semibold">
+                        {locale === "en" ? "Own venture" : "Eigen venture"}
+                      </span>
+                    )}
                   </div>
 
                   <h2 className="font-serif text-[2.25rem] md:text-[2.75rem] leading-[1.05] font-medium text-slate-ink tracking-tight mb-5 break-words">
@@ -75,12 +85,14 @@ export function CasesContent() {
                     ))}
                   </div>
 
-                  <blockquote className="font-serif italic text-[18px] md:text-[20px] leading-snug text-slate-ink/85 text-pretty border-l-2 border-arka/40 pl-5">
-                    &ldquo;{l(c.testimonial, "quote", locale)}&rdquo;
-                    <footer className="mt-3 text-[12px] text-slate-meta not-italic font-sans">
-                      {c.testimonial.author} &middot; {l(c.testimonial, "role", locale)}
-                    </footer>
-                  </blockquote>
+                  {c.testimonial && (
+                    <blockquote className="font-serif italic text-[18px] md:text-[20px] leading-snug text-slate-ink/85 text-pretty border-l-2 border-arka/40 pl-5">
+                      &ldquo;{l(c.testimonial, "quote", locale)}&rdquo;
+                      <footer className="mt-3 text-[12px] text-slate-meta not-italic font-sans">
+                        {c.testimonial.author} &middot; {l(c.testimonial, "role", locale)}
+                      </footer>
+                    </blockquote>
+                  )}
                 </div>
 
                 <div className="lg:col-span-5 min-w-0 space-y-6">

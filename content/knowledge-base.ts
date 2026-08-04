@@ -156,12 +156,12 @@ Diensten: Websites & Webshops + SEO & Content
 Min. commitment: 3 maanden
 Inbegrepen: website bouw, hosting, onderhoud, SEO, content updates, rapportage, support
 
-**Professional** ⭐ Meest gekozen · Op maat
+**Professional** ⭐ Meest gekozen · vanaf €1.500/mnd
 Diensten: Websites & Webshops + SEO & Content + AI Chatbots + Branding
 Min. commitment: 6 maanden
 Inbegrepen: custom website + chatbot, brand identity, 8 LinkedIn posts + 2 blogs/mnd, strategie sessie, CRO
 
-**Enterprise** · Op maat
+**Enterprise** · vanaf €2.500/mnd
 Diensten: Alle 6 diensten
 Min. commitment: 6 maanden
 Inbegrepen: alles uit Professional + dashboards, lead gen, automatisering, dedicated support (< 4u reactie)
@@ -171,10 +171,10 @@ Inbegrepen: alles uit Professional + dashboards, lead gen, automatisering, dedic
 **Starter** · vanaf €2.000
 Website + basis SEO + 3 social templates. Oplevering in 2–4 weken. 30 dagen bugfixes.
 
-**Professional** · Op maat
+**Professional** · vanaf €4.500
 Custom website + chatbot + brand identity + 5 social templates. Oplevering in 4–6 weken.
 
-**Enterprise** · Op maat
+**Enterprise** · vanaf €7.500
 Alles + dashboards + CRM-integratie + lead funnel. Oplevering in 6–10 weken.
 
 Na oplevering: wijzigingen op uurbasis (€95/uur). Neem contact op voor een offerte op maat.
@@ -186,8 +186,8 @@ export const KB_FAQ = `
 ## Veelgestelde vragen
 
 **Wat kost het?**
-Maandelijks: Starter vanaf €750/mnd | Professional op maat | Enterprise op maat
-Eenmalig: Starter vanaf €2.000 | Professional op maat | Enterprise op maat
+Maandelijks: Starter vanaf €750/mnd | Professional vanaf €1.500/mnd | Enterprise vanaf €2.500/mnd
+Eenmalig: Starter vanaf €2.000 | Professional vanaf €4.500 | Enterprise vanaf €7.500
 Maandelijks is de beste deal: je krijgt doorlopende optimalisatie, content, support en rapportage.
 
 **Kan ik stoppen wanneer ik wil?**
@@ -249,40 +249,33 @@ Na 3 maanden zonder fit: samenwerking beëindigen in goed overleg, alles overdra
 // ─── Klantcases ──────────────────────────────────────────────────────────────
 
 export const KB_CASES = `
-## Klantresultaten & Cases
+## Bewijs uit eigen ventures
 
-### Brasserie De Haven · Horeca · Starter pakket (3 maanden)
-Uitdaging: Verouderde website, nauwelijks vindbaar op Google, reserveringen liepen mis.
-Aanpak: Nieuwe website met online reserveringssysteem, lokale SEO-optimalisatie,
-maandelijkse blogartikelen over lokale evenementen en seizoensmenu's.
-Resultaten:
-- +285% organisch websiteverkeer na 3 maanden
-- +160% meer online reserveringen
-- Top 3 Google positie voor 'restaurant Dordrecht'
-"Onze nieuwe website ziet er fantastisch uit en we merken direct het verschil."
-– Lisa Jansen, Eigenaar Brasserie De Haven
+Arka toont bewust geen verzonnen klantcases. De onderstaande resultaten komen uit Arka's eigen
+ventures: zelf gebouwd, live, en in de praktijk bewezen.
 
-### Visser & Partners Consultancy · Zakelijke dienstverlening · Professional pakket (4 maanden)
-Uitdaging: Te veel tijd aan repetitieve vragen, handmatig intake-proces, leads vielen weg.
-Aanpak: AI-chatbot voor veelgestelde vragen en lead kwalificatie, CRM-automatisering,
-vernieuwde website met professionele branding.
+### Display-pallets.nl · Pallethandel · eigen venture (Starter-aanpak)
+Uitdaging: onzichtbaar in een niche die gedomineerd wordt door grote, generieke palletleveranciers;
+geen online zichtbaarheid en volledig handmatige outreach.
+Aanpak: niche-website rondom display pallets, gerichte SEO-content, geautomatiseerde outreach.
 Resultaten:
-- Responstijd: 24 uur → 2 minuten
-- +75% meer gekwalificeerde leads
-- 15 uur/week tijdsbesparing
-"De chatbot voelt alsof we er een extra medewerker bij hebben."
-– Robert Visser, Managing Partner Visser & Partners Consultancy
+- Pagina 1 in Google voor niche-zoektermen zoals "display pallet kopen"
+- Van handmatig bellen naar geautomatiseerde e-mailcampagnes
+- +200% meer gerichte aanvragen via de nichewebsite
 
-### MaasLogistics B.V. · Logistiek & Transport · Enterprise pakket (6 maanden)
-Uitdaging: Geen inzicht in bedrijfsprestaties, verouderde website, geen structurele acquisitie.
-Aanpak: Nieuwe website, KPI-dashboards, lead generation campagnes via email en LinkedIn,
-proces automatisering voor offertes en klantcommunicatie.
+### De Palletleverancier BV · Pallethandel · eigen venture (Professional-aanpak)
+Uitdaging: volledig handmatige processen (telefonische acquisitie, offertes via e-mail), geen online
+aanwezigheid, nul vindbaarheid op Google.
+Aanpak: volledige digitalisering: professionele website + SEO, geautomatiseerde lead generation en
+outreach, procesautomatisering voor offertes en opvolging, LinkedIn-strategie.
 Resultaten:
-- +€1,8M nieuwe omzetpijplijn in eerste half jaar
-- Offertetijd: 3 dagen → 3 uur
-- Van maandelijkse Excel-rapportages naar real-time KPI-dashboards
-"Arka heeft ons bedrijf naar een ander niveau getild. We hebben eindelijk grip op
-onze cijfers." – Dennis van der Maas, Directeur MaasLogistics B.V.
+- 3 nieuwe klanten binnen de eerste weken na livegang
+- Top 5 in Google voor "palletleverancier" en gerelateerde termen
+- Offertes en klantopvolging 3x sneller, volledig geautomatiseerd
+
+"Voorheen deden we alles handmatig, van acquisitie tot offertes. Arka heeft ons bedrijf volledig
+gedigitaliseerd. Binnen een paar weken hadden we al 3 nieuwe klanten via de website en
+geautomatiseerde outreach." – Damian Stal, De Palletleverancier BV
 `;
 
 // ─── AI Assistent Setup (aparte dienst, eigen pagina /ai-assistent) ───────────

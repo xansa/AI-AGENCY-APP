@@ -22,7 +22,7 @@ export function CasesV2() {
               Geselecteerd werk
             </p>
             <h2 className="font-serif font-medium text-h1 text-slate-ink tracking-tight text-balance">
-              Concrete resultaten, <em className="italic">echte</em> klanten.
+              Concrete resultaten, <em className="italic">zelf</em> bewezen.
             </h2>
           </div>
           <div className="lg:col-span-5 lg:pt-6 flex lg:justify-end lg:items-end">
@@ -48,10 +48,17 @@ export function CasesV2() {
             >
               {/* Header row */}
               <div className="flex items-center justify-between mb-8">
-                <span className="text-[11px] font-mono text-slate-meta uppercase tracking-wider">
-                  {l(c, "industry", locale)} &middot; {c.package}
-                </span>
-                <span className="text-[11px] font-mono text-slate-meta">
+                <div className="flex items-center gap-2.5 min-w-0">
+                  <span className="text-[11px] font-mono text-slate-meta uppercase tracking-wider truncate">
+                    {l(c, "industry", locale)} &middot; {c.package}
+                  </span>
+                  {c.ownVenture && (
+                    <span className="shrink-0 px-2 py-0.5 rounded-full bg-arka/8 text-arka text-[9.5px] font-semibold uppercase tracking-wider">
+                      {locale === "en" ? "Own venture" : "Eigen venture"}
+                    </span>
+                  )}
+                </div>
+                <span className="shrink-0 text-[11px] font-mono text-slate-meta">
                   {String(i + 1).padStart(2, "0")} / {String(realCases.length).padStart(2, "0")}
                 </span>
               </div>
@@ -79,12 +86,16 @@ export function CasesV2() {
               </div>
 
               {/* Quote */}
-              <blockquote className="mt-8 font-serif italic text-[17px] leading-snug text-slate-ink/85 text-pretty line-clamp-4">
-                &ldquo;{l(c.testimonial, "quote", locale)}&rdquo;
-              </blockquote>
-              <div className="mt-3 text-[12px] text-slate-meta">
-                {c.testimonial.author} &middot; {l(c.testimonial, "role", locale)}
-              </div>
+              {c.testimonial && (
+                <>
+                  <blockquote className="mt-8 font-serif italic text-[17px] leading-snug text-slate-ink/85 text-pretty line-clamp-4">
+                    &ldquo;{l(c.testimonial, "quote", locale)}&rdquo;
+                  </blockquote>
+                  <div className="mt-3 text-[12px] text-slate-meta">
+                    {c.testimonial.author} &middot; {l(c.testimonial, "role", locale)}
+                  </div>
+                </>
+              )}
 
               <div className="flex-1" />
 

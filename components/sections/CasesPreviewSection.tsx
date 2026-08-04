@@ -70,12 +70,16 @@ export function CasesPreviewSection() {
                 ))}
               </div>
 
-              <blockquote className="text-slate-500 text-sm italic leading-relaxed border-l-2 border-slate-200 pl-3">
-                &ldquo;{l(c.testimonial, "quote", locale).slice(0, 100)}...&rdquo;
-              </blockquote>
-              <p className="text-xs text-slate-400 mt-2">
-                &ndash; {c.testimonial.author}, {l(c.testimonial, "role", locale)}
-              </p>
+              {c.testimonial && (
+                <>
+                  <blockquote className="text-slate-500 text-sm italic leading-relaxed border-l-2 border-slate-200 pl-3">
+                    &ldquo;{l(c.testimonial, "quote", locale).slice(0, 100)}...&rdquo;
+                  </blockquote>
+                  <p className="text-xs text-slate-400 mt-2">
+                    &ndash; {c.testimonial.author}, {l(c.testimonial, "role", locale)}
+                  </p>
+                </>
+              )}
             </motion.div>
           ))}
         </div>

@@ -146,9 +146,9 @@ export const packages: Package[] = [
     ],
     duration: "Minimaal 6 maanden, daarna maandelijks opzegbaar",
     duration_en: "Minimum 6 months, then monthly cancellable",
-    monthlyInvestment: "Op maat",
-    investment: "Op maat",
-    investment_en: "Custom quote",
+    monthlyInvestment: "Vanaf €1.500 / maand",
+    investment: "Vanaf €1.500/mnd",
+    investment_en: "From €1,500/mo",
     kpis: [
       "Conversieratio",
       "Aantal leads",
@@ -163,7 +163,7 @@ export const packages: Package[] = [
     ],
 
     // Eenmalig
-    onetimePrice: "Op maat",
+    onetimePrice: "Vanaf €4.500",
     onetimeDeliverables: [
       "Custom website met animaties (10\u201320 pagina\u2019s)",
       "AI-chatbot ge\u00EFntegreerd op website",
@@ -219,7 +219,7 @@ export const packages: Package[] = [
       "Lead generation campagnes (email + LinkedIn)",
       "Proces automatisering & CRM-integratie",
       "Data pipeline & API-koppelingen",
-      "Dedicated accountmanager",
+      "Vast aanspreekpunt met voorrangsservice",
       "Prioriteit support (< 4 uur reactie)",
       "Maandelijkse executive rapportage",
       "Strategisch kwartaalgesprek",
@@ -230,16 +230,16 @@ export const packages: Package[] = [
       "Lead generation campaigns (email + LinkedIn)",
       "Process automation & CRM integration",
       "Data pipeline & API integrations",
-      "Dedicated account manager",
+      "Fixed point of contact with priority service",
       "Priority support (< 4h response)",
       "Monthly executive report",
       "Quarterly strategy session",
     ],
     duration: "Minimaal 6 maanden, daarna per kwartaal opzegbaar",
     duration_en: "Minimum 6 months, then quarterly cancellable",
-    monthlyInvestment: "Op maat",
-    investment: "Op maat",
-    investment_en: "Custom quote",
+    monthlyInvestment: "Vanaf €2.500 / maand",
+    investment: "Vanaf €2.500/mnd",
+    investment_en: "From €2,500/mo",
     kpis: [
       "Omzetgroei",
       "Tijdsbesparing",
@@ -256,7 +256,7 @@ export const packages: Package[] = [
     ],
 
     // Eenmalig
-    onetimePrice: "Op maat",
+    onetimePrice: "Vanaf €7.500",
     onetimeDeliverables: [
       "Alles uit Professional eenmalig",
       "Custom KPI-dashboard (tot 3 views)",

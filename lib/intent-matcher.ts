@@ -44,9 +44,9 @@ const INTENTS: IntentDefinition[] = [
       "Arka biedt twee modellen: **maandelijks** (doorlopende samenwerking) of **eenmalig** (project).\n\n" +
       "**Maandelijks (aanbevolen):**\n" +
       "\u2022 **Starter** · vanaf \u20AC750/mnd _(Websites + SEO)_\n" +
-      "\u2022 **Professional** · op maat _(+ AI Chatbots + Branding)_ Meest gekozen\n" +
-      "\u2022 **Enterprise** · op maat _(alle 6 diensten)_\n\n" +
-      "**Eenmalig:** Starter vanaf \u20AC2.000 | Professional op maat | Enterprise op maat\n\n" +
+      "\u2022 **Professional** · vanaf €1.500/mnd _(+ AI Chatbots + Branding)_ Meest gekozen\n" +
+      "\u2022 **Enterprise** · vanaf €2.500/mnd _(alle 6 diensten)_\n\n" +
+      "**Eenmalig:** Starter vanaf \u20AC2.000 | Professional vanaf €4.500 | Enterprise vanaf €7.500\n\n" +
       "Wil je weten welk pakket het beste bij jouw situatie past?",
     cta: "Vraag een vrijblijvende offerte aan via [/offerte](/offerte) of plan een kennismakingsgesprek.",
   },
@@ -225,8 +225,8 @@ const INTENTS: IntentDefinition[] = [
     boostKeywords: ["pakket", "package"],
     response:
       "**Professional** is ons meest gekozen pakket:\n\n" +
-      "**Maandelijks:** Op maat\n" +
-      "**Eenmalig:** Op maat\n\n" +
+      "**Maandelijks:** vanaf €1.500/mnd\n" +
+      "**Eenmalig:** vanaf €4.500\n\n" +
       "Diensten: Websites + SEO + AI Chatbots + Branding\n" +
       "Voor wie: Groeiende MKB-bedrijven.\n\n" +
       "Maandelijks inbegrepen:\n" +
@@ -245,8 +245,8 @@ const INTENTS: IntentDefinition[] = [
     boostKeywords: ["pakket", "package", "automatisering"],
     response:
       "**Enterprise** is ons meest complete pakket:\n\n" +
-      "**Maandelijks:** Op maat\n" +
-      "**Eenmalig:** Op maat\n\n" +
+      "**Maandelijks:** vanaf €2.500/mnd\n" +
+      "**Eenmalig:** vanaf €7.500\n\n" +
       "Diensten: Alle 6 diensten\n" +
       "Voor wie: Gevestigde MKB-bedrijven en scale-ups.\n\n" +
       "Extra t.o.v. Professional:\n" +
@@ -382,14 +382,15 @@ const INTENTS: IntentDefinition[] = [
       "succesverhalen", "testimonial", "referentie", "ervaring", "track record",
     ],
     response:
-      "Enkele recente klantresultaten:\n\n" +
-      "**Brasserie De Haven (Horeca)** · Starter pakket\n" +
-      "\u2192 +285% organisch verkeer, +160% online reserveringen, top 3 Google\n\n" +
-      "**Visser & Partners (Consultancy)** · Professional pakket\n" +
-      "\u2192 Responstijd 24u \u2192 2 min, +75% meer leads, 15 uur/week bespaard\n\n" +
-      "**MaasLogistics (Logistiek)** · Enterprise pakket\n" +
-      "\u2192 +\u20AC1,8M omzetpijplijn, offertetijd 3 dgn \u2192 3 uur, real-time dashboards\n\n" +
-      "Bekijk de volledige cases op [/cases](/cases).",
+      `Onze bewijzen komen uit onze eigen ventures (zelf gebouwd en bewezen), niet uit verzonnen klantcases:
+
+**Display-pallets.nl (Pallethandel)** eigen venture
+→ Pagina 1 voor niche-zoektermen, geautomatiseerde outreach, +200% gerichte aanvragen
+
+**De Palletleverancier BV (Pallethandel)** eigen venture
+→ 3 nieuwe klanten in de eerste weken, Top 5 Google, offertes 3x sneller
+
+Bekijk de volledige cases op [/cases](/cases).`,
   },
 
   // ── Werkwijze & technologie ─────────────────────────────────────────────

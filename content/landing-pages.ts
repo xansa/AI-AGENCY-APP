@@ -176,8 +176,8 @@ Uiteraard werken we ook met bedrijven buiten de Drechtsteden. Het merendeel van 
 We bieden drie pakketten aan, elk afgestemd op een ander type bedrijf:
 
 \u2022 **Starter** (vanaf \u20AC750/mnd of \u20AC2.000 eenmalig): een complete bedrijfswebsite met SEO-basis
-\u2022 **Professional** (op maat): website + chatbot, CRM-koppeling en doorlopende SEO
-\u2022 **Enterprise** (op maat): volledig digitaal platform met dashboards, automatisering en dedicated support`,
+\u2022 **Professional** (vanaf €1.500/mnd): website + chatbot, CRM-koppeling en doorlopende SEO
+\u2022 **Enterprise** (vanaf €2.500/mnd): volledig digitaal platform met dashboards, automatisering en dedicated support`,
     body_en: `**Your digital department in the Drechtsteden**
 
 Arka is a digital agency based in Dordrecht. We help SMBs in the Drechtsteden with everything they need to succeed online: websites, webshops, SEO, AI chatbots, dashboards, and lead generation.
@@ -293,8 +293,8 @@ Het doel: verschijnen in de Google Map Pack wanneer iemand zoekt naar jouw diens
 SEO is inbegrepen in al onze pakketten:
 
 \u2022 **Starter** (vanaf \u20AC750/mnd): SEO-basis inbegrepen (technische optimalisatie, metadata, sitemap)
-\u2022 **Professional** (op maat): doorlopende SEO met maandelijkse content en rapportage
-\u2022 **Enterprise** (op maat): uitgebreide SEO-strategie met content, linkbuilding en dedicated support
+\u2022 **Professional** (vanaf €1.500/mnd): doorlopende SEO met maandelijkse content en rapportage
+\u2022 **Enterprise** (vanaf €2.500/mnd): uitgebreide SEO-strategie met content, linkbuilding en dedicated support
 
 Geen lange contracten. Maandelijks opzegbaar. Je betaalt voor resultaat, niet voor beloftes.
 
@@ -460,8 +460,8 @@ We richten je lokale SEO in zodat je gevonden wordt door mensen die zoeken naar 
 **Investering**
 
 • **Starter** (vanaf €750/mnd of €2.000 eenmalig): complete bedrijfswebsite met SEO-basis, contactformulier, responsive design
-• **Professional** (op maat): website + AI-chatbot, CRM-koppeling, doorlopende SEO
-• **Enterprise** (op maat): volledig digitaal platform met dashboards, automatisering en dedicated support
+• **Professional** (vanaf €1.500/mnd): website + AI-chatbot, CRM-koppeling, doorlopende SEO
+• **Enterprise** (vanaf €2.500/mnd): volledig digitaal platform met dashboards, automatisering en dedicated support
 
 Oplevering binnen 2-4 weken. Geen verborgen kosten. Maandelijks opzegbaar bij het maandmodel.
 
@@ -587,8 +587,8 @@ Het doel: zichtbaar zijn in het Map Pack wanneer iemand zoekt naar "[jouw dienst
 **Investering in SEO**
 
 • **Starter** (vanaf €750/mnd): SEO-basis, technische optimalisatie, metadata, sitemap
-• **Professional** (op maat): doorlopende SEO, maandelijkse content, rapportage over rankings en verkeer
-• **Enterprise** (op maat): uitgebreide strategie met contentproductie, linkbuilding en dedicated support
+• **Professional** (vanaf €1.500/mnd): doorlopende SEO, maandelijkse content, rapportage over rankings en verkeer
+• **Enterprise** (vanaf €2.500/mnd): uitgebreide strategie met contentproductie, linkbuilding en dedicated support
 
 Maandelijks opzegbaar. Transparante rapportage. Je ziet precies waar je voor betaalt.
 
@@ -725,8 +725,8 @@ Of je nu een kantoor hebt op de Zuidas, een winkel in De Pijp, of een restaurant
 **Investering**
 
 • **Starter** (vanaf €750/mnd of €2.000 eenmalig): bedrijfswebsite met SEO-basis en responsive design
-• **Professional** (op maat): website + chatbot, CRM-integratie, doorlopende SEO
-• **Enterprise** (op maat): volledig platform met dashboards, automatisering, dedicated support
+• **Professional** (vanaf €1.500/mnd): website + chatbot, CRM-integratie, doorlopende SEO
+• **Enterprise** (vanaf €2.500/mnd): volledig platform met dashboards, automatisering, dedicated support
 
 Oplevering: 2-4 weken. Eigenaarschap van je code. Geen lock-in contracten.
 
@@ -863,8 +863,8 @@ Maandelijks ontvang je een helder rapport met:
 **Pakketten**
 
 • **Starter** (vanaf €750/mnd): technische SEO-basis, metadata, sitemap
-• **Professional** (op maat): doorlopende optimalisatie, content, maandelijkse rapportage
-• **Enterprise** (op maat): volledige SEO-strategie inclusief linkbuilding en contentproductie
+• **Professional** (vanaf €1.500/mnd): doorlopende optimalisatie, content, maandelijkse rapportage
+• **Enterprise** (vanaf €2.500/mnd): volledige SEO-strategie inclusief linkbuilding en contentproductie
 
 Geen jaarcontracten. Maandelijks opzegbaar. Resultaat of je stopt.`,
     body_en: `**SEO in Amsterdam: the bar is higher**
@@ -995,8 +995,8 @@ We zorgen voor:
 **Wat kost een website in Den Haag?**
 
 • **Starter** (vanaf €750/mnd of €2.000 eenmalig): complete bedrijfswebsite met SEO, responsive design, contactformulier
-• **Professional** (op maat): website + AI-chatbot, CRM-koppeling, doorlopende optimalisatie
-• **Enterprise** (op maat): volledig digitaal platform op maat
+• **Professional** (vanaf €1.500/mnd): website + AI-chatbot, CRM-koppeling, doorlopende optimalisatie
+• **Enterprise** (vanaf €2.500/mnd): volledig digitaal platform op maat
 
 Oplevering: 2-4 weken. Alle code is jouw eigendom.
 
@@ -1123,8 +1123,8 @@ Elke maand ontvang je een rapport met:
 **Pakketten**
 
 • **Starter** (vanaf €750/mnd): technische SEO, metadata-optimalisatie, sitemap
-• **Professional** (op maat): doorlopende SEO met content en maandrapportage
-• **Enterprise** (op maat): volledige SEO-strategie met linkbuilding en contentproductie
+• **Professional** (vanaf €1.500/mnd): doorlopende SEO met content en maandrapportage
+• **Enterprise** (vanaf €2.500/mnd): volledige SEO-strategie met linkbuilding en contentproductie
 
 Geen langlopende verplichtingen. Maandelijks opzegbaar.
 
@@ -1263,8 +1263,8 @@ Specifiek voor Utrechtse bedrijven kijken we naar zoekpatronen per wijk en regio
 **Investering**
 
 • **Starter** (vanaf €750/mnd of €2.000 eenmalig): bedrijfswebsite, SEO-basis, responsive, contactformulier
-• **Professional** (op maat): website + chatbot, CRM, doorlopende SEO
-• **Enterprise** (op maat): compleet digitaal platform
+• **Professional** (vanaf €1.500/mnd): website + chatbot, CRM, doorlopende SEO
+• **Enterprise** (vanaf €2.500/mnd): compleet digitaal platform
 
 Oplevering: 2-4 weken. Code is jouw eigendom. Maandelijks opzegbaar.
 
@@ -1398,8 +1398,8 @@ Geen vage beloftes. Elke maand ontvang je data over:
 **Pakketten**
 
 • **Starter** (vanaf €750/mnd): SEO-basis, technische optimalisatie, metadata
-• **Professional** (op maat): doorlopende SEO, contentcreatie, maandrapportage
-• **Enterprise** (op maat): uitgebreide strategie met linkbuilding en contentproductie
+• **Professional** (vanaf €1.500/mnd): doorlopende SEO, contentcreatie, maandrapportage
+• **Enterprise** (vanaf €2.500/mnd): uitgebreide strategie met linkbuilding en contentproductie
 
 Maandelijks opzegbaar. Geen bindende contracten.
 
@@ -1538,8 +1538,8 @@ Of je nu gevestigd bent op de High Tech Campus, in het centrum, op Strijp-S of o
 **Pakketten**
 
 • **Starter** (vanaf €750/mnd of €2.000 eenmalig): bedrijfswebsite met SEO-basis, responsive design, contactformulier
-• **Professional** (op maat): website + AI-chatbot, CRM-koppeling, doorlopende SEO
-• **Enterprise** (op maat): compleet digitaal platform met dashboards en automatisering
+• **Professional** (vanaf €1.500/mnd): website + AI-chatbot, CRM-koppeling, doorlopende SEO
+• **Enterprise** (vanaf €2.500/mnd): compleet digitaal platform met dashboards en automatisering
 
 Oplevering: 2-4 weken. Transparante communicatie. Eigenaarschap van je code.
 
@@ -1676,8 +1676,8 @@ Maandelijks ontvang je:
 **Pakketten**
 
 • **Starter** (vanaf €750/mnd): technische SEO, metadata, sitemap-optimalisatie
-• **Professional** (op maat): doorlopende SEO met contentcreatie en rapportage
-• **Enterprise** (op maat): volledige SEO-strategie met linkbuilding en dedicated support
+• **Professional** (vanaf €1.500/mnd): doorlopende SEO met contentcreatie en rapportage
+• **Enterprise** (vanaf €2.500/mnd): volledige SEO-strategie met linkbuilding en dedicated support
 
 Maandelijks opzegbaar. Resultaat staat centraal.
 
@@ -1825,8 +1825,8 @@ Daarbij richten we lokale SEO in voor de Bredase markt. Gestructureerde data, lo
 **Pakketten**
 
 • **Starter** (vanaf €750/mnd of €2.000 eenmalig): complete bedrijfswebsite met SEO, responsive design, contactformulier
-• **Professional** (op maat): website + AI-chatbot, CRM-koppeling, doorlopende optimalisatie
-• **Enterprise** (op maat): volledig digitaal platform op maat
+• **Professional** (vanaf €1.500/mnd): website + AI-chatbot, CRM-koppeling, doorlopende optimalisatie
+• **Enterprise** (vanaf €2.500/mnd): volledig digitaal platform op maat
 
 Oplevering: 2-4 weken. Geen verborgen kosten.
 
@@ -1956,8 +1956,8 @@ SEO is geen overnight succes. Realistische verwachtingen:
 **Pakketten**
 
 • **Starter** (vanaf €750/mnd): technische SEO-basis, metadata, sitemap
-• **Professional** (op maat): doorlopende SEO, content, maandrapportage
-• **Enterprise** (op maat): volledige strategie met linkbuilding en contentproductie
+• **Professional** (vanaf €1.500/mnd): doorlopende SEO, content, maandrapportage
+• **Enterprise** (vanaf €2.500/mnd): volledige strategie met linkbuilding en contentproductie
 
 Maandelijks opzegbaar. Geen verplichtingen.
 
@@ -2096,8 +2096,8 @@ We optimaliseren je website specifiek voor de Tilburgse en Midden-Brabantse mark
 **Pakketten**
 
 • **Starter** (vanaf €750/mnd of €2.000 eenmalig): bedrijfswebsite met SEO-basis, contactformulier, responsive design
-• **Professional** (op maat): website + chatbot, CRM, doorlopende SEO
-• **Enterprise** (op maat): compleet platform met dashboards en automatisering
+• **Professional** (vanaf €1.500/mnd): website + chatbot, CRM, doorlopende SEO
+• **Enterprise** (vanaf €2.500/mnd): compleet platform met dashboards en automatisering
 
 Oplevering: 2-4 weken. Transparante communicatie. Code is van jou.
 
@@ -2236,8 +2236,8 @@ Maandelijkse rapportage over:
 **Pakketten**
 
 • **Starter** (vanaf €750/mnd): technische SEO, metadata, sitemap
-• **Professional** (op maat): doorlopende SEO, content, rapportage
-• **Enterprise** (op maat): volledige strategie met linkbuilding en contentproductie
+• **Professional** (vanaf €1.500/mnd): doorlopende SEO, content, rapportage
+• **Enterprise** (vanaf €2.500/mnd): volledige strategie met linkbuilding en contentproductie
 
 Geen jaarcontracten. Maandelijks opzegbaar.
 
@@ -2384,8 +2384,8 @@ We optimaliseren je website voor de lokale markt:
 **Investering**
 
 • **Starter** (vanaf €750/mnd of €2.000 eenmalig): complete bedrijfswebsite met SEO, responsive design, contactformulier
-• **Professional** (op maat): website + AI-chatbot, CRM-koppeling, doorlopende SEO
-• **Enterprise** (op maat): volledig digitaal platform op maat
+• **Professional** (vanaf €1.500/mnd): website + AI-chatbot, CRM-koppeling, doorlopende SEO
+• **Enterprise** (vanaf €2.500/mnd): volledig digitaal platform op maat
 
 Oplevering: 2-4 weken. Alle code is jouw eigendom.
 
@@ -2517,8 +2517,8 @@ Maandelijks ontvang je:
 **Pakketten**
 
 • **Starter** (vanaf €750/mnd): technische SEO-basis, metadata, sitemap
-• **Professional** (op maat): doorlopende SEO met content en rapportage
-• **Enterprise** (op maat): uitgebreide strategie met linkbuilding en contentproductie
+• **Professional** (vanaf €1.500/mnd): doorlopende SEO met content en rapportage
+• **Enterprise** (vanaf €2.500/mnd): uitgebreide strategie met linkbuilding en contentproductie
 
 Maandelijks opzegbaar. Geen verborgen kosten.
 
@@ -2660,8 +2660,8 @@ Lokale SEO wordt standaard meegenomen: gestructureerde data, Google Bedrijfsprof
 **Pakketten**
 
 • **Starter** (vanaf €750/mnd of €2.000 eenmalig): bedrijfswebsite met SEO-basis, responsive design, contactformulier
-• **Professional** (op maat): website + chatbot, CRM-koppeling, doorlopende optimalisatie
-• **Enterprise** (op maat): compleet digitaal platform
+• **Professional** (vanaf €1.500/mnd): website + chatbot, CRM-koppeling, doorlopende optimalisatie
+• **Enterprise** (vanaf €2.500/mnd): compleet digitaal platform
 
 Oplevering: 2-4 weken. Geen verborgen kosten.
 
@@ -2795,8 +2795,8 @@ Elke maand ontvang je:
 **Pakketten**
 
 • **Starter** (vanaf €750/mnd): technische SEO, metadata, sitemap
-• **Professional** (op maat): doorlopende SEO, contentcreatie, rapportage
-• **Enterprise** (op maat): volledige strategie met linkbuilding en contentproductie
+• **Professional** (vanaf €1.500/mnd): doorlopende SEO, contentcreatie, rapportage
+• **Enterprise** (vanaf €2.500/mnd): volledige strategie met linkbuilding en contentproductie
 
 Maandelijks opzegbaar. Geen verplichtingen.
 
@@ -2939,8 +2939,8 @@ Lokale SEO is standaard inbegrepen: Google Bedrijfsprofiel, lokale zoekwoorden, 
 **Pakketten**
 
 • **Starter** (vanaf €750/mnd of €2.000 eenmalig): bedrijfswebsite met SEO-basis, responsive design, contactformulier
-• **Professional** (op maat): website + AI-chatbot, CRM-koppeling, doorlopende SEO
-• **Enterprise** (op maat): compleet digitaal platform met dashboards en automatisering
+• **Professional** (vanaf €1.500/mnd): website + AI-chatbot, CRM-koppeling, doorlopende SEO
+• **Enterprise** (vanaf €2.500/mnd): compleet digitaal platform met dashboards en automatisering
 
 Oplevering: 2-4 weken. Code is jouw eigendom.
 
@@ -3075,8 +3075,8 @@ Maandelijks ontvang je een helder overzicht:
 **Pakketten**
 
 • **Starter** (vanaf €750/mnd): technische SEO, metadata, sitemap
-• **Professional** (op maat): doorlopende SEO met content en rapportage
-• **Enterprise** (op maat): uitgebreide strategie met linkbuilding en contentproductie
+• **Professional** (vanaf €1.500/mnd): doorlopende SEO met content en rapportage
+• **Enterprise** (vanaf €2.500/mnd): uitgebreide strategie met linkbuilding en contentproductie
 
 Geen lange contracten. Maandelijks opzegbaar. Je betaalt voor resultaat.
 

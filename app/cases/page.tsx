@@ -3,16 +3,16 @@ import { CasesContent } from "./CasesContent";
 
 export const metadata: Metadata = {
   title: "Cases",
-  description: "Bekijk onze case studies: concrete resultaten voor onze klanten.",
+  description: "Concrete, meetbare resultaten uit onze eigen ventures: zelf gebouwd en in de praktijk bewezen.",
   alternates: { canonical: "https://arkadigital.nl/cases" },
   openGraph: {
     title: "Cases | Arka",
-    description: "Bekijk onze case studies: concrete resultaten voor onze klanten.",
+    description: "Concrete, meetbare resultaten uit onze eigen ventures: zelf gebouwd en in de praktijk bewezen.",
     url: "https://arkadigital.nl/cases",
   },
   twitter: {
     title: "Cases | Arka",
-    description: "Bekijk onze case studies: concrete resultaten voor onze klanten.",
+    description: "Concrete, meetbare resultaten uit onze eigen ventures: zelf gebouwd en in de praktijk bewezen.",
   },
 };
 

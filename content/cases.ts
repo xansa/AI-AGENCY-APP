@@ -17,7 +17,7 @@ export interface Case {
   approach: string;
   approach_en: string;
   results: CaseResult[];
-  testimonial: {
+  testimonial?: {
     quote: string;
     quote_en: string;
     author: string;
@@ -27,6 +27,8 @@ export interface Case {
   duration: string;       // "Resultaten na: X maanden"
   duration_en: string;
   isExample?: boolean;
+  /** Eigen venture van Arka (zelf gebouwd en bewezen, geen externe klant) */
+  ownVenture?: boolean;
 }
 
 export const cases: Case[] = [
@@ -67,17 +69,9 @@ export const cases: Case[] = [
         description_en: "More targeted inquiries through the niche website",
       },
     ],
-    testimonial: {
-      quote:
-        "We waren onzichtbaar in een niche waar niemand specifiek op adverteert. Arka heeft ons een website en geautomatiseerde outreach gegeven waarmee we nu de eerste zijn die gevonden wordt voor display pallets.",
-      quote_en:
-        "We were invisible in a niche where nobody specifically advertises. Arka gave us a website and automated outreach that now makes us the first to be found for display pallets.",
-      author: "Marta Nowak",
-      role: "Display-pallets.nl",
-      role_en: "Display-pallets.nl",
-    },
     duration: "1 maand",
     duration_en: "1 month",
+    ownVenture: true,
   },
   {
     slug: "palletleverancier-digitalisering",
@@ -127,6 +121,7 @@ export const cases: Case[] = [
     },
     duration: "1 maand",
     duration_en: "1 month",
+    ownVenture: true,
   },
   {
     slug: "logistiek-enterprise-digitalisering",
