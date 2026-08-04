@@ -34,8 +34,11 @@ export function WerkwijzeV2() {
   const reduce = useReducedMotion();
 
   return (
-    <section className="relative bg-cream-deep py-24 md:py-32">
-      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+    <section className="relative bg-cream-deep py-24 md:py-32 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[78%] h-[88%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(37,99,235,0.06),transparent_66%)] blur-3xl" />
+      </div>
+      <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-16 md:mb-20">
           <div className="lg:col-span-7">
             <p className="text-overline uppercase text-slate-meta font-semibold mb-6">

@@ -18,8 +18,11 @@ export function ComparisonV2() {
   ];
 
   return (
-    <section className="relative bg-cream py-24 md:py-32">
-      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+    <section className="relative bg-cream py-24 md:py-32 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[78%] h-[88%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(37,99,235,0.06),transparent_66%)] blur-3xl" />
+      </div>
+      <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
         <div className="max-w-3xl mb-14 md:mb-16">
           <p className="text-overline uppercase text-slate-meta font-semibold mb-6">
             <span className="inline-block w-6 border-t border-slate-meta/60 mr-3 align-middle" />

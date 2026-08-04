@@ -61,7 +61,6 @@ export function PackagesShowcaseV2() {
   const [billing, setBilling] = useState<"monthly" | "onetime">("monthly");
 
   const pkg = packages[tier];
-  const price = billing === "monthly" ? pkg.monthlyInvestment : pkg.onetimePrice;
   const visible = BLOCKS.filter((b) => b.minTier <= tier);
 
   return (
@@ -81,6 +80,9 @@ export function PackagesShowcaseV2() {
             <h2 className="font-serif font-medium text-h1 text-cream tracking-tight leading-[1.05] text-balance">
               Drie paden, <em className="italic">een</em> doel.
             </h2>
+            <p className="mt-6 text-cream/60 text-[16px] leading-relaxed max-w-md text-pretty">
+              Kies het pakket dat past bij je groeifase, of vergelijk maandelijks met eenmalig. De toren rechts laat zien welke disciplines je krijgt.
+            </p>
 
             {/* billing toggle */}
             <div className="mt-8 inline-flex items-center p-1 rounded-full bg-cream/5 ring-1 ring-cream/10">
@@ -88,6 +90,7 @@ export function PackagesShowcaseV2() {
                 <button
                   key={b}
                   onClick={() => setBilling(b)}
+                  aria-pressed={billing === b}
                   className={cn(
                     "px-5 py-2 text-[13px] font-semibold rounded-full transition-all duration-200",
                     billing === b ? "bg-cream text-ink" : "text-cream/60 hover:text-cream"
@@ -108,37 +111,46 @@ export function PackagesShowcaseV2() {
                     key={p.id}
                     onClick={() => setTier(i)}
                     className={cn(
-                      "w-full text-left rounded-2xl p-4 md:p-5 ring-1 transition-all duration-300 flex items-center gap-4",
+                      "w-full text-left rounded-2xl p-4 md:p-5 ring-1 transition-all duration-300 flex items-start sm:items-center gap-4",
                       active ? "bg-cream text-ink ring-arka/40" : "bg-cream/[0.04] text-cream ring-cream/10 hover:ring-cream/25"
                     )}
                     aria-pressed={active}
                   >
-                    <span className={cn("font-mono text-[11px] shrink-0", active ? "text-ink/40" : "text-cream/40")}>
+                    <span className={cn("font-mono text-[11px] shrink-0 mt-1.5 sm:mt-0", active ? "text-ink/40" : "text-cream/40")}>
                       {String(i + 1).padStart(2, "0")}
                     </span>
-                    <span className="min-w-0 flex-1">
-                      <span className={cn("font-serif text-[1.4rem] leading-none font-medium block", active ? "text-ink" : "text-cream")}>
-                        {p.name}
+                    <span className="min-w-0 flex-1 flex flex-col sm:flex-row sm:items-center sm:gap-4">
+                      <span className="min-w-0 flex-1">
+                        <span className={cn("font-serif text-[1.4rem] leading-none font-medium block", active ? "text-ink" : "text-cream")}>
+                          {p.name}
+                        </span>
+                        <span className={cn("text-[12.5px] block mt-1 sm:truncate", active ? "text-ink/60" : "text-cream/50")}>
+                          {l(p, "tagline", locale)}
+                        </span>
                       </span>
-                      <span className={cn("text-[12.5px] block mt-1 truncate", active ? "text-ink/60" : "text-cream/50")}>
-                        {l(p, "tagline", locale)}
+                      <span className={cn("font-serif text-[1.25rem] font-medium shrink-0 mt-1.5 sm:mt-0 sm:text-right", active ? "text-arka" : "text-cream/70")}>
+                        {p_price}
                       </span>
-                    </span>
-                    <span className={cn("font-serif text-[1.25rem] font-medium shrink-0 text-right", active ? "text-arka" : "text-cream/70")}>
-                      {p_price}
                     </span>
                   </button>
                 );
               })}
             </div>
 
-            <div className="mt-8">
+            <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
               <Link
                 href="/offerte"
                 className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-arka text-white text-sm font-semibold hover:bg-arka-hover transition-colors"
               >
-                Kies {pkg.name}
+                Start met {pkg.name}
                 <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </Link>
+              <Link
+                href="/packages"
+                className="group inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-cream/70 hover:text-cream transition-colors"
+              >
+                Bekijk volledige specificaties
+                <ArrowUpRight className="w-3.5 h-3.5 text-arka transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </Link>
             </div>
           </div>
@@ -153,10 +165,11 @@ export function PackagesShowcaseV2() {
                   <AnimatePresence key={b.label}>
                     {show && (
                       <motion.div
+                        key={b.label}
                         initial={reduce ? false : { opacity: 0, y: 44, scale: 0.7 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={reduce ? { opacity: 0 } : { opacity: 0, y: 44, scale: 0.7 }}
-                        transition={{ duration: 0.55, ease: EASE, delay: reduce ? 0 : (b.minTier === tier ? (b.pos.top < 150 ? 0.08 : 0) : 0) }}
+                        transition={{ duration: reduce ? 0 : 0.55, ease: EASE, delay: reduce ? 0 : (b.minTier === tier ? (b.pos.top < 150 ? 0.08 : 0) : 0) }}
                         className="absolute"
                         style={{ left: b.pos.left, top: b.pos.top }}
                       >

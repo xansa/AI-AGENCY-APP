@@ -8,8 +8,11 @@ export function ClosingCTAV2() {
   const reduce = useReducedMotion();
 
   return (
-    <section className="relative bg-cream py-24 md:py-32">
-      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+    <section className="relative bg-cream py-24 md:py-32 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[84%] h-[92%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(37,99,235,0.09),transparent_66%)] blur-3xl" />
+      </div>
+      <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
         <motion.div
           initial={reduce ? false : { opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
