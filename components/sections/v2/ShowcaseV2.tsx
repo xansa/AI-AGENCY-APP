@@ -1,13 +1,44 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { Bot, TrendingUp, ArrowUp, Check } from "lucide-react";
+import { Bot, ArrowUp, Check, Search } from "lucide-react";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 // Product-visual showcase (moodboard: steep feature-pages). Coded mini-UIs on a dark
-// canvas so they pop, showing concretely what clients get. Doubles as a bold "artstyle"
-// break in the section rhythm.
+// canvas so they pop, with real UI "skeleton" (window chrome, graph grid, rows) and an
+// interactive dashboard chart. Doubles as a bold "artstyle" break in the section rhythm.
+
+const bars = [
+  { h: 40, v: "420" },
+  { h: 52, v: "560" },
+  { h: 46, v: "490" },
+  { h: 63, v: "680" },
+  { h: 58, v: "610" },
+  { h: 72, v: "760" },
+  { h: 80, v: "840" },
+  { h: 68, v: "720" },
+  { h: 88, v: "910" },
+  { h: 100, v: "1.040" },
+];
+
+const seoRows = [
+  { k: "webdesign dordrecht", p: 1, up: 6, vol: 90 },
+  { k: "seo bureau", p: 3, up: 4, vol: 62 },
+  { k: "ai chatbot laten maken", p: 2, up: 9, vol: 48 },
+  { k: "website laten maken", p: 5, up: 3, vol: 74 },
+];
+
+function Dots() {
+  return (
+    <div className="flex items-center gap-1.5">
+      <span className="w-2.5 h-2.5 rounded-full bg-slate-950/15" />
+      <span className="w-2.5 h-2.5 rounded-full bg-slate-950/15" />
+      <span className="w-2.5 h-2.5 rounded-full bg-slate-950/15" />
+    </div>
+  );
+}
+
 export function ShowcaseV2() {
   const reduce = useReducedMotion();
   const reveal = (delay = 0) => ({
@@ -41,12 +72,15 @@ export function ShowcaseV2() {
           {/* ── Chatbot mockup ── */}
           <motion.div {...reveal(0)} className="min-w-0">
             <div className="group rounded-2xl bg-white text-slate-ink ring-1 ring-white/10 shadow-[0_30px_70px_-40px_rgba(0,0,0,0.8)] p-5 hover:-translate-y-1 transition-transform duration-300 h-full flex flex-col">
-              <div className="flex items-center gap-2 mb-4">
+              <div className="flex items-center gap-2 mb-4 pb-3 border-b border-slate-950/8">
                 <span className="flex items-center justify-center w-7 h-7 rounded-lg bg-arka/10">
                   <Bot className="w-4 h-4 text-arka" strokeWidth={2} />
                 </span>
                 <span className="text-[12px] font-semibold text-slate-ink">Arka Assistent</span>
-                <span className="ml-auto w-2 h-2 rounded-full bg-emerald-400" />
+                <span className="ml-auto inline-flex items-center gap-1.5 text-[10.5px] text-emerald-600 font-medium">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                  online
+                </span>
               </div>
               <div className="space-y-2.5 flex-1">
                 <div className="ml-auto max-w-[80%] rounded-2xl rounded-br-sm bg-ink text-cream text-[12.5px] px-3.5 py-2">
@@ -72,23 +106,31 @@ export function ShowcaseV2() {
           {/* ── SEO ranking mockup ── */}
           <motion.div {...reveal(0.1)} className="min-w-0">
             <div className="group rounded-2xl bg-white text-slate-ink ring-1 ring-white/10 shadow-[0_30px_70px_-40px_rgba(0,0,0,0.8)] p-5 hover:-translate-y-1 transition-transform duration-300 h-full flex flex-col">
-              <div className="flex items-center justify-between mb-4">
-                <span className="text-[12px] font-semibold text-slate-ink">Google-posities</span>
-                <TrendingUp className="w-4 h-4 text-arka" strokeWidth={2} />
+              <div className="flex items-center justify-between mb-3">
+                <Dots />
+                <span className="text-[10.5px] text-slate-meta font-medium">Search Console</span>
               </div>
-              <div className="space-y-2.5 flex-1">
-                {[
-                  { k: "webdesign dordrecht", p: 1, up: 6 },
-                  { k: "seo bureau", p: 3, up: 4 },
-                  { k: "ai chatbot laten maken", p: 2, up: 9 },
-                  { k: "website laten maken", p: 5, up: 3 },
-                ].map((r) => (
-                  <div key={r.k} className="flex items-center gap-3 text-[12.5px]">
+              {/* search bar skeleton */}
+              <div className="flex items-center gap-2 rounded-lg bg-cream-deep px-3 py-2 mb-4">
+                <Search className="w-3.5 h-3.5 text-slate-meta shrink-0" strokeWidth={2} />
+                <span className="text-[12px] text-slate-ink/70 truncate">webdesign dordrecht</span>
+              </div>
+              <div className="flex-1">
+                {seoRows.map((r, i) => (
+                  <div
+                    key={r.k}
+                    className={`flex items-center gap-3 py-2.5 ${i < seoRows.length - 1 ? "border-b border-slate-950/6" : ""}`}
+                  >
                     <span className="flex items-center justify-center w-7 h-7 rounded-lg bg-cream-deep font-serif font-medium text-slate-ink shrink-0">
                       {r.p}
                     </span>
-                    <span className="truncate text-slate-ink/80">{r.k}</span>
-                    <span className="ml-auto inline-flex items-center gap-0.5 text-emerald-600 font-semibold shrink-0">
+                    <div className="min-w-0 flex-1">
+                      <div className="text-[12.5px] text-slate-ink/80 truncate">{r.k}</div>
+                      <div className="mt-1 h-1 rounded-full bg-cream-deep overflow-hidden">
+                        <div className="h-full rounded-full bg-arka/40" style={{ width: `${r.vol}%` }} />
+                      </div>
+                    </div>
+                    <span className="inline-flex items-center gap-0.5 text-emerald-600 font-semibold text-[12px] shrink-0">
                       <ArrowUp className="w-3 h-3" strokeWidth={2.5} />
                       {r.up}
                     </span>
@@ -101,12 +143,12 @@ export function ShowcaseV2() {
             </p>
           </motion.div>
 
-          {/* ── Dashboard mockup ── */}
+          {/* ── Dashboard mockup (interactive bars) ── */}
           <motion.div {...reveal(0.2)} className="min-w-0">
             <div className="group rounded-2xl bg-white text-slate-ink ring-1 ring-white/10 shadow-[0_30px_70px_-40px_rgba(0,0,0,0.8)] p-5 hover:-translate-y-1 transition-transform duration-300 h-full flex flex-col">
               <div className="flex items-center justify-between mb-4">
-                <span className="text-[12px] font-semibold text-slate-ink">Prestaties</span>
-                <span className="text-[11px] text-slate-meta">deze maand</span>
+                <Dots />
+                <span className="text-[10.5px] text-slate-meta font-medium">arka · analytics</span>
               </div>
               <div className="grid grid-cols-2 gap-3 mb-4">
                 <div className="rounded-xl bg-cream-deep p-3">
@@ -118,9 +160,23 @@ export function ShowcaseV2() {
                   <div className="font-serif text-[1.5rem] leading-none font-medium text-arka mt-1">137</div>
                 </div>
               </div>
-              <div className="flex items-end gap-1.5 h-20 flex-1">
-                {[40, 52, 46, 63, 58, 72, 80, 68, 88, 100].map((h, i) => (
-                  <span key={i} className="flex-1 rounded-sm bg-arka/25" style={{ height: `${h}%` }} />
+              {/* interactive bar chart with grid */}
+              <div className="relative flex items-end gap-1.5 h-24 flex-1">
+                <div className="absolute inset-0 flex flex-col justify-between pointer-events-none" aria-hidden="true">
+                  {[0, 1, 2, 3].map((i) => (
+                    <span key={i} className="border-t border-dashed border-slate-950/8" />
+                  ))}
+                </div>
+                {bars.map((b, i) => (
+                  <div key={i} className="group/bar relative flex-1 flex items-end h-full cursor-pointer">
+                    <span
+                      className="w-full rounded-sm bg-arka/25 group-hover/bar:bg-arka transition-colors duration-200"
+                      style={{ height: `${b.h}%` }}
+                    />
+                    <span className="absolute left-1/2 -translate-x-1/2 -top-7 whitespace-nowrap rounded-md bg-ink text-cream text-[10.5px] font-medium px-2 py-1 opacity-0 group-hover/bar:opacity-100 transition-opacity duration-200 pointer-events-none z-10 shadow-lg">
+                      {b.v} bezoekers
+                    </span>
+                  </div>
                 ))}
               </div>
               <div className="mt-3 flex items-center gap-1.5 text-[11.5px] text-emerald-600 font-semibold">
@@ -130,6 +186,7 @@ export function ShowcaseV2() {
             </div>
             <p className="mt-4 text-[13.5px] text-cream/70">
               <span className="font-semibold text-cream">Dashboards &amp; data</span> die je grip geven op wat werkt.
+              <span className="block text-cream/40 text-[12px] mt-1">Hover over de balken →</span>
             </p>
           </motion.div>
         </div>
