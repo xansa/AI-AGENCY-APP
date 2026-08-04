@@ -30,9 +30,17 @@ export function OverOnsContent() {
   return (
     <>
       {/* Editorial hero */}
-      <section className="relative bg-cream pt-32 pb-16 md:pt-40 md:pb-20">
+      <section className="relative bg-cream pt-32 pb-16 md:pt-40 md:pb-20 overflow-hidden">
         <div className="absolute inset-x-0 top-0 h-80 canvas-grid opacity-40 pointer-events-none" />
-        <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+          <div className="absolute left-1/2 top-[46%] -translate-x-1/2 -translate-y-1/2 w-[85%] h-[88%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(37,99,235,0.13),rgba(59,130,246,0.06)_42%,transparent_70%)] blur-3xl" />
+        </div>
+        <motion.div
+          initial={reduce ? false : { opacity: 0, y: 18 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10"
+        >
           <p className="text-overline uppercase text-slate-meta font-semibold mb-8">
             <span className="inline-block w-6 border-t border-slate-meta/60 mr-3 align-middle" />
             {t("overOns.badge")}
@@ -43,7 +51,7 @@ export function OverOnsContent() {
           <p className="mt-8 text-[17px] md:text-lg text-slate-muted leading-relaxed max-w-2xl text-pretty">
             {t("overOns.description")}
           </p>
-        </div>
+        </motion.div>
       </section>
 
       {/* Founder section */}
@@ -57,15 +65,18 @@ export function OverOnsContent() {
               transition={{ duration: 0.6 }}
               className="lg:col-span-5"
             >
-              <div className="relative mx-auto lg:mx-0 w-56 h-56 md:w-64 md:h-64 rounded-2xl overflow-hidden ring-1 ring-slate-950/10">
-                <Image
-                  src="/founder.png"
-                  alt="Kaan Arslan, oprichter van Arka"
-                  width={768}
-                  height={512}
-                  className="w-full h-full object-cover object-[55%_15%]"
-                  priority
-                />
+              <div className="relative mx-auto lg:mx-0 w-56 h-56 md:w-64 md:h-64">
+                <div className="absolute -bottom-3 -left-3 w-full h-full rounded-2xl bg-arka/90 hidden sm:block" aria-hidden="true" />
+                <div className="relative w-full h-full rounded-2xl overflow-hidden ring-1 ring-slate-950/10">
+                  <Image
+                    src="/founder.png"
+                    alt="Kaan Arslan, oprichter van Arka"
+                    width={768}
+                    height={512}
+                    className="w-full h-full object-cover object-[55%_15%]"
+                    priority
+                  />
+                </div>
               </div>
             </motion.div>
             <motion.div
@@ -92,8 +103,11 @@ export function OverOnsContent() {
       </section>
 
       {/* Why + how */}
-      <section className="relative bg-cream-deep py-20 md:py-28">
-        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+      <section className="relative bg-cream-deep py-20 md:py-28 overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[78%] h-[88%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(37,99,235,0.06),transparent_66%)] blur-3xl" />
+        </div>
+        <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
             <div className="lg:col-span-7 min-w-0">
               <p className="text-overline uppercase text-slate-meta font-semibold mb-6">
@@ -354,8 +368,9 @@ export function OverOnsContent() {
       </section>
 
       {/* Closing CTA */}
-      <section className="relative bg-ink text-cream py-24 md:py-32">
+      <section className="relative bg-ink text-cream py-24 md:py-32 overflow-hidden">
         <div className="absolute inset-0 canvas-grid opacity-[0.035] pointer-events-none" />
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[75%] h-[85%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.18),transparent_66%)] blur-3xl pointer-events-none" aria-hidden="true" />
         <div className="relative max-w-narrow mx-auto px-6 sm:px-8 lg:px-10 text-center">
           <h2 className="font-serif font-medium text-h1 text-cream tracking-tight leading-[1.05] text-balance">
             {t("overOns.ctaHeading")}

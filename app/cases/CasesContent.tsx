@@ -16,9 +16,17 @@ export function CasesContent() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-cream pt-32 pb-16 md:pt-40 md:pb-20">
+      <section className="relative bg-cream pt-32 pb-16 md:pt-40 md:pb-20 overflow-hidden">
         <div className="absolute inset-x-0 top-0 h-80 canvas-grid opacity-40 pointer-events-none" />
-        <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+          <div className="absolute left-1/2 top-[46%] -translate-x-1/2 -translate-y-1/2 w-[85%] h-[88%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(37,99,235,0.13),rgba(59,130,246,0.06)_42%,transparent_70%)] blur-3xl" />
+        </div>
+        <motion.div
+          initial={reduce ? false : { opacity: 0, y: 18 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10"
+        >
           <p className="text-overline uppercase text-slate-meta font-semibold mb-8">
             <span className="inline-block w-6 border-t border-slate-meta/60 mr-3 align-middle" />
             {t("cases.label")}
@@ -34,12 +42,15 @@ export function CasesContent() {
               ? "The cases below are our own ventures: built and proven in practice."
               : "De cases hieronder zijn onze eigen ventures: zelf gebouwd en in de praktijk bewezen."}
           </p>
-        </div>
+        </motion.div>
       </section>
 
       {/* Cases editorial stack */}
-      <section className="relative bg-cream py-16 md:py-24">
-        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10 space-y-10">
+      <section className="relative bg-cream py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[90%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(37,99,235,0.05),transparent_66%)] blur-3xl" />
+        </div>
+        <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10 space-y-10">
           {realCases.map((c, i) => (
             <motion.article
               key={c.slug}
@@ -47,6 +58,7 @@ export function CasesContent() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.65, delay: i * 0.08 }}
+              whileHover={reduce ? undefined : { y: -4 }}
               className="rounded-2xl ring-1 ring-slate-950/8 bg-cream-deep p-8 md:p-12"
             >
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
@@ -137,8 +149,9 @@ export function CasesContent() {
       </section>
 
       {/* Closing CTA */}
-      <section className="relative bg-ink text-cream py-24 md:py-32">
+      <section className="relative bg-ink text-cream py-24 md:py-32 overflow-hidden">
         <div className="absolute inset-0 canvas-grid opacity-[0.035] pointer-events-none" />
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[75%] h-[85%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.18),transparent_66%)] blur-3xl pointer-events-none" aria-hidden="true" />
         <div className="relative max-w-narrow mx-auto px-6 sm:px-8 lg:px-10 text-center">
           <h2 className="font-serif font-medium text-h1 text-cream tracking-tight leading-[1.05] text-balance">
             {t("casesPage.ctaHeading")}
