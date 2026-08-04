@@ -29,8 +29,9 @@ export function ServicesV2() {
   const reduce = useReducedMotion();
 
   return (
-    <section className="relative bg-cream py-24 md:py-32">
-      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+    <section className="relative bg-cream py-24 md:py-32 overflow-hidden">
+      <div className="absolute top-[-6%] right-[-8%] w-[42rem] h-[42rem] rounded-full bg-[radial-gradient(circle,rgba(37,99,235,0.06),transparent_60%)] blur-3xl pointer-events-none" aria-hidden="true" />
+      <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
         {/* Section header, asymmetric editorial */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16 md:mb-20">
           <div className="lg:col-span-5">

@@ -13,8 +13,9 @@ export function CasesV2() {
   const realCases = allCases.filter((c) => !c.isExample).slice(0, 2);
 
   return (
-    <section className="relative bg-cream py-24 md:py-32">
-      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+    <section className="relative bg-cream py-24 md:py-32 overflow-hidden">
+      <div className="absolute bottom-[-8%] left-[-6%] w-[40rem] h-[40rem] rounded-full bg-[radial-gradient(circle,rgba(37,99,235,0.05),transparent_60%)] blur-3xl pointer-events-none" aria-hidden="true" />
+      <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-16 md:mb-20">
           <div className="lg:col-span-7">
             <p className="text-overline uppercase text-slate-meta font-semibold mb-6">
