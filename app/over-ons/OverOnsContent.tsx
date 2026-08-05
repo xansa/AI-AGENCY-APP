@@ -6,9 +6,6 @@ import { MessageCircle, Layers, Target, Shield, Handshake, ArrowUpRight } from "
 import { useTranslation } from "@/lib/i18n";
 import { motion, useReducedMotion } from "framer-motion";
 
-const CALENDLY_URL =
-  process.env.NEXT_PUBLIC_CALENDLY_URL ?? "https://calendly.com/arka-/30min";
-
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 export function OverOnsContent() {
@@ -369,34 +366,19 @@ export function OverOnsContent() {
         </div>
       </section>
 
-      {/* Closing CTA */}
-      <section className="relative bg-ink text-cream py-24 md:py-32 overflow-hidden">
+      {/* Brand-signature closing (Noira-style, single CTA lives in the footer) */}
+      <section className="relative bg-ink text-cream pt-20 md:pt-28 pb-14 md:pb-16 overflow-hidden">
         <div className="absolute inset-0 canvas-grid opacity-[0.035] pointer-events-none" />
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[75%] h-[85%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.18),transparent_66%)] blur-3xl pointer-events-none" aria-hidden="true" />
-        <div className="relative max-w-narrow mx-auto px-6 sm:px-8 lg:px-10 text-center">
-          <h2 className="font-serif font-medium text-h1 text-cream tracking-tight leading-[1.05] text-balance">
-            {t("overOns.ctaHeading")}
-          </h2>
-          <p className="mt-6 text-cream/60 text-[17px] leading-relaxed max-w-xl mx-auto text-pretty">
-            {t("overOns.ctaDescription")}
+        <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10 text-center">
+          <p className="text-overline uppercase text-cream/40 font-semibold mb-4">
+            {locale === "en" ? "Your digital department" : "Jouw digitale afdeling"}
           </p>
-          <div className="mt-10">
-            <a
-              href={CALENDLY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-arka text-white text-sm font-semibold hover:bg-arka-hover transition-colors"
-            >
-              {t("overOns.gesprekPlannen")}
-              <ArrowUpRight className="w-4 h-4" />
-            </a>
+          <div className="select-none pointer-events-none" aria-hidden="true">
+            <span className="arka-wordmark block leading-[0.8] text-[clamp(5rem,25vw,20rem)]">
+              Arka<span className="text-arka">.</span>
+            </span>
           </div>
-        </div>
-        {/* Brand-wordmark signature (Noira-style) */}
-        <div className="relative mt-16 md:mt-24 px-4 select-none pointer-events-none" aria-hidden="true">
-          <span className="arka-wordmark block text-center text-cream leading-[0.8] text-[clamp(5rem,25vw,20rem)]">
-            Arka<span className="text-arka">.</span>
-          </span>
         </div>
       </section>
     </>

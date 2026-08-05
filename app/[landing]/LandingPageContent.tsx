@@ -6,7 +6,7 @@ import { MapPin, Check, ArrowUpRight } from "lucide-react";
 import { useTranslation, l } from "@/lib/i18n";
 
 const CALENDLY_URL =
-  process.env.NEXT_PUBLIC_CALENDLY_URL ?? "https://calendly.com/arkaecom-proton/30min";
+  process.env.NEXT_PUBLIC_CALENDLY_URL ?? "https://calendly.com/arka-/30min";
 
 const CITY_MAP: Record<string, string> = {
   dordrecht: "Dordrecht",
@@ -59,6 +59,9 @@ export function LandingPageContent({ page }: { page: LandingPage }) {
       {/* Editorial hero */}
       <section className="relative bg-cream pt-32 pb-16 md:pt-40 md:pb-20">
         <div className="absolute inset-x-0 top-0 h-80 canvas-grid opacity-40 pointer-events-none" />
+        <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+          <div className="absolute left-1/2 top-[42%] -translate-x-1/2 -translate-y-1/2 w-[60%] h-[130%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(37,99,235,0.07),transparent_66%)] blur-3xl" />
+        </div>
         <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
           <p className="text-overline uppercase text-slate-meta font-semibold mb-8 inline-flex items-center gap-2">
             <MapPin className="w-3.5 h-3.5 text-arka" />
@@ -131,8 +134,9 @@ export function LandingPageContent({ page }: { page: LandingPage }) {
       </section>
 
       {/* CTA */}
-      <section className="relative bg-ink text-cream py-24 md:py-32">
+      <section className="relative bg-ink text-cream py-24 md:py-32 overflow-hidden">
         <div className="absolute inset-0 canvas-grid opacity-[0.035] pointer-events-none" />
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[75%] h-[120%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.16),transparent_66%)] blur-3xl pointer-events-none" aria-hidden="true" />
         <div className="relative max-w-narrow mx-auto px-6 sm:px-8 lg:px-10 text-center">
           <h2 className="font-serif font-medium text-h1 text-cream tracking-tight leading-[1.05] text-balance">
             {locale === "nl" ? "Klaar om te starten?" : "Ready to get started?"}
