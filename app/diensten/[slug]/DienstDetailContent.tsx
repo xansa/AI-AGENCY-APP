@@ -2,6 +2,7 @@
 
 import type { Service } from "@/content/services";
 import Link from "next/link";
+import Image from "next/image";
 import { Check, ArrowLeft, ArrowUpRight } from "lucide-react";
 import { useTranslation, l, la } from "@/lib/i18n";
 
@@ -83,8 +84,11 @@ export function DienstDetailContent({ service }: { service: Service }) {
   return (
     <>
       {/* Editorial hero */}
-      <section className="relative bg-cream pt-16 md:pt-24 pb-16 md:pb-20">
+      <section className="relative bg-cream pt-16 md:pt-24 pb-16 md:pb-20 overflow-hidden">
         <div className="absolute inset-x-0 top-0 h-80 canvas-grid opacity-40 pointer-events-none" />
+        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+          <div className="absolute right-[8%] top-[38%] -translate-y-1/2 w-[46%] h-[80%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(37,99,235,0.08),transparent_66%)] blur-3xl" />
+        </div>
         <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
           <Link
             href="/diensten"
@@ -93,16 +97,32 @@ export function DienstDetailContent({ service }: { service: Service }) {
             <ArrowLeft className="w-4 h-4" />
             {t("dienstDetail.terug")}
           </Link>
-          <p className="text-overline uppercase text-slate-meta font-semibold mb-6">
-            <span className="inline-block w-6 border-t border-slate-meta/60 mr-3 align-middle" />
-            {l(service, "title", locale)}
-          </p>
-          <h1 className="font-serif font-medium text-display-sm text-slate-ink tracking-tight leading-[1.05] max-w-4xl text-balance">
-            {l(service, "tagline", locale)}
-          </h1>
-          <p className="mt-8 text-[17px] md:text-lg text-slate-muted leading-relaxed max-w-2xl text-pretty">
-            {l(service, "description", locale)}
-          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+            <div className="lg:col-span-7 min-w-0">
+              <p className="text-overline uppercase text-slate-meta font-semibold mb-6">
+                <span className="inline-block w-6 border-t border-slate-meta/60 mr-3 align-middle" />
+                {l(service, "title", locale)}
+              </p>
+              <h1 className="font-serif font-medium text-display-sm text-slate-ink tracking-tight leading-[1.05] text-balance">
+                {l(service, "tagline", locale)}
+              </h1>
+              <p className="mt-8 text-[17px] md:text-lg text-slate-muted leading-relaxed max-w-xl text-pretty">
+                {l(service, "description", locale)}
+              </p>
+            </div>
+            <div className="lg:col-span-5 relative order-first lg:order-last">
+              <div className="relative mx-auto w-full max-w-[360px] lg:max-w-[420px] aspect-square">
+                <Image
+                  src={`/illustrations/${service.slug}.png`}
+                  alt={l(service, "title", locale)}
+                  fill
+                  sizes="(max-width: 1024px) 360px, 420px"
+                  className="object-contain"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
