@@ -103,7 +103,7 @@ export function HeroV2() {
         ]}
       />
       {/* Film grain over the mesh (echoes the chalk illustrations' risograph grain) */}
-      <div className="absolute inset-0 grain opacity-[0.22] mix-blend-multiply pointer-events-none" aria-hidden="true" />
+      <div className="absolute inset-0 grain opacity-[0.4] mix-blend-multiply pointer-events-none" aria-hidden="true" />
       {/* Faint canvas grid for texture */}
       <div className="absolute inset-x-0 top-0 h-[80%] canvas-grid opacity-[0.35] pointer-events-none" aria-hidden="true" />
 

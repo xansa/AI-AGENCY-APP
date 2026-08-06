@@ -60,7 +60,7 @@ export function HeroAura({ grain = true }: { grain?: boolean }) {
       />
       {grain && (
         <div
-          className="absolute inset-0 grain opacity-[0.22] mix-blend-multiply pointer-events-none"
+          className="absolute inset-0 grain opacity-[0.4] mix-blend-multiply pointer-events-none"
           aria-hidden="true"
         />
       )}
