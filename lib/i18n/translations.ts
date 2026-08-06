@@ -215,6 +215,7 @@ export const translations = {
   "dienstDetail.interesse": { nl: "Interesse?", en: "Interested?" },
   "dienstDetail.interesseDesc": { nl: "Vraag een offerte aan of plan een intake gesprek.", en: "Request a quote or schedule an intake call." },
   "dienstDetail.planIntake": { nl: "Plan intake", en: "Schedule intake" },
+  "dienstDetail.losOfPakket": { nl: "Los af te nemen of als onderdeel van een pakket. Prijs op aanvraag.", en: "Available standalone or as part of a package. Price on request." },
 
   // -- Over ons page --
   "overOns.badge": { nl: "Over Arka", en: "About Arka" },

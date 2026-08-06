@@ -249,8 +249,11 @@ export function DienstDetailContent({ service }: { service: Service }) {
                   <h3 className="font-serif text-[1.35rem] font-medium mb-3 tracking-tight">
                     {t("dienstDetail.interesse")}
                   </h3>
-                  <p className="text-[13.5px] leading-relaxed text-cream/65 mb-6 text-pretty">
+                  <p className="text-[13.5px] leading-relaxed text-cream/65 mb-4 text-pretty">
                     {t("dienstDetail.interesseDesc")}
+                  </p>
+                  <p className="text-[12px] leading-relaxed text-cream/45 mb-6">
+                    {t("dienstDetail.losOfPakket")}
                   </p>
                   <div className="space-y-2">
                     <Link
