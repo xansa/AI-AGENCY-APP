@@ -9,6 +9,10 @@ export interface BlogPost {
   readingTime: string;
   /** Optional hero-band illustration path, e.g. "/illustrations/blog/<slug>.png". Taalneutraal. */
   illustration?: string;
+  /** Optional wide, box-less editorial hero scene (landscape, transparent). Overrides the boxed hero. */
+  heroWide?: string;
+  /** Optional tall side-figure that floats alongside the article body (lg+). */
+  sideFigure?: string;
 }
 
 /** Returns only posts with publishedAt <= today, sorted newest first */
@@ -517,6 +521,8 @@ Wil je je SEO structureel aanpakken en ben je op zoek naar professionele onderst
   },
   {
     slug: "wat-kost-een-website-in-2026",
+    heroWide: "/illustrations/blog/_proto-wide.png",
+    sideFigure: "/illustrations/blog/_proto-figure.png",
     title: "Wat kost een website in 2026? Een eerlijk overzicht",
     excerpt:
       "De kosten van een website lopen enorm uiteen. Dit artikel geeft een transparant overzicht van wat je kunt verwachten en waar de verschillen zitten.",

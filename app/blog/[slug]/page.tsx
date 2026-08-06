@@ -217,24 +217,54 @@ export default function BlogPostPage({ params }: Props) {
         </div>
       </section>
 
-      {/* Hero-band illustration (wide, not a square) */}
-      <section className="relative bg-cream">
-        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
-          <div className="relative w-full aspect-[16/9] md:aspect-[21/8] rounded-2xl bg-cream-deep/60 ring-1 ring-slate-950/5 overflow-hidden">
-            <Image
-              src={illustration}
-              alt=""
-              fill
-              sizes="(max-width: 1024px) 100vw, 1152px"
-              className="object-contain p-6 md:p-10"
-              priority
-            />
+      {/* Hero illustration — box-less wide editorial scene, or the boxed fallback band */}
+      {post.heroWide ? (
+        <section className="relative bg-cream">
+          <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+            <div className="relative w-full aspect-[1536/832]">
+              <Image
+                src={post.heroWide}
+                alt=""
+                fill
+                sizes="(max-width: 1024px) 100vw, 1152px"
+                className="object-contain"
+                priority
+              />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      ) : (
+        <section className="relative bg-cream">
+          <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+            <div className="relative w-full aspect-[16/9] md:aspect-[21/8] rounded-2xl bg-cream-deep/60 ring-1 ring-slate-950/5 overflow-hidden">
+              <Image
+                src={illustration}
+                alt=""
+                fill
+                sizes="(max-width: 1024px) 100vw, 1152px"
+                className="object-contain p-6 md:p-10"
+                priority
+              />
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="relative bg-cream py-12 md:py-20">
         <div className="max-w-narrow mx-auto px-6 sm:px-8 lg:px-10">
+          {post.sideFigure && (
+            <div className="hidden lg:block float-right w-44 xl:w-52 ml-10 -mr-16 xl:-mr-32 -mt-2">
+              <div className="relative w-full aspect-[9/16]">
+                <Image
+                  src={post.sideFigure}
+                  alt=""
+                  fill
+                  sizes="208px"
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          )}
           <article>{renderContent(post.content)}</article>
 
           <div className="mt-20 p-8 md:p-10 bg-ink text-cream rounded-2xl">
