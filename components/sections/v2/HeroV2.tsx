@@ -148,7 +148,7 @@ export function HeroV2() {
         </motion.h1>
 
         {/* Copy (left) + illustration centerpiece with proof-widgets (right) */}
-        <div className="mt-12 md:mt-14 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div className="mt-10 md:mt-12 grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           <div className="lg:col-span-6 min-w-0">
             <motion.p
               {...rise(0.12)}
@@ -193,25 +193,25 @@ export function HeroV2() {
           </div>
 
           {/* ── Hybrid centerpiece: big chalky illustration + 2 proof-widgets, cursor-reactive (lg+) ── */}
-          <div className="hidden lg:block lg:col-span-6 relative min-h-[26rem]">
-            {/* Illustration — anchor, subtle cursor lift */}
+          <div className="hidden lg:block lg:col-span-6 relative min-h-[30rem]">
+            {/* Illustration — anchor, slightly left-biased so widgets frame it instead of covering the face */}
             <motion.div style={reduce ? undefined : { x: illoX, y: illoY }} className="absolute inset-0">
               <motion.div {...pop(0.2)} className="relative w-full h-full">
                 <Image
                   src="/illustrations/hero.png"
                   alt=""
                   fill
-                  sizes="(max-width: 1024px) 0px, 560px"
-                  className="object-contain object-center"
+                  sizes="(max-width: 1024px) 0px, 620px"
+                  className="object-contain object-[42%_center]"
                   priority
                 />
               </motion.div>
             </motion.div>
 
-            {/* Widget: organic traffic (+212%) — pops toward cursor with a slight tilt */}
+            {/* Widget: organic traffic (+212%) — top-right corner, clear of the figure's face */}
             <motion.div
               style={reduce ? undefined : { x: w1X, y: w1Y, rotate: w1R }}
-              className="absolute top-0 right-0 w-56 z-20"
+              className="absolute -top-3 -right-2 w-52 z-20"
               aria-hidden="true"
             >
               <motion.div
@@ -238,10 +238,10 @@ export function HeroV2() {
               </motion.div>
             </motion.div>
 
-            {/* Widget: new lead toast — pops the other way */}
+            {/* Widget: new lead toast — bottom-left corner, pops the other way */}
             <motion.div
               style={reduce ? undefined : { x: w2X, y: w2Y, rotate: w2R }}
-              className="absolute bottom-2 left-0 w-64 z-30"
+              className="absolute -bottom-2 -left-3 w-60 z-30"
               aria-hidden="true"
             >
               <motion.div
