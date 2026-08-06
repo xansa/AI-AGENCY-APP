@@ -157,6 +157,9 @@ export default function BlogPostPage({ params }: Props) {
   const illPlacement = post.illPlacement ?? "top";
   const illSrc = post.illustration ?? `/illustrations/blog/${post.slug}.png`;
   const illo = illoLayout(post.slug);
+  // Niet-wide illustraties komen naast de titel (7/5 hero-grid); wide-illustraties
+  // blijven een volle band onder de hero.
+  const besideTitle = illPlacement === "top" && !illo.wide;
   const ogImage = `${baseUrl}${illSrc}`;
 
   const breadcrumbJsonLd = {
@@ -217,7 +220,9 @@ export default function BlogPostPage({ params }: Props) {
       {/* Editorial article hero */}
       <section className="relative bg-cream pt-32 pb-12 md:pt-40 md:pb-16">
         <div className="absolute inset-x-0 top-0 h-80 canvas-grid opacity-40 pointer-events-none" />
-        <div className="relative max-w-narrow mx-auto px-6 sm:px-8 lg:px-10">
+        <div
+          className={`relative mx-auto px-6 sm:px-8 lg:px-10 ${besideTitle ? "max-w-content" : "max-w-narrow"}`}
+        >
           <Link
             href="/blog"
             className="inline-flex items-center gap-2 text-slate-muted hover:text-slate-ink text-[13px] mb-8 transition-colors"
@@ -225,40 +230,67 @@ export default function BlogPostPage({ params }: Props) {
             <ArrowLeft className="w-4 h-4" />
             Terug naar blog
           </Link>
-          <div className="flex flex-wrap gap-2 mb-6">
-            {post.tags.map((tag) => (
-              <span
-                key={tag}
-                className="text-[10.5px] font-semibold uppercase tracking-wider text-slate-meta bg-slate-950/5 px-2 py-0.5 rounded-full"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-          <h1 className="font-serif font-medium text-[clamp(2rem,4vw,3.25rem)] leading-[1.08] text-slate-ink tracking-tight text-balance">
-            {post.title}
-          </h1>
-          <div className="mt-8 flex flex-wrap items-center gap-4 text-[12.5px] text-slate-meta">
-            <span>{post.author}</span>
-            <span className="w-1 h-1 rounded-full bg-slate-meta/60" />
-            <span>
-              {new Date(post.publishedAt).toLocaleDateString("nl-NL", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
-            </span>
-            <span className="w-1 h-1 rounded-full bg-slate-meta/60" />
-            <span className="flex items-center gap-1">
-              <Clock className="w-3.5 h-3.5" />
-              {post.readingTime}
-            </span>
+          <div
+            className={
+              besideTitle
+                ? "grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center"
+                : ""
+            }
+          >
+            <div className={besideTitle ? "lg:col-span-7 min-w-0" : ""}>
+              <div className="flex flex-wrap gap-2 mb-6">
+                {post.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="text-[10.5px] font-semibold uppercase tracking-wider text-slate-meta bg-slate-950/5 px-2 py-0.5 rounded-full"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <h1 className="font-serif font-medium text-[clamp(2rem,4vw,3.25rem)] leading-[1.08] text-slate-ink tracking-tight text-balance">
+                {post.title}
+              </h1>
+              <div className="mt-8 flex flex-wrap items-center gap-4 text-[12.5px] text-slate-meta">
+                <span>{post.author}</span>
+                <span className="w-1 h-1 rounded-full bg-slate-meta/60" />
+                <span>
+                  {new Date(post.publishedAt).toLocaleDateString("nl-NL", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
+                </span>
+                <span className="w-1 h-1 rounded-full bg-slate-meta/60" />
+                <span className="flex items-center gap-1">
+                  <Clock className="w-3.5 h-3.5" />
+                  {post.readingTime}
+                </span>
+              </div>
+            </div>
+            {besideTitle && (
+              <div className="lg:col-span-5 relative order-first lg:order-last">
+                <div
+                  className="relative mx-auto w-[62%] sm:w-[46%] lg:w-full max-w-[320px] lg:max-w-[380px]"
+                  style={{ aspectRatio: illo.aspectRatio }}
+                >
+                  <Image
+                    src={illSrc}
+                    alt=""
+                    fill
+                    sizes="(max-width: 1024px) 320px, 380px"
+                    className="object-contain"
+                    priority
+                  />
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </section>
 
-      {/* Top illustration — box-less, verhouding volgt het beeld (illoLayout). */}
-      {illPlacement === "top" && (
+      {/* Wide-band illustratie onder de hero (alleen wide; niet-wide staat naast de titel). */}
+      {illPlacement === "top" && illo.wide && (
         <section className="relative bg-cream">
           <div className="max-w-narrow mx-auto px-6 sm:px-8 lg:px-10">
             <div className={`relative ${illo.widthClass}`} style={{ aspectRatio: illo.aspectRatio }}>
