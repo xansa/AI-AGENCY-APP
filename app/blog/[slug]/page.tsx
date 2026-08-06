@@ -251,7 +251,7 @@ export default function BlogPostPage({ params }: Props) {
         </section>
       )}
 
-      <section className="relative bg-cream py-12 md:py-20">
+      <section className="relative bg-cream pt-4 md:pt-6 pb-12 md:pb-20">
         <div className="max-w-narrow mx-auto px-6 sm:px-8 lg:px-10">
           {post.sideFigure && (
             <div className="hidden lg:block float-right w-44 xl:w-52 ml-10 -mr-16 xl:-mr-32 -mt-2">
