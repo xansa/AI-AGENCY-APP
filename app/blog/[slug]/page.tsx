@@ -59,7 +59,19 @@ function illoLayout(slug: string) {
 }
 
 function renderContent(content: string, slug: string, illSrc?: string) {
-  return content.split("\n\n").map((block, i) => {
+  const blocks = content.split("\n\n");
+  // Eerste "gewone" alinea krijgt een drop cap (editorial).
+  const firstParaIdx = blocks.findIndex((b) => {
+    const t = b.trim();
+    return (
+      t.length > 0 &&
+      t !== "[[ill]]" &&
+      !t.startsWith("**") &&
+      !t.startsWith("[[illustratie:") &&
+      !t.startsWith("•")
+    );
+  });
+  return blocks.map((block, i) => {
     if (block.trim() === "[[ill]]") {
       if (!illSrc) return null;
       const { aspectRatio, widthClass, wide } = illoLayout(slug);
@@ -135,8 +147,16 @@ function renderContent(content: string, slug: string, illSrc?: string) {
       );
     }
 
+    const isLead = i === firstParaIdx;
     return (
-      <p key={i} className="text-[16px] leading-[1.75] text-slate-muted my-5 text-pretty">
+      <p
+        key={i}
+        className={`text-[16px] leading-[1.75] text-slate-muted my-5 text-pretty${
+          isLead
+            ? " first-letter:float-left first-letter:font-serif first-letter:text-slate-ink first-letter:text-[3.4rem] first-letter:leading-[0.72] first-letter:pr-3 first-letter:pt-1"
+            : ""
+        }`}
+      >
         {renderInline(block)}
       </p>
     );
@@ -251,21 +271,40 @@ export default function BlogPostPage({ params }: Props) {
               <h1 className="font-serif font-medium text-[clamp(2rem,4vw,3.25rem)] leading-[1.08] text-slate-ink tracking-tight text-balance">
                 {post.title}
               </h1>
-              <div className="mt-8 flex flex-wrap items-center gap-4 text-[12.5px] text-slate-meta">
-                <span>{post.author}</span>
-                <span className="w-1 h-1 rounded-full bg-slate-meta/60" />
-                <span>
-                  {new Date(post.publishedAt).toLocaleDateString("nl-NL", {
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                  })}
-                </span>
-                <span className="w-1 h-1 rounded-full bg-slate-meta/60" />
-                <span className="flex items-center gap-1">
-                  <Clock className="w-3.5 h-3.5" />
-                  {post.readingTime}
-                </span>
+              <p className="mt-5 text-[15px] md:text-[16.5px] leading-relaxed text-slate-muted max-w-xl text-pretty">
+                {post.excerpt}
+              </p>
+              <div className="mt-8 flex items-center gap-3">
+                <div className="relative w-10 h-10 rounded-full overflow-hidden ring-1 ring-slate-950/10 shrink-0">
+                  <Image
+                    src="/brand/founder-avatar.png"
+                    alt={post.author}
+                    fill
+                    sizes="40px"
+                    className="object-cover"
+                  />
+                </div>
+                <div className="min-w-0">
+                  <div className="text-[13px] font-semibold text-slate-ink leading-tight">
+                    {post.author}
+                  </div>
+                  <div className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[11.5px] text-slate-meta">
+                    <span>Founder, Arka</span>
+                    <span className="w-1 h-1 rounded-full bg-slate-meta/50" />
+                    <span>
+                      {new Date(post.publishedAt).toLocaleDateString("nl-NL", {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                      })}
+                    </span>
+                    <span className="w-1 h-1 rounded-full bg-slate-meta/50" />
+                    <span className="inline-flex items-center gap-1">
+                      <Clock className="w-3 h-3" />
+                      {post.readingTime}
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
             {besideTitle && (
@@ -307,8 +346,11 @@ export default function BlogPostPage({ params }: Props) {
         </section>
       )}
 
-      <section className="relative bg-cream pt-4 md:pt-6 pb-12 md:pb-20">
-        <div className="max-w-narrow mx-auto px-6 sm:px-8 lg:px-10">
+      <section className="relative bg-cream pt-6 md:pt-10 pb-12 md:pb-20">
+        <div
+          className={`mx-auto px-6 sm:px-8 lg:px-10 ${besideTitle ? "max-w-content" : "max-w-narrow"}`}
+        >
+         <div className={besideTitle ? "max-w-narrow" : ""}>
           {illPlacement === "side" && (
             <div className="hidden lg:block float-right w-48 xl:w-56 ml-10 -mr-16 xl:-mr-32 -mt-2">
               <div className="relative w-full" style={{ aspectRatio: illo.aspectRatio }}>
@@ -345,6 +387,7 @@ export default function BlogPostPage({ params }: Props) {
               <ArrowUpRight className="w-3.5 h-3.5" />
             </Link>
           </div>
+         </div>
         </div>
       </section>
     </>
