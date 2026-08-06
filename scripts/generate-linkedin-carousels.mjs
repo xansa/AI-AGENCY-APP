@@ -631,7 +631,7 @@ const carousels = {
       { type: "content", number: 2, heading: "Wat we bouwden", body: ["Nieuwe website, geoptimaliseerd voor conversie.", "SEO strategie voor 5 kerndiensten.", "AI chatbot en CRM voor opvolging."], illo: carIllo("p10s2") },
       { type: "stat", stat: "+75%", label: "meer inkomende leads" },
       { type: "stat", stat: "15u", label: "per week bespaard", sublabel: "Responstijd van dagen naar minuten" },
-      { type: "closing", cta: ["Welk proces zou jij", "het liefst automatiseren?"] },
+      { type: "closing", cta: ["Meer leads en tijd terug.", "Waar zou jij beginnen?"] },
     ],
   },
   "post-11-chatbot": {

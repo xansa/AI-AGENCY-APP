@@ -20,6 +20,6 @@ Na 3 maanden:
 
 Het team besteedt nu meer tijd aan klantwerk en minder aan administratie. Precies zoals het hoort.
 
-Welk proces zou jij het liefst automatiseren?
+Meer leads en tijd terug. Waar zou jij beginnen?
 
 #leads #automatisering #resultaten #MKB

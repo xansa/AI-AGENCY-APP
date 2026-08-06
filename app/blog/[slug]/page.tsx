@@ -274,37 +274,21 @@ export default function BlogPostPage({ params }: Props) {
               <p className="mt-5 text-[15px] md:text-[16.5px] leading-relaxed text-slate-muted max-w-xl text-pretty">
                 {post.excerpt}
               </p>
-              <div className="mt-8 flex items-center gap-3">
-                <div className="relative w-10 h-10 rounded-full overflow-hidden ring-1 ring-slate-950/10 shrink-0">
-                  <Image
-                    src="/brand/founder-avatar.png"
-                    alt={post.author}
-                    fill
-                    sizes="40px"
-                    className="object-cover"
-                  />
-                </div>
-                <div className="min-w-0">
-                  <div className="text-[13px] font-semibold text-slate-ink leading-tight">
-                    {post.author}
-                  </div>
-                  <div className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[11.5px] text-slate-meta">
-                    <span>Founder, Arka</span>
-                    <span className="w-1 h-1 rounded-full bg-slate-meta/50" />
-                    <span>
-                      {new Date(post.publishedAt).toLocaleDateString("nl-NL", {
-                        year: "numeric",
-                        month: "long",
-                        day: "numeric",
-                      })}
-                    </span>
-                    <span className="w-1 h-1 rounded-full bg-slate-meta/50" />
-                    <span className="inline-flex items-center gap-1">
-                      <Clock className="w-3 h-3" />
-                      {post.readingTime}
-                    </span>
-                  </div>
-                </div>
+              <div className="mt-7 flex flex-wrap items-center gap-4 text-[12.5px] text-slate-meta">
+                <span>{post.author}</span>
+                <span className="w-1 h-1 rounded-full bg-slate-meta/60" />
+                <span>
+                  {new Date(post.publishedAt).toLocaleDateString("nl-NL", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
+                </span>
+                <span className="w-1 h-1 rounded-full bg-slate-meta/60" />
+                <span className="flex items-center gap-1">
+                  <Clock className="w-3.5 h-3.5" />
+                  {post.readingTime}
+                </span>
               </div>
             </div>
             {besideTitle && (
