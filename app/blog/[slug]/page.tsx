@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { blogPosts, getPublishedPosts } from "@/content/blog";
+import { blogIllustrationDims } from "@/content/blog-illustrations";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft, ArrowUpRight, Clock } from "lucide-react";
@@ -40,27 +41,31 @@ export function generateMetadata({ params }: Props): Metadata {
   };
 }
 
-// Illustration container sizing per kind: spot = small icon, figure = portrait,
-// wide = full-width band. Keeps sizes varied instead of one uniform block.
-function illoClasses(type?: "spot" | "figure" | "wide") {
-  if (type === "spot") return "relative mx-auto w-[46%] max-w-[11rem] aspect-square";
-  if (type === "wide") return "relative mx-auto w-full aspect-[1380/514]";
-  if (type === "figure") return "relative mx-auto w-[58%] max-w-[15rem] aspect-[4/5]";
-  // default: compact centered scene (v3-look) voor posts zonder specifiek type
-  return "relative mx-auto w-[64%] max-w-[18rem] aspect-square";
+// De container-verhouding volgt de ECHTE beeldverhouding (uit blogIllustrationDims),
+// zodat niets uitgerekt of piepklein in een te grote box rendert. De breedte kiezen
+// we op vorm: brede banners vullen de kolom, vierkante/portret-scenes blijven compact
+// en gecentreerd. Zo klopt de proportie voor elk beeld.
+function illoLayout(slug: string) {
+  const dim = blogIllustrationDims[slug];
+  const ratio = dim ? dim.w / dim.h : 1;
+  const aspectRatio = dim ? `${dim.w} / ${dim.h}` : "1 / 1";
+  const widthClass =
+    ratio >= 1.7
+      ? "w-full" // brede banner -> volle kolombreedte
+      : ratio < 0.8
+        ? "mx-auto w-[46%] max-w-[13rem]" // portret -> smal gecentreerd
+        : "mx-auto w-[58%] max-w-[16rem]"; // vierkant -> compact gecentreerd
+  return { aspectRatio, widthClass, wide: ratio >= 1.7 };
 }
 
-function renderContent(
-  content: string,
-  illSrc?: string,
-  illType?: "spot" | "figure" | "wide",
-) {
+function renderContent(content: string, slug: string, illSrc?: string) {
   return content.split("\n\n").map((block, i) => {
     if (block.trim() === "[[ill]]") {
       if (!illSrc) return null;
+      const { aspectRatio, widthClass, wide } = illoLayout(slug);
       return (
-        <figure key={i} className={illType === "wide" ? "my-12 md:my-16" : "my-10 md:my-12"}>
-          <div className={illoClasses(illType)}>
+        <figure key={i} className={wide ? "my-12 md:my-16" : "my-10 md:my-12"}>
+          <div className={`relative ${widthClass}`} style={{ aspectRatio }}>
             <Image
               src={illSrc}
               alt=""
@@ -146,11 +151,12 @@ export default function BlogPostPage({ params }: Props) {
   const wordCount = post.content.split(/\s+/).length;
   const readingTimeMinutes = Math.max(1, Math.round(wordCount / 200));
 
-  // Curated illustrations: only posts with `illType` get one. Varied per post in
-  // kind (spot/figure/wide), size and placement (top/mid/side). Others stay clean.
-  const illType = post.illType;
+  // Elke post heeft een illustratie. De container-verhouding volgt het beeld
+  // (illoLayout), dus proporties kloppen altijd. Plaatsing default bovenaan;
+  // curated posts kunnen via illPlacement naar de zijkant of het midden.
   const illPlacement = post.illPlacement ?? "top";
   const illSrc = post.illustration ?? `/illustrations/blog/${post.slug}.png`;
+  const illo = illoLayout(post.slug);
   const ogImage = `${baseUrl}${illSrc}`;
 
   const breadcrumbJsonLd = {
@@ -251,12 +257,11 @@ export default function BlogPostPage({ params }: Props) {
         </div>
       </section>
 
-      {/* Top illustration — box-less, sized by kind. Elke post heeft een illustratie;
-          curated posts krijgen een specifiek type/placement, de rest de compacte default. */}
+      {/* Top illustration — box-less, verhouding volgt het beeld (illoLayout). */}
       {illPlacement === "top" && (
         <section className="relative bg-cream">
           <div className="max-w-narrow mx-auto px-6 sm:px-8 lg:px-10">
-            <div className={illoClasses(illType)}>
+            <div className={`relative ${illo.widthClass}`} style={{ aspectRatio: illo.aspectRatio }}>
               <Image
                 src={illSrc}
                 alt=""
@@ -272,9 +277,9 @@ export default function BlogPostPage({ params }: Props) {
 
       <section className="relative bg-cream pt-4 md:pt-6 pb-12 md:pb-20">
         <div className="max-w-narrow mx-auto px-6 sm:px-8 lg:px-10">
-          {illType && illPlacement === "side" && (
+          {illPlacement === "side" && (
             <div className="hidden lg:block float-right w-48 xl:w-56 ml-10 -mr-16 xl:-mr-32 -mt-2">
-              <div className="relative w-full aspect-[4/5]">
+              <div className="relative w-full" style={{ aspectRatio: illo.aspectRatio }}>
                 <Image
                   src={illSrc}
                   alt=""
@@ -288,8 +293,8 @@ export default function BlogPostPage({ params }: Props) {
           <article>
             {renderContent(
               post.content,
+              post.slug,
               illPlacement === "mid" ? illSrc : undefined,
-              illType,
             )}
           </article>
 
