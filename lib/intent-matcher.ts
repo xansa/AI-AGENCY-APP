@@ -137,13 +137,13 @@ const INTENTS: IntentDefinition[] = [
     boostKeywords: ["setup", "morning", "inbox", "agenda", "claude"],
     response:
       "**AI Assistent Setup**: je eigen digitale assistent, klaar in een week.\n\n" +
-      "Arka koppelt Claude AI aan je bestaande tools en bouwt een assistent die dagelijks werk overneemt:\n" +
+      "Arka bouwt met AI als hulpmiddel een assistent die aansluit op je bestaande tools en dagelijks werk overneemt:\n" +
       "• Inbox sorteren en concept-antwoorden in jouw schrijfstijl\n" +
       "• Agenda reviewen en taken prioriteren\n" +
       "• Elke ochtend een morning brief\n" +
       "• Draait in de cloud, niets wordt verstuurd zonder jouw goedkeuring\n\n" +
       "Eenmalig opgezet: **Instap €1.500** of **Professional €2.500**. Daarna ben jij eigenaar. " +
-      "Je betaalt alleen je eigen Claude Pro abonnement.",
+      "De assistent draait op je eigen account tegen lage maandkosten.",
     cta: "Bekijk de dienst op [/ai-assistent](/ai-assistent) of plan een gesprek.",
   },
 

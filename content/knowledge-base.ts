@@ -286,8 +286,8 @@ export const KB_AI_ASSISTENT = `
 Een aparte, eenmalige dienst (los van de maandelijkse packages). Pagina: /ai-assistent
 
 Wat het is:
-Arka koppelt Claude AI aan de bestaande tools van een klant (Gmail, Agenda, CRM, boekhouding,
-projectmanagement) en bouwt een digitale assistent die dagelijks taken uitvoert: de inbox sorteren,
+Arka bouwt met AI als hulpmiddel een digitale assistent die aansluit op de bestaande tools van een
+klant (e-mail, agenda, CRM, boekhouding, projectmanagement) en dagelijks taken uitvoert: de inbox sorteren,
 concept-antwoorden schrijven in de schrijfstijl van de klant, de agenda reviewen, taken prioriteren
 en elke ochtend een morning brief genereren. Niets wordt verstuurd zonder goedkeuring van de klant.
 
@@ -301,13 +301,13 @@ Prijzen (eenmalig):
   agenda-automatisering, custom skills (weekrapport, klantoverzicht), overdracht 60 minuten +
   documentatie, optioneel retainer €250/maand.
 
-De klant betaalt het eigen Claude Pro abonnement (circa 20 dollar per maand). Arka host niets.
+De assistent draait op het eigen account van de klant tegen lage maandkosten. Arka host niets, de klant blijft eigenaar.
 
 ROI: bespaart circa 30 minuten per dag, ruim 10 uur per maand. Bij een uurtarief van €75 is dat
 €825 aan teruggewonnen tijd per maand. Terugverdiend binnen twee maanden.
 
-Koppelingen: Gmail, Google Agenda, Google Drive, Outlook, HubSpot, Slack, ClickUp, Asana, Notion,
-QuickBooks, Exact Online, en via Zapier 8.000+ extra koppelingen.
+Koppelingen: e-mail, agenda, cloud-opslag, CRM, team-chat, projectmanagement, documenten en
+boekhouding, plus 8.000+ extra koppelingen met de tools die de klant al gebruikt.
 `;
 
 // ─── Volledige kennisbank (voor systeemprompt) ───────────────────────────────

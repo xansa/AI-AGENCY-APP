@@ -93,31 +93,25 @@ export interface AiAssistentCopy {
 }
 
 const INTEGRATIONS: AiAssistentIntegration[] = [
-  { name: "Gmail", icon: "Mail" },
-  { name: "Google Agenda", icon: "Calendar" },
-  { name: "Google Drive", icon: "HardDrive" },
-  { name: "Outlook", icon: "Inbox" },
-  { name: "HubSpot", icon: "Users" },
-  { name: "Slack", icon: "MessagesSquare" },
-  { name: "ClickUp", icon: "ListChecks" },
-  { name: "Asana", icon: "ListTodo" },
-  { name: "Notion", icon: "FileText" },
-  { name: "QuickBooks", icon: "Calculator" },
-  { name: "Exact Online", icon: "Receipt" },
+  { name: "E-mail", icon: "Mail" },
+  { name: "Agenda", icon: "Calendar" },
+  { name: "Cloud-opslag", icon: "HardDrive" },
+  { name: "CRM", icon: "Users" },
+  { name: "Team-chat", icon: "MessagesSquare" },
+  { name: "Projectmanagement", icon: "ListChecks" },
+  { name: "Documenten", icon: "FileText" },
+  { name: "Boekhouding", icon: "Calculator" },
 ];
 
 const INTEGRATIONS_EN: AiAssistentIntegration[] = [
-  { name: "Gmail", icon: "Mail" },
-  { name: "Google Calendar", icon: "Calendar" },
-  { name: "Google Drive", icon: "HardDrive" },
-  { name: "Outlook", icon: "Inbox" },
-  { name: "HubSpot", icon: "Users" },
-  { name: "Slack", icon: "MessagesSquare" },
-  { name: "ClickUp", icon: "ListChecks" },
-  { name: "Asana", icon: "ListTodo" },
-  { name: "Notion", icon: "FileText" },
-  { name: "QuickBooks", icon: "Calculator" },
-  { name: "Exact Online", icon: "Receipt" },
+  { name: "Email", icon: "Mail" },
+  { name: "Calendar", icon: "Calendar" },
+  { name: "Cloud storage", icon: "HardDrive" },
+  { name: "CRM", icon: "Users" },
+  { name: "Team chat", icon: "MessagesSquare" },
+  { name: "Project management", icon: "ListChecks" },
+  { name: "Documents", icon: "FileText" },
+  { name: "Accounting", icon: "Calculator" },
 ];
 
 const nl: AiAssistentCopy = {
@@ -126,7 +120,7 @@ const nl: AiAssistentCopy = {
     titleLead: "Jouw eigen digitale assistent. Klaar",
     titleEm: "in een week",
     subtitle:
-      "Wij koppelen Claude AI aan je bestaande tools en bouwen een assistent die elke ochtend je inbox sorteert, je agenda reviewt en je dag voorbereidt. Jij houdt de controle, de assistent doet het werk.",
+      "Wij bouwen met AI als hulpmiddel een assistent die op je bestaande tools aansluit en elke ochtend je inbox sorteert, je agenda reviewt en je dag voorbereidt. Jij houdt de controle, de assistent doet het werk.",
     primaryCta: "Plan kennismaking",
     secondaryCta: "Bekijk hoe het werkt",
     briefLabel: "Morning Brief",
@@ -143,7 +137,7 @@ const nl: AiAssistentCopy = {
     titleLead: "Geen chatbot. Een",
     titleEm: "medewerker",
     body:
-      "Arka koppelt Claude AI aan de tools die je al gebruikt en bouwt een digitale assistent die dagelijks taken uitvoert: je inbox sorteren, concept-antwoorden schrijven in jouw schrijfstijl, je agenda reviewen, taken prioriteren en een morning brief genereren. Niets wordt verstuurd zonder jouw goedkeuring.",
+      "Arka bouwt met AI als hulpmiddel een digitale assistent die aansluit op de tools die je al gebruikt en dagelijks taken uitvoert: je inbox sorteren, concept-antwoorden schrijven in jouw schrijfstijl, je agenda reviewen, taken prioriteren en een morning brief genereren. Niets wordt verstuurd zonder jouw goedkeuring.",
   },
   hoe: {
     kicker: "02",
@@ -154,7 +148,7 @@ const nl: AiAssistentCopy = {
       {
         n: "01",
         title: "Tools koppelen",
-        desc: "We verbinden Gmail, Agenda, CRM, boekhouding en projectmanagement.",
+        desc: "We sluiten aan op je e-mail, agenda, CRM, boekhouding en projectmanagement.",
       },
       {
         n: "02",
@@ -215,7 +209,7 @@ const nl: AiAssistentCopy = {
       },
     ],
     footnote:
-      "Je betaalt je eigen Claude Pro abonnement (circa 20 dollar per maand). Arka host niets.",
+      "De assistent draait op je eigen account tegen lage maandkosten. Arka host niets, jij blijft eigenaar.",
   },
   roi: {
     kicker: "04",
@@ -237,7 +231,7 @@ const nl: AiAssistentCopy = {
     titleLead: "Werkt met de tools die je",
     titleEm: "al gebruikt",
     items: INTEGRATIONS,
-    zapier: "En via Zapier nog 8.000+ extra koppelingen.",
+    zapier: "En nog 8.000+ extra koppelingen met de tools die je al gebruikt.",
   },
   cta: {
     titleLead: "Klaar voor een assistent die met je",
@@ -255,7 +249,7 @@ const en: AiAssistentCopy = {
     titleLead: "Your own digital assistant. Ready",
     titleEm: "in a week",
     subtitle:
-      "We connect Claude AI to your existing tools and build an assistant that sorts your inbox every morning, reviews your calendar and prepares your day. You stay in control, the assistant does the work.",
+      "Using AI as a tool, we build an assistant that plugs into your existing tools and sorts your inbox every morning, reviews your calendar and prepares your day. You stay in control, the assistant does the work.",
     primaryCta: "Book a call",
     secondaryCta: "See how it works",
     briefLabel: "Morning Brief",
@@ -272,7 +266,7 @@ const en: AiAssistentCopy = {
     titleLead: "Not a chatbot. An",
     titleEm: "employee",
     body:
-      "Arka connects Claude AI to the tools you already use and builds a digital assistant that handles daily tasks: sorting your inbox, drafting replies in your writing style, reviewing your calendar, prioritising tasks and generating a morning brief. Nothing is sent without your approval.",
+      "Using AI as a tool, Arka builds a digital assistant that plugs into the tools you already use and handles daily tasks: sorting your inbox, drafting replies in your writing style, reviewing your calendar, prioritising tasks and generating a morning brief. Nothing is sent without your approval.",
   },
   hoe: {
     kicker: "02",
@@ -283,7 +277,7 @@ const en: AiAssistentCopy = {
       {
         n: "01",
         title: "Connect tools",
-        desc: "We link Gmail, Calendar, CRM, accounting and project management.",
+        desc: "We plug into your email, calendar, CRM, accounting and project management.",
       },
       {
         n: "02",
@@ -344,7 +338,7 @@ const en: AiAssistentCopy = {
       },
     ],
     footnote:
-      "You pay for your own Claude Pro subscription (around 20 dollars per month). Arka hosts nothing.",
+      "The assistant runs on your own account at low monthly cost. Arka hosts nothing, you stay the owner.",
   },
   roi: {
     kicker: "04",
@@ -366,7 +360,7 @@ const en: AiAssistentCopy = {
     titleLead: "Works with the tools you",
     titleEm: "already use",
     items: INTEGRATIONS_EN,
-    zapier: "And 8,000+ more integrations via Zapier.",
+    zapier: "And 8,000+ more integrations with the tools you already use.",
   },
   cta: {
     titleLead: "Ready for an assistant that works",

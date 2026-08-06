@@ -214,7 +214,7 @@ Elke automatisering begint met een analyse van je huidige werkproces. We identif
 
 **Integraties met je bestaande tools**
 
-AI werkt het best als het naadloos integreert met je bestaande systemen. We koppelen met CRM-systemen (HubSpot, Pipedrive, Salesforce), e-mailplatforms (Mailchimp, Resend), boekhoudsoftware, en vrijwel elk systeem met een API. Je hoeft niet alles om te gooien om te profiteren van AI.`,
+AI werkt het best als het naadloos integreert met je bestaande systemen. We koppelen met je CRM, e-mailplatform, boekhoudsoftware, en vrijwel elk systeem met een API. Je hoeft niet alles om te gooien om te profiteren van AI.`,
     longDescription_en: `Most businesses spend hours every week on tasks an AI can handle in seconds: answering frequently asked questions, qualifying leads, drafting quotes, entering data. Not because they enjoy it, but because there seemed to be no alternative. That has changed.
 
 **AI chatbots that know your business**
@@ -241,7 +241,7 @@ Every automation starts with an analysis of your current workflow. We identify b
 
 **Integrations with your existing tools**
 
-AI works best when it seamlessly integrates with your existing systems. We connect with CRM systems (HubSpot, Pipedrive, Salesforce), email platforms (Mailchimp, Resend), accounting software, and virtually any system with an API. You don't need to overhaul everything to benefit from AI.`,
+AI works best when it seamlessly integrates with your existing systems. We connect with your CRM, email platform, accounting software, and virtually any system with an API. You don't need to overhaul everything to benefit from AI.`,
     icon: "Bot",
     deliverables: [
       "Custom AI chatbot",
@@ -300,11 +300,11 @@ Elk dashboard wordt gebouwd op basis van jouw specifieke KPI's en databronnen. G
 
 De waarde van een dashboard staat of valt met de data die erin stroomt. We bouwen koppelingen met vrijwel elk systeem:
 
-- CRM-systemen (HubSpot, Pipedrive, Salesforce)
-- Boekhoudsoftware (Exact, Moneybird, Xero)
-- Google Analytics en Search Console
+- CRM-systemen
+- Boekhoudsoftware
+- Web-analytics en zoekprestaties
 - Social media platformen
-- E-commerce platformen (Shopify, WooCommerce)
+- E-commerce platformen
 - Custom databases en interne systemen
 
 De data stroomt automatisch. Geen handmatige exports, geen copy-paste, geen verouderde cijfers.
@@ -338,11 +338,11 @@ Every dashboard is built based on your specific KPIs and data sources. Not a sta
 
 The value of a dashboard depends on the data flowing into it. We build connections with virtually any system:
 
-- CRM systems (HubSpot, Pipedrive, Salesforce)
-- Accounting software (Exact, Moneybird, Xero)
-- Google Analytics and Search Console
+- CRM systems
+- Accounting software
+- Web analytics and search performance
 - Social media platforms
-- E-commerce platforms (Shopify, WooCommerce)
+- E-commerce platforms
 - Custom databases and internal systems
 
 Data flows automatically. No manual exports, no copy-paste, no outdated figures.
@@ -419,7 +419,7 @@ Outbound brengt prospects naar je website. Inbound zorgt dat ze converteren:
 
 **CRM: geen lead laten vallen**
 
-Een lead die niet wordt opgevolgen is een gemiste kans. We richten je CRM (HubSpot, Pipedrive of anders) zo in dat elke lead wordt gevolgd, gescoord en op het juiste moment wordt benaderd:
+Een lead die niet wordt opgevolgen is een gemiste kans. We richten je CRM zo in dat elke lead wordt gevolgd, gescoord en op het juiste moment wordt benaderd:
 
 - Automatische lead scoring op basis van gedrag en bedrijfsgegevens
 - Pipeline-stages die aansluiten bij jouw verkoopproces
@@ -454,7 +454,7 @@ Outbound brings prospects to your website. Inbound ensures they convert:
 
 **CRM: never drop a lead**
 
-A lead that isn't followed up is a missed opportunity. We set up your CRM (HubSpot, Pipedrive, or other) so every lead is tracked, scored, and approached at the right moment:
+A lead that isn't followed up is a missed opportunity. We set up your CRM so every lead is tracked, scored, and approached at the right moment:
 
 - Automatic lead scoring based on behavior and company data
 - Pipeline stages that match your sales process
