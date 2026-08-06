@@ -3,6 +3,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 import Link from "next/link";
 import { ArrowUpRight, TrendingUp, Sparkles, Search } from "lucide-react";
+import { LivingGradient } from "@/components/ui/LivingGradient";
 
 // Editorial hero: the oversized serif slogan runs full-width on two lines, with a soft
 // brand-tinted gradient wash and small floating product-widgets clustered to the right
@@ -44,11 +45,16 @@ export function HeroV2() {
 
   return (
     <section className="relative bg-cream pt-32 pb-24 md:pt-40 md:pb-28 lg:pt-44 lg:pb-32 overflow-hidden">
-      {/* ── Soft gradient "bulb" wash, centered behind the content ── */}
-      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+      {/* ── Soft gradient "bulb" wash, centered behind the content — alive: slow ambient drift + mouse-parallax ── */}
+      <LivingGradient
+        className="absolute inset-0 overflow-hidden pointer-events-none"
+        amplitude={44}
+        parallax={80}
+        duration={14}
+      >
         <div className="absolute left-1/2 top-[16%] -translate-x-1/2 w-[90%] h-[80%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(37,99,235,0.11),rgba(59,130,246,0.05)_40%,transparent_70%)] blur-3xl" />
         <div className="absolute left-1/2 top-[4%] -translate-x-1/2 w-[64%] h-[54%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(243,239,231,0.7),transparent_62%)] blur-2xl" />
-      </div>
+      </LivingGradient>
       {/* Faint canvas grid for texture */}
       <div className="absolute inset-x-0 top-0 h-[80%] canvas-grid opacity-[0.35] pointer-events-none" aria-hidden="true" />
 
