@@ -159,7 +159,7 @@ Inbegrepen: maatwerk website, basis-branding, on-page SEO, hosting, onderhoud, k
 **Ondernemer** ⭐ Meest gekozen · vanaf €1.750/mnd
 Diensten: SEO & Content + Lead Generation + AI Chatbots + Website
 Min. commitment: 6 maanden
-Inbegrepen: alles uit Starter + doorlopende SEO/content, lead gen (Smartlead cold outreach of ads), AI-chatbot, maandelijks dashboard, strategie-sessie
+Inbegrepen: alles uit Starter + doorlopende SEO/content, lead gen (cold outreach of ads), AI-chatbot, maandelijks dashboard, strategie-sessie
 
 **Marktleider** · vanaf €3.500/mnd
 Diensten: AI Assistent + AI Chatbots & Automatisering + Dashboards & Data + AI-video + alles uit Ondernemer
