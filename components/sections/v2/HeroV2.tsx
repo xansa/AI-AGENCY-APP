@@ -3,7 +3,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 import Link from "next/link";
 import { ArrowUpRight, TrendingUp, Sparkles, Search } from "lucide-react";
-import { LivingGradient } from "@/components/ui/LivingGradient";
+import { AuroraGradient } from "@/components/ui/AuroraGradient";
 
 // Editorial hero: the oversized serif slogan runs full-width on two lines, with a soft
 // brand-tinted gradient wash and small floating product-widgets clustered to the right
@@ -45,16 +45,60 @@ export function HeroV2() {
 
   return (
     <section className="relative bg-cream pt-32 pb-24 md:pt-40 md:pb-28 lg:pt-44 lg:pb-32 overflow-hidden">
-      {/* ── Soft gradient "bulb" wash, centered behind the content — alive: slow ambient drift + mouse-parallax ── */}
-      <LivingGradient
+      {/* ── Living aurora mesh: blue-dominant, warm whisper, each blob shimmers on its own phase + parallaxes to the cursor ── */}
+      <AuroraGradient
         className="absolute inset-0 overflow-hidden pointer-events-none"
-        amplitude={44}
-        parallax={80}
-        duration={14}
-      >
-        <div className="absolute left-1/2 top-[16%] -translate-x-1/2 w-[90%] h-[80%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(37,99,235,0.11),rgba(59,130,246,0.05)_40%,transparent_70%)] blur-3xl" />
-        <div className="absolute left-1/2 top-[4%] -translate-x-1/2 w-[64%] h-[54%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(243,239,231,0.7),transparent_62%)] blur-2xl" />
-      </LivingGradient>
+        parallax={70}
+        blobs={[
+          // Indigo core behind the headline
+          {
+            className:
+              "absolute left-[38%] top-[24%] -translate-x-1/2 -translate-y-1/2 w-[62%] h-[72%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(37,99,235,0.22),rgba(37,99,235,0.06)_45%,transparent_70%)] blur-3xl",
+            amplitude: 30,
+            duration: 17,
+            delay: 0,
+            dir: 1,
+          },
+          // Bright blue behind the widget cluster
+          {
+            className:
+              "absolute left-[70%] top-[30%] -translate-x-1/2 -translate-y-1/2 w-[52%] h-[66%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.18),transparent_66%)] blur-3xl",
+            amplitude: 34,
+            duration: 15,
+            delay: 1.2,
+            dir: -1,
+          },
+          // Cyan lower-center for the vibrant hue shift
+          {
+            className:
+              "absolute left-[52%] top-[54%] -translate-x-1/2 -translate-y-1/2 w-[48%] h-[56%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(6,182,212,0.13),transparent_66%)] blur-3xl",
+            amplitude: 28,
+            duration: 19,
+            delay: 0.6,
+            dir: 1,
+          },
+          // Violet bridge between blue and warm
+          {
+            className:
+              "absolute left-[46%] top-[14%] -translate-x-1/2 -translate-y-1/2 w-[44%] h-[50%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(147,170,255,0.17),transparent_66%)] blur-3xl",
+            amplitude: 24,
+            duration: 21,
+            delay: 2,
+            dir: -1,
+          },
+          // Warm peach/cream whisper, upper-left
+          {
+            className:
+              "absolute left-[28%] top-[10%] -translate-x-1/2 -translate-y-1/2 w-[48%] h-[48%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(246,224,206,0.55),transparent_62%)] blur-2xl",
+            amplitude: 20,
+            duration: 23,
+            delay: 1.5,
+            dir: 1,
+          },
+        ]}
+      />
+      {/* Film grain over the mesh (echoes the chalk illustrations' risograph grain) */}
+      <div className="absolute inset-0 grain opacity-[0.09] mix-blend-multiply pointer-events-none" aria-hidden="true" />
       {/* Faint canvas grid for texture */}
       <div className="absolute inset-x-0 top-0 h-[80%] canvas-grid opacity-[0.35] pointer-events-none" aria-hidden="true" />
 
