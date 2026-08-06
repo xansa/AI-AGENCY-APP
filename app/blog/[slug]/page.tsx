@@ -21,7 +21,9 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: Props): Metadata {
   const post = blogPosts.find((p) => p.slug === params.slug);
   if (!post) return {};
-  const ogImage = `${baseUrl}${post.illustration ?? `/illustrations/blog/${post.slug}.png`}`;
+  const ogImage = post.illType
+    ? `${baseUrl}${post.illustration ?? `/illustrations/blog/${post.slug}.png`}`
+    : `${baseUrl}/brand/cover-dark.png`;
   return {
     title: post.title,
     description: post.excerpt,
@@ -40,8 +42,37 @@ export function generateMetadata({ params }: Props): Metadata {
   };
 }
 
-function renderContent(content: string) {
+// Illustration container sizing per kind: spot = small icon, figure = portrait,
+// wide = full-width band. Keeps sizes varied instead of one uniform block.
+function illoClasses(type?: "spot" | "figure" | "wide") {
+  if (type === "spot") return "relative mx-auto w-[46%] max-w-[11rem] aspect-square";
+  if (type === "wide") return "relative mx-auto w-full aspect-[1380/514]";
+  return "relative mx-auto w-[58%] max-w-[15rem] aspect-[4/5]"; // figure
+}
+
+function renderContent(
+  content: string,
+  illSrc?: string,
+  illType?: "spot" | "figure" | "wide",
+) {
   return content.split("\n\n").map((block, i) => {
+    if (block.trim() === "[[ill]]") {
+      if (!illSrc) return null;
+      return (
+        <figure key={i} className={illType === "wide" ? "my-12 md:my-16" : "my-10 md:my-12"}>
+          <div className={illoClasses(illType)}>
+            <Image
+              src={illSrc}
+              alt=""
+              fill
+              sizes="(max-width: 1024px) 90vw, 640px"
+              className="object-contain"
+            />
+          </div>
+        </figure>
+      );
+    }
+
     if (block.startsWith("**") && block.endsWith("**")) {
       return (
         <h2
@@ -115,9 +146,12 @@ export default function BlogPostPage({ params }: Props) {
   const wordCount = post.content.split(/\s+/).length;
   const readingTimeMinutes = Math.max(1, Math.round(wordCount / 200));
 
-  // Convention: every post has a chalky hero-band at /illustrations/blog/<slug>.png
-  // (explicit `illustration` field overrides it).
-  const illustration = post.illustration ?? `/illustrations/blog/${post.slug}.png`;
+  // Curated illustrations: only posts with `illType` get one. Varied per post in
+  // kind (spot/figure/wide), size and placement (top/mid/side). Others stay clean.
+  const illType = post.illType;
+  const illPlacement = post.illPlacement ?? "top";
+  const illSrc = post.illustration ?? `/illustrations/blog/${post.slug}.png`;
+  const ogImage = illType ? `${baseUrl}${illSrc}` : `${baseUrl}/brand/cover-dark.png`;
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
@@ -134,7 +168,7 @@ export default function BlogPostPage({ params }: Props) {
     "@type": "BlogPosting",
     headline: post.title,
     description: post.excerpt,
-    image: `${baseUrl}${illustration}`,
+    image: ogImage,
     author: {
       "@type": "Person",
       name: "Kaan Arslan",
@@ -217,38 +251,46 @@ export default function BlogPostPage({ params }: Props) {
         </div>
       </section>
 
-      {/* Hero illustration — compact, box-less, centered chalky single-subject scene */}
-      <section className="relative bg-cream">
-        <div className="max-w-narrow mx-auto px-6 sm:px-8 lg:px-10">
-          <div className="relative mx-auto w-[72%] max-w-[25rem] aspect-square">
-            <Image
-              src={illustration}
-              alt=""
-              fill
-              sizes="(max-width: 768px) 64vw, 320px"
-              className="object-contain"
-              priority
-            />
+      {/* Top illustration — box-less, sized by kind (only curated posts, placement "top") */}
+      {illType && illPlacement === "top" && (
+        <section className="relative bg-cream">
+          <div className="max-w-narrow mx-auto px-6 sm:px-8 lg:px-10">
+            <div className={illoClasses(illType)}>
+              <Image
+                src={illSrc}
+                alt=""
+                fill
+                sizes="(max-width: 768px) 90vw, 640px"
+                className="object-contain"
+                priority
+              />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       <section className="relative bg-cream pt-4 md:pt-6 pb-12 md:pb-20">
         <div className="max-w-narrow mx-auto px-6 sm:px-8 lg:px-10">
-          {post.sideFigure && (
-            <div className="hidden lg:block float-right w-44 xl:w-52 ml-10 -mr-16 xl:-mr-32 -mt-2">
-              <div className="relative w-full aspect-[9/16]">
+          {illType && illPlacement === "side" && (
+            <div className="hidden lg:block float-right w-48 xl:w-56 ml-10 -mr-16 xl:-mr-32 -mt-2">
+              <div className="relative w-full aspect-[4/5]">
                 <Image
-                  src={post.sideFigure}
+                  src={illSrc}
                   alt=""
                   fill
-                  sizes="208px"
+                  sizes="224px"
                   className="object-contain"
                 />
               </div>
             </div>
           )}
-          <article>{renderContent(post.content)}</article>
+          <article>
+            {renderContent(
+              post.content,
+              illPlacement === "mid" ? illSrc : undefined,
+              illType,
+            )}
+          </article>
 
           <div className="mt-20 p-8 md:p-10 bg-ink text-cream rounded-2xl">
             <h3 className="font-serif text-[1.5rem] md:text-[1.75rem] font-medium tracking-tight mb-3">

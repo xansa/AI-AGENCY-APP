@@ -13,6 +13,10 @@ export interface BlogPost {
   heroWide?: string;
   /** Optional tall side-figure that floats alongside the article body (lg+). */
   sideFigure?: string;
+  /** Illustration kind — drives size/aspect. Only posts with illType get an illustration (curated). */
+  illType?: "spot" | "figure" | "wide";
+  /** Where the illustration sits: "top" (hero), "mid" (divider at [[ill]] marker), "side" (float). */
+  illPlacement?: "top" | "mid" | "side";
 }
 
 /** Returns only posts with publishedAt <= today, sorted newest first */
@@ -26,15 +30,14 @@ export function getPublishedPosts(): BlogPost[] {
 export const blogPosts: BlogPost[] = [
   {
     slug: "waarom-ai-chatbot-mkb",
-    illustration: "/illustrations/blog/waarom-ai-chatbot-mkb.png",
+    illType: "figure",
+    illPlacement: "top",
     title: "Waarom elke MKB\u2019er een AI-chatbot nodig heeft in 2026",
     excerpt:
       "Ontdek hoe AI-chatbots MKB-bedrijven helpen om 24/7 bereikbaar te zijn, leads te kwalificeren en klantenservice te automatiseren \u2014 zonder extra personeel.",
     content: `AI is niet langer voorbehouden aan grote corporates met diepe zakken. In 2026 zijn AI-chatbots toegankelijker dan ooit, en juist voor MKB-bedrijven leveren ze de grootste impact op. Terwijl grote bedrijven hele afdelingen hebben voor klantenservice, moet je als MKB'er vaak alles zelf doen. Een AI-chatbot verandert dat fundamenteel.
 
 In dit artikel leggen we uit wat een AI-chatbot precies doet, hoe het werkt, wat het kost en oplevert, en hoe je als MKB-ondernemer de eerste stappen zet.
-
-[[illustratie: automatisering]]
 
 **Het probleem: te veel vragen, te weinig handen**
 
@@ -383,6 +386,8 @@ Wil je sparren over jouw website? Neem vrijblijvend contact op via info@arkadigi
   },
   {
     slug: "seo-voor-mkb-5-quick-wins",
+    illType: "spot",
+    illPlacement: "mid",
     title: "SEO voor MKB: 5 quick wins die je vandaag kunt toepassen",
     excerpt:
       "Geen groot budget voor SEO? Met deze 5 praktische quick wins verbeter je direct de vindbaarheid van je MKB-website op Google.",
@@ -397,6 +402,8 @@ Laten we beginnen met het waarom. In Nederland worden er dagelijks meer dan 100 
 Als jouw bedrijf niet zichtbaar is in die zoekresultaten, bestaan je niet voor die potentiele klanten. Ze gaan naar de concurrent die wel op pagina 1 staat. En 75% van de gebruikers klikt nooit verder dan pagina 1.
 
 Het verschil met betaalde advertenties is dat organisch verkeer via SEO blijvend is. Zodra je een goede positie hebt bereikt, blijven bezoekers komen zonder dat je per klik betaalt. Op de lange termijn is SEO een van de meest kosteneffectieve marketingkanalen die er zijn.
+
+[[ill]]
 
 **1. Optimaliseer je paginatitels en meta-omschrijvingen**
 
@@ -521,7 +528,8 @@ Wil je je SEO structureel aanpakken en ben je op zoek naar professionele onderst
   },
   {
     slug: "wat-kost-een-website-in-2026",
-    heroWide: "/illustrations/blog/_proto-wide2.png",
+    illType: "spot",
+    illPlacement: "top",
     title: "Wat kost een website in 2026? Een eerlijk overzicht",
     excerpt:
       "De kosten van een website lopen enorm uiteen. Dit artikel geeft een transparant overzicht van wat je kunt verwachten en waar de verschillen zitten.",
@@ -2260,6 +2268,8 @@ Wil je weten welke strategie het beste past bij jouw bedrijf? Mail naar info@ark
   },
   {
     slug: "conversie-optimalisatie-meer-klanten",
+    illType: "wide",
+    illPlacement: "mid",
     title: "Conversie optimalisatie: meer klanten met dezelfde bezoekers",
     excerpt:
       "Meer verkeer is niet altijd het antwoord. Met conversie optimalisatie haal je meer resultaat uit je huidige websitebezoekers.",
@@ -2276,6 +2286,8 @@ De gemiddelde website heeft een conversieratio van 2 tot 3%. Dat betekent dat 97
 Stel: je website heeft 1.000 bezoekers per maand en 20 daarvan nemen contact op. Je conversieratio is 2%. Als je die ratio verhoogt naar 4%, verdubbel je het aantal leads (van 20 naar 40) zonder een extra euro aan verkeer uit te geven.
 
 Bij een gemiddelde klantwaarde van 2.000 euro en een close rate van 20%, is dat het verschil tussen 8.000 en 16.000 euro omzet per maand. 8.000 euro extra omzet, puur door je website beter te laten werken.
+
+[[ill]]
 
 **Waarom CRO belangrijker is dan meer verkeer**
 
@@ -4350,6 +4362,8 @@ Wil je weten wat een goede website voor jouw bedrijf kost en oplevert? Neem cont
   },
   {
     slug: "webdesign-bureau-kiezen",
+    illType: "figure",
+    illPlacement: "side",
     title: "Hoe kies je het juiste webdesign bureau?",
     excerpt:
       "Een webdesign bureau kiezen is makkelijker gezegd dan gedaan. Dit zijn de concrete criteria, de juiste vragen en de rode vlaggen die je vooraf moet kennen.",
@@ -5588,6 +5602,8 @@ Wil je sparren over de tekst op jouw website? Stuur een bericht naar info@arkadi
   },
   {
     slug: "ssl-certificaat-waarom-belangrijk",
+    illType: "spot",
+    illPlacement: "top",
     title: "SSL-certificaat: waarom HTTPS essentieel is voor je website",
     excerpt:
       "Nog steeds geen HTTPS? Dan verlies je bezoekers, vertrouwen en zoekposities. Wat een SSL-certificaat is, wat het kost en waarom je er geen dag mee moet wachten.",
