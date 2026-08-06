@@ -521,8 +521,7 @@ Wil je je SEO structureel aanpakken en ben je op zoek naar professionele onderst
   },
   {
     slug: "wat-kost-een-website-in-2026",
-    heroWide: "/illustrations/blog/_proto-wide.png",
-    sideFigure: "/illustrations/blog/_proto-figure.png",
+    heroWide: "/illustrations/blog/_proto-wide2.png",
     title: "Wat kost een website in 2026? Een eerlijk overzicht",
     excerpt:
       "De kosten van een website lopen enorm uiteen. Dit artikel geeft een transparant overzicht van wat je kunt verwachten en waar de verschillen zitten.",
