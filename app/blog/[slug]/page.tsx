@@ -220,14 +220,15 @@ export default function BlogPostPage({ params }: Props) {
       {/* Hero illustration — box-less wide editorial scene, or the boxed fallback band */}
       {post.heroWide ? (
         <section className="relative bg-cream">
-          <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
-            <div className="relative w-full aspect-[1536/832]">
+          <div className="max-w-narrow mx-auto px-6 sm:px-8 lg:px-10">
+            <div className="mx-auto w-[80%] max-w-[42rem]">
               <Image
                 src={post.heroWide}
                 alt=""
-                fill
-                sizes="(max-width: 1024px) 100vw, 1152px"
-                className="object-contain"
+                width={1408}
+                height={592}
+                sizes="(max-width: 768px) 80vw, 576px"
+                className="w-full h-auto"
                 priority
               />
             </div>
