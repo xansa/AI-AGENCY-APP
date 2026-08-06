@@ -38,13 +38,13 @@ Bij Arka werk je direct met de eigenaar. Geen accountmanagers, geen tussenlagen,
 
 **Wat maakt onze websites anders?**
 
-We bouwen geen WordPress-sites met een standaard template. Elke website wordt op maat gebouwd met Next.js, dezelfde technologie die Nike, Netflix en Notion gebruiken. Het verschil merk je direct:
+We bouwen geen sites op een kant-en-klare template. Elke website wordt op maat gebouwd met moderne technologie die grote bedrijven als Nike, Netflix en Notion gebruiken. Het verschil merk je direct:
 
 \u2022 **Laadtijd onder 1 seconde** op zowel desktop als mobiel
 \u2022 **Google PageSpeed score van 95-100** standaard
 \u2022 **SEO-proof vanaf dag 1** met correcte metadata, gestructureerde data en technische optimalisatie
 \u2022 **Mobielvriendelijk** zonder concessies aan design of functionaliteit
-\u2022 **Veilig** zonder de kwetsbaarheden van WordPress plugins
+\u2022 **Veilig** zonder de kwetsbaarheden van plugins in kant-en-klare systemen
 
 **Lokale SEO: gevonden worden in de Drechtsteden**
 
@@ -80,13 +80,13 @@ At Arka you work directly with the owner. No account managers, no intermediaries
 
 **What makes our websites different?**
 
-We don't build WordPress sites with a standard template. Every website is custom-built with Next.js, the same technology used by Nike, Netflix, and Notion. You'll notice the difference immediately:
+We don't build sites on an off-the-shelf template. Every website is custom-built with the same modern technology used by major companies like Nike, Netflix, and Notion. You'll notice the difference immediately:
 
 \u2022 **Loading time under 1 second** on both desktop and mobile
 \u2022 **Google PageSpeed score of 95-100** as standard
 \u2022 **SEO-proof from day 1** with correct metadata, structured data and technical optimization
 \u2022 **Mobile-friendly** without compromising design or functionality
-\u2022 **Secure** without the vulnerabilities of WordPress plugins
+\u2022 **Secure** without the vulnerabilities of plugins in off-the-shelf systems
 
 **Local SEO: getting found in the Drechtsteden**
 
@@ -146,7 +146,7 @@ Het verschil met de grote bureaus? Bij ons werk je direct met de eigenaar. Geen 
 
 **Wat we doen**
 
-\u2022 **Websites en webshops** op maat gebouwd met Next.js. Razendsnelle laadtijden, SEO-geoptimaliseerd, en volledig in jouw huisstijl
+\u2022 **Websites en webshops** op maat gebouwd met moderne technologie. Razendsnelle laadtijden, SEO-geoptimaliseerd, en volledig in jouw huisstijl
 \u2022 **SEO en content** die ervoor zorgen dat je gevonden wordt op Google. Technische optimalisatie, blogartikelen, en lokale SEO voor de Drechtsteden
 \u2022 **AI-chatbots** die je klanten 24/7 helpen, veelgestelde vragen beantwoorden, en leads kwalificeren
 \u2022 **Dashboards** die je inzicht geven in je bedrijfsprestaties. Van CRM-data tot Google Analytics, alles op een plek
@@ -156,7 +156,7 @@ Het verschil met de grote bureaus? Bij ons werk je direct met de eigenaar. Geen 
 **Waarom bedrijven in de Drechtsteden voor ons kiezen**
 
 \u2022 **Lokaal en bereikbaar**: gevestigd in Dordrecht, altijd beschikbaar voor een persoonlijk gesprek
-\u2022 **Technisch sterk**: we bouwen met dezelfde technologie als Nike en Netflix, niet met WordPress templates
+\u2022 **Technisch sterk**: we bouwen met dezelfde moderne technologie als grote bedrijven als Nike en Netflix, niet met kant-en-klare templates
 \u2022 **Alles onder een dak**: geen 5 verschillende leveranciers voor website, SEO, design en automatisering
 \u2022 **Transparante prijzen**: geen verborgen kosten, vaste maandelijkse bedragen of heldere projectprijzen
 \u2022 **Eigenaarschap**: de code is altijd van jou. Geen lock-in, geen afhankelijkheid
@@ -186,7 +186,7 @@ The difference from large agencies? You work directly with the owner. No sales t
 
 **What we do**
 
-\u2022 **Websites and webshops** custom-built with Next.js. Lightning-fast loading times, SEO-optimized, and fully in your brand style
+\u2022 **Websites and webshops** custom-built with modern technology. Lightning-fast loading times, SEO-optimized, and fully in your brand style
 \u2022 **SEO and content** that ensure you're found on Google. Technical optimization, blog articles, and local SEO for the Drechtsteden
 \u2022 **AI chatbots** that help your customers 24/7, answer frequently asked questions, and qualify leads
 \u2022 **Dashboards** that give you insight into your business performance. From CRM data to Google Analytics, everything in one place
@@ -196,7 +196,7 @@ The difference from large agencies? You work directly with the owner. No sales t
 **Why businesses in the Drechtsteden choose us**
 
 \u2022 **Local and accessible**: based in Dordrecht, always available for a personal meeting
-\u2022 **Technically strong**: we build with the same technology as Nike and Netflix, not WordPress templates
+\u2022 **Technically strong**: we build with the same modern technology as major companies like Nike and Netflix, not off-the-shelf templates
 \u2022 **Everything under one roof**: no 5 different suppliers for website, SEO, design, and automation
 \u2022 **Transparent pricing**: no hidden costs, fixed monthly rates or clear project prices
 \u2022 **Ownership**: the code is always yours. No lock-in, no dependency
@@ -408,9 +408,9 @@ The businesses that benefit most from SEO have a customer value above \u20AC500,
     title: "Website laten maken in Rotterdam",
     title_en: "Website Development in Rotterdam",
     metaDescription:
-      "Website laten maken in Rotterdam? Arka bouwt snelle, vindbare websites voor bedrijven in de Maasstad. Next.js maatwerk, SEO-proof, vanaf €750/mnd.",
+      "Website laten maken in Rotterdam? Arka bouwt snelle, vindbare websites voor bedrijven in de Maasstad. maatwerk, SEO-proof, vanaf €750/mnd.",
     metaDescription_en:
-      "Website development in Rotterdam? Arka builds fast, findable websites for businesses in the Maasstad. Next.js custom-built, SEO-proof, from €750/mo.",
+      "Website development in Rotterdam? Arka builds fast, findable websites for businesses in the Maasstad. custom-built, SEO-proof, from €750/mo.",
     h1: "Website laten maken in Rotterdam",
     h1_en: "Website Development in Rotterdam",
     subtitle:
@@ -443,7 +443,7 @@ Dordrecht en Rotterdam liggen op minder dan 20 minuten van elkaar. We kennen de 
 
 **Wat je krijgt**
 
-Elke website wordt op maat gebouwd met Next.js. Geen WordPress-templates, geen pagebuilders, maar code die specifiek voor jouw bedrijf is geschreven. Dit levert concrete voordelen op:
+Elke website wordt op maat gebouwd met moderne technologie. Geen kant-en-klare templates, geen pagebuilders, maar code die specifiek voor jouw bedrijf is geschreven. Dit levert concrete voordelen op:
 
 • **Laadtijden onder 1 seconde**, cruciaal in een stad waar je concurrentie op elk hoek zit
 • **Google PageSpeed scores van 95-100**, wat direct bijdraagt aan betere rankings
@@ -476,7 +476,7 @@ Arka is a digital agency based in Dordrecht, less than 20 minutes from Rotterdam
 
 **What you get**
 
-Every website is custom-built with Next.js. No WordPress templates, no page builders, but code written specifically for your business. This delivers tangible benefits:
+Every website is custom-built with modern technology. No off-the-shelf templates, no page builders, but code written specifically for your business. This delivers tangible benefits:
 
 • **Loading times under 1 second**, crucial in a city where competition is around every corner
 • **Google PageSpeed scores of 95-100**, which directly contributes to better rankings
@@ -665,15 +665,15 @@ Email info@arkadigital.nl or call +31 6 46140986. We'll discuss your current sit
     title: "Website laten maken in Amsterdam",
     title_en: "Website Development in Amsterdam",
     metaDescription:
-      "Website laten maken in Amsterdam? Arka bouwt razendsnelle Next.js websites voor Amsterdamse bedrijven. Maatwerk, SEO-proof, vanaf €750/mnd.",
+      "Website laten maken in Amsterdam? Arka bouwt razendsnelle maatwerk-websites voor Amsterdamse bedrijven. Maatwerk, SEO-proof, vanaf €750/mnd.",
     metaDescription_en:
-      "Website development in Amsterdam? Arka builds blazing-fast Next.js websites for Amsterdam businesses. Custom-built, SEO-proof, from €750/mo.",
+      "Website development in Amsterdam? Arka builds blazing-fast custom-built websites for Amsterdam businesses. Custom-built, SEO-proof, from €750/mo.",
     h1: "Website laten maken in Amsterdam",
     h1_en: "Website Development in Amsterdam",
     subtitle:
-      "Maatwerk websites voor bedrijven in Amsterdam. Gebouwd met de technologie achter Nike en Netflix, geoptimaliseerd voor de competitieve Amsterdamse markt.",
+      "Maatwerk websites voor bedrijven in Amsterdam. Gebouwd met dezelfde moderne technologie als grote bedrijven als Nike en Netflix, geoptimaliseerd voor de competitieve Amsterdamse markt.",
     subtitle_en:
-      "Custom websites for businesses in Amsterdam. Built with the technology behind Nike and Netflix, optimized for the competitive Amsterdam market.",
+      "Custom websites for businesses in Amsterdam. Built with the same modern technology as major companies like Nike and Netflix, optimized for the competitive Amsterdam market.",
     body: `**Een website voor de meest competitieve markt van Nederland**
 
 Amsterdam is het economische hart van Nederland. De Zuidas huisvest financiele instellingen en consultancybureaus, de grachtengordel zit vol creatieve bureaus en mode-labels, en gebieden als NDSM-werf en Sloterdijk trekken tech-bedrijven en startups aan. In deze markt is een gemiddelde website niet genoeg.
@@ -692,7 +692,7 @@ De drie zakelijke zones die de Amsterdamse economie domineren:
 
 De dominante industrieen in Amsterdam zijn startups en scale-ups, fintech, creatieve industrie en media, en zakelijke dienstverlening. Voor elk van deze sectoren geldt: je website is je eerste en meest permanente verkoopkanaal.
 
-Als ondernemer in Amsterdam concurreer je met bureaus en bedrijven die zelf ook online marketing serieus nemen. Een generieke WordPress-site met stock-foto's gaat het verschil niet maken. Wat je nodig hebt:
+Als ondernemer in Amsterdam concurreer je met bureaus en bedrijven die zelf ook online marketing serieus nemen. Een generieke template-site met stock-foto's gaat het verschil niet maken. Wat je nodig hebt:
 
 \u2022 **Snelheid die opvalt**, want Amsterdamse gebruikers hebben hoge verwachtingen van digitale ervaringen
 \u2022 **Lokale SEO per stadsdeel**, want iemand die zoekt op 'accountant De Pijp' heeft andere intentie dan iemand die zoekt op 'accountant Zuidas'
@@ -702,11 +702,11 @@ Als ondernemer in Amsterdam concurreer je met bureaus en bedrijven die zelf ook 
 
 Amsterdam-gebaseerde bureaus rekenen Amsterdamse tarieven. Arka werkt volledig digitaal vanuit Dordrecht en levert dezelfde technische kwaliteit, zonder de kantoorkostenopslag. De samenwerking verloopt via video en chat, en een persoonlijke afspraak is altijd bespreekbaar.
 
-**Waarom Next.js in plaats van WordPress?**
+**Waarom maatwerk in plaats van een kant-en-klare template?**
 
-Amsterdam zit vol met WordPress-bureaus. Het probleem? WordPress-sites zijn traag, kwetsbaar voor hacks, en vereisen constante plugin-updates. Arka bouwt met Next.js, het framework dat door Vercel is ontwikkeld en gebruikt wordt door bedrijven als TikTok, Twitch en Hulu. Het verschil:
+De markt zit vol met bureaus die op kant-en-klare templates bouwen. Het probleem? Zulke sites zijn traag, kwetsbaar voor hacks, en vereisen constante plugin-updates. Arka bouwt op maat met moderne technologie die wordt gebruikt door bedrijven als TikTok, Twitch en Hulu. Het verschil:
 
-• **Laadtijd onder 1 seconde** waar WordPress-sites gemiddeld 3-5 seconden laden
+• **Laadtijd onder 1 seconde** waar template-sites gemiddeld 3-5 seconden laden
 • **Geen plugins** die je site vertragen of beveiligingslekken veroorzaken
 • **PageSpeed scores van 95-100** standaard, niet na eindeloos optimaliseren
 • **Ingebouwde SEO**: server-side rendering zorgt dat Google je content direct kan indexeren
@@ -739,11 +739,11 @@ Amsterdam is the economic heart of the Netherlands. The Zuidas houses financial 
 
 Arka is a digital agency that works remotely from Dordrecht. For Amsterdam clients, that means: the same quality as a local agency, without the overhead of Amsterdam office space being passed on to your invoice. All communication is via video, chat, and email, with the option for an in-person meeting when needed.
 
-**Why Next.js instead of WordPress?**
+**Why custom-built instead of an off-the-shelf template?**
 
-Amsterdam is full of WordPress agencies. The problem? WordPress sites are slow, vulnerable to hacks, and require constant plugin updates. Arka builds with Next.js, the framework developed by Vercel and used by companies like TikTok, Twitch, and Hulu. The difference:
+The market is full of agencies building on off-the-shelf templates. The problem? Those sites are slow, vulnerable to hacks, and require constant plugin updates. Arka builds custom with modern technology used by companies like TikTok, Twitch, and Hulu. The difference:
 
-• **Loading time under 1 second** where WordPress sites average 3-5 seconds
+• **Loading time under 1 second** where template sites average 3-5 seconds
 • **No plugins** that slow down your site or cause security vulnerabilities
 • **PageSpeed scores of 95-100** as standard, not after endless optimization
 • **Built-in SEO**: server-side rendering ensures Google can index your content immediately
@@ -938,9 +938,9 @@ No annual contracts. Monthly cancellation. Results or you stop.`,
     title: "Website laten maken in Den Haag",
     title_en: "Website Development in The Hague",
     metaDescription:
-      "Website laten maken in Den Haag? Arka bouwt snelle Next.js websites voor bedrijven in de hofstad. Maatwerk, SEO-proof, vanaf €750/mnd.",
+      "Website laten maken in Den Haag? Arka bouwt snelle maatwerk-websites voor bedrijven in de hofstad. Maatwerk, SEO-proof, vanaf €750/mnd.",
     metaDescription_en:
-      "Website development in The Hague? Arka builds fast Next.js websites for businesses in the royal city. Custom-built, SEO-proof, from €750/mo.",
+      "Website development in The Hague? Arka builds fast custom-built websites for businesses in the royal city. Custom-built, SEO-proof, from €750/mo.",
     h1: "Website laten maken in Den Haag",
     h1_en: "Website Development in The Hague",
     subtitle:
@@ -975,7 +975,7 @@ Den Haag valt in het digitale werkgebied van Arka. Zuid-Holland is onze thuismar
 
 **Technologie die het verschil maakt**
 
-We bouwen uitsluitend met Next.js, het framework achter vercel.com en grote internationale platforms. Het voordeel ten opzichte van traditionele CMS-systemen:
+We bouwen uitsluitend op maat met moderne technologie die grote internationale platforms gebruiken. Het voordeel ten opzichte van traditionele CMS-systemen:
 
 • **Razendsnel**: laadtijden onder 1 seconde door server-side rendering en edge caching
 • **Veilig**: geen database-aanvallen, geen plugin-kwetsbaarheden, geen constante updates
@@ -1011,7 +1011,7 @@ That diversity requires a web partner who combines professional excellence with 
 
 **Technology that makes the difference**
 
-We build exclusively with Next.js, the framework behind vercel.com and major international platforms. The advantage over traditional CMS systems:
+We build exclusively with modern custom technology used by major international platforms. The advantage over traditional systems:
 
 • **Blazing fast**: loading times under 1 second through server-side rendering and edge caching
 • **Secure**: no database attacks, no plugin vulnerabilities, no constant updates
@@ -1201,9 +1201,9 @@ Email info@arkadigital.nl or call +31 6 46140986 for a no-obligation conversatio
     title: "Website laten maken in Utrecht",
     title_en: "Website Development in Utrecht",
     metaDescription:
-      "Website laten maken in Utrecht? Arka bouwt snelle, vindbare Next.js websites voor Utrechtse bedrijven. Maatwerk, geen WordPress. Vanaf €750/mnd.",
+      "Website laten maken in Utrecht? Arka bouwt snelle, vindbare maatwerk-websites voor Utrechtse bedrijven. Maatwerk, geen kant-en-klare templates. Vanaf €750/mnd.",
     metaDescription_en:
-      "Website development in Utrecht? Arka builds fast, findable Next.js websites for Utrecht businesses. Custom-built, no WordPress. From €750/mo.",
+      "Website development in Utrecht? Arka builds fast, findable custom-built websites for Utrecht businesses. Custom-built, no off-the-shelf templates. From €750/mo.",
     h1: "Website laten maken in Utrecht",
     h1_en: "Website Development in Utrecht",
     subtitle:
@@ -1242,9 +1242,9 @@ De A27 verbindt Dordrecht rechtstreeks met Utrecht, maar de meeste samenwerking 
 
 Je werkt direct met de eigenaar van Arka, gevestigd in Dordrecht. Alle communicatie verloopt digitaal, wat voor Utrechtse klanten betekent dat je niet vastzit aan vergaderingen die een halve dag kosten. Een videocall van 30 minuten levert meer op dan een uur in een vergaderzaal.
 
-Elke site wordt gebouwd met Next.js. Dat is geen keuze uit gemakzucht, maar uit overtuiging: het levert aantoonbaar betere resultaten op dan WordPress of Webflow.
+Elke site wordt op maat gebouwd met moderne technologie. Dat is geen keuze uit gemakzucht, maar uit overtuiging: het levert aantoonbaar betere resultaten op dan kant-en-klare templates.
 
-• **Laadtijd onder 1 seconde**: bezoekers haken af na 3 seconden wachten. Met Next.js is dat geen issue
+• **Laadtijd onder 1 seconde**: bezoekers haken af na 3 seconden wachten. Met maatwerk is dat geen issue
 • **SEO in de kern**: server-side rendering, automatische sitemaps, gestructureerde data, correcte metadata
 • **Veilig zonder gedoe**: geen databases om te hacken, geen plugins om te updaten
 • **Schaalbaarheid**: groeit je bedrijf? De website groeit mee zonder opnieuw te beginnen
@@ -1281,9 +1281,9 @@ For businesses in this growing market, a strong online presence is not a luxury 
 
 You work directly with the owner of Arka, based in Dordrecht. All communication is digital, which for Utrecht clients means you're not stuck in meetings that cost half a day. A 30-minute video call delivers more than an hour in a meeting room.
 
-Every site is built with Next.js. That's not a choice of convenience, but of conviction: it delivers demonstrably better results than WordPress or Webflow.
+Every site is custom-built with modern technology. That's not a choice of convenience, but of conviction: it delivers demonstrably better results than off-the-shelf templates.
 
-• **Loading time under 1 second**: visitors leave after 3 seconds of waiting. With Next.js, that's not an issue
+• **Loading time under 1 second**: visitors leave after 3 seconds of waiting. With custom-built, that's not an issue
 • **SEO at its core**: server-side rendering, automatic sitemaps, structured data, correct metadata
 • **Secure without hassle**: no databases to hack, no plugins to update
 • **Scalability**: is your business growing? The website grows with it without starting over
@@ -1478,9 +1478,9 @@ Get in touch via info@arkadigital.nl or +31 6 46140986 for a no-obligation analy
     title: "Website laten maken in Eindhoven",
     title_en: "Website Development in Eindhoven",
     metaDescription:
-      "Website laten maken in Eindhoven? Arka bouwt snelle Next.js websites voor bedrijven in de Brainport-regio. Maatwerk, SEO-proof, vanaf €750/mnd.",
+      "Website laten maken in Eindhoven? Arka bouwt snelle maatwerk-websites voor bedrijven in de Brainport-regio. Maatwerk, SEO-proof, vanaf €750/mnd.",
     metaDescription_en:
-      "Website development in Eindhoven? Arka builds fast Next.js websites for businesses in the Brainport region. Custom-built, SEO-proof, from €750/mo.",
+      "Website development in Eindhoven? Arka builds fast custom-built websites for businesses in the Brainport region. Custom-built, SEO-proof, from €750/mo.",
     h1: "Website laten maken in Eindhoven",
     h1_en: "Website Development in Eindhoven",
     subtitle:
@@ -1491,9 +1491,9 @@ Get in touch via info@arkadigital.nl or +31 6 46140986 for a no-obligation analy
 
 Eindhoven is de technologiehoofdstad van Nederland. De High Tech Campus (ook wel "de slimste vierkante kilometer van Europa" genoemd) huisvest bedrijven als ASML, Philips en NXP. Strijp-S is getransformeerd van fabriekscomplex naar creatieve hotspot. De TU Eindhoven levert een constante stroom talent dat de regio voedt met kennis en ondernemerschap.
 
-Als je een bedrijf runt in de Brainport-regio, verwachten je klanten en partners een digitale aanwezigheid die dat innovatieve karakter weerspiegelt. Een trage WordPress-site past daar niet bij.
+Als je een bedrijf runt in de Brainport-regio, verwachten je klanten en partners een digitale aanwezigheid die dat innovatieve karakter weerspiegelt. Een trage template-site past daar niet bij.
 
-Arka bouwt websites met Next.js, het moderne JavaScript-framework dat wordt gebruikt door bedrijven als Vercel, TikTok en Notion. Vanuit Dordrecht bedienen we klanten in heel Nederland digitaal. Voor Eindhovense bedrijven is dat een logische match: de tech-mentaliteit van Brainport gecombineerd met de pragmatische aanpak van een solistische ondernemer.
+Arka bouwt websites op maat met moderne technologie die wordt gebruikt door grote internationale bedrijven als TikTok en Notion. Vanuit Dordrecht bedienen we klanten in heel Nederland digitaal. Voor Eindhovense bedrijven is dat een logische match: de tech-mentaliteit van Brainport gecombineerd met de pragmatische aanpak van een solistische ondernemer.
 
 **Digitale groei in Eindhoven: kansen en uitdagingen**
 
@@ -1521,8 +1521,8 @@ De A2 verbindt Eindhoven en Dordrecht rechtstreeks. Alle samenwerking verloopt d
 
 • **Performance**: laadtijden onder 1 seconde, PageSpeed scores van 95-100. In een tech-regio als Eindhoven valt een trage website extra op, en niet positief
 • **SEO vanaf de basis**: server-side rendering maakt je content direct zichtbaar voor Google. Gestructureerde data, metadata en technische optimalisatie zitten standaard in elke site
-• **Geen afhankelijkheid**: je code is van jou. Geen proprietary CMS, geen lock-in, geen maandelijkse licentiekosten voor een pagebuilder
-• **Onderhoudsvriendelijk**: geen 47 WordPress-plugins die elke week een update nodig hebben
+• **Geen afhankelijkheid**: je code is van jou. Geen dichtgetimmerd systeem, geen lock-in, geen maandelijkse licentiekosten voor een pagebuilder
+• **Onderhoudsvriendelijk**: geen 47 plugins die elke week een update nodig hebben
 
 **Lokaal relevant**
 
@@ -1550,16 +1550,16 @@ Mail info@arkadigital.nl of bel +31 6 46140986. Binnen 24 uur reageren we.`,
 
 Eindhoven is the technology capital of the Netherlands. The High Tech Campus (also called "the smartest square kilometer in Europe") houses companies like ASML, Philips, and NXP. Strijp-S has transformed from a factory complex into a creative hotspot. TU Eindhoven provides a constant stream of talent that feeds the region with knowledge and entrepreneurship.
 
-If you run a business in the Brainport region, your customers and partners expect a digital presence that reflects that innovative character. A slow WordPress site doesn't fit that picture.
+If you run a business in the Brainport region, your customers and partners expect a digital presence that reflects that innovative character. A slow template site doesn't fit that picture.
 
-Arka builds websites with Next.js, the modern JavaScript framework used by companies like Vercel, TikTok, and Notion. From Dordrecht, we serve clients throughout the Netherlands digitally. For Eindhoven businesses, that's a logical match: the tech mentality of Brainport combined with the pragmatic approach of a solo entrepreneur.
+Arka builds custom websites with modern technology used by major international companies like TikTok and Notion. From Dordrecht, we serve clients throughout the Netherlands digitally. For Eindhoven businesses, that's a logical match: the tech mentality of Brainport combined with the pragmatic approach of a solo entrepreneur.
 
 **What does it deliver?**
 
 • **Performance**: loading times under 1 second, PageSpeed scores of 95-100. In a tech region like Eindhoven, a slow website stands out extra, and not positively
 • **SEO from the foundation**: server-side rendering makes your content immediately visible to Google. Structured data, metadata, and technical optimization are standard in every site
-• **No dependency**: your code is yours. No proprietary CMS, no lock-in, no monthly license fees for a page builder
-• **Low maintenance**: no 47 WordPress plugins that need an update every week
+• **No dependency**: your code is yours. No locked-down system, no lock-in, no monthly license fees for a page builder
+• **Low maintenance**: no 47 plugins that need an update every week
 
 **Locally relevant**
 
@@ -1763,9 +1763,9 @@ info@arkadigital.nl or +31 6 46140986 for a no-obligation conversation.`,
     title: "Website laten maken in Breda",
     title_en: "Website Development in Breda",
     metaDescription:
-      "Website laten maken in Breda? Arka bouwt snelle, vindbare websites voor Bredase bedrijven. Next.js maatwerk, SEO-proof. Vanaf €750/mnd.",
+      "Website laten maken in Breda? Arka bouwt snelle, vindbare websites voor Bredase bedrijven. maatwerk, SEO-proof. Vanaf €750/mnd.",
     metaDescription_en:
-      "Website development in Breda? Arka builds fast, findable websites for Breda businesses. Next.js custom-built, SEO-proof. From €750/mo.",
+      "Website development in Breda? Arka builds fast, findable websites for Breda businesses. custom-built, SEO-proof. From €750/mo.",
     h1: "Website laten maken in Breda",
     h1_en: "Website Development in Breda",
     subtitle:
@@ -1806,7 +1806,7 @@ Dordrecht en Breda liggen minder dan een uur van elkaar, beide in de logistieke 
 
 In Breda en omgeving zijn er genoeg webbureaus. Het verschil zit in de technologie en de werkwijze:
 
-• **Next.js in plaats van WordPress**: snellere laadtijden, betere beveiliging, hogere Google-scores. Geen plugin-problemen, geen constante updates
+• **Maatwerk in plaats van een kant-en-klare template**: snellere laadtijden, betere beveiliging, hogere Google-scores. Geen plugin-problemen, geen constante updates
 • **Direct contact**: geen accountmanager die je vragen doorspeelt. Je praat met degene die je website bouwt
 • **Transparante prijzen**: je weet vooraf wat je betaalt. Geen nacalculatie, geen scope creep zonder overleg
 • **Eigenaarschap**: de code is altijd van jou. Wil je ooit naar een andere partij? Dan kan dat zonder problemen
@@ -1845,7 +1845,7 @@ Arka is based in Dordrecht, less than an hour's drive from Breda. We work fully 
 
 In Breda and surroundings, there are plenty of web agencies. The difference lies in the technology and approach:
 
-• **Next.js instead of WordPress**: faster loading times, better security, higher Google scores. No plugin problems, no constant updates
+• **Custom-built instead of an off-the-shelf template**: faster loading times, better security, higher Google scores. No plugin problems, no constant updates
 • **Direct contact**: no account manager forwarding your questions. You talk to the person building your website
 • **Transparent pricing**: you know upfront what you're paying. No retrospective billing, no scope creep without discussion
 • **Ownership**: the code is always yours. Want to switch to another party someday? No problems
@@ -2034,9 +2034,9 @@ info@arkadigital.nl or +31 6 46140986 for a no-obligation conversation.`,
     title: "Website laten maken in Tilburg",
     title_en: "Website Development in Tilburg",
     metaDescription:
-      "Website laten maken in Tilburg? Arka bouwt razendsnelle Next.js websites voor bedrijven in de regio Midden-Brabant. Maatwerk, SEO-proof, vanaf €750/mnd.",
+      "Website laten maken in Tilburg? Arka bouwt razendsnelle maatwerk-websites voor bedrijven in de regio Midden-Brabant. Maatwerk, SEO-proof, vanaf €750/mnd.",
     metaDescription_en:
-      "Website development in Tilburg? Arka builds blazing-fast Next.js websites for businesses in the Mid-Brabant region. Custom-built, SEO-proof, from €750/mo.",
+      "Website development in Tilburg? Arka builds blazing-fast custom-built websites for businesses in the Mid-Brabant region. Custom-built, SEO-proof, from €750/mo.",
     h1: "Website laten maken in Tilburg",
     h1_en: "Website Development in Tilburg",
     subtitle:
@@ -2071,9 +2071,9 @@ Als ondernemer in Tilburg heb je te maken met een markt die minder verzadigd is 
 
 De A59 verbindt Dordrecht met de regio Tilburg. Maar het meeste werk doen we digitaal en op afstand. Geen reiskosten, geen onnodige vergaderingen, wel een website die presteert in de Tilburgse markt.
 
-**Waarom Next.js?**
+**Waarom maatwerk?**
 
-De meeste webbureaus in de regio bouwen met WordPress of Wix. Dat zijn prima tools voor een hobbyblog, maar niet voor een bedrijf dat wil concurreren in Google. Arka bouwt met Next.js, en dat merk je:
+De meeste webbureaus in de regio bouwen met kant-en-klare bouwers. Dat zijn prima tools voor een hobbyblog, maar niet voor een bedrijf dat wil concurreren in Google. Arka bouwt op maat, en dat merk je:
 
 • **Snelheid**: pagina's laden in minder dan een seconde. Google beloont dat met hogere rankings
 • **Beveiliging**: geen database die gehackt kan worden, geen plugins met beveiligingslekken
@@ -2110,9 +2110,9 @@ Tilburg has undergone an impressive transformation. The former textile city is n
 
 For businesses in Tilburg that want to grow seriously, it starts with a website that does more than look good. A site that loads fast, scores high in Google, and convinces visitors to take action.
 
-**Why Next.js?**
+**Why custom-built?**
 
-Most web agencies in the region build with WordPress or Wix. Those are fine tools for a hobby blog, but not for a business that wants to compete in Google. Arka builds with Next.js, and you'll notice:
+Most web agencies in the region build with off-the-shelf builders. Those are fine tools for a hobby blog, but not for a business that wants to compete in Google. Arka builds custom, and you'll notice:
 
 • **Speed**: pages load in less than a second. Google rewards that with higher rankings
 • **Security**: no database that can be hacked, no plugins with security vulnerabilities
@@ -2323,9 +2323,9 @@ info@arkadigital.nl or +31 6 46140986.`,
     title: "Website laten maken in Arnhem",
     title_en: "Website Development in Arnhem",
     metaDescription:
-      "Website laten maken in Arnhem? Arka bouwt razendsnelle Next.js websites voor bedrijven in Arnhem en de Veluwe. Maatwerk, SEO-proof, vanaf €750/mnd.",
+      "Website laten maken in Arnhem? Arka bouwt razendsnelle maatwerk-websites voor bedrijven in Arnhem en de Veluwe. Maatwerk, SEO-proof, vanaf €750/mnd.",
     metaDescription_en:
-      "Website development in Arnhem? Arka builds blazing-fast Next.js websites for businesses in Arnhem and the Veluwe. Custom-built, SEO-proof, from €750/mo.",
+      "Website development in Arnhem? Arka builds blazing-fast custom-built websites for businesses in Arnhem and the Veluwe. Custom-built, SEO-proof, from €750/mo.",
     h1: "Website laten maken in Arnhem",
     h1_en: "Website Development in Arnhem",
     subtitle:
@@ -2364,10 +2364,10 @@ Arnhem ligt op circa 90 kilometer van Dordrecht. Alle samenwerking verloopt digi
 
 **De technologie**
 
-Elke website wordt gebouwd met Next.js. Het voordeel:
+Elke website wordt op maat gebouwd met moderne technologie. Het voordeel:
 
 • **Bliksemsnelle laadtijden**: onder 1 seconde op desktop en mobiel
-• **Inherent veilig**: geen WordPress-database, geen plugin-kwetsbaarheden
+• **Inherent veilig**: geen kwetsbare database, geen plugin-kwetsbaarheden
 • **SEO-architectuur**: server-side rendering zorgt dat Google je content optimaal kan indexeren
 • **Schaalbaarheid**: van een simpele website tot een complex platform
 
@@ -2402,10 +2402,10 @@ Arka works from Dordrecht and serves clients throughout the Netherlands digitall
 
 **The technology**
 
-Every website is built with Next.js. The advantage:
+Every website is custom-built with modern technology. The advantage:
 
 • **Lightning-fast loading times**: under 1 second on desktop and mobile
-• **Inherently secure**: no WordPress database, no plugin vulnerabilities
+• **Inherently secure**: no vulnerable database, no plugin vulnerabilities
 • **SEO architecture**: server-side rendering ensures Google can optimally index your content
 • **Scalability**: from a simple website to a complex platform
 
@@ -2598,9 +2598,9 @@ info@arkadigital.nl or +31 6 46140986 for a no-obligation conversation about SEO
     title: "Website laten maken in Leiden",
     title_en: "Website Development in Leiden",
     metaDescription:
-      "Website laten maken in Leiden? Arka bouwt snelle Next.js websites voor bedrijven in de sleutelstad. Maatwerk, SEO-proof, vanaf €750/mnd.",
+      "Website laten maken in Leiden? Arka bouwt snelle maatwerk-websites voor bedrijven in de sleutelstad. Maatwerk, SEO-proof, vanaf €750/mnd.",
     metaDescription_en:
-      "Website development in Leiden? Arka builds fast Next.js websites for businesses in the key city. Custom-built, SEO-proof, from €750/mo.",
+      "Website development in Leiden? Arka builds fast custom-built websites for businesses in the key city. Custom-built, SEO-proof, from €750/mo.",
     h1: "Website laten maken in Leiden",
     h1_en: "Website Development in Leiden",
     subtitle:
@@ -2639,7 +2639,7 @@ Leiden valt binnen onze Zuid-Holland regio. De A4 verbindt Dordrecht snel met de
 
 **Wat we bouwen**
 
-Elke website is maatwerk, gebouwd met Next.js:
+Elke website is maatwerk, gebouwd met moderne technologie:
 
 • **Performance**: laadtijden onder 1 seconde. Essentieel voor zowel academische bezoekers als lokale klanten
 • **SEO-fundament**: server-side rendering, gestructureerde data, metadata, XML-sitemap. Alles wat Google nodig heeft om je goed te indexeren
@@ -2678,7 +2678,7 @@ Arka works from Dordrecht and delivers digital solutions to businesses throughou
 
 **What we build**
 
-Every website is custom-made, built with Next.js:
+Every website is custom-made, built with modern technology:
 
 • **Performance**: loading times under 1 second. Essential for both academic visitors and local customers
 • **SEO foundation**: server-side rendering, structured data, metadata, XML sitemap. Everything Google needs to index you properly
@@ -2877,9 +2877,9 @@ info@arkadigital.nl or +31 6 46140986.`,
     title: "Website laten maken in Groningen",
     title_en: "Website Development in Groningen",
     metaDescription:
-      "Website laten maken in Groningen? Arka bouwt snelle, vindbare Next.js websites voor bedrijven in het Noorden. Maatwerk, SEO-proof, vanaf €750/mnd.",
+      "Website laten maken in Groningen? Arka bouwt snelle, vindbare maatwerk-websites voor bedrijven in het Noorden. Maatwerk, SEO-proof, vanaf €750/mnd.",
     metaDescription_en:
-      "Website development in Groningen? Arka builds fast, findable Next.js websites for businesses in the North. Custom-built, SEO-proof, from €750/mo.",
+      "Website development in Groningen? Arka builds fast, findable custom-built websites for businesses in the North. Custom-built, SEO-proof, from €750/mo.",
     h1: "Website laten maken in Groningen",
     h1_en: "Website Development in Groningen",
     subtitle:
@@ -2918,12 +2918,12 @@ De afstand Dordrecht naar Groningen is groot op de kaart, maar digitaal niet mee
 
 **Wat je krijgt**
 
-Een website gebouwd met Next.js, het framework gebruikt door techbedrijven wereldwijd:
+Een website op maat gebouwd met moderne technologie, gebruikt door techbedrijven wereldwijd:
 
 • **Laadtijd onder 1 seconde**: in een studentenstad waar iedereen op zijn telefoon zit, is snelheid niet optioneel
 • **SEO vanaf de basis**: server-side rendering, gestructureerde data, metadata, automatische sitemap
 • **Mobiel-eerst ontworpen**: meer dan 65% van het Groningse zoekverkeer is mobiel
-• **Veilig en stabiel**: geen WordPress-kwetsbaarheden, geen plugin-updates
+• **Veilig en stabiel**: geen template-kwetsbaarheden, geen plugin-updates
 
 **Afgestemd op de Groningse markt**
 
@@ -2957,12 +2957,12 @@ Arka works from Dordrecht, but the distance is digitally irrelevant. All communi
 
 **What you get**
 
-A website built with Next.js, the framework used by tech companies worldwide:
+A website built with modern custom technology, used by tech companies worldwide:
 
 • **Loading time under 1 second**: in a student city where everyone is on their phone, speed is not optional
 • **SEO from the foundation**: server-side rendering, structured data, metadata, automatic sitemap
 • **Mobile-first designed**: more than 65% of Groningen search traffic is mobile
-• **Secure and stable**: no WordPress vulnerabilities, no plugin updates
+• **Secure and stable**: no template vulnerabilities, no plugin updates
 
 **Tailored to the Groningen market**
 
