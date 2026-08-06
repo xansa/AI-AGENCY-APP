@@ -51,7 +51,7 @@ function illoLayout(slug: string) {
   const aspectRatio = dim ? `${dim.w} / ${dim.h}` : "1 / 1";
   const widthClass =
     ratio >= 1.7
-      ? "w-full" // brede banner -> volle kolombreedte
+      ? "mx-auto w-[88%]" // brede band -> gecentreerd, iets smaller dan de tekstbreedte
       : ratio < 0.8
         ? "mx-auto w-[46%] max-w-[13rem]" // portret -> smal gecentreerd
         : "mx-auto w-[58%] max-w-[16rem]"; // vierkant -> compact gecentreerd
