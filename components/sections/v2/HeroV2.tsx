@@ -193,7 +193,8 @@ export function HeroV2() {
           </div>
 
           {/* ── Hybrid centerpiece: big chalky illustration + 2 proof-widgets, cursor-reactive (lg+) ── */}
-          <div className="hidden lg:block lg:col-span-6 relative min-h-[30rem]">
+          {/* Pulled up so it rises beside the headline (fills the top-right void, balances the bottom) */}
+          <div className="hidden lg:block lg:col-span-6 relative min-h-[30rem] lg:-mt-28 xl:-mt-32">
             {/* Illustration — anchor, slightly left-biased so widgets frame it instead of covering the face */}
             <motion.div style={reduce ? undefined : { x: illoX, y: illoY }} className="absolute inset-0">
               <motion.div {...pop(0.2)} className="relative w-full h-full">
