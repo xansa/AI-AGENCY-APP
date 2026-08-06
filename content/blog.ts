@@ -7,6 +7,8 @@ export interface BlogPost {
   publishedAt: string;
   tags: string[];
   readingTime: string;
+  /** Optional hero-band illustration path, e.g. "/illustrations/blog/<slug>.png". Taalneutraal. */
+  illustration?: string;
 }
 
 /** Returns only posts with publishedAt <= today, sorted newest first */
@@ -20,12 +22,15 @@ export function getPublishedPosts(): BlogPost[] {
 export const blogPosts: BlogPost[] = [
   {
     slug: "waarom-ai-chatbot-mkb",
+    illustration: "/illustrations/blog/waarom-ai-chatbot-mkb.png",
     title: "Waarom elke MKB\u2019er een AI-chatbot nodig heeft in 2026",
     excerpt:
       "Ontdek hoe AI-chatbots MKB-bedrijven helpen om 24/7 bereikbaar te zijn, leads te kwalificeren en klantenservice te automatiseren \u2014 zonder extra personeel.",
     content: `AI is niet langer voorbehouden aan grote corporates met diepe zakken. In 2026 zijn AI-chatbots toegankelijker dan ooit, en juist voor MKB-bedrijven leveren ze de grootste impact op. Terwijl grote bedrijven hele afdelingen hebben voor klantenservice, moet je als MKB'er vaak alles zelf doen. Een AI-chatbot verandert dat fundamenteel.
 
 In dit artikel leggen we uit wat een AI-chatbot precies doet, hoe het werkt, wat het kost en oplevert, en hoe je als MKB-ondernemer de eerste stappen zet.
+
+[[illustratie: automatisering]]
 
 **Het probleem: te veel vragen, te weinig handen**
 
@@ -4883,5 +4888,1164 @@ Bij Arka bouwen we B2B-websites die zijn ontworpen om leads te genereren. Van st
     publishedAt: "2026-04-25",
     tags: ["Websites", "B2B", "Lead Generation"],
     readingTime: "11 min",
+  },
+  {
+    slug: "verouderde-website-herkennen",
+    title: "7 tekenen dat je website toe is aan vernieuwing",
+    excerpt:
+      "Een verouderde website kost je klanten zonder dat je het doorhebt. Dit zijn de 7 signalen die aangeven dat het tijd is voor een nieuwe site.",
+    content: `Je website staat er al een paar jaar. Hij doet het technisch gezien nog. Maar klanten reageren nauwelijks, je vindbaarheid blijft achter, en als je eerlijk bent: je schaamt je een beetje als je hem aan iemand toestuurt. Herkenbaar?
+
+Een verouderde website is niet alleen een esthetisch probleem. Hij kost je actief omzet. Bezoekers klikken weg, Google rankt je lager, en potentiele klanten trekken de conclusie dat je bedrijf ook wel zo oud en stoffig zal zijn als je site.
+
+Maar hoe weet je wanneer onderhoud niet meer genoeg is, en vernieuwing de enige logische stap? Dit zijn de 7 duidelijkste signalen.
+
+**1. Je website laadt langzamer dan 3 seconden**
+
+Snelheid is het eerste wat bezoekers ervaren, nog voor ze een letter tekst hebben gelezen. Als je site langer dan 3 seconden nodig heeft om te laden, verlies je meer dan de helft van je bezoekers. Op mobiel is de grens zelfs nog strenger: 2 seconden.
+
+Hoe meet je dit? Ga naar PageSpeed Insights (pagespeed.web.dev) en voer je URL in. Je krijgt direct een score op 100 punten, apart voor mobiel en desktop. Scoort je site onder de 50 op mobiel? Dan is er een fundamenteel technisch probleem dat je niet oplost met wat plaatjes comprimeren.
+
+Oude websites draaien vaak op verouderde hosting, gebruiken zware pagina-opbouwtechnieken, en zijn volgeladen met plugins die allemaal hun eigen scripts meeladen. Een moderne website gebouwd op Next.js of een vergelijkbaar framework laadt in een fractie van de tijd, omdat alleen de code die de bezoeker op dat moment nodig heeft, verstuurd wordt.
+
+Trage websites worden ook lager gerangschikt door Google. Snelheid is een officiele rankingfactor. Je betaalt dus dubbel: minder bezoekers die binnenkomen, en meer bezoekers die direct wegklikken.
+
+**2. Hij ziet er op mobiel niet uit**
+
+Meer dan 60% van het webverkeer in Nederland komt van smartphones. Bij lokale dienstverleners en de horeca ligt dat zelfs boven de 75%. Als je website op mobiel niet goed werkt, sluit je de meerderheid van je potentiele klanten buiten.
+
+Controleer het zelf: pak je telefoon en open je eigen website. Is de tekst leesbaar zonder inzoomen? Passen knoppen comfortabel onder je duim? Verschijnt het menu? Scrolt de pagina soepel?
+
+Websites van voor 2018 zijn vaak gebouwd met een desktop-eerst mentaliteit. Mobiel was een bijzaak, iets wat je achteraf responsive maakte. Dat levert half werk op: een site die er op desktop prima uitziet, maar op mobiel een chaos is van overlappende tekst, knoppen die je niet kunt aanraken, en formulieren die je leven zuur maken.
+
+Google gebruikt mobile-first indexing. De mobiele versie van je website bepaalt je positie in de zoekresultaten. Een slechte mobiele ervaring treft je dus dubbel: in de statistieken en in de rankings.
+
+**3. Je schaamt je om de link te delen**
+
+Dit is misschien wel het eerlijkste signaal. Stuur je je website door aan een potentiele klant met het gevoel "ach, hij doet het tenminste"? Dan weet je al wat je moet doen.
+
+Je website is je digitale etalage. Het is het eerste wat veel klanten van je zien, zeker als ze je gevonden hebben via Google. Een site die er gedateerd uitziet, wekt twijfel. Niet per se bewust, maar het gevoel "dit bedrijf loopt achter" zit er in.
+
+Design trends veranderen. Wat er in 2016 modern uitzag, ziet er nu uit als een site uit een tijdcapsule. Grote lappen tekst zonder witruimte, stockfoto's van handshakes op vergadertafels, verouderde kleurenschema's, fonts die niemand meer gebruikt. Je hoeft niet elk jaar een nieuw design, maar na 5 tot 7 jaar is een grondige vernieuwing bijna altijd nodig.
+
+**4. Je tekst past niet meer bij wat je doet**
+
+Bedrijven groeien en veranderen. Je dienstverlening is anders dan 4 jaar geleden. Je prijzen zijn aangepast. Je richt je op een andere doelgroep. Maar je website nog niet.
+
+Als bezoekers jouw site lezen en een verkeerd beeld krijgen van wat je doet, heb je een probleem. Ze nemen geen contact op omdat ze denken dat jij niet aanbiedt wat ze zoeken, terwijl je het wel doet. Of ze nemen contact op met verwachtingen die niet kloppen, wat leidt tot frustrerende gesprekken aan beide kanten.
+
+Een website is geen document dat je eenmalig schrijft en dan met rust laat. De inhoud moet de realiteit van je bedrijf weerspiegelen. Als dat niet meer zo is, is updaten van alleen de tekst soms voldoende. Maar als de structuur van de site ook niet meer klopt, is een nieuw fundament de betere investering.
+
+**5. Je staat niet meer in Google**
+
+Typ je belangrijkste dienst in Google, gevolgd door je stad. Sta je er niet bij? Dan missen klanten je actief.
+
+SEO is geen magie, het is een combinatie van technische kwaliteit, relevante inhoud en autoriteit. Verouderde websites missen op alle drie. Ze zijn technisch niet op orde (langzaam, niet mobiel-vriendelijk, geen correcte metadata), de inhoud is dun of irrelevant, en de structuur is zo dat Google niet goed begrijpt waar de site over gaat.
+
+Moderne websites zijn gebouwd met SEO als fundament, niet als nagedachte. Correcte heading-structuren, geoptimaliseerde pagina-titels en beschrijvingen, structured data markup, snelle laadtijden, interne links die Google door je site leiden. Dat zijn geen opties, dat is de basis.
+
+Als je concurrent die drie maanden geleden een nieuwe site heeft gelanceerd je inmiddels voorbijgeschoten is in Google, is dat geen toeval.
+
+**6. Je conversieratio is belabberd**
+
+Hoeveel bezoekers van je website worden daadwerkelijk klant, of nemen in ieder geval contact op? Als je dit niet weet, is dat al een probleem. Maar als je het wel weet en het antwoord is "bijna niemand", dan presteert je website ver onder zijn potentie.
+
+Een gemiddelde professionele website haalt een conversieratio van 2 tot 5%. Dat betekent: van elke 100 bezoekers nemen 2 tot 5 contact op. Bij een nieuw ontworpen, goed geoptimaliseerde website kan dat hoger liggen.
+
+Wat drukt de conversie? Onduidelijke call-to-actions ("Neem contact op" onderaan een pagina die niemand tot het einde leest). Geen vertrouwenssignalen zoals reviews, referenties of concrete resultaten. Formulieren die te lang zijn of te veel vragen. Onduidelijkheid over wat de volgende stap is.
+
+Als je website bezoekers trekt maar ze niet omzet in leads, is er iets fundamenteel mis met de structuur of de inhoud. Dat los je niet op met een nieuw kleurtje.
+
+**7. Je hebt geen idee wat er op je site gebeurt**
+
+Als je niet kunt vertellen hoeveel bezoekers je vorige maand had, welke pagina's het best presteren, hoe mensen op je site terechtkomen, en waar ze afhaken, is je website een zwarte doos.
+
+Een moderne website draait standaard met analytics. Je ziet precies hoeveel bezoekers er komen, hoe lang ze blijven, welke pagina's ze bezoeken en wat ze doen. Die data geeft je de informatie om je site continu te verbeteren.
+
+Oudere websites hebben dit er soms bij gezet als nagedachte, of helemaal niet. Zonder data vlieg je blind.
+
+**Wat nu?**
+
+Als je meerdere van deze signalen herkent, is de vraag niet of je website aan vernieuwing toe is. De vraag is wanneer.
+
+Een nieuwe website is een investering, maar verouderd blijven kost je ook iets: leads die weggaan, rankings die dalen, klanten die een minder professionele indruk krijgen dan je bedrijf verdient.
+
+Bij Arka bouwen we websites die snel zijn, goed scoren in Google, er goed uitzien op elk apparaat, en gebouwd zijn om te converteren. Geen templates, geen WordPress-gedoe, maar maatwerk dat werkt.
+
+Neem contact op via info@arkadigital.nl of kijk op arkadigital.nl voor meer informatie. We kijken graag mee naar jouw huidige site en geven eerlijk advies over wat er nodig is.`,
+    author: "Kaan Arslan",
+    publishedAt: "2026-05-14",
+    tags: ["Websites", "MKB", "Webdesign"],
+    readingTime: "8 min",
+  },
+  {
+    slug: "google-mijn-bedrijf-optimaliseren",
+    title: "Google Mijn Bedrijf optimaliseren: meer lokale klanten",
+    excerpt:
+      "Google Mijn Bedrijf is het krachtigste gratis marketingkanaal voor lokale bedrijven. Zo zorg je dat jij bovenaan staat als klanten in jouw buurt zoeken.",
+    content: `Als iemand zoekt naar "loodgieter Dordrecht" of "accountant Rotterdam centrum", wat ziet die persoon dan als eerste? Geen website. Geen advertentie. Maar een kaart met drie bedrijven erop, elk met een beoordeling, adres, telefoonnummer en openingstijden. Dat is het Local Pack, en het wordt aangestuurd door Google Mijn Bedrijf.
+
+Als jij lokale klanten wilt, is Google Mijn Bedrijf het krachtigste gratis kanaal dat je hebt. Maar de meeste bedrijven laten het links liggen, of hebben een profiel dat half ingevuld is en al jaren niet meer bijgewerkt. Dat is een gemiste kans, en dit artikel legt uit hoe je die kans pakt.
+
+**Wat is Google Mijn Bedrijf precies?**
+
+Google Mijn Bedrijf (officieel: Google Bedrijfsprofiel) is de gratis tool van Google waarmee je jouw bedrijfsinformatie beheert in Google Zoeken en Google Maps. Wanneer iemand jouw bedrijfsnaam zoekt, of zoekt naar wat jij doet in jouw regio, trekt Google die informatie uit jouw profiel.
+
+Een volledig profiel toont:
+
+\u2022 Je bedrijfsnaam, adres en telefoonnummer
+\u2022 Openingstijden, inclusief uitzonderingen voor feestdagen
+\u2022 Foto's van je bedrijf, team en werkzaamheden
+\u2022 Klantreviews en jouw reacties daarop
+\u2022 Een korte beschrijving van wat je doet
+\u2022 Directe links naar je website, routebeschrijving en bellen
+
+Het profiel verschijnt ook in Google Maps, wat extra zichtbaarheid oplevert voor mensen die letterlijk op zoek zijn naar iets in hun buurt.
+
+**Waarom zoveel bedrijven het verkeerd doen**
+
+Veel ondernemers hebben hun profiel ooit aangemaakt, geverifieerd, en er daarna niets meer mee gedaan. Dat is het equivalent van een etalage inrichten en daarna nooit meer schoonmaken of de prijskaartjes bijwerken.
+
+Google kijkt naar activiteit. Een profiel dat regelmatig wordt bijgewerkt, dat reviews ontvangt en beantwoordt, en dat up-to-date informatie bevat, rankt hoger dan een verlaten profiel. Het algoritme beloont betrokkenheid.
+
+Andere veelgemaakte fouten:
+
+\u2022 Inconsistente bedrijfsnaam (soms "Jan de Vries Schildersbedrijf", soms "Schildersbedrijf De Vries")
+\u2022 Verkeerde of verouderde openingstijden
+\u2022 Geen of nauwelijks foto's
+\u2022 Reviews die niet beantwoord worden
+\u2022 Geen beschrijving van diensten
+\u2022 Verkeerde categorie gekozen
+
+**Stap 1: Claim en verifieer je profiel**
+
+Als je nog geen profiel hebt, ga dan naar business.google.com en maak er een aan. Als het al bestaat maar niet door jou beheerd wordt (Google maakt soms automatisch profielen aan op basis van openbare informatie), claim dan het eigendom.
+
+Verificatie gaat via een postkaart, telefoongesprek of e-mail, afhankelijk van wat Google aanbiedt voor jouw situatie. Na verificatie heb je volledige controle over je profiel.
+
+**Stap 2: Vul alles volledig in**
+
+Google Mijn Bedrijf heeft tientallen velden. De meeste bedrijven vullen er een stuk of vijf in en stoppen daar. Fout. Elk ingevuld veld vergroot je relevantie en zichtbaarheid.
+
+De essentials:
+
+\u2022 **Bedrijfsnaam** precies zoals je hem overal gebruikt, zonder extra keywords erin proppen (dat is tegen de richtlijnen van Google en kan je profiel opschorten)
+\u2022 **Hoofdcategorie** dit is het belangrijkste veld na je naam. Kies de categorie die het beste beschrijft wat je primair doet. Je kunt ook aanvullende categorieen toevoegen
+\u2022 **Adres en servicegebied** voor bedrijven die bij klanten langsgaan kun je een servicegebied instellen in plaats van een fysiek adres
+\u2022 **Telefoonnummer** zorg dat dit klopt en dat de telefoon ook echt opgenomen wordt
+\u2022 **Website** link naar je homepage of een relevante landingspagina
+\u2022 **Openingstijden** inclusief feestdagen. Niets wekt meer frustratie bij klanten dan op een gesloten deur staan terwijl Google zegt dat je open bent
+\u2022 **Beschrijving** 750 tekens om te beschrijven wat je doet, voor wie, en wat je onderscheidt. Gebruik hier je belangrijkste zoekwoorden op een natuurlijke manier
+
+**Stap 3: Foto's uploaden die vertrouwen wekken**
+
+Profielen met foto's krijgen significant meer kliks en routeverzoeken dan profielen zonder. Foto's laten mensen zien met wie ze te maken hebben, en dat wekt vertrouwen.
+
+Wat te uploaden:
+
+\u2022 **Profielfoto** je logo of een professionele foto van jezelf
+\u2022 **Omslagfoto** een sfeervolle foto van je bedrijf, team of werk
+\u2022 **Werkfoto's** resultaten van projecten, je atelier, je winkel, je voertuigen
+\u2022 **Teamfoto's** gezichten achter het bedrijf
+\u2022 **Sfeerbeelden** geef mensen een gevoel bij wat het is om klant bij jou te zijn
+
+Kwaliteit telt. Donkere, wazige foto's van een eerste generatie smartphone helpen je niet. Investeer in een paar goede foto's. Als je geen budget hebt voor een fotograaf, schiet dan bij goed daglicht met een recente smartphone.
+
+Voeg regelmatig nieuwe foto's toe. Dat toont Google dat je profiel actief is.
+
+**Stap 4: Reviews actief verzamelen en beantwoorden**
+
+Reviews zijn de meest impactvolle factor voor je lokale ranking, na de afstand van de zoeker tot jouw bedrijf. Een bedrijf met 50 reviews van gemiddeld 4,3 rankt bijna altijd boven een bedrijf met 5 reviews van 5,0.
+
+Maar hoe verzamel je meer reviews?
+
+\u2022 **Vraag het actief** na een geslaagd project of een tevreden klant. De meeste mensen laten geen review achter tenzij je er om vraagt
+\u2022 **Maak het makkelijk** Google geeft je een directe link naar je reviewpagina. Zet die link in je e-mailhandtekening, op je website, in je factuur-e-mail
+\u2022 **Timing is alles** vraag om een review direct na de interactie, als het gevoel nog vers is
+\u2022 **Nooit reviews kopen of nep-reviews plaatsen** Google detecteert dit en kan je profiel permanent schorsen
+
+Beantwoord elke review, zowel positief als negatief. Op een positieve review bedank je de klant kort en oprecht. Op een negatieve review reageer je professioneel, zonder in de verdediging te schieten, en je biedt aan om het op te lossen. Potentiele klanten lezen niet alleen de reviews, ze lezen ook hoe jij reageert. Een professionele reactie op een slechte review wekt meer vertrouwen dan een perfect gemiddelde met geen reacties.
+
+**Stap 5: Posts plaatsen**
+
+Google Mijn Bedrijf heeft een Posts-functie die veel bedrijven niet kennen of negeren. Je kunt hier korte berichten plaatsen: nieuws, acties, evenementen, nieuwe diensten.
+
+Posts verschijnen direct in je profiel in de zoekresultaten. Ze hebben een houdbaarheid van 7 dagen (daarna worden ze niet meer prominent getoond, maar blijven ze wel zichtbaar). Regelmatig posten signaleert aan Google dat je profiel actief is.
+
+Wat te posten:
+
+\u2022 Aankondiging van een nieuwe dienst
+\u2022 Een lopende actie of aanbieding
+\u2022 Een afgerond project (met foto)
+\u2022 Een tip die relevant is voor je doelgroep
+\u2022 Openingstijden rondom feestdagen
+
+Houd het kort en concreet. Geen marketingpraatjes, maar informatie die iemand daadwerkelijk helpt om te beslissen of ze contact opnemen.
+
+**Stap 6: Vragen en antwoorden beheren**
+
+In je profiel kunnen bezoekers vragen stellen die zichtbaar zijn voor iedereen. Als jij de vraag niet beantwoordt, doet een willekeurig iemand het misschien wel, en niet altijd correct.
+
+Zet zelf de meest gestelde vragen al in de Q&A sectie, inclusief het antwoord. Dat werkt als een mini-FAQ direct in Google.
+
+**Hoe lang duurt het voordat je resultaat ziet?**
+
+Realistische verwachting: 4 tot 8 weken na een grondige optimalisatie begin je verbetering te zien in rankings. Reviews verzamelen en consistent posten versnelt dat proces. Lokale SEO is geen schakelaar die je omzet en dan klaar bent, het is iets dat je bijhoudt.
+
+**De volgende stap**
+
+Een geoptimaliseerd Google Mijn Bedrijf profiel is een van de snelste manieren om meer zichtbaarheid te krijgen zonder geld uit te geven aan advertenties. Maar het is ook een puzzelstukje. Combineer het met een snelle, SEO-geoptimaliseerde website en lokale content, en je hebt een solide fundament voor lokale zichtbaarheid.
+
+Wil je weten hoe jij scoort in je regio, of hoe je de stap maakt van profiel naar daadwerkelijke leads? Neem contact op via info@arkadigital.nl of kijk op arkadigital.nl. We denken graag mee.`,
+    author: "Kaan Arslan",
+    publishedAt: "2026-05-16",
+    tags: ["SEO", "Lokale SEO", "Google"],
+    readingTime: "9 min",
+  },
+  {
+    slug: "website-roi-berekenen",
+    title: "Hoe bereken je de ROI van een nieuwe website?",
+    excerpt:
+      "Een nieuwe website kost geld. Maar hoeveel levert hij op? Met dit stappenplan bereken je de return on investment voordat je de knoop doorhakt.",
+    content: `"Is een nieuwe website het geld waard?" Het is de vraag die elke ondernemer stelt voordat hij de knoop doorhakt. En het is de juiste vraag. Een website is een investering, geen uitgave, maar alleen als je hem serieus neemt en inzet als verkoopinstrument.
+
+Het probleem is dat veel ondernemers de ROI van een website niet kunnen berekenen, omdat ze de juiste cijfers niet hebben. Of ze rekenen het niet door omdat ze bang zijn voor het antwoord. Dat is jammer, want als je de berekening eerlijk maakt, is een professionele website in de meeste gevallen een van de beste investeringen die je kunt doen.
+
+In dit artikel laat ik zien hoe je de ROI berekent, welke getallen je nodig hebt, en wat een realistisch rendement is.
+
+**Wat is ROI en hoe werkt de berekening?**
+
+ROI staat voor Return on Investment. De basisformule:
+
+ROI = (Opbrengst - Investering) / Investering x 100%
+
+Een ROI van 100% betekent dat je je investering hebt terugverdiend en er nog eens hetzelfde bovenop hebt verdiend. Een ROI van 200% betekent dat elke euro die je investeerde drie euro opbracht.
+
+Voor een website ziet de berekening er zo uit:
+
+\u2022 **Investering** = kosten van de website (eenmalig + jaarlijks onderhoud en hosting)
+\u2022 **Opbrengst** = extra omzet die de website genereert
+
+De uitdaging zit in het bepalen van de opbrengst. Dat vraagt om een paar stappen.
+
+**Stap 1: Bepaal je huidige conversieratio**
+
+Hoeveel van je websitebezoekers worden daadwerkelijk klant, of nemen tenminste contact op? Als je analytics hebt (Google Analytics of iets vergelijkbaars), kun je dit nalezen.
+
+Typische benchmarks:
+
+\u2022 Slechte website: onder de 0,5% conversieratio
+\u2022 Gemiddelde website: 1 tot 2%
+\u2022 Goede website: 2 tot 5%
+\u2022 Uitstekende website: 5% of hoger (voor sommige niches)
+
+Als je 500 bezoekers per maand hebt en 2 mensen nemen contact op, is je conversieratio 0,4%. Dat is laag. Een goede website kan dat verhogen naar 2% of meer. Dat is 10 contactaanvragen per maand in plaats van 2. Van dezelfde hoeveelheid bezoekers.
+
+**Stap 2: Bereken je gemiddelde klantwaarde**
+
+Hoeveel levert een nieuwe klant je gemiddeld op? Niet per order, maar over de hele klantrelatie.
+
+Voorbeeld:
+
+\u2022 Je bent een accountantskantoor
+\u2022 Een nieuwe klant betaalt gemiddeld 2.400 euro per jaar voor jaarrekening en belastingaangifte
+\u2022 Gemiddeld blijft een klant 5 jaar
+\u2022 Klantwaarde = 2.400 x 5 = 12.000 euro
+
+Of je bent een aannemer:
+\u2022 Gemiddeld project: 15.000 euro
+\u2022 Klanten komen niet terug, maar sturen wel 1 of 2 referrals
+\u2022 Klantwaarde: 15.000 euro direct + gemiddeld 10.000 euro via referrals = 25.000 euro
+
+Als je klantwaarde berekend hebt, wordt de ROI van een website ineens veel concreter.
+
+**Stap 3: Schat hoeveel extra leads een nieuwe website oplevert**
+
+Hier wordt het iets minder exact, maar je kunt een betrouwbare schatting maken.
+
+Een nieuwe website verbetert je positie op twee manieren: meer bezoekers (via betere SEO) en hogere conversie (via beter design en sterkere boodschap). Laten we conservatief rekenen en alleen kijken naar het conversie-effect.
+
+Stel:
+\u2022 Je hebt 300 bezoekers per maand
+\u2022 Je huidige conversieratio: 0,5% = 1,5 leads per maand
+\u2022 Na een nieuwe website: 2,5% conversieratio = 7,5 leads per maand
+\u2022 Verschil: 6 extra leads per maand
+\u2022 Sluitingsratio (hoeveel leads worden klant): 30%
+\u2022 Extra klanten per maand: 1,8
+\u2022 Klantwaarde: 5.000 euro
+\u2022 Extra omzet per maand: 1,8 x 5.000 = 9.000 euro
+
+Dat is 108.000 euro extra omzet op jaarbasis, van dezelfde hoeveelheid bezoekers.
+
+**Stap 4: Bereken de kosten**
+
+Een professionele website kost bij Arka:
+
+\u2022 Eenmalig: vanaf 2.500 euro (Starter) tot 18.000 euro of meer (Enterprise)
+\u2022 Maandelijks (onderhoud, hosting, updates): 100 tot 500 euro per maand afhankelijk van het pakket
+
+Voor een middelgroot MKB-bedrijf is een investering van 7.000 euro eenmalig plus 250 euro per maand realistisch. Op jaarbasis is dat 7.000 + 3.000 = 10.000 euro in het eerste jaar.
+
+**Stap 5: Reken het uit**
+
+Met de cijfers uit het voorbeeld hierboven:
+
+\u2022 Jaarlijkse extra omzet: 108.000 euro
+\u2022 Jaarlijkse kosten website: 10.000 euro
+\u2022 ROI = (108.000 - 10.000) / 10.000 x 100% = 980%
+
+Dat klinkt bijna te mooi om waar te zijn. En dat klopt ook: in de praktijk verloopt een verbetering nooit zo lineair. Maar zelfs als je 80% van de berekende opbrengst weggooit, is de ROI nog altijd 196%. Je investering verdient zichzelf meer dan twee keer terug.
+
+**Wanneer is een nieuwe website geen goede investering?**
+
+Het is eerlijk om ook de andere kant te laten zien. Een nieuwe website rendeert niet als:
+
+\u2022 **Je trekt geen bezoekers** Als je maandelijks 30 bezoekers hebt, maakt zelfs een perfecte website weinig uit. Dan is traffic-generatie (SEO of advertenties) de eerste stap
+\u2022 **Je sluitingsratio is laag** Als je veel leads binnenkrijgt maar er weinig van sluit, is het probleem niet je website maar je verkoopproces. Een website lost dat niet op
+\u2022 **Je bedrijfsmodel schaalt niet** Als je al aan capaciteit zit en geen mensen kunt aannemen, is meer leads geen prioriteit
+
+In die gevallen is een nieuwe website misschien niet de eerste investering. Maar voor de meeste MKB-bedrijven met een website van meer dan 3 jaar oud, matige vindbaarheid en een lage conversieratio, is het een van de hoogste-rendement investeringen die er zijn.
+
+**Hoe maak je de berekening concreet voor jouw bedrijf?**
+
+Begin met drie vragen:
+
+1. Hoeveel bezoekers komen er nu per maand op mijn site? (check Google Analytics of vraag je webpartner)
+2. Hoeveel leads of contactaanvragen krijg ik per maand?
+3. Wat is mijn gemiddelde klantwaarde?
+
+Met die drie getallen kun je de berekening doorlopen zoals hierboven. Als je de getallen niet hebt, is dat al een signaal: je website is een zwarte doos waar je geen zicht op hebt.
+
+**De volgende stap**
+
+Wil je weten hoeveel een nieuwe website jou concreet kan opleveren? Bij Arka rekenen we dit gewoon door voordat we beginnen. Geen vage beloftes, maar een eerlijke inschatting op basis van jouw branche, huidige situatie en doelstellingen.
+
+Neem contact op via info@arkadigital.nl of bezoek arkadigital.nl. We plannen een kennismakingsgesprek en rekenen samen de business case door.`,
+    author: "Kaan Arslan",
+    publishedAt: "2026-05-18",
+    tags: ["Websites", "Strategie", "MKB"],
+    readingTime: "8 min",
+  },
+  {
+    slug: "mobiele-website-belang",
+    title: "Waarom een mobiel-vriendelijke website onmisbaar is",
+    excerpt:
+      "Meer dan 60% van je bezoekers komt via een smartphone. Als jouw website op mobiel niet werkt, verlies je de meeste potentiele klanten nog voordat ze iets gelezen hebben.",
+    content: `Pak je telefoon. Open je eigen website. Wat zie je?
+
+Als je moet inzoomen om de tekst te lezen, als knoppen te klein zijn om op te tikken, als het menu verborgen zit achter drie klikken, of als de pagina zo lang laadt dat je ongeduldig wordt: dan verlies je klanten. Dagelijks.
+
+Meer dan 60% van het webverkeer in Nederland komt van smartphones. Bij lokale dienstverleners, horeca, detailhandel en consumentgerichte bedrijven ligt dat vaak boven de 70 of 75%. Als jouw website op mobiel niet goed werkt, heeft de meerderheid van je bezoekers een slechte eerste indruk van je bedrijf, nog voordat ze ook maar een zin tekst hebben gelezen.
+
+Dit artikel legt uit waarom mobiel-vriendelijkheid geen nice-to-have is, maar de basis van elke serieuze website.
+
+**Google straft slechte mobiele ervaringen**
+
+In 2019 stapte Google over op mobile-first indexing. Wat dat betekent: Google beoordeelt je website primair op basis van de mobiele versie. De desktop versie telt nauwelijks meer mee voor je zoekrangschikking.
+
+Dat is een fundamentele verschuiving. Vroeger bouwde je een mooie desktopsite en maakte je er daarna een responsive versie van. Nu is de mobiele versie de echte versie, en de desktop is de uitbreiding.
+
+Praktisch betekent dit: als jouw mobiele website langzaam laadt, tekst bevat die te klein is om te lezen, of knoppen heeft die te dicht op elkaar staan, dan rankt Google je lager. Je vindbaarheid daalt. Minder mensen vinden je. Minder mensen worden klant.
+
+Slechte mobiele ervaring treft je dus op drie fronten: minder bezoekers via Google, bezoekers die direct wegklikken, en een slechte eerste indruk bij wie toch blijft.
+
+**Wat maakt een website mobiel-vriendelijk?**
+
+Het gaat om meer dan "hij past op een klein scherm". Mobiel-vriendelijkheid is een combinatie van technische kwaliteit, ontwerp en gebruikersgemak.
+
+**Laadsnelheid**
+
+Op mobiel is snelheid nog kritischer dan op desktop. Mensen op hun telefoon zijn vaak onderweg, met een 4G of soms trager verbinding. Een site die op desktop 2 seconden laadt, kan op mobiel 5 of 6 seconden duren als hij niet geoptimaliseerd is.
+
+Na 3 seconden laadtijd verlies je meer dan de helft van je bezoekers. Op mobiel is de tolerantie zelfs lager. Grote afbeeldingen die niet gecomprimeerd zijn, externe scripts die alles ophouden, zware animaties die de processor van een telefoon te hard belasten, het zijn allemaal killers voor mobiele laadtijd.
+
+**Leesbaar zonder inzoomen**
+
+De standaard tekstgrootte voor mobiel is minimaal 16 pixels. Kleiner dan dat en mensen gaan inzoomen, of ze stoppen gewoon met lezen. Zorg ook voor voldoende witruimte: tekst die op desktop luchtig aanvoelt, kan op mobiel verstikkend aanvoelen als de marges niet mee schalen.
+
+Regelbreedte speelt ook mee. Een lange zin die op desktop over een brede kolom loopt, is op mobiel soms twee of drie regels lang. Korte, directe zinnen werken beter op mobiel.
+
+**Aantikbare knoppen en links**
+
+Google hanteert een minimum van 44x44 pixels voor aantikbare elementen. Dat is ongeveer de grootte van een vingertop. Knoppen die kleiner zijn, of links die vlak naast elkaar staan, leiden tot missers en frustratie.
+
+Dat geldt ook voor formulieren. Invoervelden die te smal zijn, labels die boven het veld verdwijnen als je begint met typen, een "Verzenden" knop die je niet kunt bereiken zonder scrollen: dit alles zorgt voor afhakers. En afhakers zijn leads die je kwijt bent.
+
+**Navigatie die werkt op een touchscreen**
+
+Dropdownmenu's die alleen werken als je eroverheen zweeft (hover) zijn op mobiel nutteloos. Er is geen hover op een touchscreen. Een mobiel menu moet werken met tikken, duidelijk zijn, en snel toegang geven tot de belangrijkste pagina's.
+
+Een hamburger-icoontje (drie horizontale strepen) is de standaard voor mobiele navigatie. Zorg dat het duidelijk zichtbaar is, en dat het menu dat opent ook echt bruikbaar is.
+
+**Formulieren die simpel zijn**
+
+Elk extra veld in een formulier kost conversie. Op desktop vult iemand misschien nog 8 velden in. Op mobiel haken ze af na 4. Vraag alleen wat je echt nodig hebt. Naam, telefoonnummer of e-mail, en een kort berichtje. Meer hoeft niet, zeker niet als eerste contact.
+
+Gebruik ook de juiste toetsenbordtypen. Als je een telefoonnummer vraagt, moet de telefoon automatisch het numerieke toetsenbord tonen. Dat doe je met een simpel attribuut in de HTML, maar het wordt regelmatig vergeten.
+
+**Hoe test je of je website mobiel-vriendelijk is?**
+
+Drie manieren:
+
+1. **Test het zelf** Open je website op je eigen telefoon en doorloop de belangrijkste paden. Kun je de homepage lezen? Kun je naar de contactpagina navigeren? Kun je het contactformulier invullen? Lukt dat zonder frustratie?
+
+2. **Google Mobile-Friendly Test** Ga naar search.google.com/test/mobile-friendly en voer je URL in. Je krijgt binnen seconden een oordeel van Google, met eventuele knelpunten.
+
+3. **PageSpeed Insights** Op pagespeed.web.dev zie je je mobiele laadsnelheid en score, inclusief een lijst van verbeterpunten.
+
+Als je scoort onder de 50 op PageSpeed mobiel, of als de Mobile-Friendly Test problemen meldt, is er werk aan de winkel.
+
+**Responsive design versus mobiele app: wat is het verschil?**
+
+Een veelgehoorde vraag is of je een aparte mobiele app nodig hebt naast je website. Voor de meeste MKB-bedrijven is het antwoord: nee. Een goed gebouwde responsive website is voldoende.
+
+Responsive design betekent dat dezelfde website zich aanpast aan het scherm waarop hij bekeken wordt. Op desktop ziet hij er zo uit, op tablet zo, op mobiel zo. Een codebase, automatisch de juiste opmaak.
+
+Een aparte app is een veel grotere investering (10.000 tot 50.000 euro en meer voor een serieuze app), vereist regelmatige updates, en heeft een hogere drempel voor gebruikers (ze moeten hem downloaden). Dat is zinvol voor bedrijven met een dagelijks terugkerende gebruikscase, zoals een bezorgdienst of een bank. Niet voor een dienstverlener die potentiele klanten wil binnenhalen.
+
+**De praktische impact op je omzet**
+
+Laten we het concreet maken. Stel je hebt 400 bezoekers per maand. 65% komt via mobiel, dat is 260 bezoekers. Als je mobiele website niet goed werkt en 60% van die bezoekers direct wegklikt, verlies je 156 potentiele klanten per maand zonder dat ze ook maar de kans hebben gehad om te lezen wat je doet.
+
+Met een conversieverbetering van 0,5% naar 2% op die 260 mobiele bezoekers:
+
+\u2022 Voor: 1,3 leads per maand van mobiel
+\u2022 Na: 5,2 leads per maand van mobiel
+\u2022 Verschil: 3,9 extra leads per maand
+
+Als 30% van die leads klant wordt en elke klant gemiddeld 3.000 euro waard is, is dat ruim 3.500 euro extra omzet per maand. Van dezelfde hoeveelheid bezoekers.
+
+**Wanneer is je website oud genoeg om dit probleem te hebben?**
+
+Websites gebouwd voor 2018 zijn bijna altijd niet mobiel-first. Ze zijn responsive gemaakt als nagedachte, maar niet fundamenteel ontworpen vanuit mobiel gebruik. Dat verschil merk je.
+
+Maar ook nieuwere sites kunnen dit probleem hebben. Als je website gebouwd is door iemand die de mobile-first aanpak niet hanteert, of als het een goedkoop template is dat er op desktop mooi uitziet maar op mobiel niet geoptimaliseerd is, heb je hetzelfde probleem.
+
+**De volgende stap**
+
+Als je twijfelt over de mobiele kwaliteit van je website, test het dan vandaag nog. Gebruik de tools die hierboven staan, of stuur me de URL en ik kijk er kosteloos naar.
+
+Bij Arka bouwen we websites mobiel-eerst. Dat betekent: het ontwerp begint op het kleinste scherm, en schaalt daarna op. Het resultaat is een website die werkt voor de meerderheid van je bezoekers, niet alleen de desktop-gebruikers.
+
+Neem contact op via info@arkadigital.nl of ga naar arkadigital.nl voor meer informatie.`,
+    author: "Kaan Arslan",
+    publishedAt: "2026-05-20",
+    tags: ["Websites", "SEO", "Mobiel"],
+    readingTime: "7 min",
+  },
+  {
+    slug: "concurrentie-analyse-online",
+    title: "Zo analyseer je de online aanwezigheid van je concurrenten",
+    excerpt:
+      "Weten wat je concurrenten online doen, geeft je een voorsprong. Dit stappenplan laat zien hoe je hun sterke en zwakke punten in kaart brengt, zonder dure tools.",
+    content: `Voordat je investeert in een nieuwe website, een SEO-campagne of betaalde advertenties, is er een vraag die je eerst moet beantwoorden: wat doet je concurrent al?
+
+Niet om hen te kopieren. Maar om te begrijpen hoe de markt er online uitziet, waar de kansen liggen, en waar jij je kunt onderscheiden. Een concurrentie-analyse is geen luxe voor grote bedrijven met een marketingafdeling. Het is gewoon verstandig ondernemen, en je kunt het grotendeels gratis doen.
+
+Dit stappenplan laat zien hoe je de online aanwezigheid van je concurrenten systematisch in kaart brengt.
+
+**Stap 1: Stel vast wie je concurrenten zijn**
+
+Begin met een lijst. Wie zijn de bedrijven waarmee jij het meest te maken hebt? Denk aan drie categorieen:
+
+\u2022 **Directe concurrenten** Ze bieden exact hetzelfde aan, aan dezelfde doelgroep, in dezelfde regio
+\u2022 **Indirecte concurrenten** Ze lossen hetzelfde probleem op, maar op een andere manier. Als jij een boekhouder bent, is een online boekhoudprogramma ook een concurrent
+\u2022 **Aspirational concurrenten** Bedrijven die groter zijn of een andere markt bedienen, maar die laten zien waar de lat ligt
+
+Noteer 5 tot 10 namen. Meer hoeft niet voor een eerste analyse.
+
+**Stap 2: Analyseer hun website**
+
+De website van een concurrent vertelt je veel over hoe zij hun bedrijf positioneren. Kijk naar:
+
+**Belofte en positionering**
+Wat is de centrale boodschap op de homepage? Wat beloven ze? Hoe omschrijven ze zichzelf? Zijn ze goedkoop, snel, gespecialiseerd, lokaal? Noteer hoe zij zich positioneren, want dat helpt jou om een positie te kiezen die onderscheidend is.
+
+**Diensten en aanbod**
+Welke diensten bieden ze aan? Hoe zijn die omschreven? Bieden ze pakketten of maatwerk? Noemen ze prijzen? Veel bedrijven vermijden het vermelden van prijzen om concurrentie te ontwijken, maar tegelijkertijd vermijden klanten ook het opnemen van contact als ze geen idee hebben van de orde van grootte.
+
+**Technische kwaliteit**
+Laad de site snel? Werkt hij op mobiel? Je kunt dit snel testen via PageSpeed Insights. Een concurrent met een trage, slecht gebouwde website is kwetsbaar. Jij kunt hen op technische kwaliteit overtreffen.
+
+**Conversie-elementen**
+Wat willen ze dat bezoekers doen? Is er een duidelijke call-to-action? Is er een offerte-aanvraagformulier? Kunnen bezoekers direct een afspraak plannen? Hoe makkelijk maken ze het om contact op te nemen?
+
+**Content**
+Hebben ze een blog? Hoe vaak wordt er gepubliceerd? Over welke onderwerpen schrijven ze? Goede content is een langetermijninvestering in SEO en autoriteit. Als jij content maakt en je concurrent niet, bouw jij een voorsprong op.
+
+**Stap 3: Kijk hoe ze scoren in Google**
+
+Dit is waar het interessant wordt. Open een incognito-venster in je browser (zo worden je eigen zoekgeschiedenis en locatie geneutraliseerd) en zoek op de zoektermen die jouw klanten zouden gebruiken.
+
+Voorbeelden:
+\u2022 "accountant Dordrecht"
+\u2022 "website laten maken Rotterdam"
+\u2022 "installatiebedrijf Eindhoven"
+
+Wie staat er op de eerste pagina? Welke positie hebben je concurrenten? Staan ze ook in het Local Pack (de kaart met drie bedrijven)? Hebben ze betaalde advertenties bovenaan?
+
+Noteer voor elk concurrent:
+
+\u2022 **Organische positie** Staan ze op pagina 1, 2, of helemaal niet?
+\u2022 **Local Pack** Verschijnen ze in de kaart? Hoeveel reviews hebben ze en wat is de gemiddelde beoordeling?
+\u2022 **Betaalde advertenties** Adverteren ze actief op de zoekterm?
+
+Als een concurrent consistent op positie 1 staat, hebben ze of veel backlinks, of goede content, of allebei. Dat is iets om rekening mee te houden in je eigen SEO-strategie.
+
+**Stap 4: Gebruik Ubersuggest of Ahrefs voor diepere analyse**
+
+Voor een diepere kijk heb je een SEO-tool nodig. Ubersuggest heeft een gratis versie die voor dit doel voldoende is. Ahrefs en SEMrush zijn uitgebreider maar hebben een abonnement nodig.
+
+Voer de URL van een concurrent in Ubersuggest in. Je ziet:
+
+\u2022 **Organisch verkeer** Hoeveel bezoekers per maand komen er via Google?
+\u2022 **Top zoektermen** Op welke woorden scoren ze het beste?
+\u2022 **Backlinks** Hoeveel externe websites linken naar hen? Backlinks zijn een belangrijke rankingfactor
+\u2022 **Top pagina's** Welke pagina's trekken de meeste bezoekers?
+
+Dit geeft je een concreet beeld van hun SEO-kracht. Als een concurrent 5.000 organische bezoekers per maand trekt en jij 200, weet je dat er werk aan de winkel is. Je ziet ook op welke zoektermen zij scoren waar jij nog niet op staat: dat zijn kansen.
+
+**Stap 5: Bekijk hun sociale media**
+
+Ga naar LinkedIn, Instagram, Facebook en welk platform relevant is voor jouw branche. Zoek je concurrenten op en kijk naar:
+
+\u2022 **Activiteit** Hoe vaak posten ze? Regelmatig of zelden?
+\u2022 **Engagement** Hoeveel reacties, likes en shares krijgen hun posts? Hoge engagement bij weinig volgers is interessanter dan veel volgers met nauwelijks reacties
+\u2022 **Inhoud** Wat posten ze? Achter-de-schermen content, case studies, tips, promoties?
+\u2022 **Toon** Professioneel, persoonlijk, technisch?
+
+Sociale media geven je een beeld van hun merkpersonaliteit en hoe ze hun doelgroep benaderen. Het laat ook zien wat werkt: posts met veel engagement raken een snaar bij de doelgroep die jullie delen.
+
+**Stap 6: Lees hun reviews**
+
+Reviews zijn een goudmijn aan informatie. Ze laten zien wat klanten waarderen, maar ook waar het schuurt.
+
+Kijk op Google, Trustpilot, Yelp, branchespecifieke platforms, en noem maar op. Let op:
+
+\u2022 **Terugkerende positieve punten** Dit zijn de sterke punten die klanten actief waarderen. Als iedereen de snelheid van levering noemt, is dat een USP
+\u2022 **Terugkerende klachten** Dit zijn zwakke punten in hun dienstverlening. Als klanten klagen over communicatie, is dat een kans voor jou om je te onderscheiden op precies dat punt
+\u2022 **Hoe ze reageren** Reageren ze op negatieve reviews? Hoe? Professioneel of defensief?
+
+**Stap 7: Maak een overzicht**
+
+Na je analyse heb je een hoop informatie. Zet het in een simpele tabel:
+
+| Concurrent | Website kwaliteit | SEO-positie | Reviews | Sociale media | Zwakste punt |
+|---|---|---|---|---|---|
+| Bedrijf A | Snel, modern | Positie 2 | 47 reviews, 4,6 | Actief | Dure prijzen |
+| Bedrijf B | Traag, ouderwets | Pagina 2 | 8 reviews, 3,9 | Inactief | Slechte communicatie |
+
+Uit dit overzicht haal je twee dingen:
+
+1. **Gaten in de markt** Waar presteren je concurrenten slecht? Dat zijn jouw kansen
+2. **Benchmark** Op welk niveau moet jij minimaal zitten om serieus genomen te worden?
+
+**Wat doe je met de inzichten?**
+
+Een concurrentie-analyse is geen doel op zich. Het is input voor beslissingen.
+
+Mogelijke conclusies:
+
+\u2022 Niemand in jouw regio heeft een snelle, moderne website: investeer daarin en onderscheid je op technische kwaliteit
+\u2022 Alle concurrenten hebben weinig reviews: start een actieve review-strategie en bouw snel een voorsprong op
+\u2022 Er is een zoekterm waarop niemand goed scoort, maar die veel gezocht wordt: schrijf gerichte content en rank erop
+\u2022 Je concurrenten zijn actief op LinkedIn maar niemand maakt nuttige content: begin een blog of reeks posts die daadwerkelijk waarde leveren
+
+**Hoe vaak moet je dit doen?**
+
+Een grondige analyse doe je eenmalig, en daarna elk kwartaal een lichtere update. Markten veranderen, concurrenten lanceren nieuwe sites, nieuwe spelers komen erbij. Een momentopname van vandaag is verouderd over zes maanden.
+
+Zet een herinnering in je agenda voor elke drie maanden om de top vijf zoektermen te checken en de reviews van je concurrenten door te lezen. Dat kost je 30 minuten en houdt je scherp.
+
+**De volgende stap**
+
+Wil je weten hoe jij er online voor staat ten opzichte van je concurrenten in jouw regio? Bij Arka doen we dit soort analyses als onderdeel van onze aanpak, zodat we niet blind bouwen maar gericht werken aan zichtbaarheid die verschil maakt.
+
+Neem contact op via info@arkadigital.nl of bezoek arkadigital.nl. We kijken graag samen naar de online markt in jouw branche.`,
+    author: "Kaan Arslan",
+    publishedAt: "2026-05-22",
+    tags: ["Strategie", "SEO", "Marketing"],
+    readingTime: "9 min",
+  },
+  {
+    slug: "website-teksten-schrijven-die-verkopen",
+    title: "Website-teksten die verkopen: 6 principes voor MKB",
+    excerpt:
+      "De tekst op je website bepaalt of een bezoeker blijft of vertrekt. Zes concrete principes waarmee je website-copy schrijft die bezoekers omzet in klanten.",
+    content: `Je website kan er prachtig uitzien, snel laden en perfect werken op mobiel. Maar als de tekst niet klopt, doet de rest er weinig toe. Bezoekers lezen niet, ze scannen. Ze zoeken antwoord op drie vragen: zijn jullie voor mij, begrijpen jullie mijn probleem, en wat moet ik doen? Als je tekst die vragen niet beantwoordt in de eerste vijf seconden, zijn ze weg.
+
+In dit artikel leggen we zes principes uit die het verschil maken tussen website-teksten die bezoekers passief laten aftappen en teksten die hen aanzetten tot actie.
+
+**Waarom de meeste website-teksten niet werken**
+
+De meeste MKB-websites beginnen met iets als: "Wij zijn een toonaangevend bedrijf met jarenlange ervaring en een passie voor kwaliteit." Vervolgens een opsomming van diensten, een stukje over het team, en ergens onderaan een contactformulier.
+
+Het probleem: dit gaat over jou, niet over de klant. De bezoeker wil weten wat jij voor hem kunt betekenen, niet wat jij allemaal kunt. Die volgorde is cruciaal. Begin altijd bij het probleem van de klant, niet bij jouw oplossing.
+
+**Principe 1: schrijf voor de scanner, niet de lezer**
+
+Onderzoek naar leesgedrag op websites laat consistent hetzelfde patroon zien: mensen lezen in een F-patroon. Ze lezen de eerste regels horizontaal, scannen dan de linkerkant verticaal, en lezen hooguit een paar subkoppen volledig.
+
+Wat dit betekent voor je tekst:
+
+\u2022 **De eerste zin van elke alinea is de belangrijkste.** Als die niet overtuigend is, leest niemand de rest
+\u2022 **Gebruik subkoppen die op zichzelf staan.** Iemand die alleen de subkoppen leest, moet het verhaal nog steeds snappen
+\u2022 **Houd alinea's kort.** Maximaal drie tot vier regels. Grote tekstblokken schrikken af
+\u2022 **Gebruik bullet points voor lijsten.** Niet drie items in een zin stoppen, maar opsommen
+\u2022 **Vet de kernboodschap.** Maar overdrijf het niet. Als alles vet is, is niets vet
+
+Een goede test: lees alleen je subkoppen. Vertellen die het verhaal? Zo niet, herschrijf ze.
+
+**Principe 2: spreek de klant aan, niet jezelf**
+
+Tel het aantal keer dat je "wij", "ons" en de bedrijfsnaam gebruikt op je homepage. Tel daarna het aantal keer "jij", "jouw" en "je". In de meeste MKB-websites wint het eerste.
+
+De oplossing is simpel maar vraagt discipline: herschrijf elke zin die begint met "wij" naar een zin die begint vanuit het perspectief van de klant.
+
+Voor: "Wij leveren maatwerk websites voor MKB-bedrijven."
+Na: "Je krijgt een website die is afgestemd op jouw bedrijf en doelgroep, niet een standaard template."
+
+Het is dezelfde informatie, maar de tweede versie spreekt de bezoeker direct aan. Die voelt aangesproken, niet toegesproken.
+
+**Principe 3: wees concreet, niet vaag**
+
+"Wij leveren kwaliteit" zegt niets. "Onze websites laden gemiddeld in 1,2 seconden" zegt veel. Vaagheid is de vijand van vertrouwen.
+
+Concrete teksten werken beter om een aantal redenen. Ze zijn geloofwaardiger omdat ze specifiek zijn. Ze zijn makkelijker te onthouden. En ze maken het makkelijker voor de bezoeker om een beslissing te nemen.
+
+Controleer elke claim in je tekst. Als je "snel" schrijft, hoe snel dan? Als je "ervaren" schrijft, hoeveel jaar dan? Als je "tevreden klanten" schrijft, hoeveel dan en waarover? Maak het concreet.
+
+Voorbeelden:
+
+\u2022 Vaag: "We hebben uitgebreide ervaring"
+\u2022 Concreet: "We hebben 47 websites gebouwd voor MKB-bedrijven in de afgelopen 4 jaar"
+
+\u2022 Vaag: "Onze klanten zijn tevreden"
+\u2022 Concreet: "93% van onze klanten geeft ons een 8 of hoger op Google Reviews"
+
+\u2022 Vaag: "Snelle oplevering"
+\u2022 Concreet: "Je nieuwe website staat live binnen 6 weken, of we geven je de eerste maand gratis"
+
+**Principe 4: gebruik de taal van de klant**
+
+Je kent je vak. Je kent de terminologie, de afkortingen, de branchespecifieke begrippen. Je klant waarschijnlijk niet. Schrijf in de taal die je klant gebruikt, niet in de taal die jij gebruikt.
+
+De beste manier om te weten welke taal je klant spreekt: lees je reviews door. Lees de e-mails die klanten je sturen. Kijk op forums en in groepen waar je doelgroep actief is. Die teksten zitten vol met de exacte woorden en zinnen die je klant gebruikt om zijn problemen te beschrijven.
+
+Gebruik die taal in je website. Niet als een gimmick, maar omdat het de klant het gevoel geeft dat je hem begrijpt. "Ik heb het gevoel dat jullie precies snappen wat ik bedoel" is het beste compliment dat je kunt krijgen na een eerste kennismaking.
+
+**Principe 5: de call-to-action bepaalt je conversie**
+
+Elke pagina heeft een doel. Elke pagina moet de bezoeker vertellen wat de volgende stap is. Dat is de call-to-action (CTA).
+
+Slechte CTA's zijn vaag en vrijblijvend: "Neem contact op" of "Meer informatie". Goede CTA's zijn specifiek en beschrijven wat er gebeurt als je klikt.
+
+Vergelijk:
+
+\u2022 "Neem contact op" vs "Plan een gratis kennismakingsgesprek van 30 minuten"
+\u2022 "Meer informatie" vs "Download de gratis gids: 10 fouten bij website-onderhoud"
+\u2022 "Offerte aanvragen" vs "Vraag een offerte aan, reactie binnen 24 uur"
+
+De betere versie is specifieker, geeft de bezoeker een idee van wat hij kan verwachten, en verlaagt de drempel. "Gratis" en "vrijblijvend" werken, niet omdat het verkooptrucs zijn, maar omdat ze bezwaren wegnemen.
+
+Zorg dat je CTA bovenaan de pagina staat, niet alleen onderaan. De meeste bezoekers scrollen niet tot het einde. Als ze overtuigd zijn, willen ze direct kunnen handelen.
+
+**Principe 6: bewijs wat je beweert**
+
+Elke claim die je doet, heeft bewijs nodig. Bewijs in de vorm van:
+
+\u2022 **Klantverhalen** met een concreet resultaat. Niet "klant X is tevreden" maar "klant X haalde 340% meer aanvragen via de website na de herinrichting"
+\u2022 **Cijfers** die je prestaties onderbouwen. Aantal projecten, gemiddelde score, jaren ervaring
+\u2022 **Logo's van klanten** die je hebt geholpen, met toestemming
+\u2022 **Screenshots of voorbeelden** van resultaten die je hebt behaald
+\u2022 **Garanties** die het risico voor de klant verlagen
+
+Bewijs werkt omdat het de twijfel wegneemt. De klant wil jou geloven, maar heeft reden nodig. Geef hem die reden in de vorm van bewijs, niet in de vorm van mooie woorden.
+
+**Hoe je nu begint**
+
+Je hoeft je hele website niet in een keer te herschrijven. Begin met je homepage en je meest bezochte diensten-pagina. Ga door die teksten heen met deze zes principes als checklist:
+
+1. Begint de tekst bij het probleem van de klant?
+2. Zeggen de subkoppen op zichzelf genoeg?
+3. Is de tekst in "jij"-perspectief geschreven?
+4. Zijn alle claims concreet en specifiek?
+5. Gebruik ik de taal van mijn klant?
+6. Is er een duidelijke CTA bovenaan?
+
+Bij elk "nee" heb je een verbeterpunt. En elk verbeterpunt is een kans op meer leads vanuit het verkeer dat je al hebt.
+
+Wil je sparren over de tekst op jouw website? Stuur een bericht naar info@arkadigital.nl. We kijken mee en geven concrete feedback op wat beter kan.`,
+    author: "Kaan Arslan",
+    publishedAt: "2026-05-24",
+    tags: ["Content", "Websites", "Conversie"],
+    readingTime: "8 min",
+  },
+  {
+    slug: "ssl-certificaat-waarom-belangrijk",
+    title: "SSL-certificaat: waarom HTTPS essentieel is voor je website",
+    excerpt:
+      "Nog steeds geen HTTPS? Dan verlies je bezoekers, vertrouwen en zoekposities. Wat een SSL-certificaat is, wat het kost en waarom je er geen dag mee moet wachten.",
+    content: `Als je in de adresbalk van je browser kijkt en je ziet "Niet beveiligd" staan bij een website, klik je waarschijnlijk snel weg. Je bezoekers doen hetzelfde. Een SSL-certificaat en HTTPS zijn in 2026 geen luxe of technisch detail meer. Het is de basisvereiste voor elk bedrijf dat serieus genomen wil worden online.
+
+In dit artikel leggen we uit wat een SSL-certificaat precies is, waarom het zo belangrijk is, wat het kost en hoe je het regelt.
+
+**Wat is een SSL-certificaat?**
+
+SSL staat voor Secure Sockets Layer, maar de term wordt tegenwoordig door elkaar gebruikt met TLS (Transport Layer Security). Het is de opvolger van SSL en technisch gezien wat moderne websites gebruiken, maar de naam "SSL-certificaat" is blijven hangen.
+
+Een SSL-certificaat doet twee dingen:
+
+\u2022 **Versleuteling:** alle data die wordt verstuurd tussen de browser van je bezoeker en jouw server is versleuteld. Wachtwoorden, formulierinvulling, betaalgegevens, alles. Zonder SSL is die data leesbaar voor iedereen die de verbinding onderschept
+\u2022 **Authenticatie:** het certificaat bewijst dat jouw website werkelijk eigendom is van jouw bedrijf, niet van een oplichter die een kopie heeft gemaakt
+
+Wanneer een website een geldig SSL-certificaat heeft, verschijnt er een slotje in de adresbalk en begint het adres met "https://" in plaats van "http://". Die "s" staat voor secure.
+
+**Wat gebeurt er zonder SSL?**
+
+Zonder SSL-certificaat gebeuren er een paar vervelende dingen tegelijkertijd.
+
+Chrome, Firefox, Safari en Edge tonen allemaal een prominente waarschuwing aan bezoekers: "Uw verbinding is niet privé" of "Niet beveiligd". Bij Chrome krijg je dit al te zien voordat je de pagina opent, met een rode driehoek en een duidelijke melding. De meeste bezoekers klikken weg zonder verder te lezen.
+
+Google straft onbeveiligde websites. Sinds 2014 is HTTPS een officieel rankingfactor in Googles algoritme. Twee websites die verder identiek zijn qua content en autoriteit: de HTTPS-versie rankt hoger. In een competitieve markt is dit het verschil tussen pagina 1 en pagina 2.
+
+Formuliergegevens zijn onbeveiligd. Als iemand zijn naam, e-mailadres of telefoonnummer invult op een website zonder SSL, is die data onderweg potentieel leesbaar. Bij betaalgegevens is dit direct een veiligheidsrisico.
+
+Je verliest het vertrouwen van klanten. De meeste bezoekers weten niet precies wat een SSL-certificaat is, maar ze begrijpen het slotje. Of het ontbreken ervan. Een website zonder slotje is een website die ze niet vertrouwen.
+
+**Wie heeft een SSL-certificaat nodig?**
+
+Kort antwoord: iedereen met een website.
+
+Lang antwoord: het is extra urgent als:
+
+\u2022 Je bezoekers gegevens laat invullen via formulieren (contactformulier, offerte-aanvraag, inschrijving)
+\u2022 Je een webshop hebt met betalingen
+\u2022 Je klantaccounts of inlogfunctionaliteit hebt
+\u2022 Je blog of content publiceert die je wilt laten indexeren door Google
+\u2022 Je adverteert via Google Ads of Meta (die platformen willen HTTPS op de landingspagina)
+
+Maar ook de eenvoudigste "visitekaartje-website" heeft er last van. Een website zonder HTTPS communiceert nalatigheid, ook al verwerk je geen gevoelige gegevens.
+
+**Welke typen SSL-certificaten zijn er?**
+
+Er zijn drie niveaus:
+
+\u2022 **Domain Validation (DV):** bevestigt alleen dat jij eigenaar bent van het domein. Het slotje verschijnt in de browser. Dit is voldoende voor de meeste MKB-websites. Kosten: gratis via Let's Encrypt, of 10 tot 50 euro per jaar via je hostingprovider
+\u2022 **Organization Validation (OV):** bevestigt ook de identiteit van het bedrijf. De Certificate Authority controleert of je bedrijf echt bestaat. Zichtbaar in de certificaatdetails, niet in de adresbalk. Kosten: 50 tot 200 euro per jaar
+\u2022 **Extended Validation (EV):** het hoogste niveau van verificatie. Vroeger toonden browsers de bedrijfsnaam groen in de adresbalk, maar dit is afgeschaft. EV-certificaten zijn nu nog nauwelijks te onderscheiden van OV voor de eindgebruiker. Kosten: 200 tot 700 euro per jaar
+
+Voor de meeste MKB-bedrijven is een DV-certificaat meer dan voldoende. Het geeft het slotje, versleutelt de verbinding, en kost niets of weinig.
+
+**Let's Encrypt: gratis en automatisch**
+
+Let's Encrypt is een non-profit Certificate Authority die gratis SSL-certificaten uitgeeft. Vrijwel alle moderne hostingproviders integreren Let's Encrypt automatisch. Je hoeft er niets voor te doen: bij het aanmaken van je website of domein wordt het certificaat automatisch ingesteld en automatisch verlengd.
+
+Als je hostingprovider dit niet automatisch regelt, is dat een signaal om een betere provider te zoeken. In 2026 is automatisch SSL de standaard, niet een premium feature.
+
+**HTTPS instellen: waar let je op?**
+
+Als je van HTTP naar HTTPS migreert, zijn er een paar technische punten die niet mogen ontbreken:
+
+\u2022 **301-redirects instellen:** elke HTTP-URL moet permanent doorverwijzen naar de HTTPS-versie. Anders heb je twee versies van je website die met elkaar concurreren
+\u2022 **Mixed content oplossen:** als je HTTPS-pagina afbeeldingen of scripts laadt via HTTP, krijg je een "mixed content"-waarschuwing. Alle resources moeten via HTTPS geladen worden
+\u2022 **Canonical URLs bijwerken:** alle interne links, sitemaps en canonical tags moeten verwijzen naar de HTTPS-versies
+\u2022 **Google Search Console bijwerken:** voeg de HTTPS-versie van je site toe als nieuwe property en stel het in als voorkeurversie
+
+Dit klinkt technisch, maar de meeste moderne hostingplatformen doen dit automatisch. Bij Vercel, Netlify en vergelijkbare platforms is HTTPS standaard ingeschakeld en zijn redirects automatisch ingesteld.
+
+**Veelgemaakte fouten**
+
+\u2022 **Certificaat verlopen laten:** een verlopen SSL-certificaat is net zo erg als geen certificaat. Browsers tonen dezelfde waarschuwing. Gebruik automatische verlenging, die is overal beschikbaar
+\u2022 **Alleen de homepage beveiligen:** alle pagina's moeten HTTPS hebben, niet alleen de homepage
+\u2022 **Backlinks niet bijwerken:** externe links die naar HTTP-versies verwijzen verliezen een klein deel van hun autoriteit bij de redirect. Je kunt partners vragen de links te updaten, maar het is niet kritiek
+\u2022 **Google Analytics niet bijwerken:** na de migratie moet je in GA4 de property-instelling updaten naar de HTTPS-URL
+
+**Wat kost het?**
+
+De kosten hangen af van je hostingopstelling:
+
+\u2022 **Gratis:** bij moderne hostingproviders (Vercel, Netlify, SiteGround, Hostinger) is Let's Encrypt inbegrepen in elk abonnement
+\u2022 **Goedkoop:** traditionele hostingproviders rekenen 10 tot 50 euro per jaar voor een DV-certificaat als het niet inbegrepen is
+\u2022 **Premium:** OV of EV certificaten kosten 100 tot 700 euro per jaar. Alleen relevant voor financiele instellingen, advocatenkantoren of andere sectoren waar klanten actief naar certificaatdetails kijken
+
+Als je nu nog voor SSL betaalt bij een hostingprovider die dat in rekening brengt, is het een goed moment om je hostingopties opnieuw te bekijken. Er zijn betere alternatieven voor dezelfde of lagere prijs met automatisch SSL inbegrepen.
+
+**De conclusie is simpel**
+
+Er is geen enkel argument om in 2026 nog zonder SSL-certificaat te werken. Het kost niets, het instellen is bij elke moderne host automatisch, en de voordelen zijn concreet: meer vertrouwen bij bezoekers, betere posities in Google, en veilige gegevensoverdracht.
+
+Is jouw website nog niet beveiligd, of weet je het niet zeker? Kijk in de adresbalk van je browser. Zie je geen slotje? Neem dan contact op via info@arkadigital.nl. We controleren je website en helpen je de stap naar HTTPS te zetten.`,
+    author: "Kaan Arslan",
+    publishedAt: "2026-05-26",
+    tags: ["Websites", "Beveiliging", "SEO"],
+    readingTime: "7 min",
+  },
+  {
+    slug: "klantreviews-verzamelen-en-tonen",
+    title: "Klantreviews verzamelen en inzetten voor meer vertrouwen",
+    excerpt:
+      "Reviews zijn het krachtigste verkoopargument dat je hebt. Hoe je ze structureel verzamelt, waar je ze plaatst en hoe je ze laat werken voor je bedrijf.",
+    content: `Je kunt de beste website hebben, de beste dienst leveren en de laagste prijs aanbieden. Maar als een potentiele klant jouw naam googelt en geen reviews vindt, twijfelt hij. En twijfel is de vijand van de koopbeslissing.
+
+Reviews zijn het meest overtuigende bewijs dat je kunt leveren. Niet omdat een review een verkoopargument is dat jij bedacht hebt, maar omdat het een verkoopargument is dat een bestaande klant voor jou maakt. En dat is fundamenteel anders.
+
+In dit artikel leggen we uit hoe je reviews structureel verzamelt, waar je ze het beste plaatst, en hoe je ze inzet als onderdeel van je sales- en marketingstrategie.
+
+**Waarom reviews zo krachtig zijn**
+
+Het menselijk brein is geprogrammeerd om sociale bewijskracht te zoeken bij beslissingen. Als we niet zeker weten wat we moeten kiezen, kijken we wat anderen gekozen hebben. Dat is geen zwakte, het is een evolutionair efficiënte beslissingsstrategie.
+
+In de context van een aankoopbeslissing werkt dit zo: een potentiele klant die jouw website bezoekt, is op zoek naar zekerheid dat hij de juiste keuze maakt. Jouw eigen teksten geven hem die zekerheid niet, want die ben je zelf. Reviews van andere klanten geven hem die zekerheid wel, want die zijn onafhankelijk.
+
+Concrete cijfers die dit onderbouwen: de meeste ondernemers die hun reviewstrategie actief inzetten, zien een hogere conversieratio op hun offerteaanvragen. Niet omdat de dienst beter is geworden, maar omdat potentiele klanten meer vertrouwen hebben voor ze contact opnemen.
+
+Reviews hebben ook een direct effect op je vindbaarheid in Google. Google Business Profile-profielen met meer reviews en hogere scores ranken beter in de lokale zoekresultaten. Meer reviews betekent meer zichtbaarheid, meer zichtbaarheid betekent meer bezoekers.
+
+**Stap 1: vraag erom, maar doe het goed**
+
+De meeste ondernemers verzamelen geen reviews omdat ze er niet om vragen. Ze hopen dat tevreden klanten vanzelf iets schrijven. Dat doen ze zelden, simpelweg omdat het initiatief en moeite kost.
+
+De oplossing is simpel: vraag er actief om, op het juiste moment.
+
+Het juiste moment is vlak na een succesvol afgeronde opdracht. De klant is tevreden, de samenwerking is vers in zijn geheugen, de emotie is positief. Dat is het moment om te vragen, niet drie maanden later als de klant al aan het volgende project werkt.
+
+Hoe je vraagt, bepaalt of je een reactie krijgt:
+
+\u2022 **Persoonlijk is het beste.** In een afsluitend gesprek of telefoontje: "We zijn blij met hoe dit project is verlopen. Zou je bereid zijn een korte review achter te laten op Google? Het helpt andere bedrijven ons te vinden." De meeste mensen zeggen ja als ze worden gevraagd door iemand die ze kennen
+\u2022 **Follow-up e-mail met directe link.** Stuur na het gesprek een e-mail met een directe link naar je Google-reviewpagina. Niet naar je website, niet naar je Google Business Profile homepage, maar de directe link naar het reviewformulier. Elke extra klik die de klant moet maken, verkleint de kans dat hij het doet
+\u2022 **Maak het makkelijk.** Geef een korte toelichting: "Een paar zinnen over de samenwerking is meer dan genoeg. Je hoeft geen essay te schrijven." De drempel om te beginnen is vaak het probleem, niet de wil om te helpen
+
+**Stap 2: maak het een proces, niet een incident**
+
+Een keer vragen aan een enthousiaste klant levert een review op. Een structureel proces levert een constante stroom aan reviews op.
+
+Bouw het verzamelen van reviews in als standaard onderdeel van je klantproces:
+
+\u2022 **Afsluiting van elk project** omvat een evaluatiegesprek en een reviewverzoek
+\u2022 **Drie maanden na oplevering** stuur je een check-in e-mail over hoe het gaat. Als de klant positief reageert, is dat een goed moment om alsnog te vragen
+\u2022 **Jaarlijkse klanten** bij vaste klanten vraag je eens per jaar of ze bereid zijn hun ervaring bij te werken of te delen
+
+Het gaat niet om volume om het volume. Vijf recente, gedetailleerde reviews zijn waardevoller dan twintig korte reviews van drie jaar geleden. Google kijkt naar recenheid, en potentiele klanten ook.
+
+**Stap 3: reageer op elke review**
+
+Op elke review reageren is verplicht werk, niet optioneel. Waarom:
+
+\u2022 Het laat zien dat je actief betrokken bent bij je klanten
+\u2022 Potentiele klanten lezen niet alleen de reviews, ze lezen ook de reacties. Hoe jij reageert op kritiek zegt meer dan de kritiek zelf
+\u2022 Google beloont actieve Google Business Profile-profielen met betere zichtbaarheid
+
+Voor positieve reviews: bedank de klant persoonlijk, noem iets specifieks uit de samenwerking als dat mogelijk is, en vermijd standaard teksten die op elke review hetzelfde klinken.
+
+Voor kritische reviews: bedank de klant voor de feedback, erken het probleem zonder je in te graven in de details, en bied aan het gesprek voort te zetten via e-mail of telefoon. Verdedig jezelf nooit publiek. Zelfs als de kritiek onterecht is, ziet elke lezer dan twee partijen ruziemaken. Dat is nooit een goed beeld.
+
+**Stap 4: zet reviews in op je website**
+
+Een review op Google is waardevol. Diezelfde review prominent op je website zetten verdubbelt de waarde.
+
+Waar je reviews plaatst op je website:
+
+\u2022 **Homepage bovenaan de vouw.** Niet onderaan. Bezoekers die je homepage bezoeken, moeten binnen de eerste scroll al sociaal bewijs zien. Een star-rating met het aantal reviews en een citaat van een klant werkt goed
+\u2022 **Diensten-pagina's.** Plaats relevante reviews bij de dienst waarover ze gaan. Een review over je webdesign-dienst hoort op de webdesign-pagina, niet alleen op de homepage
+\u2022 **Offerte- en contactpagina.** Vlak voor het formulier is een strategische plek. De bezoeker staat op het punt contact op te nemen, en een sterke review op dat moment haalt de laatste twijfel weg
+\u2022 **Speciale testimonials-pagina.** Niet in plaats van bovenstaande, maar als aanvulling. Klanten die dieper in de aankoopcyclus zitten, lezen die pagina's
+
+Hoe je reviews presenteert:
+
+\u2022 **Gebruik naam en bedrijf.** Anonieme reviews wekken minder vertrouwen. Vraag toestemming om naam en bedrijf te vermelden
+\u2022 **Voeg een foto toe.** Een gezicht maakt een review menselijker en geloofwaardiger
+\u2022 **Kies reviews met specifieke resultaten.** "Super tevreden" is minder overtuigend dan "onze aanvragen zijn verdubbeld na de nieuwe website"
+
+**Stap 5: gebruik reviews in je sales-proces**
+
+Reviews zijn niet alleen nuttig op je website. Ze horen thuis in je hele sales-aanpak:
+
+\u2022 **In offertes en voorstellen** voeg je een selectie van relevante reviews toe. Een review van een klant in dezelfde branche als je prospect is bijzonder overtuigend
+\u2022 **In e-mailcampagnes** gebruik je reviews als bewijs bij het introduceren van een dienst of aanbod
+\u2022 **In LinkedIn-posts** deel je klantresultaten (met toestemming) als onderdeel van je contentmarketing
+\u2022 **In eerste gesprekken** verwijs je naar specifieke klanten die een vergelijkbaar probleem hadden en hoe dat is opgelost
+
+Het idee is dat een potentiele klant op meerdere momenten in zijn beslissingsproces bewijzen ziet dat andere bedrijven succesvol met jou samengewerkt hebben.
+
+**Wat als je negatieve reviews krijgt?**
+
+Elke ondernemer krijgt op een gegeven moment een kritische review. Hoe je daar mee omgaat, is veelzeggender dan de review zelf.
+
+Reageer altijd. Bedank voor de feedback. Erken het probleem als het terecht is. Bied aan het op te lossen. Doe dit publiek maar houd de details privé.
+
+Klanten die een negatieve review achterlaten en vervolgens zien dat het bedrijf er serieus op reageert, trekken die review soms zelf in of passen hem aan. En andere lezers zien dat je een volwassen en klantgericht bedrijf bent.
+
+Een bedrijf met 47 reviews van gemiddeld 4,7 is geloofwaardiger dan een bedrijf met 10 reviews van gemiddeld 5,0. Perfectie wekt wantrouwen. Echtheid verkoopt.
+
+**Begin vandaag**
+
+Ga je reviewproces niet plannen voor volgende maand. Stuur vandaag nog een bericht naar je drie meest tevreden klanten van de afgelopen zes maanden. Vraag hen om een review op Google, met een directe link. Drie reviews meer is een betere start dan nul reviews volgend kwartaal.
+
+Wil je hulp bij het inrichten van een reviewstrategie of het verwerken van reviews op je website? Neem contact op via info@arkadigital.nl.`,
+    author: "Kaan Arslan",
+    publishedAt: "2026-05-28",
+    tags: ["Marketing", "Conversie", "MKB"],
+    readingTime: "8 min",
+  },
+  {
+    slug: "website-analytics-beginnersgids",
+    title: "Google Analytics voor beginners: wat moet je meten?",
+    excerpt:
+      "Google Analytics geeft je bergen data, maar welke cijfers doen er echt toe voor een MKB-bedrijf? Een praktische gids voor wie niet in data wil verdrinken.",
+    content: `Google Analytics is gratis, krachtig en geinstalleerd op miljoenen websites. Maar de meeste ondernemers openen het dashboard, zien tientallen grafieken en getallen, sluiten het weer en vergeten het voor weken. Herkenbaar.
+
+Het probleem is niet Analytics zelf, maar het ontbreken van een duidelijk startpunt. In dit artikel geven we dat startpunt: de vijf metrics die er echt toe doen voor een MKB-website, wat ze betekenen, en welke acties je erop kunt baseren.
+
+**Waarom je website-data eigenlijk meet**
+
+Voordat we de cijfers ingaan: meten heeft alleen zin als je er conclusies aan verbindt en er acties op onderneemt. Een mooi dashboard bijhouden zonder daar iets mee te doen is tijdverspilling.
+
+Het doel van website-analytics is eenvoudig: begrijpen wat werkt, wat niet werkt, en waar je tijd en geld in moet investeren om meer resultaat te halen uit je website. Niet meer, niet minder.
+
+Met die lens bekijk je de vijf metrics hieronder.
+
+**GA4 instellen: de basis**
+
+Als je Google Analytics nog niet hebt, begin dan met GA4 (Google Analytics 4). Dat is de huidige versie. De oudere versie (Universal Analytics) bestaat niet meer.
+
+Installatie:
+
+1. Maak een account aan op analytics.google.com
+2. Maak een nieuwe property aan voor je website
+3. Kopieer de meetcode (G-XXXXXXXXXX) die je krijgt
+4. Plak die code op je website. Bij WordPress via een plugin zoals "Site Kit by Google" of via de header. Bij een maatwerk website geef je de code door aan je developer
+
+Na installatie duurt het 24 tot 48 uur voordat je de eerste data ziet. Controleer na 48 uur of bezoekers worden gemeten door bij Realtime te kijken terwijl je je eigen website bezoekt.
+
+**Metric 1: Gebruikers en sessies**
+
+Wat het is: het aantal unieke bezoekers (gebruikers) en het aantal bezoeken (sessies) in een periode. Een gebruiker kan meerdere sessies hebben als hij op verschillende dagen terugkomt.
+
+Waar je het vindt: Rapporten, Levenscyclus, Overzicht.
+
+Wat je ermee doet:
+
+\u2022 Bekijk de trend over weken en maanden. Groeit het verkeer, of daalt het?
+\u2022 Vergelijk periodes. Hoe doet deze maand het vergeleken met vorig jaar dezelfde periode?
+\u2022 Identificeer pieken. Op welke dagen of na welke acties (een LinkedIn-post, een e-mailnieuwsbrief) stijgt het verkeer?
+
+Wat je niet moet doen: obsessief dagelijks kijken. Dagelijkse schommelingen zijn normaal en betekenen niets. Bekijk trends over minimaal vier weken.
+
+**Metric 2: Kanalen (waar komen bezoekers vandaan?)**
+
+Wat het is: een overzicht van de bronnen waarvandaan bezoekers op je website komen. De belangrijkste kanalen voor MKB:
+
+\u2022 **Organic Search:** bezoekers die je gevonden hebben via een zoekmachine (Google, Bing)
+\u2022 **Direct:** bezoekers die je URL direct intikten of via een bladwijzer kwamen
+\u2022 **Referral:** bezoekers die via een link op een andere website kwamen
+\u2022 **Social:** bezoekers via social media (LinkedIn, Instagram, Facebook)
+\u2022 **Email:** bezoekers via een e-mailcampagne
+
+Waar je het vindt: Rapporten, Acquisitie, Verkeersbronnen, Overzicht.
+
+Wat je ermee doet:
+
+\u2022 Begrijp welke kanalen het meeste verkeer brengen. Als 80% van je bezoekers via direct verkeer komt, betekent dat dat je weinig vindbaar bent via Google en weinig actief bent op andere kanalen
+\u2022 Vergelijk kanalen op kwaliteit, niet alleen op volume. Organic Search-bezoekers zijn vaak beter gekwalificeerd dan Social-bezoekers, omdat ze actief op zoek waren naar wat jij aanbiedt
+\u2022 Meet het effect van acties. Stuur je een nieuwsbrief? Kijk daarna of Email-verkeer piekte. Post je op LinkedIn? Kijk of Social-verkeer steeg
+
+**Metric 3: Betrokkenheidspercentage (engagement rate)**
+
+Wat het is: het percentage sessies waarbij een bezoeker minimaal 10 seconden op je website heeft doorgebracht, een conversiegebeurtenis heeft geactiveerd, of minimaal twee pagina's heeft bekeken. GA4 verving het oude "bouncepercentage" door dit positievere alternatief.
+
+Een hoog betrokkenheidspercentage (70%+) betekent dat bezoekers doen wat je wil: ze lezen, klikken en blijven. Een laag percentage (onder de 50%) betekent dat bezoekers snel weggaan.
+
+Waar je het vindt: Rapporten, Betrokkenheid, Overzicht. Of per pagina bij Pagina's en schermen.
+
+Wat je ermee doet:
+
+\u2022 Kijk welke pagina's een laag betrokkenheidspercentage hebben. Dat zijn de pagina's die bezoekers afschrikken. Is de inhoud niet relevant? Is de pagina te traag? Is de tekst niet overtuigend?
+\u2022 Vergelijk het percentage per kanaal. Social-bezoekers hebben vaak een lager percentage dan Organic-bezoekers, omdat de intentie bij zoekverkeer hoger is
+
+**Metric 4: Conversies**
+
+Wat het is: een conversie is een waardevolle actie die een bezoeker op je website uitvoert. Voor de meeste MKB-websites zijn de voornaamste conversies:
+
+\u2022 Een contactformulier invullen
+\u2022 Een offerte aanvragen
+\u2022 Een telefoonnummer aanklikken
+\u2022 Een e-mailadres aanklikken
+\u2022 Een brochure downloaden
+
+Conversies meten is de meest waardevolle meting die je kunt doen. Want dit zijn de acties die direct bijdragen aan omzet.
+
+GA4 instellen voor conversies vereist een beetje technische kennis of hulp van een developer. De makkelijkste manier: maak een "bedankt"-pagina aan die bezoekers te zien krijgen nadat ze een formulier hebben ingevuld. Stel een conversie in op het bekijken van die pagina. Elke bezoeker van /bedankt is een lead.
+
+Wat je ermee doet:
+
+\u2022 Bereken je conversierate: conversies gedeeld door sessies maal 100%. De gemiddelde website scoort 1 tot 3%. Als jij 1% of lager scoort, is er ruimte voor verbetering
+\u2022 Bekijk welke kanalen de meeste conversies opleveren. Organic Search levert misschien minder bezoekers dan Direct, maar converteert die bezoekers beter
+\u2022 Volg de trend over tijd. Daalt de conversierate na een website-update? Dan is er iets mis gegaan. Stijgt hij na een nieuwe CTA? Dan werkt die aanpassing
+
+**Metric 5: De populairste pagina's**
+
+Wat het is: een ranglijst van je meest bezochte pagina's, met het aantal weergaven, de gemiddelde tijd op de pagina en het betrokkenheidspercentage per pagina.
+
+Waar je het vindt: Rapporten, Betrokkenheid, Pagina's en schermen.
+
+Wat je ermee doet:
+
+\u2022 **Investeer in je meest bezochte pagina's.** Als 60% van je bezoekers op je diensten-pagina belandt, is die pagina het belangrijkst om te optimaliseren. Niet je over-ons-pagina
+\u2022 **Identificeer onverwachte successen.** Soms rankt een blogpost of een specifieke dienst-pagina beter dan je homepage. Dat is een kans om die pagina te versterken met een sterkere CTA
+\u2022 **Vind zwakke pagina's.** Een pagina die veel bezoekers trekt maar een laag betrokkenheidspercentage heeft, stelt bezoekers teleur. De inhoud komt niet overeen met wat ze verwachtten
+
+**Drie rapporten die je maandelijks bekijkt**
+
+Je hoeft Analytics niet dagelijks te checken. Een maandelijkse review van dertig minuten is voldoende als je de juiste rapporten bekijkt:
+
+1. **Verkeersontwikkeling:** gebruikers en sessies, huidige maand vs. vorige maand vs. zelfde maand vorig jaar. Groeit het verkeer?
+2. **Kanalen:** welke bronnen brachten dit maand verkeer? Zijn er wijzigingen ten opzichte van de maand daarvoor?
+3. **Conversies per kanaal:** welke kanalen leverden leads op? Wat was de conversierate per kanaal?
+
+Die drie rapporten geven je een compleet beeld van hoe je website presteert en waar je aandacht naartoe moet.
+
+**Wat je niet moet meten**
+
+Tot slot een waarschuwing: GA4 heeft tientallen rapporten en honderden dimensies. Laat je niet meeslepen.
+
+Metrics die er voor de meeste MKB-bedrijven niet toe doen:
+
+\u2022 Gemiddelde sessieduur (te weinig context zonder aanvullende data)
+\u2022 Nieuwe vs. terugkerende bezoekers (interessant, maar niet actiegericht voor starters)
+\u2022 Geografische spreiding (tenzij je actief target op specifieke regio's)
+\u2022 Apparaattype (nuttig voor design-beslissingen, niet voor maandelijkse sturing)
+
+Meer data is niet beter. Minder metrics, duidelijkere acties: dat is het doel.
+
+Hulp nodig bij het inrichten van Google Analytics of het interpreteren van je data? Stuur een bericht naar info@arkadigital.nl en we kijken samen wat je data je vertelt.`,
+    author: "Kaan Arslan",
+    publishedAt: "2026-05-30",
+    tags: ["Analytics", "Marketing", "MKB"],
+    readingTime: "9 min",
+  },
+  {
+    slug: "online-vindbaarheid-zonder-advertenties",
+    title: "Online vindbaar worden zonder te adverteren",
+    excerpt:
+      "Je hoeft geen euro te betalen aan Google of Meta om gevonden te worden. Vijf strategieen waarmee MKB-bedrijven organisch groeien in zichtbaarheid.",
+    content: `Adverteren werkt. Maar het stopt zodra je portemonnee sluit. Betaal je niet meer, dan ben je niet meer zichtbaar. Voor veel MKB-bedrijven is dat een probleem: advertentiebudgetten zijn afhankelijk van omzet, en omzet is afhankelijk van zichtbaarheid. Een cirkel die je kunt doorbreken door te investeren in kanalen die blijven werken ook als je niks meer betaalt.
+
+In dit artikel bespreken we vijf strategieen waarmee je organische zichtbaarheid opbouwt, zonder advertentiebudget. Het kost tijd en consistentie, maar het rendement is duurzamer dan elke betaalde campagne.
+
+**Waarom organische zichtbaarheid beter is dan betaald**
+
+Betaald adverteren en organische zichtbaarheid zijn geen concurrenten, ze vullen elkaar aan. Maar er is een fundamenteel verschil in hoe ze werken:
+
+Betaalde advertenties zijn huurwerk. Je betaalt voor een plek in de zoekresultaten of in de feed van je doelgroep. Zodra de betaling stopt, verdwijnt de zichtbaarheid. De investering levert geen blijvend asset op.
+
+Organische zichtbaarheid is eigendom. Een goed gerankte pagina in Google blijft verkeer trekken maand na maand. Een LinkedIn-post die resoneerde, circuleert nog weken. Een vermelding in een vakblog trekt jarenlang bezoekers. Je bouwt iets op dat je bezit.
+
+Het nadeel van organisch: het kost meer tijd voordat het resultaat oplevert. Wie vandaag begint met SEO of contentmarketing, ziet pas na drie tot zes maanden substantieel resultaat. Wie geduld heeft, wordt beloond met verkeer dat niet stopt zodra het budget op is.
+
+**Strategie 1: Google Business Profile optimaliseren**
+
+Dit is het snelste wat je kunt doen voor lokale vindbaarheid. Google Business Profile (GBP) is het profiel dat verschijnt als mensen zoeken op jouw bedrijfsnaam of op diensten in jouw regio. Het is gratis, het werkt snel, en de meeste MKB-bedrijven laten er kansen liggen.
+
+Een volledig en actief GBP-profiel verschijnt in de lokale zoekresultaten (de "map pack") bovenaan de pagina, boven de reguliere zoekresultaten. Dat is prime real estate die je gratis kunt hebben.
+
+Wat je doet:
+
+\u2022 Claim en verifieer je profiel op business.google.com
+\u2022 Vul alle velden volledig in: naam, adres, telefoonnummer, website, openingstijden, categorie, omschrijving
+\u2022 Voeg foto's toe van je werk, je ruimte of je team
+\u2022 Vraag actief om reviews van klanten en reageer op elke review
+\u2022 Maak wekelijks een Google Post met een update, tip of aanbieding
+\u2022 Beantwoord vragen in de Q&A-sectie
+
+Bedrijven met een volledig ingevuld GBP-profiel ontvangen significant meer oproepen en websitebezoeken dan bedrijven met een half ingevuld profiel. Dit is de laagdrempeligste manier om meer lokale zichtbaarheid te krijgen.
+
+**Strategie 2: Zoekmachineoptimalisatie (SEO) voor je website**
+
+SEO is het optimaliseren van je website zodat Google hem toont wanneer mensen zoeken op termen die relevant zijn voor jouw dienst. Het is een vak op zich, maar de basisprincipes zijn toegankelijk voor elke ondernemer.
+
+**Zoekwoordenonderzoek:** begin met de vraag welke termen jouw potentiele klanten intypen. Niet "webdesign bureau" maar "website laten maken Dordrecht" of "kosten nieuwe website MKB". Die specifieke, zogeheten long-tail zoekwoorden hebben minder concurrentie en hogere koopintentie.
+
+Gebruik Google zelf: typ een zoekterm in en kijk wat Google als suggesties geeft. Dat zijn termen die echte mensen zoeken.
+
+**On-page SEO:** zorg dat elke pagina op je website duidelijk is over waar die pagina over gaat:
+
+\u2022 De paginatitel (het blauwe klikbare link in Google) bevat het hoofdzoekwoord
+\u2022 De meta-omschrijving (de grijze tekst eronder) is een uitnodiging om te klikken, geen opsomming van diensten
+\u2022 De eerste alinea op de pagina bevat het zoekwoord
+\u2022 Subkoppen (H2, H3) structureren de inhoud en bevatten relevante termen
+
+**Technische SEO:** zorg dat je website snel laadt, mobiel werkt en geen gebroken links heeft. Google crawlt je website en straft technische problemen. Gebruik Google Search Console (gratis) om technische problemen te vinden.
+
+**Contentmarketing:** publiceer regelmatig inhoud die antwoord geeft op de vragen van je doelgroep. Dat is strategie 3.
+
+SEO is een marathon, geen sprint. Verwacht geen resultaat binnen vier weken. Verwacht wel dat het verkeer dat je na zes maanden begint te ontvangen, blijft groeien zolang je consistent doorgaat.
+
+**Strategie 3: Contentmarketing via een blog**
+
+Een blog op je website is een van de krachtigste SEO-instrumenten die je hebt. Elke blogartikel is een extra pagina die kan ranken in Google op zijn eigen zoekwoorden. Twintig artikelen is twintig extra ingangen naar je website.
+
+Maar een blog werkt alleen als je het strategisch aanpakt. De meeste MKB-blogs mislukken omdat ze:
+
+\u2022 Schrijven over zichzelf ("we hebben een nieuwe medewerker") in plaats van over de problemen van de klant
+\u2022 Onregelmatig publiceren (twee artikelen in januari, niets meer tot oktober)
+\u2022 Geen specifiek zoekwoord targeten per artikel
+
+Hoe het wel werkt:
+
+Schrijf elk artikel als antwoord op een specifieke vraag die je doelgroep heeft. Niet "onze visie op digitale marketing" maar "hoe kies ik een webdesign bureau: 7 criteria voor MKB". De eerste interesseert niemand buiten je eigen netwerk. De tweede is precies waar een ondernemer op zoekt als hij een bureau wil kiezen.
+
+Publiceer minimaal twee keer per maand. Consistentie is belangrijker dan frequentie. Twee artikelen per maand, altijd, is beter dan vijf artikelen in een goede maand en nul in de slechte maand erna.
+
+Maak de artikelen lang genoeg om waardevol te zijn. Artikelen van 800 tot 1.500 woorden presteren beter in Google dan korte stukken van 300 woorden. Inhoud heeft ruimte nodig.
+
+**Strategie 4: LinkedIn als organisch B2B-kanaal**
+
+Als jij zakelijke klanten bedient, is LinkedIn het krachtigste organische sociale kanaal dat je hebt. En in tegenstelling tot Instagram of Facebook, geeft LinkedIn je bereik zonder te betalen.
+
+Waarom LinkedIn werkt voor B2B organisch:
+
+\u2022 Het algoritme beloont native content. Een LinkedIn-post die goed scoort, wordt doorgedeeld in het netwerk van mensen die erop reageren. Dat bereik is gratis
+\u2022 Je doelgroep is er. Directeuren, managers en ondernemers zijn actief op LinkedIn, niet per se op Instagram
+\u2022 Organisch bereik is nog relatief hoog vergeleken met andere platforms
+
+Hoe je LinkedIn organisch inzet:
+
+\u2022 Post minimaal twee keer per week, liefst drie keer
+\u2022 Wissel content-types af: praktische tips, cases en resultaten, persoonlijke observaties, achter-de-schermen
+\u2022 Schrijf posts die reageren uitlokken. Een stelling, een vraag, of een verrassende observatie werkt beter dan een informatieve opsomming
+\u2022 Reageer op reacties. Elke reactie die je krijgt, vergroot het bereik van je post. Bedank voor de reactie, stel een vervolgvraag, hou het gesprek gaande
+
+Het opbouwen van een LinkedIn-aanwezigheid kost drie tot zes maanden voordat je echt bereik en resultaten ziet. De reden dat de meeste ondernemers stoppen: ze verwachten te snel resultaat. Wie doorgaat, bouwt een platform dat consistent leads oplevert.
+
+**Strategie 5: Vermeldingen en backlinks via samenwerkingen**
+
+Google gebruikt backlinks als een van zijn belangrijkste rankingfactoren. Een backlink is een link vanaf een andere website naar de jouwe. Hoe meer kwalitatieve websites naar jou linken, hoe meer autoriteit Google jou toekent.
+
+Voor MKB-bedrijven zijn er manieren om backlinks te verdienen zonder te betalen:
+
+\u2022 **Brancheverenigingen en KvK-directories.** Veel brancheverenigingen hebben een ledenlijst op hun website. Als jij lid bent, staat jouw website daar. Dat is een gratis backlink van een relevante website
+\u2022 **Gastblogs.** Schrijf een artikel voor een vakblad of een website die jouw doelgroep leest. Jij levert inhoud, zij linken naar jouw website. Iedereen wint
+\u2022 **Samenwerkingspartners.** Bedrijven waarmee je samenwerkt, vermelden jou soms op hun website als partner. Vraag er actief naar
+\u2022 **Lokale media.** Een persbericht over een opvallend project, een award of een mijlpaal kan lokale media-aandacht opleveren. Die artikelen linken vaak naar je website
+\u2022 **Directories.** Vermeldingen in relevante directories (Zoover voor horeca, Independer voor financieel, DutchCowboys voor tech) leveren backlinks op. Controleer wel of de directory legitiem is, niet elke directory heeft waarde
+
+Backlinks opbouwen is langzaam werk. Maar de cumulatieve waarde ervan is groot. Twintig kwalitatieve backlinks is meer waard dan duizend bezoekers via een betaalde advertentie die morgen stopt.
+
+**Hoe combineer je deze strategieen?**
+
+De vijf strategieen versterken elkaar. Een blogartikel genereert organisch zoekverkeer. Datzelfde artikel deel je op LinkedIn, wat direct verkeer oplevert. Het artikel wordt opgepikt door een vakblog die ernaar linkt, wat je domein-autoriteit verhoogt, waardoor je volgende artikel sneller rankt. Elke actie versterkt de volgende.
+
+Het begint altijd met de eerste stap. Als je nog niks gedaan hebt: begin met Google Business Profile. Dat levert het snelste resultaat voor de minste investering.
+
+Als je al een profiel hebt: begin met de blog. Twee artikelen per maand, consistent, op vragen die je doelgroep heeft.
+
+Als je dat al doet: voeg LinkedIn toe en bouw je netwerk op.
+
+Wil je weten waar jouw grootste kansen liggen? Stuur een bericht naar info@arkadigital.nl of bezoek arkadigital.nl. We kijken naar je huidige situatie en geven concrete aanbevelingen voor meer organische zichtbaarheid.`,
+    author: "Kaan Arslan",
+    publishedAt: "2026-06-01",
+    tags: ["SEO", "Content", "Strategie"],
+    readingTime: "8 min",
   },
 ];

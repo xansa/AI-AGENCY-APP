@@ -48,7 +48,7 @@ export function HeroV2() {
       {/* ── Living aurora mesh: blue-dominant, warm whisper, each blob shimmers on its own phase + parallaxes to the cursor ── */}
       <AuroraGradient
         className="absolute inset-0 overflow-hidden pointer-events-none"
-        parallax={70}
+        parallax={120}
         blobs={[
           // Indigo core behind the headline
           {

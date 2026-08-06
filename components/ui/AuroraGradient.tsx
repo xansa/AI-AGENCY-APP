@@ -55,8 +55,8 @@ export function AuroraGradient({
 
   const mx = useMotionValue(0);
   const my = useMotionValue(0);
-  const sx = useSpring(mx, { stiffness: 55, damping: 20, mass: 0.7 });
-  const sy = useSpring(my, { stiffness: 55, damping: 20, mass: 0.7 });
+  const sx = useSpring(mx, { stiffness: 80, damping: 18, mass: 0.6 });
+  const sy = useSpring(my, { stiffness: 80, damping: 18, mass: 0.6 });
   const px = useTransform(sx, (v) => v * parallax);
   const py = useTransform(sy, (v) => v * parallax);
 
