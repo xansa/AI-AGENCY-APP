@@ -4,6 +4,7 @@ import type { LandingPage } from "@/content/landing-pages";
 import Link from "next/link";
 import { MapPin, Check, ArrowUpRight } from "lucide-react";
 import { useTranslation, l } from "@/lib/i18n";
+import { HeroAura } from "@/components/ui/HeroAura";
 
 const CALENDLY_URL =
   process.env.NEXT_PUBLIC_CALENDLY_URL ?? "https://calendly.com/arka-/30min";
@@ -59,9 +60,7 @@ export function LandingPageContent({ page }: { page: LandingPage }) {
       {/* Editorial hero */}
       <section className="relative bg-cream pt-32 pb-16 md:pt-40 md:pb-20">
         <div className="absolute inset-x-0 top-0 h-80 canvas-grid opacity-40 pointer-events-none" />
-        <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-          <div className="absolute left-1/2 top-[42%] -translate-x-1/2 -translate-y-1/2 w-[60%] h-[130%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(37,99,235,0.07),transparent_66%)] blur-3xl" />
-        </div>
+        <HeroAura />
         <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
           <p className="text-overline uppercase text-slate-meta font-semibold mb-8 inline-flex items-center gap-2">
             <MapPin className="w-3.5 h-3.5 text-arka" />

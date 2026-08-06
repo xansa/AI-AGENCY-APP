@@ -3,6 +3,7 @@ import { getPublishedPosts } from "@/content/blog";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight, Clock } from "lucide-react";
+import { HeroAura } from "@/components/ui/HeroAura";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -43,9 +44,7 @@ export default function BlogPage() {
       {/* Editorial hero */}
       <section className="relative bg-cream pt-32 pb-12 md:pt-40 md:pb-16">
         <div className="absolute inset-x-0 top-0 h-80 canvas-grid opacity-40 pointer-events-none" />
-        <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-          <div className="absolute left-1/2 top-[42%] -translate-x-1/2 -translate-y-1/2 w-[60%] h-[130%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(37,99,235,0.07),transparent_66%)] blur-3xl" />
-        </div>
+        <HeroAura />
         <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
             <div className="lg:col-span-7 min-w-0">

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useTranslation } from "@/lib/i18n";
 import { ContactForm } from "./ContactForm";
 import { Mail, Phone, MapPin } from "lucide-react";
+import { HeroAura } from "@/components/ui/HeroAura";
 
 export function ContactPageContent() {
   const { t, locale } = useTranslation();
@@ -12,9 +13,7 @@ export function ContactPageContent() {
     <>
       <section className="relative bg-cream pt-32 pb-12 md:pt-40 md:pb-16 overflow-hidden">
         <div className="absolute inset-x-0 top-0 h-80 canvas-grid opacity-40 pointer-events-none" />
-        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-          <div className="absolute right-[8%] top-[42%] -translate-y-1/2 w-[46%] h-[80%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(37,99,235,0.08),transparent_66%)] blur-3xl" />
-        </div>
+        <HeroAura />
         <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
             <div className="lg:col-span-7 min-w-0">

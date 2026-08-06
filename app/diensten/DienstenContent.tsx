@@ -14,6 +14,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { useTranslation, l } from "@/lib/i18n";
+import { HeroAura } from "@/components/ui/HeroAura";
 import { motion, useReducedMotion } from "framer-motion";
 
 const iconMap: Record<string, LucideIcon> = {
@@ -115,9 +116,7 @@ export function DienstenContent() {
       {/* Hero */}
       <section className="relative bg-cream pt-32 pb-16 md:pt-40 md:pb-20 overflow-hidden">
         <div className="absolute inset-x-0 top-0 h-80 canvas-grid opacity-40 pointer-events-none" />
-        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-          <div className="absolute left-1/2 top-[46%] -translate-x-1/2 -translate-y-1/2 w-[85%] h-[88%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(37,99,235,0.13),rgba(59,130,246,0.06)_42%,transparent_70%)] blur-3xl" />
-        </div>
+        <HeroAura />
         <motion.div
           initial={reduce ? false : { opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}

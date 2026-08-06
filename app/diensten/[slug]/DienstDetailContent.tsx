@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Check, ArrowLeft, ArrowUpRight } from "lucide-react";
 import { useTranslation, l, la } from "@/lib/i18n";
+import { HeroAura } from "@/components/ui/HeroAura";
 
 const CALENDLY_URL =
   process.env.NEXT_PUBLIC_CALENDLY_URL ?? "https://calendly.com/arka-/30min";
@@ -86,9 +87,7 @@ export function DienstDetailContent({ service }: { service: Service }) {
       {/* Editorial hero */}
       <section className="relative bg-cream pt-16 md:pt-24 pb-16 md:pb-20 overflow-hidden">
         <div className="absolute inset-x-0 top-0 h-80 canvas-grid opacity-40 pointer-events-none" />
-        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-          <div className="absolute right-[8%] top-[38%] -translate-y-1/2 w-[46%] h-[80%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(37,99,235,0.08),transparent_66%)] blur-3xl" />
-        </div>
+        <HeroAura />
         <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
           <Link
             href="/diensten"
