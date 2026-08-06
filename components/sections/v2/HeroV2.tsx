@@ -77,7 +77,7 @@ export function HeroV2() {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-cream pt-32 pb-24 md:pt-40 md:pb-28 lg:pt-44 lg:pb-32 overflow-hidden"
+      className="relative bg-cream pt-28 pb-16 md:pt-32 md:pb-20 lg:pt-36 lg:pb-20 overflow-hidden"
     >
       {/* ── Living aurora mesh: blue-dominant, warm whisper, each blob shimmers on its own phase + parallaxes to the cursor ── */}
       <AuroraGradient
