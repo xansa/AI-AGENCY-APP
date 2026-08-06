@@ -217,39 +217,21 @@ export default function BlogPostPage({ params }: Props) {
         </div>
       </section>
 
-      {/* Hero illustration — box-less wide editorial scene, or the boxed fallback band */}
-      {post.heroWide ? (
-        <section className="relative bg-cream">
-          <div className="max-w-narrow mx-auto px-6 sm:px-8 lg:px-10">
-            <div className="mx-auto w-[80%] max-w-[42rem]">
-              <Image
-                src={post.heroWide}
-                alt=""
-                width={1408}
-                height={592}
-                sizes="(max-width: 768px) 80vw, 576px"
-                className="w-full h-auto"
-                priority
-              />
-            </div>
+      {/* Hero illustration — compact, box-less, centered chalky single-subject scene */}
+      <section className="relative bg-cream">
+        <div className="max-w-narrow mx-auto px-6 sm:px-8 lg:px-10">
+          <div className="relative mx-auto w-[72%] max-w-[25rem] aspect-square">
+            <Image
+              src={illustration}
+              alt=""
+              fill
+              sizes="(max-width: 768px) 64vw, 320px"
+              className="object-contain"
+              priority
+            />
           </div>
-        </section>
-      ) : (
-        <section className="relative bg-cream">
-          <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
-            <div className="relative w-full aspect-[16/9] md:aspect-[21/8] rounded-2xl bg-cream-deep/60 ring-1 ring-slate-950/5 overflow-hidden">
-              <Image
-                src={illustration}
-                alt=""
-                fill
-                sizes="(max-width: 1024px) 100vw, 1152px"
-                className="object-contain p-6 md:p-10"
-                priority
-              />
-            </div>
-          </div>
-        </section>
-      )}
+        </div>
+      </section>
 
       <section className="relative bg-cream pt-4 md:pt-6 pb-12 md:pb-20">
         <div className="max-w-narrow mx-auto px-6 sm:px-8 lg:px-10">
