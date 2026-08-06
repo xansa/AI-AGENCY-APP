@@ -48,9 +48,9 @@ export function HeroV2() {
       {/* ── Living aurora mesh: blue-dominant, warm whisper, each blob shimmers on its own phase + parallaxes to the cursor ── */}
       <AuroraGradient
         className="absolute inset-0 overflow-hidden pointer-events-none"
-        parallax={120}
+        parallax={110}
         blobs={[
-          // Indigo core behind the headline
+          // Indigo core behind the headline (mid depth)
           {
             className:
               "absolute left-[38%] top-[24%] -translate-x-1/2 -translate-y-1/2 w-[62%] h-[72%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(37,99,235,0.22),rgba(37,99,235,0.06)_45%,transparent_70%)] blur-3xl",
@@ -58,8 +58,9 @@ export function HeroV2() {
             duration: 17,
             delay: 0,
             dir: 1,
+            depth: 1,
           },
-          // Bright blue behind the widget cluster
+          // Bright blue behind the widget cluster (near, moves most)
           {
             className:
               "absolute left-[70%] top-[30%] -translate-x-1/2 -translate-y-1/2 w-[52%] h-[66%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.18),transparent_66%)] blur-3xl",
@@ -67,8 +68,9 @@ export function HeroV2() {
             duration: 15,
             delay: 1.2,
             dir: -1,
+            depth: 2,
           },
-          // Cyan lower-center for the vibrant hue shift
+          // Cyan lower-center for the vibrant hue shift (near)
           {
             className:
               "absolute left-[52%] top-[54%] -translate-x-1/2 -translate-y-1/2 w-[48%] h-[56%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(6,182,212,0.13),transparent_66%)] blur-3xl",
@@ -76,8 +78,9 @@ export function HeroV2() {
             duration: 19,
             delay: 0.6,
             dir: 1,
+            depth: 2,
           },
-          // Violet bridge between blue and warm
+          // Violet bridge between blue and warm (far)
           {
             className:
               "absolute left-[46%] top-[14%] -translate-x-1/2 -translate-y-1/2 w-[44%] h-[50%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(147,170,255,0.17),transparent_66%)] blur-3xl",
@@ -85,20 +88,22 @@ export function HeroV2() {
             duration: 21,
             delay: 2,
             dir: -1,
+            depth: 0,
           },
-          // Warm peach/cream whisper, upper-left
+          // Warm peach/cream whisper, upper-left (far)
           {
             className:
-              "absolute left-[28%] top-[10%] -translate-x-1/2 -translate-y-1/2 w-[48%] h-[48%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(246,224,206,0.55),transparent_62%)] blur-2xl",
+              "absolute left-[28%] top-[10%] -translate-x-1/2 -translate-y-1/2 w-[48%] h-[48%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(246,224,206,0.6),transparent_62%)] blur-2xl",
             amplitude: 20,
             duration: 23,
             delay: 1.5,
             dir: 1,
+            depth: 0,
           },
         ]}
       />
       {/* Film grain over the mesh (echoes the chalk illustrations' risograph grain) */}
-      <div className="absolute inset-0 grain opacity-[0.09] mix-blend-multiply pointer-events-none" aria-hidden="true" />
+      <div className="absolute inset-0 grain opacity-[0.22] mix-blend-multiply pointer-events-none" aria-hidden="true" />
       {/* Faint canvas grid for texture */}
       <div className="absolute inset-x-0 top-0 h-[80%] canvas-grid opacity-[0.35] pointer-events-none" aria-hidden="true" />
 

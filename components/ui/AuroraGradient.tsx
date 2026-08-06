@@ -11,18 +11,15 @@ import { useEffect, useRef } from "react";
 
 /**
  * A multi-hue "aurora" mesh gradient that feels alive: each blob drifts on its
- * own slow phase (so the mesh shimmers), and the whole mesh parallaxes toward
- * the cursor over the parent section. Only `transform` is animated (GPU-cheap;
- * the blurred bulbs are never repainted).
+ * own slow phase (so the mesh shimmers) AND parallaxes toward the cursor at its
+ * own depth — near blobs move much more than far ones, so the mesh visibly
+ * reshuffles under the pointer instead of sliding as one flat sheet. Only
+ * `transform` is animated (GPU-cheap; the blurred bulbs are never repainted).
  *
  * Pass the bulbs as `blobs` — each `className` is a positioned radial-gradient
- * div (with its own blur). The component wraps them in a mouse-parallax layer
- * and gives each blob an independent ambient-drift `motion.div` parent, so the
- * blob's own `-translate` centering never clashes with the animated transform.
- *
- * Listens for pointer moves on its nearest positioned ancestor (the section),
- * which must be `position: relative`. Respects `prefers-reduced-motion`
- * (renders a plain static mesh).
+ * div (with its own blur) and a `depth` (0 far … 2 near). Listens for pointer
+ * moves on its nearest positioned ancestor (the section), which must be
+ * `position: relative`. Respects `prefers-reduced-motion`.
  */
 export type AuroraBlob = {
   /** The bulb: absolute positioning + radial-gradient background + blur. */
@@ -35,30 +32,43 @@ export type AuroraBlob = {
   delay?: number;
   /** Drift direction sign (default alternates by index). */
   dir?: number;
+  /** Parallax depth: 0 = far (moves least), 1 = mid, 2 = near (moves most). */
+  depth?: 0 | 1 | 2;
 };
 
 type AuroraGradientProps = {
   blobs: AuroraBlob[];
   /** Outer layer classes (positioning + clipping). */
   className?: string;
-  /** Peak mouse-follow offset in px (cursor at section edge). */
+  /** Base mouse-follow offset in px (scaled per blob depth). */
   parallax?: number;
 };
 
 export function AuroraGradient({
   blobs,
   className = "absolute inset-0 overflow-hidden pointer-events-none",
-  parallax = 60,
+  parallax = 110,
 }: AuroraGradientProps) {
   const reduce = useReducedMotion();
   const ref = useRef<HTMLDivElement>(null);
 
   const mx = useMotionValue(0);
   const my = useMotionValue(0);
-  const sx = useSpring(mx, { stiffness: 80, damping: 18, mass: 0.6 });
-  const sy = useSpring(my, { stiffness: 80, damping: 18, mass: 0.6 });
-  const px = useTransform(sx, (v) => v * parallax);
-  const py = useTransform(sy, (v) => v * parallax);
+  const sx = useSpring(mx, { stiffness: 90, damping: 16, mass: 0.5 });
+  const sy = useSpring(my, { stiffness: 90, damping: 16, mass: 0.5 });
+
+  // Three fixed parallax depths (far / mid / near).
+  const f0x = useTransform(sx, (v) => v * parallax * 0.55);
+  const f0y = useTransform(sy, (v) => v * parallax * 0.55);
+  const f1x = useTransform(sx, (v) => v * parallax * 1.0);
+  const f1y = useTransform(sy, (v) => v * parallax * 1.0);
+  const f2x = useTransform(sx, (v) => v * parallax * 1.65);
+  const f2y = useTransform(sy, (v) => v * parallax * 1.65);
+  const depths = [
+    { x: f0x, y: f0y },
+    { x: f1x, y: f1y },
+    { x: f2x, y: f2y },
+  ];
 
   useEffect(() => {
     if (reduce) return;
@@ -95,14 +105,15 @@ export function AuroraGradient({
 
   return (
     <div ref={ref} className={className} aria-hidden="true">
-      {/* Mouse-parallax layer (whole mesh) */}
-      <motion.div className="absolute inset-0" style={{ x: px, y: py }}>
-        {blobs.map((b, i) => {
-          const amp = b.amplitude ?? 26;
-          const dir = b.dir ?? (i % 2 ? -1 : 1);
-          return (
+      {blobs.map((b, i) => {
+        const amp = b.amplitude ?? 26;
+        const dir = b.dir ?? (i % 2 ? -1 : 1);
+        const d = depths[b.depth ?? 1];
+        return (
+          // Per-blob parallax layer (depth-scaled follow)
+          <motion.div key={i} className="absolute inset-0" style={{ x: d.x, y: d.y }}>
+            {/* Ambient drift layer */}
             <motion.div
-              key={i}
               className="absolute inset-0"
               animate={{
                 x: [0, amp * dir, -amp * 0.5 * dir, 0],
@@ -119,9 +130,9 @@ export function AuroraGradient({
             >
               <div className={b.className} />
             </motion.div>
-          );
-        })}
-      </motion.div>
+          </motion.div>
+        );
+      })}
     </div>
   );
 }
