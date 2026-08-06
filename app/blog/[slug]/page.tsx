@@ -21,9 +21,7 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: Props): Metadata {
   const post = blogPosts.find((p) => p.slug === params.slug);
   if (!post) return {};
-  const ogImage = post.illType
-    ? `${baseUrl}${post.illustration ?? `/illustrations/blog/${post.slug}.png`}`
-    : `${baseUrl}/brand/cover-dark.png`;
+  const ogImage = `${baseUrl}${post.illustration ?? `/illustrations/blog/${post.slug}.png`}`;
   return {
     title: post.title,
     description: post.excerpt,
@@ -47,7 +45,9 @@ export function generateMetadata({ params }: Props): Metadata {
 function illoClasses(type?: "spot" | "figure" | "wide") {
   if (type === "spot") return "relative mx-auto w-[46%] max-w-[11rem] aspect-square";
   if (type === "wide") return "relative mx-auto w-full aspect-[1380/514]";
-  return "relative mx-auto w-[58%] max-w-[15rem] aspect-[4/5]"; // figure
+  if (type === "figure") return "relative mx-auto w-[58%] max-w-[15rem] aspect-[4/5]";
+  // default: compact centered scene (v3-look) voor posts zonder specifiek type
+  return "relative mx-auto w-[64%] max-w-[18rem] aspect-square";
 }
 
 function renderContent(
@@ -151,7 +151,7 @@ export default function BlogPostPage({ params }: Props) {
   const illType = post.illType;
   const illPlacement = post.illPlacement ?? "top";
   const illSrc = post.illustration ?? `/illustrations/blog/${post.slug}.png`;
-  const ogImage = illType ? `${baseUrl}${illSrc}` : `${baseUrl}/brand/cover-dark.png`;
+  const ogImage = `${baseUrl}${illSrc}`;
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
@@ -251,8 +251,9 @@ export default function BlogPostPage({ params }: Props) {
         </div>
       </section>
 
-      {/* Top illustration — box-less, sized by kind (only curated posts, placement "top") */}
-      {illType && illPlacement === "top" && (
+      {/* Top illustration — box-less, sized by kind. Elke post heeft een illustratie;
+          curated posts krijgen een specifiek type/placement, de rest de compacte default. */}
+      {illPlacement === "top" && (
         <section className="relative bg-cream">
           <div className="max-w-narrow mx-auto px-6 sm:px-8 lg:px-10">
             <div className={illoClasses(illType)}>
