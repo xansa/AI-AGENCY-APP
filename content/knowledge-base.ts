@@ -151,31 +151,31 @@ Arka biedt twee modellen: eenmalig (projectbasis) of maandelijks (doorlopende sa
 
 ### Maandelijks (aanbevolen: jouw digitale afdeling)
 
-**Starter** · vanaf €750/mnd
-Diensten: Websites & Webshops + SEO & Content
+**Online Basis** · vanaf €750/mnd
+Diensten: Websites & Webshops + Branding & Design
 Min. commitment: 3 maanden
-Inbegrepen: website bouw, hosting, onderhoud, SEO, content updates, rapportage, support
+Inbegrepen: maatwerk website, basis-branding, on-page SEO, hosting, onderhoud, kleine updates, support
 
-**Professional** ⭐ Meest gekozen · vanaf €1.500/mnd
-Diensten: Websites & Webshops + SEO & Content + AI Chatbots + Branding
+**Groei & Leads** ⭐ Meest gekozen · vanaf €1.750/mnd
+Diensten: SEO & Content + Lead Generation + AI Chatbots + Website
 Min. commitment: 6 maanden
-Inbegrepen: custom website + chatbot, brand identity, 8 LinkedIn posts + 2 blogs/mnd, strategie sessie, CRO
+Inbegrepen: alles uit Online Basis + doorlopende SEO/content, lead gen (Smartlead cold outreach of ads), AI-chatbot, maandelijks dashboard, strategie-sessie
 
-**Enterprise** · vanaf €2.500/mnd
-Diensten: Alle 6 diensten
+**AI-afdeling** · vanaf €3.500/mnd
+Diensten: AI Assistent + AI Chatbots & Automatisering + Dashboards & Data + AI-video + alles uit Groei & Leads
 Min. commitment: 6 maanden
-Inbegrepen: alles uit Professional + dashboards, lead gen, automatisering, dedicated support (< 4u reactie)
+Vlaggendrager: de AI-assistent (Jarvis-achtig) doet agenda, mail, research & klantcontact 24/7 — het werk van meerdere mensen voor de prijs van één salaris. Inbegrepen: automatisering, uitgebreide dashboards, maandelijkse AI-video, dedicated support (< 4u reactie)
 
 ### Eenmalig (projectbasis: je koopt een product)
 
-**Starter** · vanaf €2.000
-Website + basis SEO + 3 social templates. Oplevering in 2–4 weken. 30 dagen bugfixes.
+**Online Basis** · vanaf €2.000
+Website + basis-branding + basis SEO. Oplevering in 2–4 weken. 30 dagen bugfixes.
 
-**Professional** · vanaf €4.500
-Custom website + chatbot + brand identity + 5 social templates. Oplevering in 4–6 weken.
+**Groei & Leads** · vanaf €4.500
+Custom website + chatbot + SEO-fundament + lead-funnel. Oplevering in 4–6 weken.
 
-**Enterprise** · vanaf €7.500
-Alles + dashboards + CRM-integratie + lead funnel. Oplevering in 6–10 weken.
+**AI-afdeling** · setup vanaf €1.500
+AI-assistent + automatiseringen + dashboard ingericht op jouw processen. Daarna maandelijks model.
 
 Na oplevering: wijzigingen op uurbasis (€95/uur). Neem contact op voor een offerte op maat.
 `;
@@ -186,13 +186,13 @@ export const KB_FAQ = `
 ## Veelgestelde vragen
 
 **Wat kost het?**
-Maandelijks: Starter vanaf €750/mnd | Professional vanaf €1.500/mnd | Enterprise vanaf €2.500/mnd
-Eenmalig: Starter vanaf €2.000 | Professional vanaf €4.500 | Enterprise vanaf €7.500
+Maandelijks: Online Basis vanaf €750/mnd | Groei & Leads vanaf €1.750/mnd | AI-afdeling vanaf €3.500/mnd
+Eenmalig: Online Basis vanaf €2.000 | Groei & Leads vanaf €4.500 | AI-afdeling setup vanaf €1.500
 Maandelijks is de beste deal: je krijgt doorlopende optimalisatie, content, support en rapportage.
 
 **Kan ik stoppen wanneer ik wil?**
-Starter: minimaal 3 maanden, daarna maandelijks opzegbaar.
-Professional en Enterprise: minimaal 6 maanden, daarna maandelijks opzegbaar.
+Online Basis: minimaal 3 maanden, daarna maandelijks opzegbaar.
+Groei & Leads en AI-afdeling: minimaal 6 maanden, daarna maandelijks opzegbaar.
 Geen verborgen kosten of opzegboetes.
 
 **Garanderen jullie resultaten?**

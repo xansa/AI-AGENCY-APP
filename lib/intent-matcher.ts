@@ -43,10 +43,10 @@ const INTENTS: IntentDefinition[] = [
     response:
       "Arka biedt twee modellen: **maandelijks** (doorlopende samenwerking) of **eenmalig** (project).\n\n" +
       "**Maandelijks (aanbevolen):**\n" +
-      "\u2022 **Starter** · vanaf \u20AC750/mnd _(Websites + SEO)_\n" +
-      "\u2022 **Professional** · vanaf €1.500/mnd _(+ AI Chatbots + Branding)_ Meest gekozen\n" +
-      "\u2022 **Enterprise** · vanaf €2.500/mnd _(alle 6 diensten)_\n\n" +
-      "**Eenmalig:** Starter vanaf \u20AC2.000 | Professional vanaf €4.500 | Enterprise vanaf €7.500\n\n" +
+      "\u2022 **Online Basis** · vanaf\u20AC750/mnd _(website + branding)_\n" +
+      "\u2022 **Groei & Leads** · vanaf €1.750/mnd _(SEO, content, leadgen, chatbot)_ Meest gekozen\n" +
+      "\u2022 **AI-afdeling** · vanaf €3.500/mnd _(AI-assistent, automatisering, dashboards + alles)_\n\n" +
+      "**Eenmalig:** Online Basis vanaf\u20AC2.000 | Groei & Leads vanaf €4.500 | AI-afdeling setup vanaf €1.500\n\n" +
       "Wil je weten welk pakket het beste bij jouw situatie past?",
     cta: "Vraag een vrijblijvende offerte aan via [/offerte](/offerte) of plan een kennismakingsgesprek.",
   },
@@ -67,7 +67,7 @@ const INTENTS: IntentDefinition[] = [
       "4. **Dashboards & Data** · grip op je bedrijfsprestaties\n" +
       "5. **Lead Generation** · structureel meer kwalitatieve leads\n" +
       "6. **Branding & Design** · een merk dat blijft hangen\n\n" +
-      "We bundelen deze diensten in **packages** (Starter, Professional, Enterprise). Welke uitdaging is voor jou het meest urgent?",
+      "We bundelen deze diensten in **packages** (Online Basis, Groei & Leads, AI-afdeling). Welke uitdaging is voor jou het meest urgent?",
   },
 
   // ── Websites & Webshops ─────────────────────────────────────────────────

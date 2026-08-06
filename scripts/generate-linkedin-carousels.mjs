@@ -115,6 +115,19 @@ function arkaMark(x, y, size, fill) {
   </g>`;
 }
 
+// ─── Chalky illustration embed (Track C) ─────────────────────────────────────
+// resvg loads external <image> only via data-URI, so we base64-inline the PNG.
+// Chalky sources live in C:/Users/kaan9/arka-lora/blog_batch_out/ (+ pilot/spots).
+// Placement: cover = hero, content slides = accent in the empty right half.
+function illustration(pngPath, x, y, w, h) {
+  try {
+    const b64 = readFileSync(pngPath).toString("base64");
+    return `<image x="${x}" y="${y}" width="${w}" height="${h}" href="data:image/png;base64,${b64}" preserveAspectRatio="xMidYMid meet"/>`;
+  } catch {
+    return ""; // missing illustration → render slide without it
+  }
+}
+
 // Small triangle accent (visual rhyming motif from logo)
 function triangleAccent(cx, cy, size, fill, opacity = 1) {
   const h = size * 0.87;
