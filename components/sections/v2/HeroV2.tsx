@@ -1,19 +1,29 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import {
+  motion,
+  useReducedMotion,
+  useMotionValue,
+  useSpring,
+  useTransform,
+} from "framer-motion";
+import { useEffect, useRef } from "react";
 import Link from "next/link";
-import { ArrowUpRight, TrendingUp, Sparkles, Search } from "lucide-react";
+import Image from "next/image";
+import { ArrowUpRight, TrendingUp, Sparkles } from "lucide-react";
 import { AuroraGradient } from "@/components/ui/AuroraGradient";
 
-// Editorial hero: the oversized serif slogan runs full-width on two lines, with a soft
-// brand-tinted gradient wash and small floating product-widgets clustered to the right
-// (moodboard: steep-style "calm but lively"). Widgets carry real numbers, drift smoothly,
-// lift on hover.
+// Editorial hero: oversized serif pitch (no category overline — the headline IS the
+// eye-catcher, per moodboard). Right side is the hybrid centerpiece: one large chalky
+// illustration (Jasper "person centered") + two proof-widgets (Steep). The whole
+// centerpiece reacts to the cursor — illustration lifts subtly, widgets parallax more
+// with a slight tilt — while the aurora mesh keeps its ambient shimmer + grain.
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 export function HeroV2() {
   const reduce = useReducedMotion();
+  const sectionRef = useRef<HTMLElement>(null);
 
   const rise = (delay: number) => ({
     initial: reduce ? false : { y: 24, opacity: 0 },
@@ -21,36 +31,59 @@ export function HeroV2() {
     transition: { duration: 0.8, ease: EASE, delay },
   });
 
-  // Smooth, roomy drift (large enough amplitude to avoid sub-pixel stutter).
-  const drift = (i: number) =>
-    reduce
-      ? {}
-      : {
-          animate: { y: [0, -22, 0], rotate: [0, i % 2 ? 0.6 : -0.6, 0] },
-          transition: {
-            duration: 12 + i * 1.6,
-            ease: "easeInOut" as const,
-            repeat: Infinity,
-            repeatType: "loop" as const,
-            delay: i * 0.5,
-          },
-        };
-
-  // Entrance for a widget card.
   const pop = (delay: number) => ({
-    initial: reduce ? false : { opacity: 0, y: 24, scale: 0.96 },
-    animate: { opacity: 1, y: 0, scale: 1 },
+    initial: reduce ? false : { opacity: 0, scale: 0.96 },
+    animate: { opacity: 1, scale: 1 },
     transition: { duration: 0.7, ease: EASE, delay },
   });
 
+  // Cursor tracking for the centerpiece (normalized -0.5..0.5 over the section).
+  const mx = useMotionValue(0);
+  const my = useMotionValue(0);
+  const sx = useSpring(mx, { stiffness: 70, damping: 18, mass: 0.5 });
+  const sy = useSpring(my, { stiffness: 70, damping: 18, mass: 0.5 });
+
+  // Depths: the illustration is the anchor (moves least); widgets pop more + tilt.
+  const illoX = useTransform(sx, (v) => v * 20);
+  const illoY = useTransform(sy, (v) => v * 16);
+  const w1X = useTransform(sx, (v) => v * 46);
+  const w1Y = useTransform(sy, (v) => v * 34);
+  const w1R = useTransform(sx, (v) => v * 3.5);
+  const w2X = useTransform(sx, (v) => v * -40);
+  const w2Y = useTransform(sy, (v) => v * 30);
+  const w2R = useTransform(sx, (v) => v * -3);
+
+  useEffect(() => {
+    if (reduce) return;
+    const el = sectionRef.current;
+    if (!el) return;
+    const onMove = (e: PointerEvent) => {
+      const r = el.getBoundingClientRect();
+      mx.set((e.clientX - r.left) / r.width - 0.5);
+      my.set((e.clientY - r.top) / r.height - 0.5);
+    };
+    const settle = () => {
+      mx.set(0);
+      my.set(0);
+    };
+    el.addEventListener("pointermove", onMove);
+    el.addEventListener("pointerleave", settle);
+    return () => {
+      el.removeEventListener("pointermove", onMove);
+      el.removeEventListener("pointerleave", settle);
+    };
+  }, [reduce, mx, my]);
+
   return (
-    <section className="relative bg-cream pt-32 pb-24 md:pt-40 md:pb-28 lg:pt-44 lg:pb-32 overflow-hidden">
+    <section
+      ref={sectionRef}
+      className="relative bg-cream pt-32 pb-24 md:pt-40 md:pb-28 lg:pt-44 lg:pb-32 overflow-hidden"
+    >
       {/* ── Living aurora mesh: blue-dominant, warm whisper, each blob shimmers on its own phase + parallaxes to the cursor ── */}
       <AuroraGradient
         className="absolute inset-0 overflow-hidden pointer-events-none"
         parallax={110}
         blobs={[
-          // Indigo core behind the headline (mid depth)
           {
             className:
               "absolute left-[38%] top-[24%] -translate-x-1/2 -translate-y-1/2 w-[62%] h-[72%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(37,99,235,0.22),rgba(37,99,235,0.06)_45%,transparent_70%)] blur-3xl",
@@ -60,7 +93,6 @@ export function HeroV2() {
             dir: 1,
             depth: 1,
           },
-          // Bright blue behind the widget cluster (near, moves most)
           {
             className:
               "absolute left-[70%] top-[30%] -translate-x-1/2 -translate-y-1/2 w-[52%] h-[66%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.18),transparent_66%)] blur-3xl",
@@ -70,7 +102,6 @@ export function HeroV2() {
             dir: -1,
             depth: 2,
           },
-          // Cyan lower-center for the vibrant hue shift (near)
           {
             className:
               "absolute left-[52%] top-[54%] -translate-x-1/2 -translate-y-1/2 w-[48%] h-[56%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(6,182,212,0.13),transparent_66%)] blur-3xl",
@@ -80,7 +111,6 @@ export function HeroV2() {
             dir: 1,
             depth: 2,
           },
-          // Violet bridge between blue and warm (far)
           {
             className:
               "absolute left-[46%] top-[14%] -translate-x-1/2 -translate-y-1/2 w-[44%] h-[50%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(147,170,255,0.17),transparent_66%)] blur-3xl",
@@ -90,7 +120,6 @@ export function HeroV2() {
             dir: -1,
             depth: 0,
           },
-          // Warm peach/cream whisper, upper-left (far)
           {
             className:
               "absolute left-[28%] top-[10%] -translate-x-1/2 -translate-y-1/2 w-[48%] h-[48%] rounded-[46%] bg-[radial-gradient(ellipse_at_center,rgba(246,224,206,0.6),transparent_62%)] blur-2xl",
@@ -108,17 +137,9 @@ export function HeroV2() {
       <div className="absolute inset-x-0 top-0 h-[80%] canvas-grid opacity-[0.35] pointer-events-none" aria-hidden="true" />
 
       <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-10">
-        {/* Overline */}
-        <motion.div {...rise(0)} className="mb-7 md:mb-9">
-          <p className="text-overline uppercase text-slate-meta font-semibold inline-flex items-center gap-3">
-            <span className="inline-block w-6 border-t border-slate-meta/60" />
-            Digital studio, Dordrecht
-          </p>
-        </motion.div>
-
-        {/* Full-width slogan, two lines */}
+        {/* Full-width slogan, two lines — the pitch, the eye-catcher */}
         <motion.h1
-          {...rise(0.08)}
+          {...rise(0.04)}
           className="font-serif font-medium text-display text-slate-ink tracking-tight leading-[1.04]"
         >
           Jouw digitale afdeling,<br />
@@ -126,17 +147,17 @@ export function HeroV2() {
           <span className="text-arka">.</span>
         </motion.h1>
 
-        {/* Copy (left) + widget cluster (right) */}
-        <div className="mt-12 md:mt-14 grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        {/* Copy (left) + illustration centerpiece with proof-widgets (right) */}
+        <div className="mt-12 md:mt-14 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-6 min-w-0">
             <motion.p
-              {...rise(0.16)}
+              {...rise(0.12)}
               className="text-[17px] md:text-lg leading-relaxed text-slate-muted max-w-xl text-pretty"
             >
               Websites, SEO, AI chatbots, dashboards en lead generation. Alles onder een dak, geleverd door dezelfde persoon die je offerte schrijft. Geen account managers, geen doorlooptijden van weken.
             </motion.p>
 
-            <motion.div {...rise(0.24)} className="mt-9 flex flex-wrap items-center gap-3">
+            <motion.div {...rise(0.2)} className="mt-9 flex flex-wrap items-center gap-3">
               <Link
                 href="/contact"
                 className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-ink text-cream text-sm font-semibold hover:bg-ink-light transition-colors"
@@ -153,7 +174,7 @@ export function HeroV2() {
             </motion.div>
 
             <motion.div
-              {...rise(0.32)}
+              {...rise(0.28)}
               className="mt-9 md:mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 text-[12.5px] tracking-wide text-slate-meta uppercase font-semibold"
             >
               <span className="inline-flex items-center gap-2">
@@ -171,13 +192,31 @@ export function HeroV2() {
             </motion.div>
           </div>
 
-          {/* ── Floating widget cluster (lg+ only) ── */}
-          <div className="hidden lg:block lg:col-span-6 relative min-h-[24rem]" aria-hidden="true">
-            {/* Traffic / metric card */}
-            <motion.div {...pop(0.3)} className="absolute top-0 right-4 w-60 z-20">
+          {/* ── Hybrid centerpiece: big chalky illustration + 2 proof-widgets, cursor-reactive (lg+) ── */}
+          <div className="hidden lg:block lg:col-span-6 relative min-h-[26rem]">
+            {/* Illustration — anchor, subtle cursor lift */}
+            <motion.div style={reduce ? undefined : { x: illoX, y: illoY }} className="absolute inset-0">
+              <motion.div {...pop(0.2)} className="relative w-full h-full">
+                <Image
+                  src="/illustrations/hero.png"
+                  alt=""
+                  fill
+                  sizes="(max-width: 1024px) 0px, 560px"
+                  className="object-contain object-center"
+                  priority
+                />
+              </motion.div>
+            </motion.div>
+
+            {/* Widget: organic traffic (+212%) — pops toward cursor with a slight tilt */}
+            <motion.div
+              style={reduce ? undefined : { x: w1X, y: w1Y, rotate: w1R }}
+              className="absolute top-0 right-0 w-56 z-20"
+              aria-hidden="true"
+            >
               <motion.div
-                {...drift(0)}
-                className="rounded-2xl bg-white/90 backdrop-blur ring-1 ring-slate-950/8 shadow-[0_24px_60px_-30px_rgba(11,18,32,0.35)] p-5 hover:-translate-y-1 transition-transform duration-300"
+                {...pop(0.35)}
+                className="rounded-2xl bg-white/90 backdrop-blur ring-1 ring-slate-950/8 shadow-[0_24px_60px_-30px_rgba(11,18,32,0.35)] p-5"
               >
                 <div className="flex items-center justify-between mb-3">
                   <span className="text-[11px] font-semibold uppercase tracking-[0.12em] text-slate-meta">
@@ -199,33 +238,15 @@ export function HeroV2() {
               </motion.div>
             </motion.div>
 
-            {/* Google position ring */}
-            <motion.div {...pop(0.45)} className="absolute top-[8.5rem] left-2 w-52 z-10">
+            {/* Widget: new lead toast — pops the other way */}
+            <motion.div
+              style={reduce ? undefined : { x: w2X, y: w2Y, rotate: w2R }}
+              className="absolute bottom-2 left-0 w-64 z-30"
+              aria-hidden="true"
+            >
               <motion.div
-                {...drift(1)}
-                className="rounded-2xl bg-white/90 backdrop-blur ring-1 ring-slate-950/8 shadow-[0_24px_60px_-30px_rgba(11,18,32,0.35)] p-5 flex items-center gap-4 hover:-translate-y-1 transition-transform duration-300"
-              >
-                <div className="relative w-12 h-12 shrink-0">
-                  <div
-                    className="w-12 h-12 rounded-full"
-                    style={{ background: "conic-gradient(#2563EB 0deg 300deg, rgba(37,99,235,0.14) 300deg 360deg)" }}
-                  />
-                  <div className="absolute inset-[3px] rounded-full bg-white flex items-center justify-center">
-                    <Search className="w-4 h-4 text-arka" strokeWidth={2} />
-                  </div>
-                </div>
-                <div className="min-w-0">
-                  <div className="font-serif text-[1.4rem] leading-none font-medium text-slate-ink">Top 3</div>
-                  <div className="text-[11px] text-slate-meta mt-1">Google-positie</div>
-                </div>
-              </motion.div>
-            </motion.div>
-
-            {/* Lead notification toast */}
-            <motion.div {...pop(0.6)} className="absolute top-[13rem] right-0 w-64 z-30">
-              <motion.div
-                {...drift(2)}
-                className="rounded-2xl bg-ink text-cream shadow-[0_24px_60px_-28px_rgba(11,18,32,0.55)] p-4 flex items-center gap-3 hover:-translate-y-1 transition-transform duration-300"
+                {...pop(0.5)}
+                className="rounded-2xl bg-ink text-cream shadow-[0_24px_60px_-28px_rgba(11,18,32,0.55)] p-4 flex items-center gap-3"
               >
                 <span className="flex items-center justify-center w-9 h-9 rounded-xl bg-cream/10 shrink-0">
                   <Sparkles className="w-4 h-4 text-arka-glow" strokeWidth={2} />
@@ -234,19 +255,6 @@ export function HeroV2() {
                   <div className="text-[13px] font-semibold leading-tight">Nieuwe aanvraag</div>
                   <div className="text-[11px] text-cream/55 mt-0.5">via de website · 2 min geleden</div>
                 </div>
-              </motion.div>
-            </motion.div>
-
-            {/* Chat / assistant input pill */}
-            <motion.div {...pop(0.75)} className="absolute bottom-0 left-6 w-64 z-20">
-              <motion.div
-                {...drift(3)}
-                className="rounded-full bg-white/90 backdrop-blur ring-1 ring-slate-950/8 shadow-[0_20px_50px_-28px_rgba(11,18,32,0.4)] pl-5 pr-2 py-2 flex items-center gap-3 hover:-translate-y-1 transition-transform duration-300"
-              >
-                <span className="text-[13px] text-slate-muted truncate">Vraag het de assistent…</span>
-                <span className="ml-auto flex items-center justify-center w-8 h-8 rounded-full bg-ink shrink-0">
-                  <ArrowUpRight className="w-4 h-4 text-cream" />
-                </span>
               </motion.div>
             </motion.div>
           </div>
