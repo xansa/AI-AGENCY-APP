@@ -21,7 +21,7 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: Props): Metadata {
   const post = blogPosts.find((p) => p.slug === params.slug);
   if (!post) return {};
-  const ogImage = `${baseUrl}${post.illustration ?? "/brand/cover-dark.png"}`;
+  const ogImage = `${baseUrl}${post.illustration ?? `/illustrations/blog/${post.slug}.png`}`;
   return {
     title: post.title,
     description: post.excerpt,
@@ -115,6 +115,10 @@ export default function BlogPostPage({ params }: Props) {
   const wordCount = post.content.split(/\s+/).length;
   const readingTimeMinutes = Math.max(1, Math.round(wordCount / 200));
 
+  // Convention: every post has a chalky hero-band at /illustrations/blog/<slug>.png
+  // (explicit `illustration` field overrides it).
+  const illustration = post.illustration ?? `/illustrations/blog/${post.slug}.png`;
+
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -130,7 +134,7 @@ export default function BlogPostPage({ params }: Props) {
     "@type": "BlogPosting",
     headline: post.title,
     description: post.excerpt,
-    image: `${baseUrl}${post.illustration ?? "/brand/cover-dark.png"}`,
+    image: `${baseUrl}${illustration}`,
     author: {
       "@type": "Person",
       name: "Kaan Arslan",
@@ -214,22 +218,20 @@ export default function BlogPostPage({ params }: Props) {
       </section>
 
       {/* Hero-band illustration (wide, not a square) */}
-      {post.illustration && (
-        <section className="relative bg-cream">
-          <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
-            <div className="relative w-full aspect-[16/9] md:aspect-[21/8] rounded-2xl bg-cream-deep/60 ring-1 ring-slate-950/5 overflow-hidden">
-              <Image
-                src={post.illustration}
-                alt=""
-                fill
-                sizes="(max-width: 1024px) 100vw, 1152px"
-                className="object-contain p-6 md:p-10"
-                priority
-              />
-            </div>
+      <section className="relative bg-cream">
+        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
+          <div className="relative w-full aspect-[16/9] md:aspect-[21/8] rounded-2xl bg-cream-deep/60 ring-1 ring-slate-950/5 overflow-hidden">
+            <Image
+              src={illustration}
+              alt=""
+              fill
+              sizes="(max-width: 1024px) 100vw, 1152px"
+              className="object-contain p-6 md:p-10"
+              priority
+            />
           </div>
-        </section>
-      )}
+        </div>
+      </section>
 
       <section className="relative bg-cream py-12 md:py-20">
         <div className="max-w-narrow mx-auto px-6 sm:px-8 lg:px-10">
