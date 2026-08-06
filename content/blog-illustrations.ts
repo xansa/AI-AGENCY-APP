@@ -14,7 +14,7 @@ export const blogIllustrationDims: Record<string, { w: number; h: number }> = {
   "crm-kiezen-mkb-hubspot-pipedrive": { w: 730, h: 733 },
   "custom-dashboard-laten-maken": { w: 717, h: 727 },
   "dashboard-laten-maken-data-inzicht": { w: 726, h: 723 },
-  "digitale-transformatie-mkb-begin-hier": { w: 1035, h: 489 },
+  "digitale-transformatie-mkb-begin-hier": { w: 1215, h: 514 },
   "email-marketing-tips-mkb": { w: 719, h: 726 },
   "fouten-website-laten-maken": { w: 720, h: 727 },
   "google-ads-vs-seo-waar-investeren": { w: 716, h: 728 },
