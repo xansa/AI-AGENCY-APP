@@ -30,7 +30,7 @@ export const services: Service[] = [
       "Custom design, development and hosting of websites and webshops that not only look great, but also load fast and convert.",
     longDescription: `Een website is meer dan een digitaal visitekaartje. Het is je hardst werkende medewerker: 24 uur per dag beschikbaar, altijd consistent in de boodschap, en schaalbaar zonder extra personeel. Toch functioneren de meeste bedrijfswebsites als een statische brochure die niemand vindt en niemand overtuigt.
 
-Wij bouwen websites en webshops met Next.js, het framework dat door bedrijven als Nike, Netflix en Notion wordt gebruikt. Het resultaat: pagina's die in minder dan 1 seconde laden, automatisch geoptimaliseerd zijn voor mobiel, en structureel hoger scoren in Google dan traditionele WordPress-sites.
+Wij bouwen websites en webshops op maat met dezelfde moderne technologie die grote internationale bedrijven als Nike, Netflix en Notion gebruiken. Het resultaat: pagina's die in minder dan 1 seconde laden, automatisch geoptimaliseerd zijn voor mobiel, en structureel hoger scoren in Google dan sites op kant-en-klare templates.
 
 **Hoe we te werk gaan**
 
@@ -38,16 +38,16 @@ Elk project begint met strategie, niet met design. We brengen in kaart wie je kl
 
 Na oplevering ben je niet op jezelf aangewezen. Bij een maandelijks pakket is hosting, onderhoud, updates en doorontwikkeling inbegrepen. We monitoren performance, lossen problemen proactief op, en bouwen je website mee met je bedrijf.
 
-**Waarom geen WordPress?**
+**Waarom geen kant-en-klare template?**
 
-WordPress draait op 40% van het internet, maar dat komt met een prijs: trage laadtijden door tientallen plugins, een groot aanvalsoppervlak voor hackers, en doorlopende onderhoudslast. Onze maatwerk aanpak elimineert deze problemen. Geen plugins, geen beveiligingslekken, geen verrassingen. Alleen schone code die precies doet wat jouw bedrijf nodig heeft.
+Kant-en-klare templatesystemen draaien op een groot deel van het internet, maar dat komt met een prijs: trage laadtijden door tientallen plugins, een groot aanvalsoppervlak voor hackers, en doorlopende onderhoudslast. Onze maatwerk aanpak elimineert deze problemen. Geen plugins, geen beveiligingslekken, geen verrassingen. Alleen schone code die precies doet wat jouw bedrijf nodig heeft.
 
 **Eigenaarschap en onafhankelijkheid**
 
 De broncode is altijd van jou. Geen lock-in, geen hostageware, geen maandelijkse kosten die exploderen als je wilt wisselen. Je kunt op elk moment overstappen naar een andere partij, inclusief volledige overdracht van code, domein en hosting.`,
     longDescription_en: `A website is more than a digital business card. It's your hardest-working employee: available 24 hours a day, always consistent in messaging, and scalable without additional staff. Yet most business websites function as static brochures that nobody finds and nobody is convinced by.
 
-We build websites and webshops with Next.js, the framework used by companies like Nike, Netflix, and Notion. The result: pages that load in under 1 second, automatically optimized for mobile, and consistently ranking higher in Google than traditional WordPress sites.
+We build custom websites and webshops with the same modern technology used by major international companies like Nike, Netflix, and Notion. The result: pages that load in under 1 second, automatically optimized for mobile, and consistently ranking higher in Google than sites on off-the-shelf templates.
 
 **How we work**
 
@@ -55,9 +55,9 @@ Every project starts with strategy, not design. We map out who your customer is,
 
 After delivery, you're not on your own. With a monthly package, hosting, maintenance, updates, and continued development are included. We monitor performance, proactively solve issues, and evolve your website alongside your business.
 
-**Why not WordPress?**
+**Why not an off-the-shelf template?**
 
-WordPress powers 40% of the internet, but that comes at a cost: slow loading times from dozens of plugins, a large attack surface for hackers, and ongoing maintenance overhead. Our custom approach eliminates these problems. No plugins, no security vulnerabilities, no surprises. Just clean code that does exactly what your business needs.
+Off-the-shelf template systems power a large part of the internet, but that comes at a cost: slow loading times from dozens of plugins, a large attack surface for hackers, and ongoing maintenance overhead. Our custom approach eliminates these problems. No plugins, no security vulnerabilities, no surprises. Just clean code that does exactly what your business needs.
 
 **Ownership and independence**
 
