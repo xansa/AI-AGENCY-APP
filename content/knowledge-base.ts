@@ -151,30 +151,30 @@ Arka biedt twee modellen: eenmalig (projectbasis) of maandelijks (doorlopende sa
 
 ### Maandelijks (aanbevolen: jouw digitale afdeling)
 
-**Online Basis** · vanaf €750/mnd
+**Starter** · vanaf €750/mnd
 Diensten: Websites & Webshops + Branding & Design
 Min. commitment: 3 maanden
 Inbegrepen: maatwerk website, basis-branding, on-page SEO, hosting, onderhoud, kleine updates, support
 
-**Groei & Leads** ⭐ Meest gekozen · vanaf €1.750/mnd
+**Ondernemer** ⭐ Meest gekozen · vanaf €1.750/mnd
 Diensten: SEO & Content + Lead Generation + AI Chatbots + Website
 Min. commitment: 6 maanden
-Inbegrepen: alles uit Online Basis + doorlopende SEO/content, lead gen (Smartlead cold outreach of ads), AI-chatbot, maandelijks dashboard, strategie-sessie
+Inbegrepen: alles uit Starter + doorlopende SEO/content, lead gen (Smartlead cold outreach of ads), AI-chatbot, maandelijks dashboard, strategie-sessie
 
-**AI-afdeling** · vanaf €3.500/mnd
-Diensten: AI Assistent + AI Chatbots & Automatisering + Dashboards & Data + AI-video + alles uit Groei & Leads
+**Marktleider** · vanaf €3.500/mnd
+Diensten: AI Assistent + AI Chatbots & Automatisering + Dashboards & Data + AI-video + alles uit Ondernemer
 Min. commitment: 6 maanden
 Vlaggendrager: de AI-assistent (Jarvis-achtig) doet agenda, mail, research & klantcontact 24/7 — het werk van meerdere mensen voor de prijs van één salaris. Inbegrepen: automatisering, uitgebreide dashboards, maandelijkse AI-video, dedicated support (< 4u reactie)
 
 ### Eenmalig (projectbasis: je koopt een product)
 
-**Online Basis** · vanaf €2.000
+**Starter** · vanaf €2.000
 Website + basis-branding + basis SEO. Oplevering in 2–4 weken. 30 dagen bugfixes.
 
-**Groei & Leads** · vanaf €4.500
+**Ondernemer** · vanaf €4.500
 Custom website + chatbot + SEO-fundament + lead-funnel. Oplevering in 4–6 weken.
 
-**AI-afdeling** · setup vanaf €1.500
+**Marktleider** · setup vanaf €1.500
 AI-assistent + automatiseringen + dashboard ingericht op jouw processen. Daarna maandelijks model.
 
 Na oplevering: wijzigingen op uurbasis (€95/uur). Neem contact op voor een offerte op maat.
@@ -186,13 +186,13 @@ export const KB_FAQ = `
 ## Veelgestelde vragen
 
 **Wat kost het?**
-Maandelijks: Online Basis vanaf €750/mnd | Groei & Leads vanaf €1.750/mnd | AI-afdeling vanaf €3.500/mnd
-Eenmalig: Online Basis vanaf €2.000 | Groei & Leads vanaf €4.500 | AI-afdeling setup vanaf €1.500
+Maandelijks: Starter vanaf €750/mnd | Ondernemer vanaf €1.750/mnd | Marktleider vanaf €3.500/mnd
+Eenmalig: Starter vanaf €2.000 | Ondernemer vanaf €4.500 | Marktleider setup vanaf €1.500
 Maandelijks is de beste deal: je krijgt doorlopende optimalisatie, content, support en rapportage.
 
 **Kan ik stoppen wanneer ik wil?**
-Online Basis: minimaal 3 maanden, daarna maandelijks opzegbaar.
-Groei & Leads en AI-afdeling: minimaal 6 maanden, daarna maandelijks opzegbaar.
+Starter: minimaal 3 maanden, daarna maandelijks opzegbaar.
+Ondernemer en Marktleider: minimaal 6 maanden, daarna maandelijks opzegbaar.
 Geen verborgen kosten of opzegboetes.
 
 **Garanderen jullie resultaten?**

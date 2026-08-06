@@ -31,7 +31,7 @@ export interface Package {
 export const packages: Package[] = [
   {
     id: "starter",
-    name: "Online Basis",
+    name: "Starter",
     tagline: "Een professionele online basis die vertrouwen wekt",
     tagline_en: "A professional online foundation that builds trust",
     forWho: "ZZP'ers en starters die een professionele site nodig hebben",
@@ -102,7 +102,7 @@ export const packages: Package[] = [
   },
   {
     id: "professional",
-    name: "Groei & Leads",
+    name: "Ondernemer",
     tagline: "Gevonden worden én een voorspelbare stroom leads",
     tagline_en: "Get found and a predictable stream of leads",
     forWho:
@@ -125,7 +125,7 @@ export const packages: Package[] = [
 
     // Maandelijks
     deliverables: [
-      "Alles uit Online Basis",
+      "Alles uit Starter",
       "Doorlopende SEO & content (2–4 blogs per maand)",
       "Lead generation: cold outreach (Smartlead) of Google/social ads",
       "AI-chatbot op de site voor lead-kwalificatie",
@@ -134,7 +134,7 @@ export const packages: Package[] = [
       "Support binnen 12 uur",
     ],
     deliverables_en: [
-      "Everything from Online Basis",
+      "Everything from Starter",
       "Ongoing SEO & content (2–4 blogs per month)",
       "Lead generation: cold outreach (Smartlead) or Google/social ads",
       "AI chatbot on the site for lead qualification",
@@ -185,7 +185,7 @@ export const packages: Package[] = [
   },
   {
     id: "enterprise",
-    name: "AI-afdeling",
+    name: "Marktleider",
     tagline:
       "Het werk van meerdere mensen, voor de prijs van één maandsalaris",
     tagline_en: "The work of several people, for the price of one salary",
@@ -214,7 +214,7 @@ export const packages: Package[] = [
     // Maandelijks
     deliverables: [
       "AI-assistent (Jarvis-achtig): agenda, mail, research & klantcontact 24/7",
-      "Alles uit Groei & Leads",
+      "Alles uit Ondernemer",
       "AI-automatisering van je bedrijfsprocessen (workflows)",
       "Uitgebreide KPI-dashboards & data-integraties",
       "Maandelijkse AI-video content (HeyGen)",
@@ -224,7 +224,7 @@ export const packages: Package[] = [
     ],
     deliverables_en: [
       "AI assistant (Jarvis-like): calendar, email, research & customer contact 24/7",
-      "Everything from Groei & Leads",
+      "Everything from Ondernemer",
       "AI automation of your business processes (workflows)",
       "Extensive KPI dashboards & data integrations",
       "Monthly AI video content (HeyGen)",
@@ -269,7 +269,7 @@ export const packages: Package[] = [
       "Training & documentation (2 sessions)",
     ],
     onetimeNote:
-      "De AI-afdeling is een maandelijks model. De AI-assistent alleen al is €3–4k/mnd waard; de website, SEO, leads en dashboards krijg je erbij.",
+      "Dit is een maandelijks model: jouw complete AI-afdeling. De AI-assistent alleen al is €3–4k/mnd waard; de website, SEO, leads en dashboards krijg je erbij.",
     onetimeNote_en:
       "The AI department is a monthly model. The AI assistant alone is worth €3–4k/mo; the website, SEO, leads and dashboards come with it.",
   },
