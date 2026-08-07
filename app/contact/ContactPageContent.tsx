@@ -44,7 +44,7 @@ export function ContactPageContent() {
         </div>
       </section>
 
-      <section className="relative bg-cream pb-24 md:pb-32">
+      <section className="relative bg-cream pt-14 md:pt-20 pb-24 md:pb-32">
         <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-16">
             <div className="flex items-start gap-4">
