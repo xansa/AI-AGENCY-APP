@@ -51,7 +51,7 @@ export function FounderV2() {
               </span>
               <div className="min-w-0">
                 <div className="text-[13px] font-semibold text-slate-ink leading-tight">Kaan Arslan</div>
-                <div className="text-[11px] text-slate-meta">Oprichter · bouwt alles zelf</div>
+                <div className="text-[11px] text-slate-meta">Oprichter</div>
               </div>
             </div>
           </motion.div>
