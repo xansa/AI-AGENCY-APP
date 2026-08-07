@@ -2,6 +2,7 @@
 
 import { useTranslation } from "@/lib/i18n";
 import { PackagesV2 } from "@/components/sections/v2/PackagesV2";
+import { ComparisonV2 } from "@/components/sections/v2/ComparisonV2";
 import { FAQV2 } from "@/components/sections/v2/FAQV2";
 import { ClosingCTAV2 } from "@/components/sections/v2/ClosingCTAV2";
 import { HeroAura } from "@/components/ui/HeroAura";
@@ -31,6 +32,7 @@ export function PackagesPageContent() {
       </section>
 
       <PackagesV2 />
+      <ComparisonV2 />
       <FAQV2 />
       <ClosingCTAV2 />
     </>

@@ -1,16 +1,11 @@
 import { Metadata } from "next";
 import { HeroV2 } from "@/components/sections/v2/HeroV2";
 import { ProofStripV2 } from "@/components/sections/v2/ProofStripV2";
-import { ServicesV2 } from "@/components/sections/v2/ServicesV2";
-import { ShowcaseV2 } from "@/components/sections/v2/ShowcaseV2";
-import { AiAssistentV2 } from "@/components/sections/v2/AiAssistentV2";
+import { DienstenV2 } from "@/components/sections/v2/DienstenV2";
 import { WerkwijzeV2 } from "@/components/sections/v2/WerkwijzeV2";
 import { CasesV2 } from "@/components/sections/v2/CasesV2";
 import { FounderV2 } from "@/components/sections/v2/FounderV2";
 import { PackagesShowcaseV2 } from "@/components/sections/v2/PackagesShowcaseV2";
-import { ComparisonV2 } from "@/components/sections/v2/ComparisonV2";
-import { TestimonialsV2 } from "@/components/sections/v2/TestimonialsV2";
-import { FAQV2 } from "@/components/sections/v2/FAQV2";
 import { ClosingCTAV2 } from "@/components/sections/v2/ClosingCTAV2";
 
 export const metadata: Metadata = {
@@ -37,16 +32,11 @@ export default function HomePage() {
     <>
       <HeroV2 />
       <ProofStripV2 />
-      <ServicesV2 />
-      <ShowcaseV2 />
-      <AiAssistentV2 />
+      <DienstenV2 />
       <WerkwijzeV2 />
       <CasesV2 />
       <FounderV2 />
       <PackagesShowcaseV2 />
-      <ComparisonV2 />
-      <TestimonialsV2 />
-      <FAQV2 />
       <ClosingCTAV2 />
     </>
   );
