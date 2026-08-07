@@ -105,7 +105,7 @@ export function PackagesShowcaseV2() {
             <div className="mt-8 space-y-2.5">
               {packages.map((p, i) => {
                 const active = i === tier;
-                const p_price = billing === "monthly" ? p.monthlyInvestment : p.onetimePrice;
+                const p_price = billing === "monthly" ? p.monthlyInvestment : l(p, "onetimePrice", locale);
                 return (
                   <button
                     key={p.id}

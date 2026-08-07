@@ -3,6 +3,7 @@ import { HeroV2 } from "@/components/sections/v2/HeroV2";
 import { ProofStripV2 } from "@/components/sections/v2/ProofStripV2";
 import { ServicesV2 } from "@/components/sections/v2/ServicesV2";
 import { ShowcaseV2 } from "@/components/sections/v2/ShowcaseV2";
+import { AiAssistentV2 } from "@/components/sections/v2/AiAssistentV2";
 import { WerkwijzeV2 } from "@/components/sections/v2/WerkwijzeV2";
 import { CasesV2 } from "@/components/sections/v2/CasesV2";
 import { FounderV2 } from "@/components/sections/v2/FounderV2";
@@ -38,6 +39,7 @@ export default function HomePage() {
       <ProofStripV2 />
       <ServicesV2 />
       <ShowcaseV2 />
+      <AiAssistentV2 />
       <WerkwijzeV2 />
       <CasesV2 />
       <FounderV2 />

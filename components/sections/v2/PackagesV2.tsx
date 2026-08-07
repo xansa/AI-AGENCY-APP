@@ -65,7 +65,7 @@ export function PackagesV2() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
           {packages.map((pkg, i) => {
-            const price = billing === "monthly" ? pkg.monthlyInvestment : pkg.onetimePrice;
+            const price = billing === "monthly" ? pkg.monthlyInvestment : l(pkg, "onetimePrice", locale);
             const items = billing === "monthly" ? la(pkg, "deliverables", locale) : la(pkg, "onetimeDeliverables", locale);
             const highlighted = pkg.highlighted;
             return (

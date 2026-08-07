@@ -22,6 +22,7 @@ export interface Package {
 
   // -- Eenmalig (project) model --
   onetimePrice: string;
+  onetimePrice_en?: string;
   onetimeDeliverables: string[];
   onetimeDeliverables_en: string[];
   onetimeNote: string;
@@ -252,8 +253,9 @@ export const packages: Package[] = [
       "Customer satisfaction",
     ],
 
-    // Eenmalig (setup)
-    onetimePrice: "Setup vanaf €1.500",
+    // Eenmalig (setup) -- Marktleider is een maandmodel; toon dat i.p.v. een los setup-bedrag.
+    onetimePrice: "Alleen maandelijks",
+    onetimePrice_en: "Monthly only",
     onetimeDeliverables: [
       "AI-assistent ingericht op jouw processen & integraties",
       "AI-automatiseringen (workflows) opgezet",

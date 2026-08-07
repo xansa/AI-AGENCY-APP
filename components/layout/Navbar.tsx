@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 
 const navLinks: { href: string; key: TranslationKey }[] = [
   { href: "/diensten", key: "nav.diensten" },
+  { href: "/ai-assistent", key: "nav.aiAssistent" },
   { href: "/packages", key: "nav.packages" },
   { href: "/cases", key: "nav.cases" },
   { href: "/blog", key: "nav.blog" },

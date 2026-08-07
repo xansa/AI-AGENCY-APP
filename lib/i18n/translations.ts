@@ -1,6 +1,7 @@
 export const translations = {
   // -- Navbar --
   "nav.diensten": { nl: "Diensten", en: "Services" },
+  "nav.aiAssistent": { nl: "AI-assistent", en: "AI Assistant" },
   "nav.packages": { nl: "Packages", en: "Packages" },
   "nav.cases": { nl: "Cases", en: "Cases" },
   "nav.blog": { nl: "Blog", en: "Blog" },
