@@ -11,11 +11,7 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 // tijd bespaart. Zet Arka apart van "iedereen genereert een AI-website". Crème,
 // als lichte breuk na de donkere ShowcaseV2. Copy hardcoded NL (zoals de v2-buren).
 
-const stats = [
-  { value: "10+ uur", label: "per maand bespaard" },
-  { value: "€825", label: "teruggewonnen per maand" },
-  { value: "< 2 mnd", label: "terugverdientijd" },
-];
+const takenOver = ["Inbox & mail", "Agenda", "Research", "Klantcontact"];
 
 export function AiAssistentV2() {
   const reduce = useReducedMotion();
@@ -43,18 +39,21 @@ export function AiAssistentV2() {
               Iedereen bouwt tegenwoordig een website. Wij gaan verder: een AI-assistent die 24/7 je inbox sorteert, je agenda beheert, research doet en klantcontact afhandelt. Het werk van meerdere medewerkers, voor de prijs van één maandsalaris. Zo bespaar je kosten en tijd, en houd jij je handen vrij voor het echte werk.
             </p>
 
-            {/* ── ROI stats ── */}
-            <div className="mt-10 grid grid-cols-3 gap-4 sm:gap-6 max-w-lg">
-              {stats.map((s, i) => (
-                <motion.div key={s.value} {...reveal(0.1 + i * 0.08)}>
-                  <div className="font-serif text-[1.75rem] md:text-[2rem] font-medium text-arka leading-none tracking-tight">
-                    {s.value}
-                  </div>
-                  <div className="mt-2 text-[12.5px] text-slate-meta leading-snug">
-                    {s.label}
-                  </div>
-                </motion.div>
-              ))}
+            {/* ── Wat het uit handen neemt ── */}
+            <div className="mt-9">
+              <p className="text-[12px] uppercase tracking-wider text-slate-meta font-semibold mb-3">
+                24/7 uit handen genomen
+              </p>
+              <div className="flex flex-wrap gap-2.5">
+                {takenOver.map((c) => (
+                  <span
+                    key={c}
+                    className="text-[13.5px] font-medium text-slate-ink bg-white/70 ring-1 ring-slate-950/8 rounded-full px-3.5 py-1.5"
+                  >
+                    {c}
+                  </span>
+                ))}
+              </div>
             </div>
 
             {/* ── CTA ── */}
@@ -75,19 +74,16 @@ export function AiAssistentV2() {
             </div>
           </motion.div>
 
-          {/* ── Visual ── */}
+          {/* ── Visual (no-box, chalky direct op crème) ── */}
           <motion.div {...reveal(0.12)} className="lg:col-span-5 relative order-first lg:order-last">
-            <div className="absolute -bottom-4 -right-4 w-full h-full rounded-2xl bg-arka/8 hidden sm:block" aria-hidden="true" />
-            <div className="relative rounded-2xl bg-cream-deep/50 ring-1 ring-slate-950/5 px-6 py-8 sm:px-10 sm:py-12">
-              <div className="relative mx-auto w-[72%] sm:w-[62%] lg:w-[78%] max-w-[320px] aspect-[4/5]">
-                <Image
-                  src="/illustrations/ai-assistent-home.png"
-                  alt="AI-assistent voor MKB"
-                  fill
-                  sizes="(max-width: 1024px) 62vw, 320px"
-                  className="object-contain"
-                />
-              </div>
+            <div className="relative mx-auto w-[64%] sm:w-[50%] lg:w-full max-w-[360px] aspect-[4/5]">
+              <Image
+                src="/illustrations/ai-assistent-home.png"
+                alt="AI-assistent voor MKB"
+                fill
+                sizes="(max-width: 1024px) 50vw, 360px"
+                className="object-contain"
+              />
             </div>
           </motion.div>
         </div>
