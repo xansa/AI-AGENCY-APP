@@ -27,13 +27,14 @@ Arka is een digitaal bureau in Dordrecht, Nederland. Wij helpen MKB-bedrijven en
 
 - [Homepage](https://arkadigital.nl/): Overzicht van diensten, pakketten en werkwijze.
 - [Diensten](https://arkadigital.nl/diensten): Overzicht van alle zes dienstgebieden.
-- [Websites & Webshops](https://arkadigital.nl/diensten/websites-webshops): Maatwerk websites en webshops met Next.js.
+- [Websites & Webshops](https://arkadigital.nl/diensten/websites-webshops): Snelle maatwerk websites en webshops.
 - [SEO & Content](https://arkadigital.nl/diensten/seo-content): Zoekmachineoptimalisatie, blogartikelen en LinkedIn content.
 - [AI Chatbots & Automatisering](https://arkadigital.nl/diensten/ai-chatbots-automatisering): Slimme chatbots, workflow-automatisering en AI-integraties.
 - [Dashboards & Data](https://arkadigital.nl/diensten/dashboards-data): KPI-dashboards, rapportages en data-integraties.
 - [Lead Generation](https://arkadigital.nl/diensten/lead-generation): Outbound campagnes, funnels en CRM-optimalisatie.
 - [Branding & Design](https://arkadigital.nl/diensten/branding-design): Visuele identiteit, UI/UX-design en huisstijlrichtlijnen.
-- [Pakketten](https://arkadigital.nl/packages): Drie prijsniveaus (Starter, Professional, Enterprise).
+- [Pakketten](https://arkadigital.nl/packages): Drie prijsniveaus (Starter, Ondernemer, Marktleider).
+- [AI-assistent](https://arkadigital.nl/ai-assistent): Een digitale medewerker die inbox, agenda, research en klantcontact 24/7 overneemt, voor een fractie van de kosten van personeel.
 - [Cases](https://arkadigital.nl/cases): Portfolio van afgeronde klantprojecten.
 - [Blog](https://arkadigital.nl/blog): Artikelen over digitale strategie, SEO, AI en webdevelopment.
 - [FAQ](https://arkadigital.nl/faq): Veelgestelde vragen over diensten, prijzen en werkwijze.
@@ -57,7 +58,7 @@ Arka is een digitaal bureau in Dordrecht, Nederland. Wij helpen MKB-bedrijven en
 ## Services
 
 ### Websites & Webshops
-Maatwerk websites en webshops gebouwd met Next.js (dezelfde technologie als Nike, Netflix, Notion). Laadtijd onder 1 seconde, Google PageSpeed 95-100, SEO-proof vanaf dag 1. Broncode is altijd eigendom van de klant, geen lock-in.
+Snelle maatwerk websites en webshops op moderne technologie. Laadtijd onder 1 seconde, Google PageSpeed 95-100, SEO-proof vanaf dag 1. Broncode is altijd eigendom van de klant, geen lock-in.
 
 ### SEO & Content
 Technische SEO-audit, zoekwoordenonderzoek, maandelijkse blogartikelen, LinkedIn content en contentstrategie. Resultaten zichtbaar binnen 3-6 maanden.
@@ -74,21 +75,23 @@ Outbound email campagnes, LinkedIn outreach, funnel-opzet en CRM-optimalisatie v
 ### Branding & Design
 Logo, huisstijl, UI/UX-design en social media templates. Professionele en consistente merkidentiteit.
 
+### AI-assistent
+Een digitale medewerker die inbox, agenda, research en eerste klantcontact 24/7 overneemt. Het werk van meerdere mensen voor een fractie van de kosten van personeel. Getraind op het bedrijf, escaleert bij twijfel naar de ondernemer.
+
 ## Pakketten
 
 ### Starter
-Voor freelancers en kleine bedrijven. Omvat Websites & Webshops en SEO & Content.
-- Maandelijks: vanaf EUR 1.000/maand (min. 3 maanden)
-- Eenmalig: vanaf EUR 2.500 (oplevering in 2-4 weken)
+Voor freelancers en kleine bedrijven. Een professionele online basis: Websites & Webshops en SEO & Content.
+- Maandelijks: vanaf EUR 750/maand (min. 3 maanden)
+- Eenmalig: vanaf EUR 2.000 (oplevering in 2-4 weken)
 
-### Professional
-Voor groeiende MKB-bedrijven. Omvat Websites, SEO, AI Chatbots en Branding.
-- Maandelijks: vanaf EUR 2.750/maand (min. 6 maanden)
-- Eenmalig: vanaf EUR 7.000 (oplevering in 4-6 weken)
+### Ondernemer
+Voor groeiende MKB-bedrijven. Gevonden worden en een voorspelbare stroom leads: Websites, SEO, AI Chatbots, Lead Generation en Dashboards.
+- Maandelijks: vanaf EUR 1.750/maand
+- Eenmalig: vanaf EUR 4.500
 
-### Enterprise
-Voor gevestigde MKB-bedrijven en scale-ups. Omvat alle zes diensten.
-- Maandelijks: vanaf EUR 5.500/maand (min. 6 maanden)
-- Eenmalig: vanaf EUR 18.000 (oplevering in 6-10 weken)
+### Marktleider
+Voor gevestigde MKB-bedrijven en scale-ups. Een complete uitbestede digitale afdeling inclusief AI-assistent en alle zes diensten.
+- Maandelijks: vanaf EUR 3.500/maand (alleen maandelijks model)
 
 Alle pakketten inclusief 30 dagen bugfixes na oplevering. Uurtarief daarna: EUR 95/uur.
