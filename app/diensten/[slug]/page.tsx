@@ -51,17 +51,6 @@ export default function DienstDetailPage({ params }: Props) {
       "@type": "Country",
       name: "Nederland",
     },
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "EUR",
-      price: "1000",
-      priceSpecification: {
-        "@type": "UnitPriceSpecification",
-        priceCurrency: "EUR",
-        price: "1000",
-        unitText: "maand",
-      },
-    },
   };
 
   const breadcrumbJsonLd = {
