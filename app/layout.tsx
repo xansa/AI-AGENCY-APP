@@ -134,6 +134,16 @@ const jsonLd = {
   sameAs: [
     "https://www.linkedin.com/company/arka-nl",
   ],
+  review: [
+    {
+      "@type": "Review",
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      author: { "@type": "Person", name: "Damian Stal" },
+      publisher: { "@type": "Organization", name: "De Palletleverancier BV" },
+      reviewBody:
+        "Voorheen deden we alles handmatig, van acquisitie tot offertes. Arka heeft ons bedrijf volledig gedigitaliseerd. Binnen een paar weken hadden we al 3 nieuwe klanten via de website en geautomatiseerde outreach.",
+    },
+  ],
   priceRange: "$$",
   serviceType: [
     "Webdesign",

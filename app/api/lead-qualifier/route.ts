@@ -10,6 +10,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { analyzeWebsite, analysisToCompany } from "@/lib/lead-qualifier/website-analyzer";
 import { calculateLeadScore } from "@/lib/lead-qualifier/scorer";
 import type { LeadEnrichment, QualifiedLead } from "@/lib/lead-qualifier/types";
+import { pingIndexNow } from "@/lib/indexnow";
 
 export const maxDuration = 300;
 
@@ -249,6 +250,13 @@ export async function GET(request: NextRequest) {
     100
   );
   const after = url.searchParams.get("after") ?? undefined;
+
+  // Piggyback: dagelijkse IndexNow-ping (geen aparte cron mogelijk op Hobby-plan).
+  // Faalt stil, nooit blokkerend voor de lead-qualifier.
+  if (!backfill) {
+    const idx = await pingIndexNow();
+    console.log(`[IndexNow] submitted ${idx.count} urls, ok=${idx.ok} status=${idx.status ?? "n/a"}`);
+  }
 
   try {
     // 1. Fetch contacts to qualify.

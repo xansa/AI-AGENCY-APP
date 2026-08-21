@@ -5,6 +5,8 @@ export interface BlogPost {
   content: string;
   author: string;
   publishedAt: string;
+  /** Optionele datum van laatste inhoudelijke update; valt terug op publishedAt in schema. */
+  updatedAt?: string;
   tags: string[];
   readingTime: string;
   /** Optional hero-band illustration path, e.g. "/illustrations/blog/<slug>.png". Taalneutraal. */

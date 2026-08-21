@@ -214,7 +214,7 @@ export default function BlogPostPage({ params }: Props) {
       },
     },
     datePublished: post.publishedAt,
-    dateModified: post.publishedAt,
+    dateModified: post.updatedAt ?? post.publishedAt,
     url: `${baseUrl}/blog/${post.slug}`,
     keywords: post.tags.join(", "),
     articleSection: post.tags[0] ?? "Digitaal",
