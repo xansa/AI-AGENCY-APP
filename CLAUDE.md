@@ -4,19 +4,24 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 > **IMPORTANT:** Do not make any changes until you have 95% confidence in what you need to build. Ask follow-up questions until you reach that confidence.
 
-## Arka V2 (testomgeving)
+## Staging workflow
 
-**Alle UI/design wijzigingen aan de Arka website gaan naar Arka V2**, niet naar main. De live site (arkadigital.nl) staat op LinkedIn en bij klanten, dus geen ongeteste wijzigingen pushen naar main/production.
+De live site (arkadigital.nl) staat op LinkedIn en bij klanten, dus geen ongeteste UI/design wijzigingen pushen naar main/production.
 
-- **V2 repo:** `xansa/arka-v2` op GitHub, apart Vercel project
-- **Wanneer naar main:** pas na expliciete goedkeuring van Kaan, na visuele review op V2
+- **Staging:** maak een feature branch in dit repo (bijv. `staging/redesign-v3`, `feature/nieuwe-pagina`). Test via Vercel preview deploys.
+- **Wanneer naar main:** pas na expliciete goedkeuring van Kaan, na visuele review op de preview URL
 - **Wat wel direct op main mag:** bugfixes, content updates (blog, FAQ, kennisbank), security patches, cron/API fixes
+- **V2 design docs:** zie `docs/v2-redesign/` (DESIGN-BRIEF, DESIGN-DECISIONS, SESSION-REPORT, nano-banana prompts). Klant-template: `arka-template/`
+
+## Design rules
+
+`design-rules.md` bevat de verplichte UI/UX checklist voor elk klantproject en Arka's eigen interfaces. Lees dit bestand bij elk nieuw design of redesign. Kernpunten: kleur alleen voor status/data, typografische hierarchie, consistente werkwoorden/spacing, skeleton loaders, uniforme CTA's, cropped screenshots.
 
 ## Design workflow: Stitch-first
 
 Voor nieuwe pagina's of redesigns (Arka of klantprojecten), start altijd met visuele richting voordat er code geschreven wordt:
 
-1. **Verzamel referenties** (Dribbble, Pinterest, live sites) voor inspiratie
+1. **Verzamel referenties** (Mobbin voor geshipte, battle-tested app-screens, plus Dribbble, Pinterest, Awwwards/Savee, live sites). Plak de sterkste 3-5 in Figma en zet er **notities** bij die per referentie benoemen wat je wilt overnemen (layout / typografie / kleur / spacing / motion). Lever daarna één screenshot van dat Figma-bord als input, zodat de richting gestuurd wordt in plaats van blind geprompt. Markeer wat inspiratie is vs. harde eis; referenties geven richting, geen 1-op-1 kloon (compositie en verhaal blijven van ons). Een concrete Figma-mock van een specifieke sectie (als PNG) werkt sterker dan losse refs voor die sectie.
 2. **Stitch 2.0** (Google): upload screenshots/referenties, genereer visuele variaties, combineer beste elementen (layout A + typografie B + kleuren C)
 3. **Verfijn het design system** in Stitch: fonts, kleuren, spacing, button styles, card styles
 4. **Export naar Claude Code** wanneer het ontwerp 80-90% staat
@@ -26,8 +31,8 @@ Dit geldt voor /nieuw-klantsite, Arka V2 redesign, en individuele pagina-redesig
 
 ## Design tools (MCP + Skills)
 
-- **21st.dev Magic MCP** — genereert moderne React/Tailwind componenten vanuit prompts. Config in `.mcp.json` (gitignored)
-- **Stitch MCP** (`@_davideast/stitch-mcp`) — exporteert Google Stitch designs + `DESIGN.md` naar het project. Config in `.mcp.json`
+- **21st.dev Magic MCP** — genereert moderne React/Tailwind componenten vanuit prompts. Config in `.mcp.json` (gitignored). **Gebruik voor losse componenten** (buttons, tooltips, accordions, hover effects, animatie-patronen), NIET voor hele secties of pagina's. Hele secties worden generiek/template-achtig. De compositie en het verhaal moet van ons komen. `component_inspiration` tool heeft MCP protocol errors (mei 2026), gebruik `component_builder` of `component_refiner` als alternatief.
+- **Stitch MCP** (Google, `https://stitch.googleapis.com/mcp`, `X-Goog-Api-Key` in `.mcp.json`) — genereert UI-screens + design system (`DESIGN.md`) uit een tekstprompt. Tools o.a. `create_project`, `generate_screen_from_text` (model `GEMINI_3_1_PRO`, `deviceType: DESKTOP`), `generate_variants`, `get_screen`, `create_design_system_from_design_md`. Werkt sinds aug 2026 (key toegevoegd). Als Claude Code's tools-fetch faalt op de payload-omvang (~316KB schemas, "tools fetch failed"), stuur het endpoint direct aan via curl/urllib met de `X-Goog-Api-Key` header (JSON-RPC `tools/call`). De screenshot + HTML komen als `downloadUrl` terug.
 - **UI/UX Pro Max Skill** — searchable design database: 161 kleurpaletten, 57 font pairings, 50+ UI styles, 99 UX guidelines. Locatie: `.claude/skills/ui-ux-pro-max/`
 - **Recraft V4** — SVG + raster image generation (logo's, icons, foto's, mockups). Nog niet gekoppeld, wordt pas geactiveerd bij Arka V2 redesign of eerste klantproject
 - **fal.ai (Nano Banana)** — AI image generation via API. Key beschikbaar als `process.env.FAL_KEY`. Gebruik via Python:
@@ -171,6 +176,10 @@ The `app/[landing]/page.tsx` dynamic route uses `generateStaticParams()` from th
 
 **Adding a new city:** Add an entry to `content/landing-pages.ts` with a unique slug. The page, sitemap entry, and JSON-LD are generated automatically.
 
+### 4d. Standalone service page: AI Assistent Setup (`app/ai-assistent/`)
+
+Bespoke standalone dienst-landingspagina op route `/ai-assistent`, buiten de `services.ts`-laag (dus geen `generateStaticParams`, verschijnt niet automatisch in navbar/footer/sitemap). Server `page.tsx` (static `metadata` + `Service` + `BreadcrumbList` JSON-LD, `offers` €1.500) + client `AiAssistentContent.tsx`. Content leeft tweetalig in `content/ai-assistent.ts` als `{ nl, en }`-object, geselecteerd via `aiAssistent[locale]` (geen `_en`-suffix-helpers, dat past niet bij de geneste stappen/tiers). Ontworpen via Stitch-first: crème-basis met één navy pricing-blok als contrastbreuk (spiegelt de Packages-pagina), verfijnde Cormorant met roman/cursief-nadruk, accent-blauw spaarzaam. Gebouwd op de bestaande v2-tokens/recepten (niet op Stitch-output). Handmatig verweven via: footer-diensten-kolom, een conditionele "Ook van Arka"-CTA op `/diensten/ai-chatbots-automatisering` (in `DienstDetailContent.tsx`), chatbot (`KB_AI_ASSISTENT` in `knowledge-base.ts` + intent `service-ai-assistent-setup`), en `app/sitemap.ts`. Design-spec: `docs/ai-assistent-setup/DESIGN.md`.
+
 ### 5. Shared Zod validation (`lib/validators.ts`)
 
 All form schemas (contact, offerte, chat) are defined once with Zod and shared between client-side `react-hook-form` validation (via `@hookform/resolvers`) and server-side API route validation. Keep schemas in sync, never duplicate validation logic.
@@ -266,10 +275,11 @@ Copy `.env.example` to `.env.local`. Only `ANTHROPIC_API_KEY` is required for th
 - **Structure:** Solo operation
 - **Services:** Websites & Webshops, SEO & Content, AI Chatbots & Automatisering, Dashboards & Data, Lead Generation, Branding & Design
 - **Response time:** 24 uur (was 48u, geüpdatet 2026-03-25)
-- **Packages:**
-  - Starter: Maandelijks vanaf €1.000/mnd, Eenmalig vanaf €2.500
-  - Professional: Maandelijks vanaf €2.750/mnd, Eenmalig vanaf €7.000
-  - Enterprise: Maandelijks vanaf €5.500/mnd, Eenmalig vanaf €18.000
+- **Packages:** (namen Starter/Ondernemer/Marktleider, herzien 2026-08)
+  - Starter: Maandelijks vanaf €750/mnd, Eenmalig vanaf €2.000
+  - Ondernemer: Maandelijks vanaf €1.750/mnd, Eenmalig vanaf €4.500
+  - Marktleider: Maandelijks vanaf €3.500/mnd (alleen maandelijks, incl. AI-assistent + alle 6 diensten)
+  - Bron van waarheid: `content/packages.ts`. Bij prijswijziging óók bijwerken: `knowledge-base.ts`, `intent-matcher.ts`, `faq.ts`, `translations.ts`, `public/llms.txt`, en het Service-schema in `app/diensten/[slug]/page.tsx`.
 
 ## Deployment
 
@@ -322,6 +332,7 @@ API routes validate `Content-Type: application/json` and do not expose Zod valid
 ## Known constraints
 
 - `next.config.mjs`: Next.js 14.2.5 does not support `next.config.ts`, keep it as `.mjs` with JSDoc types
+- `tsconfig.json` sluit `demos` en `arka-template` uit van de build. Dit zijn self-contained subprojecten met eigen `tsconfig.json`; zonder exclude pakt de hoofd-`**/*.tsx` include hun bestanden mee en breken hun imports (`@/components/Navbar` e.d.) de `next build`.
 - No test framework is configured
 
 ## Social media agent
